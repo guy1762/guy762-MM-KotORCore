@@ -8,8 +8,8 @@
 	
 	
 	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartECell_vibration">
-		<defName>guy762_KotORpartECell_vibration_vblade</defName>
-		<attachedTo>guy762_KotORMount_ecell_vibroblade</attachedTo>
+		<defName>guy762_KotORpartECell_vibration_vdubblade</defName>
+		<attachedTo>guy762_KotORMount_ecell_vibrodubblade</attachedTo>
 	</ModularWeapons2.ModularPartsDef>
 	
 	
@@ -19,11 +19,11 @@
 	
 	
 	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORModularPartBase">
-		<defName>guy762_KotORpartECell_ion_vblade</defName>
+		<defName>guy762_KotORpartECell_ion_vdubblade</defName>
 		<label>ion cell</label>
 		<labelShort>ion cell</labelShort>
 		<description>Ion cells discharge ions along the length of the blade.</description>
-		<attachedTo>guy762_KotORMount_ecell_vibroblade</attachedTo>
+		<attachedTo>guy762_KotORMount_ecell_vibrodubblade</attachedTo>
 		<effects>
 		
 			<statOffsets>
@@ -33,15 +33,14 @@
 			
 			<tools>
 			  <li>
-				<label>point</label>
+				<label>edge</label>
 				<capacities>
-					<li>Stab</li>
+					<li>Cut</li>
 				</capacities>
-				<!---->
 				<power>22</power>
 				<armorPenetration>0.25</armorPenetration>
-				<chanceFactor>1.25</chanceFactor>
-				<cooldownTime>1.8</cooldownTime>
+				<chanceFactor>2</chanceFactor>
+				<cooldownTime>1.0</cooldownTime>
 				  <extraMeleeDamages>
 					<li>
 					  <def>guy762_MeleeDamage_ion</def>
@@ -50,15 +49,14 @@
 				  </extraMeleeDamages>
 			  </li>
 			  <li>
-				<label>edge</label>
+				<label>point</label>
 				<capacities>
-					<li>Cut</li>
+					<li>Stab</li>
 				</capacities>
-				<!---->
-				<power>18</power>
+				<power>20</power>
 				<armorPenetration>0.25</armorPenetration>
-				<chanceFactor>0.75</chanceFactor>
-				<cooldownTime>1.8</cooldownTime>
+				<chanceFactor>1</chanceFactor>
+				<cooldownTime>2.4</cooldownTime>
 				<extraMeleeDamages>
 					<li>
 					  <def>guy762_MeleeDamage_ion</def>
@@ -76,11 +74,11 @@
 
 	
 	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORModularPartBase">
-		<defName>guy762_KotORpartECell_energy_vblade</defName>
+		<defName>guy762_KotORpartECell_energy_vdubblade</defName>
 		<label>enhanced energy cell</label>
 		<labelShort>enhanced energy cell</labelShort>
 		<description>Enhanced energy cells can stabilize the blade, increasing damage.</description>
-		<attachedTo>guy762_KotORMount_ecell_vibroblade</attachedTo>
+		<attachedTo>guy762_KotORMount_ecell_vibrodubblade</attachedTo>
 		<effects>
 		
 			<statOffsets>
@@ -89,15 +87,14 @@
 			
 			<tools>
 			  <li>
-				<label>point</label>
+				<label>edge</label>
 				<capacities>
-					<li>Stab</li>
+					<li>Cut</li>
 				</capacities>
-				<!---->
 				<power>22</power>
 				<armorPenetration>0.25</armorPenetration>
-				<chanceFactor>1.25</chanceFactor>
-				<cooldownTime>1.8</cooldownTime>
+				<chanceFactor>2</chanceFactor>
+				<cooldownTime>1.0</cooldownTime>
 				  <extraMeleeDamages>
 					<li>
 					  <def>guy762_MeleeDamage_energy</def>
@@ -106,15 +103,14 @@
 				  </extraMeleeDamages>
 			  </li>
 			  <li>
-				<label>edge</label>
+				<label>point</label>
 				<capacities>
-					<li>Cut</li>
+					<li>Stab</li>
 				</capacities>
-				<!---->
-				<power>18</power>
+				<power>20</power>
 				<armorPenetration>0.25</armorPenetration>
-				<chanceFactor>0.75</chanceFactor>
-				<cooldownTime>1.8</cooldownTime>
+				<chanceFactor>1</chanceFactor>
+				<cooldownTime>2.4</cooldownTime>
 				<extraMeleeDamages>
 					<li>
 					  <def>guy762_MeleeDamage_energy</def>
@@ -137,11 +133,11 @@
 	
 	
 	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORModularPartBase">
-		<defName>guy762_KotORpartECell_sonic_vblade</defName>
+		<defName>guy762_KotORpartECell_sonic_vdubblade</defName>
 		<label>sonic discharge cell</label>
 		<labelShort>sonic discharge cell</labelShort>
 		<description>Sonic discharge energy cells release sound waves upon impact. Though the sonic discharge makes the weapon unwieldy, few types of armor protect against this type of attack.</description>
-		<attachedTo>guy762_KotORMount_ecell_vibroblade</attachedTo>
+		<attachedTo>guy762_KotORMount_ecell_vibrodubblade</attachedTo>
 		<effects>
 		
 			<statOffsets>
@@ -154,15 +150,14 @@
 			
 			<tools>
 			  <li>
-				<label>point</label>
+				<label>edge</label>
 				<capacities>
-					<li>Stab</li>
+					<li>Cut</li>
 				</capacities>
-				<!---->
 				<power>22</power>
 				<armorPenetration>0.25</armorPenetration>
-				<chanceFactor>1.25</chanceFactor>
-				<cooldownTime>1.8</cooldownTime>
+				<chanceFactor>2</chanceFactor>
+				<cooldownTime>1.0</cooldownTime>
 				  <extraMeleeDamages>
 					<li>
 					  <def>guy762_MeleeDamage_sonic</def>
@@ -171,15 +166,14 @@
 				  </extraMeleeDamages>
 			  </li>
 			  <li>
-				<label>edge</label>
+				<label>point</label>
 				<capacities>
-					<li>Cut</li>
+					<li>Stab</li>
 				</capacities>
-				<!---->
-				<power>18</power>
+				<power>20</power>
 				<armorPenetration>0.25</armorPenetration>
-				<chanceFactor>0.75</chanceFactor>
-				<cooldownTime>1.8</cooldownTime>
+				<chanceFactor>1</chanceFactor>
+				<cooldownTime>2.4</cooldownTime>
 				<extraMeleeDamages>
 					<li>
 					  <def>guy762_MeleeDamage_sonic</def>

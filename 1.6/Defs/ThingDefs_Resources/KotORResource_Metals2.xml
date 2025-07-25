@@ -162,6 +162,11 @@
 		  <li>RewardStandardLowFreq</li>
 		</thingSetMakerTags>
 		<minRewardCount>25</minRewardCount>
+		<modExtensions>
+			<li Class="Lightsaber.ModExtension_Conductive" MayRequire="lee.theforce.lightsaber">
+				<shortCircuitChance>1</shortCircuitChance>
+			</li>
+		</modExtensions>
 	</ThingDef>
 	
 	<!-- Recipe -->

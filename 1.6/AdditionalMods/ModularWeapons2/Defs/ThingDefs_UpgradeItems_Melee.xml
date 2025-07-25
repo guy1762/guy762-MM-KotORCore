@@ -83,7 +83,7 @@
 	<ThingDef ParentName="guy762_upgradebase">
 		<defName>guy762_ecellitem_ion</defName>
 		<label>ion cell</label>
-		<description>Ion cells discharge ions along the length of the blade. Only certain melee weapons, like vibroblades, can utilize energy cells. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<description>Ion cells discharge ions along the length of the blade. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
 		<graphicData>
 		  <texPath>Items/Upgrades/Melee/ecell_ion</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -115,7 +115,7 @@
 	<ThingDef ParentName="guy762_upgradebase">
 		<defName>guy762_ecellitem_vibration</defName>
 		<label>enhanced vibration cell</label>
-		<description>Vibration energy cells increase the amount of damage a weapon can inflict, but make them much harder to wield. Only certain melee weapons, like vibroblades, can utilize energy cells. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<description>Vibration energy cells increase the amount of damage a weapon can inflict, but make them much harder to wield. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
 		<graphicData>
 		  <texPath>Items/Upgrades/Melee/ecell_vibration</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -146,7 +146,7 @@
 	<ThingDef ParentName="guy762_upgradebase">
 		<defName>guy762_ecellitem_energy</defName>
 		<label>enhanced energy cell</label>
-		<description>Enhanced energy cells can stabilize the blade, increasing damage. Only certain melee weapons, like vibroblades, can utilize energy cells. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<description>Enhanced energy cells can stabilize the blade, increasing damage. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
 		<graphicData>
 		  <texPath>Items/Upgrades/Melee/ecell_energy</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
@@ -178,7 +178,7 @@
 	<ThingDef ParentName="guy762_upgradebase">
 		<defName>guy762_ecellitem_sonic</defName>
 		<label>sonic discharge cell</label>
-		<description>Sonic discharge energy cells release sound waves upon impact. Though the sonic discharge makes the weapon unwieldy, few types of armor protect against this type of attack. Only certain melee weapons, like vibroblades, can utilize energy cells. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
+		<description>Sonic discharge energy cells release sound waves upon impact. Though the sonic discharge makes the weapon unwieldy, few types of armor protect against this type of attack. Use of this weapon modification requires a gunsmith or Aratech workbench, and an upgradeable weapon.</description>
 		<graphicData>
 		  <texPath>Items/Upgrades/Melee/ecell_sonic</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>

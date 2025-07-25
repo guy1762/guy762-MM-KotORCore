@@ -156,6 +156,58 @@
 	
 	
 	
+	<ModularWeapons2.ModularPartsMountDef>
+		<defName>guy762_KotORMount_ecell_vibroblade</defName>
+		<label>energy cell</label>
+		<labelShort>energy cell</labelShort>
+		<allowEmpty>true</allowEmpty>
+	</ModularWeapons2.ModularPartsMountDef>
+	
+	<ModularWeapons2.ModularPartsMountDef>
+		<defName>guy762_KotORMount_ecell_vibrosword</defName>
+		<label>energy cell</label>
+		<labelShort>energy cell</labelShort>
+		<allowEmpty>true</allowEmpty>
+	</ModularWeapons2.ModularPartsMountDef>
+	
+	<ModularWeapons2.ModularPartsMountDef>
+		<defName>guy762_KotORMount_ecell_vibrodubblade</defName>
+		<label>energy cell</label>
+		<labelShort>energy cell</labelShort>
+		<allowEmpty>true</allowEmpty>
+	</ModularWeapons2.ModularPartsMountDef>
+	
+	<ModularWeapons2.ModularPartsMountDef>
+		<defName>guy762_KotORMount_ecell_vibroglaive</defName>
+		<label>energy cell</label>
+		<labelShort>energy cell</labelShort>
+		<allowEmpty>true</allowEmpty>
+	</ModularWeapons2.ModularPartsMountDef>
+	
+	<ModularWeapons2.ModularPartsMountDef>
+		<defName>guy762_KotORMount_ecell_vibroaxe</defName>
+		<label>energy cell</label>
+		<labelShort>energy cell</labelShort>
+		<allowEmpty>true</allowEmpty>
+	</ModularWeapons2.ModularPartsMountDef>
+	
+	<ModularWeapons2.ModularPartsMountDef>
+		<defName>guy762_KotORMount_ecell_stunbaton</defName>
+		<label>energy cell</label>
+		<labelShort>energy cell</labelShort>
+		<allowEmpty>true</allowEmpty>
+	</ModularWeapons2.ModularPartsMountDef>
+	
+	<ModularWeapons2.ModularPartsMountDef>
+		<defName>guy762_KotORMount_ecell_electrostaff</defName>
+		<label>energy cell</label>
+		<labelShort>energy cell</labelShort>
+		<allowEmpty>true</allowEmpty>
+	</ModularWeapons2.ModularPartsMountDef>
+	
+	
+	
+	
 	
 
 	

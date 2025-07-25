@@ -407,4 +407,40 @@
 	</ModularWeapons2.ModularPartsDef>
 	
 	
+	
+	
+	
+	
+
+	
+	
+	<!-- enhanced vibration cell (not a tool)-->
+	
+	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartECell_vibration" ParentName="guy762_KotORModularPartBase">
+		<defName>guy762_KotORpartECell_vibration</defName>
+		<label>enhanced vibration cell</label>
+		<labelShort>enhanced vibration cell</labelShort>
+		<description>Enhanced energy cells can stabilize the blade, increasing damage.</description>
+		<attachedTo>guy762_KotORMount_ecell</attachedTo>
+		<effects>
+		
+			<statOffsets>
+				<Mass>0.2</Mass>
+				<MeleeWeapon_DamageMultiplier>0.4</MeleeWeapon_DamageMultiplier>
+			</statOffsets>
+			<equippedStatOffsets>
+				<MeleeHitChance>-0.2</MeleeHitChance>
+			</equippedStatOffsets>
+
+		</effects>
+		<costList>
+		  <guy762_ecellitem_vibration>1</guy762_ecellitem_vibration>
+		</costList>
+	</ModularWeapons2.ModularPartsDef>
+	
+	
+	
+	
+	
+	
 </Defs>
