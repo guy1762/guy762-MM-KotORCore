@@ -143,6 +143,7 @@
 		<deepLumpSizeRange>3~5</deepLumpSizeRange>
 		
 		<stuffProps>
+			<stuffAdjective>Cortosis</stuffAdjective>
 			<color>(54,41,66)</color>
 			<commonality>0</commonality>
 			<statFactors>
@@ -307,6 +308,7 @@
 			<BluntDamageMultiplier>1.3</BluntDamageMultiplier>
 		</statBases>
 		<stuffProps>
+			<stuffAdjective>Beskar</stuffAdjective>
 			<color>(190,200,210)</color>
 			<commonality>0</commonality>
 			<statFactors>
@@ -638,6 +640,7 @@
 			<BluntDamageMultiplier>1.2</BluntDamageMultiplier>
 		</statBases>
 		<stuffProps>
+			<stuffAdjective>Durasteel</stuffAdjective>
 			<color>(115,125,120)</color>
 			<commonality>0.75</commonality>
 			<statFactors>
@@ -921,6 +924,7 @@
 			<BluntDamageMultiplier>1</BluntDamageMultiplier>
 		</statBases>
 		<stuffProps>
+			<stuffAdjective>Bronzium</stuffAdjective>
 			<color>(220,175,80)</color>
 			<commonality>0.2</commonality>
 			<statFactors>
