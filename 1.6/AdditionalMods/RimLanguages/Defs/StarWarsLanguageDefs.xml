@@ -51,24 +51,24 @@
 					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_MandalorianTribe</li>
 					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_SithWarlord</li>
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_NewRepublic</li> -->
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_CivilRebels</li> -->
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_AggroRebels</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_NewRepublic</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_CivilRebels</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_AggroRebels</li> -->
 					
-					<li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ImpRemnant</li>
-					<li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Pentastar</li>
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ZsinjDominion</li> -->
+					<li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_ImpRemnant</li>
+					<li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_Pentastar</li>
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_ZsinjDominion</li> -->
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ZannConsortium</li> -->
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_BlackSun</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_ZannConsortium</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_BlackSun</li> -->
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_MandoClan</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_MandoClan</li> -->
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Militia</li> -->
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Civilians</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_Militia</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_Civilians</li> -->
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_LumiyaSith</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsPlayerFaction_LumiyaSith</li> -->
 				</factions>
 			</li>
 			<li>
@@ -93,22 +93,22 @@
 					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_SithWarlord</li>
 					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_HuttUpstart</li>
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_CivilRebels</li> -->
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_AggroRebels</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_CivilRebels</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_AggroRebels</li> -->
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ZsinjDominion</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_ZsinjDominion</li> -->
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ZannConsortium</li> -->
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_BlackSun</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_ZannConsortium</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_BlackSun</li> -->
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_HuttCartel</li> -->
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ViciousHutts</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_HuttCartel</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_ViciousHutts</li> -->
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_MandoClan</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_MandoClan</li> -->
 
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Civilians</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_Civilians</li> -->
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
 				</factions>
 			</li>
 			<li>
@@ -124,12 +124,12 @@
 					
 					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_SithEmpire</li>
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ZsinjDominion</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_ZsinjDominion</li> -->
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ZannConsortium</li> -->
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_BlackSun</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_ZannConsortium</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_BlackSun</li> -->
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
 				</factions>
 			</li>
 			<li>
@@ -149,15 +149,15 @@
 					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_SmugglerCrew</li>
 					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_HuttUpstart</li>
 
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_CivilRebels</li> -->
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_AggroRebels</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_CivilRebels</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_AggroRebels</li> -->
 
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_BlackSun</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_BlackSun</li> -->
 
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Militia</li> -->
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Civilians</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_Militia</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_Civilians</li> -->
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
 				</factions>
 			</li>
 			<li>
@@ -168,11 +168,11 @@
 
 					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_MandalorianTribe</li>
 
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ZannConsortium</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_ZannConsortium</li> -->
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_MandoClan</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_MandoClan</li> -->
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
 				</factions>
 			</li>
 			<li>
@@ -189,10 +189,10 @@
 
 					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_SithWarlord</li>
 					
-					<li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Pentastar</li>
+					<li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_Pentastar</li>
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_LumiyaSith</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsPlayerFaction_LumiyaSith</li> -->
 				</factions>
 			</li>
 			<li>
@@ -206,10 +206,10 @@
 					
 					<li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Czerka</li>
 					
-					<li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_ImpRemnant</li>
-					<li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsFaction_Pentastar</li>
+					<li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_ImpRemnant</li>
+					<li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsFaction_Pentastar</li>
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
 				</factions>
 			</li>
 			
@@ -222,7 +222,7 @@
 					
 					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_RepublicStrikeTeam</li>
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsPlayerFaction_Thrawn7thFleet</li> -->
 				</factions>
 			</li>
 			
@@ -237,7 +237,7 @@
 
 					<li MayRequire="guy762.KotORFactions">guy762_KotORPlayerFaction_SithWarlord</li>
 					
-					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_SWWarlordsPlayerFaction_LumiyaSith</li> -->
+					<!-- <li MayRequire="SWCP.guy762.RR.WarlordEmpire">guy762_SWWarlordsPlayerFaction_LumiyaSith</li> -->
 				</factions>
 			</li>
 		</factionDialects>

@@ -60,7 +60,7 @@
 		  <li>
 			<statOffsets>
 				<MeleeDamageFactor>0.4</MeleeDamageFactor>
-				<VEF_MassCarryCapacity>40</VEF_MassCarryCapacity>
+				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">40</VEF_MassCarryCapacity>
 				
 				<PainShockThreshold>0.3</PainShockThreshold>
 			</statOffsets>
@@ -668,7 +668,7 @@
 				<PainShockThreshold>0.2</PainShockThreshold>
 				
 				<MeleeDamageFactor>0.2</MeleeDamageFactor>
-				<VEF_MassCarryCapacity>20</VEF_MassCarryCapacity>
+				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">20</VEF_MassCarryCapacity>
 				
 				<SocialImpact>0.2</SocialImpact>
 				<ConversionPower MayRequire="Ludeon.RimWorld.Ideology">0.2</ConversionPower>
@@ -778,7 +778,7 @@
 			<statOffsets>
 				<PainShockThreshold>0.4</PainShockThreshold>
 				<MeleeDamageFactor>0.4</MeleeDamageFactor>
-				<VEF_MassCarryCapacity>40</VEF_MassCarryCapacity>
+				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">40</VEF_MassCarryCapacity>
 			</statOffsets>
 			<capMods>
 				<li>

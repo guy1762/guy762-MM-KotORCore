@@ -224,6 +224,21 @@
 	</ThingDef>
 	
 	
+	<ThingDef Name="guy762_glovelessclothingbase" ParentName="guy762_clothingbase" Abstract="True">
+		<apparel>
+			<bodyPartGroups Inherit="False">
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<!-- <li>Neck</li> -->
+				<li>Arms</li>
+				<!-- <li>Hands</li> -->
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+		</apparel>
+	</ThingDef>
+	
+	
 	<ThingDef Name="guy762_FullBodyClothingBase" ParentName="guy762_apparelmakeable" Abstract="True">
 		<statBases>
 			<Mass>0.5</Mass>
@@ -262,6 +277,9 @@
 			</recipeUsers>
 		</recipeMaker>
 	</ThingDef>
+	
+	
+	
 	
 	
 	

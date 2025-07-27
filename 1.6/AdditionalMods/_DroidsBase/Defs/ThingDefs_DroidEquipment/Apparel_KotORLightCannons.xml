@@ -46,6 +46,7 @@
       </bodyPartGroups>
 	  <tags>
 		<li>KotORLgtCannon_miningdroid</li>
+		<li>SWKotORSpecificDroidWeapon_MiningLaserCannon</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -149,6 +150,7 @@
       </bodyPartGroups>
 	  <tags>
 		<li>KotORLgtCannon_repeater</li>
+		<li>SWKotORSpecificDroidWeapon_HeavyRepeaterCannon</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -237,6 +239,7 @@
       </bodyPartGroups>
 	  <tags>
 		<li>KotORLgtCannon_artillery</li>
+		<li>SWKotORSpecificDroidWeapon_BlasterCannon</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -309,6 +312,7 @@
       </bodyPartGroups>
 	  <tags>
 		<li>KotORLgtCannon_repeater</li>
+		<li>SWKotORSpecificDroidWeapon_PulseCannon</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -381,6 +385,7 @@
       </bodyPartGroups>
 	  <tags>
 		<li>KotORLgtCannon_strong</li>
+		<li>SWKotORSpecificDroidWeapon_MassDriverCannon</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -453,6 +458,7 @@
       </bodyPartGroups>
 	  <tags>
 		<li>KotORLgtCannon_sniper</li>
+		<li>SWKotORSpecificDroidWeapon_RailgunCannon</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -565,6 +571,7 @@
       </bodyPartGroups>
 	  <tags>
 		<li>KotORLgtCannon_firefighter</li>
+		<li>SWKotORSpecificDroidWeapon_FirefoamCannon</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -670,6 +677,7 @@
       </bodyPartGroups>
 	  <tags>
 		<li>KotORLgtCannon_miningdroid</li>
+		<li>SWKotORSpecificDroidWeapon_SonicCannon</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -772,6 +780,7 @@
       </bodyPartGroups>
 	  <tags>
 		<li>KotORLgtCannon_flame</li>
+		<li>SWKotORSpecificDroidWeapon_FlameCannon</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -865,6 +874,7 @@
       </bodyPartGroups>
 	  <tags>
 		<li>KotORLgtCannon_ion</li>
+		<li>SWKotORSpecificDroidWeapon_IonCannon</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -958,6 +968,7 @@
       </bodyPartGroups>
 	  <tags>
 		<li>KotORLgtCannon_disruptor</li>
+		<li>SWKotORSpecificDroidWeapon_DisruptorCannon</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -1082,6 +1093,7 @@
 	  <tags>
 		<li>KotORLgtCannon_strong</li>
 		<li>KotORLgtCannon_antipersonnel</li>
+		<li>SWKotORSpecificDroidWeapon_HXMissileCannon</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -1193,6 +1205,7 @@
 	  <tags>
 		<li>KotORLgtCannon_strong</li>
 		<li>KotORLgtCannon_antipersonnel</li>
+		<li>SWKotORSpecificDroidWeapon_PlasmaMissileCannon</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -1304,6 +1317,7 @@
 	  <tags>
 		<li>KotORLgtCannon_strong</li>
 		<li>KotORLgtCannon_antiarmor</li>
+		<li>SWKotORSpecificDroidWeapon_IonMissileCannon</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -1411,6 +1425,7 @@
 	  <tags>
 		<li>KotORLgtCannon_strong</li>
 		<li>KotORLgtCannon_antiarmor</li>
+		<li>SWKotORSpecificDroidWeapon_BusterMissileCannon</li>
 	  </tags>
     </apparel>
 	<tradeTags>

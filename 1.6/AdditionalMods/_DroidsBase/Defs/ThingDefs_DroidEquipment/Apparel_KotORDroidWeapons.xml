@@ -46,6 +46,7 @@
 		<li>KotORDroidWeapon_holdout</li>
 		<li>KotORDroidWeapon_battledroid</li>
 		<li>KotORDroidWeapon_utilitydroid</li>
+		<li>SWKotORSpecificDroidWeapon_HoldoutBlaster</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -126,6 +127,7 @@
 		<li>KotORDroidWeapon_light_any</li>
 		<li>KotORDroidWeapon_battledroid</li>
 		<li>KotORDroidWeapon_wardroid</li>
+		<li>SWKotORSpecificDroidWeapon_TriShot</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -190,6 +192,7 @@
 		<li>KotORDroidWeapon_light_any</li>
 		<li>KotORDroidWeapon_battledroid</li>
 		<li>KotORDroidWeapon_krath</li>
+		<li>SWKotORSpecificDroidWeapon_PulseRepeater</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -277,6 +280,7 @@
 		<li>KotORDroidWeapon_light_any</li>
 		<li>KotORDroidWeapon_wardroid</li>
 		<li>KotORDroidWeapon_mid</li>
+		<li>SWKotORSpecificDroidWeapon_SonicBlaster</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -347,6 +351,7 @@
 		<li>KotORDroidWeapon_strong</li>
 		<li>KotORDroidWeapon_wardroid</li>
 		<li>KotORDroidWeapon_krath</li>
+		<li>SWKotORSpecificDroidWeapon_PlasmaRepeater</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -413,6 +418,7 @@
 		<li>KotORDroidWeapon_light_any</li>
 		<li>KotORDroidWeapon_strong</li>
 		<li>KotORDroidWeapon_asndroid</li>
+		<li>SWKotORSpecificDroidWeapon_Railgun</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -523,6 +529,7 @@
 		<li>KotORDroidWeapon_strong</li>
 		<li>KotORDroidWeapon_wardroid</li>
 		<li>KotORDroidWeapon_asndroid</li>
+		<li>SWKotORSpecificDroidWeapon_SeekerMissile</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -621,6 +628,7 @@
 		<li>KotORDroidWeapon_explosive</li>
 		<li>KotORDroidWeapon_strong</li>
 		<li>KotORDroidWeapon_wardroid</li>
+		<li>SWKotORSpecificDroidWeapon_MicroRocket</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -701,6 +709,7 @@
 		<li>KotORDroidWeapon_mid</li>
 		<li>KotORDroidWeapon_nonlethal</li>
 		<li>KotORDroidWeapon_asndroid</li>
+		<li>SWKotORSpecificDroidWeapon_StunBeam</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -811,6 +820,7 @@
 	  <tags>
 		<li>KotORDroidWeapon_hvy_any</li>
 		<li>KotORDroidWeapon_flamethrower</li>
+		<li>SWKotORSpecificDroidWeapon_Flamethrower</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -910,6 +920,7 @@
 		<li>KotORDroidWeapon_hvy_any</li>
 		<li>KotORDroidWeapon_strong</li>
 		<li>KotORDroidWeapon_ion</li>
+		<li>SWKotORSpecificDroidWeapon_IonBeam</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -999,6 +1010,7 @@
 		<li>KotORDroidWeapon_hvy_any</li>
 		<li>KotORDroidWeapon_strong</li>
 		<li>KotORDroidWeapon_asndroid</li>
+		<li>SWKotORSpecificDroidWeapon_RadiationBeam</li>
 	  </tags>
     </apparel>
 	<tradeTags>

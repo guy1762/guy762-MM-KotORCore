@@ -10,12 +10,12 @@
     <descriptionHyperlinks>
 		<HediffDef>guy762_StealthField_twomin</HediffDef>
 		
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_KX12APD</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_DevAD</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_HKseries</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_HK50series</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_HK51series</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_GOTO</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_KX12APD</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_DevAD</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_HKseries</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_HK50series</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_HK51series</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_GOTO</AlienRace.ThingDef_AlienRace>
 	</descriptionHyperlinks>
 	<graphicData>
       <texPath>Items/droidshield/droidcloak</texPath>
@@ -45,6 +45,7 @@
     <apparel>
 	  <tags>
 		<li>KotORDroidStealth</li>
+		<li>SWKotORSpecificDroidGadget_2minDroidStealthDevice</li>
 	  </tags>
     </apparel>
 	<tradeTags>

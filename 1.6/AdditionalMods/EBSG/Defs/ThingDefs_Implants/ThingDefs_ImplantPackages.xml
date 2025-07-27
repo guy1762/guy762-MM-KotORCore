@@ -323,7 +323,7 @@
 		  <li>
 			<statOffsets>
 				<MeleeDamageFactor>0.1</MeleeDamageFactor>
-				<VEF_MassCarryCapacity>10</VEF_MassCarryCapacity>
+				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">10</VEF_MassCarryCapacity>
 			</statOffsets>
 		  </li>
 		</stages>
@@ -476,7 +476,7 @@
 		  <li>
 			<statOffsets>
 				<MeleeDamageFactor>0.1</MeleeDamageFactor>
-				<VEF_MassCarryCapacity>10</VEF_MassCarryCapacity>
+				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">10</VEF_MassCarryCapacity>
 				<PainShockThreshold>0.1</PainShockThreshold>
 			</statOffsets>
 			<capMods>
@@ -740,7 +740,7 @@
 			<statOffsets>
 				<PainShockThreshold>0.1</PainShockThreshold>
 				<MeleeDamageFactor>0.1</MeleeDamageFactor>
-				<VEF_MassCarryCapacity>10</VEF_MassCarryCapacity>
+				<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">10</VEF_MassCarryCapacity>
 			</statOffsets>
 			<capMods>
 				<li>

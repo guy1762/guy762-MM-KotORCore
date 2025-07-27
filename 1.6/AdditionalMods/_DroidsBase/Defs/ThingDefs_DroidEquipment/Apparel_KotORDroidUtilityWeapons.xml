@@ -43,6 +43,7 @@
 	  <tags>
 		<li>KotORDroidWeapon_weak</li>
 		<li>KotORDroidWeapon_utilitydroid</li>
+		<li>SWKotORSpecificDroidWeapon_LaserCutter</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -149,6 +150,7 @@
 	  <tags>
 		<li>KotORDroidWeapon_weak</li>
 		<li>KotORDroidWeapon_utilitydroid</li>
+		<li>SWKotORSpecificDroidWeapon_ShockArm</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -255,6 +257,7 @@
 	  <tags>
 		<li>KotORDroidGadget_firefighter</li>
 		<li>KotORDroidGadget_repairdroid</li>
+		<li>SWKotORSpecificDroidWeapon_Firefoam</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -353,6 +356,7 @@
       </bodyPartGroups>
 	  <tags>
 		<li>KotORDroidGadget_medic</li>
+		<li>SWKotORSpecificDroidWeapon_KoltoSpray</li>
 	  </tags>
     </apparel>
 	<tradeTags>

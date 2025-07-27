@@ -56,6 +56,7 @@
 		<li>EVA</li>
 		<li>KotORDroidArmorT2</li>
 		<li>KotORDroidArmorT2_stuffable</li>
+		<li>SWCPSpecificDroidArmor_StuffableMedium</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -117,6 +118,7 @@
 		<li>KotORDroidArmorT2</li>
 		<li>KotORDroidArmorT2_weak</li>
 		<li>KotORDroidArmorT2_miningdroid</li>
+		<li>SWCPSpecificDroidArmor_EnvironmentMedium</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -176,6 +178,7 @@
 		<li>KotORDroidArmorT2</li>
 		<li>KotORDroidArmorT2_weak</li>
 		<li>KotORDroidArmorT2_gladiator</li>
+		<li>SWCPSpecificDroidArmor_DeshMedium</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -235,6 +238,7 @@
 		<li>KotORDroidArmorT2</li>
 		<li>KotORDroidArmorT2_mid</li>
 		<li>KotORDroidArmorT2_czerka</li>
+		<li>SWCPSpecificDroidArmor_CzerkaMedium</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -294,6 +298,7 @@
 		<li>KotORDroidArmorT2_mid</li>
 		<li>KotORDroidArmorT2_miningdroid</li>
 		<li>KotORDroidArmorT2_gladiator</li>
+		<li>SWCPSpecificDroidArmor_ImpactMedium</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -355,6 +360,7 @@
 		<li>KotORDroidArmorT2</li>
 		<li>KotORDroidArmorT2_strong</li>
 		<li>KotORDroidArmorT2_gladiator</li>
+		<li>SWCPSpecificDroidArmor_CompositeMedium</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -410,6 +416,7 @@
 	  <tags>
 		<li>EVA</li>
 		<li>KotORDroidArmorT2_strong</li>
+		<li>SWCPSpecificDroidArmor_QuadraniumMedium</li>
 	  </tags>
     </apparel>
 	<tradeTags>

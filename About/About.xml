@@ -129,6 +129,9 @@
 		<li>guy762.KotORWeapons</li>
 		<li>guy762.KotORDroids</li>
 		<li>guy762.KotORFactions</li>
+		<li>guy762.Lee.KotORPotF</li>
+		<li>SWCP.GCWVehicles</li>
+		<li>SWCP.guy762.RR.WarlordEmpire</li>
 	</loadBefore>
 	
 	<incompatibleWith>

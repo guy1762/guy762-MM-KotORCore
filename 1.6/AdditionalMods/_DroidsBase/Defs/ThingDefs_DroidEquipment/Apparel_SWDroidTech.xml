@@ -36,6 +36,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_computers</li>
+		<li>SWCPSpecificDroidTech_Plus2ResearchSoftware</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_software</li>
@@ -81,6 +82,7 @@
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_hacking</li>
 		<li>KotORDroidUpgrade_computers</li>
+		<li>SWCPSpecificDroidTech_Plus2HackingSoftware</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_software</li>
@@ -113,6 +115,7 @@
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_hacking</li>
 		<li>KotORDroidUpgrade_computers</li>
+		<li>SWCPSpecificDroidTech_Plus3HackingResearchSoftware</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_software</li>
@@ -124,7 +127,53 @@
     </tradeTags>
   </ThingDef>
   
-  
+  <!-- <ThingDef ParentName="guy762_DroidCraftableTech"> -->
+    <!-- <defName>guy762_DroidSoftware_exchange</defName> -->
+    <!-- <label>droid Exchange interface</label> -->
+    <!-- <description>This interface solves the problem of unknown access codes - if you can find it on the black market.</description> -->
+    <!-- <graphicData> -->
+      <!-- <texPath>Items/droidtech/droidsoftware_K</texPath> -->
+      <!-- <graphicClass>Graphic_Single</graphicClass> -->
+    <!-- </graphicData> -->
+    <!-- <statBases> -->
+      <!-- <Mass>0.5</Mass> -->
+	  <!-- <MarketValue>9200</MarketValue> -->
+	  
+	  <!-- <WorkToMake>16000</WorkToMake> -->
+    <!-- </statBases> -->
+	<!-- <equippedStatOffsets> -->
+		<!-- <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.6</HackingSpeed> -->
+		<!-- <ResearchSpeed>0.3</ResearchSpeed> -->
+	<!-- </equippedStatOffsets> -->
+	
+	<!-- <recipeMaker> -->
+		<!-- <researchPrerequisite>guy762_ResearchKotOR_exchange</researchPrerequisite> -->
+		<!-- <skillRequirements> -->
+			<!-- <Intellectual>14</Intellectual> -->
+		<!-- </skillRequirements> -->
+	<!-- </recipeMaker> -->
+	<!-- <costList> -->
+		<!-- <Plasteel>10</Plasteel> -->
+		<!-- <Gold>100</Gold> -->
+		<!-- <ComponentSpacer>6</ComponentSpacer> -->
+	<!-- </costList> -->
+	
+    <!-- <apparel> -->
+	  <!-- <tags> -->
+		<!-- <li>KotORDroidUpgrade_tech</li> -->
+		<!-- <li>KotORDroidUpgrade_hacking</li> -->
+		<!-- <li>KotORDroidUpgrade_computers</li> -->
+		<!-- <li>SWKotORSpecificDroidTech_ExchangePlus6Hacking3ResearchSoftware</li> -->
+	  <!-- </tags> -->
+	  <!-- <bodyPartGroups> -->
+        <!-- <li>guy762BG_Droid_Tech_software</li> -->
+      <!-- </bodyPartGroups> -->
+    <!-- </apparel> -->
+	<!-- <tradeTags> -->
+      <!-- <li>guy762TT_KotORElite</li> -->
+	  <!-- <li>guy762TT_DroidUpgrades_rare</li> -->
+    <!-- </tradeTags> -->
+  <!-- </ThingDef> -->
   
   
   
@@ -152,6 +201,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_repair</li>
+		<li>SWCPSpecificDroidTech_Plus4RepairSoftware</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_software</li>
@@ -184,6 +234,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus4AwarenessSoftware</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_software</li>
@@ -215,6 +266,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
 		<li>KotORDroidUpgrade_hk</li>
+		<li>SWCPSpecificDroidTech_Plus3AccuracySoftware</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_software</li>
@@ -254,6 +306,7 @@
     <apparel>
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus2Defense1AgilityHardware</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_hardware</li>
@@ -336,6 +389,7 @@
     <apparel>
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus1DefenseHardware</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_hardware</li>
@@ -388,6 +442,7 @@
     <apparel>
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus3AgilityHardware</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_hardware</li>
@@ -454,6 +509,7 @@
     <apparel>
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus3Agility3DexterityHardware</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_hardware</li>
@@ -486,6 +542,7 @@
     <apparel>
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus2Defense4AgilityHardware</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_hardware</li>
@@ -519,6 +576,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_computers</li>
+		<li>SWCPSpecificDroidTech_Plus10HackingHardware</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_hardware</li>
@@ -569,12 +627,12 @@
     <label>droid scavenger upgrade</label>
     <description>This upgrade enhances a droid's self-diagnostics and self-repair capability, allowing it to sustain itself by scavenging parts from the environment as well as its own non-critical systems.\n\nThis is an advanced piece of technology, and can only be equipped on the following droid models:</description>
     <descriptionHyperlinks>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_T3series</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_3Cseries</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_ITseries</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_KX12UPD</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_HKseries</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_GOTO</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_T3series</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_3Cseries</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_ITseries</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_KX12UPD</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_HKseries</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_GOTO</AlienRace.ThingDef_AlienRace>
 	</descriptionHyperlinks>
 	<graphicData>
       <texPath>Items/droidtech/droidhardware_C</texPath>
@@ -599,6 +657,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_repair</li>
+		<li>SWCPSpecificDroidTech_ScavengerRepairHardware</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_hardware</li>
@@ -617,7 +676,53 @@
   
   
   
-  
+  <!-- <ThingDef ParentName="guy762_DroidCraftableTech"> -->
+    <!-- <defName>guy762_DroidHardware_regen</defName> -->
+    <!-- <label>droid self-sustaining unit</label> -->
+    <!-- <description>By reprogramming its internal systems, this upgrade takes the droid's built-in diagnostic routines to the next step: self-repair. Through several, closely-guarded processes, the droid can actually sustain and repair itself, regardless of availability of repair kits.\n\nThis is a highly advanced piece of technology, and can only be equipped on the following droid models:</description> -->
+    <!-- <descriptionHyperlinks> -->
+		<!-- <AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_T3series</AlienRace.ThingDef_AlienRace> -->
+	<!-- </descriptionHyperlinks> -->
+	<!-- <graphicData> -->
+      <!-- <texPath>Items/droidtech/droidhardware_T3</texPath> -->
+      <!-- <graphicClass>Graphic_Single</graphicClass> -->
+    <!-- </graphicData> -->
+    <!-- <statBases> -->
+      <!-- <Mass>2</Mass> -->
+	  <!-- <MarketValue>6000</MarketValue> -->
+	  
+	  <!-- <WorkToMake>12000</WorkToMake> -->
+    <!-- </statBases> -->
+	<!-- <equippedStatOffsets> -->
+		<!-- <InjuryHealingFactor>0.3</InjuryHealingFactor> -->
+	<!-- </equippedStatOffsets> -->
+	
+	<!-- <recipeMaker> -->
+		<!-- <researchPrerequisite>guy762_ResearchKotOR_teethree</researchPrerequisite> -->
+		<!-- <skillRequirements> -->
+			<!-- <Intellectual>16</Intellectual> -->
+		<!-- </skillRequirements> -->
+	<!-- </recipeMaker> -->
+	<!-- <costList> -->
+		<!-- <Plasteel>20</Plasteel> -->
+		<!-- <ComponentIndustrial>10</ComponentIndustrial> -->
+		<!-- <ComponentSpacer>6</ComponentSpacer> -->
+	<!-- </costList> -->
+	
+    <!-- <apparel> -->
+	  <!-- <tags> -->
+		<!-- <li>KotORDroidUpgrade_T3M4</li> -->
+		<!-- <li>SWKotORSpecificDroidTech_T3M4RepairHardware</li> -->
+	  <!-- </tags> -->
+	  <!-- <bodyPartGroups> -->
+        <!-- <li>guy762BG_Droid_Tech_hardware</li> -->
+      <!-- </bodyPartGroups> -->
+    <!-- </apparel> -->
+	<!-- <tradeTags> -->
+      <!-- <li>guy762TT_KotORElite</li> -->
+	  <!-- <li>guy762TT_DroidUpgrades_rare</li> -->
+    <!-- </tradeTags> -->
+  <!-- </ThingDef> -->
   
   
 </Defs>

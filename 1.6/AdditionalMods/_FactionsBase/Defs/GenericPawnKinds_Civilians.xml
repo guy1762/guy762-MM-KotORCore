@@ -1,0 +1,1432 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<PawnKindDef Name="SWCPCivilian_Base" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
+		<nameMaker>guy762_PawnNamer_Bf2</nameMaker>
+
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<invNutrition>2.55</invNutrition>
+		<biocodeWeaponChance>0.05</biocodeWeaponChance>
+		<!--apparelTags>
+		  <li>KotORHeadband_gasmask</li>
+		</apparelTags-->
+		
+		<!--chemicalAddictionChance>0.125</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0.05</combatEnhancingDrugsChance>
+		<combatEnhancingDrugsCount>
+		  <min>0</min>
+		  <max>1</max>
+		</combatEnhancingDrugsCount-->
+		
+		<disallowedTraits>
+		  <li>Nudist</li>
+		</disallowedTraits>
+		<techHediffsDisallowTags>
+		  <li>PainCauser</li>
+		</techHediffsDisallowTags>
+		
+		<allowOldAgeInjuries>True</allowOldAgeInjuries>
+		<inventoryOptions>
+		  <subOptionsChooseOne>
+			<li>
+				<thingDef>guy762_KotORcredits</thingDef>
+				<countRange>0~100</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<useFactionXenotypes>true</useFactionXenotypes>
+		
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="SWCPCivilian_SlaveBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
+		<chemicalAddictionChance>0.05</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			  <li>Offworld</li>
+			  <li>Outlander</li>
+			  <li>Outsider</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<apparelIgnorePollution MayRequire="Ludeon.RimWorld.Biotech">true</apparelIgnorePollution>
+		<allowOldAgeInjuries>true</allowOldAgeInjuries>
+		<techHediffsTags>
+		  <li>Poor</li>
+		</techHediffsTags>
+		<requiredWorkTags>
+		  <li>Hauling</li>
+		</requiredWorkTags>
+		<invNutrition>1</invNutrition>
+		<invFoodDef>MealNutrientPaste</invFoodDef>
+		<initialWillRange>0~0</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	  </PawnKindDef>
+	  
+	  
+	  <PawnKindDef Name="SWCPCivilian_SlaveBase_AlienList" ParentName="SWCPCivilian_SlaveBase" Abstract="True">
+		<xenotypeSet>
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.05</Baseliner>
+			<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_aqualish>
+			<guy762_xenotype_bith MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_bith>
+			<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.08</guy762_xenotype_cathar>
+			<guy762_xenotype_chadrafan MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_chadrafan>
+			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_devaronian>
+			<guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_duros>
+			<guy762_xenotype_klatoonian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_klatoonian> <!--1.00-->
+			<guy762_xenotype_kubaz MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_kubaz>
+			<guy762_xenotype_mimbanese MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_mimbanese>
+			<guy762_xenotype_nautolan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_nautolan>
+			<guy762_xenotype_nikto MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_nikto>
+			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_quarren>
+			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
+			<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_snivvian>
+			<guy762_xenotype_sullustan MayRequire="guy762.StarWarsXenotypes">0.08</guy762_xenotype_sullustan>
+			<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.12</guy762_xenotype_togruta>
+			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.15</guy762_xenotype_twilek>
+			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_weequay>
+			<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_zabrak>
+			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="SWCPMercBase" Abstract="True">
+		<race>Human</race>
+		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>45</maxGenerationAge>
+		
+		<fleeHealthThresholdRange>0.5~0.6</fleeHealthThresholdRange>
+		
+		<chemicalAddictionChance>0.35</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		<invNutrition>1</invNutrition>
+		<invFoodDef>MealSurvivalPack</invFoodDef>
+		<biocodeWeaponChance>0.95</biocodeWeaponChance>
+		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<!--apparelTags>
+		  <li>KotORHeadband_gasmask</li>
+		</apparelTags-->
+		
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		  <li>Hauling</li>
+		</requiredWorkTags>
+		<disallowedTraits>
+		  <li>Nudist</li>
+		</disallowedTraits>
+
+		<inventoryOptions>
+		  <skipChance>0.5</skipChance>
+		  <subOptionsTakeAll>
+			<li>
+			  <thingDef>KOTOR_Deathstick</thingDef>
+			  <countRange>2~3</countRange>
+			</li>
+		  </subOptionsTakeAll>
+		</inventoryOptions>
+		
+		<xenotypeSet>
+		  <xenotypeChances>
+			<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.20</Baseliner>
+			<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_aqualish>
+			<guy762_xenotype_bith MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_bith>
+			<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_cathar>
+			<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_devaronian>
+			<guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.09</guy762_xenotype_duros>
+			<guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_falleen> <!--1.00 total-->
+			<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_iridonian>
+			<guy762_xenotype_klatoonian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_klatoonian>
+			<guy762_xenotype_nautolan MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_nautolan>
+			<guy762_xenotype_nikto MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_nikto>
+			<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_pantoran>
+			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_quarren>
+			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_rodian>
+			<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_snivvian>
+			<guy762_xenotype_sullustan MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_sullustan>
+			<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_togruta>
+			<guy762_xenotype_trandoshan MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_trandoshan>
+			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.14</guy762_xenotype_twilek>
+			<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_weequay>
+			<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.07</guy762_xenotype_zabrak>
+			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zeltron>
+		  </xenotypeChances>
+		</xenotypeSet>
+		
+	</PawnKindDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="SWCPCivilian_villager" ParentName="SWCPCivilian_Base">
+		<defName>SWCPCivilian_villager</defName>
+		<label>civilian</label>
+		<combatPower>25</combatPower>
+		
+		<itemQuality>Poor</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>0.2~2.0</gearHealthRange>
+		<apparelMoney>10~100</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORClothing_civilian_villager</li>
+		  <li>guy762PatchedTag_Broadwrap</li>
+		  <li>guy762PatchedTag_Flophat</li>
+		  <li>KotORAccessory_civilian</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>50~600</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Poor</li>
+		</techHediffsTags>
+		
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+		<disallowedTraits Inherit="False" />
+	  </PawnKindDef>
+	  
+	  
+	  
+	  <PawnKindDef Name="SWCPCivilian_prole" ParentName="SWCPCivilian_Base">
+		<defName>SWCPCivilian_prole</defName>
+		<label>civilian</label>
+		<combatPower>25</combatPower>
+		<itemQuality>Poor</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>0.2~2.0</gearHealthRange>
+		<apparelMoney>10~100</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORClothing_civilian_prole</li>
+		  <li>KotORAccessory_civilian</li>
+		  <li>guy762PatchedTag_Flophat</li>
+		  <li>KotORHeadband_bandana</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>KotORClothing_civilian_prole</requiredTag>
+			</li>
+		</specificApparelRequirements>
+		
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>50~600</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Poor</li>
+		  <li>Simple</li>
+		</techHediffsTags>
+		
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="SWCPCivilian_poortraveler" ParentName="SWCPCivilian_Base">
+		<defName>SWCPCivilian_poortraveler</defName>
+		<label>civilian</label>
+		<combatPower>25</combatPower>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_aqualish>
+				<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_cathar>
+				<guy762_xenotype_gand MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_gand>
+				<guy762_xenotype_ithorian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_ithorian>
+				<guy762_xenotype_kubaz MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_kubaz>
+				<guy762_xenotype_lasat MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_lasat>
+				<guy762_xenotype_mimbanese MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_mimbanese>
+				<guy762_xenotype_miraluka MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_miraluka>
+				<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_quarren>
+				<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.15</guy762_xenotype_rodian>
+				<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_snivvian>
+				<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_togruta>
+				<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.15</guy762_xenotype_twilek>
+				<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_weequay>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<itemQuality>Poor</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>0.75~1</gearHealthRange>
+		<apparelMoney>250~750</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORAccessory_civilian</li>
+		  <li>KotORAccessory_bigbackpack</li>
+		  <li>guy762PatchedTag_Flophat</li>
+		  <li>guy762PatchedTag_Shadecone</li>
+		  <li>SWCPSpecificApparelItem_KotOROnderonRobes</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Robes_onderon</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>100~250</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Simple</li>
+		</techHediffsTags>
+		
+		<inventoryOptions>
+		  <subOptionsChooseOne>
+			<li>
+				<thingDef>guy762_KotORcredits</thingDef>
+				<countRange>50~100</countRange>
+			</li>
+			<li>
+				<thingDef>Silver</thingDef>
+				<countRange>50~100</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="SWCPCivilian_mid" ParentName="SWCPCivilian_Base">
+		<defName>SWCPCivilian_mid</defName>
+		<label>civilian</label>
+		<combatPower>25</combatPower>
+		<itemQuality>Normal</itemQuality>
+		<isFighter>false</isFighter>
+		<apparelMoney>200~400</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORClothing_civilian_mid</li>
+		  <!--li>IndustrialBasic</li>
+		  <li>IndustrialAdvanced</li-->
+		  <li>KotORAccessory_richcivilian</li>
+		  <li>KotORAccessory_smallbackpack</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>KotORClothing_civilian_mid</requiredTag>
+			</li>
+		</specificApparelRequirements>
+		
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>50~600</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Simple</li>
+		  <li>ImplantEmpireCommon</li>
+		</techHediffsTags>
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="SWCPCivilian_bougie" ParentName="SWCPCivilian_Base">
+		<defName>SWCPCivilian_bougie</defName>
+		<label>civilian</label>
+		<combatPower>25</combatPower>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Baseliner>0.12</Baseliner>
+				<guy762_xenotype_arkanian MayRequire="guy762.StarWarsXenotypes">0.11</guy762_xenotype_arkanian>
+				<guy762_xenotype_bith MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_bith>
+				<guy762_xenotype_bothan MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_bothan>
+				<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_devaronian>
+				<guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_duros>
+				<guy762_xenotype_nautolan MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_nautolan>
+				<guy762_xenotype_selkath MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_selkath>
+				<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_snivvian>
+				<guy762_xenotype_sullustan MayRequire="guy762.StarWarsXenotypes">0.08</guy762_xenotype_sullustan>
+				<guy762_xenotype_togruta MayRequire="guy762.StarWarsXenotypes">0.08</guy762_xenotype_togruta>
+				<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.08</guy762_xenotype_zabrak>
+				<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.08</guy762_xenotype_zeltron>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<itemQuality>Good</itemQuality>
+		<isFighter>false</isFighter>
+		<apparelMoney>200~750</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORClothing_civilian_bougie</li>
+		  <li>KotORAccessory_richcivilian</li>
+		  <li>guy762PatchedTag_RoyalHats</li>
+		  <li>guy762PatchedTag_Cape</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>KotORClothing_civilian_bougie</requiredTag>
+			</li>
+		</specificApparelRequirements>
+		
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>5000~7500</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Advanced</li>
+		  <li>ImplantEmpireCommon</li>
+		  <li>ImplantEmpireRoyal</li>
+		</techHediffsTags>
+		
+		<inventoryOptions>
+		  <subOptionsChooseOne>
+			<li>
+				<thingDef>guy762_KotORcredits</thingDef>
+				<countRange>1000~10000</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="SWCPCivilian_exotictraveler" ParentName="SWCPCivilian_Base">
+		<defName>SWCPCivilian_exotictraveler</defName>
+		<label>civilian</label>
+		<combatPower>25</combatPower>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_aqualish>
+				<guy762_xenotype_echani MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_echani>
+				<guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_falleen>
+				<guy762_xenotype_ithorian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_ithorian>
+				<guy762_xenotype_keldor MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_keldor>
+				<guy762_xenotype_mirialan MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_mirialan>
+				<guy762_xenotype_moncal MayRequire="guy762.StarWarsXenotypes">0.15</guy762_xenotype_moncal>
+				<guy762_xenotype_nemoidian MayRequire="guy762.StarWarsXenotypes">0.15</guy762_xenotype_nemoidian>
+				<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_pantoran>
+				<guy762_xenotype_selkath MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_selkath>
+				<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_snivvian>
+				<guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_umbaran>
+				<guy762_xenotype_zygerrian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_zygerrian>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<itemQuality>Good</itemQuality>
+		<isFighter>false</isFighter>
+		<apparelMoney>1000~7500</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORAccessory_richcivilian</li>
+		  <li>RoyalRobe</li>
+		  <li>guy762PatchedTag_Sash</li>
+		  <li>SWCPSpecificApparelItem_KotOROnderonRobes</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Robes_onderon</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<colorGenerator Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<weight>10</weight>
+							<only>(200,210,210)</only> <!-- snow white -->
+						</li>
+						<li>
+							<weight>10</weight>
+							<only>(0,106,126)</only> <!-- hyperweave -->
+						</li>
+						<li>
+							<weight>10</weight>
+							<only>(174,219,228)</only> <!-- synthread -->
+						</li>
+						<li>
+							<weight>10</weight>
+							<only>(110,60,110)</only> <!-- purple -->
+						</li>
+						<li>
+							<weight>10</weight>
+							<only>(90,90,165)</only> <!-- royal blue -->
+						</li>
+						<li>
+							<weight>10</weight>
+							<only>(230,185,45)</only> <!-- republic yellow -->
+						</li>
+						<li>
+							<weight>10</weight>
+							<only>(180,60,60)</only> <!-- devilstrand red -->
+						</li>
+						<!--<li>
+							<weight>10</weight>
+							<only>(57,87,93)</only> eltex blue
+						</li>
+						<li>
+							<weight>10</weight>
+							<only>(51,27,49)</only> eltex purple
+						</li>-->
+					</options>
+				</colorGenerator>
+			</li>
+		</specificApparelRequirements>
+		
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>5000~7500</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Advanced</li>
+		  <li>ImplantEmpireCommon</li>
+		  <li>ImplantEmpireRoyal</li>
+		</techHediffsTags>
+		
+		<inventoryOptions>
+		  <subOptionsChooseOne>
+			<li>
+				<thingDef>guy762_KotORcredits</thingDef>
+				<countRange>500~5000</countRange>
+			</li>
+			<li>
+				<thingDef>Gold</thingDef>
+				<countRange>100~300</countRange>
+			</li>
+			<li>
+				<thingDef>Silver</thingDef>
+				<countRange>300~600</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	  </PawnKindDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  <PawnKindDef Name="SWCPCivilian_hooded" ParentName="SWCPCivilian_Base">
+		<defName>SWCPCivilian_hooded</defName>
+		<label>civilian</label>
+		<minGenerationAge>25</minGenerationAge>
+		<combatPower>25</combatPower>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<guy762_xenotype_gand MayRequire="guy762.StarWarsXenotypes">0.2</guy762_xenotype_gand>
+				<guy762_xenotype_kubaz MayRequire="guy762.StarWarsXenotypes">0.2</guy762_xenotype_kubaz>
+				<guy762_xenotype_miraluka MayRequire="guy762.StarWarsXenotypes">0.2</guy762_xenotype_miraluka>
+				<guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.2</guy762_xenotype_umbaran>
+				<guy762_xenotype_zygerrian MayRequire="guy762.StarWarsXenotypes">0.2</guy762_xenotype_zygerrian>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<itemQuality>Poor</itemQuality>
+		<isFighter>false</isFighter>
+		<gearHealthRange>0.2~2.0</gearHealthRange>
+		<apparelMoney>100~200</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORClothing_civilian_hooded</li>
+		</apparelTags>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>KotORClothing_civilian_hooded</requiredTag>
+				<colorGenerator Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<weight>10</weight>
+							<only>(130,125,105)</only>         <!-- khaki -->
+						</li>
+						<li>
+							<weight>10</weight>
+							<only>(125,100,75)</only>       <!--K2 padawan-->
+						</li>
+						<li>
+							<weight>10</weight>
+							<only>(90,85,65)</only> <!-- grease green -->
+						</li>
+						<li>
+							<weight>15</weight>
+							<only>(70,50,30)</only> <!-- brown -->
+						</li>
+						<li>
+							<weight>15</weight>
+							<only>(90,75,60)</only> <!-- patchleather -->
+						</li>
+					</options>
+				</colorGenerator>
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<requiredTag>KotORClothing_civilian_hooded</requiredTag>
+				<colorGenerator Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<weight>10</weight>
+							<only>(90,55,40)</only>         <!--K2 jedi knight-->
+						</li>
+						<li>
+							<weight>10</weight>
+							<only>(90,85,65)</only> <!-- grease green -->
+						</li>
+						<li>
+							<weight>15</weight>
+							<only>(70,50,30)</only> <!-- brown -->
+						</li>
+						<li>
+							<weight>15</weight>
+							<only>(90,75,60)</only> <!-- patchleather -->
+						</li>
+					</options>
+				</colorGenerator>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<requiredTag>KotORClothing_civilian_hooded</requiredTag>
+				<colorGenerator Class="ColorGenerator_Options">
+					<options>
+						<li>
+							<weight>10</weight>
+							<only>(90,55,40)</only>         <!--K2 jedi knight-->
+						</li>
+						<li>
+							<weight>10</weight>
+							<only>(90,85,65)</only> <!-- grease green -->
+						</li>
+						<li>
+							<weight>15</weight>
+							<only>(70,50,30)</only> <!-- brown -->
+						</li>
+						<li>
+							<weight>15</weight>
+							<only>(90,75,60)</only> <!-- patchleather -->
+						</li>
+					</options>
+				</colorGenerator>
+			</li>
+		</specificApparelRequirements>
+
+		<techHediffsChance>0.06</techHediffsChance>
+		<techHediffsMoney>50~600</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Poor</li>
+		</techHediffsTags>
+		
+		<initialWillRange>0~1</initialWillRange>
+		<initialResistanceRange>10~17</initialResistanceRange>
+	  </PawnKindDef>
+	  
+
+	  
+	 
+	  
+	  
+	  
+	  <PawnKindDef Name="SWCPCivilian_spacer" ParentName="SWCPCivilian_Base">
+		<defName>SWCPCivilian_spacer</defName>
+		<label>spacer</label>
+		<combatPower>50</combatPower>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>75</maxGenerationAge>
+		<xenotypeSet>
+			<xenotypeChances Inherit="False">
+				<Baseliner>0.3</Baseliner>
+				<guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.3</guy762_xenotype_duros>
+				<guy762_xenotype_sullustan MayRequire="guy762.StarWarsXenotypes">0.3</guy762_xenotype_sullustan>
+				<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.07</guy762_xenotype_rodian>
+				<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_twilek>
+				<guy762_xenotype_devaronian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_devaronian>
+				<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_zabrak>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<gearHealthRange>1.8~7</gearHealthRange>
+		<itemQuality>Normal</itemQuality>
+		<apparelMoney>9999</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORShield_basic</li>
+		  <li>KotOREquipment_tech</li>
+		  <li>KotORHeadband_tech</li>
+		  <li>KotORApparel_pilothelmet</li>
+		  <li>KotORAccessory_engi</li>
+		  <li>SWCPSpecificApparelItem_FlightVest</li>
+		  <li>SWCPSpecificApparelItem_DyeableFatigues</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Bodysuit_Dyeable</li>
+			<li>guy762_FlightVest</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>0.35</apparelAllowHeadgearChance>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<colorGenerator Class="ColorGenerator_Options">
+				  <options>
+					<li>
+					  <only>(255,250,245)</only> <!--white flight suit-->
+					</li>
+					<li>
+					  <only>(200,50,40)</only> <!-- red flight suit -->
+					</li>
+					<li>
+						<only>(240,210,70)</only> <!-- yellow flight suit -->
+					</li>
+					<li>
+						<only>(240,95,35)</only> <!-- orange flight suit -->
+					</li>
+				  </options>
+				</colorGenerator>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(255,250,245)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>100~1000</weaponMoney>
+		<weaponTags>
+		  <li>PM_spacer</li>
+		  <li>SWRanged_DL18pistol</li>
+		  <li>SWRanged_Model57pistol</li>
+		</weaponTags>
+		<biocodeWeaponChance>0.6</biocodeWeaponChance>
+		
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>4~12</range>
+		  </li>
+		  <li>
+			<skill>Intellectual</skill>
+			<range>10~16</range>
+		  </li>
+		</skills>
+		<inventoryOptions>
+		  <subOptionsChooseOne>
+			<li>
+				<thingDef>guy762_KotORcredits</thingDef>
+				<countRange>0~1000</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<requiredWorkTags>
+		  <li>Constructing</li>
+		  <li>Crafting</li>
+		  <li>ManualDumb</li>
+		</requiredWorkTags>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<isFighter>false</isFighter>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWCPCivilian_ugnaught" ParentName="SWCPCivilian_Base">
+		<defName>SWCPCivilian_ugnaught</defName>
+		<label>Ugnaught engineer</label>
+		<combatPower>15</combatPower>
+		<maxGenerationAge>65</maxGenerationAge>
+		<isFighter>false</isFighter>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<guy762_xenotype_ugnaught>999</guy762_xenotype_ugnaught>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<itemQuality>Normal</itemQuality>
+		<apparelMoney>2250~3250</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORUtility_engi</li>
+		  <li>KotORAccessory_engi</li>
+		  <li>SWCPSpecificApparelItem_DyeableFatigues</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_Bodysuit_Dyeable</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<colorGenerator Class="ColorGenerator_Options">
+				  <options>
+					<li>
+					  <only>(35,60,125)</only> <!-- saturated dark blue -->
+					</li>
+					<li>
+					  <only>(110,110,110)</only> <!-- medium grey -->
+					</li>
+				  </options>
+				</colorGenerator>
+			</li>
+		</specificApparelRequirements>
+		
+		<inventoryOptions>
+		  <skipChance>0</skipChance>
+		  <subOptionsChooseOne>
+			<!-- <li> -->
+				<!-- <thingDef>guy762_repairkit_adv</thingDef> -->
+				<!-- <countRange>1~3</countRange> -->
+			<!-- </li> -->
+			<li>
+				<thingDef>ComponentIndustrial</thingDef>
+				<countRange>1~3</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<requiredWorkTags>
+		  <li>Constructing</li>
+		  <li>ManualDumb</li>
+		  <li>Mining</li>
+		  <li>Crafting</li>
+		</requiredWorkTags>
+	</PawnKindDef>
+	
+	<!--jawas-->
+
+
+	<PawnKindDef Name="SWCPCivilian_jawa" ParentName="SWCPCivilian_Base">
+		<defName>SWCPCivilian_jawa</defName>
+		<label>Jawa scavenger</label>
+		<combatPower>15</combatPower>
+		<maxGenerationAge>55</maxGenerationAge>
+		<xenotypeSet>
+			<xenotypeChances>
+				<guy762_xenotype_jawa MayRequire="guy762.StarWarsXenotypes">999</guy762_xenotype_jawa>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<maxPerGroup>50</maxPerGroup>
+		
+		<gearHealthRange>1.8~7</gearHealthRange>
+		<itemQuality>Good</itemQuality>
+		<apparelMoney>2250~3250</apparelMoney>
+		<apparelTags Inherit="False">
+		  <li>KotORShield_weak</li>
+		  <li>KotORUtility_utilitygrenade</li>
+		  <li>KotOREquipment_tech</li>
+		  <li>KotORAccessory_engi</li>
+		  <li>KotORAccessory_civilian</li>
+		  <li>KotORAccessory_light</li>
+		  <li>SWCPSpecificApparelItem_TuskenRobes</li>
+		  <li>SWCPSpecificApparelItem_KotORJawaHood</li>
+		</apparelTags>
+		<apparelRequired>
+			<li>guy762_JawaHood</li>
+			<li>guy762_Robes_tusken</li>
+		</apparelRequired>
+		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(100,65,45)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(100,65,45)</color>
+			</li>
+		</specificApparelRequirements>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<weaponMoney>2000</weaponMoney>
+		<weaponTags>
+		  <li>SaV_jawa</li>
+		</weaponTags>
+		<disallowedTraits>
+		  <li>Brawler</li>
+		  <li>Nudist</li>
+		</disallowedTraits>
+		<biocodeWeaponChance>0.7</biocodeWeaponChance>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
+		<invFoodDef>Pemmican</invFoodDef>
+		<inventoryOptions>
+		  <skipChance>0</skipChance>
+		  <subOptionsChooseOne>
+			<!-- <li> -->
+				<!-- <thingDef>guy762_repairkit_adv</thingDef> -->
+				<!-- <countRange>1~3</countRange> -->
+			<!-- </li> -->
+			<li>
+				<thingDef>ComponentIndustrial</thingDef>
+				<countRange>1~3</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<requiredWorkTags>
+		  <li>Constructing</li>
+		  <li>Crafting</li>
+		</requiredWorkTags>
+	</PawnKindDef>
+	
+	
+	<PawnKindDef Name="SWCPCivilian_jawa_offworld" ParentName="SWCPCivilian_jawa">
+		<defName>SWCPCivilian_jawa_offworld</defName>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<color>(80,70,60)</color>
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(80,70,60)</color>
+			</li>
+		</specificApparelRequirements>
+		<weaponMoney>2000</weaponMoney>
+		<weaponTags>
+		  <li>SaV_jawa</li>
+		  <li>SaV_jawaheavy</li>
+		</weaponTags>
+		<modExtensions>
+		 <li Class="AddGeneForPK.PKAdditionalGenes">
+          <geneSets>
+            <li>
+              <isXenogene>true</isXenogene>
+              <chance>1</chance>
+              <geneDefs>
+                <li>guy762_Eyes_HugeRed</li>
+              </geneDefs>
+            </li>
+          </geneSets>
+		</li>
+      </modExtensions>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWCPCivilian_thug" ParentName="SWCPMercBase">
+		<defName>SWCPCivilian_thug</defName>
+		<label>thug</label>
+		<combatPower>35</combatPower>
+		<minGenerationAge>15</minGenerationAge>
+		<maxGenerationAge>25</maxGenerationAge>
+		<invNutrition>0</invNutrition>
+		
+		<gearHealthRange>0.2~0.6</gearHealthRange>
+		<itemQuality>Awful</itemQuality>
+		<apparelMoney>100~500</apparelMoney>
+		<apparelAllowHeadgearChance>0.8</apparelAllowHeadgearChance>
+		<apparelTags>
+		  <li>SaV_apparel_thug</li>
+		  <li>KotORAccessory_outlaw</li>
+		  <li>KotORHeadband_bandana</li>
+		</apparelTags>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<requiredTag>SaV_apparel_thug</requiredTag>
+			</li>
+		</specificApparelRequirements>
+		
+		<weaponMoney>200~2100</weaponMoney>
+		<biocodeWeaponChance>0</biocodeWeaponChance>
+		<weaponTags>
+		  <li>SaV_thug</li>
+		  <li>SWRanged_DL18pistol</li>
+		</weaponTags>
+		
+		<techHediffsMoney>50~150</techHediffsMoney>
+		<techHediffsTags>
+		  <li>Poor</li>
+		</techHediffsTags>
+		<techHediffsChance>0.15</techHediffsChance>
+		
+		<initialWillRange>0.2~1.6</initialWillRange>
+		<initialResistanceRange>3~7</initialResistanceRange>
+		<isFighter>true</isFighter>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	</PawnKindDef>
+	
+	
+	
+
+	
+	<PawnKindDef MayRequire="guy762.KotORFactions" Name="SWCPCivilian_cop" ParentName="SWCPCivilian_Base">
+		<defName>SWCPCivilian_cop</defName>
+		<label>civil security officer</label>
+		<combatPower>50</combatPower>
+		<maxGenerationAge>50</maxGenerationAge>
+		
+		<itemQuality>Good</itemQuality>
+		<apparelMoney>9999</apparelMoney>
+		<apparelTags>
+		  <li>KotOREquipment_basic</li>
+		  <li>SWKotORSpecificApparelItem_TSFOldRepublicTrooperHelmet</li>
+		  <li>SWKotORSpecificApparelItem_TSFOldRepublicTrooperArmor</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>guy762_RepArmor_TSF</li>	
+		   <li>guy762_RepHelmet_TSF</li>
+		</apparelRequired>
+		<apparelAllowHeadgearChance>0.75</apparelAllowHeadgearChance>
+		<weaponMoney>100~600</weaponMoney>
+		<weaponTags>
+		  <li>PM_closerange</li>
+		  <li>KotORStunBaton</li>
+		</weaponTags>
+		<biocodeWeaponChance>0.75</biocodeWeaponChance>
+		<skills>
+		  <li>
+			<skill>Shooting</skill>
+			<range>4~8</range>
+		  </li>
+		  <li>
+			<skill>Melee</skill>
+			<range>4~8</range>
+		  </li>
+		</skills>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<isFighter>true</isFighter>
+		<allowOldAgeInjuries>False</allowOldAgeInjuries>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+	  </PawnKindDef>
+	
+	
+	
+		<!-- work camp types -->
+	
+	<PawnKindDef Name="SWCPCivilian_hunter" ParentName="SWCPCivilian_villager">
+		<defName>SWCPCivilian_hunter</defName>
+		<label>hunter</label>
+		<combatPower>65</combatPower>
+		<weaponTags Inherit="False">
+		  <li>KotORWeapon_civhunter</li>
+		</weaponTags>
+		<weaponMoney>100~300</weaponMoney>
+		
+		<apparelTags>
+		  <li>SWCPSpecificApparelItem_CamoPoncho</li>
+		</apparelTags>
+		<apparelRequired>
+		  <li>Apparel_Tailcap</li>
+		  <li>guy762_Accessory_ponchoCamo</li>
+		</apparelRequired>
+		<skills>
+		  <li>
+			<skill>Animals</skill>
+			<range>4~12</range>
+		  </li>
+		</skills>
+		<backstoryFiltersOverride>
+		  <li>
+			<categoriesAdulthood>
+			  <li>Hunter</li>
+			</categoriesAdulthood>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SWCPCivilian_logger" ParentName="SWCPCivilian_villager">
+		<defName>SWCPCivilian_logger</defName>
+		<label>lumberjack</label>
+		<apparelTags>
+		  <li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+		</apparelTags>
+		<apparelRequired>
+		  <li>Apparel_Tailcap</li>
+		  <li>guy762_Accessory_suspendersA</li>
+		</apparelRequired>
+		<skills>
+		  <li>
+			<skill>Plants</skill>
+			<range>4~12</range>
+		  </li>
+		</skills>
+		<backstoryFiltersOverride>
+		  <li>
+			<categoriesAdulthood>
+			  <li>Logger</li>
+			</categoriesAdulthood>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SWCPCivilian_farmer" ParentName="SWCPCivilian_villager">
+		<defName>SWCPCivilian_farmer</defName>
+		<label>farmer</label>
+		<apparelTags>
+		  <li>guy762PatchedTag_Shadecone</li>
+		</apparelTags>
+		<apparelRequired>
+		  <li>Apparel_Shadecone</li>
+		</apparelRequired>
+		<skills>
+		  <li>
+			<skill>Plants</skill>
+			<range>4~12</range>
+		  </li>
+		</skills>
+		<techHediffsMoney>1000~1000</techHediffsMoney>
+		<techHediffsTags>
+		  <li>FieldHand</li>
+		</techHediffsTags>
+		<techHediffsChance>0.8</techHediffsChance>
+		<techHediffsMaxAmount>1</techHediffsMaxAmount>
+		<backstoryFiltersOverride>
+		  <li>
+			<categoriesAdulthood>
+			  <li>Farmer</li>
+			</categoriesAdulthood>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	<PawnKindDef Name="SWCPCivilian_miner" ParentName="SWCPCivilian_prole">
+		<defName>SWCPCivilian_miner</defName>
+		<label>miner</label>
+		<combatPower>55</combatPower>
+		<weaponTags Inherit="False">
+		  <li>KotORRanged_mininglaser</li>
+		</weaponTags>
+		<weaponMoney>150~200</weaponMoney>
+		<apparelTags>
+		  <li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+		</apparelTags>
+		<apparelRequired>
+		  <li>guy762_Accessory_suspendersA</li>
+		  <li>Apparel_SimpleHelmet</li>
+		</apparelRequired>
+		<skills>
+		  <li>
+			<skill>Mining</skill>
+			<range>4~12</range>
+		  </li>
+		</skills>
+		
+		<techHediffsMoney>1000~1000</techHediffsMoney>
+		<techHediffsTags>
+		  <li>DrillArm</li>
+		</techHediffsTags>
+		<techHediffsChance>0.8</techHediffsChance>
+		<techHediffsMaxAmount>1</techHediffsMaxAmount>
+		<backstoryFiltersOverride>
+		  <li>
+			<categoriesAdulthood>
+			  <li>Miner</li>
+			</categoriesAdulthood>
+		  </li>
+		</backstoryFiltersOverride>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<PawnKindDef Name="SWCPCivilian_constructionworker" ParentName="SWCPCivilian_prole">
+		<defName>SWCPCivilian_constructionworker</defName>
+		<label>construction worker</label>
+		<maxGenerationAge>55</maxGenerationAge>
+		<allowOldAgeInjuries>false</allowOldAgeInjuries>
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Baseliner MayRequire="Ludeon.RimWorld.Biotech">0.05</Baseliner>
+				<guy762_xenotype_aqualish MayRequire="guy762.StarWarsXenotypes">0.07</guy762_xenotype_aqualish>
+				<guy762_xenotype_duros MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_duros>
+				<guy762_xenotype_feeorin MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_feeorin>
+				<guy762_xenotype_gamorrean MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_gamorrean>
+				<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_iridonian>
+				<guy762_xenotype_klatoonian MayRequire="guy762.StarWarsXenotypes">0.20</guy762_xenotype_klatoonian>
+				<guy762_xenotype_lasat MayRequire="guy762.StarWarsXenotypes">0.03</guy762_xenotype_lasat>
+				<guy762_xenotype_nikto MayRequire="guy762.StarWarsXenotypes">0.15</guy762_xenotype_nikto>
+				<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_rodian>
+				<guy762_xenotype_snivvian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_snivvian>
+				<guy762_xenotype_trandoshan MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_trandoshan>
+				<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_twilek>
+				<guy762_xenotype_weequay MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_weequay>
+				<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_zabrak>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<apparelTags Inherit="False">
+		  <li>KotORUtility_engi</li>
+		  <li>KotORAccessory_engi</li>
+		  <li>SWCPSpecificApparelItem_DyeableFatigues</li>
+		  <li>SWCPSpecificApparelItem_EngineerSuspenders</li>
+		  <li>SWCPSpecificApparelItem_ScoutVest</li>
+		</apparelTags>
+		<apparelRequired>
+		  <li>guy762_Accessory_suspendersB</li>
+		  <li>Apparel_SimpleHelmet</li>
+		  <li>guy762_Bodysuit_Dyeable</li>
+		  <li>guy762_Jacket_scout</li>
+		</apparelRequired>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<stuff>Plasteel</stuff>
+				<color>(235,230,15)</color> <!-- highlighter -->
+			</li>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<color>(130,125,140)</color> <!-- bley -->
+			</li>
+			<li>
+				<apparelLayer>Middle</apparelLayer>
+				<color>(235,230,15)</color> <!-- highlighter -->
+			</li>
+			<li>
+				<apparelLayer>OnSkin</apparelLayer>
+				<color>(220,220,220)</color>
+			</li>
+		</specificApparelRequirements>
+		
+		<skills>
+		  <li>
+			<skill>Construction</skill>
+			<range>8~14</range>
+		  </li>
+		</skills>
+		<modExtensions Inherit="False">
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+			  <whitelist>
+			  </whitelist>
+			  <blacklist>
+				<li>Thin</li>
+				<li>Baby</li>
+				<li>Child</li>
+			  </blacklist>
+			  <priority>
+				<!--When violates the black/whitelist, selected from these-->
+			  </priority>
+			  <!--Align body gender to pawn's gender (default: True)-->
+			  <checkGender>True</checkGender>
+			</li>
+		</modExtensions>
+		
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+	</PawnKindDef>
+	
+	
+	
+	
+	
+	
+	
+
+	
+	
+	
+	
+	<PawnKindDef Name="SWCPCivilian_SlaveEntertainer" ParentName="SlaveBase">
+		<defName>SWCPCivilian_SlaveEntertainer</defName>
+		<label>slave</label>
+		<minGenerationAge>18</minGenerationAge>
+		<maxGenerationAge>25</maxGenerationAge>
+		<combatPower>25</combatPower>
+		<itemQuality>Good</itemQuality>
+		<apparelMoney>0~0</apparelMoney>
+		<gearHealthRange>1</gearHealthRange>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>Tribal</li>
+			<li>SaV_slavedancer</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li MayRequire="lumi.slaveoutfit">Apparel_SlaveBikini_Old</li>	
+		   <li>Apparel_Collar</li>
+		</apparelRequired>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<stuff>Gold</stuff>
+			</li>
+		</specificApparelRequirements>
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_cathar>
+			<guy762_xenotype_mirialan MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_mirialan>
+			<guy762_xenotype_nelvaanian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_nelvaanian>
+			<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_pantoran>
+			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_quarren>
+			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_rodian>
+			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.50</guy762_xenotype_twilek>
+			<guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_umbaran>
+			<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_zabrak>
+			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.25</guy762_xenotype_zeltron>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<disallowedTraits Inherit="False">
+		  <li>CreepyBreathing</li>
+		</disallowedTraits>
+		<disallowedTraitsWithDegree>
+			<Beauty>-1</Beauty>
+			<Beauty>-2</Beauty>
+		</disallowedTraitsWithDegree>
+		<humanPregnancyChance>0.1</humanPregnancyChance>
+	</PawnKindDef>
+	
+	
+	
+	<PawnKindDef Name="SWCPCivilian_slavelaborer" ParentName="SWCPCivilian_SlaveBase_AlienList">
+		<defName>SWCPCivilian_slavelaborer</defName>
+		<label>slave</label>
+		<combatPower>20</combatPower>
+		<itemQuality>Awful</itemQuality>
+		<gearHealthRange>0.2~0.8</gearHealthRange>
+		<apparelMoney>0~0</apparelMoney>
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<apparelTags>
+			<li>czkera_slave</li>
+			<li>SWCPSpecificApparelItem_RusticClothing</li>
+		</apparelTags>
+		<apparelRequired>
+		   <li>Apparel_BodyStrap</li>	
+		   <li>Apparel_Collar</li>
+		   <li>guy762_Clothing_scumII</li>
+		</apparelRequired>
+		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
+		<specificApparelRequirements>
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<stuff>Leather_Plain</stuff>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<stuff>Steel</stuff>
+			</li>
+		</specificApparelRequirements>
+		<requiredWorkTags>
+		   <li>Firefighting</li>
+		   <li>ManualDumb</li>
+		   <li>Mining</li>
+		   <li>Hauling</li>
+		   <li>PlantWork</li>
+		</requiredWorkTags>
+	  </PawnKindDef>
+	
+
+	
+	<PawnKindDef Name="SWCPCivilian_SlaveFurry" ParentName="SWCPCivilian_slavelaborer">
+		<defName>SWCPCivilian_SlaveFurry</defName>
+		<combatPower>40</combatPower>
+		<xenotypeSet Inherit="False">
+		  <xenotypeChances>
+			<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.20</guy762_xenotype_cathar>
+			<guy762_xenotype_lasat MayRequire="guy762.StarWarsXenotypes">0.20</guy762_xenotype_lasat>
+			<guy762_xenotype_nelvaanian MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_nelvaanian>
+			<guy762_xenotype_wookiee MayRequire="guy762.StarWarsXenotypes">0.50</guy762_xenotype_wookiee>
+		  </xenotypeChances>
+		</xenotypeSet>
+		<apparelRequired Inherit="False">
+		   <li>Apparel_BodyStrap</li>	
+		   <li>Apparel_Collar</li>
+		</apparelRequired>
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		<specificApparelRequirements Inherit="False">
+			<li>
+				<apparelLayer>Shell</apparelLayer>
+				<stuff>KOTOR_FabricArmorweave</stuff>
+			</li>
+			<li>
+				<apparelLayer>Overhead</apparelLayer>
+				<stuff>KOTOR_AlloyDurasteel</stuff>
+			</li>
+		</specificApparelRequirements>
+	</PawnKindDef>
+  
+
+  
+
+
+ </Defs>

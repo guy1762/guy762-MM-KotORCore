@@ -46,7 +46,7 @@
 		  <equippedStatOffsets>
 			<PainShockThreshold>0.1</PainShockThreshold>
 			<MeleeDamageFactor>0.2</MeleeDamageFactor>
-			<VEF_MassCarryCapacity>20</VEF_MassCarryCapacity>
+			<VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">20</VEF_MassCarryCapacity>
 		  </equippedStatOffsets>
 		  
 		</effects>
@@ -155,7 +155,7 @@
 	
 	
 	
-	<ModularWeapons2.ModularPartsDef Name="guy762_KotORpartOverlay_pockets" ParentName="guy762_KotORModularPartBase">
+	<ModularWeapons2.ModularPartsDef  MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Name="guy762_KotORpartOverlay_pockets" ParentName="guy762_KotORModularPartBase">
 		<defName>guy762_KotORpartOverlay_pockets</defName>
 		<label>integrated pockets</label>
 		<labelShort>integrated pockets</labelShort>

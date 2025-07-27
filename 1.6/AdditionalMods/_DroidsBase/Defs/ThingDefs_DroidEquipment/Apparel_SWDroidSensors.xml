@@ -41,6 +41,7 @@
     <apparel>
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus1Accuracy2AwarenessSensor</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -113,6 +114,7 @@
     <apparel>
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus1Dodge3AwarenessSensor</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -201,6 +203,7 @@
     <apparel>
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus2Accuracy2DefenseSensor</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -260,6 +263,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_repair</li>
+		<li>SWCPSpecificDroidTech_Plus4RepairSensor</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -302,6 +306,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_computers</li>
+		<li>SWCPSpecificDroidTech_Plus5Research2LearningSensor</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -383,6 +388,7 @@
     <apparel>
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_EMPResistanceSensor</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -424,6 +430,7 @@
     <apparel>
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus3Accuracy2Dexterity2AwarenessSensor</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -497,6 +504,7 @@
     <apparel>
 	  <tags>
 		<li>KotORDroidUpgrade_tech</li>
+		<li>SWCPSpecificDroidTech_Plus5AwarenessSensor</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -570,6 +578,7 @@
     <apparel>
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus2Accuracy8AwarenessSensor</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -626,18 +635,18 @@
     <descriptionHyperlinks>
 		<HediffDef>guy762_SensorHediff_warfare</HediffDef>
 		
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_T3series</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_KX12APD</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_DevAD</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_SentWD</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_ADMkI</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_ADMkI_sf</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_ADMkIV</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_ADMkIV_sith</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_HKseries</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_HK50series</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_HK51series</AlienRace.ThingDef_AlienRace>
-		<AlienRace.ThingDef_AlienRace>guy762_DroidRace_GOTO</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_T3series</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_KX12APD</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_DevAD</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_SentWD</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_ADMkI</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_ADMkI_sf</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_ADMkIV</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_ADMkIV_sith</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_HKseries</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_HK50series</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_HK51series</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_GOTO</AlienRace.ThingDef_AlienRace>
 	</descriptionHyperlinks>
 	<graphicData>
       <texPath>Items/droidtech/droidsensor_F</texPath>
@@ -656,6 +665,7 @@
     <apparel>
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus3Accuracy2Agility2DefenseSensor</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>

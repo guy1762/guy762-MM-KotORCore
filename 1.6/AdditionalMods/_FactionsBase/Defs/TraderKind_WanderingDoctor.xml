@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <TraderKindDef>
+    <defName>guy762_TraderKind_WanderingDoctor</defName>
+    <label>wandering doctor</label>
+    <orbital>false</orbital>
+	<!--faction>ScumAndVillainy</faction-->
+    <commonalityMultFromPopulationIntent>
+      <points>
+        <li>(0.2, 0)</li>
+        <li>(1,   1)</li>
+        <li>(2,   3)</li>
+      </points>
+    </commonalityMultFromPopulationIntent>
+	<modExtensions>
+		<!-- <li MayRequire="Rick.FCP.Core.Tools" Class="FalloutCurrencies_NonReplacement.CurrencyReplacement"> -->
+			<!-- <currency>guy762_KotORcredits</currency> -->
+		<!-- </li> -->
+		<li Class="SWCP.Currencies.CurrencyReplacement">
+			<currency>guy762_KotORcredits</currency>
+		</li>
+	</modExtensions>
+    <stockGenerators>
+
+      <!-- CURRENCY -->
+	  
+	  <li Class="StockGenerator_SingleDef">
+		<thingDef>guy762_KotORcredits</thingDef>
+		<countRange>2500~5000</countRange>
+	  </li>
+	  <!--li Class="StockGenerator_BuyTradeTag">
+		<tag>guy762TT_credits</tag>
+	  </li-->
+	  
+	  
+	  
+	  <!-- Resources -->
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_kolto</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Neutroamine</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+
+	  
+	  
+	  <!-- Medicine/Drugs -->
+
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_SpacerMedKit</thingDef>
+        <countRange>50~75</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORMedicine</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>10~30</countRange>
+		<excludedThingDefs>
+          <li>KOTOR_SpacerMedKit</li>
+          <li>KOTOR_kolto</li>
+          <!--li MayRequire="guy762.KotORDroids">guy762_DroidGadget_kolto</li-->
+        </excludedThingDefs>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORMedpac</tradeTag>
+        <thingDefCountRange>3~4</thingDefCountRange>
+        <countRange>100~200</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORStims</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>16~32</countRange>
+      </li>
+	  
+	  
+	  <!-- Implants -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>TechHediff</tradeTag>
+        <thingDefCountRange>4~8</thingDefCountRange>
+        <countRange>1~6</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_implants_basic</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_implants_adv</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+	  
+	  
+
+      
+      
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+
+    </stockGenerators>
+  </TraderKindDef>
+  
+  
+</Defs>

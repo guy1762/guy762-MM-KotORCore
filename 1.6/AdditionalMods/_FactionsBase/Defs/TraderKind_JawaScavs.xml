@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <TraderKindDef>
+    <defName>guy762_TraderKind_JawaScavs</defName>
+    <label>Jawa scavengers</label>
+    <orbital>false</orbital>
+	<!-- <requestable>false</requestable> -->
+	<!--faction>guy762_KotORFaction_Exchange</faction>
+    <permitRequiredForTrading>TradeOrbital</permitRequiredForTrading-->
+    <commonality>0.5</commonality>
+	
+	<modExtensions>
+		<!-- <li MayRequire="Rick.FCP.Core.Tools" Class="FalloutCurrencies_NonReplacement.CurrencyReplacement"> -->
+			<!-- <currency>Silver</currency> -->
+		<!-- </li> -->
+		<li Class="SWCP.Currencies.CurrencyReplacement">
+			<currency>Silver</currency>
+		</li>
+	</modExtensions>
+    <stockGenerators>
+
+      <!-- CURRENCY -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>5000~10000</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>500~2500</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_SingleDef">
+		<thingDef>guy762_KotORcredits</thingDef>
+		<countRange>5000~10000</countRange>
+	  </li>
+	  <li Class="StockGenerator_BuyTradeTag">
+		<tag>guy762TT_credits</tag>
+	  </li>
+	  
+	  
+	  
+	  
+	  
+	  
+	  <!-- droids -->
+		
+		<li MayRequire="guy762.KotORDroids" Class="ArtificialBeings.StockGenerator_Colonists">
+			<countRange>8~12</countRange>
+			<pawnKindDefs>
+				<li>KotORDroidColonist_3CUD</li>
+				<li>KotORDroidColonist_R8009UD</li>
+				<li>KotORDroidColonist_GE3LD</li>
+				<li>KotORDroidColonist_KX12UPD</li>
+			</pawnKindDefs>
+		</li>
+		
+		<li MayRequire="guy762.KotORDroids" Class="ArtificialBeings.StockGenerator_Colonists">
+			<countRange>5~10</countRange>
+			<pawnKindDefs>
+				<li>KotORDroidColonist_KM1MD</li>
+				<li>KotORDroidColonist_DevWD</li>
+				<li>KotORDroidColonist_MPDMkI</li>
+			</pawnKindDefs>
+		</li>
+		
+		<li MayRequire="guy762.KotORDroids" Class="ArtificialBeings.StockGenerator_Colonists">
+			<countRange>2~8</countRange>
+			<pawnKindDefs>
+				<li>KotORDroidColonist_GE3PD</li>
+				<li>KotORDroidColonist_KM1HMD</li>
+				<li>KotORDroidColonist_SentWD</li>
+			</pawnKindDefs>
+		</li>
+		
+		
+		<li MayRequire="guy762.KotORDroids" Class="ArtificialBeings.StockGenerator_Colonists">
+			<countRange>0~1</countRange>
+			<pawnKindDefs>
+				<li>KotORDroidColonist_T3UD</li>
+				<li>KotORDroidColonist_ITUD</li>
+				<li>KotORDroidColonist_ADMkI</li>
+				<li>KotORDroidColonist_DevAD</li>
+			</pawnKindDefs>
+		</li>
+		
+
+		
+	   
+	   
+	   
+	  <!-- Resources -->
+		
+	  
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentIndustrial</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>ComponentSpacer</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_UltraComponent</thingDef>
+        <countRange>10~25</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>TechprofSubpersonaCore</thingDef>
+        <countRange>5~10</countRange>
+      </li>
+
+	  
+	  <!-- ABF stuff -->
+	  
+		<li MayRequire="Killathon.ArtificialBeings.SynCore" Class="StockGenerator_SingleDef">
+			<thingDef>ABF_Thing_Synstruct_Enervoir</thingDef>
+			<countRange>5~10</countRange>
+		  </li>
+		
+		
+		<li MayRequire="Killathon.ArtificialBeings.SynCore" Class="StockGenerator_SingleDef">
+			<thingDef>ABF_Thing_Synstruct_CoolantPack</thingDef>
+			<countRange>20~100</countRange>
+		</li>
+		<li MayRequire="Killathon.ArtificialBeings.SynCore" Class="StockGenerator_SingleDef">
+			<thingDef>ABF_Thing_Synstruct_LubricantPack</thingDef>
+			<countRange>40~200</countRange>
+		</li>
+		<li MayRequire="Killathon.ArtificialBeings.SynCore" Class="StockGenerator_SingleDef">
+			<thingDef>ABF_Thing_Synstruct_PartPack</thingDef>
+			<countRange>8~40</countRange>
+		</li>
+		<li MayRequire="Killathon.ArtificialBeings.SynCore" Class="StockGenerator_SingleDef">
+			<thingDef>ABF_Thing_Synstruct_RepairStimMinor</thingDef>
+			<countRange>20~80</countRange>
+		</li>
+		<li MayRequire="Killathon.ArtificialBeings.SynCore" Class="StockGenerator_SingleDef">
+			<thingDef>ABF_Thing_Synstruct_RepairStim</thingDef>
+			<countRange>5~20</countRange>
+		</li>
+		<li MayRequire="Killathon.ArtificialBeings.SynCore" Class="StockGenerator_SingleDef">
+			<thingDef>ABF_Thing_Synstruct_RepairStimUltra</thingDef>
+			<countRange>5~30</countRange>
+		</li>
+	  
+
+	  <!-- droid apparel -->
+	  
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_DroidArmor</tradeTag>
+        <thingDefCountRange>8~10</thingDefCountRange>
+        <countRange>1~3</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_DroidUpgrades</tradeTag>
+        <thingDefCountRange>8~10</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_DroidWeapons_utility</tradeTag>
+        <thingDefCountRange>4~6</thingDefCountRange>
+        <countRange>1~3</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_DroidWeapons_light</tradeTag>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>0~2</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_DroidWeapons_heavy</tradeTag>
+        <thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_DroidShields</tradeTag>
+        <thingDefCountRange>5~10</thingDefCountRange>
+        <countRange>1~3</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_DroidConsumables</tradeTag>
+        <thingDefCountRange>6~8</thingDefCountRange>
+        <countRange>5~10</countRange>
+      </li>
+	  
+	  
+	  
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_LightCannons</tradeTag>
+        <thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_HeavyShields</tradeTag>
+        <thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+	  
+	  
+	  
+	  <!-- Equipment -->
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotOREquipment_hitech</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotOREquipment_apparel</tradeTag>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotOREquipment_consumables</tradeTag>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>2~8</countRange>
+      </li>
+
+	  
+	  
+	  
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORArmor_powered</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>2~4</countRange>
+      </li>
+	  
+	  
+	  
+	  
+	  <!-- Upgrades -->
+	  
+      <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_weaponmod_basic</tradeTag>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>1~3</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_weaponmod_adv</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_weaponmod_rare</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_armormod_basic</tradeTag>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>1~3</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_armormod_adv</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_sabermod_basic</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_sabermod_adv</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+	  
+	  
+	  
+	  <!-- Implants -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>TechHediff</tradeTag>
+        <thingDefCountRange>4~8</thingDefCountRange>
+        <countRange>1~6</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>ImplantEmpireCommon</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>ImplantEmpireRoyal</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_implants_basic</tradeTag>
+        <thingDefCountRange>4~8</thingDefCountRange>
+        <countRange>1~4</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_implants_adv</tradeTag>
+        <thingDefCountRange>2~4</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_implants_rare</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_implants_DPkg</tradeTag>
+        <thingDefCountRange>0~1</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+      
+      <!-- Books -->
+
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Schematic</thingDef>
+        <countRange>2~4</countRange>
+      </li>
+	  
+	  
+	  
+	  
+	  
+	  <!-- Buildings -->
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>Television</tradeTag>
+        <thingDefCountRange>1~3</thingDefCountRange>
+        <countRange>6~8</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Telescope</thingDef>
+        <countRange>3~4</countRange>
+      </li>
+	  
+	  <li MayRequire="guy762.KotORWeapons" Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORWorkbench</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  
+
+      
+      
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+	  <li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
+
+    </stockGenerators>
+  </TraderKindDef>
+  
+  
+</Defs>

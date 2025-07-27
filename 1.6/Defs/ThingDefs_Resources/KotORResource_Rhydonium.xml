@@ -667,7 +667,7 @@
 
 
 
-	<!-- Plasma Core ================================================================ -->
+	<!-- Rhydonium Reactors ================================================================ -->
 	<ThingDef ParentName="BuildingBase">
 		<defName>KOTOR_ReactorRhydonium_small</defName>
 		<label>Rhydonium reactor (small)</label>
@@ -678,7 +678,7 @@
 		<graphicData>
 			<texPath>ResourceSys_Rhydonium/RhydoniumReactor_small</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<drawSize>(2,2)</drawSize>
+			<drawSize>(3,3)</drawSize>
 			<shadowData>
 				<volume>(1.25, 0.5, 0.5)</volume>
 				<offset>(0,0,-0.25)</offset>
@@ -737,6 +737,110 @@
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Explosive">
 				<explosiveRadius>5</explosiveRadius>
+				<explosiveExpandPerFuel>1.25</explosiveExpandPerFuel>
+				<explosiveDamageType>Flame</explosiveDamageType>
+				<destroyThingOnExplosionSize>2</destroyThingOnExplosionSize>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+				<wickTicks>70~150</wickTicks>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<uiOrder>2100</uiOrder>
+		<constructEffect>ConstructMetal</constructEffect>
+		<researchPrerequisites>
+			<li>KOTOR_Research_FuelProcessing</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>	
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>KOTOR_ReactorRhydonium_medium</defName>
+		<label>Rhydonium reactor (medium)</label>
+		<description>Produces large amounts of power by igniting motes of the volatile substance Rhydonium (extracted from Rhydonium fuel). Units like these are commonly employed in small transport ships, military bases, and some municipal power plants.</description>
+		<!--description>Produces large amounts of power by igniting motes of the volatile substance Rhydonium (extracted from Rhydonium fuel). This is essentially a scaled-down version of the Kesselii-Adec Hyperdrive Fusion Reactor invented more than a century before the Great Hyperspace War. Units like these are commonly employed in small transport ships, military bases, and some municipal power plants.</description-->
+		<thingClass>Building</thingClass>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+			<texPath>ResourceSys_Rhydonium/NewRhydoniumReactor/NewRhydoniumReactor</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<drawSize>(4,4)</drawSize>
+			<drawOffset>(0,0,0.125)</drawOffset>
+			<shadowData>
+				<volume>(1.25, 0.5, 0.5)</volume>
+				<offset>(0,0,-0.25)</offset>
+			</shadowData>
+		</graphicData>
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<fillPercent>1.0</fillPercent>
+		<rotatable>true</rotatable>
+		<statBases>
+			<MaxHitPoints>1000</MaxHitPoints>
+			<WorkToBuild>7000</WorkToBuild>
+			<Flammability>2.0</Flammability>
+			<Beauty>-10</Beauty>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<canOverlapZones>false</canOverlapZones>
+		<size>(3,3)</size>
+		<building>
+			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+		</building>
+		<costList>
+			<KOTOR_AlloyDurasteel>200</KOTOR_AlloyDurasteel>
+			<KOTOR_IngotCortosis>30</KOTOR_IngotCortosis>
+			<ComponentSpacer>3</ComponentSpacer>
+			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
+		</costList>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerPlant</compClass>
+				<basePowerConsumption>-7500</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+				<soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
+			</li>
+			<li Class="CompProperties_Flickable" />
+			<li Class="CompProperties_Refuelable">
+				<fuelConsumptionRate>0.8</fuelConsumptionRate>
+				<fuelCapacity>200.0</fuelCapacity>
+				<fuelFilter>
+					<thingDefs>
+						<li>KOTOR_Rhydonium</li>
+					</thingDefs>
+				</fuelFilter>
+				<showAllowAutoRefuelToggle>true</showAllowAutoRefuelToggle>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(255,70,0,0)</glowColor>
+			</li>
+			<li Class="CompProperties_HeatPusher">
+				<compClass>CompHeatPusherPowered</compClass>
+				<heatPerSecond>15</heatPerSecond>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>7</explosiveRadius>
 				<explosiveExpandPerFuel>1.25</explosiveExpandPerFuel>
 				<explosiveDamageType>Flame</explosiveDamageType>
 				<destroyThingOnExplosionSize>2</destroyThingOnExplosionSize>
