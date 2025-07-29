@@ -845,7 +845,7 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Clip">
-						<clipPath>kotormisc/Static_on</clipPath>
+						<clipPath>kotormisc/BeepsAndBoops/Static_on</clipPath>
 					</li>
 				</grains>	
 				<volumeRange>
@@ -870,12 +870,95 @@
 			<li>
 				<grains>
 					<li Class="AudioGrain_Clip">
-						<clipPath>kotormisc/Static_off</clipPath>
+						<clipPath>kotormisc/BeepsAndBoops/Static_off</clipPath>
 					</li>
 				</grains>	
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_BeepsAndBoopsMix</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>kotormisc/BeepsAndBoops</clipFolderPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>15</min>        
+				<max>15</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_KotORUIBoopsMix</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>kotormisc/KotORUIBoops</clipFolderPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>15</min>        
+				<max>15</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_HologramSFXMix</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>kotormisc/HologramSFX</clipFolderPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>15</min>        
+				<max>15</max>
 				</volumeRange>  		
 				<pitchRange>
 					<min>1</min>				

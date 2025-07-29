@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_telemetry_Purr</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<!-- <maxVoices>1</maxVoices> -->
+		<subSounds>
+		  <li>
+			<muteWhenPaused>True</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_building/emt_telemetry_temple_lp02</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>25</min><max>25</max></volumeRange>
+			<distRange>25~40</distRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_telemetry_ChirpsAndBeep</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<!-- <maxVoices>1</maxVoices> -->
+		<subSounds>
+		  <li>
+			<muteWhenPaused>True</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_building/emt_telemetry_temple_lp01</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>25</min><max>25</max></volumeRange>
+			<distRange>25~40</distRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_telemetry_WarbleWithSoftBeep</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<!-- <maxVoices>1</maxVoices> -->
+		<subSounds>
+		  <li>
+			<muteWhenPaused>True</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_building/Tech1</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>25</min><max>25</max></volumeRange>
+			<distRange>25~40</distRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_telemetry_SoftRattleWithCalculatingBeeps</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<!-- <maxVoices>1</maxVoices> -->
+		<subSounds>
+		  <li>
+			<muteWhenPaused>True</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_building/Tech2</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>25</min><max>25</max></volumeRange>
+			<distRange>25~40</distRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_telemetry_VerySoftWarble</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<!-- <maxVoices>1</maxVoices> -->
+		<subSounds>
+		  <li>
+			<muteWhenPaused>True</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_building/TechAmb7</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>25</min><max>25</max></volumeRange>
+			<distRange>25~40</distRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_telemetry_RadarWithBloop</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<!-- <maxVoices>1</maxVoices> -->
+		<subSounds>
+		  <li>
+			<muteWhenPaused>True</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_building/emt_antennaTelemetry_lp01</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>25</min><max>25</max></volumeRange>
+			<distRange>25~40</distRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_telemetry_TrackingBoops</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<!-- <maxVoices>1</maxVoices> -->
+		<subSounds>
+		  <li>
+			<muteWhenPaused>True</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_building/BF2_terminal_tracking</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>25</min><max>25</max></volumeRange>
+			<distRange>25~40</distRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_telemetry_ClassicWarble</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<!-- <maxVoices>1</maxVoices> -->
+		<subSounds>
+		  <li>
+			<muteWhenPaused>True</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_building/AttakHov</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>25</min><max>25</max></volumeRange>
+			<distRange>25~40</distRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+
+
+	
+
+</Defs>

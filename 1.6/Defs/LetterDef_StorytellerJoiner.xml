@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <LetterDef ParentName="CustomChoiceLetterBase">
+        <defName>SWCP_Letter_AcceptStoryteller</defName>
+        <color>(41, 196, 80)</color>
+        <arriveSound>GameStartSting</arriveSound>
+        <letterClass>ChoiceLetter_AcceptJoiner</letterClass>
+    </LetterDef>
+	
+</Defs>

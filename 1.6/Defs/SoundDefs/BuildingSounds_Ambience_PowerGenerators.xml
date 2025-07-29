@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_QuieterPowerGenerator</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<maxVoices>1</maxVoices>
+		<subSounds>
+		  <li>
+			<muteWhenPaused>True</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_building/ele_GEO_genEnrgy_lp_01</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>25</min><max>25</max></volumeRange>
+			<!-- sound range of about 20 -->
+			<distRange>25~40</distRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_PowerGenerator</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<maxVoices>1</maxVoices>
+		<subSounds>
+		  <li>
+			<muteWhenPaused>True</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_building/BF2_tantive_powergen</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>25</min><max>25</max></volumeRange>
+			<!-- sound range of about 20 -->
+			<distRange>25~40</distRange>
+			<!-- very quiet sound range -->
+			<!-- <distRange>10~40</distRange> -->
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_ElectricCracklePowerGenerator</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<maxVoices>1</maxVoices>
+		<subSounds>
+		  <li>
+			<muteWhenPaused>True</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_building/ele_GEO_ffCore_lp_01</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>25</min><max>25</max></volumeRange>
+			<!-- sound range of about 20 -->
+			<distRange>25~40</distRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+
+	
+
+</Defs>

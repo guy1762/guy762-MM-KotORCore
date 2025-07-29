@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+
+	<ThingDef Name="SWCP_FuelTankDamageReducerBASE" ParentName="BuildingBase" Abstract="True">
+		<damageMultipliers>
+		  <li>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_MeleeDamage_energy</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_MeleeDamage_ecut</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_MeleeDamage_estab</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  
+		  <li MayRequire="Ludeon.RimWorld.Biotech">
+			<damageDef>Beam</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  
+		  <li>
+			<damageDef>guy762_RangedDamage_ion</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_MeleeDamage_ion</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_ExplosiveDamage_ion</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_GrenadeDamage_ion</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  
+		  <li>
+			<damageDef>guy762_GrenadeDamage_plasma</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_GrenadeDamage_thermaldet</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  
+		  <li>
+			<damageDef>Flame</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Burn</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Bomb</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  <li>
+			<damageDef>BombSuper</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		  
+		  <li>
+			<damageDef>Bullet</damageDef>
+			<multiplier>0.25</multiplier>
+		  </li>
+		</damageMultipliers>
+	</ThingDef>
+	
+	
+</Defs>

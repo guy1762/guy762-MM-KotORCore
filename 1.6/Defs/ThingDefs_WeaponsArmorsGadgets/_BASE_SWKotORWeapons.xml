@@ -83,6 +83,7 @@
 	  
 	  
 	  <ThingDef Name="KotORRangedModdable" Abstract="True" ParentName="KotORRangedWeapon">
+		<tickerType>Normal</tickerType>
 		<recipeMaker>
 		  <soundWorking>kotorsound_upgrade</soundWorking>
 		  <recipeUsers>
@@ -124,6 +125,8 @@
 	  
 	  
 	  <ThingDef Name="KotORRangedModdableMakeable" Abstract="True" ParentName="KotORRangedMakeable">
+		
+		<tickerType>Normal</tickerType>
 		<recipeMaker>
 		  <soundWorking>kotorsound_upgrade</soundWorking>
 		  <recipeUsers Inherit="False">
@@ -210,6 +213,7 @@
 	  
 	  
 	  <ThingDef Name="KotORRangedNoQualityModMake" Abstract="True" ParentName="KotORRangedWeapon">		
+		<tickerType>Normal</tickerType>
 		<recipeMaker>
 		  <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
 		  <workSkill>Crafting</workSkill>
@@ -343,6 +347,7 @@
 	  </ThingDef>
 	  
 	  <ThingDef Name="KotORMeleeModdable" Abstract="True" ParentName="KotORMeleeWeapon">
+		<tickerType>Normal</tickerType>
 		<recipeMaker>
 		  <soundWorking>kotorsound_upgrade</soundWorking>
 		  <recipeUsers>
@@ -386,6 +391,7 @@
 	  
 	  
 	  <ThingDef Name="KotORMeleeModdableMakeable" Abstract="True" ParentName="KotORMeleeMakeable">
+		<tickerType>Normal</tickerType>
 		<recipeMaker>
 		  <soundWorking>kotorsound_upgrade</soundWorking>
 		  <recipeUsers Inherit="False">
@@ -427,6 +433,7 @@
 	  
 	  
 	  <ThingDef Name="KotORMeleeNoQualityModMake" Abstract="True" ParentName="KotORMeleeWeapon">
+		<tickerType>Normal</tickerType>
 		<recipeMaker>
 		  <defaultIngredientFilter>
 			<categories>

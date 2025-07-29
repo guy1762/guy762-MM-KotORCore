@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef Name="guy762_SecretFloorPanel_BASE" ParentName="BuildingBase" Abstract="True" >
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<graphicData>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData> 
+
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<rotatable>true</rotatable>
+		<destroyable>true</destroyable>
+		<useHitPoints>true</useHitPoints>
+		<passability>Standable</passability>
+		<canOverlapZones>false</canOverlapZones>
+		<pathCost>0</pathCost>
+		<castEdgeShadows>false</castEdgeShadows>
+		<blockWind>false</blockWind>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+		  <li>BuildingsArt</li>
+		</thingCategories>
+
+		<statBases>
+			<Flammability>1.0</Flammability>
+			<SellPriceFactor>1.10</SellPriceFactor>
+			<Mass>5</Mass>
+		</statBases>
+		<building>
+			<isEdifice>true</isEdifice>
+			<paintable>true</paintable>
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>	
+			<deconstructible>true</deconstructible>
+			<claimable>true</claimable>
+		</building>
+
+	</ThingDef>
+	<!--=============================================================================================================================-->
+
+	<ThingDef ParentName="guy762_SecretFloorPanel_BASE">
+		<defName>guy762_SecretFloorPanel_darkwhiteoutlines</defName>
+		<label>floor panel</label>
+		<description>An inconspicuous floor panel.</description>
+		
+		<graphicData>
+		  <texPath>Buildings/ImpHangarTile_SecretFloorPanel</texPath>
+		  <drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(2,3)</size>
+		<costList>
+		  <Steel>30</Steel>
+		</costList>
+	</ThingDef>
+
+
+  
+  
+  <!-- ================= Metal Tiles ================= -->
+
+  <!-- <TerrainDef Abstract="True" ParentName="FloorBase" Name="TileMetalBase"> -->
+    <!-- <texturePath>Terrain/Surfaces/GenericFloorTile</texturePath> -->
+    <!-- <designatorDropdown>Floor_Tile_Metal</designatorDropdown> -->
+    <!-- <constructEffect>ConstructMetal</constructEffect> -->
+    <!-- <isPaintable>true</isPaintable> -->
+    <!-- <researchPrerequisites> -->
+      <!-- <li>Smithing</li> -->
+    <!-- </researchPrerequisites> -->
+    <!-- <constructionSkillPrerequisite>3</constructionSkillPrerequisite> -->
+  <!-- </TerrainDef> -->
+  
+  <DesignatorDropdownGroupDef>
+    <defName>guy762_FloorTileDropdown_SWMetallic</defName>
+    <label>metallic tiles</label>
+  </DesignatorDropdownGroupDef>
+  
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>guy762_FloorTiles_darkwhiteoutlines_H</defName>
+    <label>dark metal tile (horizontal)</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Steel tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+    <texturePath>Buildings/Floors/ImpHangarTileSmaller_H</texturePath>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
+	<!-- <color>(0.369, 0.369, 0.369)</color> -->
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+    <uiOrder>2040</uiOrder>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>guy762_FloorTiles_darkwhiteoutlines_V</defName>
+    <label>dark metal tile (vertical)</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Steel tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+    <texturePath>Buildings/Floors/ImpHangarTileSmaller_V</texturePath>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
+	<!-- <color>(0.369, 0.369, 0.369)</color> -->
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+    <uiOrder>2040</uiOrder>
+  </TerrainDef>
+  
+  
+
+</Defs>

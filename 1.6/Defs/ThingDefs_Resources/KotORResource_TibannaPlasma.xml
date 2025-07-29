@@ -188,7 +188,9 @@
 				<compClass>CompPowerPlant</compClass>
 				<basePowerConsumption>-10000</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
-				<soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
+				<soundAmbientProducingPower>kotorsound_building_ElectricCracklePowerGenerator</soundAmbientProducingPower>
+				<soundPowerOn>kotorsound_starfighter_activate</soundPowerOn>
+				<soundPowerOff>kotorsound_starfighter_deactivate</soundPowerOff>
 			</li>
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Refuelable">
@@ -617,6 +619,7 @@
 				<compClass>CompPowerTrader</compClass>
 				<basePowerConsumption>700</basePowerConsumption>
 				<shortCircuitInRain>false</shortCircuitInRain>
+				<soundAmbientPowered>ChemfuelFiredGenerator_Ambience</soundAmbientPowered>
 			</li>
 			<li Class="CompProperties_Refuelable">
 				<fuelConsumptionRate>1</fuelConsumptionRate>

@@ -691,7 +691,10 @@
 		<fillPercent>1.0</fillPercent>
 		<rotatable>false</rotatable>
 		<statBases>
+			<MarketValue>4300</MarketValue>
+			
 			<MaxHitPoints>500</MaxHitPoints>
+			<Mass>250</Mass>
 			<WorkToBuild>3500</WorkToBuild>
 			<Flammability>2.0</Flammability>
 			<Beauty>-10</Beauty>
@@ -713,7 +716,9 @@
 				<compClass>CompPowerPlant</compClass>
 				<basePowerConsumption>-2500</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
-				<soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
+				<soundAmbientProducingPower>kotorsound_building_QuieterPowerGenerator</soundAmbientProducingPower>
+				<soundPowerOn>kotorsound_starfighter_activate</soundPowerOn>
+				<soundPowerOff>kotorsound_starfighter_deactivate</soundPowerOff>
 			</li>
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Refuelable">
@@ -732,7 +737,7 @@
 			</li-->
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
-				<heatPerSecond>15</heatPerSecond>
+				<heatPerSecond>5</heatPerSecond>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
 			<li Class="CompProperties_Explosive">
@@ -754,9 +759,15 @@
 			<li>KOTOR_Research_FuelProcessing</li>
 		</researchPrerequisites>
 		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+		
 		<tradeTags>
 			<li>guy762TT_AllItemsSellable</li>
-		</tradeTags>	
+		</tradeTags>
+		<thingCategories>
+		  <li>BuildingsPower</li>
+		</thingCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		
 	</ThingDef>
 	
 	
@@ -784,13 +795,14 @@
 			<drawSize>(4,4)</drawSize>
 			<drawOffset>(0,0,0.125)</drawOffset>
 			<shadowData>
-				<volume>(1.25, 0.5, 0.5)</volume>
+				<volume>(2.5, 0.5, 2)</volume>
 				<offset>(0,0,-0.25)</offset>
 			</shadowData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
-		<passability>PassThroughOnly</passability>
-		<pathCost>50</pathCost>
+		<passability>Impassable</passability>
+		<!-- <passability>PassThroughOnly</passability> -->
+		<!-- <pathCost>50</pathCost> -->
 		<blockWind>true</blockWind>
 		<fillPercent>1.0</fillPercent>
 		<rotatable>true</rotatable>
@@ -815,14 +827,16 @@
 		<comps>
 			<li Class="CompProperties_Power">
 				<compClass>CompPowerPlant</compClass>
-				<basePowerConsumption>-7500</basePowerConsumption>
+				<basePowerConsumption>-5000</basePowerConsumption>
 				<transmitsPower>true</transmitsPower>
-				<soundAmbientProducingPower>ChemfuelFiredGenerator_Ambience</soundAmbientProducingPower>
+				<soundAmbientProducingPower>kotorsound_building_PowerGenerator</soundAmbientProducingPower>
+				<soundPowerOn>kotorsound_starfighter_activate</soundPowerOn>
+				<soundPowerOff>kotorsound_starfighter_deactivate</soundPowerOff>
 			</li>
 			<li Class="CompProperties_Flickable" />
 			<li Class="CompProperties_Refuelable">
-				<fuelConsumptionRate>0.8</fuelConsumptionRate>
-				<fuelCapacity>200.0</fuelCapacity>
+				<fuelConsumptionRate>1.5</fuelConsumptionRate>
+				<fuelCapacity>100.0</fuelCapacity>
 				<fuelFilter>
 					<thingDefs>
 						<li>KOTOR_Rhydonium</li>
@@ -850,7 +864,7 @@
 				<wickTicks>70~150</wickTicks>
 			</li>
 		</comps>
-		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
 		<designationCategory>KOTOR_BuildTab</designationCategory>
 		<uiOrder>2100</uiOrder>
 		<constructEffect>ConstructMetal</constructEffect>

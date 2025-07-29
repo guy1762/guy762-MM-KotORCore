@@ -86,10 +86,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipengine/EGL_TIE_FIGHTER_1</clipPath>
@@ -128,10 +129,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipengine/eng_xwing_med_lp</clipPath>
@@ -150,10 +152,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipengine/eng_ywing_mid_lp</clipPath>
@@ -172,10 +175,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipengine/eng_tieFighter_mid_lp</clipPath>
@@ -194,10 +198,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipengine/eng_tieBomber_mid_lp</clipPath>
@@ -216,10 +221,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipengine/Egl_star_viper_1</clipPath>
@@ -238,10 +244,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipengine/Egl_lancet_1</clipPath>
@@ -263,10 +270,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipengine/eng_snowspeeder_mid_lp</clipPath>
@@ -299,10 +307,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipengine/veh_sig_engine_l</clipPath>
@@ -321,10 +330,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipengine/veh_nsf_engine_n</clipPath>
@@ -343,10 +353,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipengine/freefall_engine</clipPath>
@@ -365,10 +376,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipengine/hvc_eng_slow_lo</clipPath>
@@ -387,10 +399,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipengine/veh_slave1_engin</clipPath>
@@ -469,10 +482,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorlandvehicles/eng_speederbike_low_lp</clipPath>
@@ -491,10 +505,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorlandvehicles/eng_speederbike_mid_lp</clipPath>
@@ -518,10 +533,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorlandvehicles/EGL_SKIFF_1</clipPath>
@@ -540,10 +556,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorlandvehicles/EGL_REPULSOR_1_IDLE</clipPath>
@@ -565,10 +582,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorlandvehicles/eng_interceptorTank_mid_lp</clipPath>
@@ -587,10 +605,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorlandvehicles/EGL_REPULSOR_2_IDLE</clipPath>
@@ -611,10 +630,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorlandvehicles/eng_AAT_mid_lp</clipPath>
@@ -634,10 +654,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorlandvehicles/eng_AAT_low_lp</clipPath>
@@ -659,10 +680,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorlandvehicles/EGL_SKIFF_2</clipPath>
@@ -683,10 +705,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorlandvehicles/EGL_REPULSOR_3_IDLE</clipPath>
@@ -720,10 +743,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorlandvehicles/EGL_TRACKED_IDLE</clipPath>
@@ -742,10 +766,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorlandvehicles/EGL_TRACKED_1</clipPath>
@@ -765,10 +790,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorlandvehicles/eng_hailfire_mid_lp</clipPath>
@@ -789,10 +815,11 @@
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
+		<sustain>true</sustain><maxVoices>1</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorlandvehicles/ATST_steppy_compressed</clipPath>

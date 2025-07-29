@@ -63,6 +63,6 @@
 		<li IfModActive="guy762.KotORDroids">1.6/AdditionalMods/_DroidsBase</li>
 		
 		<li IfModActive="guy762.KotORFactions">1.6/AdditionalMods/_FactionsBase</li>
-		<li IfModActive="SWCP.guy762.RR.WarlordEmpire">1.6/AdditionalMods/_FactionsBase</li>
+		<li IfModActive="SWCP.guy762.WarlordEmpire">1.6/AdditionalMods/_FactionsBase</li>
 	</v1.6>
 </loadFolders>

@@ -121,14 +121,14 @@
 		  </li>
 		
 		
-		<li MayRequire="Killathon.ArtificialBeings.SynCore" Class="StockGenerator_SingleDef">
-			<thingDef>ABF_Thing_Synstruct_CoolantPack</thingDef>
-			<countRange>20~100</countRange>
-		</li>
-		<li MayRequire="Killathon.ArtificialBeings.SynCore" Class="StockGenerator_SingleDef">
-			<thingDef>ABF_Thing_Synstruct_LubricantPack</thingDef>
-			<countRange>40~200</countRange>
-		</li>
+		<!-- <li MayRequire="Killathon.ArtificialBeings.SynCore" Class="StockGenerator_SingleDef"> -->
+			<!-- <thingDef>ABF_Thing_Synstruct_CoolantPack</thingDef> -->
+			<!-- <countRange>20~100</countRange> -->
+		<!-- </li> -->
+		<!-- <li MayRequire="Killathon.ArtificialBeings.SynCore" Class="StockGenerator_SingleDef"> -->
+			<!-- <thingDef>ABF_Thing_Synstruct_LubricantPack</thingDef> -->
+			<!-- <countRange>40~200</countRange> -->
+		<!-- </li> -->
 		<li MayRequire="Killathon.ArtificialBeings.SynCore" Class="StockGenerator_SingleDef">
 			<thingDef>ABF_Thing_Synstruct_PartPack</thingDef>
 			<countRange>8~40</countRange>

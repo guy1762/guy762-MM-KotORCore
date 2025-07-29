@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!--__________ V.A.T.S. Misc __________-->
+
+    <!-- V.A.T.S. Zoom Effect -->
+
+    <ThingDef ParentName="BaseBullet">
+        <defName>SWCP_VATS_Zoomer</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <thingClass>SWCP.Core.VATS.Thing_Zoomer</thingClass>
+        <label>vats</label>
+        <graphicData>
+            <texPath>512blank</texPath>
+            <graphicClass>SWCP.Core.VATS.Graphic_Zoomer</graphicClass>
+            <drawSize>(10,10)</drawSize>
+        </graphicData>
+    </ThingDef>
+	
+</Defs>

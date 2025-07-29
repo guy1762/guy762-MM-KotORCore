@@ -274,7 +274,115 @@
 	
 	
 	
-	<ThingDef ParentName="BuildingBase">
+	
+	
+	<ThingDef ParentName="SWCP_FuelTankDamageReducerBASE">
+		<defName>KOTOR_RhydoniumTank_small</defName>
+		<label>Rhydonium fuel tank (small)</label>
+		<description>A reinforced storage tank for safely storing Rhydonium starship fuel delivered by a pipe network. Fuel can be siphoned from the tank as-needed. Thick Durasteel plating gives these tanks 75% damage reduction against energy, heat, explosive, ion, and bullet damage types. However, the tank will still explode violently if damaged enough.</description>
+		<drawerType>MapMeshAndRealTime</drawerType>
+		<graphicData>
+		  <texPath>ResourceSys_Rhydonium/NewRhydoniumReactor/Fuel</texPath>
+		  <graphicClass>Graphic_Multi</graphicClass>
+		  <!-- <drawRotated>true</drawRotated> -->
+		  <drawSize>(3,3)</drawSize>
+		  
+		  <drawOffset>(0,0,0.55)</drawOffset>
+		  
+		  <damageData>
+			<cornerTL>Damage/Corner</cornerTL>
+			<cornerTR>Damage/Corner</cornerTR>
+			<cornerBL>Damage/Corner</cornerBL>
+			<cornerBR>Damage/Corner</cornerBR>
+		  </damageData>
+		  <shadowData>
+			<volume>(0.75, 1, 0.125)</volume>
+			<offset>(0,0,-0.5)</offset>
+		  </shadowData>
+		</graphicData>
+		<defaultPlacingRot>South</defaultPlacingRot>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>PassThroughOnly</passability>
+		<pathCost>50</pathCost>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>false</castEdgeShadows>
+		<fillPercent>0.80</fillPercent>
+		<tickerType>Normal</tickerType>
+		<statBases>
+			<MarketValue>500</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<WorkToBuild>400</WorkToBuild>
+			<Mass>20</Mass>
+			<Flammability>1.0</Flammability>
+		</statBases>
+		<size>(1,1)</size>
+		<costList>
+		  <KOTOR_AlloyDurasteel>60</KOTOR_AlloyDurasteel>
+		</costList>
+		<comps>
+		  <li Class="PipeSystem.CompProperties_ResourceStorage">
+			<pipeNet>KotORPipeSystem_Rhydonium</pipeNet>
+			<storageCapacity>100</storageCapacity>
+			<barSize>(0.45, 0.05)</barSize>
+			<margin>0.1</margin>
+			<centerOffset>(0.4, 0, -0.1)</centerOffset>
+			<extractOptions>
+			  <texPath>ResourceSys_Rhydonium/Rhydonium_ExtractIcon</texPath>
+			  <labelKey>KotORLD_ExtractRhydonium</labelKey>
+			  <descKey>KotORLD_ExtractRhydoniumDesc</descKey>
+			  <extractAmount>75</extractAmount>
+			  <thing>KOTOR_Rhydonium</thing>
+			  <ratio>1</ratio>
+			</extractOptions>
+		  </li>
+		  <li Class="PipeSystem.CompProperties_ExplosiveContent">
+				<explosiveMaxRadius>5</explosiveMaxRadius>
+				<explosiveDamageType>Bomb</explosiveDamageType>
+				<destroyThingOnExplosionSize>2</destroyThingOnExplosionSize>
+				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
+				<preExplosionSpawnChance>1</preExplosionSpawnChance>
+				<wickTicks>70~150</wickTicks>
+			</li>
+		</comps>
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<constructEffect>ConstructMetal</constructEffect>
+		<canOverlapZones>false</canOverlapZones>
+		
+		<researchPrerequisites>
+		  <li>KOTOR_Research_FuelProcessing</li>
+		</researchPrerequisites>
+		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
+		
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
+		<thingCategories>
+		  <li>BuildingsPower</li>
+		</thingCategories>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="SWCP_FuelTankDamageReducerBASE">
 		<defName>KOTOR_RhydoniumTank</defName>
 		<label>Rhydonium fuel tank</label>
 		<description>A reinforced storage tank for safely storing Rhydonium starship fuel delivered by a pipe network. Fuel can be siphoned from the tank as-needed. Thick Durasteel plating gives these tanks 75% damage reduction against energy, heat, explosive, ion, and bullet damage types. However, the tank will still explode violently if damaged enough.</description>
@@ -283,7 +391,10 @@
 		  <texPath>ResourceSys_Rhydonium/Rhydonium_Tank</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <drawRotated>false</drawRotated>
-		  <drawSize>(3,3)</drawSize>
+		  <drawSize>(3.5,3.5)</drawSize>
+		  
+		  <drawOffset>(0,0,0.75)</drawOffset>
+		  
 		  <damageData>
 			<cornerTL>Damage/Corner</cornerTL>
 			<cornerTR>Damage/Corner</cornerTR>
@@ -291,8 +402,8 @@
 			<cornerBR>Damage/Corner</cornerBR>
 		  </damageData>
 		  <shadowData>
-			<volume>(1.25, 1, 0.5)</volume>
-			<offset>(0,0,-1)</offset>
+			<volume>(1, 1, 0.75)</volume>
+			<offset>(0,0,-0.5)</offset>
 		  </shadowData>
 		</graphicData>
 		<altitudeLayer>Building</altitudeLayer>
@@ -300,7 +411,7 @@
 		<pathCost>50</pathCost>
 		<blockWind>true</blockWind>
 		<castEdgeShadows>false</castEdgeShadows>
-		<fillPercent>0.25</fillPercent>
+		<fillPercent>0.90</fillPercent>
 		<tickerType>Normal</tickerType>
 		<statBases>
 		  <MaxHitPoints>500</MaxHitPoints>
@@ -308,7 +419,7 @@
 		  <Mass>40</Mass>
 		  <Flammability>1.0</Flammability>
 		</statBases>
-		<size>(2,3)</size>
+		<size>(2,2)</size>
 		<costList>
 		  <KOTOR_AlloyDurasteel>140</KOTOR_AlloyDurasteel>
 		</costList>
@@ -347,82 +458,7 @@
 		</researchPrerequisites>
 		<disableImpassableShotOverConfigError>true</disableImpassableShotOverConfigError>
 		
-		<damageMultipliers>
-		  <li>
-			<damageDef>guy762_RangedDamage_energy</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  <li>
-			<damageDef>guy762_MeleeDamage_energy</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  <li>
-			<damageDef>guy762_MeleeDamage_ecut</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  <li>
-			<damageDef>guy762_MeleeDamage_estab</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  <li>
-			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  
-		  <li MayRequire="Ludeon.RimWorld.Biotech">
-			<damageDef>Beam</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  
-		  <li>
-			<damageDef>guy762_RangedDamage_ion</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  <li>
-			<damageDef>guy762_MeleeDamage_ion</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  <li>
-			<damageDef>guy762_ExplosiveDamage_ion</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  <li>
-			<damageDef>guy762_GrenadeDamage_ion</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  
-		  <li>
-			<damageDef>guy762_GrenadeDamage_plasma</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  <li>
-			<damageDef>guy762_GrenadeDamage_thermaldet</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  
-		  <li>
-			<damageDef>Flame</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Burn</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  <li>
-			<damageDef>Bomb</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  <li>
-			<damageDef>BombSuper</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		  
-		  <li>
-			<damageDef>Bullet</damageDef>
-			<multiplier>0.25</multiplier>
-		  </li>
-		</damageMultipliers>
-	  </ThingDef>
+	</ThingDef>
 	
 	
 

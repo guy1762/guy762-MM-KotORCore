@@ -28,11 +28,6 @@
 		<defaultPlacingRot>South</defaultPlacingRot>
 		
 		<comps>
-			<li Class="CompProperties_Power">
-				<compClass>CompPowerTrader</compClass>
-				<shortCircuitInRain>true</shortCircuitInRain>
-				<basePowerConsumption>5</basePowerConsumption>
-			</li>
 			<li Class="CompProperties_Flickable"/>
 			<li Class="CompProperties_Breakdownable"/>
 		</comps>
@@ -65,7 +60,7 @@
 			<watchBuildingStandDistanceRange>-1~1</watchBuildingStandDistanceRange>
 			<watchBuildingStandRectWidth>2</watchBuildingStandRectWidth>
 			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
-			<effectWatching>WatchingTelevision</effectWatching>
+			<effectWatching>guy762_Effecter_UsingGreenHoloscreen</effectWatching>
 		</building>
 		<placeWorkers>
 			<li>PlaceWorker_WatchArea</li>
@@ -73,10 +68,16 @@
 		</placeWorkers>
 		
 		<comps>
-		  <li Class="CompProperties_Glower">
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>5</basePowerConsumption>
+				<soundAmbientPowered>kotorsound_building_telemetry_Purr</soundAmbientPowered>
+			</li>
+			<li Class="CompProperties_Glower">
 				<glowRadius>2</glowRadius>
 				<glowColor>(45,250,45,0)</glowColor>
-		  </li>
+			</li>
 		  <!-- <li Class="CompProperties_Facility"> -->
 			<!-- <statOffsets> -->
 			  <!-- <RangedWeapon_DamageMultiplier>0.06</RangedWeapon_DamageMultiplier> -->
@@ -114,7 +115,7 @@
 			<watchBuildingStandDistanceRange>1~1</watchBuildingStandDistanceRange>
 			<watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
 			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
-			<effectWatching>WatchingTelevision</effectWatching>
+			<effectWatching>guy762_Effecter_UsingConsole</effectWatching>
 		</building>
 		<placeWorkers>
 			<li>PlaceWorker_WatchArea</li>
@@ -122,10 +123,16 @@
 		</placeWorkers>
 		
 		<comps>
-		  <li Class="CompProperties_Glower">
+			<li Class="CompProperties_Glower">
 				<glowRadius>1</glowRadius>
 				<glowColor>(45,250,45,0)</glowColor>
-		  </li>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>5</basePowerConsumption>
+				<soundAmbientPowered>kotorsound_building_telemetry_WarbleWithSoftBeep</soundAmbientPowered>
+			</li>
 		  <!-- <li Class="CompProperties_Facility"> -->
 			<!-- <statOffsets> -->
 			  <!-- <RangedWeapon_DamageMultiplier>0.06</RangedWeapon_DamageMultiplier> -->
@@ -165,7 +172,7 @@
 			<watchBuildingStandDistanceRange>1~1</watchBuildingStandDistanceRange>
 			<watchBuildingStandRectWidth>1</watchBuildingStandRectWidth>
 			<watchBuildingInSameRoom>true</watchBuildingInSameRoom>
-			<effectWatching>WatchingTelevision</effectWatching>
+			<effectWatching>guy762_Effecter_UsingSmallTerminal</effectWatching>
 		</building>
 		<placeWorkers>
 			<li>PlaceWorker_WatchArea</li>
@@ -173,16 +180,16 @@
 		</placeWorkers>
 		
 		<comps>
-		  <li Class="CompProperties_Glower">
+			<li Class="CompProperties_Glower">
 				<glowRadius>1</glowRadius>
 				<glowColor>(130,230,245,0)</glowColor>
-		  </li>
-		  <!-- <li Class="CompProperties_Facility"> -->
-			<!-- <statOffsets> -->
-			  <!-- <RangedWeapon_DamageMultiplier>0.06</RangedWeapon_DamageMultiplier> -->
-			<!-- </statOffsets> -->
-			<!-- <maxSimultaneous>2</maxSimultaneous> -->
-		  <!-- </li> -->
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<shortCircuitInRain>true</shortCircuitInRain>
+				<basePowerConsumption>5</basePowerConsumption>
+				<soundAmbientPowered>kotorsound_building_telemetry_VerySoftWarble</soundAmbientPowered>
+			</li>
 		</comps>
 		
 	</ThingDef>
@@ -218,7 +225,93 @@
 		<joyKind>Television</joyKind>
 		<allowOpportunisticPrefix>true</allowOpportunisticPrefix>
 		<isCrawlingIfDowned>false</isCrawlingIfDowned>
-	  </JobDef>
+	</JobDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<EffecterDef>
+		<defName>guy762_Effecter_UsingGreenHoloscreen</defName>
+		<children>
+		  <!-- <li> -->
+			<!-- <subEffecterClass>SubEffecter_Sustainer</subEffecterClass> -->
+			<!-- <soundDef>Television_Ambience</soundDef> -->
+		  <!-- </li> -->
+		  <li>
+			<subEffecterClass>SubEffecter_SoundIntermittent</subEffecterClass>
+			<soundDef>kotorsound_HologramSFXMix</soundDef>
+			<intermittentSoundInterval><min>250</min><max>1000</max></intermittentSoundInterval>
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+			<fleckDef>PlainFlash</fleckDef>
+			<spawnLocType>RandomCellOnTarget</spawnLocType>
+			<chancePerTick>0.05</chancePerTick>
+			<color>(0,1,0,0.1)</color>
+			<scale>1.5~3</scale>
+		  </li>
+		</children>
+	</EffecterDef>
+	
+	
+	
+	
+	<EffecterDef>
+		<defName>guy762_Effecter_UsingConsole</defName>
+		<children>
+		  <!-- <li> -->
+			<!-- <subEffecterClass>SubEffecter_Sustainer</subEffecterClass> -->
+			<!-- <soundDef>Television_Ambience</soundDef> -->
+		  <!-- </li> -->
+		  <li>
+			<subEffecterClass>SubEffecter_SoundIntermittent</subEffecterClass>
+			<soundDef>kotorsound_BeepsAndBoopsMix</soundDef>
+			<intermittentSoundInterval><min>250</min><max>1000</max></intermittentSoundInterval>
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+			<fleckDef>PlainFlash</fleckDef>
+			<spawnLocType>RandomCellOnTarget</spawnLocType>
+			<chancePerTick>0.05</chancePerTick>
+			<color>(1,1,1,0.1)</color>
+			<scale>1.5~3</scale>
+		  </li>
+		</children>
+	</EffecterDef>
+	
+	
+	
+	<EffecterDef>
+		<defName>guy762_Effecter_UsingSmallTerminal</defName>
+		<children>
+		  <!-- <li> -->
+			<!-- <subEffecterClass>SubEffecter_Sustainer</subEffecterClass> -->
+			<!-- <soundDef>Television_Ambience</soundDef> -->
+		  <!-- </li> -->
+		  <li>
+			<subEffecterClass>SubEffecter_SoundIntermittent</subEffecterClass>
+			<soundDef>kotorsound_KotORUIBoopsMix</soundDef>
+			<intermittentSoundInterval><min>250</min><max>1000</max></intermittentSoundInterval>
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerChance</subEffecterClass>
+			<fleckDef>PlainFlash</fleckDef>
+			<spawnLocType>RandomCellOnTarget</spawnLocType>
+			<chancePerTick>0.05</chancePerTick>
+			<color>(1,1,1,0.1)</color>
+			<scale>1.5~3</scale>
+		  </li>
+		</children>
+	</EffecterDef>
 
 	
 </Defs>

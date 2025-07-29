@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<JobDef>
+        <defName>MinePocket_Job</defName>
+        <driverClass>MinePocket.MinePocketJob</driverClass>
+        <reportString>defusing mine.</reportString>
+        <suspendable>false</suspendable>
+        <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
+    </JobDef>
+	
+	<JobDef>
+        <defName>SWCP_AICastAbilityAtTarget</defName>
+        <driverClass>SWCP.Core.JobDriver_AICastAbilityAtTarget</driverClass>
+        <reportString>Casting ability at target.</reportString>
+        <casualInterruptible>false</casualInterruptible>
+        <collideWithPawns>true</collideWithPawns>
+    </JobDef>
+	
+	
+	
+	<!--_____ Animal Cage Job Defs _____-->
+
+    <!-- Release Animal From Cage -->
+
+    <!-- <JobDef> -->
+        <!-- <defName>SWCP_ReleaseAnimalFromCage</defName> -->
+        <!-- <driverClass>SWCP_RadiantQuests.JobDriver_ReleaseAnimalFromCage</driverClass> -->
+        <!-- <reportString>Releasing animal from cage.</reportString> -->
+    <!-- </JobDef> -->
+
+    <!-- Carry Animal To Cage -->
+
+    <!-- <JobDef> -->
+        <!-- <defName>SWCP_CarryAnimalToCage</defName> -->
+        <!-- <driverClass>SWCP_RadiantQuests.JobDriver_CarryAnimalToCage</driverClass> -->
+        <!-- <reportString>Bringing animal to cage.</reportString> -->
+    <!-- </JobDef> -->
+
+    <!-- Transfer Animal Between Cages -->
+
+    <!-- <JobDef> -->
+        <!-- <defName>SWCP_TransferAnimalBetweenCages</defName> -->
+        <!-- <driverClass>SWCP_RadiantQuests.JobDriver_TransferAnimalBetweenCages</driverClass> -->
+        <!-- <reportString>Transferring animal to another cage.</reportString> -->
+    <!-- </JobDef> -->
+
+    <!-- Refuel Animal Cage -->
+
+    <!-- <JobDef> -->
+        <!-- <defName>SWCP_RefuelAnimalCage</defName> -->
+        <!-- <driverClass>SWCP_RadiantQuests.JobDriver_RefuelAnimalCage</driverClass> -->
+        <!-- <reportString>refueling cage.</reportString> -->
+    <!-- </JobDef> -->
+
+    <!-- Refuel Animal Cage Atomic -->
+
+    <!-- <JobDef> -->
+        <!-- <defName>SWCP_RefuelAnimalCage_Atomic</defName> -->
+        <!-- <driverClass>SWCP_RadiantQuests.JobDriver_RefuelAnimalCage_Atomic</driverClass> -->
+        <!-- <reportString>refueling cage.</reportString> -->
+    <!-- </JobDef> -->
+
+    <!--_____ V.A.T.S. _____-->
+
+    <!-- V.A.T.S. -->
+
+    <JobDef>
+        <defName>SWCP_VATS_AttackHybrid</defName>
+        <driverClass>SWCP.Core.JobDriver_AttackHybrid</driverClass>
+        <reportString>attacking TargetA.</reportString>
+        <alwaysShowWeapon>true</alwaysShowWeapon>
+        <casualInterruptible>false</casualInterruptible>
+        <collideWithPawns>true</collideWithPawns>
+    </JobDef>
+
+	
+	
+</Defs>
