@@ -312,6 +312,24 @@
 	
 	
 	
+	<ModularWeapons2.ModularPartsMountDef>
+		<defName>guy762_KotORMount_wristgun</defName>
+		<label>wrist-mounted weapon</label>
+		<labelShort>wrist weapon</labelShort>
+		<allowEmpty>true</allowEmpty>
+	</ModularWeapons2.ModularPartsMountDef>
+	
+	<ModularWeapons2.ModularPartsMountDef>
+		<defName>guy762_KotORMount_jetpackmissile</defName>
+		<label>jetpack missile</label>
+		<labelShort>missile</labelShort>
+		<allowEmpty>true</allowEmpty>
+	</ModularWeapons2.ModularPartsMountDef>
+	
+	
+	
+	
+	
 	
 	
 	

@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>	
+	
+	<Vehicles.VehicleDef Name = "guy762_VehiclePawn_base" ParentName = "BaseVehiclePawn" Abstract = "True">
+		<!-- <comps> -->
+			<!-- <li Class="CompProperties_Stunnable"> -->
+				<!-- <useLargeEMPEffecter>true</useLargeEMPEffecter> -->
+				<!-- <empEffecterDimensions>(1.8,0,0.5)</empEffecterDimensions> -->
+				<!-- <empEffecterOffset>(0,0,-0.5)</empEffecterOffset> -->
+				<!-- <empChancePerTick>0.3</empChancePerTick> -->
+				<!-- <affectedDamageDefs> -->
+				  <!-- <li>EMP</li> -->
+				<!-- </affectedDamageDefs> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+		
+		<properties>
+			<empStuns>true</empStuns>
+			
+			<damageDefMultipliers>
+				<li>
+					 <key>guy762_RangedDamage_ion</key>
+					 <value>2</value>
+				</li>
+				<li>
+					 <key>guy762_ExplosiveDamage_ion</key>
+					 <value>2</value>
+				</li>
+				<li>
+					 <key>guy762_GrenadeDamage_ion</key>
+					 <value>2</value>
+				</li>
+				<li>
+					 <key>guy762_MeleeDamage_ion</key>
+					 <value>2</value>
+				</li>
+				
+				
+				<li>
+					 <key>Bomb</key>
+					 <value>0.1</value>
+				</li>
+				<li>
+					 <key>guy762_GrenadeDamage_frag</key>
+					 <value>0.1</value>
+				</li>
+				
+				<li>
+					 <key>guy762_ExplosiveDamage_conc</key>
+					 <value>0.1</value>
+				</li>
+				<li>
+					 <key>guy762_GrenadeDamage_thermaldet</key>
+					 <value>4</value>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				<li>
+					 <key>guy762_RangedDamage_AntiVehicleEnergy</key>
+					 <value>1</value>
+				</li>
+				<li>
+					 <key>guy762_ExplosiveDamage_AntiVehicleEnergy</key>
+					 <value>1</value>
+				</li>
+				
+				
+				<li>
+					 <key>guy762_RangedDamage_energy</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>guy762_ExplosiveDamage_energy</key>
+					 <value>0.1</value>
+				</li>
+				
+				
+				
+				
+				<!-- <li> -->
+					 <!-- <key>guy762_RangedDamage_electrical</key> -->
+					 <!-- <value>0.01</value> -->
+				<!-- </li> -->
+				<!-- <li> -->
+					 <!-- <key>guy762_MeleeDamage_electrical</key> -->
+					 <!-- <value>0.01</value> -->
+				<!-- </li> -->
+				<!-- <li> -->
+					 <!-- <key>guy762_BeamDamage_electrical</key> -->
+					 <!-- <value>0.01</value> -->
+				<!-- </li> -->
+				
+				
+				
+				
+				<li>
+					 <key>guy762_RangedDamage_sonic</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>guy762_MeleeDamage_sonic</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>guy762_GrenadeDamage_sonic</key>
+					 <value>0.01</value>
+				</li>
+				<!-- <li> -->
+					 <!-- <key>Thump</key> -->
+					 <!-- <value>0.01</value> -->
+				<!-- </li> -->
+				
+				
+				<li>
+					 <key>Flame</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Burn</key>
+					 <value>0.01</value>
+				</li>
+				<!-- <li> -->
+					 <!-- <key>guy762_GrenadeDamage_plasma</key> -->
+					 <!-- <value>0.01</value> -->
+				<!-- </li> -->
+				<li>
+					 <key>guy762_BeamDamage_radiation</key>
+					 <value>0.01</value>
+				</li>
+				
+				
+				<li>
+					 <key>Frostbite</key>
+					 <value>0.01</value>
+				</li>
+				
+				
+				
+				
+				
+				
+				
+				<li>
+					 <key>Cut</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Crush</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Blunt</key>
+					 <value>0.01</value>
+				</li>
+				<li MayRequire="lee.theforce.lightsaber">
+					 <key>Force_BluntLightsaber</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Poke</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Stab</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Scratch</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>ScratchToxic</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Bite</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>ToxicBite</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>RangedStab</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Bullet</key>
+					 <value>0.01</value>
+				</li>
+				<li>
+					 <key>Arrow</key>
+					 <value>0.01</value>
+				</li>
+				
+				
+				
+				<li>
+					 <key>ArrowHighVelocity</key>
+					 <value>0.1</value>
+				</li>
+				<li>
+					 <key>TornadoScratch</key>
+					 <value>0.1</value>
+				</li>
+				
+			</damageDefMultipliers>
+		</properties>
+	</Vehicles.VehicleDef>
+	
+
+	
+</Defs>

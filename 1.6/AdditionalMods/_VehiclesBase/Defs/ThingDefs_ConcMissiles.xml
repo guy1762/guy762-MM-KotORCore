@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="guy762_munitionbase">
+		<defName>guy762_RocketItem_conc</defName>
+		<label>concussion missile</label>
+		<description>This generally non-lethal warhead explodes with concussive force that knocks down and disorients the target.</description>
+		<graphicData>
+		  <texPath>Items/Rockets/rocket_conc</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+		  <MarketValue>200</MarketValue>
+		  <Mass>4</Mass>
+		</statBases>
+		<stackLimit>25</stackLimit>
+		<tradeTags>
+		  <li>guy762TT_LightMunitions</li>
+		</tradeTags>
+		<comps>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>4</explosiveRadius>
+				<explosiveDamageType>guy762_ExplosiveDamage_conc</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	<RecipeDef>
+		<defName>KotORRecipe_concMissiles</defName>
+		<label>make 5 concussion missiles</label>
+		<description>make 5 concussion missiles.</description>
+		<jobString>making 5 concussion missiles.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+		<workAmount>16000</workAmount>
+		<ingredients>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Chemfuel</li>
+				</thingDefs>
+			</filter>
+			<count>10</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>Steel</li>
+				</thingDefs>
+			</filter>
+			<count>20</count>
+		  </li>
+		  <li>
+			<filter>
+				<thingDefs>
+					<li>ComponentIndustrial</li>
+				</thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>KOTOR_PlasmaCartridge</li>
+			  </thingDefs>
+			</filter>
+			<count>5</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>Chemfuel</li>
+			<li>Steel</li>
+			<li>ComponentIndustrial</li>
+			<li>KOTOR_PlasmaCartridge</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <guy762_RocketItem_conc>5</guy762_RocketItem_conc>
+		</products>
+		<researchPrerequisites>
+			<li>KOTOR_Research_AdvMunitions</li>
+			<li>KOTOR_Research_plasma</li>
+		</researchPrerequisites>
+		<recipeUsers>
+			<li>FabricationBench</li>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			<li>kotor_DrugLab</li>
+		</recipeUsers>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+	  </RecipeDef>
+	
+	
+	
+	
+	
+</Defs>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<DamageDef>
+		<defName>guy762_ExplosiveDamage_conc</defName>
+		<label>concussion blast</label>
+		<workerClass>Fusrodah.DamageWorker_Fusrodah</workerClass>
+		<modExtensions>
+			<li Class="Fusrodah.Extension">
+				<rangeToLand>2~4</rangeToLand>
+				<damageToApply>Blunt</damageToApply>
+				<!-- <damageToApply>Stun</damageToApply> -->
+				<damageAmount>25</damageAmount>
+			</li>
+		</modExtensions>
+		<externalViolence>true</externalViolence>
+		<isExplosive>true</isExplosive>
+		<deathMessage>{0} has been blasted to death.</deathMessage>
+		<hediff>Bruise</hediff>
+		<hediffSolid>Crack</hediffSolid>
+		<makesBlood>false</makesBlood>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Blunt</impactSoundType>
+		<armorCategory>Blunt</armorCategory>
+		<minDamageToFragment>15</minDamageToFragment>
+		<defaultDamage>1</defaultDamage>
+		<defaultStoppingPower>2</defaultStoppingPower>
+		<defaultArmorPenetration>0.10</defaultArmorPenetration>
+		
+		<buildingDamageFactorImpassable>15</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>15</buildingDamageFactorPassable>
+		
+		<!-- <buildingDamageFactorImpassable>5</buildingDamageFactorImpassable> -->
+		<!-- <buildingDamageFactorPassable>10</buildingDamageFactorPassable> -->
+		
+		<plantDamageFactor>4</plantDamageFactor>
+		<corpseDamageFactor>0.5</corpseDamageFactor>
+		<explosionAffectOutsidePartsOnly>false</explosionAffectOutsidePartsOnly>
+		<explosionHeatEnergyPerCell>5</explosionHeatEnergyPerCell>
+		<explosionCellFleck>BlastDry</explosionCellFleck>
+		<explosionColorCenter>(255,255,255)</explosionColorCenter>
+		<explosionColorEdge>(205,90,230)</explosionColorEdge>
+		<soundExplosion>kotorsound_RepComDC17MortarExplode</soundExplosion>
+		<combatLogRules>Damage_Bomb</combatLogRules>
+	  </DamageDef>
+	  
+	  
+	
+
+</Defs>

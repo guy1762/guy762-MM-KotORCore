@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>	
+
+	
+	
+	<Vehicles.VehicleTurretDef Name="guy762_VehicleTurretBASE" ParentName="VehicleTurretBase" Abstract="True">
+		
+		<empDisables>true</empDisables>
+		
+	</Vehicles.VehicleTurretDef>
+	
+	
+	
+	
+</Defs>

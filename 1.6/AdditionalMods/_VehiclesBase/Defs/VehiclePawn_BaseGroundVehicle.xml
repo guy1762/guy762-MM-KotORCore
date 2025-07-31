@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>	
+	
+	
+	
+	<Vehicles.VehicleDef Name = "guy762_GroundVehiclePawn_base" ParentName = "guy762_VehiclePawn_base" Abstract = "True">
+		<properties>
+			<worldSpeedMultiplier>1</worldSpeedMultiplier>
+		</properties>
+		
+		<vehicleStats>
+			<!--AccelerationRate>0.03</AccelerationRate-->
+		</vehicleStats>
+		
+		<properties>
+			<customTerrainCosts AssignDefaults = "1"/>
+		</properties>
+		
+		<soundOneShotsOnEvent Inherit = "False">
+			<li>
+				<key>PawnEntered</key>
+				<value>kotorsound_select_shipgun</value>
+			</li>
+			<li>
+				<key>PawnExited</key>
+				<value>kotorsound_select_shipgun</value>
+			</li>
+			<li>
+				<key>PawnChangedSeats</key>
+				<value>kotorsound_select_shipgun</value>
+			</li>
+			
+			<li>
+				<key>CargoAdded</key>
+				<value>kotorsound_footlocker_open</value>
+			</li>
+			<li>
+				<key>CargoRemoved</key>
+				<value>kotorsound_footlocker_close</value>
+			</li>
+			
+			<li>
+				<key>Repaired</key>
+				<value>kotorsound_fusioncutter_oneshot</value>
+			</li>
+			
+			<li>
+				<key>OutOfFuel</key>
+				<value>kotorsound_starfighter_malfunction</value>
+			</li>
+			<li>
+				<key>DamageTaken</key>
+				<value>kotorsound_damage_laserhit</value>
+			</li>
+		</soundOneShotsOnEvent>
+	</Vehicles.VehicleDef>
+	
+	
+	
+	
+	
+	
+	
+	<Vehicles.VehicleDef Name = "guy762_SpeederBikeOrUnarmoredVehicle_base" ParentName = "guy762_GroundVehiclePawn_base" Abstract = "True">
+		<properties>
+			<damageDefMultipliers Inherit="False">
+				<li>
+					 <key>guy762_RangedDamage_ion</key>
+					 <value>2</value>
+				</li>
+				<li>
+					 <key>guy762_ExplosiveDamage_ion</key>
+					 <value>2</value>
+				</li>
+				<li>
+					 <key>guy762_GrenadeDamage_ion</key>
+					 <value>2</value>
+				</li>
+				<li>
+					 <key>guy762_MeleeDamage_ion</key>
+					 <value>2</value>
+				</li>
+				
+				<!-- <li> -->
+					 <!-- <key>guy762_GrenadeDamage_frag</key> -->
+					 <!-- <value>1.5</value> -->
+				<!-- </li> -->
+				<li>
+					 <key>guy762_GrenadeDamage_thermaldet</key>
+					 <value>4</value>
+				</li>
+				
+				
+				
+				<li>
+					 <key>guy762_RangedDamage_AntiVehicleEnergy</key>
+					 <value>1</value>
+				</li>
+				<li>
+					 <key>guy762_ExplosiveDamage_AntiVehicleEnergy</key>
+					 <value>1</value>
+				</li>
+				
+			</damageDefMultipliers>
+		</properties>
+	</Vehicles.VehicleDef>
+	
+	
+	
+</Defs>

@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- This Rulepackdef is what finds the txt files to be used in the later rulepacks -->
+    <RulePackDef>
+		<defName>guy762_NamerPawnKindFiles_StormtrooperID</defName>
+		<rulePack>
+		  <rulesFiles>
+			<li>SWStormieNamer_TwoLetters->Names/TwoLetterCombos</li>
+			<li>SWStormieNamer_AnyTwoDigits->Names/Digit_01_99</li>
+			<li>SWBF2_lastName->Names/lastnames_BF2rebel</li>
+			
+			<li>SWStormieNamerTKOnly->Names/SWnames_StormtrooperTKOnlyFuckThisShittyNameMakerSystem</li>
+		  </rulesFiles>
+		</rulePack>
+	</RulePackDef>
+
+    <!-- This is the item that goes into the racedef's namegenerator
+        Example - <nameGenerator>ATR_AndroidMaleNames</nameGenerator> -->
+  
+  <RulePackDef>
+    <defName>guy762_NamerPawnKind_StormtrooperID</defName>
+    <include>
+		<li>guy762_NamerPawnKindFiles_StormtrooperID</li>
+	</include>
+	<rulePack>
+	  <rulesStrings>
+		<!-- <li>r_name->'[SWStormieNamer_TwoLetters] [SWStormieNamer_AnyTwoDigits][SWStormieNamer_AnyTwoDigits]' [SWBF2_lastName]</li> -->
+		<li>r_name->[SWStormieNamerTKOnly]-[SWStormieNamer_AnyTwoDigits]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+	
+
+
+    
+
+</Defs>

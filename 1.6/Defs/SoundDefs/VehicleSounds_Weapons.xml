@@ -23,7 +23,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -48,7 +52,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -73,7 +81,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -98,7 +110,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -123,7 +139,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -148,7 +168,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -173,7 +197,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -198,7 +226,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>75</min>        
+					<max>150</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -223,7 +255,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -248,7 +284,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -273,7 +313,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -298,7 +342,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -323,7 +371,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -349,7 +401,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -375,7 +431,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -400,7 +460,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -425,7 +489,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -450,7 +518,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -475,7 +547,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -501,7 +577,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -526,7 +606,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -551,7 +635,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -576,7 +664,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -643,7 +735,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -671,7 +767,11 @@
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -699,7 +799,11 @@
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -736,7 +840,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -761,7 +869,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -786,7 +898,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -811,7 +927,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -837,7 +957,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -862,7 +986,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -893,7 +1021,11 @@
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -921,7 +1053,11 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>        
+					<max>100</max>
+				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -948,7 +1084,7 @@
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>	
+				</pitchRange>
 				<sustainLoop>True</sustainLoop>				
 			</li>
 		</subSounds>

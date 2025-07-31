@@ -362,7 +362,7 @@
 			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
 		</costList>
 		<descriptionHyperlinks>
-			<ThingDef>guy762_KotORWorkbench</ThingDef>
+			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
 		</descriptionHyperlinks>
 		<!-- <equippedStatOffsets> NO LONGER NECESSARY IN MW2 -->
 		  <!-- <MoveSpeed>0.000001</MoveSpeed> -->

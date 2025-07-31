@@ -107,7 +107,7 @@
         <countRange>10~25</countRange>
       </li>
 	  
-	  <li Class="StockGenerator_SingleDef">
+	  <li MayRequire="guy762.KotORDroids" Class="StockGenerator_SingleDef">
         <thingDef>TechprofSubpersonaCore</thingDef>
         <countRange>5~10</countRange>
       </li>

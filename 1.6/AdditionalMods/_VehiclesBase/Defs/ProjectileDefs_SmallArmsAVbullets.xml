@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>SWProj_TL50conc</defName>
+		<label>concussion blast</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/energybomb_purple</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_conc</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<armorPenetrationBase>0.30</armorPenetrationBase>
+			<speed>25</speed>
+			<explosionRadius>1.9</explosionRadius>
+			<!-- <extraDamages> -->
+				<!-- <li> -->
+					<!-- <def>Stun</def>        doesn't work -->
+					<!-- <amount>6</amount> -->
+				<!-- </li> -->
+			<!-- </extraDamages> -->
+			<soundExplode>kotorsound_JKrepeater_AltFireExplode</soundExplode>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>SWProj_AIConcRocket</defName>
+		<label>concussion rocket</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/rocket_yellow</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_conc</damageDef>
+			<damageAmountBase>25</damageAmountBase> <!-- doesn't affect knockback or blunt damage, will affect structure damage -->
+			<armorPenetrationBase>0.375</armorPenetrationBase>
+			
+			<!-- <extraDamages> -->
+				<!-- <li> -->
+					<!-- <def>Stun</def>           doesn't work -->
+					<!-- <amount>24</amount> -->
+				<!-- </li> -->
+			<!-- </extraDamages> -->
+			
+			<speed>50</speed>
+			<explosionRadius>1.9</explosionRadius>
+			<screenShakeFactor>2</screenShakeFactor>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+			<soundExplode>kotorsound_RepComDC17MortarExplode</soundExplode>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>SWProj_SAAVProtonMissile_light</defName>
+		<label>light proton missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_pink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationBase>0.5</armorPenetrationBase>
+			
+			<speed>50</speed>
+			<explosionRadius>1</explosionRadius>
+			<screenShakeFactor>1</screenShakeFactor>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+			<soundExplode>kotorsound_RepComDC17MortarExplode</soundExplode>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+				<tickRate>10</tickRate>
+				<lifetimeTicks>30000</lifetimeTicks>
+				<delayTurnInTicks>20</delayTurnInTicks>
+				<initialSpreadAngle>10</initialSpreadAngle>
+				<tailMote>guy762_OrbMote</tailMote>
+				<effectLifetime>600</effectLifetime>
+				<effectSize>2</effectSize>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>SWProj_SAAVProtonMissile_heavy</defName>
+		<label>heavy proton missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_pink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>100</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			
+			<speed>50</speed>
+			<explosionRadius>1</explosionRadius>
+			<screenShakeFactor>2</screenShakeFactor>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+			<soundExplode>kotorsound_RepComDC17MortarExplode</soundExplode>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+				<tickRate>10</tickRate>
+				<lifetimeTicks>30000</lifetimeTicks>
+				<delayTurnInTicks>20</delayTurnInTicks>
+				<initialSpreadAngle>10</initialSpreadAngle>
+				<tailMote>guy762_OrbMote</tailMote>
+				<effectLifetime>600</effectLifetime>
+				<effectSize>2</effectSize>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_AAprojectileBASE">
+		<defName>SWProj_SAAAProtonMissile_heavy</defName>
+		<label>heavy proton missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_pink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>100</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			
+			<speed>100</speed>
+			<explosionRadius>1</explosionRadius>
+			<screenShakeFactor>2</screenShakeFactor>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+			<soundExplode>kotorsound_RepComDC17MortarExplode</soundExplode>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+				<tickRate>10</tickRate>
+				<lifetimeTicks>30000</lifetimeTicks>
+				<delayTurnInTicks>20</delayTurnInTicks>
+				<initialSpreadAngle>10</initialSpreadAngle>
+				<tailMote>guy762_OrbMote</tailMote>
+				<effectLifetime>600</effectLifetime>
+				<effectSize>2</effectSize>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+
+</Defs>

@@ -1203,7 +1203,7 @@
 	</costList>
 	<descriptionHyperlinks>
 		<ThingDef>guy762_KotORDroidBench</ThingDef>
-		<ThingDef>guy762_KotORWorkbench</ThingDef>
+		<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
 	</descriptionHyperlinks>
 	<equippedStatOffsets>
 	  <MoveSpeed>0.000001</MoveSpeed>

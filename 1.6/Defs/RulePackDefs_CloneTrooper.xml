@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<RulePackDef>
+		<defName>SWCP_NamerCloneTrooper</defName>
+		<rulePack>
+			<rulesStrings>
+				<li>name->[SWCP_ClonePrefix] '[SWCP_CLoneNicknameFull]' [SWCP_CloneNumber][SWCP_CloneNumber][SWCP_CloneNumber][SWCP_CloneNumber]</li>
+			</rulesStrings>
+			<rulesRaw>
+				<li Class="Rule_File">
+					<keyword>SWCP_CloneLetter</keyword>
+					<path>SWCP/SWCPClone/NamePartLetter</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>SWCP_CloneNumber</keyword>
+					<path>SWCP/SWCPClone/NamePartNumber</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>SWCP_ClonePrefix</keyword>
+					<path>SWCP/SWCPClone/NamePartPrefix</path>
+				</li>
+				<li Class="Rule_File">
+					<keyword>SWCP_CLoneNicknameFull</keyword>
+					<path>SWCP/SWCPClone/NameNicknameFull</path>
+				</li>
+			</rulesRaw>
+		</rulePack>
+	</RulePackDef>
+</Defs>

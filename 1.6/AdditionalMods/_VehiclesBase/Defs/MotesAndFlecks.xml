@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>	
+	<FleckDef ParentName="FleckFeedbackBase">
+		<defName>guy762_SWStarfighter_waypoint</defName>
+		<graphicData>
+		  <texPath>UI/ship_movement_waypoint</texPath>
+		</graphicData>
+	</FleckDef>
+	
+	
+	<ThingDef ParentName="MoteBase">
+        <defName>guy762_OrbMote</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <drawOffscreen>true</drawOffscreen>
+        <graphicData>
+			<texPath>Things/Mote/Smoke</texPath>
+			<renderInstanced>true</renderInstanced>
+        </graphicData>
+        <mote>
+            <fadeInTime>0.05</fadeInTime>
+            <fadeOutTime>0.05</fadeOutTime>
+            <solidTime>1.9</solidTime>
+        </mote>
+    </ThingDef>
+  
+	
+	
+	
+	
+</Defs>
