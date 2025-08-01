@@ -312,7 +312,7 @@
 		<defName>guy762_addiction_rhydo</defName>
 		<label>rhydo addiction</label>
 		<description>A chemical addiction to Rhydonium. Long-term presence of Rhydonium has caused neurological adaptations at the cellular level, so the brain can no longer function properly without the drug.
-	\nWithout regular doses of spice, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
+	\nWithout regular doses of Rhydonium, withdrawal symptoms will begin. However, extended abstinence will force the brain to adapt back to its normal state, resolving the addiction.</description>
 		<hediffClass>Hediff_Addiction</hediffClass>
 		<chemicalNeed>guy762_chemneed_rhydo</chemicalNeed>
 		<comps>

@@ -84,7 +84,7 @@
    <ThingDef ParentName="ApparelMakeableBase">
 		<defName>GS_SandP_Body</defName>
 		<label>Sandpeople wraps</label>
-		<description>A full body wrap which is made out of leather or fabric.Great for covering skin and keeping out the heat.</description>
+		<description>A full body wrap which is made out of leather or fabric. Great for covering skin and keeping out the heat.</description>
 		<graphicData>
 		<texPath>Apparel/Sovereign_Tuskens/Wraps</texPath>
 		<graphicClass>Graphic_Single</graphicClass>

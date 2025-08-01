@@ -5,7 +5,7 @@
   <ThingDef ParentName="guy762_CraftableUtilityBeltBase">
     <defName>guy762_stealthbelt</defName>
     <label>stealth field generator</label>
-    <description>This device enables Stealth Mode, a camouflage field that hides the user. Combat is disabled while active, but performing mundane tasks are not. Movement speed is also reduced while active. This basic version lasts up to 30 seconds.</description>
+    <description>This device enables Stealth Mode, a camouflage field that hides the user. Combat is disabled while active, but performing mundane tasks are not. Movement speed is also reduced while active.\n\nThis basic version lasts up to 30 seconds.</description>
     <descriptionHyperlinks>
 		<HediffDef>guy762_StealthField</HediffDef>
 	</descriptionHyperlinks>

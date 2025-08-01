@@ -140,6 +140,10 @@
 	  
 	  
 	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_Plastoid</thingDef>
+        <countRange>5000~7500</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
         <thingDef>Steel</thingDef>
         <countRange>2500~5000</countRange>
       </li>
