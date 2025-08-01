@@ -31,15 +31,15 @@
 			
 			
 			
-			<li MayRequire="kentington.saveourship2" Class="XmlExtensions.Setting.GapLine"/>
-			<li MayRequire="kentington.saveourship2" Class="XmlExtensions.Setting.Checkbox">
-				<key>KotORCoreSettings_SoS2Stygium</key>
-				<label>Enable 25x Stygium in SoS2 Cloaking Device recipe patch</label>
-				<defaultValue>true</defaultValue>
-			</li>
-			<li MayRequire="kentington.saveourship2" Class="XmlExtensions.Setting.Text">
-				<text>This patch adds 25 Stygium crystals to the building material requirements of the Save Our Ship 2 ship cloaking device.</text>
-			</li>
+			<!-- <li MayRequire="kentington.saveourship2" Class="XmlExtensions.Setting.GapLine"/> -->
+			<!-- <li MayRequire="kentington.saveourship2" Class="XmlExtensions.Setting.Checkbox"> -->
+				<!-- <key>KotORCoreSettings_SoS2Stygium</key> -->
+				<!-- <label>Enable 25x Stygium in SoS2 Cloaking Device recipe patch</label> -->
+				<!-- <defaultValue>true</defaultValue> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="kentington.saveourship2" Class="XmlExtensions.Setting.Text"> -->
+				<!-- <text>This patch adds 25 Stygium crystals to the building material requirements of the Save Our Ship 2 ship cloaking device.</text> -->
+			<!-- </li> -->
 			
 			
 			
@@ -92,133 +92,133 @@
 			
 			
 			
-			<li Class="XmlExtensions.Setting.GapLine" MayRequire="Ludeon.RimWorld.Ideology"/>
-			<li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Ideology">
-				<key>KotORCoreSettings_BroadwrapLayerTweak</key>
-				<label>Broadwrap coverage tweak</label>
-				<defaultValue>true</defaultValue>
-			</li>
-			<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Ideology">
-				<text>This patch adjusts the coverage of the "broadwrap" hat so it only covers the "UpperHead" layer, meaning apparel that covers the mouth can be worn with it.</text>
-			</li>
+			<!-- <li Class="XmlExtensions.Setting.GapLine" MayRequire="Ludeon.RimWorld.Ideology"/> -->
+			<!-- <li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Ideology"> -->
+				<!-- <key>KotORCoreSettings_BroadwrapLayerTweak</key> -->
+				<!-- <label>Broadwrap coverage tweak</label> -->
+				<!-- <defaultValue>true</defaultValue> -->
+			<!-- </li> -->
+			<!-- <li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Ideology"> -->
+				<!-- <text>This patch adjusts the coverage of the "broadwrap" hat so it only covers the "UpperHead" layer, meaning apparel that covers the mouth can be worn with it.</text> -->
+			<!-- </li> -->
 			
 			
 			
 			
 			
 			
-			<li Class="XmlExtensions.Setting.GapLine" MayRequire="Ludeon.RimWorld.Ideology"/>
-			<li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Ideology">
-				<key>KotORCoreSettings_IdeoAbilitiesAIUsable</key>
-				<label>Ideo role abilities can be used by AI</label>
-				<defaultValue>true</defaultValue>
-			</li>
-			<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Ideology">
-				<text>This patch adds an XML line to allow the AI to use the Ideology role abilities (e.g. Combat Command, Marksman Command, Berserker Trance) since they are used in KotOR Factions' PawnKinds.</text>
-			</li>
+			<!-- <li Class="XmlExtensions.Setting.GapLine" MayRequire="Ludeon.RimWorld.Ideology"/> -->
+			<!-- <li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Ideology"> -->
+				<!-- <key>KotORCoreSettings_IdeoAbilitiesAIUsable</key> -->
+				<!-- <label>Ideo role abilities can be used by AI</label> -->
+				<!-- <defaultValue>true</defaultValue> -->
+			<!-- </li> -->
+			<!-- <li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Ideology"> -->
+				<!-- <text>This patch adds an XML line to allow the AI to use the Ideology role abilities (e.g. Combat Command, Marksman Command, Berserker Trance) since they are used in KotOR Factions' PawnKinds.</text> -->
+			<!-- </li> -->
 			
 			
 			
 			
 			
-			<li Class="XmlExtensions.Setting.GapLine" MayRequire="Ludeon.RimWorld.Biotech"/>
-			<li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Biotech">
-				<key>KotORCoreSettings_SashLayerTweak</key>
-				<label>Sash layer tweak</label>
-				<defaultValue>true</defaultValue>
-			</li>
-			<li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Biotech">
-				<text>This patch adjusts the layering of the "sash" apparel so it is worn on the outermost "Shell" layer (same as the vanilla cape and the chest accessories in KotOR Weapons and Armor).</text>
-			</li>
+			<!-- <li Class="XmlExtensions.Setting.GapLine" MayRequire="Ludeon.RimWorld.Biotech"/> -->
+			<!-- <li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Biotech"> -->
+				<!-- <key>KotORCoreSettings_SashLayerTweak</key> -->
+				<!-- <label>Sash layer tweak</label> -->
+				<!-- <defaultValue>true</defaultValue> -->
+			<!-- </li> -->
+			<!-- <li Class="XmlExtensions.Setting.Text" MayRequire="Ludeon.RimWorld.Biotech"> -->
+				<!-- <text>This patch adjusts the layering of the "sash" apparel so it is worn on the outermost "Shell" layer (same as the vanilla cape and the chest accessories in KotOR Weapons and Armor).</text> -->
+			<!-- </li> -->
 			
 			
 		</settings>
 	</XmlExtensions.SettingsMenuDef>
 	
-	<XmlExtensions.SettingsMenuDef MayRequire="guy762.StarWarsXenotypes">
-		<defName>guy762_SWXenotypesSettingsMenu</defName>
-		<modId>guy762.StarWarsXenotypes</modId>
-		<label>Star Wars Xenotypes</label>
-		<settings>
-			<li Class="XmlExtensions.Setting.Text">
-                <text>Changes require restarting RimWorld!!!</text>
-                <anchor>Middle</anchor>
-            </li>
-			<li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.GapLine"/>
-			<li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.Checkbox">
-				<key>KotORXenotypeSettings_HumanRaceRenamer</key>
-				<label>Human race ThingDef is renamed to "sentient".</label>
-				<defaultValue>true</defaultValue>
-			</li>
-			<li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.Text">
-				<text>This patch renames and edits the description of the base "human" race to be slightly more immersive when using a Xenotype-based alien mod (like Star Wars Xenotypes). The Baseliner Xenotype is also renamed "human".</text>
-			</li>
-			<li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.GapLine"/>
-			<li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.Checkbox">
-				<key>KotORXenotypeSettings_EarLayer68</key>
-				<label>Ear gene layering fix</label>
-				<defaultValue>true</defaultValue>
-			</li>
-			<li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.Text">
-				<text>This patch shifts the rendering layer of the Biotech and the applicable Star Wars Xenotypes ear genes down two layers, so they no longer clip through things like the KotOR headbands.</text>
-			</li>
-		</settings>
-	</XmlExtensions.SettingsMenuDef>
+	<!-- <XmlExtensions.SettingsMenuDef MayRequire="guy762.StarWarsXenotypes"> -->
+		<!-- <defName>guy762_SWXenotypesSettingsMenu</defName> -->
+		<!-- <modId>guy762.StarWarsXenotypes</modId> -->
+		<!-- <label>Star Wars Xenotypes</label> -->
+		<!-- <settings> -->
+			<!-- <li Class="XmlExtensions.Setting.Text"> -->
+                <!-- <text>Changes require restarting RimWorld!!!</text> -->
+                <!-- <anchor>Middle</anchor> -->
+            <!-- </li> -->
+			<!-- <li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.GapLine"/> -->
+			<!-- <li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.Checkbox"> -->
+				<!-- <key>KotORXenotypeSettings_HumanRaceRenamer</key> -->
+				<!-- <label>Human race ThingDef is renamed to "sentient".</label> -->
+				<!-- <defaultValue>true</defaultValue> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.Text"> -->
+				<!-- <text>This patch renames and edits the description of the base "human" race to be slightly more immersive when using a Xenotype-based alien mod (like Star Wars Xenotypes). The Baseliner Xenotype is also renamed "human".</text> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.GapLine"/> -->
+			<!-- <li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.Checkbox"> -->
+				<!-- <key>KotORXenotypeSettings_EarLayer68</key> -->
+				<!-- <label>Ear gene layering fix</label> -->
+				<!-- <defaultValue>true</defaultValue> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.Setting.Text"> -->
+				<!-- <text>This patch shifts the rendering layer of the Biotech and the applicable Star Wars Xenotypes ear genes down two layers, so they no longer clip through things like the KotOR headbands.</text> -->
+			<!-- </li> -->
+		<!-- </settings> -->
+	<!-- </XmlExtensions.SettingsMenuDef> -->
 	
 	
 	
-	<XmlExtensions.SettingsMenuDef MayRequire="guy762.KotORWeapons">
-		<defName>guy762_KotORWeaponsSettingsMenu</defName>
-		<modId>guy762.KotORWeapons</modId>
-		<label>Star Wars KotOR Weapons and Armor</label>
-		<settings>
-			<li Class="XmlExtensions.Setting.Text">
-                <text>Changes require restarting RimWorld!!!</text>
-                <anchor>Middle</anchor>
-            </li>
-			<li Class="XmlExtensions.Setting.GapLine"/>
-			<li MayRequire="EBSG.Framework" Class="XmlExtensions.Setting.Checkbox">
-				<key>KotORWeaponsSettings_EBSGSkillImplantRework</key>
-				<label>Skill implant overhaul using EBSG</label>
-				<defaultValue>true</defaultValue>
-			</li>
-			<li MayRequire="EBSG.Framework" Class="XmlExtensions.Setting.Text">
-				<text>This patch reworks all four "Skill" implant upgrades to give direct bonuses to a pawn's skill levels, rather than giving a bunch of stat modifiers.</text>
-			</li>
+	<!-- <XmlExtensions.SettingsMenuDef MayRequire="guy762.KotORWeapons"> -->
+		<!-- <defName>guy762_KotORWeaponsSettingsMenu</defName> -->
+		<!-- <modId>guy762.KotORWeapons</modId> -->
+		<!-- <label>Star Wars KotOR Weapons and Armor</label> -->
+		<!-- <settings> -->
+			<!-- <li Class="XmlExtensions.Setting.Text"> -->
+                <!-- <text>Changes require restarting RimWorld!!!</text> -->
+                <!-- <anchor>Middle</anchor> -->
+            <!-- </li> -->
+			<!-- <li Class="XmlExtensions.Setting.GapLine"/> -->
+			<!-- <li MayRequire="EBSG.Framework" Class="XmlExtensions.Setting.Checkbox"> -->
+				<!-- <key>KotORWeaponsSettings_EBSGSkillImplantRework</key> -->
+				<!-- <label>Skill implant overhaul using EBSG</label> -->
+				<!-- <defaultValue>true</defaultValue> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="EBSG.Framework" Class="XmlExtensions.Setting.Text"> -->
+				<!-- <text>This patch reworks all four "Skill" implant upgrades to give direct bonuses to a pawn's skill levels, rather than giving a bunch of stat modifiers.</text> -->
+			<!-- </li> -->
 			
 			
 			
-			<li Class="XmlExtensions.Setting.GapLine"/>
-			<li MayRequire="lee.theforce.lightsaber" Class="XmlExtensions.Setting.Checkbox">
-				<key>KotORWeaponsSettings_KotORLightsaberBalance</key>
-				<label>KotOR Weapons lightsaber balancing for Star Wars: The Force - Lightsaber</label>
-				<defaultValue>true</defaultValue>
-			</li>
-			<li MayRequire="lee.theforce.lightsaber" Class="XmlExtensions.Setting.Text">
-				<text>This patch rebalances the lightsabers in Star Wars: The Force - Lightsaber to have the same stats as the lightsabers from Star Wars KotOR Weapons and Armor.</text>
-			</li>
+			<!-- <li Class="XmlExtensions.Setting.GapLine"/> -->
+			<!-- <li MayRequire="lee.theforce.lightsaber" Class="XmlExtensions.Setting.Checkbox"> -->
+				<!-- <key>KotORWeaponsSettings_KotORLightsaberBalance</key> -->
+				<!-- <label>KotOR Weapons lightsaber balancing for Star Wars: The Force - Lightsaber</label> -->
+				<!-- <defaultValue>true</defaultValue> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="lee.theforce.lightsaber" Class="XmlExtensions.Setting.Text"> -->
+				<!-- <text>This patch rebalances the lightsabers in Star Wars: The Force - Lightsaber to have the same stats as the lightsabers from Star Wars KotOR Weapons and Armor.</text> -->
+			<!-- </li> -->
 			
-			<li Class="XmlExtensions.Setting.GapLine"/>
-			<li MayRequire="lee.theforce.lightsaber" Class="XmlExtensions.Setting.Checkbox">
-				<key>KotORWeaponsSettings_KotORLightsaberCrafting</key>
-				<label>KotOR Weapons lightsaber crafting recipes for Star Wars: The Force - Lightsaber</label>
-				<defaultValue>true</defaultValue>
-			</li>
-			<li MayRequire="lee.theforce.lightsaber" Class="XmlExtensions.Setting.Text">
-				<text>This patch replaces the lightsaber crafting recipes in Star Wars: The Force - Lightsaber with the recipes from Star Wars KotOR Weapons and Armor.</text>
-			</li>
+			<!-- <li Class="XmlExtensions.Setting.GapLine"/> -->
+			<!-- <li MayRequire="lee.theforce.lightsaber" Class="XmlExtensions.Setting.Checkbox"> -->
+				<!-- <key>KotORWeaponsSettings_KotORLightsaberCrafting</key> -->
+				<!-- <label>KotOR Weapons lightsaber crafting recipes for Star Wars: The Force - Lightsaber</label> -->
+				<!-- <defaultValue>true</defaultValue> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="lee.theforce.lightsaber" Class="XmlExtensions.Setting.Text"> -->
+				<!-- <text>This patch replaces the lightsaber crafting recipes in Star Wars: The Force - Lightsaber with the recipes from Star Wars KotOR Weapons and Armor.</text> -->
+			<!-- </li> -->
 			
-			<li Class="XmlExtensions.Setting.GapLine"/>
-			<li MayRequire="lee.theforce.lightsaber" Class="XmlExtensions.Setting.Checkbox">
-				<key>KotORWeaponsSettings_KotORLightsaberUpgradeSlots</key>
-				<label>KotOR Weapons lightsaber upgrade crystal slots for Star Wars: The Force - Lightsaber</label>
-				<defaultValue>true</defaultValue>
-			</li>
-			<li MayRequire="lee.theforce.lightsaber" Class="XmlExtensions.Setting.Text">
-				<text>This patch replaces the Kyber Crystal slot on the lightsabers from Star Wars: The Force - Lightsaber with the Color, Focus, and Power crystal slots from the Star Wars KotOR Weapons and Armor lightsabers.</text>
-			</li>
-		</settings>
-	</XmlExtensions.SettingsMenuDef>
+			<!-- <li Class="XmlExtensions.Setting.GapLine"/> -->
+			<!-- <li MayRequire="lee.theforce.lightsaber" Class="XmlExtensions.Setting.Checkbox"> -->
+				<!-- <key>KotORWeaponsSettings_KotORLightsaberUpgradeSlots</key> -->
+				<!-- <label>KotOR Weapons lightsaber upgrade crystal slots for Star Wars: The Force - Lightsaber</label> -->
+				<!-- <defaultValue>true</defaultValue> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="lee.theforce.lightsaber" Class="XmlExtensions.Setting.Text"> -->
+				<!-- <text>This patch replaces the Kyber Crystal slot on the lightsabers from Star Wars: The Force - Lightsaber with the Color, Focus, and Power crystal slots from the Star Wars KotOR Weapons and Armor lightsabers.</text> -->
+			<!-- </li> -->
+		<!-- </settings> -->
+	<!-- </XmlExtensions.SettingsMenuDef> -->
 	
 	
 	

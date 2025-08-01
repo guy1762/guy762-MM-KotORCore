@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+  <TraderKindDef>
+    <defName>guy762_BaseTraderKind_spicerunner</defName>
+    <label>black market spicerunner</label>
+    <!-- <orbital>true</orbital> -->
+	<!--faction>guy762_KotORFaction_Exchange</faction-->
+    <!-- <permitRequiredForTrading MayRequire="guy762.KotORFactions">guy762_KotORPermit_BlackMarketOrbital</permitRequiredForTrading> -->
+    <!-- <commonalityMultFromPopulationIntent> -->
+      <!-- <points> -->
+        <!-- <li>(0.2, 0)</li> -->
+        <!-- <li>(1,   1)</li> -->
+        <!-- <li>(2,   3)</li> -->
+      <!-- </points> -->
+    <!-- </commonalityMultFromPopulationIntent> -->
+	<modExtensions>
+		<li Class="SWCP.Currencies.CurrencyReplacement">
+			<currency>Silver</currency>
+		</li>
+	</modExtensions>
+    <stockGenerators>
+
+      <!-- CURRENCY -->
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Silver</thingDef>
+        <countRange>1500~3000</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Gold</thingDef>
+        <countRange>50~200</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_SingleDef">
+		<thingDef>guy762_KotORcredits</thingDef>
+		<countRange>25000~50000</countRange>
+	  </li>
+	  <li Class="StockGenerator_BuyTradeTag">
+		<tag>guy762TT_credits</tag>
+	  </li>
+	  
+	  
+	  
+	  <!-- Resources -->
+	  
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_Spice</thingDef>
+        <countRange>1000~5000</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>Neutroamine</thingDef>
+        <countRange>100~200</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Chocolate</thingDef>
+        <countRange>50~200</countRange>
+      </li>
+	  
+	  
+	  
+
+      
+
+	  
+	  
+	  <!-- Medicine/Drugs -->
+	  
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_SpacerMedKit</thingDef>
+        <countRange>20~30</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_KotORHyperStims</tradeTag>
+        <thingDefCountRange>4~5</thingDefCountRange>
+        <countRange>100~200</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>KOTOR_Deathstick</thingDef>
+        <countRange>100~300</countRange>
+      </li>
+
+	  
+	   <li Class="StockGenerator_SingleDef">
+        <thingDef>Luciferium</thingDef>
+        <countRange>400~800</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>Drugs</tradeTag>
+        <thingDefCountRange>6~10</thingDefCountRange>
+		<countRange>100~300</countRange>
+      </li>
+	  <li Class="StockGenerator_SingleDef">
+        <thingDef>Beer</thingDef>
+        <countRange>50~100</countRange>
+      </li>
+	  
+	  
+	  
+	  
+	  
+	  
+	  <!-- Implants -->
+      <li Class="StockGenerator_Tag">
+        <tradeTag>TechHediff</tradeTag>
+        <thingDefCountRange>4~8</thingDefCountRange>
+        <countRange>1~6</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>ImplantEmpireCommon</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_implants_basic</tradeTag>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>1~4</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_implants_adv</tradeTag>
+        <thingDefCountRange>1~2</thingDefCountRange>
+        <countRange>1~2</countRange>
+      </li>
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>guy762TT_implants_rare</tradeTag>
+        <thingDefCountRange>1~1</thingDefCountRange>
+        <countRange>0~1</countRange>
+      </li>
+	  
+	  <li Class="StockGenerator_Category">
+        <categoryDef>BodyPartsNatural</categoryDef>
+        <thingDefCountRange>3~6</thingDefCountRange>
+        <countRange>1~10</countRange>
+      </li>
+
+
+      
+      <!-- Buying -->
+      <li Class="StockGenerator_BuyExpensiveSimple" />
+      <li Class="StockGenerator_BuyTradeTag"><tag>Art</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireCommon</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ImplantEmpireRoyal</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>PsylinkNeuroformer</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>ExoticBuilding</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>MusicalInstrument</tag></li>
+      <li Class="StockGenerator_BuyTradeTag"><tag>UtilitySpecial</tag></li>
+
+    </stockGenerators>
+  </TraderKindDef>
+  
+  
+</Defs>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	
+	<Operation Class="PatchOperationFindMod" IfModActive="kentington.saveourship2">
+		<mods>
+			<li>Save Our Ship 2</li>
+		</mods>
+		
+		<match Class="PatchOperationAdd">
+		  <xpath>Defs/ThingDef[defName="ShipCloakingDevice"]/costList</xpath>
+		  <value>
+				<guy762_crystalitem_stygium>25</guy762_crystalitem_stygium>
+		  </value>
+		</match>
+	  
+	</Operation>
+
+    
+
+</Patch>

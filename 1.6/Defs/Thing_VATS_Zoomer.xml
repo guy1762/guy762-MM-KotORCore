@@ -17,4 +17,23 @@
         </graphicData>
     </ThingDef>
 	
+	<StatCategoryDef>
+        <defName>SWCP_LegendaryEffectStats</defName>
+        <displayOrder>71</displayOrder>
+    </StatCategoryDef>
+	
+	<EffecterDef>
+        <defName>SWCP_VATSLegendaryEffect_Explosive_Explosion</defName>
+        <children>
+        </children>
+    </EffecterDef>
+	
+	<SWCP.Core.LegendaryEffectDef>
+        <defName>SWCP_VATSLegendaryEffect_Rapid</defName>
+        <label>Rapid</label>
+        <description>Boosts firing rate</description>
+        <IsForWeapon>true</IsForWeapon>
+        <IsForApparel>false</IsForApparel>
+    </SWCP.Core.LegendaryEffectDef>
+	
 </Defs>

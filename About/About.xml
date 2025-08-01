@@ -5,7 +5,7 @@
 	<name>Star Wars KotOR Resources and Materials</name>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/ModIcon_guy762_KotORCore</modIconPath>
 	<description>Adds resources, crafting materials, consumables, and other items from across the Star Wars universe.</description>
-	<author>guy762, MajesticMadman, Kaitorisenkou, and lee01richards</author>
+	<author>guy762, MajesticMadman, Kaitorisenkou, and Lee</author>
 	
 	<!-- Technical Details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<supportedVersions>
@@ -18,18 +18,18 @@
 	
 	<!-- Requirements ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<modDependencies>
-	<!-- <li> -->
-		<!-- <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId> -->
-		<!-- <displayName>Vanilla Expanded Framework</displayName> -->
-		<!-- <steamWorkshopUrl>steam://url/CommunityFilePage/2023507013</steamWorkshopUrl> -->
-		<!-- <downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl> -->
-	  <!-- </li> -->
-	  <li>
-        <packageId>imranfish.xmlextensions</packageId>
-		<displayName>XML Extensions</displayName>
-		<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
-		<steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
-	  </li>
+		<!-- <li> -->
+			<!-- <packageId>OskarPotocki.VanillaFactionsExpanded.Core</packageId> -->
+			<!-- <displayName>Vanilla Expanded Framework</displayName> -->
+			<!-- <steamWorkshopUrl>steam://url/CommunityFilePage/2023507013</steamWorkshopUrl> -->
+			<!-- <downloadUrl>https://github.com/Vanilla-Expanded/VanillaExpandedFramework</downloadUrl> -->
+		<!-- </li> -->
+		<li>
+			<packageId>imranfish.xmlextensions</packageId>
+			<displayName>XML Extensions</displayName>
+			<downloadUrl>https://github.com/15adhami/XmlExtensions/releases</downloadUrl>
+			<steamWorkshopUrl>steam://url/CommunityFilePage/2574315206</steamWorkshopUrl>
+		</li>
   </modDependencies>
 	
 	<loadAfterByVersion>

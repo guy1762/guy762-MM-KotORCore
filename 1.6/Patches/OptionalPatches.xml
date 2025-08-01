@@ -64,26 +64,26 @@
         </caseTrue>
     </Operation>
 
-    <Operation Class="XmlExtensions.OptionalPatch">
-        <modId>guy762.MM.KotORCore</modId>
-        <key>KotORCoreSettings_SoS2Stygium</key>
-        <defaultValue>true</defaultValue>
-        <caseTrue>
-            <Operation Class="PatchOperationFindMod" IfModActive="kentington.saveourship2">
-				<mods>
-					<li>Save Our Ship 2</li>
-				</mods>
+    <!-- <Operation Class="XmlExtensions.OptionalPatch"> -->
+        <!-- <modId>guy762.MM.KotORCore</modId> -->
+        <!-- <key>KotORCoreSettings_SoS2Stygium</key> -->
+        <!-- <defaultValue>true</defaultValue> -->
+        <!-- <caseTrue> -->
+            <!-- <Operation Class="PatchOperationFindMod" IfModActive="kentington.saveourship2"> -->
+				<!-- <mods> -->
+					<!-- <li>Save Our Ship 2</li> -->
+				<!-- </mods> -->
 				
-				<match Class="PatchOperationAdd">
-				  <xpath>Defs/ThingDef[defName="ShipCloakingDevice"]/costList</xpath>
-				  <value>
-						<guy762_crystalitem_stygium>25</guy762_crystalitem_stygium>
-				  </value>
-				</match>
+				<!-- <match Class="PatchOperationAdd"> -->
+				  <!-- <xpath>Defs/ThingDef[defName="ShipCloakingDevice"]/costList</xpath> -->
+				  <!-- <value> -->
+						<!-- <guy762_crystalitem_stygium>25</guy762_crystalitem_stygium> -->
+				  <!-- </value> -->
+				<!-- </match> -->
 			  
-			</Operation>
-        </caseTrue>
-    </Operation>
+			<!-- </Operation> -->
+        <!-- </caseTrue> -->
+    <!-- </Operation> -->
 
 
     <!-- <Operation Class="XmlExtensions.OptionalPatch"> -->
@@ -146,62 +146,62 @@
 	
 	
 	
-	<Operation MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.OptionalPatch">
-        <modId>guy762.MM.KotORCore</modId>
-        <key>KotORXenotypeSettings_HumanRaceRenamer</key>
-        <defaultValue>true</defaultValue>
-        <caseTrue>
-            <Operation Class="PatchOperationSequence">
-			  <operations>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Human"]/label</xpath>
-					<value>
-						<label>sentient</label>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/ThingDef[defName="Human"]/description</xpath>
-					<value>
-						<description>A sentient organic being, probably capable of communication, complex thought, and tool use. Or not. It's a big galaxy, after all.</description>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/XenotypeDef[defName="Baseliner"]/label</xpath>
-					<value>
-						<label>human</label>
-					</value>
-				</li>
-			  </operations>
-			</Operation>
-        </caseTrue>
-    </Operation>
+	<!-- <Operation MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.OptionalPatch"> -->
+        <!-- <modId>guy762.MM.KotORCore</modId> -->
+        <!-- <key>KotORXenotypeSettings_HumanRaceRenamer</key> -->
+        <!-- <defaultValue>true</defaultValue> -->
+        <!-- <caseTrue> -->
+            <!-- <Operation Class="PatchOperationSequence"> -->
+			  <!-- <operations> -->
+				<!-- <li Class="PatchOperationReplace"> -->
+					<!-- <xpath>Defs/ThingDef[defName="Human"]/label</xpath> -->
+					<!-- <value> -->
+						<!-- <label>sentient</label> -->
+					<!-- </value> -->
+				<!-- </li> -->
+				<!-- <li Class="PatchOperationReplace"> -->
+					<!-- <xpath>Defs/ThingDef[defName="Human"]/description</xpath> -->
+					<!-- <value> -->
+						<!-- <description>A sentient organic being, probably capable of communication, complex thought, and tool use. Or not. It's a big galaxy, after all.</description> -->
+					<!-- </value> -->
+				<!-- </li> -->
+				<!-- <li Class="PatchOperationReplace"> -->
+					<!-- <xpath>Defs/XenotypeDef[defName="Baseliner"]/label</xpath> -->
+					<!-- <value> -->
+						<!-- <label>human</label> -->
+					<!-- </value> -->
+				<!-- </li> -->
+			  <!-- </operations> -->
+			<!-- </Operation> -->
+        <!-- </caseTrue> -->
+    <!-- </Operation> -->
 	
 	
 	
 	
-	<Operation MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.OptionalPatch">
-        <modId>guy762.MM.KotORCore</modId>
-        <key>KotORXenotypeSettings_EarLayer68</key>
-        <defaultValue>true</defaultValue>
-        <caseTrue>
-            <Operation Class="PatchOperationSequence">
-			  <operations>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/GeneDef[defName="Ears_Pointed" or defName="Ears_Cat" or defName="Ears_Floppy" or defName="Ears_Pig"]/renderNodeProperties/li[1]/drawData/defaultData/layer</xpath>
-					<value>
-						<layer>68</layer>
-					</value>
-				</li>
-				<li Class="PatchOperationReplace">
-					<xpath>Defs/GeneDef[defName="guy762_Ears_big" or defName="guy762_Ears_BigCat" or defName="guy762_Ears_round" or defName="guy762_Ears_weirdflap"]/renderNodeProperties/li[1]/drawData/defaultData/layer</xpath>
-					<value>
-						<layer>68</layer>
-					</value>
-				</li>
-			  </operations>
-			</Operation>
-        </caseTrue>
-    </Operation>
+	<!-- <Operation MayRequire="guy762.StarWarsXenotypes" Class="XmlExtensions.OptionalPatch"> -->
+        <!-- <modId>guy762.MM.KotORCore</modId> -->
+        <!-- <key>KotORXenotypeSettings_EarLayer68</key> -->
+        <!-- <defaultValue>true</defaultValue> -->
+        <!-- <caseTrue> -->
+            <!-- <Operation Class="PatchOperationSequence"> -->
+			  <!-- <operations> -->
+				<!-- <li Class="PatchOperationReplace"> -->
+					<!-- <xpath>Defs/GeneDef[defName="Ears_Pointed" or defName="Ears_Cat" or defName="Ears_Floppy" or defName="Ears_Pig"]/renderNodeProperties/li[1]/drawData/defaultData/layer</xpath> -->
+					<!-- <value> -->
+						<!-- <layer>68</layer> -->
+					<!-- </value> -->
+				<!-- </li> -->
+				<!-- <li Class="PatchOperationReplace"> -->
+					<!-- <xpath>Defs/GeneDef[defName="guy762_Ears_big" or defName="guy762_Ears_BigCat" or defName="guy762_Ears_round" or defName="guy762_Ears_weirdflap"]/renderNodeProperties/li[1]/drawData/defaultData/layer</xpath> -->
+					<!-- <value> -->
+						<!-- <layer>68</layer> -->
+					<!-- </value> -->
+				<!-- </li> -->
+			  <!-- </operations> -->
+			<!-- </Operation> -->
+        <!-- </caseTrue> -->
+    <!-- </Operation> -->
 	
 	
 	
