@@ -25,7 +25,7 @@
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
-			<layers>
+			<layers Inherit="False">
 				<li>Shell</li>
 			</layers>
 			<bodyPartGroups>

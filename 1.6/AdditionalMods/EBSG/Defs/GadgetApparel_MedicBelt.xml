@@ -46,8 +46,9 @@
       <li>guy762TT_KotORLegendary</li>
     </tradeTags>
 	<comps>
-		<li Class="EBSGFramework.CompProperties_EquippableAbility">
-			<ability>guy762_Ability_MedicBeltHeal</ability>
+		<!-- <li Class="EBSGFramework.CompProperties_EquippableAbility"> -->
+		<li Class="CompProperties_EquippableAbility">
+			<abilityDef>guy762_Ability_MedicBeltHeal</abilityDef>
 		</li>
 		<!-- <li Class="CompProperties_EquippableAbility"> -->
 			<!-- <abilityDef>guy762_Ability_MedicBeltHeal</abilityDef> -->
