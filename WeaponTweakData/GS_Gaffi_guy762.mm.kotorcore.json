@@ -1,0 +1,12 @@
+{
+  "TextureModID": "guy762.mm.kotorcore",
+  "ItemDefName": "GS_Gaffi",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffY": -0.0306054559,
+  "ScaleX": 1.5,
+  "ScaleY": 1.5,
+  "BladeStart": 0.429807067,
+  "BladeEnd": 0.674650669,
+  "MeleeWeaponType": 20
+}

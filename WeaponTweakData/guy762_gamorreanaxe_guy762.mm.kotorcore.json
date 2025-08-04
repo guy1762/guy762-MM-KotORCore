@@ -1,0 +1,13 @@
+{
+  "TextureModID": "guy762.mm.kotorcore",
+  "ItemDefName": "guy762_gamorreanaxe",
+  "ItemType": "ThingDef",
+  "ItemTypeNamespace": "Verse",
+  "OffX": 0.34464404,
+  "ScaleX": 1.5,
+  "ScaleY": 1.5,
+  "HandsMode": 1,
+  "BladeStart": 0.254158348,
+  "BladeEnd": 0.895542264,
+  "MeleeWeaponType": 2
+}
