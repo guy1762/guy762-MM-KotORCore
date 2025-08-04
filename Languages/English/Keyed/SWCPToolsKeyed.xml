@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+	<SWCP_MessagePermitLostOnPromotion>Due to {0_possessive} promotion to {1}, {0_labelShort} has lost {0_possessive} {2} permit</SWCP_MessagePermitLostOnPromotion>
+
+	<!-- Storyteller Joiner -->
+	<SWCP_LetterLabel_SpecialWandererJoins>Special Wanderer: {PAWN_nameDef}</SWCP_LetterLabel_SpecialWandererJoins>
+	<SWCP_Letter_SpecialWandererJoins>A pawn {PAWN_title} named {PAWN_nameDef} has arrived and wants to join the colony.</SWCP_Letter_SpecialWandererJoins>
+	
+	<SWCP_RarityCommon>Common</SWCP_RarityCommon>
+	<SWCP_RarityRare>Rare</SWCP_RarityRare>
+	<SWCP_RarityUnique>Unique</SWCP_RarityUnique>
+	
+	<SWCP_MechDetonate>Detonate</SWCP_MechDetonate>
+
+	<SWCP_CannotPickUp>Cannot pick up {0}</SWCP_CannotPickUp>
+	<SWCP_PickUp>Pick up {0}</SWCP_PickUp>
+	<SWCP_PickUpMax>Pick up max</SWCP_PickUpMax>
+	<SWCP_PickUpOne>Pick up one {0}</SWCP_PickUpOne>
+	<SWCP_TooHeavy>Too Heavy</SWCP_TooHeavy>
+  <SWCP_TechprintLabel>SWCP techprint ({PROJECT_label})</SWCP_TechprintLabel>
+  <SWCP_TechprintDesc>SWCP This is a techprint for the research project '{PROJECT_label}'.
+\nThe physical form of techprints can range from scraps of paper with diagrams, all the way to advanced self-contained teaching machines. Regardless of form, they play the same role. They give your researchers the confidence that an idea is possible, and a rough idea of the designs used in more established societies.
+\nYour researchers need the foundational knowledge offered by techprints to know where to start on a given technology. Only after enough techprints have been applied can your researchers work out the fine details of how to make use of the technology in your particular situation.
+\nApplying techprints to a satisfied project fulfills half the remaining research progress. In addition, researchers always gain a boost to their intellectual skills when applying techprints, even on already-completed technologies.</SWCP_TechprintDesc>
+
+</LanguageData>
