@@ -301,6 +301,7 @@
 		  </shadowData>
 		</graphicData>
 		<defaultPlacingRot>South</defaultPlacingRot>
+		<uiIconScale>0.75</uiIconScale>
 		
 		<altitudeLayer>Building</altitudeLayer>
 		<passability>PassThroughOnly</passability>

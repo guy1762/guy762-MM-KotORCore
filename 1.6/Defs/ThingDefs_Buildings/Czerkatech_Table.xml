@@ -33,7 +33,7 @@
 			<Beauty>0</Beauty>
 			<JoyGainFactor>1.3</JoyGainFactor>
 		</statBases>
-		<size>(2,2)</size>
+		<size>(3,2)</size>
 		<costList>
 			<Steel>50</Steel>
 			<ComponentIndustrial>3</ComponentIndustrial>
