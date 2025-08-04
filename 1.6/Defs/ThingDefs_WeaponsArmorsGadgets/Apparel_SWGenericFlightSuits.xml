@@ -9,7 +9,7 @@
 		<label>flight suit compressor</label>
 		<description>.</description>
 		<graphicData>
-		  <texPath>Apparel/RebelPilot/Apparel</texPath>
+		  <texPath>SWApparel/RebelPilot/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -33,7 +33,7 @@
 			<li>NewRepublic_pilot</li>
 			<li>SWCPSpecificApparelItem_RebelFlightSuitBox</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/RebelPilot/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/RebelPilot/Apparel</wornGraphicPath>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
 		  </defaultOutfitTags>
@@ -62,7 +62,7 @@
     <label>flight vest</label>
     <description>A padded vest intended for starfighter pilots, it has a small amount of anti-radiation padding in order to protect the wearer's vital organs from background radiation during extravehicular operations.</description>
     <graphicData>
-      <texPath>Apparel/FlightVest/Apparel</texPath>
+      <texPath>SWApparel/FlightVest/Apparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -102,7 +102,7 @@
 		<li>KotORClothing_pilot</li>
 		<li>SWCPSpecificApparelItem_FlightVest</li>
       </tags>
-      <wornGraphicPath>Apparel/FlightVest/Apparel</wornGraphicPath>
+      <wornGraphicPath>SWApparel/FlightVest/Apparel</wornGraphicPath>
 	  <useWornGraphicMask>true</useWornGraphicMask>
       <defaultOutfitTags Inherit="False">
 		<li>Worker</li>
@@ -137,7 +137,7 @@
     <label>armored flight vest</label>
     <description>This combat-ready flight vest provides additional protection against vacuum for limited periods. Its many models appeal to a wide range of users, from military pilots and mercenaries to fringe explorers and space pirates. Built-in grav thrusters also assist with movement in open space.</description>
     <graphicData>
-      <texPath>Apparel/FlightArmor/Apparel</texPath>
+      <texPath>SWApparel/FlightArmor/Apparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
 	  <colorTwo>(140,0,0)</colorTwo>
@@ -167,7 +167,7 @@
 		<li>KotORClothing_pilot</li>
 		<li>SWCPSpecificApparelItem_KotORFlightArmor</li>
       </tags>
-      <wornGraphicPath>Apparel/FlightArmor/Apparel</wornGraphicPath>
+      <wornGraphicPath>SWApparel/FlightArmor/Apparel</wornGraphicPath>
 	  <useWornGraphicMask>true</useWornGraphicMask>
       <defaultOutfitTags Inherit="False">
 		<li>Worker</li>

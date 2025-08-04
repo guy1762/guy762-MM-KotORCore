@@ -7,7 +7,7 @@
 		<label>uniform cap</label>
 		<description>A formal cap for military personnel.</description>
 		<graphicData>
-		  <texPath>Apparel/Sith/uniform/ensign/hat</texPath>
+		  <texPath>SWApparel/Sith/uniform/ensign/hat</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -36,7 +36,7 @@
 		</costList>
 		
 		<apparel>
-		  <wornGraphicPath>Apparel/Sith/uniform/ensign/hat</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Sith/uniform/ensign/hat</wornGraphicPath>
 		  <bodyPartGroups>
 			<li>UpperHead</li>
 		  </bodyPartGroups>
@@ -81,7 +81,7 @@
 		<label>uniform cap</label>
 		<description>A formal cap for military personnel.</description>
 		<graphicData>
-		  <texPath>Apparel/GenericMilitaryFatigues/hat</texPath>
+		  <texPath>SWApparel/GenericMilitaryFatigues/hat</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -110,7 +110,7 @@
 		</costList>
 		
 		<apparel>
-		  <wornGraphicPath>Apparel/GenericMilitaryFatigues/hat</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/GenericMilitaryFatigues/hat</wornGraphicPath>
 		  <bodyPartGroups>
 			<li>UpperHead</li>
 		  </bodyPartGroups>
@@ -146,7 +146,7 @@
 		<label>flak hat</label>
 		<description>A durable, padded armorweave head cover.</description>
 		<graphicData>
-		  <texPath>Apparel/Rebel/PaoHat/PaoHat</texPath>
+		  <texPath>SWApparel/Rebel/PaoHat/PaoHat</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -175,7 +175,7 @@
 		</costList>
 		
 		<apparel>
-		  <wornGraphicPath>Apparel/Rebel/PaoHat/PaoHat</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Rebel/PaoHat/PaoHat</wornGraphicPath>
 		  <bodyPartGroups>
 			<li>UpperHead</li>
 		  </bodyPartGroups>
@@ -212,7 +212,7 @@
 		<label>flak hat, goggles</label>
 		<description>A durable, padded armorweave head cover.</description>
 		<graphicData>
-		  <texPath>Apparel/Rebel/PaoHat/PaoHat_Goggles</texPath>
+		  <texPath>SWApparel/Rebel/PaoHat/PaoHat_Goggles</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(170,170,190)</colorTwo> <!-- sith grey -->
@@ -244,7 +244,7 @@
 		</costList>
 		
 		<apparel>
-		  <wornGraphicPath>Apparel/Rebel/PaoHat/PaoHat_Goggles</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Rebel/PaoHat/PaoHat_Goggles</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <bodyPartGroups>
 			<li>UpperHead</li>
@@ -304,7 +304,7 @@
 		<label>engineer's cap</label>
 		<description>A rugged cap with a scarf for engineering personnel.</description>
 		<graphicData>
-		  <texPath>Apparel/RebelEngineer/hat</texPath>
+		  <texPath>SWApparel/RebelEngineer/hat</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(170,170,190)</colorTwo> <!-- sith grey -->
@@ -337,7 +337,7 @@
 		</costList>
 		
 		<apparel>
-		  <wornGraphicPath>Apparel/RebelEngineer/hat</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/RebelEngineer/hat</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <bodyPartGroups>
 			<li>UpperHead</li>
@@ -377,7 +377,7 @@
 		<label>masked cap</label>
 		<description>A masked cap for military personnel.</description>
 		<graphicData>
-		  <texPath>Apparel/Undersuits/onderonhat/hat</texPath>
+		  <texPath>SWApparel/Undersuits/onderonhat/hat</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -401,7 +401,7 @@
 		</costList>
 		
 		<apparel>
-		  <wornGraphicPath>Apparel/Undersuits/onderonhat/hat</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Undersuits/onderonhat/hat</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <renderSkipFlags>
 			<li>Hair</li>
@@ -443,7 +443,7 @@
     <label>bandana</label>
     <description>A simple bandana for covering the forehead.</description>
     <graphicData>
-      <texPath>Apparel/Headbands/bandanaItem</texPath>
+      <texPath>SWApparel/Headbands/bandanaItem</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -473,7 +473,7 @@
 	</recipeMaker>
 	
     <apparel>
-      <wornGraphicPath>Apparel/Headbands/bandana</wornGraphicPath>
+      <wornGraphicPath>SWApparel/Headbands/bandana</wornGraphicPath>
 	  <renderSkipFlags>
         <li>None</li>
       </renderSkipFlags>
@@ -564,7 +564,7 @@
 		<techLevel>Spacer</techLevel>
 		<description>.</description>
 		<graphicData>
-			<texPath>Apparel/ImperialWorker/helmet</texPath>
+			<texPath>SWApparel/ImperialWorker/helmet</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -594,7 +594,7 @@
 				<li>RemnantEmpire_impworker</li>
 				<li>SWCPSpecificApparelItem_ImperialWorkerHelmet</li>
 			</tags>
-			<wornGraphicPath>Apparel/ImperialWorker/helmet</wornGraphicPath>
+			<wornGraphicPath>SWApparel/ImperialWorker/helmet</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<layers>
 				<li>Overhead</li>

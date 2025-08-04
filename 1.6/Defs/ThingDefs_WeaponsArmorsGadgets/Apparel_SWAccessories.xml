@@ -6,7 +6,7 @@
 		<label>suspenders, simple</label>
 		<description>This is a set of simple, general-purpose utility suspenders for workers and soldiers alike.</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/suspenders_simple/Apparel</texPath>
+		  <texPath>SWApparel/Accessories/suspenders_simple/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -49,7 +49,7 @@
 				<li>SaV_wookiee</li>
 				<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
 			</tags>
-			<wornGraphicPath>Apparel/Accessories/suspenders_simple/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Accessories/suspenders_simple/Apparel</wornGraphicPath>
 			<drawData>
 			  <dataNorth>
 				<layer>65</layer>
@@ -104,7 +104,7 @@
 		<label>suspenders, engineer's</label>
 		<description>This is a set of heavy-duty load-bearing suspenders with many pockets for tools.</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/suspenders_engi/Apparel</texPath>
+		  <texPath>SWApparel/Accessories/suspenders_engi/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -144,7 +144,7 @@
 				<li>SaV_wookiee</li>
 				<li>SWCPSpecificApparelItem_EngineerSuspenders</li>
 			</tags>
-			<wornGraphicPath>Apparel/Accessories/suspenders_engi/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Accessories/suspenders_engi/Apparel</wornGraphicPath>
 			<drawData>
 			  <dataNorth>
 				<layer>65</layer>
@@ -196,7 +196,7 @@
 		<label>suspenders, heavy</label>
 		<description>This is a set of heavy-duty load-bearing suspenders with many pouches and pockets attached.</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/suspenders_heavy/Apparel</texPath>
+		  <texPath>SWApparel/Accessories/suspenders_heavy/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -230,7 +230,7 @@
 				<li>SaV_wookiee</li>
 				<li>SWCPSpecificApparelItem_HeavySuspenders</li>
 			</tags>
-			<wornGraphicPath>Apparel/Accessories/suspenders_heavy/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Accessories/suspenders_heavy/Apparel</wornGraphicPath>
 			<drawData>
 			  <dataNorth>
 				<layer>65</layer>
@@ -282,7 +282,7 @@
 		<label>bandolier, double</label>
 		<description>This is a bandolier for storing munitions and other small items.</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/bandolier_double/Apparel</texPath>
+		  <texPath>SWApparel/Accessories/bandolier_double/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -326,7 +326,7 @@
 				<li>SaV_wookiee</li>
 				<li>SWCPSpecificApparelItem_DoubleBandolier</li>
 			</tags>
-			<wornGraphicPath>Apparel/Accessories/bandolier_double/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Accessories/bandolier_double/Apparel</wornGraphicPath>
 			<drawData>
 			  <dataNorth>
 				<layer>65</layer>
@@ -377,7 +377,7 @@
 		<label>bandolier, heavy</label>
 		<description>This is a large bandolier for storing munitions and other small items.</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/bandolier_chewbacca/Apparel</texPath>
+		  <texPath>SWApparel/Accessories/bandolier_chewbacca/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -418,7 +418,7 @@
 				<li>SaV_wookiee</li>
 				<li>SWCPSpecificApparelItem_ChewbaccaBandolier</li>
 			</tags>
-			<wornGraphicPath>Apparel/Accessories/bandolier_chewbacca/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Accessories/bandolier_chewbacca/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<drawData>
 			  <dataNorth>
@@ -471,7 +471,7 @@
 		<label>traveler's bag</label>
 		<description>This is a simple pouch for storing small items.</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/bandolier_traveler/Apparel</texPath>
+		  <texPath>SWApparel/Accessories/bandolier_traveler/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -510,7 +510,7 @@
 				<li>SaV_wookiee</li>
 				<li>SWCPSpecificApparelItem_TravelerBag</li>
 			</tags>
-			<wornGraphicPath>Apparel/Accessories/bandolier_traveler/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Accessories/bandolier_traveler/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<drawData>
 			  <dataNorth>
@@ -579,7 +579,7 @@
 		<label>backpack, light</label>
 		<description>A simple backpack for carrying excess equipment.</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/backpacks/backpack_small</texPath>
+		  <texPath>SWApparel/Accessories/backpacks/backpack_small</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -616,7 +616,7 @@
 			<li>KotORAccessory_smallbackpack</li>
 			<li>SWCPSpecificApparelItem_KotORSmallBackpack</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Accessories/backpacks/backpack_small</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Accessories/backpacks/backpack_small</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
@@ -654,7 +654,7 @@
 		<label>backpack, commando's</label>
 		<description>A simple backpack for carrying excess equipment.</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/backpacks/backpack_scorch</texPath>
+		  <texPath>SWApparel/Accessories/backpacks/backpack_scorch</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(230,185,45)</colorTwo> <!-- republic yellow -->
@@ -677,7 +677,7 @@
 			<li>KotORAccessory_scorchbackpack</li>
 			<li>SWCPSpecificApparelItem_KotORScorchBackpack</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Accessories/backpacks/backpack_scorch</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Accessories/backpacks/backpack_scorch</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <drawData>
 			  <dataEast>
@@ -723,7 +723,7 @@
 		<label>backpack, heavy</label>
 		<description>A simple backpack for carrying excess equipment.</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/backpacks/backpack_big</texPath>
+		  <texPath>SWApparel/Accessories/backpacks/backpack_big</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(175,120,55)</colorTwo>  <!--faint orange-->
@@ -760,7 +760,7 @@
 			<li>KotORAccessory_bigbackpack</li>
 			<li>SWCPSpecificApparelItem_KotORBigBackpack</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Accessories/backpacks/backpack_big</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Accessories/backpacks/backpack_big</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
@@ -805,7 +805,7 @@
 		<label>poncho, plain</label>
 		<description>This is a large piece of fabric designed to protect the wearer from inclement weather.</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/poncho/Apparel</texPath>
+		  <texPath>SWApparel/Accessories/poncho/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -845,7 +845,7 @@
 				<li>KotORClothing_civilian_hooded</li>
 				<li>SWCPSpecificApparelItem_PlainPoncho</li>
 			</tags>
-			<wornGraphicPath>Apparel/Accessories/poncho/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Accessories/poncho/Apparel</wornGraphicPath>
 			<drawData>
 			  <dataNorth>
 				<layer>65</layer>
@@ -917,7 +917,7 @@
 		<label>poncho, camouflaged</label>
 		<description>This is a large piece of fabric designed to help the wearer blend in with their surrounding environment.</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/poncho/Apparel</texPath>
+		  <texPath>SWApparel/Accessories/poncho/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(130,125,105)</colorTwo>   <!-- khaki -->
@@ -952,7 +952,7 @@
 				<li>KotORAccessory_camoponcho</li>
 				<li>SWCPSpecificApparelItem_CamoPoncho</li>
 			</tags>
-			<wornGraphicPath>Apparel/Accessories/poncho/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Accessories/poncho/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<drawData>
 			  <dataNorth>

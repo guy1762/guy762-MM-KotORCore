@@ -12,7 +12,7 @@
     <label>cloak, simple</label>
     <description>This is a simple robe worn by ordinary civilians and Jedi alike.</description>
     <graphicData>
-      <texPath>Apparel/Jedi/cloak_1/Apparel</texPath>
+      <texPath>SWApparel/Jedi/cloak_1/Apparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -56,7 +56,7 @@
 			<li>OR_jedicloak_light</li>
 			<li>SWCPSpecificApparelItem_SimpleCloak</li>
 		</tags>
-		<wornGraphicPath>Apparel/Jedi/cloak_1/Apparel</wornGraphicPath>
+		<wornGraphicPath>SWApparel/Jedi/cloak_1/Apparel</wornGraphicPath>
     </apparel>
 	<tradeTags>
 		<li>guy762TT_KotORClothes</li>
@@ -94,7 +94,7 @@
     <label>hood, simple</label>
     <description>A simple hood for remaining anonymous.</description>
     <graphicData>
-      <texPath>Apparel/Jedi/cloak_1/hood</texPath>
+      <texPath>SWApparel/Jedi/cloak_1/hood</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -131,7 +131,7 @@
 		  <layer>90</layer>
 	    </dataNorth>
 	  </drawData>
-	  <wornGraphicPath>Apparel/Jedi/cloak_1/hood</wornGraphicPath>
+	  <wornGraphicPath>SWApparel/Jedi/cloak_1/hood</wornGraphicPath>
       <bodyPartGroups>
 		<li>UpperHead</li>
       </bodyPartGroups>
@@ -176,7 +176,7 @@
     <label>hood, masked</label>
     <description>A masked hood for remaining anonymous.</description>
     <graphicData>
-      <texPath>Apparel/Sith/apprentice/hood</texPath>
+      <texPath>SWApparel/Sith/apprentice/hood</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -217,7 +217,7 @@
 		<li>Hair</li>
 		<li>Beard</li>
 	  </renderSkipFlags>
-	  <wornGraphicPath>Apparel/Sith/apprentice/hood</wornGraphicPath>
+	  <wornGraphicPath>SWApparel/Sith/apprentice/hood</wornGraphicPath>
       <bodyPartGroups>
 		<li>UpperHead</li>
 		<li>Mouth</li>

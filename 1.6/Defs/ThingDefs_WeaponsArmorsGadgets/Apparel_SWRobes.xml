@@ -7,7 +7,7 @@
 		<label>robes, rustic</label>
 		<description>Thick robes like these are worn to protect the wearer from temperature extremes.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description>
 		<graphicData>
-		  <texPath>Apparel/Robes/jawa/Apparel</texPath>
+		  <texPath>SWApparel/Robes/jawa/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -62,7 +62,7 @@
 				<li>KotORClothing_civilian_villager</li>
 				<li>SWCPSpecificApparelItem_KotORJawaRobes</li>
 			</tags>
-			<wornGraphicPath>Apparel/Robes/jawa/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Robes/jawa/Apparel</wornGraphicPath>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -94,7 +94,7 @@
 		<comps>
 			<li MayRequire="kaitorisenkou.ModularWeapons2" Class="ModularWeapons2.CompProperties_ModularWeapon">
 				<baseGraphicData>
-					<texPath>Apparel/Robes/jawa/Apparel</texPath>
+					<texPath>SWApparel/Robes/jawa/Apparel</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 				</baseGraphicData>
 				<partsMounts>
@@ -115,7 +115,7 @@
 		<label>robes, rugged</label>
 		<description>Thick robes like these are worn to protect the wearer from temperature extremes.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description>
 		<graphicData>
-		  <texPath>Apparel/Robes/tusken/Apparel</texPath>
+		  <texPath>SWApparel/Robes/tusken/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -171,7 +171,7 @@
 				<li>KotORClothing_civilian_hooded</li>
 				<li>SWCPSpecificApparelItem_TuskenRobes</li>
 			</tags>
-			<wornGraphicPath>Apparel/Robes/tusken/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Robes/tusken/Apparel</wornGraphicPath>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -207,7 +207,7 @@
 		<comps>
 			<li MayRequire="kaitorisenkou.ModularWeapons2" Class="ModularWeapons2.CompProperties_ModularWeapon">
 				<baseGraphicData>
-					<texPath>Apparel/Robes/tusken/Apparel</texPath>
+					<texPath>SWApparel/Robes/tusken/Apparel</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 				</baseGraphicData>
 				<partsMounts>
@@ -230,7 +230,7 @@
 		<label>robes, wayfarer's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description>
 		<graphicData>
-		  <texPath>Apparel/Robes/onderon/Apparel</texPath>
+		  <texPath>SWApparel/Robes/onderon/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(100,145,160)</colorTwo>
@@ -286,7 +286,7 @@
 				<li>KotORClothing_civilian_villager</li>
 				<li>SWCPSpecificApparelItem_KotOROnderonRobes</li>
 			</tags>
-			<wornGraphicPath>Apparel/Robes/onderon/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Robes/onderon/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 		<tradeTags>
@@ -350,7 +350,7 @@
 		<comps>
 			<li MayRequire="kaitorisenkou.ModularWeapons2" Class="ModularWeapons2.CompProperties_ModularWeapon">
 				<baseGraphicData>
-					<texPath>Apparel/Robes/onderon/Apparel</texPath>
+					<texPath>SWApparel/Robes/onderon/Apparel</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 				</baseGraphicData>
 				<partsMounts>

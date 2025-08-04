@@ -7,7 +7,7 @@
 		<label>the magic cloak of body hiding</label>
 		<description>This is a clothing item that hides a pawn's body, useful for getting clean in-game renders of a pawn's head.</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/poncho/Apparel</texPath>
+		  <texPath>SWApparel/Accessories/poncho/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -36,7 +36,7 @@
 			<tags Inherit="False">
 				<li>KotORAccessory_debug</li>
 			</tags>
-			<wornGraphicPath>Apparel/Accessories/poncho/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Accessories/poncho/Apparel</wornGraphicPath>
 			<drawData>
 			  <dataNorth>
 				<layer>65</layer>
@@ -66,7 +66,7 @@
 		<label>the magic cloak of head hiding</label>
 		<description>This is a clothing item that hides a pawn's head, useful for getting clean in-game renders of a pawn's body.</description>
 		<graphicData>
-		  <texPath>Apparel/Jedi/cloak_1/hood</texPath>
+		  <texPath>SWApparel/Jedi/cloak_1/hood</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -90,7 +90,7 @@
 			  <layer>90</layer>
 			</dataNorth>
 		  </drawData>
-		  <wornGraphicPath>Apparel/Jedi/cloak_1/hood</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Jedi/cloak_1/hood</wornGraphicPath>
 		  <bodyPartGroups>
 			<li>UpperHead</li>
 		  </bodyPartGroups>

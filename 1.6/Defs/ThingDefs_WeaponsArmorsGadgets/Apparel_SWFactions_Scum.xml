@@ -16,7 +16,7 @@
 		<label>hood, leather</label>
 		<description>This is a simple leather hood used by many Kajidic enforcers.</description>
 		<graphicData>
-		  <texPath>Apparel/Undersuits/gamorrean/hat</texPath>
+		  <texPath>SWApparel/Undersuits/gamorrean/hat</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -40,7 +40,7 @@
 		</stuffCategories>
 		
 		<apparel>
-		  <wornGraphicPath>Apparel/Undersuits/gamorrean/hat</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Undersuits/gamorrean/hat</wornGraphicPath>
 		  <renderSkipFlags>
 			<li>Hair</li>
 		  </renderSkipFlags>
@@ -80,7 +80,7 @@
 		<label>Gamorrean leathers</label>
 		<description>These simple garments do not protect the modesty of the wearer, but they do offer a reasonable level of protection according to the leather hide it is fashioned out of.</description>
 		<graphicData>
-		  <texPath>Apparel/Undersuits/gamorrean/Apparel</texPath>
+		  <texPath>SWApparel/Undersuits/gamorrean/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(50,50,50)</colorTwo> <!--  -->
@@ -117,7 +117,7 @@
 			<li>Hands</li>
 			<li>Feet</li>
 		  </bodyPartGroups>
-		  <wornGraphicPath>Apparel/Undersuits/gamorrean/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Undersuits/gamorrean/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -152,7 +152,7 @@
 		<label>robes, armored</label>
 		<description>While bulky and restrictive, these robes provide solid full-body protection that most other light armors can't offer. The high degree of modularity allows it to compete with even medium armors, and as such, robes like this are favored by many martial cultures like the Gand Findsmen or the Kaleesh.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)\n- Armor Overlay</description>
 		<graphicData>
-		  <texPath>Apparel/Robes/gand/Apparel</texPath>
+		  <texPath>SWApparel/Robes/gand/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -193,7 +193,7 @@
 				<li>SaV_apparel_kaleesh</li>
 				<li>SWCPSpecificApparelItem_GandRobes</li>
 			</tags>
-			<wornGraphicPath>Apparel/Robes/gand/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Robes/gand/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 		<tradeTags>
@@ -230,7 +230,7 @@
 		<comps>
 			<li MayRequire="kaitorisenkou.ModularWeapons2" Class="ModularWeapons2.CompProperties_ModularWeapon">
 				<baseGraphicData>
-					<texPath>Apparel/Robes/gand/Apparel</texPath>
+					<texPath>SWApparel/Robes/gand/Apparel</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 				</baseGraphicData>
 				<partsMounts>
@@ -258,7 +258,7 @@
 		<label>hood, heavy</label>
 		<description>A thick hood for keeping safe from harsh weather conditions.</description>
 		<graphicData>
-		  <texPath>Apparel/Robes/jawa/hood</texPath>
+		  <texPath>SWApparel/Robes/jawa/hood</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -302,7 +302,7 @@
 			<li>Hair</li>
 			<li>Beard</li>
 		  </renderSkipFlags>
-		  <wornGraphicPath>Apparel/Robes/jawa/hood</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Robes/jawa/hood</wornGraphicPath>
 		  <bodyPartGroups>
 			<li>UpperHead</li>
 			<li>Mouth</li>

@@ -7,7 +7,7 @@
 		<label>throwing knife bandolier</label>
 		<description>Favored by the Nagai corsairs of the Unknown Regions, bandoliers like this one can hold up to three small knives, which can be quickly thrown at a target. Once all knives have been thrown, they can be replaced with 15 durasteel.</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/bandolier_knife/Apparel</texPath>
+		  <texPath>SWApparel/Accessories/bandolier_knife/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -38,7 +38,7 @@
 				<li>SaV_apparel_nagai</li>
 				<li>SWCPSpecificApparelItem_ThrowingKnifeBandolier</li>
 			</tags>
-			<wornGraphicPath>Apparel/Accessories/bandolier_knife/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Accessories/bandolier_knife/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<drawData>
 			  <dataNorth>

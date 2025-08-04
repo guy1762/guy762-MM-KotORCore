@@ -8,7 +8,7 @@
 		<label>uniform, fatigues</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/GenericMilitaryFatigues/Apparel</texPath>
+		  <texPath>SWApparel/GenericMilitaryFatigues/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -40,7 +40,7 @@
 			<li>RemnantEmpire_armytrooper</li>
 			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/GenericMilitaryFatigues/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/GenericMilitaryFatigues/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -98,7 +98,7 @@
 		<label>clothing, rustic</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/Undersuits/scum/Apparel</texPath>
+		  <texPath>SWApparel/Undersuits/scum/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(190,155,120)</colorTwo> <!-- beige -->
@@ -127,7 +127,7 @@
 			<li>SaV_apparel_thug</li>
 			<li>SWCPSpecificApparelItem_TwoToneRusticClothing</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Undersuits/scum/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Undersuits/scum/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -163,7 +163,7 @@
 		<label>clothing, rugged</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/Undersuits/scum/Apparel</texPath>
+		  <texPath>SWApparel/Undersuits/scum/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		</graphicData>
 		<statBases>
@@ -193,7 +193,7 @@
 			<li>SithRem_apparel_undersuit</li>
 			<li>SWCPSpecificApparelItem_RusticClothing</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Undersuits/scum/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Undersuits/scum/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>false</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -241,7 +241,7 @@
 		<label>clothing, plain</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/Undersuits/civilian/Apparel</texPath>
+		  <texPath>SWApparel/Undersuits/civilian/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -270,7 +270,7 @@
 			<li>KotORClothing_smuggler</li>
 			<li>SWCPSpecificApparelItem_PlainClothing</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Undersuits/civilian/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Undersuits/civilian/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -320,7 +320,7 @@
 		<label>clothing, plain</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/Undersuits/rebel/Apparel</texPath>
+		  <texPath>SWApparel/Undersuits/rebel/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(175,175,175)</colorTwo>
@@ -348,7 +348,7 @@
 			<li>NewRepublic_alderaanguard</li>
 			<li>SWCPSpecificApparelItem_TwoTonePlainClothing</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Undersuits/rebel/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Undersuits/rebel/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -380,7 +380,7 @@
 		<label>clothing, loose</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/Undersuits/smuggler/Apparel</texPath>
+		  <texPath>SWApparel/Undersuits/smuggler/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(140,0,0)</colorTwo> <!-- crimson -->
@@ -415,7 +415,7 @@
 			<li>SaV_apparel_crimelord</li>
 			<li>SWCPSpecificApparelItem_SmugglerClothing</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Undersuits/smuggler/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Undersuits/smuggler/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -459,7 +459,7 @@
 		<label>clothing, trendy</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/Undersuits/trendy/Apparel</texPath>
+		  <texPath>SWApparel/Undersuits/trendy/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(255,130,65)</colorTwo> <!-- orange -->
@@ -493,7 +493,7 @@
 			<li>KotORRoyaltyTag_drip</li>
 			<li>SWCPSpecificApparelItem_TrendyClothing</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Undersuits/trendy/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Undersuits/trendy/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -519,7 +519,7 @@
 		<label>clothing, cosmopolitan</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/Undersuits/cosmopolitan/Apparel</texPath>
+		  <texPath>SWApparel/Undersuits/cosmopolitan/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(215,70,55)</colorTwo> <!-- red-orange -->
@@ -551,7 +551,7 @@
 			<li>KotORClothing_civilian_bougie</li>
 			<li>SWCPSpecificApparelItem_CosmopolitanClothing</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Undersuits/cosmopolitan/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Undersuits/cosmopolitan/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -586,7 +586,7 @@
 		<label>clothing, light</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/Undersuits/light/Apparel</texPath>
+		  <texPath>SWApparel/Undersuits/light/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(50,50,50)</colorTwo> <!-- black -->
@@ -616,7 +616,7 @@
 			<li>KotORClothing_civilian_punk</li>
 			<li>SWCPSpecificApparelItem_LightClothing</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Undersuits/light/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Undersuits/light/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -651,7 +651,7 @@
     <label>bodysuit, fatigues</label>
     <description>These are simple garments that protect little more than the modesty of the wearer.</description>
     <graphicData>
-      <texPath>Apparel/Undersuits/worker/Apparel</texPath>
+      <texPath>SWApparel/Undersuits/worker/Apparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
 	<statBases>
@@ -682,7 +682,7 @@
 		<li>SithRem_apparel_undersuit</li>
 		<li>SWCPSpecificApparelItem_DyeableFatigues</li>
       </tags>
-      <wornGraphicPath>Apparel/Undersuits/worker/Apparel</wornGraphicPath>
+      <wornGraphicPath>SWApparel/Undersuits/worker/Apparel</wornGraphicPath>
       <defaultOutfitTags Inherit="False">
 		<li>Worker</li>
 	  </defaultOutfitTags>
@@ -721,7 +721,7 @@
 		<label>bodysuit, striped fatigues</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
-		  <texPath>Apparel/Undersuits/worker/Apparel</texPath>
+		  <texPath>SWApparel/Undersuits/worker/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(230,185,45)</colorTwo>    <!-- republic yellow -->
@@ -753,7 +753,7 @@
 			<li>KotORClothing_civilian_prole</li>
 			<li>SWCPSpecificApparelItem_StripedFatigues</li>
 		  </tags>
-		  <wornGraphicPath>Apparel/Undersuits/worker/Apparel</wornGraphicPath>
+		  <wornGraphicPath>SWApparel/Undersuits/worker/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
@@ -782,7 +782,7 @@
     <label>bodysuit, vac-sealed</label>
     <description>This is a sealed bodysuit offering sufficient protection against the cold vacuum of space and other hazardous environments.</description>
     <graphicData>
-      <texPath>Apparel/Undersuits/vac/Apparel</texPath>
+      <texPath>SWApparel/Undersuits/vac/Apparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
     </graphicData>
     <statBases>
@@ -816,7 +816,7 @@
 		<li>EVA</li>
 		<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
       </tags>
-      <wornGraphicPath>Apparel/Undersuits/vac/Apparel</wornGraphicPath>
+      <wornGraphicPath>SWApparel/Undersuits/vac/Apparel</wornGraphicPath>
       <defaultOutfitTags Inherit="False">
 		<li>Soldier</li>
 	  </defaultOutfitTags>
@@ -891,7 +891,7 @@
 		<label>jacket, scoundrel's</label>
 		<description>This is a fine jacket popular with smugglers and scoundrels alike.\n\nUPGRADE SLOTS:\n- Armor Underlay</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/jacket_smuggler/Apparel</texPath>
+		  <texPath>SWApparel/Accessories/jacket_smuggler/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(160,170,175)</colorTwo>
@@ -927,7 +927,7 @@
 				<li>KotORRoyaltyTag_drip</li>
 				<li>SWCPSpecificApparelItem_KotORScoundrelJacket</li>
 			</tags>
-			<wornGraphicPath>Apparel/Accessories/jacket_smuggler/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Accessories/jacket_smuggler/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 		<tradeTags>
@@ -962,7 +962,7 @@
 		<comps>
 			<li MayRequire="kaitorisenkou.ModularWeapons2" Class="ModularWeapons2.CompProperties_ModularWeapon">
 				<baseGraphicData>
-					<texPath>Apparel/Accessories/jacket_smuggler/Apparel</texPath>
+					<texPath>SWApparel/Accessories/jacket_smuggler/Apparel</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 				</baseGraphicData>
 				<partsMounts>
@@ -983,7 +983,7 @@
 		<label>vest, trendy</label>
 		<description>This is a puffy vest popular on many urban worlds.\n\nUPGRADE SLOTS:\n- Armor Underlay</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/vest_mission/Apparel</texPath>
+		  <texPath>SWApparel/Accessories/vest_mission/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		  <colorTwo>(175,120,55)</colorTwo> <!-- burnt orange -->
@@ -1015,7 +1015,7 @@
 				<li>SaV_apparel_mission</li>
 				<li>SWCPSpecificApparelItem_TrendyVest</li>
 			</tags>
-			<wornGraphicPath>Apparel/Accessories/vest_mission/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Accessories/vest_mission/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 		<tradeTags>
@@ -1054,7 +1054,7 @@
 		<comps>
 			<li MayRequire="kaitorisenkou.ModularWeapons2" Class="ModularWeapons2.CompProperties_ModularWeapon">
 				<baseGraphicData>
-					<texPath>Apparel/Accessories/vest_mission/Apparel</texPath>
+					<texPath>SWApparel/Accessories/vest_mission/Apparel</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 				</baseGraphicData>
 				<partsMounts>
@@ -1074,7 +1074,7 @@
 		<label>vest, scout's</label>
 		<description>This is a utilitarian vest popular among spacers and colonial pioneers.\n\nUPGRADE SLOTS:\n- Armor Underlay</description>
 		<graphicData>
-		  <texPath>Apparel/Accessories/vest_scout/Apparel</texPath>
+		  <texPath>SWApparel/Accessories/vest_scout/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
 		</graphicData>
@@ -1111,7 +1111,7 @@
 				<li>NewRepublic_rebeltrooper</li>
 				<li>SWCPSpecificApparelItem_ScoutVest</li>
 			</tags>
-			<wornGraphicPath>Apparel/Accessories/vest_scout/Apparel</wornGraphicPath>
+			<wornGraphicPath>SWApparel/Accessories/vest_scout/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 		</apparel>
 		<tradeTags>
@@ -1150,7 +1150,7 @@
 		<comps>
 			<li MayRequire="kaitorisenkou.ModularWeapons2" Class="ModularWeapons2.CompProperties_ModularWeapon">
 				<baseGraphicData>
-					<texPath>Apparel/Accessories/vest_scout/Apparel</texPath>
+					<texPath>SWApparel/Accessories/vest_scout/Apparel</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 				</baseGraphicData>
 				<partsMounts>

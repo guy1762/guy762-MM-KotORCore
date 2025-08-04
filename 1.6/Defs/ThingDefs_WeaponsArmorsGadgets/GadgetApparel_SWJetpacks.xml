@@ -9,7 +9,7 @@
     <label>jetpack, light</label>
     <description>Lightweight and compact, these shorter-range jetpacks are reserved for veteran Mandalorian warriors who have proven themselves in combat.</description>
     <graphicData>
-      <texPath>Apparel/Jetpacks/jetpack_light</texPath>
+      <texPath>SWApparel/Jetpacks/jetpack_light</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -44,7 +44,7 @@
 		<li>MNC_jetpack_light</li>
 		<li>SWCPSpecificApparelItem_SabineJetpack</li>
 	  </tags>
-	  <wornGraphicPath>Apparel/Jetpacks/jetpack_light</wornGraphicPath>
+	  <wornGraphicPath>SWApparel/Jetpacks/jetpack_light</wornGraphicPath>
 	  <useWornGraphicMask>true</useWornGraphicMask>
     </apparel>
 	<colorGenerator Class="ColorGenerator_Options">
@@ -134,7 +134,7 @@
     <label>jetpack, heavy</label>
     <description>While the war-forges of Mandalore have made great strides in jetpack miniaturization, competing arms manufacturers have yet to catch up. Clunky, heavier jetpacks like these allow a soldier to travel much greater distances than some Mandalorian models, but are a substantial burden on long-term deployments.</description>
     <graphicData>
-      <texPath>Apparel/Jetpacks/jetpack_heavy</texPath>
+      <texPath>SWApparel/Jetpacks/jetpack_heavy</texPath>
       <graphicClass>Graphic_Single</graphicClass>
 	  <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -168,7 +168,7 @@
 		<li>SaV_jetpack</li>
 		<li>SWCPSpecificApparelItem_DashRendarJetpack</li>
 	  </tags>
-	  <wornGraphicPath>Apparel/Jetpacks/jetpack_heavy</wornGraphicPath>
+	  <wornGraphicPath>SWApparel/Jetpacks/jetpack_heavy</wornGraphicPath>
 	  <useWornGraphicMask>true</useWornGraphicMask>
 	  
 	  <wornGraphicData Inherit="False">
