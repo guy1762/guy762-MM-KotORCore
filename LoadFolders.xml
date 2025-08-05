@@ -3,7 +3,7 @@
 	<v1.5>
 		<li>/</li>
 		<li>1.5</li>
-		<li IfModActive="erdelf.HumanoidAlienRaces">1.5/AdditionalMods/HAR</li>
+		<!-- <li IfModActive="erdelf.HumanoidAlienRaces">1.5/AdditionalMods/HAR</li> -->
 		
 		<li IfModNotActive="jecrell.jecstools">1.5/AdditionalMods/_BorrowedFromJecsTools</li>
 		<!-- <li IfModNotActive="smartkar.athenaframework">1.5/AdditionalMods/_BorrowedFromAthenaFramework</li> -->
@@ -28,7 +28,7 @@
 	<v1.6>
 		<li>/</li>
 		<li>1.6</li>
-		<li IfModActive="erdelf.HumanoidAlienRaces">1.6/AdditionalMods/HAR</li>
+		<!-- <li IfModActive="erdelf.HumanoidAlienRaces">1.6/AdditionalMods/HAR</li> -->
 		<li IfModActive="OskarPotocki.VanillaFactionsExpanded.Core">1.6/AdditionalMods/VEF</li>
 		
 		<li IfModNotActive="jecrell.jecstools">1.6/AdditionalMods/_BorrowedFromJecsTools</li>
@@ -42,8 +42,8 @@
 		
 		<li IfModActive="sindre0830.rimnauts2">1.6/AdditionalMods/RimNauts2</li>
 		
-		<li IfModActive="Ludeon.RimWorld.Ideology">1.6/AdditionalMods/Ideology</li>
-		<li IfModActive="Ludeon.RimWorld.Biotech">1.6/AdditionalMods/Biotech</li>
+		<!-- <li IfModActive="Ludeon.RimWorld.Ideology">1.6/AdditionalMods/Ideology</li> -->
+		<!-- <li IfModActive="Ludeon.RimWorld.Biotech">1.6/AdditionalMods/Biotech</li> -->
 		
 		<li IfModActive="Dubwise.DubsBadHygiene">1.6/AdditionalMods/DBH</li>
 		<li IfModNotActive="Dubwise.DubsBadHygiene">1.6/AdditionalMods/NO_DBH</li>
