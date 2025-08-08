@@ -324,6 +324,57 @@
 	
 	
 	
+	<!-- <ThingDef ParentName="guy762_AAprojectileBASE"> -->
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
+		<defName>SWFixedTurretBullet_AAdoublered</defName>
+		<label>anti-air laser bolts</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/doubleheavyblaster_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>75</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<speed>100</speed>
+			<!-- <explosionRadius>1</explosionRadius> -->
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
+		<defName>SWFixedTurretBullet_AVheavydoublegreen</defName>
+		<label>heavy turbolaser bolts</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/DoubleAdvAntiVehicle_green</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>150</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<speed>100</speed>
+			<explosionRadius>3</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

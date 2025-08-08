@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	
+	<ThingDef Name="guy762_VehicleBaseBuildable_GroundVehicle" ParentName="VehicleBaseBuildable" Abstract="True">
+		<designationCategory>MM_StarWarsShipBuildTab</designationCategory>
+		<uiOrder>500</uiOrder>
+	</ThingDef>
+	
+	<ThingDef Name="guy762_VehicleBaseBuildable_Starfighter" ParentName="VehicleBaseBuildable" Abstract="True">
+		<designationCategory>MM_StarWarsShipBuildTab</designationCategory>
+		<uiOrder>1000</uiOrder>
+	</ThingDef>
+
+
+
+</Defs>
