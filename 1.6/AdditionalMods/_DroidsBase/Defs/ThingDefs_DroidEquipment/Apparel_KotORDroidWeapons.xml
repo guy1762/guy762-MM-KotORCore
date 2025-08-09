@@ -722,7 +722,13 @@
 		<li>
 		  <label>stasis beam</label>
 		  <commandIcon>Items/droidweapon/droidweapon_stun</commandIcon>
-		  <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass>
+		  <!-- <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass> -->
+			  <verbClass>Verb_ShootBeam</verbClass>
+			  <showBurstShotStats>false</showBurstShotStats>
+			  <beamWidth>0.25</beamWidth>
+			  <beamMaxDeviation>0.5</beamMaxDeviation>
+			  <beamCurvature>0.6</beamCurvature>
+			  
 		  <hasStandardCommand>true</hasStandardCommand>
 		  <warmupTime>2.5</warmupTime>
 		  <range>23</range>
@@ -933,7 +939,13 @@
 		<li>
 		  <label>ion striker</label>
 		  <commandIcon>Items/droidweapon/droidweapon_ion</commandIcon>
-		  <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass>
+		  <!-- <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass> -->
+			  <verbClass>Verb_ShootBeam</verbClass>
+			  <showBurstShotStats>false</showBurstShotStats>
+			  <beamWidth>0.25</beamWidth>
+			  <beamMaxDeviation>0.5</beamMaxDeviation>
+			  <beamCurvature>0.6</beamCurvature>
+			  
 		  <hasStandardCommand>true</hasStandardCommand>
 		  <warmupTime>1.0</warmupTime>
 		  <range>17</range>
@@ -1023,7 +1035,13 @@
 		<li>
 		  <label>Bio-Assault beam</label>
 		  <commandIcon>Items/droidweapon/droidweapon_tox</commandIcon>
-		  <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass>
+		  <!-- <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass> -->
+			  <verbClass>Verb_ShootBeam</verbClass>
+			  <showBurstShotStats>false</showBurstShotStats>
+			  <beamWidth>0.25</beamWidth>
+			  <beamMaxDeviation>0.5</beamMaxDeviation>
+			  <beamCurvature>0.6</beamCurvature>
+			  
 		  <hasStandardCommand>true</hasStandardCommand>
 		  <warmupTime>3.5</warmupTime>
 		  <range>17</range>

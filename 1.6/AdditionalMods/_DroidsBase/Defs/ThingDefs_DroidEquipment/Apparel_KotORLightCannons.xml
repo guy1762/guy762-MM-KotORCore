@@ -56,7 +56,13 @@
 		<li>
 		  <label>mining laser</label>
 		  <commandIcon>Items/cannon/cannon_mininglaser</commandIcon>
-		  <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass>
+		  <!-- <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass> -->
+			  <verbClass>Verb_ShootBeam</verbClass>
+			  <showBurstShotStats>false</showBurstShotStats>
+			  <beamWidth>0.25</beamWidth>
+			  <beamMaxDeviation>0.5</beamMaxDeviation>
+			  <beamCurvature>0.6</beamCurvature>
+			  
 		  <hasStandardCommand>true</hasStandardCommand>
 		  <warmupTime>2</warmupTime>
 		  <range>9</range>
@@ -978,7 +984,13 @@
 		<li>
 		  <label>disruptor beam</label>
 		  <commandIcon>Items/cannon/ordcannon_disruptor</commandIcon>
-		  <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass>
+		  <!-- <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass> -->
+			  <verbClass>Verb_ShootBeam</verbClass>
+			  <showBurstShotStats>false</showBurstShotStats>
+			  <beamWidth>0.25</beamWidth>
+			  <beamMaxDeviation>0.5</beamMaxDeviation>
+			  <beamCurvature>0.6</beamCurvature>
+			  
 		  <hasStandardCommand>true</hasStandardCommand>
 		  <warmupTime>6</warmupTime>
 		  <range>25</range>

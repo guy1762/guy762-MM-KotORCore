@@ -54,7 +54,13 @@
 		<li>
 		  <label>laser cutter</label>
 		  <commandIcon>Items/droidweapon/droidweapon_lasercutter</commandIcon>
-		  <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass>
+		  <!-- <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass> -->
+			  <verbClass>Verb_ShootBeam</verbClass>
+			  <showBurstShotStats>false</showBurstShotStats>
+			  <beamWidth>0.25</beamWidth>
+			  <beamMaxDeviation>0.5</beamMaxDeviation>
+			  <beamCurvature>0.6</beamCurvature>
+			  
 		  <hasStandardCommand>true</hasStandardCommand>
 		  <warmupTime>2</warmupTime>
 		  <range>5</range>
@@ -161,7 +167,13 @@
 		<li>
 		  <label>shock arm</label>
 		  <commandIcon>Items/droidweapon/droidweapon_shock</commandIcon>
-		  <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass>
+		  <!-- <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass> -->
+			  <verbClass>Verb_ShootBeam</verbClass>
+			  <showBurstShotStats>false</showBurstShotStats>
+			  <beamWidth>0.25</beamWidth>
+			  <beamMaxDeviation>0.5</beamMaxDeviation>
+			  <beamCurvature>0.6</beamCurvature>
+			  
 		  <hasStandardCommand>true</hasStandardCommand>
 		  <warmupTime>1.5</warmupTime>
 		  <range>5</range>

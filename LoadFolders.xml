@@ -48,7 +48,8 @@
 		<li IfModActive="Dubwise.DubsBadHygiene">1.6/AdditionalMods/DBH</li>
 		<li IfModNotActive="Dubwise.DubsBadHygiene">1.6/AdditionalMods/NO_DBH</li>
 		
-		
+		<li IfModNotActive="ShunTheWitch.CVNmechanoidwarfarecore">1.6/AdditionalMods/SharedCodeFromShun</li>
+		<li IfModNotActive="BlackMarket420.PandoraFramework">1.6/AdditionalMods/SharedCodeFromShun</li>
 		
 		
 		
