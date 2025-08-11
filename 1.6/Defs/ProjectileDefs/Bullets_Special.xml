@@ -611,6 +611,59 @@
 	
 	
 	
+	<!-- <ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer"> -->
+		<!-- <defName>SWProj_DisruptorSniper</defName> -->
+		<!-- <label>disruptor bolt</label> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Weapons/Projectiles/XLsniper_yellow</texPath> -->
+			<!-- <graphicClass>Graphic_Single</graphicClass> -->
+			<!-- <shaderType>TransparentPostLight</shaderType> -->
+		<!-- </graphicData> -->
+		<!-- <projectile> -->
+			<!-- <damageDef>guy762_RangedDamage_disruptor</damageDef> -->
+			<!-- <damageAmountBase>8</damageAmountBase> -->
+			<!-- <armorPenetrationBase>2</armorPenetrationBase> -->
+			<!-- <speed>200</speed> -->
+		<!-- </projectile> -->
+	<!-- </ThingDef> -->
+	
+	
+	
+	
+	<ThingDef ParentName="BaseBullet">
+		<defName>SWProj_IonDisruptor</defName>
+		<label>ion disruptor blast</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/IonDisruptor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>1.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_ion</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>75</speed>
+			<explosionRadius>3</explosionRadius>
+			<stoppingPower>3</stoppingPower>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>100</amount>
+				</li>
+				<li>
+					<def>guy762_RangedDamage_disruptor</def>
+					<amount>25</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	
+	
+	
+	
 	
 	
 	

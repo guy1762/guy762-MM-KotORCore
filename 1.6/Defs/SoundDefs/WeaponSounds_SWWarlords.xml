@@ -16,7 +16,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -42,7 +42,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -51,6 +51,60 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+	
+	
+	<SoundDef>
+		<defName>kotorsound_JKdisruptor</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorblasters/dis_fire</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	<SoundDef>
+		<defName>kotorsound_JKdisruptorbeam_oneshot</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorblasters/dis_alt_fire</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
 	
 	<SoundDef>
 		<defName>kotorsound_JKrepeater_AltFire</defName>	
@@ -67,7 +121,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
@@ -92,7 +146,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
@@ -117,7 +171,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -147,7 +201,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -172,7 +226,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -200,7 +254,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -226,7 +280,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -252,7 +306,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -277,7 +331,7 @@
 				<volumeRange>
 				<min>65</min>        
 				<max>65</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -308,7 +362,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -333,7 +387,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -361,7 +415,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -386,7 +440,7 @@
 				<volumeRange>
 				<min>15</min>        
 				<max>15</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -420,7 +474,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -445,7 +499,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -480,7 +534,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -505,7 +559,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -533,7 +587,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -561,7 +615,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -587,7 +641,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -616,7 +670,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -642,7 +696,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -669,7 +723,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -699,7 +753,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -726,7 +780,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -753,7 +807,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -778,7 +832,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -804,7 +858,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -832,7 +886,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -858,7 +912,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -886,7 +940,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -913,7 +967,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -941,7 +995,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
@@ -970,7 +1024,7 @@
 				<volumeRange>
 				<min>45</min>        
 				<max>45</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
@@ -1000,7 +1054,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -1026,7 +1080,7 @@
 				<volumeRange>
 				<min>35</min>        
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
@@ -1087,6 +1141,36 @@
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_SPHAT</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipweapons/Venator_SPHAT_Beam</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
 				</pitchRange>			
 				<sustainLoop>False</sustainLoop>
 			</li>
