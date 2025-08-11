@@ -40,6 +40,7 @@
 		
 		<useFactionXenotypes>true</useFactionXenotypes>
 		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	  </PawnKindDef>
 	  
 	  
@@ -72,6 +73,8 @@
 		<invFoodDef>MealNutrientPaste</invFoodDef>
 		<initialWillRange>0~0</initialWillRange>
 		<initialResistanceRange>10~17</initialResistanceRange>
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	  </PawnKindDef>
 	  
 	  
@@ -172,6 +175,7 @@
 		  </xenotypeChances>
 		</xenotypeSet>
 		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
 	</PawnKindDef>
 	  
 	  
