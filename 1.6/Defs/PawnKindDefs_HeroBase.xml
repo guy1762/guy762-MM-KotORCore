@@ -18,6 +18,9 @@
 		<requiredWorkTags>
 		  <li>Violent</li>
 		</requiredWorkTags>
+		<disallowedTraits>
+		  <li>Nudist</li>
+		</disallowedTraits>
 		<inventoryOptions>
 		  <skipChance>0</skipChance>
 		  <subOptionsTakeAll>
@@ -29,6 +32,8 @@
 		</inventoryOptions>
 		<maxPerGroup>1</maxPerGroup>
 		<!--skipResistant>true</skipResistant-->
+		
+		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
     </PawnKindDef>
 	
 

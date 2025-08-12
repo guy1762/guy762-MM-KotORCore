@@ -28,6 +28,11 @@
 		<burnableByRecipe>true</burnableByRecipe>
 		<smeltable>true</smeltable>
 		<tradeability>All</tradeability>
+		
+		<apparel>
+		  <canBeDesiredForIdeo>false</canBeDesiredForIdeo>
+		</apparel>
+		
 		<tradeTags>
 			<li>guy762TT_AllItemsSellable</li>
 		</tradeTags>

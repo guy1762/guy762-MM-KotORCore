@@ -714,10 +714,10 @@
 		  <li>
 			<filter>
 			  <thingDefs>
-				<li>Synthread</li>
+				<li>KOTOR_Plastoid</li>
 			  </thingDefs>
 			</filter>
-			<count>100</count>
+			<count>80</count>
 		  </li>
 		</ingredients>
 		<fixedIngredientFilter>

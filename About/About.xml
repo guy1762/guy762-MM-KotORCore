@@ -5,7 +5,7 @@
 	<name>Star Wars KotOR Resources and Materials</name>
 	<modIconPath IgnoreIfNoMatchingField="True">UI/ModIcon_guy762_KotORCore</modIconPath>
 	<description>Adds resources, crafting materials, consumables, and other items from across the Star Wars universe.</description>
-	<author>guy762, MajesticMadman, Kaitorisenkou, and Lee</author>
+	<author>guy762, MajesticMadman, Kaitorisenkou, Lee, and Ranger Rick</author>
 	
 	<!-- Technical Details ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 	<supportedVersions>
