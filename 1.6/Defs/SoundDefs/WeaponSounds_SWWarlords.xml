@@ -1093,6 +1093,33 @@
 	
 	
 	<SoundDef>
+		<defName>kotorsound_RT97Crepeater</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>kotorblasters/RT97Cmix</clipFolderPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	<SoundDef>
 		<defName>kotorsound_B2SBD_heavygun</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
