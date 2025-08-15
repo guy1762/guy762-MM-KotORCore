@@ -5,6 +5,8 @@
 		<statBases>
 			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
 			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+			
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">1</VacuumResistance>
 		</statBases>
         <alienRace>
 			<raceRestriction>
