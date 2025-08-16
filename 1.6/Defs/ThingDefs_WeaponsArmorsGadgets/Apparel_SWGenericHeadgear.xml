@@ -435,7 +435,7 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
   
   
   
@@ -553,6 +553,251 @@
 		</options>
 	</colorGenerator>
   </ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_Headwrap_open</defName>
+		<label>headwrap, open</label>
+		<description>A cloth head wrapping.</description>
+		<graphicData>
+		  <texPath>SWApparel/headwrap/openheadwrap</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<statBases>
+		  <MarketValue>50</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <Mass>0.1</Mass>
+		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+		  <Insulation_Cold>10</Insulation_Cold>
+		  <Insulation_Heat>10</Insulation_Heat>
+		  <EquipDelay>0.1</EquipDelay>
+		  
+		  <WorkToMake>1000</WorkToMake>
+		</statBases>
+		<!-- <equippedStatOffsets> -->
+		  <!-- <SocialImpact>0.1</SocialImpact> -->
+		<!-- </equippedStatOffsets> -->
+		
+		<costList>
+		  <Cloth>30</Cloth>
+		</costList>
+		
+		<apparel>
+		  <wornGraphicPath>SWApparel/headwrap/openheadwrap</wornGraphicPath>
+		  <!-- <useWornGraphicMask>true</useWornGraphicMask> -->
+		  <renderSkipFlags>
+			<li>Hair</li>
+			<!-- <li>Beard</li> -->
+		  </renderSkipFlags>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+			<!-- <li>Mouth</li> -->
+		  </bodyPartGroups>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <tags>
+			<li>SaV_apparel_headwrapmix</li>
+			<li>PartisanAlliance_trooperheadwear</li>
+			<li>SWCPSpecificApparelItem_OpenHeadwrap</li>
+		  </tags>
+		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		  <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(250,250,250)</only> <!-- white -->
+				</li>
+				<!--zaalbar's red-->
+				<!-- <li> -->
+					<!-- <weight>10</weight> -->
+					<!-- <only>(155,30,25)</only> -->
+				<!-- </li> -->
+				<li>
+					<weight>10</weight>
+					<only>(50,50,50)</only> <!-- black -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(185,160,125)</only>	<!-- alternative beige -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,105)</only>         <!-- khaki -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(145,90,50)</only>         <!-- orangeish brown -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(115,120,75)</only>         <!-- olive -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(100,100,115)</only>         <!-- dark bley -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(125,100,75)</only>       <!--K2 padawan-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(90,55,40)</only>         <!--K2 jedi knight-->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_HatCraftableBase">
+		<defName>guy762_Headwrap_masked</defName>
+		<label>headwrap, masked</label>
+		<description>A masked cloth head wrapping.</description>
+		<graphicData>
+		  <texPath>SWApparel/headwrap/maskedheadwrap</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData>
+		<statBases>
+		  <MarketValue>50</MarketValue>
+		  <MaxHitPoints>80</MaxHitPoints>
+		  <Mass>0.1</Mass>
+		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+		  <Insulation_Cold>15</Insulation_Cold>
+		  <Insulation_Heat>15</Insulation_Heat>
+		  <EquipDelay>0.1</EquipDelay>
+		  
+		  <WorkToMake>1000</WorkToMake>
+		</statBases>
+		<!-- <equippedStatOffsets> -->
+		  <!-- <SocialImpact>0.1</SocialImpact> -->
+		<!-- </equippedStatOffsets> -->
+		
+		<costList>
+		  <Cloth>30</Cloth>
+		</costList>
+		
+		<apparel>
+		  <wornGraphicPath>SWApparel/headwrap/maskedheadwrap</wornGraphicPath>
+		  <!-- <useWornGraphicMask>true</useWornGraphicMask> -->
+		  <renderSkipFlags>
+			<li>Hair</li>
+			<li>Beard</li>
+		  </renderSkipFlags>
+		  <bodyPartGroups>
+			<li>UpperHead</li>
+			<li>Mouth</li>
+		  </bodyPartGroups>
+		  <layers>
+			<li>Overhead</li>
+		  </layers>
+		  <tags>
+			<li>SaV_apparel_headwrapmix</li>
+			<li>PartisanAlliance_trooperheadwear</li>
+			<li>SWCPSpecificApparelItem_MaskedHeadwrap</li>
+		  </tags>
+		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
+		  <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(250,250,250)</only> <!-- white -->
+				</li>
+				<!--zaalbar's red-->
+				<!-- <li> -->
+					<!-- <weight>10</weight> -->
+					<!-- <only>(155,30,25)</only> -->
+				<!-- </li> -->
+				<li>
+					<weight>10</weight>
+					<only>(50,50,50)</only> <!-- black -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(185,160,125)</only>	<!-- alternative beige -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(130,125,105)</only>         <!-- khaki -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(145,90,50)</only>         <!-- orangeish brown -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(115,120,75)</only>         <!-- olive -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(100,100,115)</only>         <!-- dark bley -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(125,100,75)</only>       <!--K2 padawan-->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(90,55,40)</only>         <!--K2 jedi knight-->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+  
+  
+  
+  
+  
+  
   
   
 	

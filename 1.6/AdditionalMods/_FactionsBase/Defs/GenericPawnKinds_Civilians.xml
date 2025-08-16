@@ -206,7 +206,8 @@
 		<apparelMoney>10~100</apparelMoney>
 		<apparelTags Inherit="False">
 		  <li>KotORClothing_civilian_villager</li>
-		  <li>guy762PatchedTag_Broadwrap</li>
+		  <!-- <li>guy762PatchedTag_Broadwrap</li> -->
+		  <li>SWCPSpecificApparelItem_OpenHeadwrap</li>
 		  <li>guy762PatchedTag_Flophat</li>
 		  <li>KotORAccessory_civilian</li>
 		</apparelTags>
