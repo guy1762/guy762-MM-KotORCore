@@ -18,8 +18,9 @@
 				<clipPath>kotor_ambient_building/emt_telemetry_temple_lp02</clipPath>
 			  </li>
 			</grains>
-			<volumeRange><min>25</min><max>25</max></volumeRange>
-			<distRange>25~40</distRange>
+			<volumeRange><min>10</min><max>10</max></volumeRange>
+			<!-- very quiet sound range -->
+			<distRange>10~40</distRange> <!-- enabled per user request -->
 		  </li>
 		</subSounds>
 	</SoundDef>
@@ -41,8 +42,9 @@
 				<clipPath>kotor_ambient_building/emt_telemetry_temple_lp01</clipPath>
 			  </li>
 			</grains>
-			<volumeRange><min>25</min><max>25</max></volumeRange>
-			<distRange>25~40</distRange>
+			<volumeRange><min>10</min><max>10</max></volumeRange>
+			<!-- very quiet sound range -->
+			<distRange>10~40</distRange> <!-- enabled per user request -->
 		  </li>
 		</subSounds>
 	</SoundDef>
@@ -65,8 +67,9 @@
 				<clipPath>kotor_ambient_building/Tech1</clipPath>
 			  </li>
 			</grains>
-			<volumeRange><min>25</min><max>25</max></volumeRange>
-			<distRange>25~40</distRange>
+			<volumeRange><min>10</min><max>10</max></volumeRange>
+			<!-- very quiet sound range -->
+			<distRange>10~40</distRange> <!-- enabled per user request -->
 		  </li>
 		</subSounds>
 	</SoundDef>
@@ -87,8 +90,9 @@
 				<clipPath>kotor_ambient_building/Tech2</clipPath>
 			  </li>
 			</grains>
-			<volumeRange><min>25</min><max>25</max></volumeRange>
-			<distRange>25~40</distRange>
+			<volumeRange><min>10</min><max>10</max></volumeRange>
+			<!-- very quiet sound range -->
+			<distRange>10~40</distRange> <!-- enabled per user request -->
 		  </li>
 		</subSounds>
 	</SoundDef>
@@ -111,8 +115,9 @@
 				<clipPath>kotor_ambient_building/TechAmb7</clipPath>
 			  </li>
 			</grains>
-			<volumeRange><min>25</min><max>25</max></volumeRange>
-			<distRange>25~40</distRange>
+			<volumeRange><min>10</min><max>10</max></volumeRange>
+			<!-- very quiet sound range -->
+			<distRange>10~40</distRange> <!-- enabled per user request -->
 		  </li>
 		</subSounds>
 	</SoundDef>
@@ -135,8 +140,9 @@
 				<clipPath>kotor_ambient_building/emt_antennaTelemetry_lp01</clipPath>
 			  </li>
 			</grains>
-			<volumeRange><min>25</min><max>25</max></volumeRange>
-			<distRange>25~40</distRange>
+			<volumeRange><min>10</min><max>10</max></volumeRange>
+			<!-- very quiet sound range -->
+			<distRange>10~40</distRange> <!-- enabled per user request -->
 		  </li>
 		</subSounds>
 	</SoundDef>
@@ -159,8 +165,9 @@
 				<clipPath>kotor_ambient_building/BF2_terminal_tracking</clipPath>
 			  </li>
 			</grains>
-			<volumeRange><min>25</min><max>25</max></volumeRange>
-			<distRange>25~40</distRange>
+			<volumeRange><min>10</min><max>10</max></volumeRange>
+			<!-- very quiet sound range -->
+			<distRange>10~40</distRange> <!-- enabled per user request -->
 		  </li>
 		</subSounds>
 	</SoundDef>
@@ -183,8 +190,9 @@
 				<clipPath>kotor_ambient_building/AttakHov</clipPath>
 			  </li>
 			</grains>
-			<volumeRange><min>25</min><max>25</max></volumeRange>
-			<distRange>25~40</distRange>
+			<volumeRange><min>10</min><max>10</max></volumeRange>
+			<!-- very quiet sound range -->
+			<distRange>10~40</distRange> <!-- enabled per user request -->
 		  </li>
 		</subSounds>
 	</SoundDef>

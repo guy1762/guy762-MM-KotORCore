@@ -843,6 +843,7 @@
 				<li>SWWarlordsAccessory_scumtrooper_poncho</li>
 				<li>SWWarlordsAccessory_onlyponcho</li>
 				<li>KotORClothing_civilian_hooded</li>
+				<li>SWCPAccessory_CloakOrPlainPoncho</li>
 				<li>SWCPSpecificApparelItem_PlainPoncho</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Accessories/poncho/Apparel</wornGraphicPath>

@@ -22,10 +22,11 @@
 		<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
 		<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
 		<ArmorRating_Heat>0.01</ArmorRating_Heat>
-		<Insulation_Cold>25</Insulation_Cold>
-        <Insulation_Heat>25</Insulation_Heat>
-		<EquipDelay>3</EquipDelay>
 		
+		<Insulation_Cold>15</Insulation_Cold>
+        <Insulation_Heat>15</Insulation_Heat>
+		
+		<EquipDelay>3</EquipDelay>
 		<WorkToMake>9500</WorkToMake>
 	</statBases>
 	<!--equippedStatOffsets>
@@ -52,18 +53,21 @@
 			<li>KotORClothing_civilian_prole</li>
 			<li>KotORClothing_civilian_hooded</li>
 			<li>KotORClothing_simplecloak</li>
+			<li>SWCPAccessory_CloakOrPlainPoncho</li>
 			<li>OR_jedi</li>
 			<li>OR_jedicloak_light</li>
 			<li>SWCPSpecificApparelItem_SimpleCloak</li>
 		</tags>
 		<wornGraphicPath>SWApparel/Jedi/cloak_1/Apparel</wornGraphicPath>
+		
+		<canBeGeneratedToSatisfyWarmth>true</canBeGeneratedToSatisfyWarmth>
     </apparel>
 	<tradeTags>
 		<li>guy762TT_KotORClothes</li>
 		<li>guy762TT_JediApparel</li>
 	</tradeTags>
 	<costList>
-		<Synthread>80</Synthread>
+		<Cloth>80</Cloth>
 	</costList>
 	<recipeMaker>
 		<skillRequirements>
@@ -104,13 +108,15 @@
 	  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
 	  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
 	  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+	  
 	  <Insulation_Cold>5</Insulation_Cold>
       <Insulation_Heat>5</Insulation_Heat>
+	  
       <EquipDelay>0.125</EquipDelay>
 	  <WorkToMake>5000</WorkToMake>
     </statBases>
 	<costList>
-		<Synthread>40</Synthread>
+		<Cloth>40</Cloth>
 	</costList>
 	<recipeMaker>
 		<skillRequirements>
@@ -186,13 +192,15 @@
 	  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
 	  <ArmorRating_Blunt>0.01</ArmorRating_Blunt>
 	  <ArmorRating_Heat>0.01</ArmorRating_Heat>
+	  
 	  <Insulation_Cold>5</Insulation_Cold>
       <Insulation_Heat>5</Insulation_Heat>
+	  
       <EquipDelay>0.125</EquipDelay>
 	  <WorkToMake>5000</WorkToMake>
     </statBases>
 	<costList>
-		<Synthread>40</Synthread>
+		<Cloth>40</Cloth>
 	</costList>
 	<recipeMaker>
 		<skillRequirements>

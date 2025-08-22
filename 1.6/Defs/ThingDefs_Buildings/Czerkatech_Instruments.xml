@@ -3,7 +3,10 @@
 	<!-- Instrument Base ================================================================ -->
 	<ThingDef Name="Kotor_Instrument_Base" ParentName="MusicalInstrumentBase" Abstract="True">
 		<minTechLevelToBuild>Spacer</minTechLevelToBuild>
-		<soundPlayInstrument>jizz_play</soundPlayInstrument>
+		
+		<!-- disabled for absurdly large filesize -->
+		<!-- <soundPlayInstrument>jizz_play</soundPlayInstrument> -->
+		
 		<defaultPlacingRot>North</defaultPlacingRot>
 		<researchPrerequisites><li>KOTOR_Research_Instruments</li></researchPrerequisites>
 		<thingSetMakerTags><li>RewardStandardQualitySuper</li></thingSetMakerTags>

@@ -19,7 +19,7 @@
 			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.01</ArmorRating_Heat>
-			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Cold>10</Insulation_Cold>
 			<Insulation_Heat>5</Insulation_Heat>
 			<EquipDelay>3</EquipDelay>
 			
@@ -38,6 +38,7 @@
 		<apparel>
 		  <tags Inherit="False">
 			<li>RemnantEmpire_armytrooper</li>
+			<li>NewRepublic_RebelTrooperOnSkin</li>
 			<li>SWCPSpecificApparelItem_GenericUniform</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/GenericMilitaryFatigues/Apparel</wornGraphicPath>
@@ -156,9 +157,9 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
-	  <ThingDef ParentName="guy762_clothingbase">
+	<ThingDef ParentName="guy762_clothingbase">
 		<defName>guy762_Clothing_scumII</defName>
 		<label>clothing, rugged</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
@@ -191,6 +192,8 @@
 			<li>KotORClothing_civilian_hooded</li>
 			<li>SaV_apparel_thug</li>
 			<li>SithRem_apparel_undersuit</li>
+			<li>PartisanAlliance_trooperOnSkin</li>
+			<li>PartisanAlliance_sniperOnSkin</li>
 			<li>SWCPSpecificApparelItem_RusticClothing</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/Undersuits/scum/Apparel</wornGraphicPath>
@@ -226,7 +229,79 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_clothingbase">
+		<defName>guy762_Clothing_scumIII</defName>
+		<label>clothing, rural</label>
+		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
+		<graphicData>
+		  <texPath>SWApparel/Undersuits/scum/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(50,50,50)</colorTwo> <!-- black -->
+		</graphicData>
+		<statBases>
+			<Mass>3</Mass>
+			<MarketValue>10</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>1000</WorkToMake>
+		</statBases>
+		
+		<costList>
+		  <Cloth>75</Cloth>
+		</costList>
+		
+		<apparel>
+		  <tags Inherit="False">
+			<li>KotORClothing_any</li>
+			<li>SaV_apparel_thug</li>
+			<li>PartisanAlliance_sniperOnSkin</li>
+			<li>SWCPSpecificApparelItem_BlackPantsTwoToneRusticClothing</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/Undersuits/scum/Apparel</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <defaultOutfitTags Inherit="False">
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(250,250,250)</only>	<!-- white -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(125,75,40)</only>	<!-- partisan rust brown -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	  
 	  
 	  
@@ -315,7 +390,7 @@
 	  
 	  
 	  
-	  <ThingDef ParentName="guy762_clothingbase">
+	<ThingDef ParentName="guy762_clothingbase">
 		<defName>guy762_Clothing_rebel</defName>
 		<label>clothing, plain</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
@@ -369,7 +444,7 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
 	  
 	  
@@ -637,7 +712,84 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_clothingbase">
+		<defName>guy762_Clothing_RebelCamo</defName>
+		<label>clothing, fatigues</label>
+		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
+		<graphicData>
+		  <texPath>SWApparel/Undersuits/rebel_camo/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(50,50,50)</colorTwo>
+		</graphicData>
+		<statBases>
+			<Mass>3</Mass>
+			<MarketValue>10</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>1000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <HuntingStealth>0.1</HuntingStealth>
+		</equippedStatOffsets>
+		
+		<costList>
+		  <Cloth>75</Cloth>
+		</costList>
+		
+		<apparel>
+		  <tags Inherit="False">
+			<li>NewRepublic_RebelTrooperOnSkin</li>
+			<li>SWCPSpecificApparelItem_RebelCamoClothing</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/Undersuits/rebel_camo/Apparel</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <defaultOutfitTags Inherit="False">
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(95,100,70)</only> <!-- forest green -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(175,150,120)</only>       <!-- bespin beige -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
 	  
   
 
@@ -646,72 +798,72 @@
 
 
 
-  <ThingDef ParentName="guy762_FullBodyClothingBase">
-    <defName>guy762_Bodysuit_Dyeable</defName>
-    <label>bodysuit, fatigues</label>
-    <description>These are simple garments that protect little more than the modesty of the wearer.</description>
-    <graphicData>
-      <texPath>SWApparel/Undersuits/worker/Apparel</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<statBases>
-		<Mass>4</Mass>
-		<MarketValue>20</MarketValue>
-		<MaxHitPoints>150</MaxHitPoints>
-		<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-		<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
-		<ArmorRating_Heat>0.01</ArmorRating_Heat>
-		<Insulation_Cold>5</Insulation_Cold>
-		<Insulation_Heat>15</Insulation_Heat>
-		<EquipDelay>3</EquipDelay>
+	<ThingDef ParentName="guy762_FullBodyClothingBase">
+		<defName>guy762_Bodysuit_Dyeable</defName>
+		<label>bodysuit, fatigues</label>
+		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
+		<graphicData>
+		  <texPath>SWApparel/Undersuits/worker/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>4</Mass>
+			<MarketValue>20</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>1000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
+		</equippedStatOffsets>
 		
-		<WorkToMake>1000</WorkToMake>
-	</statBases>
-	<equippedStatOffsets>
-	  <WorkSpeedGlobal>0.1</WorkSpeedGlobal>
-    </equippedStatOffsets>
-	
-	<costList>
-      <Synthread>75</Synthread>
-    </costList>
-	
-    <apparel>
-      <tags Inherit="False">
-		<li>KotORClothing_undersuit</li>
-		<li>KotORClothing_civilian_prole</li>
-		<li>SithRem_apparel_undersuit</li>
-		<li>SWCPSpecificApparelItem_DyeableFatigues</li>
-      </tags>
-      <wornGraphicPath>SWApparel/Undersuits/worker/Apparel</wornGraphicPath>
-      <defaultOutfitTags Inherit="False">
-		<li>Worker</li>
-	  </defaultOutfitTags>
-    </apparel>
-	<tradeTags>
-		<li>guy762TT_KotORClothes</li>
-		<li>guy762TT_KotORUnderArmor</li>
-	</tradeTags>
-	<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-		<options>
-			<li>
-				<weight>10</weight>
-				<only>(150,140,95)</only> <!-- dijon -->
-			</li>
-			<li>
-				<weight>10</weight>
-				<only>(50,50,50)</only> <!-- black -->
-			</li>
-			<li>
-				<weight>10</weight>
-				<only>(70,60,80)</only> <!-- plum -->
-			</li>
-			<li>
-			  <weight>10</weight>
-			  <only>(110,110,110)</only> <!-- medium grey -->
-			</li>
-		</options>
-	</colorGenerator>
-  </ThingDef>
+		<costList>
+		  <Synthread>75</Synthread>
+		</costList>
+		
+		<apparel>
+		  <tags Inherit="False">
+			<li>KotORClothing_undersuit</li>
+			<li>KotORClothing_civilian_prole</li>
+			<li>SithRem_apparel_undersuit</li>
+			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/Undersuits/worker/Apparel</wornGraphicPath>
+		  <defaultOutfitTags Inherit="False">
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_KotORUnderArmor</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(150,140,95)</only> <!-- dijon -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(50,50,50)</only> <!-- black -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(70,60,80)</only> <!-- plum -->
+				</li>
+				<li>
+				  <weight>10</weight>
+				  <only>(110,110,110)</only> <!-- medium grey -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
 	
 	
 	
@@ -733,8 +885,8 @@
 			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.01</ArmorRating_Heat>
-			<Insulation_Cold>10</Insulation_Cold>
-			<Insulation_Heat>15</Insulation_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>10</Insulation_Heat>
 			<EquipDelay>3</EquipDelay>
 			
 			<WorkToMake>1000</WorkToMake>
@@ -780,7 +932,7 @@
   <ThingDef ParentName="guy762_FullBodyClothingBase">
     <defName>guy762_Bodysuit</defName>
     <label>bodysuit, vac-sealed</label>
-    <description>This is a sealed bodysuit offering sufficient protection against the cold vacuum of space and other hazardous environments.</description>
+    <description>This is a sealed bodysuit offering sufficient protection against the vacuum of space and other hazardous environments.</description>
     <graphicData>
       <texPath>SWApparel/Undersuits/vac/Apparel</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -792,8 +944,9 @@
 		<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
 		<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
 		<ArmorRating_Heat>0.05</ArmorRating_Heat>
-		<Insulation_Cold>50</Insulation_Cold>
-		<Insulation_Heat>50</Insulation_Heat>
+		
+		<Insulation_Cold>15</Insulation_Cold>
+		<Insulation_Heat>15</Insulation_Heat>
 		<EquipDelay>5</EquipDelay>
 		
 		<WorkToMake>10000</WorkToMake>
@@ -903,8 +1056,10 @@
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			
 			<Insulation_Cold>10</Insulation_Cold>
-			<Insulation_Heat>15</Insulation_Heat>
+			<Insulation_Heat>5</Insulation_Heat>
+			
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -995,7 +1150,10 @@
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.2</ArmorRating_Heat>
-			<Insulation_Heat>10</Insulation_Heat>
+			
+			<Insulation_Cold>5</Insulation_Cold>
+			<!-- <Insulation_Heat>5</Insulation_Heat> -->
+			
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>
@@ -1085,7 +1243,10 @@
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.2</ArmorRating_Heat>
-			<Insulation_Heat>10</Insulation_Heat>
+			
+			<Insulation_Cold>5</Insulation_Cold>
+			<!-- <Insulation_Heat>5</Insulation_Heat> -->
+			
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<equippedStatOffsets>

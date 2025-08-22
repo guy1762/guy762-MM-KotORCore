@@ -68,16 +68,14 @@
 	  <WorkToMake>100</WorkToMake>
     </statBases>
 	
-	<!--ingestible>
+	<ingestible>
 	  <outcomeDoers>
-		<li Class="ArtificialBeings.IngestionOutcomeDoer_SplitEffects">
-			<organicEffect>guy762_Electrocuted</organicEffect>
-			<organicSeverity>0.35</organicSeverity>
-			<artificialEffect>ABF_Hediff_Synstruct_RemainingCharge</artificialEffect>
-			<artificialSeverity>0.675</artificialSeverity>
+		<li Class="ArtificialBeings.IngestionOutcomeDoer_OffsetArtificialNeed">
+			<need>ABF_Need_Synstruct_Energy</need>
+			<offset>0.675</offset>
 		</li>
       </outcomeDoers>
-    </ingestible-->
+    </ingestible>
 		
 	<recipeMaker>
       <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
@@ -110,16 +108,14 @@
 	  <WorkToMake>500</WorkToMake>
     </statBases>
 	
-	<!--ingestible>
+	<ingestible>
 	  <outcomeDoers>
-		<li Class="ArtificialBeings.IngestionOutcomeDoer_SplitEffects">
-			<organicEffect>guy762_Electrocuted</organicEffect>
-			<organicSeverity>0.55</organicSeverity>
-			<artificialEffect>ABF_Hediff_Synstruct_RemainingCharge</artificialEffect>
-			<artificialSeverity>1</artificialSeverity>
+		<li Class="ArtificialBeings.IngestionOutcomeDoer_OffsetArtificialNeed">
+			<need>ABF_Need_Synstruct_Energy</need>
+			<offset>1</offset>
 		</li>
       </outcomeDoers>
-    </ingestible-->
+    </ingestible>
 	
 	<recipeMaker>
       <researchPrerequisite>AdvancedFabrication</researchPrerequisite>

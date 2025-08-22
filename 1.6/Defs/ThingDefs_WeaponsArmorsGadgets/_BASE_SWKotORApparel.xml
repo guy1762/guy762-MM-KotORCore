@@ -311,8 +311,10 @@
 			<ArmorRating_Sharp>0.2</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.25</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.3</ArmorRating_Heat>
-			<!--Insulation_Cold>10</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat-->
+			
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<apparel>
@@ -351,8 +353,9 @@
 			<ArmorRating_Blunt>0.10</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.35</ArmorRating_Heat>
 			
-			<!--Insulation_Cold>5</Insulation_Cold>
-			<Insulation_Heat>5</Insulation_Heat-->
+			<Insulation_Cold>2.5</Insulation_Cold>
+			<Insulation_Heat>2.5</Insulation_Heat>
+			
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<apparel>
@@ -408,8 +411,9 @@
 			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.2</ArmorRating_Heat>
-			<Insulation_Cold>10</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat>
+			
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
 		</statBases>
 		<costList>
 			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
@@ -476,8 +480,9 @@
 			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
-			<Insulation_Cold>5</Insulation_Cold>
-			<Insulation_Heat>5</Insulation_Heat>
+			
+			<!-- <Insulation_Cold>2.5</Insulation_Cold> -->
+			<!-- <Insulation_Heat>2.5</Insulation_Heat> -->
 		</statBases>
 		<costList>
 			<KOTOR_UltraComponent>1</KOTOR_UltraComponent>
@@ -625,8 +630,10 @@
 			<ArmorRating_Sharp>0.15</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.20</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
-			<!--Insulation_Cold>10</Insulation_Cold>
-			<Insulation_Heat>10</Insulation_Heat-->
+			
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<apparel>
@@ -684,8 +691,10 @@
 			<ArmorRating_Sharp>0.20</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.25</ArmorRating_Heat>
-			<!--Insulation_Cold>5</Insulation_Cold>
-			<Insulation_Heat>5</Insulation_Heat-->
+			
+			<Insulation_Cold>2.5</Insulation_Cold>
+			<Insulation_Heat>2.5</Insulation_Heat>
+			
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<apparel>

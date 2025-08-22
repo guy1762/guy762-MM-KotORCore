@@ -2,24 +2,27 @@
 <Defs>
 	
 	<!-- Jizz Music ================================================================ -->
-	<SoundDef>
-		<defName>jizz_play</defName>
-		<context>MapOnly</context>
-		<sustain>True</sustain>
-		<sustainFadeoutTime>0.25</sustainFadeoutTime>
-		<priorityMode>PrioritizeNearest</priorityMode>
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>kotor_instruments_songs</clipFolderPath>
-					</li>
-				</grains>
-				<volumeRange>25</volumeRange>
-				<distRange>5~25</distRange>
-				<muteWhenPaused>True</muteWhenPaused>
-			</li>
-		</subSounds>
-	</SoundDef>
+	<!-- <SoundDef> -->
+		<!-- <defName>jizz_play</defName> -->
+		<!-- <context>MapOnly</context> -->
+		<!-- <sustain>True</sustain> -->
+		<!-- <sustainFadeoutTime>0.25</sustainFadeoutTime> -->
+		<!-- <priorityMode>PrioritizeNearest</priorityMode> -->
+		<!-- <subSounds> -->
+			<!-- <li> -->
+				<!-- <grains> -->
+					<!-- <li Class="AudioGrain_Folder"> -->
+						<!-- <clipFolderPath>kotor_instruments_songs</clipFolderPath> -->
+					<!-- </li> -->
+				<!-- </grains> -->
+				<!-- <volumeRange>25</volumeRange> -->
+				<!-- <distRange>5~25</distRange> -->
+				<!-- <muteWhenPaused>True</muteWhenPaused> -->
+			<!-- </li> -->
+		<!-- </subSounds> -->
+	<!-- </SoundDef> -->
+	
+	
+	<!-- disabled for huge file size -->
 	
 </Defs>

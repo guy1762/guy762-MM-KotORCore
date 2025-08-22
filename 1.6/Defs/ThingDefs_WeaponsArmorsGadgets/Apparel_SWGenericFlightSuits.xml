@@ -19,6 +19,7 @@
 			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
 			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
 			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			
 			<Insulation_Cold>100</Insulation_Cold>
 			<!-- <Insulation_Heat>100</Insulation_Heat> -->
 			<EquipDelay>5</EquipDelay>
@@ -149,8 +150,10 @@
 		<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
 		<ArmorRating_Blunt>0.4</ArmorRating_Blunt>
 		<ArmorRating_Heat>0.65</ArmorRating_Heat>
+		
 		<Insulation_Cold>20</Insulation_Cold>
-		<EquipDelay>15</EquipDelay>
+		
+		<EquipDelay>10</EquipDelay>
 	</statBases>
 	<equippedStatOffsets>
 		<MoveSpeed>-0.1</MoveSpeed>

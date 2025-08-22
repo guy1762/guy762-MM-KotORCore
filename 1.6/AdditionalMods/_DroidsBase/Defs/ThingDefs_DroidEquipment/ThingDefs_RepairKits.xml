@@ -51,10 +51,10 @@
 	  <ingestSound>kotorsound_upgrade</ingestSound>
 	  <preferability>NeverForNutrition</preferability>
 	  <outcomeDoers>
-        <!--li Class="IngestionOutcomeDoer_GiveHediff">
+        <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>guy762_repairkitHeal</hediffDef>
           <severity>1.0</severity>
-        </li-->
+        </li>
 		<!-- <li Class="ArtificialBeings.IngestionOutcomeDoer_SplitEffects"> -->
 			<!-- <organicEffect>ABF_Hediff_Synstruct_Toxicated</organicEffect> -->
 			<!-- <organicSeverity>1</organicSeverity> -->
@@ -141,10 +141,10 @@
 	  <ingestSound>kotorsound_upgrade</ingestSound>
 	  <preferability>NeverForNutrition</preferability>
 	  <outcomeDoers>
-        <!--li Class="IngestionOutcomeDoer_GiveHediff">
+        <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>guy762_repairkitHeal_adv</hediffDef>
           <severity>1.0</severity>
-        </li-->
+        </li>
 		<!-- <li Class="ArtificialBeings.IngestionOutcomeDoer_SplitEffects"> -->
 			<!-- <organicEffect>ABF_Hediff_Synstruct_Toxicated</organicEffect> -->
 			<!-- <organicSeverity>1</organicSeverity> -->
@@ -233,10 +233,10 @@
 	  <ingestSound>kotorsound_upgrade</ingestSound>
 	  <preferability>NeverForNutrition</preferability>
 	  <outcomeDoers>
-        <!--li Class="IngestionOutcomeDoer_GiveHediff">
+        <li Class="IngestionOutcomeDoer_GiveHediff">
           <hediffDef>guy762_repairkitHeal_con</hediffDef>
           <severity>1.0</severity>
-        </li-->
+        </li>
 		<!-- <li Class="ArtificialBeings.IngestionOutcomeDoer_SplitEffects"> -->
 			<!-- <organicEffect>ABF_Hediff_Synstruct_Toxicated</organicEffect> -->
 			<!-- <organicSeverity>1</organicSeverity> -->

@@ -278,7 +278,7 @@
 		<size>(1,1)</size>
 		<building>
 			<paintable>true</paintable>
-			<destroySound>BuildingDestroyed_Metal_Medium</destroySound>
+			<destroySound>kotorsound_GonkDroid_destroyed</destroySound>
 		</building>
 		
 		<researchPrerequisites>
@@ -305,6 +305,9 @@
 				</affectedDamageDefs>
 			</li>
 			<li Class="CompProperties_Breakdownable"/>
+			<li Class="CompProperties_Effecter">
+				<effecterDef>guy762_Effecter_GonkDroid</effecterDef>
+			</li>
 			<!--li MayRequire="kentington.saveourship2" Class="CompProperties_BecomePawn">
 				<pawnDef>guy762_gonk_colonist</pawnDef>
 			</li-->
@@ -323,7 +326,16 @@
 	</ThingDef>
 	
 	
-	
+	<EffecterDef>
+		<defName>guy762_Effecter_GonkDroid</defName>
+		<children>
+		  <li>
+			<subEffecterClass>SubEffecter_SoundIntermittent</subEffecterClass>
+			<soundDef>kotorsound_GonkDroid</soundDef>
+			<intermittentSoundInterval><min>250</min><max>1000</max></intermittentSoundInterval>
+		  </li>
+		</children>
+	</EffecterDef>
 	
 	
 	

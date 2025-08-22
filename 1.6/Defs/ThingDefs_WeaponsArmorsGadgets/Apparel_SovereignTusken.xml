@@ -22,7 +22,7 @@
       <StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
       <StuffEffectMultiplierInsulation_Cold>0.10</StuffEffectMultiplierInsulation_Cold>
       <StuffEffectMultiplierInsulation_Heat>0.3</StuffEffectMultiplierInsulation_Heat>
-	  <Insulation_Heat>10</Insulation_Heat>
+	  <Insulation_Heat>50</Insulation_Heat>
     </statBases>
 
     <equippedStatOffsets>
