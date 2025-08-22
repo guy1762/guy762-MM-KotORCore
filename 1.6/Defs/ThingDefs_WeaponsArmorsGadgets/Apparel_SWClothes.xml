@@ -1,99 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	
-	  
-	<ThingDef ParentName="guy762_clothingbase">
-		<defName>guy762_GenericUniform_fatigues</defName>
-		<label>uniform, fatigues</label>
-		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
-		<graphicData>
-		  <texPath>SWApparel/GenericMilitaryFatigues/Apparel</texPath>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		</graphicData>
-		<statBases>
-			<Mass>3</Mass>
-			<MarketValue>100</MarketValue>
-			<MaxHitPoints>100</MaxHitPoints>
-			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
-			<ArmorRating_Heat>0.01</ArmorRating_Heat>
-			<Insulation_Cold>10</Insulation_Cold>
-			<Insulation_Heat>5</Insulation_Heat>
-			<EquipDelay>3</EquipDelay>
-			
-			<WorkToMake>4000</WorkToMake>
-		</statBases>
-		
-		<recipeMaker>
-			<skillRequirements>
-				<Crafting>6</Crafting>
-			</skillRequirements>
-		</recipeMaker>
-		<costList>
-		  <Cloth>75</Cloth>
-		</costList>
-		
-		<apparel>
-		  <tags Inherit="False">
-			<li>RemnantEmpire_armytrooper</li>
-			<li>NewRepublic_RebelTrooperOnSkin</li>
-			<li>SWCPSpecificApparelItem_GenericUniform</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/GenericMilitaryFatigues/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
-		</apparel>
-		<tradeTags>
-			<li>guy762TT_KotORClothes</li>
-		</tradeTags>
-		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-			<options>
-				<li>
-					<weight>15</weight>
-					<only>(175,150,120)</only>       <!-- bespin beige -->
-				</li>
-				<li>
-					<weight>15</weight>
-					<only>(65,65,60)</only> <!-- imperial army grey -->
-				</li>
-			</options>
-		</colorGenerator>
-	  </ThingDef>
-	  
-	  
-	  
-	  
-	  
-	  
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+
 	<ThingDef ParentName="guy762_clothingbase">
 		<defName>guy762_Clothing_scum</defName>
 		<label>clothing, rustic</label>
@@ -757,10 +665,74 @@
 		
 		<apparel>
 		  <tags Inherit="False">
-			<li>NewRepublic_RebelTrooperOnSkin</li>
+			<li>NewRepublic_RebelSniperOnSkin</li>
 			<li>SWCPSpecificApparelItem_RebelCamoClothing</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/Undersuits/rebel_camo/Apparel</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <defaultOutfitTags Inherit="False">
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(75,75,75)</only> <!-- dark grey -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(175,150,120)</only>       <!-- bespin beige -->
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_clothingbase">
+		<defName>guy762_Clothing_RebelCamoII</defName>
+		<label>clothing, fatigues</label>
+		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
+		<graphicData>
+		  <texPath>SWApparel/Undersuits/rebel_camo2/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(175,150,120)</colorTwo>	<!-- bespin beige -->
+		</graphicData>
+		<statBases>
+			<Mass>3</Mass>
+			<MarketValue>10</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<Insulation_Cold>5</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>1000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <HuntingStealth>0.1</HuntingStealth>
+		</equippedStatOffsets>
+		
+		<costList>
+		  <Cloth>75</Cloth>
+		</costList>
+		
+		<apparel>
+		  <tags Inherit="False">
+			<li>NewRepublic_RebelTrooperOnSkin</li>
+			<li>SWCPSpecificApparelItem_AltRebelCamoClothing</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/Undersuits/rebel_camo2/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
 		  <defaultOutfitTags Inherit="False">
 			<li>Soldier</li>
@@ -777,11 +749,101 @@
 				</li>
 				<li>
 					<weight>10</weight>
-					<only>(175,150,120)</only>       <!-- bespin beige -->
+					<only>(145,120,85)</only> <!-- darker beige -->
+				</li>
+				
+				<!-- urban grey -->
+				<!-- <li> -->
+					<!-- <weight>10</weight> -->
+					<!-- <only>(100,100,100)</only> -->
+				<!-- </li> -->
+				<!-- rust -->
+				<!-- <li> -->
+					<!-- <weight>10</weight> -->
+					<!-- <only>(160,100,60)</only> -->
+				<!-- </li> -->
+				<!-- dull brown -->
+				<!-- <li> -->
+					<!-- <weight>10</weight> -->
+					<!-- <only>(105,80,65)</only> -->
+				<!-- </li> -->
+			</options>
+		</colorGenerator>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="guy762_clothingbase">
+		<defName>guy762_GenericUniform_fatigues</defName>
+		<label>uniform, fatigues</label>
+		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
+		<graphicData>
+		  <texPath>SWApparel/GenericMilitaryFatigues/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>3</Mass>
+			<MarketValue>100</MarketValue>
+			<MaxHitPoints>100</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.01</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.01</ArmorRating_Heat>
+			<Insulation_Cold>10</Insulation_Cold>
+			<Insulation_Heat>5</Insulation_Heat>
+			<EquipDelay>3</EquipDelay>
+			
+			<WorkToMake>4000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+		  <Cloth>75</Cloth>
+		</costList>
+		
+		<apparel>
+		  <tags Inherit="False">
+			<li>RemnantEmpire_armytrooper</li>
+			<li>NewRepublic_RebelTrooperOnSkin</li>
+			<li>NewRepublic_RebelSniperOnSkin</li>
+			<li>SWCPSpecificApparelItem_GenericUniform</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/GenericMilitaryFatigues/Apparel</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <defaultOutfitTags Inherit="False">
+			<li>Worker</li>
+		  </defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(175,150,120)</only>	<!-- bespin beige -->
+				</li>
+				<li>
+					<weight>10</weight>
+					<only>(95,100,70)</only>	<!-- forest green -->
 				</li>
 			</options>
 		</colorGenerator>
 	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

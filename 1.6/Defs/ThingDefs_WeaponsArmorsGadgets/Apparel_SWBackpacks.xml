@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef ParentName="guy762_jetpackMakeable">
+		<defName>guy762_Backpack_light</defName>
+		<label>backpack, light</label>
+		<description>A simple backpack for carrying excess equipment.</description>
+		<graphicData>
+		  <texPath>SWApparel/Accessories/backpacks/backpack_small</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+		  <Mass>3</Mass>
+		  <MarketValue>100</MarketValue>
+		  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.1</ArmorRating_Heat>
+		  
+		  <WorkToMake>4500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets Inherit="False">
+		  <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">50</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
+		
+		<recipeMaker>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <skillRequirements>
+			<Crafting>4</Crafting>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Plasteel>40</Plasteel>
+		</costList>
+		
+		<tickerType>Never</tickerType>
+		<apparel>
+		  <tags>
+			<li>KotORAccessory_any</li>
+			<li>KotORAccessory_trooper</li>
+			<li>KotORAccessory_civilian</li>
+			<li>KotORAccessory_backpack</li>
+			<li>KotORAccessory_smallbackpack</li>
+			<li>SWCPSpecificApparelItem_KotORSmallBackpack</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/Accessories/backpacks/backpack_small</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+		  <options>
+			<li>
+				<weight>15</weight>
+				<only>(135,145,150)</only>    <!-- dark teal-grey -->
+			</li>
+			<li>
+				<weight>15</weight>
+				<only>(165,175,165)</only>    <!-- faint olive grey -->
+			</li>
+			<li>
+				<weight>15</weight>
+				<only>(175,160,90)</only>    <!-- K1 "bag" container mustard -->
+			</li>
+			<li>
+				<weight>15</weight>
+				<only>(105,105,105)</only>    <!-- steel -->
+			</li>
+		  </options>
+		</colorGenerator>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<tradeTags>
+		  <li>guy762TT_KotOREquipment_apparel</li>
+		</tradeTags>
+	</ThingDef>
+	  
+	<ThingDef ParentName="guy762_jetpackbase">
+		<defName>guy762_Backpack_scorch</defName>
+		<label>backpack, commando's</label>
+		<description>A simple backpack for carrying excess equipment.</description>
+		<graphicData>
+		  <texPath>SWApparel/Accessories/backpacks/backpack_scorch</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(230,185,45)</colorTwo> <!-- republic yellow -->
+		</graphicData>
+		<statBases>
+		  <Mass>4</Mass>
+		  <MarketValue>200</MarketValue>
+		  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.1</ArmorRating_Heat>
+		</statBases>
+		<equippedStatOffsets Inherit="False">
+		  <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">50</VEF_MassCarryCapacity>
+		  <RangedCooldownFactor>-0.2</RangedCooldownFactor>
+		</equippedStatOffsets>
+		
+		<tickerType>Never</tickerType>
+		<apparel>
+		  <tags>
+			<li>KotORAccessory_scorchbackpack</li>
+			<li>SWCPSpecificApparelItem_KotORScorchBackpack</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/Accessories/backpacks/backpack_scorch</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <drawData>
+			  <dataEast>
+				<layer>68</layer>
+			  </dataEast>
+			  <dataWest>
+				<layer>68</layer>
+			  </dataWest>
+			  <dataSouth>
+				  <layer>-3</layer>
+			  </dataSouth>
+			  <dataNorth>
+				  <layer>68</layer>
+			  </dataNorth>
+			</drawData>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+		  <options>
+			<li>
+				<weight>15</weight>
+				<only>(140,140,150)</only>  <!--silver-->
+			</li>
+		  </options>
+		</colorGenerator>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+	</ThingDef>
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	  
+	<ThingDef ParentName="guy762_jetpackMakeable">
+		<defName>guy762_Backpack_heavy</defName>
+		<label>backpack, heavy</label>
+		<description>A simple backpack for carrying excess equipment.</description>
+		<graphicData>
+		  <texPath>SWApparel/Accessories/backpacks/backpack_big</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(175,120,55)</colorTwo>  <!--faint orange-->
+		</graphicData>
+		<statBases>
+		  <Mass>6</Mass>
+		  <MarketValue>400</MarketValue>
+		  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.1</ArmorRating_Heat>
+		  
+		  <WorkToMake>6500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets Inherit="False">
+		  <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">100</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
+		
+		<recipeMaker>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <skillRequirements>
+			<Crafting>4</Crafting>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<Plasteel>60</Plasteel>
+		</costList>
+		
+		<tickerType>Never</tickerType>
+		<apparel>
+		  <tags>
+			<li>KotORAccessory_any</li>
+			<li>KotORAccessory_trooper</li>
+			<li>KotORAccessory_backpack</li>
+			<li>KotORAccessory_bigbackpack</li>
+			<li>SWCPSpecificApparelItem_KotORBigBackpack</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/Accessories/backpacks/backpack_big</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+		  <options>
+			<li>
+				<weight>15</weight>
+				<only>(120,125,110)</only> <!-- drab green -->
+			</li>
+			<li>
+				<weight>15</weight>
+				<only>(90,85,65)</only> <!-- grease green -->
+			</li>
+			<li>
+				<weight>15</weight>
+				<only>(135,145,150)</only>    <!-- dark teal-grey -->
+			</li>
+			<li>
+				<weight>15</weight>
+				<only>(105,105,105)</only>    <!-- steel -->
+			</li>
+		  </options>
+		</colorGenerator>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<tradeTags>
+		  <li>guy762TT_KotOREquipment_apparel</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_jetpackMakeable">
+		<defName>guy762_Backpack_GCWRebel</defName>
+		<label>backpack, field</label>
+		<description>A simple backpack for carrying excess equipment.</description>
+		<graphicData>
+		  <texPath>SWApparel/Accessories/backpacks/Rebel/backpack</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(175,120,55)</colorTwo>  <!--faint orange-->
+		</graphicData>
+		<statBases>
+		  <Mass>5</Mass>
+		  <MarketValue>300</MarketValue>
+		  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.1</ArmorRating_Heat>
+		  
+		  <WorkToMake>6500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets Inherit="False">
+		  <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">75</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
+		
+		<recipeMaker>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <skillRequirements>
+			<Crafting>4</Crafting>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<KOTOR_Plastoid>50</KOTOR_Plastoid>
+			<Steel>10</Steel>
+		</costList>
+		
+		<tickerType>Never</tickerType>
+		<apparel>
+		  <tags>
+			<li>NewRepublic_RebelBackpackMix</li>
+			<li>SWCPSpecificApparelItem_GCWRebelBackpack</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/Accessories/backpacks/Rebel/backpack</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  
+		  
+		  
+		  <wornGraphicData>
+			<east>
+				<female><offset>(0.05,0.05)</offset></female>
+			</east>
+			<west>
+				<female><offset>(-0.05,0.05)</offset></female>
+			</west>
+		  </wornGraphicData>
+		  
+		  
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+		  <options>
+			<li>
+				<weight>15</weight>
+				<only>(115,120,75)</only> <!-- olive green -->
+			</li>
+			<li>
+				<weight>15</weight>
+				<only>(125,125,125)</only> <!-- mid grey -->
+			</li>
+			<li>
+				<weight>15</weight>
+				<only>(175,150,120)</only> <!-- bespin beige -->
+			</li>
+		  </options>
+		</colorGenerator>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>guy762TT_RebelArmor</li>
+		</tradeTags>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_jetpackMakeable">
+		<defName>guy762_Backpack_GCWRebelHeavy</defName>
+		<label>backpack, recon</label>
+		<description>A simple backpack for carrying excess equipment.</description>
+		<graphicData>
+		  <texPath>SWApparel/Accessories/backpacks/Rebel/bedrollbackpack</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		  <colorTwo>(175,120,55)</colorTwo>  <!--faint orange-->
+		</graphicData>
+		<statBases>
+		  <Mass>6</Mass>
+		  <MarketValue>400</MarketValue>
+		  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.1</ArmorRating_Heat>
+		  
+		  <WorkToMake>6500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets Inherit="False">
+		  <VEF_MassCarryCapacity MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">100</VEF_MassCarryCapacity>
+		</equippedStatOffsets>
+		
+		<recipeMaker>
+		  <useIngredientsForColor>false</useIngredientsForColor>
+		  <skillRequirements>
+			<Crafting>5</Crafting>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<KOTOR_Plastoid>50</KOTOR_Plastoid>
+			<Steel>10</Steel>
+			<Cloth>15</Cloth>
+		</costList>
+		
+		<tickerType>Never</tickerType>
+		<apparel>
+		  <tags>
+			<li>NewRepublic_RebelBackpackMix</li>
+			<li>SWCPSpecificApparelItem_GCWRebelHeavyBackpack</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/Accessories/backpacks/Rebel/bedrollbackpack</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  
+		  
+		  <wornGraphicData>
+			<east>
+				<female><offset>(0.05,0.05)</offset></female>
+			</east>
+			<west>
+				<female><offset>(-0.05,0.05)</offset></female>
+			</west>
+		  </wornGraphicData>
+		  
+		  
+		</apparel>
+		<colorGenerator Class="ColorGenerator_Options">
+		  <options>
+			<li>
+				<weight>15</weight>
+				<only>(125,125,125)</only> <!-- mid grey -->
+			</li>
+			<li>
+				<weight>15</weight>
+				<only>(115,120,75)</only> <!-- olive green -->
+			</li>
+			<li>
+				<weight>15</weight>
+				<only>(175,150,120)</only> <!-- bespin beige -->
+			</li>
+		  </options>
+		</colorGenerator>
+		<comps>
+			<li>
+				<compClass>CompQuality</compClass>
+			</li>
+		</comps>
+		<tradeTags>
+			<li>guy762TT_RebelArmor</li>
+		</tradeTags>
+	</ThingDef>
+  
+  
+  
+
+</Defs>
