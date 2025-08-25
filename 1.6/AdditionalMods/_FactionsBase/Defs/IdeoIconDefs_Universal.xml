@@ -51,8 +51,8 @@
 		<defName>guy762_IdeoIcon_mandoA</defName>
 		<iconPath>World/ScumAndVillainy</iconPath>
 		<memes>
-		  <li MayRequire="guy762.KotORFactions">>guy762_MemeDef_mando</li>
-		  <li MayRequire="guy762.KotORFactions">>guy762_MemeDef_exchange</li>
+		  <li MayRequire="guy762.KotORFactions">guy762_MemeDef_mando</li>
+		  <li MayRequire="guy762.KotORFactions">guy762_MemeDef_exchange</li>
 		</memes>
 	</IdeoIconDef>
 	
@@ -60,7 +60,7 @@
 		<defName>guy762_IdeoIcon_mandoB</defName>
 		<iconPath>World/Mandalorians</iconPath>
 		<memes>
-		  <li MayRequire="guy762.KotORFactions">>guy762_MemeDef_mando</li>
+		  <li MayRequire="guy762.KotORFactions">guy762_MemeDef_mando</li>
 		</memes>
 	</IdeoIconDef>
 	
@@ -89,7 +89,7 @@
 		<defName>guy762_IdeoIcon_sithB</defName>
 		<iconPath>World/SithEmpire</iconPath>
 		<memes>
-		  <li MayRequire="guy762.KotORFactions">>guy762_MemeDef_sith</li>
+		  <li MayRequire="guy762.KotORFactions">guy762_MemeDef_sith</li>
 		</memes>
 	</IdeoIconDef>
 	
