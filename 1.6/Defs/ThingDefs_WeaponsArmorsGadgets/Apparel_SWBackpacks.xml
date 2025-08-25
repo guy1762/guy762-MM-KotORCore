@@ -287,9 +287,11 @@
 		  
 		  <wornGraphicData>
 			<east>
+				<male><offset>(0.05,0)</offset></male>
 				<female><offset>(0.05,0.05)</offset></female>
 			</east>
 			<west>
+				<male><offset>(-0.05,0)</offset></male>
 				<female><offset>(-0.05,0.05)</offset></female>
 			</west>
 		  </wornGraphicData>
@@ -375,9 +377,11 @@
 		  
 		  <wornGraphicData>
 			<east>
+				<male><offset>(0.05,0)</offset></male>
 				<female><offset>(0.05,0.05)</offset></female>
 			</east>
 			<west>
+				<male><offset>(-0.05,0)</offset></male>
 				<female><offset>(-0.05,0.05)</offset></female>
 			</west>
 		  </wornGraphicData>

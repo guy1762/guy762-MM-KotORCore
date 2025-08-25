@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_empire</defName>
+		<iconPath>World/ImperialRemnant</iconPath>
+		<memes>
+			<li MayRequire="SWCP.guy762.WarlordEmpire">guy762_MemeDef_empire</li>
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_pentastar</defName>
+		<iconPath>World/PentastarAlignment</iconPath>
+		<memes>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Progressive</li>
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_zsinj</defName>
+		<iconPath>World/ZsinjDominion</iconPath>
+		<memes>
+			<!-- <li>guy762_MemeDef_corruptrepublic</li> -->
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Nationalist</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Authoritarianism</li>
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_maldrood</defName>
+		<iconPath>World/GreaterMaldrood</iconPath>
+		<memes>
+			<!-- <li>guy762_MemeDef_corruptrepublic</li> -->
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">HumanPrimacy</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Nationalist</li>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Structure_Authoritarianism</li>
+		</memes>
+	</IdeoIconDef>
+	
+	
+	
+	
+	
+	
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_newrepublic</defName>
+		<iconPath>World/NewRepublic</iconPath>
+		<memes>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li>
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_rebels</defName>
+		<iconPath>World/RebelAlliance</iconPath>
+		<memes>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li>
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_partisans</defName>
+		<iconPath>World/PartisanAlliance</iconPath>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</memes>
+	</IdeoIconDef>
+	
+
+
+
+	
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_zann</defName>
+		<iconPath>World/ZannConsortium</iconPath>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_invids</defName>
+		<iconPath>World/Invids</iconPath>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</memes>
+	</IdeoIconDef>
+	
+	
+
+	
+	
+
+
+</Defs>

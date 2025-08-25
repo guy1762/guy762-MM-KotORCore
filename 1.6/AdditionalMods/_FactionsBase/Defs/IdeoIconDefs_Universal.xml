@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_xim</defName>
+		<iconPath>World/Xim</iconPath>
+		<memes>
+			<li>guy762_MemeDef_exchange</li>
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_trando</defName>
+		<iconPath>World/Trandoshan</iconPath>
+		<memes>
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_khoonda</defName>
+		<iconPath>World/Khoonda</iconPath>
+		<memes>
+		</memes>
+	</IdeoIconDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_huttsA</defName>
+		<iconPath>World/HuttClans</iconPath>
+		<memes>
+		  <li>guy762_MemeDef_hutt</li>
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_huttsB</defName>
+		<iconPath>World/ViciousHutts</iconPath>
+		<memes>
+		  <li>guy762_MemeDef_hutt</li>
+		</memes>
+	</IdeoIconDef>
+	
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_mandoA</defName>
+		<iconPath>World/ScumAndVillainy</iconPath>
+		<memes>
+		  <li MayRequire="guy762.KotORFactions">>guy762_MemeDef_mando</li>
+		  <li MayRequire="guy762.KotORFactions">>guy762_MemeDef_exchange</li>
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_mandoB</defName>
+		<iconPath>World/Mandalorians</iconPath>
+		<memes>
+		  <li MayRequire="guy762.KotORFactions">>guy762_MemeDef_mando</li>
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_blacksun</defName>
+		<iconPath>World/BlackSun</iconPath>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</memes>
+	</IdeoIconDef>
+	
+	
+	
+	
+	
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_jedi</defName>
+		<iconPath>World/Jedi</iconPath>
+		<memes>
+		  <!--<li>guy762_MemeDef_jedi</li>-->
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_sithB</defName>
+		<iconPath>World/SithEmpire</iconPath>
+		<memes>
+		  <li MayRequire="guy762.KotORFactions">>guy762_MemeDef_sith</li>
+		</memes>
+	</IdeoIconDef>
+	
+  
+  
+
+
+</Defs>

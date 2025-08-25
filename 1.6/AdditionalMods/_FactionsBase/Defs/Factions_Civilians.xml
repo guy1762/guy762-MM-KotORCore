@@ -199,7 +199,11 @@
 			  <Orray MayRequire="Mlie.StarWarsAnimalCollection">1</Orray>
 			  <Bordok MayRequire="Mlie.StarWarsAnimalCollection">1</Bordok>
 			  <Skalder MayRequire="Mlie.StarWarsAnimalCollection">0.1</Skalder>
-			  <Muffalo>0.01</Muffalo> <!-- required because trader caravan won't generate without at least one carrier type -->
+			  <!-- <Muffalo>0.01</Muffalo> alright fuck me man I guess this shit doesn't even work without the vanilla animal spawns -->
+			  <Muffalo>6</Muffalo>
+			  <Dromedary>5</Dromedary>
+			  <Alpaca>2</Alpaca>
+			  <Elephant>1</Elephant>
 			</carriers>
 			<guards>
 			  <SWCPCivilian_villager>10</SWCPCivilian_villager>

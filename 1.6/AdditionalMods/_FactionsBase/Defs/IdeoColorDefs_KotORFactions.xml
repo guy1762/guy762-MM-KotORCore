@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <IdeoColorDef>
+    <defName>guy762_IdeoFactionColor_OldRepublicYellow</defName>
+    <colorDef>guy762_FactionColor_OldRepublicYellow</colorDef>
+    <memes>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li>
+    </memes>
+  </IdeoColorDef>
+  <ColorDef ParentName="guy762_FactionColorIdeoBase">
+	<defName>guy762_FactionColor_OldRepublicYellow</defName>
+	<label>Old Republic Yellow</label>
+	<color>(230,185,45)</color>
+  </ColorDef>
+  
+  
+  
+  
+  
+  <IdeoColorDef>
+    <defName>guy762_IdeoFactionColor_MilitiaGreen</defName>
+    <colorDef>guy762_FactionColor_MilitiaGreen</colorDef>
+    <memes>
+		<!-- <li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li> -->
+    </memes>
+  </IdeoColorDef>
+  <ColorDef ParentName="guy762_FactionColorIdeoBase">
+    <defName>guy762_FactionColor_MilitiaGreen</defName>
+    <label>Militia Slate Green</label>
+    <color>(165,190,160)</color>
+  </ColorDef>
+  
+  
+  
+  
+  <IdeoColorDef>
+    <defName>guy762_IdeoFactionColor_RebelRed</defName>
+    <colorDef>guy762_FactionColor_RebelRed</colorDef>
+    <memes>
+		<li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li>
+    </memes>
+  </IdeoColorDef>
+  <ColorDef ParentName="guy762_FactionColorIdeoBase">
+    <defName>guy762_FactionColor_RebelRed</defName>
+    <label>Rebel Red</label>
+    <color>(125,50,50)</color>
+  </ColorDef>
+  
+  
+  
+  
+  
+  <IdeoColorDef>
+    <defName>guy762_IdeoFactionColor_CzerkaGreen</defName>
+    <colorDef>guy762_FactionColor_CzerkaGreen</colorDef>
+    <memes>
+		<li MayRequire="guy762.KotORFactions">guy762_MemeDef_czerka</li>
+    </memes>
+  </IdeoColorDef>
+  <ColorDef ParentName="guy762_FactionColorIdeoBase">
+    <defName>guy762_FactionColor_CzerkaGreen</defName>
+    <label>Czerka Green</label>
+    <color>(75,115,90)</color>
+  </ColorDef>
+  
+  
+  
+  
+  
+  
+  <IdeoColorDef>
+    <defName>guy762_IdeoFactionColor_HuttOlive</defName>
+    <colorDef>guy762_FactionColor_HuttOlive</colorDef>
+    <memes>
+		<li>guy762_MemeDef_hutt</li>
+    </memes>
+  </IdeoColorDef>
+  <ColorDef ParentName="guy762_FactionColorIdeoBase">
+    <defName>guy762_FactionColor_HuttOlive</defName>
+    <label>Hutt Olive</label>
+    <color>(120,120,50)</color>
+  </ColorDef>
+  
+  
+  
+  
+  
+  <IdeoColorDef>
+    <defName>guy762_IdeoFactionColor_BeskarSilver</defName>
+    <colorDef>guy762_FactionColor_BeskarSilver</colorDef>
+    <memes>
+		<li MayRequire="guy762.KotORFactions">guy762_MemeDef_mando</li>
+    </memes>
+  </IdeoColorDef>
+  <ColorDef ParentName="guy762_FactionColorIdeoBase">
+    <defName>guy762_FactionColor_BeskarSilver</defName>
+    <label>Bes'kar Silver</label>
+    <color>(190,200,210)</color>
+  </ColorDef>
+
+
+
+
+</Defs>

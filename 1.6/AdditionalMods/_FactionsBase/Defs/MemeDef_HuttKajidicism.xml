@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	
+	<MemeDef>
+		<defName>guy762_MemeDef_hutt</defName>
+		<label>Hutt Kajidicism</label>
+		<description>The Hutts hold the divine right to rule the galaxy, and in their cunning and wisdom they rule through the invisible hand of economic might.\n\nDEV'S NOTE: I was going to have this meme force a 'preferred xenotype' precept targeting the Hutts, but I'm not able to target a specific xenotype on my end. I encourage you to add it in manually.</description>
+		<iconPath>World/HuttClans</iconPath>
+		<groupDef>Misc</groupDef>
+		<impact>3</impact>
+		<renderOrder>767</renderOrder>
+		<requireOne>
+		  <!--li MayRequire="VanillaExpanded.VMemesE">
+			<li>guy762_PreceptDef_HuttTitles</li>
+		  </li-->
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_IdeoRole_Majordomo</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_Leader_HighestTitle</li>
+		  </li>
+		  <li>
+			<li>Execution_RespectedIfGuilty</li>
+		  </li>
+		  <li>
+			<li>Slavery_Honorable</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_TradingPrice_Improved</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE">
+			<li>VME_Expectations_High</li>
+		  </li>
+		  <li MayRequire="VanillaExpanded.VMemesE" name="tradingrequired">
+			<li>VME_Trading_Required</li>
+		  </li>
+		</requireOne>
+		<generalRules>
+		  <rulesStrings>
+			<li>memeAdjective->scum</li>
+			<li>memeHyphenPrefix->scum</li>
+			<li>memeConcept->racketeering</li>
+			<li>memeConcept->spicerunning</li>
+			<li>memeConcept->gunrunning</li>
+			<li>memeLeaderNoun->kajidii</li>
+			<li>memeLeaderNoun->lorda</li>
+			<li>memeMoralist->vizier</li>
+			<li>memeShooter->assassin</li>
+			<li>memeBrawler->enforcer</li>
+			<li>memeTrader->black marketeer</li>
+		  </rulesStrings>
+		</generalRules>
+		<descriptionMaker>
+		  <rules>
+			<rulesStrings>
+			  <!-- theist myth -->
+			  <li>creation(tag=meme_Supremacist)        ->The people of the [place_summary] [place_name] squabbled endlessly, and [deity0_name] became tired of discord and anointed the [memberNamePlural] as the rightful rulers of all.</li>
+			  <li>episode(uses=1,tag=meme_Supremacist)  ->The faithful fought the unbelievers, and [deity0_name] said, "Fight them, everywhere, in my name, until I am worshipped throughout the universe and the true peace may finally reign."</li>
+			  <!-- theist founder -->
+			  <li>intro(tag=meme_Supremacist)           ->The people of the [place_summary] [place_name] worshipped [deity0_name]. [deity0_pronoun] saw that they were suited for [memeConcept], and ordained that these worshippers would rule above all others.</li>
+			  <li>conflict(tag=meme_Supremacist)        ->A [foeLeader] passed a law forbidding [memberNamePlural] from rising to the ruling classes of [place_name].</li>
+			  <li>founderJoin(tag=meme_Supremacist)     ->A warrior named [founderName] used [place_massWeapon] to destroy a [place_community]. [deity0_name] saw [founderName]'s ruthlessness and anointed [founder_objective] the rightful ruler of all humanity.</li>
+			  <li>victory(tag=meme_Supremacist)         ->[founderName] destroyed the capital of [place_name] with [place_massWeapon], killing the [foeLeader]. [founder_pronoun] took [founder_possessive] place as ruler of [place_name] - and the universe beyond.</li>
+			  <!-- ideological founder -->
+			  <li>setup(tag=meme_Supremacist)           ->[founderName] built an army that spread [founder_possessive] power and glory across the land, placing those who refused to follow rightly under [founder_possessive] rule.</li>
+			  <li>story(uses=1,tag=meme_Supremacist)    ->[founderName] instructed all outsiders to submit. When the first city refused, [founder_pronoun] used [place_massWeapon] to kill everyone inside.</li>
+			  <!-- ideological lesson -->
+			  <li>lessonIntro(tag=meme_Supremacist)         ->I looked at this [foeLeader], with [foeLeader_possessive] pitiful [foeSoldiers], all that power left fallow. I tried to convince [foeLeader_objective] that</li>
+			  <li>lesson(tag=meme_Supremacist)              ->we've long since proven that we have the strength to rightfully rule this universe</li>
+			  <li>lessonReinforcement(tag=meme_Supremacist) ->That's why we're proud to express the strength of our hearts using the heels of our boots.</li>
+			  <!-- archist -->
+			  <li>archistBasis(tag=meme_Supremacist)    ->It took the most superior humans to create the archotechs, so that the archotechs could become superior to all.</li>
+			  <li>archistFact(tag=meme_Supremacist)     ->The archotechs rightfully look down on us, as we look down on our inferiors.</li>
+			  <li>archistProphecy(tag=meme_Supremacist) ->The archotechs will only take us to join them when we finally rule over all others.</li>
+			  <!-- animist -->
+			  <li>animistFact(tag=meme_Supremacist)     ->Powerful spirits decide who is fit to rule, and lend power to those who subjugate others.</li>
+			  <li>animistProphecy(tag=meme_Supremacist) ->[itIsSaid] that a new order will be created when one supreme ruler commands all of humanity.</li>
+			</rulesStrings>
+		  </rules>
+		</descriptionMaker>
+		<symbolPacks>
+		  <li>
+			<ideoName>scum</ideoName>
+			<theme>scum</theme>
+			<adjective>scum</adjective>
+			<member>scum</member>
+		  </li>
+		</symbolPacks>
+		<agreeableTraits>
+		  <li>Greedy</li>
+		  <li>Abrasive</li>
+		</agreeableTraits>
+	</MemeDef>
+	<PreceptDef MayRequire="VanillaExpanded.VMemesE">
+		<defName>guy762_PreceptDef_HuttTitles</defName>
+		<issue>VME_Royalty</issue>
+		<label>exalted (Hutt Kajidic titles)</label>
+		<description>DEV'S NOTE: MAY NOT WORK</description>
+		<impact>Medium</impact>
+		<associatedMemes>
+			<li>guy762_MemeDef_hutt</li>
+		</associatedMemes>
+		<displayOrderInIssue>50</displayOrderInIssue>
+		<comps>
+			<li Class="PreceptComp_SituationalThought">
+				<thought>guy762_ThoughtDef_HuttTitles</thought>
+			</li>
+		</comps>
+	</PreceptDef>
+	<ThoughtDef MayRequire="VanillaExpanded.VMemesE">
+		<defName>guy762_ThoughtDef_HuttTitles</defName>
+		<thoughtClass>Thought_SituationalSocial</thoughtClass>
+		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Royalty</workerClass>
+		<stages>
+			<li>
+				<label>Hutt Kajidic: Lowtrader</label>
+				<baseOpinionOffset>15</baseOpinionOffset>
+			</li>
+			<li>
+				<label>Hutt Kajidic: Hightrader</label>
+				<baseOpinionOffset>30</baseOpinionOffset>
+			</li>
+			<li>
+				<label>Hutt Kajidic: H'uun</label>
+				<baseOpinionOffset>60</baseOpinionOffset>
+			</li>
+			<li>
+				<label>Hutt Kajidic: Hutt</label>
+				<baseOpinionOffset>80</baseOpinionOffset>
+			</li>
+		</stages>
+	</ThoughtDef>
+	
+
+  
+  
+
+
+</Defs>

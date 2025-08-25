@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ColorDef Name="guy762_FactionColorIdeoBase" ParentName="IdeoColorBase" Abstract="True">
+		<displayOrder>762</displayOrder>
+	</ColorDef>
+	
+	
+	
+	<IdeoColorDef>
+		<defName>guy762_IdeoFactionColor_Greenpire</defName>
+		<colorDef>guy762_FactionColor_Greenpire</colorDef>
+		<memes>
+			<li MayRequire="SWCP.guy762.WarlordEmpire">guy762_MemeDef_empire</li>
+		</memes>
+	</IdeoColorDef>
+	<ColorDef ParentName="IdeoColorBase">
+		<defName>guy762_FactionColor_Greenpire</defName>
+		<label>Imperial Remnant Green</label>
+		<color>(25,110,30)</color>
+	</ColorDef>
+	
+	
+	
+	
+	
+	<IdeoColorDef>
+		<defName>guy762_IdeoFactionColor_ZsinjYellow</defName>
+		<colorDef>guy762_FactionColor_ZsinjYellow</colorDef>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</memes>
+	</IdeoColorDef>
+	<ColorDef ParentName="guy762_FactionColorIdeoBase">
+		<defName>guy762_FactionColor_ZsinjYellow</defName>
+		<label>Zsinj's Mustard</label>
+		<color>(165,155,80)</color>
+	</ColorDef>
+	
+	
+	
+	
+	
+	<IdeoColorDef>
+		<defName>guy762_IdeoFactionColor_PentastarBlue</defName>
+		<colorDef>guy762_FactionColor_PentastarBlue</colorDef>
+		<memes>
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_MemeDef_empire</li> -->
+		</memes>
+	</IdeoColorDef>
+	<ColorDef ParentName="guy762_FactionColorIdeoBase">
+		<defName>guy762_FactionColor_PentastarBlue</defName>
+		<label>Pentastar Blue</label>
+		<color>(65,70,190)</color>
+	</ColorDef>
+	
+	
+	
+	
+	
+	
+	
+	<IdeoColorDef>
+		<defName>guy762_IdeoFactionColor_MaldroodCrimson</defName>
+		<colorDef>guy762_FactionColor_MaldroodCrimson</colorDef>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</memes>
+	</IdeoColorDef>
+	<ColorDef ParentName="guy762_FactionColorIdeoBase">
+		<defName>guy762_FactionColor_MaldroodCrimson</defName>
+		<label>Maldrood Crimson</label>
+		<color>(205,15,40)</color>
+	</ColorDef>
+	
+	
+	
+	
+	
+	
+	
+	<IdeoColorDef>
+		<defName>guy762_IdeoFactionColor_NewRepublicOrange</defName>
+		<colorDef>guy762_FactionColor_NewRepublicOrange</colorDef>
+		<memes>
+			<li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li>
+		</memes>
+	</IdeoColorDef>
+	<ColorDef ParentName="guy762_FactionColorIdeoBase">
+		<defName>guy762_FactionColor_NewRepublicOrange</defName>
+		<label>New Republic Orange</label>
+		<color>(205,125,20)</color>
+	</ColorDef>
+	
+	
+	
+	
+	
+	
+	
+	<IdeoColorDef>
+		<defName>guy762_IdeoFactionColor_PartisanRust</defName>
+		<colorDef>guy762_FactionColor_PartisanRust</colorDef>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</memes>
+	</IdeoColorDef>
+	<ColorDef ParentName="guy762_FactionColorIdeoBase">
+		<defName>guy762_FactionColor_PartisanRust</defName>
+		<label>Partisan Rust</label>
+		<color>(155,70,35)</color>
+	</ColorDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<IdeoColorDef>
+		<defName>guy762_IdeoFactionColor_ZannConsortiumYellow</defName>
+		<colorDef>guy762_FactionColor_ZannConsortiumYellow</colorDef>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</memes>
+	</IdeoColorDef>
+	<ColorDef ParentName="guy762_FactionColorIdeoBase">
+		<defName>guy762_FactionColor_ZannConsortiumYellow</defName>
+		<label>Consortium Yellow</label>
+		<color>(230,170,45)</color>
+	</ColorDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<IdeoColorDef>
+		<defName>guy762_IdeoFactionColor_BlackSunViolet</defName>
+		<colorDef>guy762_FactionColor_BlackSunViolet</colorDef>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</memes>
+	</IdeoColorDef>
+	<ColorDef ParentName="guy762_FactionColorIdeoBase">
+		<defName>guy762_FactionColor_BlackSunViolet</defName>
+		<label>Black Sun Violet</label>
+		<color>(85,65,150)</color>
+	</ColorDef>
+  
+  
+
+
+
+
+
+</Defs>

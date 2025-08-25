@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- SWKotOR -->
+	
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_oldrepublic</defName>
+		<iconPath>World/OldRepublic</iconPath>
+		<memes>
+		  <li MayRequire="guy762.KotORFactions">>guy762_MemeDef_corruptrepublic</li>
+		  <li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li>
+		</memes>
+	</IdeoIconDef>
+	
+	
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_KotORRebel</defName>
+		<iconPath>World/KotORRebels</iconPath>
+		<memes>
+		</memes>
+	</IdeoIconDef>
+	
+	
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_mandoNeoCrusaders</defName>
+		<iconPath>World/MandoNeoCrusaders</iconPath>
+		<memes>
+		  <li MayRequire="guy762.KotORFactions">>guy762_MemeDef_mando</li>
+		</memes>
+	</IdeoIconDef>
+	
+	
+
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_sithA</defName>
+		<iconPath>World/ExarSith</iconPath>
+		<memes>
+		  <li MayRequire="guy762.KotORFactions">>guy762_MemeDef_sith</li>
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_sithC</defName>
+		<iconPath>World/RevanSith</iconPath>
+		<memes>
+		  <li MayRequire="guy762.KotORFactions">>guy762_MemeDef_sith</li>
+		</memes>
+	</IdeoIconDef>
+	
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_czerka</defName>
+		<iconPath>World/CzerkaCorp</iconPath>
+		<memes>
+		  <li MayRequire="guy762.KotORFactions">>guy762_MemeDef_czerka</li>
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_exchange</defName>
+		<iconPath>World/Exchange</iconPath>
+		<memes>
+		  <li MayRequire="guy762.KotORFactions">>guy762_MemeDef_exchange</li>
+		</memes>
+	</IdeoIconDef>
+	
+	
+	
+	
+	
+	
+
+
+</Defs>

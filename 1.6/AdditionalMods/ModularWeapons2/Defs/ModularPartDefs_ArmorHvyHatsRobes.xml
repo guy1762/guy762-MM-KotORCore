@@ -133,7 +133,7 @@
 	
 	
 	
-	<ModularWeapons2.ModularPartsDef ParentName="guy762_KotORpartOverlay_pockets">
+	<ModularWeapons2.ModularPartsDef MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" ParentName="guy762_KotORpartOverlay_pockets">
 		<defName>guy762_KotORpartOverlay_pockets_hvy</defName>
 		<attachedTo>guy762_KotORMount_overlay_hvy</attachedTo>
 	</ModularWeapons2.ModularPartsDef>

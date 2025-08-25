@@ -988,93 +988,93 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	
   
-  <ThingDef ParentName="guy762_FullBodyClothingBase">
-    <defName>guy762_Bodysuit</defName>
-    <label>bodysuit, vac-sealed</label>
-    <description>This is a sealed bodysuit offering sufficient protection against the vacuum of space and other hazardous environments.</description>
-    <graphicData>
-      <texPath>SWApparel/Undersuits/vac/Apparel</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-    <statBases>
-		<Mass>6</Mass>
-		<MarketValue>100</MarketValue>
-		<MaxHitPoints>250</MaxHitPoints>
-		<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
-		<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-		<ArmorRating_Heat>0.05</ArmorRating_Heat>
+	<ThingDef ParentName="guy762_FullBodyClothingBase">
+		<defName>guy762_Bodysuit</defName>
+		<label>bodysuit, vac-sealed</label>
+		<description>This is a sealed bodysuit offering sufficient protection against the vacuum of space and other hazardous environments.</description>
+		<graphicData>
+		  <texPath>SWApparel/Undersuits/vac/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>6</Mass>
+			<MarketValue>100</MarketValue>
+			<MaxHitPoints>250</MaxHitPoints>
+			<ArmorRating_Sharp>0.05</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			
+			<Insulation_Cold>15</Insulation_Cold>
+			<Insulation_Heat>15</Insulation_Heat>
+			<EquipDelay>5</EquipDelay>
+			
+			<WorkToMake>10000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
+			<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
+		</equippedStatOffsets>
 		
-		<Insulation_Cold>15</Insulation_Cold>
-		<Insulation_Heat>15</Insulation_Heat>
-		<EquipDelay>5</EquipDelay>
+		<costList>
+		  <Synthread>80</Synthread>
+		  <KOTOR_FabricArmorweave>20</KOTOR_FabricArmorweave>
+		</costList>
 		
-		<WorkToMake>10000</WorkToMake>
-	</statBases>
-	<equippedStatOffsets>
-		<DecompressionResistance MayRequire="kentington.saveourship2">0.75</DecompressionResistance>
-		<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>		
-	</equippedStatOffsets>
-	
-	<costList>
-      <Synthread>80</Synthread>
-      <KOTOR_FabricArmorweave>20</KOTOR_FabricArmorweave>
-    </costList>
-	
-    <apparel>
-      <tags Inherit="False">
-		<li>KotORArmor_undersuit</li>
-		<li>MNC_outfit_mid</li>
-		<li>MNC_outfit_heavy</li>
-		<li>EVA</li>
-		<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
-      </tags>
-      <wornGraphicPath>SWApparel/Undersuits/vac/Apparel</wornGraphicPath>
-      <defaultOutfitTags Inherit="False">
-		<li>Soldier</li>
-	  </defaultOutfitTags>
-    </apparel>
-	<tradeTags>
-		<li>guy762TT_KotORArmor</li>
-		<li>guy762TT_KotORUnderArmor</li>
-		<li>guy762TT_KotORArmor_space</li>
-	</tradeTags>
-	<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-		<options>
+		<apparel>
+		  <tags Inherit="False">
+			<li>KotORArmor_undersuit</li>
+			<li>MNC_outfit_mid</li>
+			<li>MNC_outfit_heavy</li>
+			<li>EVA</li>
+			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/Undersuits/vac/Apparel</wornGraphicPath>
+		  <defaultOutfitTags Inherit="False">
+			<li>Soldier</li>
+		  </defaultOutfitTags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORArmor</li>
+			<li>guy762TT_KotORUnderArmor</li>
+			<li>guy762TT_KotORArmor_space</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>15</weight>
+					<only>(220,195,255)</only> <!-- lavender -->
+				</li>
+				<li>
+					<weight>15</weight>
+					<only>(145,195,230)</only> <!-- cyan -->
+				</li>
+				<li>
+					<weight>7</weight>
+					<only>(110,215,215)</only> <!-- turquoise -->
+				</li>
+				<li>
+					<weight>3</weight>
+					<only>(120,110,180)</only> <!-- MNC trooper -->
+				</li>
+				<li>
+					<weight>2</weight>
+					<only>(165,80,80)</only> <!-- MNC rally master -->
+				</li>
+				<li>
+					<weight>1</weight>
+					<only>(210,200,15)</only> <!-- MNC field marshal -->
+				</li>
+			</options>
+		</colorGenerator>
+		<!--comps>
 			<li>
-				<weight>15</weight>
-				<only>(220,195,255)</only> <!-- lavender -->
+			  <compClass>SaveOurShip2.Comp_EVA</compClass>        ADDED BY PATCH!!!
 			</li>
-			<li>
-				<weight>15</weight>
-				<only>(145,195,230)</only> <!-- cyan -->
-			</li>
-			<li>
-				<weight>7</weight>
-				<only>(110,215,215)</only> <!-- turquoise -->
-			</li>
-			<li>
-				<weight>3</weight>
-				<only>(120,110,180)</only> <!-- MNC trooper -->
-			</li>
-			<li>
-				<weight>2</weight>
-				<only>(165,80,80)</only> <!-- MNC rally master -->
-			</li>
-			<li>
-				<weight>1</weight>
-				<only>(210,200,15)</only> <!-- MNC field marshal -->
-			</li>
-		</options>
-	</colorGenerator>
-	<!--comps>
-		<li>
-		  <compClass>SaveOurShip2.Comp_EVA</compClass>        ADDED BY PATCH!!!
-		</li>
-	</comps-->
-  </ThingDef>
+		</comps-->
+	</ThingDef>
   
 
   
