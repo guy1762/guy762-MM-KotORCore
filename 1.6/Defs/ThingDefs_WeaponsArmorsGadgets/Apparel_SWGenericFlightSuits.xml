@@ -49,6 +49,7 @@
 				<layer>65</layer>
 			  </dataNorth>
 			</drawData>
+			<shellRenderedBehindHead>true</shellRenderedBehindHead>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORArmor_space</li>

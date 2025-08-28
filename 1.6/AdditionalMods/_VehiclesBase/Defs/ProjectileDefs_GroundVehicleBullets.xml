@@ -363,7 +363,7 @@
 			<damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>150</damageAmountBase>
 			<armorPenetrationBase>0.75</armorPenetrationBase>
-			<speed>100</speed>
+			<speed>200</speed>
 			<explosionRadius>3</explosionRadius>
 		</projectile>
 		<thingClass>Projectile_Explosive</thingClass>

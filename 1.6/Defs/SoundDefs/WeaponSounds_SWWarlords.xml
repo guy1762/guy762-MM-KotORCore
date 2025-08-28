@@ -573,7 +573,7 @@
 	
 	
 	<SoundDef>
-		<defName>kotorsound_DC17sPistol</defName>	
+		<defName>kotorsound_DC15cCarbine</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
@@ -600,7 +600,7 @@
 	
 	
 	<SoundDef>
-		<defName>kotorsound_DC15sCarbine</defName>	
+		<defName>kotorsound_DC17sPistol</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	

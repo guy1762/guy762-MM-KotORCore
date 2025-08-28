@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <!-- This Rulepackdef is what finds the txt files to be used in the later rulepacks -->
+    <RulePackDef>
+        <defName>SWCP_DroidNameRules</defName>
+        <rulePack>
+            <rulesFiles>
+                <li>Droid_TwoCode->droidnames/astrocode</li>
+                <li>Droid_ID->droidnames/genericID</li>
+                <li>Droid_R2->droidnames/R2</li>
+            </rulesFiles>
+        </rulePack>
+    </RulePackDef>
+
+    <!-- This is the item that goes into the racedef's namegenerator
+        Example - <nameGenerator>ATR_AndroidMaleNames</nameGenerator> -->
+    <RulePackDef>
+        <defName>SWCP_DroidNamer_R2AD</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ID] [Droid_R2]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+    
+
+</Defs>

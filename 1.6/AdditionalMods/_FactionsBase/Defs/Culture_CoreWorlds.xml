@@ -31,34 +31,35 @@
 			
 			
 			<!-- idea: make separate cultures with different priority rankings for the Bright Jewel, Queli, and Western Reaches oversectors -->
-			<li MayRequire="SWCP.guy762.WarlordEmpire">
-				<category>guy762_RankStyleCategory_ImperialArmy</category>
-				<priority>2</priority>
-			</li>
-			<li MayRequire="SWCP.guy762.WarlordEmpire">
-				<category>guy762_RankStyleCategory_ImperialNavy</category>
-				<priority>2</priority>
-			</li>
-			<li MayRequire="SWCP.guy762.WarlordEmpire">
-				<category>guy762_RankStyleCategory_ImperialTaskforce</category>
-				<priority>1</priority>
-			</li>
-			<li MayRequire="SWCP.guy762.WarlordEmpire">
-				<category>guy762_RankStyleCategory_ImperialPolitiburo</category>
-				<priority>1</priority>
-			</li>
-			<li MayRequire="SWCP.guy762.WarlordEmpire">
-				<category>guy762_RankStyleCategory_ImpISB</category>
-				<priority>0.5</priority>
-			</li>
-			<li MayRequire="SWCP.guy762.WarlordEmpire">
-				<category>guy762_RankStyleCategory_ImpINT</category>
-				<priority>0.5</priority>
-			</li>
-			<li MayRequire="SWCP.guy762.WarlordEmpire">
-				<category>guy762_RankStyleCategory_ImperialOps</category>
-				<priority>0.5</priority>
-			</li>
+			<!-- update: probably not needed since there's a <styles> node in FactionDef but could still be interesting to do for variety -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire"> -->
+				<!-- <category>guy762_RankStyleCategory_ImperialArmy</category> -->
+				<!-- <priority>2</priority> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire"> -->
+				<!-- <category>guy762_RankStyleCategory_ImperialNavy</category> -->
+				<!-- <priority>2</priority> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire"> -->
+				<!-- <category>guy762_RankStyleCategory_ImperialTaskforce</category> -->
+				<!-- <priority>1</priority> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire"> -->
+				<!-- <category>guy762_RankStyleCategory_ImperialPolitiburo</category> -->
+				<!-- <priority>1</priority> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire"> -->
+				<!-- <category>guy762_RankStyleCategory_ImpISB</category> -->
+				<!-- <priority>0.5</priority> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire"> -->
+				<!-- <category>guy762_RankStyleCategory_ImpINT</category> -->
+				<!-- <priority>0.5</priority> -->
+			<!-- </li> -->
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire"> -->
+				<!-- <category>guy762_RankStyleCategory_ImperialOps</category> -->
+				<!-- <priority>0.5</priority> -->
+			<!-- </li> -->
 		</thingStyleCategories>
 		<styleItemTags>
 			  <li>
