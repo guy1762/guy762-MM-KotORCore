@@ -837,7 +837,7 @@
 			<ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		
-		<apparel Inherit="False">
+		<apparel>
 			<tags>
 				<li>RemnantEmpire_impworker</li>
 				<li>SWCPSpecificApparelItem_ImperialWorkerHelmet</li>
