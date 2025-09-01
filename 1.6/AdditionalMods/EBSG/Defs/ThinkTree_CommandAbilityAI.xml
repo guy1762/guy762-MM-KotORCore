@@ -18,7 +18,7 @@
 							<ability>MarksmanCommand</ability>
 							<subNodes>
 								<li Class="EBSGFramework.ThinkNode_ConditionalNearbyAllies">
-									<radius>10</radius>
+									<radius>30</radius>
 									<minCount>1</minCount>
 									<subNodes>
 										<li Class="EBSGFramework.ThinkNode_RecordPassage">

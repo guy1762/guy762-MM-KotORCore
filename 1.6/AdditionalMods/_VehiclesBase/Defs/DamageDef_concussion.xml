@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
-	<DamageDef>
+	<DamageDef Name="guy762_ExplosiveDamage_conc_BaseToPreventErrors" Abstract="True">
+		<workerClass>DamageWorker_AddInjury</workerClass>
+	</DamageDef>
+	
+	<DamageDef ParentName="guy762_ExplosiveDamage_conc_BaseToPreventErrors">
 		<defName>guy762_ExplosiveDamage_conc</defName>
 		<label>concussion blast</label>
-		<workerClass>Fusrodah.DamageWorker_Fusrodah</workerClass>
+		<workerClass MayRequire="ShunTheWitch.CVNmechanoidwarfarecore">Fusrodah.DamageWorker_Fusrodah</workerClass>
 		<modExtensions>
-			<li Class="Fusrodah.Extension">
+			<li MayRequire="ShunTheWitch.CVNmechanoidwarfarecore" Class="Fusrodah.Extension">
 				<rangeToLand>2~4</rangeToLand>
 				<damageToApply>Blunt</damageToApply>
 				<!-- <damageToApply>Stun</damageToApply> -->

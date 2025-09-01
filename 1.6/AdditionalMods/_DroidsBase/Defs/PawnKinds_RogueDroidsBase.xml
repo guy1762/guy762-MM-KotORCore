@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs>
+	
+	<PawnKindDef Name="KotORDroidBase_good" Abstract="True">
+		<defaultFactionType>Ancients</defaultFactionType>
+		<maxGenerationAge>100</maxGenerationAge>
+		<invNutrition>2</invNutrition>
+		<invFoodDef>guy762_DroidBattery</invFoodDef>
+		<biocodeWeaponChance>0.05</biocodeWeaponChance>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
+		<inventoryOptions>
+		  <skipChance>0.5</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+				<thingDef>guy762_repairkit</thingDef>
+				<countRange>1~3</countRange>
+			</li>
+			<!--li>
+				<thingDef>guy762_DroidBattery</thingDef>
+				<countRange>1~2</countRange>
+			</li-->
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<modExtensions>
+            <li Class="ArtificialBeings.ABF_ArtificialPawnKindExtension">
+                <pawnState>Reprogrammable</pawnState>
+            </li>
+        </modExtensions>
+	</PawnKindDef>
+	  
+	<PawnKindDef Name="SWCPDroidBase_bad" Abstract="True">
+		<defaultFactionType>AncientsHostile</defaultFactionType>
+		<maxGenerationAge>100</maxGenerationAge>
+		<invNutrition>1</invNutrition>
+		<invFoodDef>guy762_DroidBattery</invFoodDef>
+		<biocodeWeaponChance>0.05</biocodeWeaponChance>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<isFighter>true</isFighter>
+		<requiredWorkTags>
+		  <li>Violent</li>
+		</requiredWorkTags>
+		
+		<inventoryOptions>
+		  <skipChance>0.5</skipChance>
+		  <subOptionsChooseOne>
+			<li>
+				<thingDef>guy762_repairkit</thingDef>
+				<countRange>1~3</countRange>
+			</li>
+		  </subOptionsChooseOne>
+		</inventoryOptions>
+		
+		<initialWillRange>0.5~2</initialWillRange>
+		<initialResistanceRange>5~10</initialResistanceRange>
+		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<chemicalAddictionChance>0</chemicalAddictionChance>
+		<combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
+		<modExtensions>
+            <li Class="ArtificialBeings.ABF_ArtificialPawnKindExtension">
+                <pawnState>Reprogrammable</pawnState>
+            </li>
+        </modExtensions>
+	</PawnKindDef>
+	  
+	
+
+ </Defs>

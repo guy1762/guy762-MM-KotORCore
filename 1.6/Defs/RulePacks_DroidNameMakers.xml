@@ -6,9 +6,11 @@
         <defName>SWCP_DroidNameRules</defName>
         <rulePack>
             <rulesFiles>
+                <li>Digit_01_99->Names/Digit_01_99</li>
                 <li>Droid_TwoCode->droidnames/astrocode</li>
                 <li>Droid_ID->droidnames/genericID</li>
                 <li>Droid_R2->droidnames/R2</li>
+                <li>Droid_B1->droidnames/B1</li>
             </rulesFiles>
         </rulePack>
     </RulePackDef>
@@ -23,6 +25,21 @@
         <rulePack>
             <rulesStrings>
                 <li>r_name(p=12)->[Droid_ID] [Droid_R2]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	
+	
+	
+	<RulePackDef>
+        <defName>guy762_DroidNamer_B1BD</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_B1] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>

@@ -41,30 +41,15 @@
 		<li>SWMedicBelt</li>
 		<li>SWCPSpecificGadgetItem_MedicBelt</li>
 	  </tags>
+	  
+		<abilities>
+			<li>guy762_Ability_MedicBeltHeal</li>
+		</abilities>
     </apparel>
 	<tradeTags>
       <li>guy762TT_KotORLegendary</li>
     </tradeTags>
-	<comps>
-		<!-- <li Class="EBSGFramework.CompProperties_EquippableAbility"> -->
-		<li Class="CompProperties_EquippableAbility">
-			<abilityDef>guy762_Ability_MedicBeltHeal</abilityDef>
-		</li>
-		<!-- <li Class="CompProperties_EquippableAbility"> -->
-			<!-- <abilityDef>guy762_Ability_MedicBeltHeal</abilityDef> -->
-		<!-- </li> -->
-		<!-- <li Class="CompProperties_EquippableAbilityReloadable"> -->
-			<!-- <abilityDef>guy762_Ability_MedicBeltHeal</abilityDef> -->
-			
-			<!-- <maxCharges>3</maxCharges> -->
-			<!-- <ammoDef>guy762_medpac_life</ammoDef> -->
-			<!-- <ammoCountPerCharge>1</ammoCountPerCharge> -->
-			<!-- <baseReloadTicks>60</baseReloadTicks> -->
-			<!-- <soundReload>Standard_Reload</soundReload> -->
-			<!-- <chargeNoun>healing agent</chargeNoun> -->
-			<!-- <displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted> -->
-		<!-- </li> -->
-    </comps>
+
   </ThingDef>
   
   
