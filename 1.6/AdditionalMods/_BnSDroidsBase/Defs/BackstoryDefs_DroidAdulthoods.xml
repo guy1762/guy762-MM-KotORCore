@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_utilitydroid</defName>
+		<title>utility droid</title>
+		<titleShort>utility droid</titleShort>
+		<description>This is a utility droid.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_utility</li>
+			<li>guy762BSC_Droid_all</li>
+			<li>guy762BSC_Droid_TsUD_T3</li>
+			<li>guy762BSC_Droid_TsUD_3C</li>
+			<li>guy762BSC_Droid_R8009UD</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_techdroid</defName>
+		<title>tech droid</title>
+		<titleShort>tech droid</titleShort>
+		<description>This is a tech droid.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_tech</li>
+			<li>guy762BSC_Droid_all</li>
+			<li>guy762BSC_Droid_TsUD_IT</li>
+			<li>guy762BSC_Droid_GOTO</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_protocoldroid</defName>
+		<title>protocol droid</title>
+		<titleShort>protocol droid</titleShort>
+		<description>This is a protocol droid.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_protocol</li>
+			<li>guy762BSC_Droid_all</li>
+			<li>guy762BSC_Droid_GE3PD</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_labordroid</defName>
+		<title>labor droid</title>
+		<titleShort>labor droid</titleShort>
+		<description>This is a labor droid.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_labor</li>
+			<li>guy762BSC_Droid_all</li>
+			<li>guy762BSC_Droid_GE3LD</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_miningdroid</defName>
+		<title>mining droid</title>
+		<titleShort>mining droid</titleShort>
+		<description>This is a mining droid.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_mining</li>
+			<li>guy762BSC_Droid_all</li>
+			<li>guy762BSC_Droid_KM1MD</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_probedroid</defName>
+		<title>probe droid</title>
+		<titleShort>probe droid</titleShort>
+		<description>This is a probe droid.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_probe</li>
+			<li>guy762BSC_Droid_all</li>
+			<li>guy762BSC_Droid_KX12UPD</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_patroldroid</defName>
+		<title>patrol droid</title>
+		<titleShort>patrol droid</titleShort>
+		<description>This is a patrol droid.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_patrol</li>
+			<li>guy762BSC_Droid_all</li>
+			<li>guy762BSC_Droid_MPDMkI</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_asndroid</defName>
+		<title>assassin droid</title>
+		<titleShort>assassin droid</titleShort>
+		<description>This is an assassin droid.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_asn</li>
+			<li>guy762BSC_Droid_all</li>
+			<li>guy762BSC_Droid_HK51_</li>
+			<li>guy762BSC_Droid_DevAD</li>
+			<li>guy762BSC_Droid_KX12APD</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_HKprotocoldroid</defName>
+		<title>protocol droid</title>
+		<titleShort>protocol droid</titleShort>
+		<description>Correction: ignore what the previous backstory said, this is but a humble protocol droid.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_HKprotocol</li>
+			<li>guy762BSC_Droid_all</li>
+			<li>guy762BSC_Droid_HK47_</li>
+			<li>guy762BSC_Droid_HK50_</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_wardroid</defName>
+		<title>war droid</title>
+		<titleShort>war droid</titleShort>
+		<description>This is a war droid.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_war</li>
+			<li>guy762BSC_Droid_all</li>
+			<li>guy762BSC_Droid_SentWD</li>
+			<li>guy762BSC_Droid_DevWD</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_assaultdroid</defName>
+		<title>assault droid</title>
+		<titleShort>assault droid</titleShort>
+		<description>This is a military assault droid.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_assault</li>
+			<li>guy762BSC_Droid_all</li>
+			<li>guy762BSC_Droid_assault_mk1</li>
+			<li>guy762BSC_Droid_assault_mk4</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_astromechdroid</defName>
+		<title>astromech</title>
+		<titleShort>astromech</titleShort>
+		<description>This is an astromech droid.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_utility</li>
+			<li>guy762BSC_Droid_all</li>
+			<li>guy762BSC_Droid_R2AstDrd</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+	<BackstoryDef>
+		<defName>guy762_Backstory_battledroid</defName>
+		<title>battle droid</title>
+		<titleShort>battle droid</titleShort>
+		<description>This is a battle droid.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_battle</li>
+			<li>guy762BSC_Droid_all</li>
+			<li>guy762BSC_Droid_B1BD</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
+	
+</Defs>

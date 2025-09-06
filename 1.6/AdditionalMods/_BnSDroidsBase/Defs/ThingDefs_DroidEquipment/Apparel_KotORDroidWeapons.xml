@@ -1,0 +1,1357 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="guy762_DroidWeaponCraftableBase">
+    <defName>guy762_DroidWeapon_holdout</defName>
+    <label>Droid blaster</label>
+    <description>Cheap and widespread, a simple mounted blaster like this can make all the difference for a hapless droid in a sticky situation.\n\nThis is equipped to the "light" weapon mount.</description>
+    <graphicData>
+      <texPath>Items/droidweapon_1</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>80</MarketValue>
+	  
+	  <AccuracyTouch>0.60</AccuracyTouch>
+	  <AccuracyShort>0.50</AccuracyShort>
+	  <AccuracyMedium>0.30</AccuracyMedium>
+	  <AccuracyLong>0.20</AccuracyLong>
+	  
+	  <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+	  <RangedWeapon_DamageMultiplier>0.8</RangedWeapon_DamageMultiplier>
+	  
+      <WorkToMake>11000</WorkToMake>
+	</statBases>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_droidblasters</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>30</Plasteel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+		<KOTOR_PlasmaCartridge>1</KOTOR_PlasmaCartridge>
+	</costList>
+	
+	
+    <apparel>
+      <bodyPartGroups>
+        <li>guy762BG_Droid_WeaponMount_basic</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidWeapon_weak</li>
+		<li>KotORDroidWeapon_light_any</li>
+		<li>KotORDroidWeapon_holdout</li>
+		<li>KotORDroidWeapon_battledroid</li>
+		<li>KotORDroidWeapon_utilitydroid</li>
+		<li>SWKotORSpecificDroidWeapon_HoldoutBlaster</li>
+		<li>SWCPDroidApparelRestrictionTag_StandardWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidWeapons_light</li>
+    </tradeTags>
+	<verbs>
+		<li>
+			<label>Holdout blaster</label>
+			<commandIcon>Items/droidweapon_1</commandIcon>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>KotORBlasterBolt_default</defaultProjectile>
+			<warmupTime>1</warmupTime>
+			<range>17</range>
+			<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+			<burstShotCount>3</burstShotCount>
+			<soundCast>kotorsound_pistol</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<ai_IsWeapon>true</ai_IsWeapon>
+			<onlyManualCast>true</onlyManualCast>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>Holdout blaster</label>
+					<visualLabel>built-in holdout blaster</visualLabel>
+					<canBeToggled>true</canBeToggled>
+					<description>A built-in holdout blaster.</description>
+				</li>
+			</verbProps>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidWeaponCraftableBase">
+    <defName>guy762_DroidWeapon_trishot</defName>
+    <label>Droid tri-shot</label>
+    <description>Often installed as a "last resort" weapon on advanced war droids, this mounted blaster fires three bolts at once.\n\nThis is equipped to the "light" weapon mount.</description>
+    <graphicData>
+      <texPath>Items/droidweapon/droidweapon_trishot</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>530</MarketValue>
+	  
+	  <AccuracyTouch>0.70</AccuracyTouch>
+	  <AccuracyShort>0.60</AccuracyShort>
+	  <AccuracyMedium>0.40</AccuracyMedium>
+	  <AccuracyLong>0.30</AccuracyLong>
+	  
+	  <RangedWeapon_Cooldown>2.25</RangedWeapon_Cooldown>
+	  <RangedWeapon_DamageMultiplier>1</RangedWeapon_DamageMultiplier>
+      
+	  <WorkToMake>16500</WorkToMake>
+	</statBases>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_droidblasters</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>30</Plasteel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+		<ComponentSpacer>3</ComponentSpacer>
+		<KOTOR_PlasmaCartridge>1</KOTOR_PlasmaCartridge>
+	</costList>
+	
+    <apparel>
+      <bodyPartGroups>
+        <li>guy762BG_Droid_WeaponMount_basic</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidWeapon_mid</li>
+		<li>KotORDroidWeapon_light_any</li>
+		<li>KotORDroidWeapon_battledroid</li>
+		<li>KotORDroidWeapon_wardroid</li>
+		<li>SWKotORSpecificDroidWeapon_TriShot</li>
+		<li>SWCPDroidApparelRestrictionTag_StandardWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidWeapons_light</li>
+    </tradeTags>
+	<verbs>
+		<li>
+			<label>tri-shot blaster</label>
+			<commandIcon>Items/droidweapon/droidweapon_trishot</commandIcon>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>KotORBlasterBolt_default</defaultProjectile>
+			<warmupTime>1</warmupTime>
+			<range>23</range>
+			<ticksBetweenBurstShots>0</ticksBetweenBurstShots>
+			<burstShotCount>3</burstShotCount>
+			<soundCast>kotorsound_SBDtrishot</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<ai_IsWeapon>true</ai_IsWeapon>
+			<onlyManualCast>true</onlyManualCast>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>tri-shot blaster</label>
+					<visualLabel>mounted tri-shot blaster</visualLabel>
+					<canBeToggled>true</canBeToggled>
+					<description>A mounted tri-shot blaster.</description>
+				</li>
+			</verbProps>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidWeaponBase">
+    <defName>guy762_DroidWeapon_pulse</defName>
+    <label>Droid pulse-wave repeater</label>
+    <description>Considered outdated technology by current standards, pulse-wave weaponry was a mainstay in the era before the Mandalorian Wars. Devices like these were standard-issue on Krath war droids during the early stages of the Exar Kun war, and are still popular on the aftermarket today.\n\nThis is equipped to the "light" weapon mount.</description>
+    <graphicData>
+      <texPath>Items/droidweapon/droidweapon_pulse</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+	  
+	  <AccuracyTouch>0.70</AccuracyTouch>
+	  <AccuracyShort>0.80</AccuracyShort>
+	  <AccuracyMedium>0.60</AccuracyMedium>
+	  <AccuracyLong>0.40</AccuracyLong>
+	  
+	  <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+	  <RangedWeapon_DamageMultiplier>0.6</RangedWeapon_DamageMultiplier>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>guy762BG_Droid_WeaponMount_basic</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidWeapon_weak</li>
+		<li>KotORDroidWeapon_light_any</li>
+		<li>KotORDroidWeapon_battledroid</li>
+		<li>KotORDroidWeapon_krath</li>
+		<li>SWKotORSpecificDroidWeapon_PulseRepeater</li>
+		<li>SWCPDroidApparelRestrictionTag_StandardWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidWeapons_light</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<verbs>
+		<li>
+			<label>mounted pulse repeater</label>
+			<commandIcon>Items/droidweapon/droidweapon_pulse</commandIcon>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>KotORPulseBolt</defaultProjectile>
+			<warmupTime>1.5</warmupTime>
+			<range>23</range>
+			<ticksBetweenBurstShots>6</ticksBetweenBurstShots>
+			<burstShotCount>6</burstShotCount>
+			<soundCast>kotorsound_SotEpulse</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<ai_IsWeapon>true</ai_IsWeapon>
+			<onlyManualCast>true</onlyManualCast>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>pulse repeater</label>
+					<visualLabel>mounted pulse repeater</visualLabel>
+					<canBeToggled>true</canBeToggled>
+					<description>A mounted pulse repeater.</description>
+				</li>
+			</verbProps>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidWeaponCraftableBase">
+    <defName>guy762_DroidWeapon_sonic</defName>
+    <label>Droid sonic blaster</label>
+    <description>Originally designed for the Juggernaut War Droid, these weapons call back to a time when the Republic Military was still seen as a "peacekeeping force".\n\nThis is equipped to the "light" weapon mount.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_SonicDisorient</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidweapon/droidweapon_sonic</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1200</MarketValue>
+	  
+	  <AccuracyTouch>0.60</AccuracyTouch>
+	  <AccuracyShort>0.50</AccuracyShort>
+	  <AccuracyMedium>0.30</AccuracyMedium>
+	  <AccuracyLong>0.20</AccuracyLong>
+	  
+	  <RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+	  <RangedWeapon_DamageMultiplier>0.8</RangedWeapon_DamageMultiplier>
+	  
+	  <WorkToMake>18500</WorkToMake>
+	</statBases>
+	
+	<recipeMaker>
+		<researchPrerequisites>
+			<li>guy762_ResearchKotOR_droidblasters</li>
+			<li>guy762_ResearchKotOR_sonic</li>
+		</researchPrerequisites>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>30</Plasteel>
+		<ComponentIndustrial>5</ComponentIndustrial>
+		<ComponentSpacer>2</ComponentSpacer>
+	</costList>
+	
+    <apparel>
+      <bodyPartGroups>
+        <li>guy762BG_Droid_WeaponMount_basic</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidWeapon_light_any</li>
+		<li>KotORDroidWeapon_wardroid</li>
+		<li>KotORDroidWeapon_mid</li>
+		<li>SWKotORSpecificDroidWeapon_SonicBlaster</li>
+		<li>SWCPDroidApparelRestrictionTag_StandardWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidWeapons_light</li>
+    </tradeTags>
+	<verbs>
+		<li>
+			<label>sonic blaster</label>
+			<commandIcon>Items/droidweapon/droidweapon_sonic</commandIcon>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>KotORSonicWave_default</defaultProjectile>
+			<warmupTime>1</warmupTime>
+			<range>23</range>
+			<ticksBetweenBurstShots>18</ticksBetweenBurstShots>
+			<burstShotCount>3</burstShotCount>
+			<soundCast>kotorsound_bowcaster1</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<ai_IsWeapon>true</ai_IsWeapon>
+			<onlyManualCast>true</onlyManualCast>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>Sonic blaster</label>
+					<visualLabel>built-in sonic blaster</visualLabel>
+					<canBeToggled>true</canBeToggled>
+					<description>A built-in sonic blaster.</description>
+				</li>
+			</verbProps>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidWeaponBase">
+    <defName>guy762_DroidWeapon_plasma</defName>
+    <label>Droid plasma repeater</label>
+    <description>Ionized gas is pumped through this upgrade and burns through most known metals in seconds. Designed for rescue droids who sometimes need to make holes in starships' heavily armored hulls.\n\nThis is equipped to the "light" weapon mount.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_IonizationBuildup</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidweapon/droidweapon_plasma</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>6400</MarketValue>
+	  
+	  <AccuracyTouch>0.40</AccuracyTouch>
+	  <AccuracyShort>0.60</AccuracyShort>
+	  <AccuracyMedium>0.50</AccuracyMedium>
+	  <AccuracyLong>0.30</AccuracyLong>
+	  
+	  <RangedWeapon_Cooldown>2.25</RangedWeapon_Cooldown>
+	  <RangedWeapon_DamageMultiplier>1</RangedWeapon_DamageMultiplier>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>guy762BG_Droid_WeaponMount_basic</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidWeapon_light_any</li>
+		<li>KotORDroidWeapon_strong</li>
+		<li>KotORDroidWeapon_wardroid</li>
+		<li>KotORDroidWeapon_krath</li>
+		<li>SWKotORSpecificDroidWeapon_PlasmaRepeater</li>
+		<li>SWCPDroidApparelRestrictionTag_StandardWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORElite</li>
+    </tradeTags>
+	<verbs>
+		<li>
+			<label>plasma repeater</label>
+			<commandIcon>Items/droidweapon/droidweapon_plasma</commandIcon>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>KotORBlasterBolt_plasma</defaultProjectile>
+			<warmupTime>2.75</warmupTime>
+			<range>25</range>
+			<ticksBetweenBurstShots>10</ticksBetweenBurstShots>
+			<burstShotCount>6</burstShotCount>
+			<soundCast>kotorsound_heavy2</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<ai_IsWeapon>true</ai_IsWeapon>
+			<onlyManualCast>true</onlyManualCast>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>plasma repeater</label>
+					<visualLabel>mounted plasma repeater</visualLabel>
+					<canBeToggled>true</canBeToggled>
+					<description>A mounted plasma repeater.</description>
+				</li>
+			</verbProps>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidWeaponBase">
+    <defName>guy762_DroidWeapon_railgun</defName>
+    <label>Droid rail shot</label>
+    <description>This powerful rail gun punches through most armor with ease, and is accurate over distances much greater than most other droid-mounted weapons.\n\nThis is equipped to the "light" weapon mount.</description>
+    <graphicData>
+      <texPath>Items/droidweapon/droidweapon_railgun</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>7620</MarketValue>
+
+	  <AccuracyTouch>0.55</AccuracyTouch>
+	  <AccuracyShort>0.65</AccuracyShort>
+	  <AccuracyMedium>0.75</AccuracyMedium>
+	  <AccuracyLong>0.85</AccuracyLong>
+	  
+	  <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+	  <RangedWeapon_DamageMultiplier>1</RangedWeapon_DamageMultiplier>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>guy762BG_Droid_WeaponMount_basic</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidWeapon_light_any</li>
+		<li>KotORDroidWeapon_strong</li>
+		<li>KotORDroidWeapon_asndroid</li>
+		<li>SWKotORSpecificDroidWeapon_Railgun</li>
+		<li>SWCPDroidApparelRestrictionTag_StandardWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORElite</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	<verbs>
+		<li>
+			<label>rail shot</label>
+			<commandIcon>Items/droidweapon/droidweapon_railgun</commandIcon>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>KotORRailgun</defaultProjectile>
+			<warmupTime>4</warmupTime>
+			<range>32</range>
+			<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
+			<burstShotCount>1</burstShotCount>
+			<soundCast>kotorsound_railgun</soundCast>
+			<soundCastTail>GunTail_Heavy</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<ai_IsWeapon>true</ai_IsWeapon>
+			<forcedMissRadius>0.01</forcedMissRadius>
+			<onlyManualCast>true</onlyManualCast>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>rail shot</label>
+					<visualLabel>mounted rail gun</visualLabel>
+					<canBeToggled>true</canBeToggled>
+					<description>A mounted rail gun.</description>
+				</li>
+			</verbProps>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidWeaponCraftableBase">
+    <defName>guy762_DroidWeapon_seekerrocket</defName>
+    <label>Droid seeker-missile launcher</label>
+    <description>This droid-mounted weapon can fire a "seeker" missile, which homes in on the target once fired.\n\nThis is equipped to the "heavy" weapon mount.</description>
+    <graphicData>
+      <texPath>Items/droidweapon/droidweapon_seeker</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2200</MarketValue>
+
+	  <AccuracyTouch>0.50</AccuracyTouch>
+	  <AccuracyShort>0.40</AccuracyShort>
+	  <AccuracyMedium>0.20</AccuracyMedium>
+	  <AccuracyLong>0.10</AccuracyLong>
+	  
+	  <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+      
+	  <WorkToMake>35000</WorkToMake>
+	</statBases>
+	
+	<recipeMaker>
+		<researchPrerequisites>
+			<li>guy762_ResearchKotOR_droidblasters</li>
+			<li>KOTOR_Research_AdvMunitions</li>
+		</researchPrerequisites>
+		<skillRequirements>
+			<Crafting>7</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<ComponentSpacer>1</ComponentSpacer>
+		<Steel>35</Steel>
+		<ComponentIndustrial>5</ComponentIndustrial>
+		<Chemfuel>5</Chemfuel>
+		<KOTOR_RawRhydonium>15</KOTOR_RawRhydonium>
+	</costList>
+	
+    <apparel>
+      <bodyPartGroups>
+        <li>guy762BG_Droid_WeaponMount_adv</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidWeapon_hvy_any</li>
+		<li>KotORDroidWeapon_explosive</li>
+		<li>KotORDroidWeapon_strong</li>
+		<li>KotORDroidWeapon_wardroid</li>
+		<li>KotORDroidWeapon_asndroid</li>
+		<li>SWKotORSpecificDroidWeapon_SeekerMissile</li>
+		<li>SWCPDroidApparelRestrictionTag_HeavyWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidWeapons_heavy</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<verbs>
+		<li>
+			<label>seeker-missile launcher</label>
+			<commandIcon>Items/droidweapon/droidweapon_seeker</commandIcon>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>KotORMissile_seeker</defaultProjectile>
+			<warmupTime>3</warmupTime>
+			<range>25</range>
+			<ticksBetweenBurstShots>30</ticksBetweenBurstShots>
+			<burstShotCount>1</burstShotCount>
+			<soundCast>kotorsound_rocket</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<ai_IsWeapon>true</ai_IsWeapon>
+			<forcedMissRadius>0.01</forcedMissRadius>
+			<onlyManualCast>true</onlyManualCast>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>seeker-missile launcher</label>
+					<visualLabel>mounted seeker-missile launcher</visualLabel>
+					<canBeToggled>true</canBeToggled>
+					<description>A mounted seeker-missile launcher.</description>
+				</li>
+			</verbProps>
+		</li>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>5</maxCharges>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>missile</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			<destroyOnEmpty>true</destroyOnEmpty>
+		  </li>
+		  <li Class="CompProperties_Explosive">
+			<explosiveRadius>2.66</explosiveRadius>
+			<explosiveDamageType>Bomb</explosiveDamageType>
+			<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidWeaponCraftableBase">
+    <defName>guy762_DroidWeapon_microrocket</defName>
+    <label>Droid micro-rocket launcher</label>
+    <description>Unlike Seeker-missile launchers, this device fires a barrage of micro-rockets designed to overwhelm the enemy.\n\nThis is equipped to the "heavy" weapon mount.</description>
+    <graphicData>
+      <texPath>Items/droidweapon/droidweapon_microrocket</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>2000</MarketValue>
+
+	  <AccuracyTouch>0.50</AccuracyTouch>
+	  <AccuracyShort>0.40</AccuracyShort>
+	  <AccuracyMedium>0.20</AccuracyMedium>
+	  <AccuracyLong>0.10</AccuracyLong>
+	  
+	  <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+	  
+	  <WorkToMake>42500</WorkToMake>
+	</statBases>
+	
+	<recipeMaker>
+		<researchPrerequisites>
+			<li>guy762_ResearchKotOR_droidblasters</li>
+			<li>KOTOR_Research_AdvMunitions</li>
+		</researchPrerequisites>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Steel>40</Steel>
+		<ComponentIndustrial>5</ComponentIndustrial>
+		<Chemfuel>15</Chemfuel>
+		<KOTOR_RawRhydonium>15</KOTOR_RawRhydonium>
+	</costList>
+	
+    <apparel>
+      <bodyPartGroups>
+        <li>guy762BG_Droid_WeaponMount_adv</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidWeapon_hvy_any</li>
+		<li>KotORDroidWeapon_explosive</li>
+		<li>KotORDroidWeapon_strong</li>
+		<li>KotORDroidWeapon_wardroid</li>
+		<li>SWKotORSpecificDroidWeapon_MicroRocket</li>
+		<li>SWCPDroidApparelRestrictionTag_HeavyWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidWeapons_heavy</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<verbs>
+		<li>
+			<label>micro-rocket launcher</label>
+			<commandIcon>Items/droidweapon/droidweapon_microrocket</commandIcon>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>KotORRocket_micro</defaultProjectile>
+			<warmupTime>2</warmupTime>
+			<range>25</range>
+			<ticksBetweenBurstShots>15</ticksBetweenBurstShots>
+			<burstShotCount>3</burstShotCount>
+			<soundCast>kotorsound_rocket</soundCast>
+			<soundCastTail>GunTail_Medium</soundCastTail>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<ai_IsWeapon>true</ai_IsWeapon>
+			<forcedMissRadius>0.01</forcedMissRadius>
+			<onlyManualCast>true</onlyManualCast>
+			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>micro-rocket launcher</label>
+					<visualLabel>mounted micro-rocket launcher</visualLabel>
+					<canBeToggled>true</canBeToggled>
+					<description>A mounted micro-rocket launcher.</description>
+				</li>
+			</verbProps>
+		</li>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>15</maxCharges>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>rocket</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			<destroyOnEmpty>true</destroyOnEmpty>
+		  </li>
+		  <li Class="CompProperties_Explosive">
+			<explosiveRadius>2.66</explosiveRadius>
+			<explosiveDamageType>Bomb</explosiveDamageType>
+			<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+		</li>
+	</comps>
+  </ThingDef>
+
+
+  
+  <ThingDef ParentName="guy762_DroidWeaponBase">
+    <defName>guy762_DroidWeapon_stunbeam</defName>
+    <label>Droid stasis beam</label>
+    <description>Quellegh Industrial is becoming the standard in publicly traded non-lethal droid-mounted weapons. Company officials credit aggressive marketing towards any despot with credits.\n\nThis is equipped to the "heavy" weapon mount.</description>
+    <graphicData>
+      <texPath>Items/droidweapon/droidweapon_stun</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1850</MarketValue>
+	  
+	  <RangedWeapon_Cooldown>3</RangedWeapon_Cooldown>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>guy762BG_Droid_WeaponMount_adv</li>
+      </bodyPartGroups>
+      <layers>
+        <li>Belt</li>
+      </layers>
+	  <tags>
+		<li>KotORDroidWeapon_hvy_any</li>
+		<li>KotORDroidWeapon_mid</li>
+		<li>KotORDroidWeapon_nonlethal</li>
+		<li>KotORDroidWeapon_asndroid</li>
+		<li>SWKotORSpecificDroidWeapon_StunBeam</li>
+		<li>SWCPDroidApparelRestrictionTag_HeavyWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidWeapons_heavy</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<verbs>
+		<li>
+		  <label>stasis beam</label>
+		  <commandIcon>Items/droidweapon/droidweapon_stun</commandIcon>
+		  <!-- <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass> -->
+			  <verbClass>Verb_ShootBeam</verbClass>
+			  <showBurstShotStats>false</showBurstShotStats>
+			  <beamWidth>0.25</beamWidth>
+			  <beamMaxDeviation>0.5</beamMaxDeviation>
+			  <beamCurvature>0.6</beamCurvature>
+			  
+		  <hasStandardCommand>true</hasStandardCommand>
+		  <warmupTime>2.5</warmupTime>
+		  <range>23</range>
+		  <minRange>1.5</minRange>
+		  <stopBurstWithoutLos>false</stopBurstWithoutLos>
+		  <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		  <burstShotCount>10</burstShotCount>
+		  <beamDamageDef>Stun</beamDamageDef>
+		  <soundCastTail>GunTail_Medium</soundCastTail>
+		  <muzzleFlashScale>9</muzzleFlashScale>
+		  <soundCastBeam>kotorsound_stunbeam</soundCastBeam>
+		  <beamGroundFleckDef>Fleck_BeamBurn</beamGroundFleckDef>
+		  <beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+		  <beamMoteDef>guy762_Mote_StunBeam</beamMoteDef>
+		  <beamEndEffecterDef>GraserBeam_End</beamEndEffecterDef>
+		  <beamChanceToStartFire>0</beamChanceToStartFire>
+		  <beamChanceToAttachFire>0</beamChanceToAttachFire>
+		  <beamLineFleckDef>Fleck_BeamSpark</beamLineFleckDef>
+		  <beamStartOffset>0.5</beamStartOffset>
+		  <beamLineFleckChanceCurve>
+			<points>
+			  <li>(0, 0)</li>
+			  <li>(0.65, 0.4)</li>
+			  <li>(1, 0.75)</li>
+			</points>
+		  </beamLineFleckChanceCurve>
+		  <ai_IsWeapon>true</ai_IsWeapon>
+		  <onlyManualCast>true</onlyManualCast>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>stasis beam</label>
+					<visualLabel>mounted stasis beam</visualLabel>
+					<description>A mounted stasis beam.</description>
+				</li>
+			</verbProps>
+		</li>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>51</maxCharges>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>energy</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			<destroyOnEmpty>true</destroyOnEmpty>
+		  </li>
+	</comps>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidWeaponCraftableBase">
+    <defName>guy762_DroidWeapon_flamethrower</defName>
+    <label>Droid flamethrower</label>
+    <description>This droid-mounted weapon can inflict damage over a broad area. The incendiary compounds within border on military quality, though the unit was initially designed for industrial purposes.\n\nThis is equipped to the "heavy" weapon mount.</description>
+    <graphicData>
+      <texPath>Items/droidweapon/droidweapon_flame</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>900</MarketValue>
+
+	  <AccuracyTouch>0.50</AccuracyTouch>
+	  <AccuracyShort>0.40</AccuracyShort>
+	  <AccuracyMedium>0.20</AccuracyMedium>
+	  <AccuracyLong>0.10</AccuracyLong>
+	  
+	  <RangedWeapon_Cooldown>6</RangedWeapon_Cooldown>
+	  <RangedWeapon_DamageMultiplier>0.8</RangedWeapon_DamageMultiplier>
+      
+	  <WorkToMake>12500</WorkToMake>
+	</statBases>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_droidblasters</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Steel>30</Steel>
+		<ComponentIndustrial>5</ComponentIndustrial>
+		<Chemfuel>30</Chemfuel>
+	</costList>
+	
+    <apparel>
+      <bodyPartGroups>
+        <li>guy762BG_Droid_WeaponMount_adv</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidWeapon_hvy_any</li>
+		<li>KotORDroidWeapon_flamethrower</li>
+		<li>SWKotORSpecificDroidWeapon_Flamethrower</li>
+		<li>SWCPDroidApparelRestrictionTag_HeavyWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidWeapons_heavy</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardMidFreq</li>
+    </thingSetMakerTags>
+	<verbs>
+		<li>
+			<label>flamethrower</label>
+			<commandIcon>Items/droidweapon/droidweapon_flame</commandIcon>
+			<verbClass>Verb_SpewFire</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<warmupTime>0.5</warmupTime>
+			<range>7</range>
+			<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+			<burstShotCount>10</burstShotCount>
+			<soundCast>kotorsound_flamethrower</soundCast>
+			<muzzleFlashScale>9</muzzleFlashScale>
+			<ai_IsWeapon>true</ai_IsWeapon>
+			<ai_AvoidFriendlyFireRadius>2</ai_AvoidFriendlyFireRadius>
+			<ai_IsBuildingDestroyer>true</ai_IsBuildingDestroyer>
+			<onlyManualCast>true</onlyManualCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>flamethrower</label>
+					<visualLabel>mounted flamethrower</visualLabel>
+					<canBeToggled>true</canBeToggled>
+					<description>A mounted flamethrower.</description>
+				</li>
+			</verbProps>
+		</li>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>3</maxCharges>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>incendiary</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			<destroyOnEmpty>true</destroyOnEmpty>
+		  </li>
+		  <li Class="CompProperties_Explosive">
+			<explosiveRadius>2.66</explosiveRadius>
+			<explosiveDamageType>Flame</explosiveDamageType>
+			<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidWeaponCraftableBase">
+    <defName>guy762_DroidWeapon_ion</defName>
+    <label>Droid ion striker</label>
+    <description>The "Scrambler" was developed by Aratech and marketed towards customers who were faced with massive droid armies. Sending a pulse of highly-charged ions, this weapon destroys the electronics of enemy droids.\n\nThis is equipped to the "heavy" weapon mount.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_IonizationBuildup</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidweapon/droidweapon_ion</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>3000</MarketValue>
+	  
+	  <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+	  
+	  <WorkToMake>23500</WorkToMake>
+	</statBases>
+	
+	<recipeMaker>
+		<researchPrerequisites>
+			<li>guy762_ResearchKotOR_droidblasters</li>
+			<li>guy762_ResearchKotOR_ion</li>
+		</researchPrerequisites>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>30</Plasteel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+		<ComponentSpacer>8</ComponentSpacer>
+		<KOTOR_PlasmaCartridge>5</KOTOR_PlasmaCartridge>
+	</costList>
+	
+    <apparel>
+      <bodyPartGroups>
+        <li>guy762BG_Droid_WeaponMount_adv</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidWeapon_hvy_any</li>
+		<li>KotORDroidWeapon_strong</li>
+		<li>KotORDroidWeapon_ion</li>
+		<li>SWKotORSpecificDroidWeapon_IonBeam</li>
+		<li>SWCPDroidApparelRestrictionTag_HeavyWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidWeapons_heavy</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	<verbs>
+		<li>
+		  <label>ion striker</label>
+		  <commandIcon>Items/droidweapon/droidweapon_ion</commandIcon>
+		  <!-- <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass> -->
+			  <verbClass>Verb_ShootBeam</verbClass>
+			  <showBurstShotStats>false</showBurstShotStats>
+			  <beamWidth>0.25</beamWidth>
+			  <beamMaxDeviation>0.5</beamMaxDeviation>
+			  <beamCurvature>0.6</beamCurvature>
+			  
+		  <hasStandardCommand>true</hasStandardCommand>
+		  <warmupTime>1.0</warmupTime>
+		  <range>17</range>
+		  <minRange>1.5</minRange>
+		  <stopBurstWithoutLos>false</stopBurstWithoutLos>
+		  <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		  <burstShotCount>10</burstShotCount>
+		  <beamDamageDef>guy762_RangedDamage_ion</beamDamageDef>
+		  <soundCastTail>GunTail_Medium</soundCastTail>
+		  <muzzleFlashScale>9</muzzleFlashScale>
+		  <soundCastBeam>kotorsound_ionbeam</soundCastBeam>
+		  <beamGroundFleckDef>Fleck_BeamBurn</beamGroundFleckDef>
+		  <beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+		  <beamMoteDef>guy762_Mote_IonBeam</beamMoteDef>
+		  <beamEndEffecterDef>GraserBeam_End</beamEndEffecterDef>
+		  <beamChanceToStartFire>0</beamChanceToStartFire>
+		  <beamChanceToAttachFire>0</beamChanceToAttachFire>
+		  <beamLineFleckDef>Fleck_BeamSpark</beamLineFleckDef>
+		  <beamStartOffset>0.5</beamStartOffset>
+		  <beamLineFleckChanceCurve>
+			<points>
+			  <li>(0, 0)</li>
+			  <li>(0.65, 0.4)</li>
+			  <li>(1, 0.75)</li>
+			</points>
+		  </beamLineFleckChanceCurve>
+		  <ai_IsWeapon>true</ai_IsWeapon>
+		  <onlyManualCast>true</onlyManualCast>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>ion striker</label>
+					<visualLabel>mounted ion striker</visualLabel>
+					<canBeToggled>true</canBeToggled>
+					<description>A mounted ion striker.</description>
+				</li>
+			</verbProps>
+		</li>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>51</maxCharges>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>energy</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			<destroyOnEmpty>true</destroyOnEmpty>
+		  </li>
+	</comps>
+  </ThingDef>
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidWeaponBase">
+    <defName>guy762_DroidWeapon_toxbeam</defName>
+    <label>Droid Bio-Assault Beam</label>
+    <description>Illegal in most civilized societies, the Bio-Assault Beam upgrade essentially breaks the target down at the molecular level, often leaving behind nothing more than a grey ooze.\n\nThis is equipped to the "heavy" weapon mount.</description>
+    <descriptionHyperlinks>
+		<HediffDef>ToxicBuildup</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidweapon/droidweapon_tox</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>9000</MarketValue>
+	  
+	  <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>guy762BG_Droid_WeaponMount_adv</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidWeapon_hvy_any</li>
+		<li>KotORDroidWeapon_strong</li>
+		<li>KotORDroidWeapon_asndroid</li>
+		<li>SWKotORSpecificDroidWeapon_RadiationBeam</li>
+		<li>SWCPDroidApparelRestrictionTag_HeavyWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+	  <li>guy762TT_KotORElite</li>
+    </tradeTags>
+	<thingSetMakerTags>
+      <li>RewardStandardLowFreq</li>
+    </thingSetMakerTags>
+	<verbs>
+		<li>
+		  <label>Bio-Assault beam</label>
+		  <commandIcon>Items/droidweapon/droidweapon_tox</commandIcon>
+		  <!-- <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass> -->
+			  <verbClass>Verb_ShootBeam</verbClass>
+			  <showBurstShotStats>false</showBurstShotStats>
+			  <beamWidth>0.25</beamWidth>
+			  <beamMaxDeviation>0.5</beamMaxDeviation>
+			  <beamCurvature>0.6</beamCurvature>
+			  
+		  <hasStandardCommand>true</hasStandardCommand>
+		  <warmupTime>3.5</warmupTime>
+		  <range>17</range>
+		  <minRange>1.5</minRange>
+		  <stopBurstWithoutLos>false</stopBurstWithoutLos>
+		  <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		  <burstShotCount>10</burstShotCount>
+		  <beamDamageDef>guy762_BeamDamage_radiation</beamDamageDef>
+		  <soundCastTail>GunTail_Medium</soundCastTail>
+		  <muzzleFlashScale>9</muzzleFlashScale>
+		  <soundCastBeam>kotorsound_radiationbeam</soundCastBeam>
+		  <beamGroundFleckDef>Fleck_BeamBurn</beamGroundFleckDef>
+		  <beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+		  <beamMoteDef>guy762_Mote_RadiationBeam</beamMoteDef>
+		  <beamEndEffecterDef>GraserBeam_End</beamEndEffecterDef>
+		  <beamChanceToStartFire>0</beamChanceToStartFire>
+		  <beamChanceToAttachFire>0</beamChanceToAttachFire>
+		  <beamLineFleckDef>Fleck_BeamSpark</beamLineFleckDef>
+		  <beamStartOffset>0.5</beamStartOffset>
+		  <beamLineFleckChanceCurve>
+			<points>
+			  <li>(0, 0)</li>
+			  <li>(0.65, 0.4)</li>
+			  <li>(1, 0.75)</li>
+			</points>
+		  </beamLineFleckChanceCurve>
+		  <ai_IsWeapon>true</ai_IsWeapon>
+		  <onlyManualCast>true</onlyManualCast>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>Bio-Assault beam</label>
+					<visualLabel>mounted Bio-Assault beam</visualLabel>
+					<canBeToggled>true</canBeToggled>
+					<description>A mounted Bio-Assault beam.</description>
+				</li>
+			</verbProps>
+		</li>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>31</maxCharges>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>energy</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			<destroyOnEmpty>true</destroyOnEmpty>
+		  </li>
+	</comps>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!--ThingDef ParentName="guy762_DroidWeaponCraftableBase">
+    <defName>guy762_DroidWeapon_carbonite</defName>
+    <label>Droid Carbonite projector</label>
+    <description>The inverse of a flamethrower, this weapon uses a carbonite freezing technique to super-cool synthetic compounds hurled at a target. This unconventional weapon has not yet seen widespread use.\n\nThis is equipped to the "heavy" weapon mount.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_hediff_carbonite</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidweapon/droidweapon_carbonite</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>300</MarketValue>
+
+	  <AccuracyTouch>0.90</AccuracyTouch>
+	  <AccuracyShort>0.80</AccuracyShort>
+	  <AccuracyMedium>0.60</AccuracyMedium>
+	  <AccuracyLong>0.50</AccuracyLong>
+	  
+	  <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+    </statBases>
+    <apparel>
+      <bodyPartGroups>
+        <li>guy762BG_Droid_WeaponMount_adv</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidWeapon_nonlethal</li>
+		<li>KotORDroidWeapon_krath</li>
+		<li>SWCPDroidApparelRestrictionTag_HeavyWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+	  <li>guy762TT_DroidWeapons</li>
+    </tradeTags>
+	<verbs>
+		<li>
+			<label>liquid Carbonite projector</label>
+			<commandIcon>Items/droidweapon/droidweapon_carbonite</commandIcon>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>guy762_throwngrenade_carbonite</defaultProjectile>
+			<warmupTime>1</warmupTime>
+			<range>9</range>
+			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			<burstShotCount>6</burstShotCount>
+			<soundCast>kotorsound_flamethrower</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<onlyManualCast>true</onlyManualCast>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>liquid Carbonite projector</label>
+					<visualLabel>built-in Carbonite projector</visualLabel>
+					<canBeToggled>true</canBeToggled>
+					<description>A built-in Carbonite projector.</description>
+				</li>
+			</verbProps>
+		</li>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>30</maxCharges>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>carbonite sprays</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			<destroyOnEmpty>true</destroyOnEmpty>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef>
+    <defName>guy762_throwngrenade_carbonite</defName>
+	<label>liquid carbonite</label>
+    <thingClass>Projectile_Liquid</thingClass>
+    <category>Projectile</category>
+    <tickerType>Normal</tickerType>
+    <altitudeLayer>Projectile</altitudeLayer>
+    <useHitPoints>False</useHitPoints>
+    <neverMultiSelect>True</neverMultiSelect>
+    <graphicData>
+      <texPath>Projectiles/carbonite</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <shaderType>MoteGlow</shaderType>
+      <drawSize>2.5</drawSize>
+    </graphicData>
+    <projectile>
+      <damageDef>guy762_RangedDamage_carbonite</damageDef>
+      <damageAmountBase>30</damageAmountBase>
+	  <speed>25</speed>
+	  <numExtraHitCells>3</numExtraHitCells>
+      <arcHeightFactor>0.4</arcHeightFactor>
+      <armorPenetrationBase>0.8</armorPenetrationBase>
+      <stoppingPower>1</stoppingPower>
+      <shadowSize>0</shadowSize>
+      <filth>guy762_filth_carbonite</filth>
+      <filthCount>1~3</filthCount>
+    </projectile>
+  </ThingDef>
+  
+  <DamageDef>
+    <defName>guy762_RangedDamage_carbonite</defName>
+    <label>Carbonite</label>
+    <workerClass>DamageWorker_Frostbite</workerClass>
+    <harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+    <canUseDeflectMetalEffect>false</canUseDeflectMetalEffect>
+    <hediff>Frostbite</hediff>
+	<modExtensions>
+		<li Class="guy762_Ionization.ModExtension_HediffGiver">
+			<hediffToAdd>guy762_hediff_carbonite</hediffToAdd>
+			<severityFixed>0.0125</severityFixed>
+		</li>
+	</modExtensions>
+  </DamageDef>
+  
+  <HediffDef>
+    <defName>guy762_hediff_carbonite</defName>
+	<label>carbon freezing</label>
+    <description>Covered in Carbonite.</description>
+	<defaultLabelColor>(0.8, 0.8, 1)</defaultLabelColor>
+    <stages>
+      <li>
+        <label>initial</label>
+        <becomeVisible>false</becomeVisible>
+      </li>
+      <li>
+        <label>initial</label>
+        <minSeverity>0.25</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.08</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.05</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>minor</label>
+        <minSeverity>0.5</minSeverity>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.1</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.2</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.10</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>serious</label>
+        <minSeverity>0.75</minSeverity>
+        <painOffset>0.15</painOffset>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.3</offset>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <offset>-0.5</offset>
+          </li>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.20</offset>
+          </li>
+        </capMods>
+      </li>
+      <li>
+        <label>extreme</label>
+        <minSeverity>0.95</minSeverity>
+        <lifeThreatening>true</lifeThreatening>
+        <painOffset>0.30</painOffset>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <setMax>0.1</setMax>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  <ThingDef ParentName="BaseFilth">
+    <defName>guy762_filth_carbonite</defName>
+    <label>liquid carbonite</label>
+    <statBases>
+      <Beauty>-30</Beauty>
+      <Cleanliness>-5</Cleanliness>
+    </statBases>
+    <graphicData>
+      <texPath>Filth/carbonite</texPath>
+      <graphicClass>Graphic_Random</graphicClass>
+      <drawSize>2.5</drawSize>
+      <color>(1,1,1,0.5)</color>
+    </graphicData>
+    <filth>
+      <ignoreFilthMultiplierStat>true</ignoreFilthMultiplierStat>
+      <disappearsInDays>35~40</disappearsInDays>
+      <rainWashes>true</rainWashes>
+      <cleaningWorkToReduceThickness>70</cleaningWorkToReduceThickness>
+      <canFilthAttach>true</canFilthAttach>
+      <maxThickness>1</maxThickness>
+      <cleaningSound>Interact_CleanFilth_Fluid</cleaningSound>
+    </filth>
+  </ThingDef-->
+
+</Defs>

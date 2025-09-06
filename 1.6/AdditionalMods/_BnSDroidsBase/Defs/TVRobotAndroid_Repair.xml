@@ -1,0 +1,130 @@
+<Defs>
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>BS_RepairRobotBrain</defName>
+    <label>repair android brain</label>
+    <description>restore a damaged, replaced, or missing CPU to its original state.</description>
+    <descriptionHyperlinks><ThingDef>ComponentSpacer</ThingDef></descriptionHyperlinks>
+    <jobString>Restoring brain.</jobString>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <skillRequirements>
+      <Medicine>7</Medicine>
+      <Crafting>11</Crafting>
+    </skillRequirements>
+    <researchPrerequisite>
+      <li>Bionics</li>
+    </researchPrerequisite>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentSpacer</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentSpacer</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>BS_ArtificialBrain</li>
+    </appliedOnFixedBodyParts>
+  </RecipeDef>
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>BS_RepairRobotOrgan</defName>
+    <label>repair android component</label>
+    <description>restore a damaged, replaced, or missing android part to its original state.</description>
+    <descriptionHyperlinks><ThingDef>ComponentIndustrial</ThingDef></descriptionHyperlinks>
+    <jobString>Restoring part.</jobString>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <researchPrerequisite>
+      <li>Prosthetics</li>
+    </researchPrerequisite>
+    <skillRequirements>
+      <Medicine>6</Medicine>
+      <Crafting>6</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ComponentIndustrial</li>
+          </thingDefs>
+        </filter>
+        <count>3</count>
+      </li>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>20</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ComponentIndustrial</li>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>BS_Reactor</li>
+      <li>BS_FluidReprocessor</li>
+      <li>BS_FuelProcessor</li>
+      <li>BS_AirCoolingUnit</li>
+      <li>BS_SightSensor</li>
+      <li>BS_HearingSensor</li>
+      <li>BS_SmellSensor</li>
+      <li>BS_MechanicalTongue</li>
+      <li>BS_MechanicalSpine</li>
+    </appliedOnFixedBodyParts>
+  </RecipeDef>
+
+
+  <RecipeDef ParentName="SurgeryInstallBodyPartNaturalBase">
+    <defName>BS_RepairRobotPart</defName>
+    <label>restore android part</label>
+    <description>restore a damaged, replaced, or missing android part to its original state.</description>
+    <descriptionHyperlinks><ThingDef>Plasteel</ThingDef></descriptionHyperlinks>
+    <jobString>Restoring part.</jobString>
+    <deathOnFailedSurgeryChance>0</deathOnFailedSurgeryChance>
+    <researchPrerequisite>
+      <li>Electricity</li>
+    </researchPrerequisite>
+    <skillRequirements>
+      <Medicine>4</Medicine>
+      <Crafting>4</Crafting>
+    </skillRequirements>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>Steel</li>
+          </thingDefs>
+        </filter>
+        <count>10</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>Steel</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>BS_MechanicalFinger</li>
+      <li>BS_MechanicalToe</li>
+      <li>BS_MechanicalShoulder</li>
+      <li>BS_MechanicalArm</li>
+      <li>BS_MechanicalHand</li>
+      <li>BS_MechanicalLeg</li>
+      <li>BS_MechanicalFoot</li>
+      <li>BS_MechanicalRibs</li>
+      <li>BS_MechanicalSternum</li>
+      <li>BS_MechanicalWheel</li>
+    </appliedOnFixedBodyParts>
+  </RecipeDef>
+</Defs>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidShieldCraftableBase">
+    <defName>guy762_DroidStealthDevice</defName>
+    <label>Droid cloaking device</label>
+    <description>This complex droid-mounted device produces a limited stealth field, rather than an energy shield. Combat is disabled while active, but performing mundane tasks are not.\n\nThis improved model lasts up to 60 seconds.\n\nThis is a highly advanced piece of technology, and can only be equipped on the following droid models:</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_StealthField_twomin</HediffDef>
+		
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_KX12APD</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_DevAD</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_HKseries</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_HK50series</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_HK51series</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_GOTO</AlienRace.ThingDef_AlienRace>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidshield/droidcloak</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>2500</MarketValue>
+	  
+	  <WorkToMake>12500</WorkToMake>
+    </statBases>
+	<equippedStatOffsets>
+		<HuntingStealth>0.2</HuntingStealth>
+	</equippedStatOffsets>
+	
+	<recipeMaker>
+		<researchPrerequisite>KOTOR_Research_cloaking</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>15</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<ComponentIndustrial>12</ComponentIndustrial>
+		<ComponentSpacer>8</ComponentSpacer>
+		<guy762_crystalitem_stygium>4</guy762_crystalitem_stygium>
+	</costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidStealth</li>
+		<li>SWKotORSpecificDroidGadget_2minDroidStealthDevice</li>
+		<li>SWCPDroidApparelRestrictionTag_DroidCloakingDevice</li>
+		<!-- <li>SWCPDroidApparelRestrictionTag_ShieldSlot</li> -->
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORElite</li>
+	  <li>guy762TT_DroidShields</li>
+    </tradeTags>
+    <verbs>
+      <li Class="SelfHediffVerb.VerbProperties_SelfHediff">
+        <label>activate stealth field</label>
+        <commandIcon>UI/KotOR_Icon_Stealth</commandIcon>
+        <verbClass>SelfHediffVerb.Verb_SelfHediff</verbClass>
+        <hediffDef>guy762_StealthField_twomin</hediffDef>
+        
+        <hasStandardCommand>true</hasStandardCommand>
+        <targetable>false</targetable>
+        <nonInterruptingSelfCast>true</nonInterruptingSelfCast>
+        <onlyManualCast>True</onlyManualCast>
+        <soundCast>kotorsound_cloak</soundCast>
+		<violent>false</violent>
+      </li>
+    </verbs>
+    <comps>
+	  <!-- <li Class="VanillaApparelExpanded.CompProperties_Camouflage" /> -->
+	  <li Class="SelfHediffVerb.CompProperties_VerbWithCooltime">
+        <ticksCooldown>7200</ticksCooldown> <!-- 60ticks = 1sec -->
+      </li>
+    </comps>
+  </ThingDef>
+  
+  
+</Defs>

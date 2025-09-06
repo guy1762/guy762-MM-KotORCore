@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidWeaponCraftableBase">
+    <defName>guy762_DroidGadget_laser</defName>
+    <label>Droid laser cutter</label>
+    <description>This industrial droid-mounted laser can double as a makeshift weapon.\n\nThis is equipped to the "gadget" weapon mount.</description>
+    <graphicData>
+      <texPath>Items/droidweapon/droidweapon_lasercutter</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>100</MarketValue>
+
+	  <RangedWeapon_Cooldown>4</RangedWeapon_Cooldown>
+	  
+	  <WorkToMake>10000</WorkToMake>
+    </statBases>
+	<equippedStatOffsets>
+	  <MiningSpeed>0.2</MiningSpeed>
+	  <SmoothingSpeed>0.2</SmoothingSpeed>
+	</equippedStatOffsets>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_droidblasters</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>30</Plasteel>
+		<ComponentIndustrial>1</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+		<KOTOR_PlasmaCartridge>1</KOTOR_PlasmaCartridge>
+	</costList>
+	
+    <apparel>
+      <bodyPartGroups>
+        <li>guy762BG_Droid_GadgetMount</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidWeapon_weak</li>
+		<li>KotORDroidWeapon_utilitydroid</li>
+		<li>SWKotORSpecificDroidWeapon_LaserCutter</li>
+		<li>SWCPDroidApparelRestrictionTag_GadgetWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidWeapons_utility</li>
+    </tradeTags>
+	<verbs>
+		<li>
+		  <label>laser cutter</label>
+		  <commandIcon>Items/droidweapon/droidweapon_lasercutter</commandIcon>
+		  <!-- <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass> -->
+			  <verbClass>Verb_ShootBeam</verbClass>
+			  <showBurstShotStats>false</showBurstShotStats>
+			  <beamWidth>0.25</beamWidth>
+			  <beamMaxDeviation>0.5</beamMaxDeviation>
+			  <beamCurvature>0.6</beamCurvature>
+			  
+		  <hasStandardCommand>true</hasStandardCommand>
+		  <warmupTime>2</warmupTime>
+		  <range>5</range>
+		  <minRange>1.5</minRange>
+		  <stopBurstWithoutLos>false</stopBurstWithoutLos>
+		  <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		  <burstShotCount>12</burstShotCount>
+		  <beamDamageDef>guy762_BeamDamage_energy</beamDamageDef>
+		  <soundCastTail>GunTail_Medium</soundCastTail>
+		  <muzzleFlashScale>9</muzzleFlashScale>
+		  <soundCastBeam>kotorsound_stunbeam</soundCastBeam>
+		  <beamGroundFleckDef>Fleck_BeamBurn</beamGroundFleckDef>
+		  <beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+		  <beamMoteDef>guy762_Mote_BlasterBeam</beamMoteDef>
+		  <beamEndEffecterDef>GraserBeam_End</beamEndEffecterDef>
+		  <beamChanceToStartFire>0</beamChanceToStartFire>
+		  <beamChanceToAttachFire>0</beamChanceToAttachFire>
+		  <beamLineFleckDef>Fleck_BeamSpark</beamLineFleckDef>
+		  <beamStartOffset>0.5</beamStartOffset>
+		  <beamLineFleckChanceCurve>
+			<points>
+			  <li>(0, 0)</li>
+			  <li>(0.65, 0.4)</li>
+			  <li>(1, 0.75)</li>
+			</points>
+		  </beamLineFleckChanceCurve>
+		  <ai_IsWeapon>true</ai_IsWeapon>
+		  <onlyManualCast>true</onlyManualCast>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>laser cutter</label>
+					<visualLabel>mounted laser cutter</visualLabel>
+					<canBeToggled>true</canBeToggled>
+					<description>A mounted laser cutter.</description>
+				</li>
+			</verbProps>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidWeaponCraftableBase">
+    <defName>guy762_DroidGadget_shock</defName>
+    <label>Droid shock arm</label>
+    <description>This unit is a popular upgrade for utility droids in that it is well hidden among the droid's other tools and delivers quite a jolt to the unsuspecting victim.\n\nThis is equipped to the "gadget" weapon mount.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_Electrocuted</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidweapon/droidweapon_shock</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>240</MarketValue>
+
+	  <RangedWeapon_Cooldown>2</RangedWeapon_Cooldown>
+	  
+	  <WorkToMake>10000</WorkToMake>
+    </statBases>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_droidblasters</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>30</Plasteel>
+		<ComponentIndustrial>3</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+	</costList>
+	
+    <apparel>
+      <bodyPartGroups>
+        <li>guy762BG_Droid_GadgetMount</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidWeapon_weak</li>
+		<li>KotORDroidWeapon_utilitydroid</li>
+		<li>SWKotORSpecificDroidWeapon_ShockArm</li>
+		<li>SWCPDroidApparelRestrictionTag_GadgetWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidWeapons_utility</li>
+    </tradeTags>
+	<verbs>
+		<li>
+		  <label>shock arm</label>
+		  <commandIcon>Items/droidweapon/droidweapon_shock</commandIcon>
+		  <!-- <verbClass>AthenaPort.Verb_ShootRunningBeam</verbClass> -->
+			  <verbClass>Verb_ShootBeam</verbClass>
+			  <showBurstShotStats>false</showBurstShotStats>
+			  <beamWidth>0.25</beamWidth>
+			  <beamMaxDeviation>0.5</beamMaxDeviation>
+			  <beamCurvature>0.6</beamCurvature>
+			  
+		  <hasStandardCommand>true</hasStandardCommand>
+		  <warmupTime>1.5</warmupTime>
+		  <range>5</range>
+		  <minRange>1.5</minRange>
+		  <stopBurstWithoutLos>false</stopBurstWithoutLos>
+		  <ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+		  <burstShotCount>8</burstShotCount>
+		  <beamDamageDef>guy762_BeamDamage_electrical</beamDamageDef>
+		  <soundCastTail>GunTail_Medium</soundCastTail>
+		  <muzzleFlashScale>9</muzzleFlashScale>
+		  <soundCastBeam>kotorsound_ionbeam</soundCastBeam>
+		  <beamGroundFleckDef>Fleck_BeamBurn</beamGroundFleckDef>
+		  <beamFleckChancePerTick>0.32</beamFleckChancePerTick>
+		  <beamMoteDef>guy762_Mote_ShockBeam</beamMoteDef>
+		  <beamEndEffecterDef>GraserBeam_End</beamEndEffecterDef>
+		  <beamChanceToStartFire>0</beamChanceToStartFire>
+		  <beamChanceToAttachFire>0</beamChanceToAttachFire>
+		  <beamLineFleckDef>Fleck_BeamSpark</beamLineFleckDef>
+		  <beamStartOffset>0.5</beamStartOffset>
+		  <beamLineFleckChanceCurve>
+			<points>
+			  <li>(0, 0)</li>
+			  <li>(0.65, 0.4)</li>
+			  <li>(1, 0.75)</li>
+			</points>
+		  </beamLineFleckChanceCurve>
+		  <ai_IsWeapon>true</ai_IsWeapon>
+		  <onlyManualCast>true</onlyManualCast>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>shock arm</label>
+					<visualLabel>mounted shock arm</visualLabel>
+					<canBeToggled>true</canBeToggled>
+					<description>A mounted shock arm.</description>
+				</li>
+			</verbProps>
+		</li>
+	</comps>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidWeaponCraftableBase">
+    <defName>guy762_DroidGadget_firefoam</defName>
+    <label>Droid firefoam sprayer</label>
+    <description>This compact firefoam applicator is required on automated starship repair crews by law nearly everywhere. Even just one of these can mean the difference between life and death.\n\nThis is equipped to the "gadget" weapon mount.</description>
+    <graphicData>
+      <texPath>Items/droidweapon/droidweapon_firefoam</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>80</MarketValue>
+	  
+	  <AccuracyTouch>0.90</AccuracyTouch>
+	  <AccuracyShort>0.80</AccuracyShort>
+	  <AccuracyMedium>0.60</AccuracyMedium>
+	  <AccuracyLong>0.50</AccuracyLong>
+	  <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+	  
+	  <WorkToMake>8000</WorkToMake>
+    </statBases>
+	
+	<recipeMaker>
+		<researchPrerequisites>
+			<li>guy762_ResearchKotOR_droidblasters</li>
+			<li>Firefoam</li>
+		</researchPrerequisites>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>30</Plasteel>
+		<ComponentIndustrial>5</ComponentIndustrial>
+	</costList>
+	
+    <apparel>
+      <ignoredByNonViolent>false</ignoredByNonViolent>
+	  <bodyPartGroups>
+        <li>guy762BG_Droid_GadgetMount</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidGadget_firefighter</li>
+		<li>KotORDroidGadget_repairdroid</li>
+		<li>SWKotORSpecificDroidWeapon_Firefoam</li>
+		<li>SWCPDroidApparelRestrictionTag_GadgetWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidWeapons_utility</li>
+    </tradeTags>
+	<verbs>
+		<li>
+			<label>firefoam spray</label>
+			<commandIcon>Items/droidweapon/droidweapon_firefoam</commandIcon>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>guy762_throwngrenade_foam</defaultProjectile>
+			<warmupTime>1</warmupTime>
+			<range>9</range>
+			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			<burstShotCount>6</burstShotCount>
+			<soundCast>FoamSpray_Resolve</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<onlyManualCast>true</onlyManualCast>
+			<violent>false</violent>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>firefoam spray</label>
+					<visualLabel>built-in firefoam spray</visualLabel>
+					<canBeToggled>true</canBeToggled>
+					<description>A built-in firefoam sprayer.</description>
+				</li>
+			</verbProps>
+		</li>
+	</comps>
+  </ThingDef>
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef Name="guy762_DroidGadget_kolto" ParentName="guy762_DroidWeaponCraftableBase">
+    <defName>guy762_DroidGadget_kolto</defName>
+    <label>Droid Kolto sprayer</label>
+    <description>An Adascorp prototype, these units have seen limited field testing during the Corellian campaign. The intent is to reduce the mass of a soldier's kit by replacing bulk quantities of Medpacs with a squad medical droid, though the efficiency of the device's applicator has been reported as "spotty".\n\nThis is equipped to the "gadget" weapon mount.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_hediff_kolto</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidweapon/droidweapon_kolto</texPath>
+    </graphicData>
+    <statBases>
+      <MarketValue>1000</MarketValue>
+
+	  <AccuracyTouch>0.90</AccuracyTouch>
+	  <AccuracyShort>0.80</AccuracyShort>
+	  <AccuracyMedium>0.60</AccuracyMedium>
+	  <AccuracyLong>0.50</AccuracyLong>
+	  
+	  <RangedWeapon_Cooldown>5</RangedWeapon_Cooldown>
+	  
+	  <WorkToMake>8000</WorkToMake>
+    </statBases>
+	
+	<recipeMaker>
+		<researchPrerequisites>
+			<li>guy762_ResearchKotOR_droidblasters</li>
+			<li>KOTOR_Research_Kolto</li>
+		</researchPrerequisites>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>30</Plasteel>
+		<ComponentIndustrial>3</ComponentIndustrial>
+		<KOTOR_kolto>6</KOTOR_kolto>
+	</costList>
+	
+    <apparel>
+      <ignoredByNonViolent>false</ignoredByNonViolent>
+	  <bodyPartGroups>
+        <li>guy762BG_Droid_GadgetMount</li>
+      </bodyPartGroups>
+	  <tags>
+		<li>KotORDroidGadget_medic</li>
+		<li>SWKotORSpecificDroidWeapon_KoltoSpray</li>
+		<li>SWCPDroidApparelRestrictionTag_GadgetWeaponSlot</li>
+	  </tags>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidWeapons_utility</li>
+	  <li>guy762TT_KotORMedicine</li>
+    </tradeTags>
+	<verbs>
+		<li>
+			<label>Kolto spray</label>
+			<commandIcon>Items/droidweapon/droidweapon_kolto</commandIcon>
+			<verbClass>Verb_Shoot</verbClass>
+			<hasStandardCommand>true</hasStandardCommand>
+			<defaultProjectile>guy762_throwngrenade_kolto</defaultProjectile>
+			<warmupTime>1</warmupTime>
+			<range>9</range>
+			<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+			<burstShotCount>6</burstShotCount>
+			<soundCast>FoamSpray_Resolve</soundCast>
+			<targetParams>
+				<canTargetLocations>true</canTargetLocations>
+			</targetParams>
+			<onlyManualCast>true</onlyManualCast>
+			<violent>false</violent>
+		</li>
+	</verbs>
+	<comps>
+		<li Class="MVCF.Comps.CompProperties_VerbGiver">
+			<verbProps>
+				<li>
+					<label>Kolto spray</label>
+					<visualLabel>built-in Kolto spray</visualLabel>
+					<description>A built-in Kolto sprayer.</description>
+				</li>
+			</verbProps>
+		</li>
+		<li Class="CompProperties_ApparelReloadable">
+			<maxCharges>60</maxCharges>
+			<hotKey>Misc4</hotKey>
+			<chargeNoun>Kolto sprays</chargeNoun>
+			<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
+			<!-- <destroyOnEmpty>true</destroyOnEmpty> -->
+				<destroyOnEmpty>false</destroyOnEmpty>
+				<ammoDef>KOTOR_kolto</ammoDef>
+				<ammoCountToRefill>6</ammoCountToRefill>
+		</li>
+	</comps>
+  </ThingDef>
+
+
+
+</Defs>

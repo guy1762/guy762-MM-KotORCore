@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <BodyPartDef>
+        <defName>guy762_BodyPart_weaponmount</defName>
+        <label>weapon mount</label>
+        <hitPoints>15</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <bleedRate>0</bleedRate>
+        <solid>true</solid>
+    </BodyPartDef>
+	
+	<BodyPartDef>
+        <defName>guy762_BodyPart_gadgetmount</defName>
+        <label>gadget mount</label>
+        <hitPoints>15</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <bleedRate>0</bleedRate>
+        <solid>true</solid>
+    </BodyPartDef>
+	
+	<BodyPartDef>
+        <defName>guy762_BodyPart_techupgrade</defName>
+        <label>tech upgrade slot</label>
+        <hitPoints>15</hitPoints>
+        <permanentInjuryChanceFactor>0</permanentInjuryChanceFactor>
+        <skinCovered>false</skinCovered>
+        <bleedRate>0</bleedRate>
+        <solid>true</solid>
+    </BodyPartDef>
+	
+
+  
+</Defs>

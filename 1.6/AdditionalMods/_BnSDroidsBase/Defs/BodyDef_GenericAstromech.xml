@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+   
+	<BodyDef Name="SWCP_BnSDroidBody_GenericAstromech">
+        <defName>SWCP_BnSDroidBody_GenericAstromech</defName>
+        <label>Astromech Droid</label>
+        <corePart>
+            <def>BS_MechanicalTorso</def>
+            <height>Middle</height>
+            <depth>Outside</depth>
+            <groups>
+                <li>Torso</li>
+            </groups>
+            <parts>
+                
+				<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+				<li>
+					<def>guy762_BodyPart_gadgetmount</def>
+					<customLabel>utility device mount</customLabel>
+					<coverage>0.1</coverage>
+					<groups>
+						<li>guy762BG_Droid_GadgetMount</li>
+					</groups>
+				</li>
+				<!-- <li> -->
+					<!-- <def>guy762_BodyPart_weaponmount</def> -->
+					<!-- <customLabel>standard weapon mount</customLabel> -->
+					<!-- <coverage>0.1</coverage> -->
+					<!-- <groups> -->
+						<!-- <li>guy762BG_Droid_WeaponMount_basic</li> -->
+					<!-- </groups> -->
+				<!-- </li> -->
+				<!-- <li> -->
+					<!-- <def>guy762_BodyPart_weaponmount</def> -->
+					<!-- <customLabel>special weapon mount</customLabel> -->
+					<!-- <coverage>0.1</coverage> -->
+					<!-- <groups> -->
+						<!-- <li>guy762BG_Droid_WeaponMount_adv</li> -->
+					<!-- </groups> -->
+				<!-- </li> -->
+				<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+				
+                <li>
+                    <def>BS_AirCoolingUnit</def>
+                    <coverage>0.005</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>BS_FluidReprocessor</def>
+                    <customLabel>left heatsink</customLabel>
+                    <coverage>0.005</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>BS_FuelProcessor</def>
+                    <customLabel>right heatsink</customLabel>
+                    <coverage>0.005</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>BS_Reactor</def>
+                    <coverage>0.005</coverage>
+                    <depth>Inside</depth>
+                    <groups>
+                        <li>Torso</li>
+                    </groups>
+                    </li>
+                
+                <li>
+                    <def>BS_MechanicalNeck</def>
+                    <coverage>0.08</coverage>
+                    <height>Top</height>
+                    <groups>
+                        <li>Neck</li>
+                    </groups>
+                    <parts>
+						<li>
+						  <def>Head</def>
+						  <coverage>0.80</coverage>
+						  <groups>
+							<li>UpperHead</li>
+							<li>FullHead</li>
+							<li>HeadAttackTool</li>
+						  </groups>
+						  <parts>
+							<li>
+							  <def>BS_MechanicalSkull</def>
+							  <coverage>0.18</coverage>
+							  <depth>Inside</depth>
+							  <groups>
+								<li>UpperHead</li>
+								<li>Eyes</li>
+								<li>FullHead</li>
+							  </groups>
+							  <parts>
+								<li>
+								  <def>BS_ArtificialBrain</def>
+								  <customLabel>CPU</customLabel>
+								  <coverage>0.8</coverage>
+								  <groups>
+									<li>UpperHead</li>
+									<li>Eyes</li>
+									<li>FullHead</li>
+								  </groups>
+								</li>
+							  </parts>
+							</li>
+							<li>
+							  <def>BS_SightSensor</def>
+							  <customLabel>light sensor</customLabel>
+							  <coverage>0.07</coverage>
+							  <groups>
+								<li>FullHead</li>
+								<li>Eyes</li>
+							  </groups>
+							  <woundAnchorTag>LeftEye</woundAnchorTag>
+							  <flipGraphic>true</flipGraphic>
+							  <visibleHediffRots>
+								<li>South</li>
+								<li>West</li>
+							  </visibleHediffRots>
+							</li>
+							<li>
+							  <def>BS_SightSensor</def>
+							  <customLabel>video recorder</customLabel>
+							  <coverage>0.07</coverage>
+							  <groups>
+								<li>FullHead</li>
+								<li>Eyes</li>
+							  </groups>
+							  <woundAnchorTag>RightEye</woundAnchorTag>
+							  <visibleHediffRots>
+								<li>South</li>
+								<li>East</li>
+							  </visibleHediffRots>
+							</li>
+							<li>
+							  <def>BS_HearingSensor</def>
+							  <customLabel>audio sensor</customLabel>
+							  <coverage>0.07</coverage>
+							  <flipGraphic>true</flipGraphic>
+							  <groups>
+								<li>UpperHead</li>
+								<li>FullHead</li>
+							  </groups>
+							</li>
+							<li>
+							  <def>BS_SmellSensor</def>
+							  <coverage>0.10</coverage>
+							  <groups>
+								<li>FullHead</li>
+							  </groups>
+							</li>
+							<li>
+							  <def>BS_MechanicalJaw</def>
+							  <coverage>0.15</coverage>
+							  <customLabel>fuel intake</customLabel>
+							  <groups>
+								<li>FullHead</li>
+								<li>Mouth</li>
+							  </groups>
+							</li>
+							
+							
+							<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+							<li>
+								<def>guy762_BodyPart_techupgrade</def>
+								<customLabel>software upgrade slot</customLabel>
+								<coverage>0.01</coverage>
+								<depth>Inside</depth>
+								<groups>
+									<li>guy762BG_Droid_Tech_software</li>
+								</groups>
+							</li>
+							<li>
+								<def>guy762_BodyPart_techupgrade</def>
+								<customLabel>hardware upgrade slot</customLabel>
+								<coverage>0.10</coverage>
+								<depth>Inside</depth>
+								<groups>
+									<li>guy762BG_Droid_Tech_hardware</li>
+								</groups>
+							</li>
+							<!--////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+							
+							
+						  </parts>
+						</li>
+                    </parts>
+                </li>
+				<li>
+                    <def>BS_MechanicalShoulder</def>
+                    <customLabel>manipulator arm mount</customLabel>
+                    <coverage>0.4</coverage>
+                    <groups>
+                        <li>Shoulders</li>
+                    </groups>
+                    <parts>
+                        <li>
+                            <def>BS_MechanicalArm</def>
+                            <customLabel>manipulator arm</customLabel>
+                            <coverage>0.35</coverage>
+                            <groups>
+                                <li>Arms</li>
+                            </groups>
+                            <parts>
+                                <li>
+                                    <def>BS_MechanicalHand</def>
+                                    <customLabel>manipulator hand</customLabel>
+                                    <coverage>0.05</coverage>
+                                    <height>Bottom</height>
+                                    <groups>
+                                        <li>Hands</li>
+										<li>RightHand</li>
+                                    </groups>
+                                    <parts>
+                                        <li>
+                                            <def>BS_MechanicalFinger</def>
+                                            <customLabel>left pincer</customLabel>
+                                            <coverage>0.06</coverage>
+                                            <groups>
+                                                <li>Hands</li>
+                                                <li>RightHand</li>
+                                            </groups>
+                                        </li>
+                                        <li>
+                                            <def>BS_MechanicalFinger</def>
+                                            <customLabel>right pincer</customLabel>
+                                            <coverage>0.07</coverage>
+                                            <groups>
+                                                <li>Hands</li>
+                                                <li>RightHand</li>
+                                            </groups>
+                                        </li>
+                                        <li>
+                                            <def>BS_MechanicalFinger</def>
+                                            <customLabel>center pincer</customLabel>
+                                            <coverage>0.08</coverage>
+                                            <groups>
+                                                <li>Hands</li>
+                                                <li>RightHand</li>
+                                            </groups>
+                                        </li>
+                                    </parts>
+                                </li>
+                            </parts>
+                        </li>
+                    </parts>
+                </li>
+				<li>
+                    <def>BS_InorganicWaist</def>
+					<customLabel>shield generator mount</customLabel>
+                    <coverage>0</coverage>
+                    <height>Bottom</height>
+                    <groups>
+                        <li>Waist</li>
+                    </groups>
+                </li>
+                <li>
+                    <def>BS_MechanicalLeg</def>
+                    <customLabel>left leg</customLabel>
+                    <coverage>0.07</coverage>
+                    <height>Bottom</height>
+					<groups>
+                        <li>Legs</li>
+                    </groups>
+                    <parts>
+                        <li>
+                            <def>BS_MechanicalWheel</def>
+                            <customLabel>forward left tread</customLabel>
+                            <coverage>0.15</coverage>
+                            <groups>
+                                <li>FrontLeftPaw</li>
+                            </groups>
+                        </li>
+                    </parts>
+                </li>
+                <li>
+                    <def>BS_MechanicalLeg</def>
+                    <customLabel>right leg</customLabel>
+                    <coverage>0.07</coverage>
+                    <height>Bottom</height>
+					<groups>
+                        <li>Legs</li>
+                    </groups>
+                    <parts>
+                        <li>
+                            <def>BS_MechanicalWheel</def>
+                            <customLabel>forward right tread</customLabel>
+                            <coverage>0.15</coverage>
+                            <groups>
+                                <li>FrontRightPaw</li>
+                            </groups>
+                        </li>
+                    </parts>
+                </li>
+                <li>
+                    <def>BS_MechanicalLeg</def>
+                    <customLabel>central leg</customLabel>
+                    <coverage>0.07</coverage>
+                    <height>Bottom</height>
+					<groups>
+                        <li>Legs</li>
+                    </groups>
+                    <parts>
+                        <li>
+                            <def>BS_MechanicalWheel</def>
+                            <customLabel>rear left tread</customLabel>
+                            <coverage>0.15</coverage>
+							<groups>
+                                <li>Feet</li>
+                            </groups>
+                        </li>
+                    </parts>
+                </li>
+				
+            </parts>
+        </corePart>
+    </BodyDef>
+	
+	
+	
+	
+
+  
+</Defs>

@@ -1245,7 +1245,7 @@
 	
 	
 	
-	<ThingDef Name="guy762_DroidArmorMakeable" MayRequire="Killathon.ArtificialBeings.SynCore" ParentName="guy762_armorbase_hard" Abstract="True">
+	<ThingDef Name="guy762_DroidArmorMakeable" ParentName="guy762_armorbase_hard" Abstract="True">
 		<recipeMaker>
 			<researchPrerequisite>guy762_ResearchKotOR_droidarmor</researchPrerequisite>
 			<recipeUsers Inherit="False">

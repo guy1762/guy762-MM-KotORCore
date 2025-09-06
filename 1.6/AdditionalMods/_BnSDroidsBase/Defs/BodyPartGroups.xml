@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_Torso</defName>
+    <label>torso</label>
+    <listOrder>100</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_UpperHead</defName>
+    <label>upper head</label>
+    <listOrder>200</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_FullHead</defName>
+    <label>full head</label>
+    <listOrder>199</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_Eyes</defName>
+    <label>eyes</label>
+    <listOrder>198</listOrder>
+  </BodyPartGroupDef>
+
+
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_Teeth</defName>
+    <label>teeth</label>
+    <listOrder>197</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_Mouth</defName>
+    <label>mouth</label>
+    <listOrder>196</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_Neck</defName>
+    <label>neck</label>
+    <listOrder>180</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_Arms</defName>
+    <label>arms</label>
+    <listOrder>90</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_Shoulders</defName>
+    <label>shoulders</label>
+    <listOrder>85</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_Hands</defName>
+    <label>hands</label>
+    <listOrder>80</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_LeftHand</defName>
+    <label>left fist</label>
+    <labelShort>fist</labelShort>
+    <listOrder>79</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_RightHand</defName>
+    <label>right fist</label>
+    <labelShort>fist</labelShort>
+    <listOrder>78</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_CenterHand</defName>
+    <label>center fist</label>
+    <labelShort>fist</labelShort>
+    <listOrder>78</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_MiddleFingers</defName>
+    <label>middle finger</label>
+    <labelShort>finger</labelShort>
+    <listOrder>77</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_Waist</defName>
+    <label>utility slot</label>
+    <listOrder>50</listOrder>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_Legs</defName>
+    <label>legs</label>
+    <listOrder>10</listOrder>
+  </BodyPartGroupDef>
+
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_Feet</defName>
+    <label>feet</label>
+    <listOrder>9</listOrder>
+  </BodyPartGroupDef>
+  
+  
+
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_FrontLeftPaw</defName>
+    <label>front left foot</label>
+    <labelShort>foot</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_FrontRightPaw</defName>
+    <label>front right foot</label>
+    <labelShort>foot</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_HeadAttackTool</defName>
+    <label>head</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_FrontLeftLeg</defName>
+    <label>front left leg</label>
+    <labelShort>leg</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_FrontRightLeg</defName>
+    <label>front right leg</label>
+    <labelShort>leg</labelShort>
+  </BodyPartGroupDef>
+  
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_Tech_software</defName>
+    <label>software upgrade</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_Tech_hardware</defName>
+    <label>hardware upgrade</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_Tech_sensor</defName>
+    <label>sensor upgrade</label>
+  </BodyPartGroupDef>
+  
+  
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_GadgetMount</defName>
+    <label>utility device mount</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_WeaponMount_basic</defName>
+    <label>standard weapon mount</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_WeaponMount_adv</defName>
+    <label>light ordnance mount</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_WeaponMount_hvy</defName>
+    <label>heavy weapon mount</label>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_WeaponMount_advhvy</defName>
+    <label>heavy ordnance mount</label>
+  </BodyPartGroupDef>
+  
+  
+
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_LeftBlade</defName>
+    <label>left blade</label>
+    <labelShort>blade</labelShort>
+  </BodyPartGroupDef>
+  
+  <BodyPartGroupDef>
+    <defName>guy762BG_Droid_RightBlade</defName>
+    <label>right blade</label>
+    <labelShort>blade</labelShort>
+  </BodyPartGroupDef>
+
+</Defs>

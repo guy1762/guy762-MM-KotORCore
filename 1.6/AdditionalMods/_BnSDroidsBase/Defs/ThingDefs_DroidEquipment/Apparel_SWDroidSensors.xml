@@ -1,0 +1,760 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  <ThingDef ParentName="guy762_DroidCraftableTech">
+    <defName>guy762_DroidSensor_motion</defName>
+    <label>droid motion tracker</label>
+    <description>A droid enhancement that increases the perception and tracking of targets in combat.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_SensorHediff_motion</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidtech/droidsensor_A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>250</MarketValue>
+	  
+	  <WorkToMake>6000</WorkToMake>
+    </statBases>
+	<equippedStatOffsets>
+		<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
+		<MeleeHitChance>0.1</MeleeHitChance>
+		<PawnTrapSpringChance>-0.2</PawnTrapSpringChance>
+	</equippedStatOffsets>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_droidtech</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+			<Intellectual>6</Intellectual>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+	</costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus1Accuracy2AwarenessSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+	<comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_SensorHediff_motion</hediff>
+        <part>BS_ArtificialBrain</part>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_SensorHediff_motion</defName>
+    <label>droid motion tracker</label>
+    <description>A droid enhancement that increases the perception and tracking of targets in combat.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.2</offset>
+          </li>
+		  <li>
+            <capacity>Hearing</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidTech">
+    <defName>guy762_DroidSensor_surveillance</defName>
+    <label>droid surveillance upgrade</label>
+    <description>An upgrade designed for light scout droids and other listening models.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_SensorHediff_surveillance</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidtech/droidsensor_B</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>600</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		<PawnTrapSpringChance>-0.3</PawnTrapSpringChance>
+		<MortarMissRadiusFactor>-0.1</MortarMissRadiusFactor>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus1Dodge3AwarenessSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+	<comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_SensorHediff_surveillance</hediff>
+        <part>BS_ArtificialBrain</part>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_SensorHediff_surveillance</defName>
+    <label>droid surveillance upgrade</label>
+    <description>An upgrade designed for light scout droids and other listening models.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.3</offset>
+          </li>
+		  <li>
+            <capacity>Hearing</capacity>
+            <offset>0.3</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidCraftableTech">
+    <defName>guy762_DroidSensor_fighting</defName>
+    <label>droid fighting upgrade</label>
+    <description>This module is designed to give a droid a tactical advantage in combat by increasing its sensor range, reflexes, and logic systems.</description>
+    <graphicData>
+      <texPath>Items/droidtech/droidsensor_E</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>1500</MarketValue>
+	  
+	  <WorkToMake>12000</WorkToMake>
+    </statBases>
+	<equippedStatOffsets>
+		<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+		<MeleeHitChance>0.2</MeleeHitChance>
+		<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+	</equippedStatOffsets>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_droidtech</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>12</Crafting>
+			<Intellectual>12</Intellectual>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>6</ComponentIndustrial>
+		<ComponentSpacer>4</ComponentSpacer>
+	</costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus2Accuracy2DefenseSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidCraftableTech">
+    <defName>guy762_DroidSensor_repair</defName>
+    <label>droid reference database</label>
+    <description>This unit provides a droid with a library of schematics that it can draw upon when repairing or dismantling technology.</description>
+    <graphicData>
+      <texPath>Items/droidtech/droidsensor_L</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>630</MarketValue>
+	  
+	  <WorkToMake>4000</WorkToMake>
+    </statBases>
+	<equippedStatOffsets>
+		<MechRepairSpeed>0.4</MechRepairSpeed>
+		<FixBrokenDownBuildingSuccessChance>0.4</FixBrokenDownBuildingSuccessChance>
+		<ConstructSuccessChance>0.4</ConstructSuccessChance>
+		<ABF_Stat_Artificial_SurgerySuccessChance MayRequire="Killathon.ArtificialBeings.SynCore">0.4</ABF_Stat_Artificial_SurgerySuccessChance>
+		<ABF_Stat_Artificial_TendQuality MayRequire="Killathon.ArtificialBeings.SynCore">0.4</ABF_Stat_Artificial_TendQuality>
+		<ABF_Stat_Artificial_TendSpeed MayRequire="Killathon.ArtificialBeings.SynCore">0.4</ABF_Stat_Artificial_TendSpeed>
+	</equippedStatOffsets>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_droidtech</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>5</Crafting>
+			<Intellectual>5</Intellectual>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>20</Plasteel>
+		<ComponentSpacer>2</ComponentSpacer>
+	</costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_tech</li>
+		<li>KotORDroidUpgrade_repair</li>
+		<li>SWCPSpecificDroidTech_Plus4RepairSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidTech">
+    <defName>guy762_DroidSensor_memory</defName>
+    <label>droid memory upgrade</label>
+    <description>This upgrade provides extra memory banks and computing power that can be integrated seamlessly with its existing programming.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_SensorHediff_memory</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidtech/droidsensor_K</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>560</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<ResearchSpeed>0.5</ResearchSpeed>
+		<GlobalLearningFactor>0.2</GlobalLearningFactor>
+		<EBSG_SkillLossRate>-0.2</EBSG_SkillLossRate>
+		<StudyEfficiency MayRequire="Ludeon.RimWorld.Anomaly">0.2</StudyEfficiency>
+		<EntityStudyRate MayRequire="Ludeon.RimWorld.Anomaly">0.2</EntityStudyRate>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_tech</li>
+		<li>KotORDroidUpgrade_computers</li>
+		<li>SWCPSpecificDroidTech_Plus5Research2LearningSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+	<comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_SensorHediff_memory</hediff>
+        <part>BS_ArtificialBrain</part>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_SensorHediff_memory</defName>
+    <label>droid memory upgrade</label>
+    <description>This upgrade provides extra memory banks and computing power that can be integrated seamlessly with its existing programming.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidCraftableTech">
+    <defName>guy762_DroidSensor_EMPresist</defName>
+    <label>droid system fortification</label>
+    <description>This module carefully monitors and regulates the circuitry of the droid, preventing minor spikes and fluctuations from causing disruptions.</description>
+    <graphicData>
+      <texPath>Items/droidtech/droidsensor_G</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>2400</MarketValue>
+	  
+	  <WorkToMake>8000</WorkToMake>
+    </statBases>
+	<equippedStatOffsets>
+		<EMPResistance>0.5</EMPResistance>
+	</equippedStatOffsets>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_iondamp</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>10</Crafting>
+			<Intellectual>12</Intellectual>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>4</ComponentIndustrial>
+		<ComponentSpacer>2</ComponentSpacer>
+		<KOTOR_IngotCortosis>4</KOTOR_IngotCortosis>
+	</costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_EMPResistanceSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidTech">
+    <defName>guy762_DroidSensor_battle</defName>
+    <label>droid battle upgrade</label>
+    <description>This module is a step up from the Droid Fighting Upgrade and provides your droid with a library of countless tactical engagements to draw upon for reference.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_SensorHediff_battle</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidtech/droidsensor_J</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>7800</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<ShootingAccuracyPawn>0.3</ShootingAccuracyPawn>
+		<MeleeHitChance>0.3</MeleeHitChance>
+		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<PawnTrapSpringChance>-0.2</PawnTrapSpringChance>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus3Accuracy2Dexterity2AwarenessSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+	<comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_SensorHediff_battle</hediff>
+        <part>BS_ArtificialBrain</part>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_SensorHediff_battle</defName>
+    <label>droid battle upgrade</label>
+    <description>This module is designed to give a droid a tactical advantage in combat by increasing its sensor range, reflexes, and logic systems.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.2</offset>
+          </li>
+		  <li>
+            <capacity>Hearing</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidTech">
+    <defName>guy762_DroidSensor_microoptics</defName>
+    <label>droid micro-optics</label>
+    <description>This sensor array includes several optical sensors that can see changes in substances at the molecular level, allowing the droid to more accurately identify hazardous materials.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_SensorHediff_microoptics</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidtech/droidsensor_H</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>8100</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<PawnTrapSpringChance>-0.5</PawnTrapSpringChance>
+		<MortarMissRadiusFactor>-1</MortarMissRadiusFactor>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_tech</li>
+		<li>SWCPSpecificDroidTech_Plus5AwarenessSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORElite</li>
+	  <li>guy762TT_DroidUpgrades_rare</li>
+    </tradeTags>
+	<comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_SensorHediff_microoptics</hediff>
+        <part>BS_ArtificialBrain</part>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_SensorHediff_microoptics</defName>
+    <label>droid micro-optics</label>
+    <description>This sensor array includes several optical sensors that can see changes in substances at the molecular level, allowing the droid to more accurately identify hazardous materials.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.5</offset>
+          </li>
+		  <li>
+            <capacity>Hearing</capacity>
+            <offset>0.5</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidTech">
+    <defName>guy762_DroidSensor_perception</defName>
+    <label>droid perception sensors</label>
+    <description>This sensor cluster scans the entire light spectrum and audio frequencies well beyond the range of most organic beings. It is nearly impossible for something to occur within the droid's perceptive range without its knowing about it.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_SensorHediff_perception</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidtech/droidsensor_I</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>10200</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		<PawnTrapSpringChance>-0.8</PawnTrapSpringChance>
+		<MortarMissRadiusFactor>-0.2</MortarMissRadiusFactor>
+		<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
+		<MeleeHitChance>0.2</MeleeHitChance>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus2Accuracy8AwarenessSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORElite</li>
+	  <li>guy762TT_DroidUpgrades_rare</li>
+    </tradeTags>
+	<comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_SensorHediff_perception</hediff>
+        <part>BS_ArtificialBrain</part>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_SensorHediff_perception</defName>
+    <label>droid perception sensors</label>
+    <description>This sensor cluster scans the entire light spectrum and audio frequencies well beyond the range of most organic beings. It is nearly impossible for something to occur within the droid's perceptive range without its knowing about it.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <offset>0.8</offset>
+          </li>
+		  <li>
+            <capacity>Hearing</capacity>
+            <offset>0.8</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidTech">
+    <defName>guy762_DroidSensor_warfare</defName>
+    <label>droid warfare upgrade</label>
+    <description>A highly complex module with near unlimited learning capacity and highly modifiable software. Designed to be a costly alternative to training, these modules were designed to create master generals, tacticians, and assassins after only a short install time.\n\nThis is an advanced piece of technology, and can only be equipped on the following droid models:</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_SensorHediff_warfare</HediffDef>
+		
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_T3series</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_KX12APD</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_DevAD</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_SentWD</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_ADMkI</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_ADMkI_sf</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_ADMkIV</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_ADMkIV_sith</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_HKseries</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_HK50series</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_HK51series</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_GOTO</AlienRace.ThingDef_AlienRace>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidtech/droidsensor_F</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>12800</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<ShootingAccuracyPawn>0.3</ShootingAccuracyPawn>
+		<MeleeHitChance>0.3</MeleeHitChance>
+		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus3Accuracy2Agility2DefenseSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_DroidWarfareUpgrade</li>
+		<!-- <li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li> -->
+	  </tags>
+	  <bodyPartGroups>
+        <li>Eyes</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORElite</li>
+	  <li>guy762TT_DroidUpgrades_rare</li>
+    </tradeTags>
+	<comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_SensorHediff_warfare</hediff>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_SensorHediff_warfare</defName>
+    <label>droid warfare upgrade</label>
+    <description>A highly complex module with near unlimited learning capacity and highly modifiable software. Designed to be a costly alternative to training, these modules were designed to create master generals, tacticians, and assassins after only a short install time.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+			  <capacity>Consciousness</capacity>
+			  <offset>0.3</offset>
+		  </li>
+		  <li>
+            <capacity>Moving</capacity>
+            <offset>0.2</offset>
+          </li>
+		  <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.2</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</Defs>

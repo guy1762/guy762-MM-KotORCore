@@ -62,7 +62,8 @@
 		<li IfModActive="kaitorisenkou.ModularWeapons2">1.6/AdditionalMods/ModularWeapons2</li>
 		
 		<li IfModActive="guy762.KotORDroids">1.6/AdditionalMods/_DroidsBase</li>
-		<li IfModActive="SWCP.GCWVehicles">1.6/AdditionalMods/_DroidsBase</li>
+		
+		<li IfModActive="SWCP.GCWVehicles">1.6/AdditionalMods/_BnSDroidsBase</li>
 		
 		<li IfModActive="guy762.KotORFactions">1.6/AdditionalMods/_FactionsBase</li>
 		<li IfModActive="SWCP.guy762.WarlordEmpire">1.6/AdditionalMods/_FactionsBase</li>

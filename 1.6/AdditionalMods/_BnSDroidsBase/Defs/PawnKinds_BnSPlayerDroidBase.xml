@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <PawnKindDef Name="guy762_BnSDroidPawnKindBase" ParentName="BasePlayerPawnKind" Abstract="True">
+        <label>colony droid</label>
+        <defaultFactionType>PlayerColony</defaultFactionType>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		<maxGenerationAge>1</maxGenerationAge>
+		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
+		<initialResistanceRange>13~21</initialResistanceRange>
+		<modExtensions>
+            <!-- <li Class="ArtificialBeings.ABF_ArtificialPawnKindExtension"> -->
+                <!-- <pawnState>Reprogrammable</pawnState> -->
+                <!-- <caravanRole>Chattel</caravanRole> -->
+            <!-- </li> -->
+        </modExtensions>
+    </PawnKindDef>
+	
+	
+	
+	
+
+</Defs>

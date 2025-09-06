@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+
+	
+	<ThingDef Name="SWCP_BnSDroidRace_BASE" ParentName="BS_UrbMech" Abstract="True">
+		<defName>SWCP_BnSDroidRace_BASE</defName>
+		<label>droid</label>
+	
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<statBases>
+			<MarketValue>1500</MarketValue>
+			<MoveSpeed>5</MoveSpeed>
+			<PsychicSensitivity>0</PsychicSensitivity>
+			<ToxicResistance>1</ToxicResistance>
+			<Flammability>0.5</Flammability>
+			<Fertility MayRequire="Ludeon.Rimworld.Biotech"> 0</Fertility>
+			<SM_HeadSize_Cosmetic>1.05</SM_HeadSize_Cosmetic>
+			<SM_BodySizeMultiplier>0.85</SM_BodySizeMultiplier>
+			<ComfyTemperatureMin>12</ComfyTemperatureMin>
+			<ComfyTemperatureMax>40</ComfyTemperatureMax>
+			<MeatAmount>0</MeatAmount>
+			<LeatherAmount>0</LeatherAmount>
+			<RoyalFavorValue>1</RoyalFavorValue>
+			<IncomingDamageFactor>0.75</IncomingDamageFactor>
+
+			<SM_FlirtChance>0</SM_FlirtChance>
+			<SlaveSuppressionFallRate MayRequire="Ludeon.RimWorld.Ideology">-1.00</SlaveSuppressionFallRate>
+
+			<VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">2</VacuumResistance>
+			<HypoxiaResistance MayRequire="kentington.saveourship2">1</HypoxiaResistance>
+			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
+
+			<MaxNutrition>1</MaxNutrition>
+			<CarryingCapacity>50</CarryingCapacity>
+			<WorkSpeedGlobal>0.9</WorkSpeedGlobal>
+			<GlobalLearningFactor>1</GlobalLearningFactor>
+
+			<ArmorRating_Heat>0.5</ArmorRating_Heat>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Sharp>0.32</ArmorRating_Sharp>
+		</statBases>
+		
+		<ingredient Inherit="False"/>
+		
+		<race>
+		  <!-- <thinkTreeMain>Mechanoid</thinkTreeMain>-->
+		  <thinkTreeMain>Humanlike</thinkTreeMain>
+		  <thinkTreeConstant>HumanlikeConstant</thinkTreeConstant>
+		  <intelligence>Humanlike</intelligence>
+		  <makesFootprints>true</makesFootprints>
+		  <lifeExpectancy>200</lifeExpectancy>
+		  <nameCategory>HumanStandard</nameCategory>
+		  <!-- <body>BS_TVAndroid</body> -->
+		  <baseBodySize>1</baseBodySize>
+		  <baseHealthScale>1</baseHealthScale>
+		  <!-- <baseHungerRate>2</baseHungerRate> -->
+
+		  <gestationPeriodDays>18</gestationPeriodDays>
+		  
+		  <willNeverEat>
+			<li>GoJuice</li>
+			<li>WakeUp</li>
+			<li>Yayo</li>
+			<li>SmokeleafJoint</li>
+			<li>PsychiteTea</li>
+			<li>Flake</li>
+			<li>Luciferium</li>
+			<li>Penoxycyline</li>
+			<li>Beer</li>
+			
+			<li>KOTOR_Deathstick</li>
+			<li>KOTOR_Spice</li>
+			<li>KOTOR_RawRhydonium</li>
+			
+			<li>guy762_medpac</li>
+			<li>guy762_medpac_adv</li>
+			<li>guy762_medpac_life</li>
+			<li>guy762_medpac_antidote</li>
+			
+			<li>guy762_stim_battle</li>
+			<li>guy762_stim_hyperbattle</li>
+			<li>guy762_stim_echani</li>
+			
+			<li>guy762_stim_con</li>
+			<li>guy762_stim_hypercon</li>
+			<li>guy762_stim_dex</li>
+			<li>guy762_stim_hyperdex</li>
+			<li>guy762_stim_str</li>
+			<li>guy762_stim_hyperstr</li>
+		  </willNeverEat>
+
+		  <!-- <fleshType>Mechanoid</fleshType> --> <!--Not worth it. Too much hardcoded trouble.-->
+		  <canBecomeShambler>false</canBecomeShambler>
+
+		  <useMeatFrom IsNull="True"/>
+		  <hasMeat>false</hasMeat>
+		  <!-- <hasMeat>false</hasMeat> -->
+		  <leatherDef IsNull="True"/>
+		  <bloodSmearDef IsNull="True"/>
+		  <bloodDef>Filth_MachineBits</bloodDef>
+		  
+		  <manhunterOnDamageChance>0.5</manhunterOnDamageChance>
+		  <manhunterOnTameFailChance>0.02</manhunterOnTameFailChance>
+
+		  <soundMeleeHitPawn>Pawn_Melee_MechanoidBash_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_MechanoidBash_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_MechanoidBash_Miss</soundMeleeMiss>
+		  <soundCallIntervalRange>1000~2000</soundCallIntervalRange>
+
+		  <lifeStageWorkSettings Inherit="False"/>
+		  <hediffGiverSets Inherit="False">
+			<li>BS_RobotHediffGiver</li>
+		  </hediffGiverSets>
+		  
+		  <lifeStageAges Inherit="False">
+			<!-- We're not using custom defs because some Rimworld stuff is hardcoded to look for certain defs.
+			 Better from a compatibility standpoint to simply make the stages exist but not be active. -->
+			<li>
+			  <def>HumanlikeBaby</def>
+			  <minAge>0</minAge>
+			  <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+			  <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+			  <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+			</li>
+			<li>
+			  <def>HumanlikeChild</def>
+			  <minAge>3</minAge>
+			  <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+			  <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+			  <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+			</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">
+			  <def>HumanlikePreTeenager</def>
+			  <minAge>9</minAge>
+			  <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+			  <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+			  <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+			</li>
+			<li>
+			  <def>HumanlikeTeenager</def>
+			  <minAge>13</minAge>
+			  <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+			  <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+			  <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+			</li>
+			<li>
+			  <def>HumanlikeAdult</def>
+			  <minAge>18</minAge>
+			  <soundWounded>Pawn_Mech_Scyther_Wounded</soundWounded>
+			  <soundDeath>Pawn_Mech_Scyther_Death</soundDeath>
+			  <soundCall>Pawn_Mech_Scyther_Call</soundCall>
+			</li>
+		  </lifeStageAges>
+		  <ageGenerationCurve>
+			<points>
+			  <li>(20,0)</li>
+			  <li>(21,100)</li>
+			  <li>(30,100)</li>
+			  <li>(40,0)</li>
+			</points>
+		  </ageGenerationCurve>
+		</race>
+		
+		<damageMultipliers>
+		  <li>
+			<damageDef>Stun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_RangedDamage_KOstun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_GrenadeDamage_stun</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_PoisonDamage_saber</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>Frostbite</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		  <li>
+			<damageDef>guy762_RangedDamage_kolto</damageDef>
+			<multiplier>0</multiplier>
+		  </li>
+		</damageMultipliers>
+		
+		<modExtensions Inherit="False" />
+
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<HediffDef Name="SWCP_DroidHediff_NonSapientDroid" ParentName="BS_DefaultRaceTracker">
+		<defName>SWCP_DroidHediff_NonSapientDroid</defName>
+		<label>non-sapient droid</label>
+		<!-- <hediffClass>BigAndSmall.RaceTracker</hediffClass> -->
+		
+
+		<abilities></abilities>
+		
+		<comps Inherit="False">
+		  <li Class="BigAndSmall.CompProperties_Race">
+			<!-- Cosmetic -->
+			<bodyDefOverride>Female</bodyDefOverride>
+			<bodyDefOverride_Female>Female</bodyDefOverride_Female>
+			<disableHair>true</disableHair>
+			<disableBeards>true</disableBeards>
+			<canSwapAwayFrom>false</canSwapAwayFrom>
+		  </li>
+		</comps>
+		
+		<stages Inherit="False"><!-- You'll have to overwrite this if you want to change them due to how the lists are combined. -->
+		  <li>
+			<painFactor>0.5</painFactor>
+			<totalBleedFactor>0</totalBleedFactor>
+			<statFactors>
+			  <SM_FlirtChance>0</SM_FlirtChance>
+			  <!-- <WorkSpeedGlobal>0.5</WorkSpeedGlobal> -->
+			  <!-- <GlobalLearningFactor>0.4</GlobalLearningFactor> -->
+			  <PsychicSensitivity>0</PsychicSensitivity>
+			</statFactors>
+			<statOffsets>
+				<VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">2</VacuumResistance>
+				<ToxicResistance>2</ToxicResistance>
+			</statOffsets>
+			<damageFactors>
+			  <Stun>0</Stun>
+			  <Frostbite>0</Frostbite>
+			  <guy762_RangedDamage_KOstun>0</guy762_RangedDamage_KOstun>
+			  <guy762_GrenadeDamage_stun>0</guy762_GrenadeDamage_stun>
+			  <guy762_PoisonDamage_saber>0</guy762_PoisonDamage_saber>
+			  <guy762_RangedDamage_kolto>0</guy762_RangedDamage_kolto>
+			</damageFactors>
+			
+			<socialFightChanceFactor>0</socialFightChanceFactor>
+			<makeImmuneTo>
+				<li>Flu</li>
+				<li>Malaria</li>
+				<li>SleepingSickness</li>
+				<li>Plague</li>
+				<li>WoundInfection</li>
+				<li>LungRot</li>
+				<li>GutWorms</li>
+				<li>MuscleParasites</li>
+				<li>OrganDecay</li>
+				<li>FoodPoisoning</li>
+
+				<!-- <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">PsychicAmplifier</li> -->
+				
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicEntropy</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicBreakdown</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicAnesthesia</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicBurden</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicBlindness</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicVertigo</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicFocus</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">EntropyLink</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Joyfuzz</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicLove</li>
+
+				<li MayRequire="Ludeon.RimWorld.Royalty">BloodRot</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Abasia</li>
+
+				<li MayRequire="Ludeon.RimWorld.Ideology">NeuralSupercharge</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">BiosculptingSickness</li>
+
+				<li MayRequire="Ludeon.RimWorld.Ideology">WorkFocus</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">PreachHealth</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">BerserkTrance</li>
+
+				<li MayRequire="Ludeon.RimWorld.Ideology">ResearchCommand</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">FarmingCommand</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">MiningCommand</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ImmunityDrive</li>
+				
+				<li MayRequire="Ludeon.RimWorld.Biotech">ToxGasExposure</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Deathrest</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">InterruptedDeathrest</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestExhaustion</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">HemogenCraving</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">RegenerationComa</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">PsychicBond</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">PsychicBondTorn</li>
+				
+				<li MayRequire="Ludeon.RimWorld.Odyssey">VolcanicAsh</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">VacuumExposure</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">VacuumBurn</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">GravNausea</li>
+
+
+
+				<li MayRequire="lee.theforce.lightsaber">Lightsaber_Stance</li>
+				<li MayRequire="lee.theforce.lightsaber">Force_TelekineticLightsaber</li>
+				<li MayRequire="lee.theforce.lightsaber">Force_LightsaberShortCircuit</li>
+				
+				
+				<li MayRequire="lee.theforce.standalone">Force_Rage</li>
+				<li MayRequire="lee.theforce.standalone">Force_WaveOfHatred</li>
+				<li MayRequire="lee.theforce.standalone">Force_DarkSideHatred</li>
+				<li MayRequire="lee.theforce.standalone">Force_DrainedVitality</li>
+				<li MayRequire="lee.theforce.standalone">Force_SiphonedVitality</li>
+				<li MayRequire="lee.theforce.standalone">Force_Phantom</li>
+
+				<li MayRequire="lee.theforce.standalone">Force_EnhanceForce</li>
+				<li MayRequire="lee.theforce.standalone">Jedi_Training_Combat</li>
+				<li MayRequire="lee.theforce.standalone">Jedi_Training_Mental</li>
+				<li MayRequire="lee.theforce.standalone">Jedi_Training_Social</li>
+				<li MayRequire="lee.theforce.standalone">Jedi_Training_Manipulation</li>
+				<li MayRequire="lee.theforce.standalone">Jedi_Training_Meditation</li>
+				<li MayRequire="lee.theforce.standalone">ForceBond_MasterApprentice</li>
+				<li MayRequire="lee.theforce.standalone">Force_Master</li>
+				<li MayRequire="lee.theforce.standalone">Force_Apprentice</li>
+				<li MayRequire="lee.theforce.standalone">Force_TeachingCooldown</li>
+
+				<li MayRequire="lee.theforce.standalone">Force_Healing</li>
+				<li MayRequire="lee.theforce.standalone">Force_Stabilize</li>
+				<li MayRequire="lee.theforce.standalone">Force_Revitalize</li>
+				<li MayRequire="lee.theforce.standalone">Force_EnlightenmentHediff</li>
+
+				<li MayRequire="lee.theforce.standalone">Force_ConstructedLimb</li>
+				<li MayRequire="lee.theforce.standalone">Force_ConstructedArm</li>
+				<li MayRequire="lee.theforce.standalone">Force_Ghost</li>
+				<li MayRequire="lee.theforce.standalone">Force_SithGhost</li>
+
+				<li MayRequire="lee.theforce.standalone">Force_SpeedBoost</li>
+				<li MayRequire="lee.theforce.standalone">Force_Precognition</li>
+				<li MayRequire="lee.theforce.standalone">Force_ForceBody</li>
+				<li MayRequire="lee.theforce.standalone">Force_BattleMeditation</li>
+				<li MayRequire="lee.theforce.standalone">Force_BattleMeditationEnhanced</li>
+				<li MayRequire="lee.theforce.standalone">Force_ForceCloak</li>
+				<li MayRequire="lee.theforce.standalone">Force_Malacia</li>
+
+				<li MayRequire="lee.theforce.standalone">Force_TemporaryHearingLoss</li>
+				<li MayRequire="lee.theforce.standalone">Force_ComfortSpell</li>
+				<li MayRequire="lee.theforce.standalone">Force_SoulPyreHealing</li>
+
+				<li MayRequire="lee.theforce.standalone">Force_Sacrifice</li>
+				<li MayRequire="lee.theforce.standalone">Force_SithExperiment_DarkCorruption</li>
+				<li MayRequire="lee.theforce.standalone">Force_SithZombie</li>
+			</makeImmuneTo>
+			<disabledWorkTags>
+				<li>Artistic</li>
+			</disabledWorkTags>
+			
+			<disablesNeeds>
+				<li>DrugDesire</li>
+				<li MayRequire="Dubwise.DubsBadHygiene">Hygiene</li>
+				<li MayRequire="Dubwise.DubsBadHygiene">Bladder</li>
+				<li MayRequire="Dubwise.DubsBadHygiene">DBHThirst</li>
+				<li MayRequire="rim.job.world">Sex</li>
+				<li>RoomSize</li>
+				<li>Joy</li>
+				<li>Beauty</li>
+				<li>Comfort</li>
+				<li>Outdoors</li>
+				<li>Indoors</li>
+				<li>Mood</li>
+				
+				<li>Rest</li>
+			</disablesNeeds>
+		  </li>
+		</stages>
+
+		<modExtensions>
+		  <li Class="BigAndSmall.PawnExtension">
+			<traitIcon>BS_Traits/robot</traitIcon>
+			
+			<!-- <forcedHediffs><li>BS_RobotSapient</li></forcedHediffs> -->
+			<nullsThoughts>
+			  <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalReceived</li>
+			  <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalDemanded</li>
+			  <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Male</li>
+			  <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Male</li>
+			  <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Male</li>
+			  <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Social_Male</li>
+			  <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Male</li>
+			  <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Male</li>
+			  <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Female</li>
+			  <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Female</li>
+			  <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Female</li>
+			  <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Social_Female</li>
+			  <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Female</li>
+			  <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Female</li>
+			  <li>Naked</li>
+			  
+			  <li MayRequire="guy762.KotORFactions">guy762_ThoughtDef_MstBatlMed_Buff</li>
+			  <li MayRequire="guy762.KotORFactions">guy762_ThoughtDef_MstBatlMed_Debuff</li>
+			</nullsThoughts>
+			<geneCategoryFilters>
+			  <blacklist>
+				<!-- <li MayRequire="Ludeon.Rimworld.Biotech">Pain</li> -->
+				<li MayRequire="Ludeon.Rimworld.Biotech">Reproduction</li>
+			  </blacklist>
+			</geneCategoryFilters>
+			<geneFilters>
+			  <blacklist>
+				<li MayRequire="Ludeon.Rimworld.Biotech">Brow_Heavy</li>
+				<li MayRequire="Ludeon.Rimworld.Biotech">FacialRidges</li>
+			  </blacklist>
+			</geneFilters>
+			<geneTagFilters>
+			  <blacklist>
+				<li>Jaw</li>
+				<li>Nose</li>
+				<li>Ears</li>
+				<li>EyeColor</li>
+				<li>BeardStyle</li>
+				<li>Fur</li>
+				<li>HairStyle</li>
+			  </blacklist>
+			</geneTagFilters>
+			<surgeryRecipes>
+			  <blacklist>
+				<li MayRequire="Ludeon.RimWorld.Royalty">InstallStoneskinGland</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">InstallArmorskinGland</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">InstallToughskinGland</li>
+				<!-- <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Odyssey">InstallVacskinGland</li> -->
+				<li>InstallNaturalLiver</li>
+				<li>InstallNaturalLung</li>
+				<li>InstallNaturalKidney</li>
+				<li>InstallNaturalHeart</li>
+				<!-- <li>BS_TVConversion</li> -->
+				<!-- <li>BS_SynthConversion</li> -->
+			  </blacklist>
+			  <allowlist>
+				<li>BS_RepairRobotBrain</li>
+				<li>BS_RepairRobotOrgan</li>
+				<li>BS_RepairRobotPart</li>
+			  </allowlist>
+			</surgeryRecipes>
+			
+			<pawnDiet>SWCP_DroidDiet</pawnDiet>
+			<babyStartAge>20</babyStartAge>
+			
+			
+			<!-- <traitFilters> -->
+			  <!-- <whitelist> -->
+				<!-- <li>Asexual</li> -->
+			  <!-- </whitelist> -->
+			<!-- </traitFilters> -->
+			
+			<hediffFilters>
+			  <banlist>
+				<!-- <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">PsychicAmplifier</li> -->
+				
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicEntropy</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicBreakdown</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicAnesthesia</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicBurden</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicBlindness</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicVertigo</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicFocus</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">EntropyLink</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Joyfuzz</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicLove</li>
+
+				<li MayRequire="Ludeon.RimWorld.Royalty">BloodRot</li>
+				<li MayRequire="Ludeon.RimWorld.Royalty">Abasia</li>
+
+				<li MayRequire="Ludeon.RimWorld.Ideology">NeuralSupercharge</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">BiosculptingSickness</li>
+
+				<li MayRequire="Ludeon.RimWorld.Ideology">WorkFocus</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">WorkDrive</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">PreachHealth</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">BerserkTrance</li>
+
+				<li MayRequire="Ludeon.RimWorld.Ideology">ResearchCommand</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">FarmingCommand</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ProductionCommand</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">MiningCommand</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">ImmunityDrive</li>
+				
+				<li MayRequire="Ludeon.RimWorld.Biotech">ToxGasExposure</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">Deathrest</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">InterruptedDeathrest</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">DeathrestExhaustion</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">HemogenCraving</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">RegenerationComa</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">PsychicBond</li>
+				<li MayRequire="Ludeon.RimWorld.Biotech">PsychicBondTorn</li>
+				
+				<li MayRequire="Ludeon.RimWorld.Odyssey">VolcanicAsh</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">VacuumExposure</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">VacuumBurn</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">GravNausea</li>
+				
+				
+				
+				<li MayRequire="lee.theforce.lightsaber">Lightsaber_Stance</li>
+				<li MayRequire="lee.theforce.lightsaber">Force_TelekineticLightsaber</li>
+				<li MayRequire="lee.theforce.lightsaber">Force_LightsaberShortCircuit</li>
+
+
+
+				<li MayRequire="lee.theforce.standalone">Force_Rage</li>
+				<li MayRequire="lee.theforce.standalone">Force_WaveOfHatred</li>
+				<li MayRequire="lee.theforce.standalone">Force_DarkSideHatred</li>
+				<li MayRequire="lee.theforce.standalone">Force_DrainedVitality</li>
+				<li MayRequire="lee.theforce.standalone">Force_SiphonedVitality</li>
+				<li MayRequire="lee.theforce.standalone">Force_Phantom</li>
+
+				<li MayRequire="lee.theforce.standalone">Force_EnhanceForce</li>
+				<li MayRequire="lee.theforce.standalone">Jedi_Training_Combat</li>
+				<li MayRequire="lee.theforce.standalone">Jedi_Training_Mental</li>
+				<li MayRequire="lee.theforce.standalone">Jedi_Training_Social</li>
+				<li MayRequire="lee.theforce.standalone">Jedi_Training_Manipulation</li>
+				<li MayRequire="lee.theforce.standalone">Jedi_Training_Meditation</li>
+				<li MayRequire="lee.theforce.standalone">ForceBond_MasterApprentice</li>
+				<li MayRequire="lee.theforce.standalone">Force_Master</li>
+				<li MayRequire="lee.theforce.standalone">Force_Apprentice</li>
+				<li MayRequire="lee.theforce.standalone">Force_TeachingCooldown</li>
+
+				<li MayRequire="lee.theforce.standalone">Force_Healing</li>
+				<li MayRequire="lee.theforce.standalone">Force_Stabilize</li>
+				<li MayRequire="lee.theforce.standalone">Force_Revitalize</li>
+				<li MayRequire="lee.theforce.standalone">Force_EnlightenmentHediff</li>
+
+				<li MayRequire="lee.theforce.standalone">Force_ConstructedLimb</li>
+				<li MayRequire="lee.theforce.standalone">Force_ConstructedArm</li>
+				<li MayRequire="lee.theforce.standalone">Force_Ghost</li>
+				<li MayRequire="lee.theforce.standalone">Force_SithGhost</li>
+
+				<li MayRequire="lee.theforce.standalone">Force_SpeedBoost</li>
+				<li MayRequire="lee.theforce.standalone">Force_Precognition</li>
+				<li MayRequire="lee.theforce.standalone">Force_ForceBody</li>
+				<li MayRequire="lee.theforce.standalone">Force_BattleMeditation</li>
+				<li MayRequire="lee.theforce.standalone">Force_BattleMeditationEnhanced</li>
+				<li MayRequire="lee.theforce.standalone">Force_ForceCloak</li>
+				<li MayRequire="lee.theforce.standalone">Force_Malacia</li>
+
+				<li MayRequire="lee.theforce.standalone">Force_TemporaryHearingLoss</li>
+				<li MayRequire="lee.theforce.standalone">Force_ComfortSpell</li>
+				<li MayRequire="lee.theforce.standalone">Force_SoulPyreHealing</li>
+
+				<li MayRequire="lee.theforce.standalone">Force_Sacrifice</li>
+				<li MayRequire="lee.theforce.standalone">Force_SithExperiment_DarkCorruption</li>
+				<li MayRequire="lee.theforce.standalone">Force_SithZombie</li>
+			  </banlist>
+			</hediffFilters>
+			
+			
+			<!-- <apparelRestrictions> -->
+				<!-- <absolutelyNothing>True</absolutelyNothing> -->
+				<!-- <tags> -->
+					<!-- <allowlist> -->
+						<!-- <li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li> -->
+						<!-- <li>SWCPDroidApparelRestrictionTag_Backpacks</li> -->
+						<!-- <li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li> -->
+						
+						<!-- <li>SWCPDroidApparelRestrictionTag_LightArmor</li> -->
+						<!-- <li>SWCPDroidApparelRestrictionTag_MediumArmor</li> -->
+						<!-- <li>SWCPDroidApparelRestrictionTag_HeavyArmor</li> -->
+						
+						<!-- <li>SWCPDroidApparelRestrictionTag_ShieldSlot</li> -->
+						<!-- <li>SWCPDroidApparelRestrictionTag_HeavyShieldSlot</li> -->
+						
+						<!-- <li>SWCPDroidApparelRestrictionTag_SoftwareTechSlot</li> -->
+						<!-- <li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li> -->
+						<!-- <li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li> -->
+						
+						<!-- <li>SWCPDroidApparelRestrictionTag_GadgetWeaponSlot</li> -->
+						<!-- <li>SWCPDroidApparelRestrictionTag_StandardWeaponSlot</li> -->
+						<!-- <li>SWCPDroidApparelRestrictionTag_HeavyWeaponSlot</li> -->
+						
+						<!-- <li>SWCPDroidApparelRestrictionTag_LightCannonSlot</li> -->
+						<!-- <li>SWCPDroidApparelRestrictionTag_HeavyCannonSlot</li> -->
+						
+						<!-- <li>SWCPDroidApparelRestrictionTag_DroidCloakingDevice</li> -->
+						<!-- <li>SWCPDroidApparelRestrictionTag_DroidWarfareUpgrade</li> -->
+						<!-- <li>SWCPDroidApparelRestrictionTag_DroidScavUpgrade</li> -->
+						
+						<!-- <li>SWCPDroidApparelRestrictionTag_T3M4Only</li> -->
+						<!-- <li>SWCPDroidApparelRestrictionTag_HK47Only</li> -->
+						<!-- <li>SWCPDroidApparelRestrictionTag_G0T0Only</li> -->
+					<!-- </allowlist> -->
+				<!-- </tags> -->
+			<!-- </apparelRestrictions> -->
+			
+
+			
+			<immutableEndogenes>
+			  <li MayRequire="Ludeon.Rimworld.Biotech">Body_Standard</li>
+			  <!-- Mostly serves to get rid of other body genes. -->
+			</immutableEndogenes>
+			
+
+			<!-- Cosmetic -->
+			<disableFacialAnimations>true</disableFacialAnimations>
+			
+		  </li>
+		</modExtensions>
+		
+		<renderNodeProperties Inherit="False">
+		</renderNodeProperties>
+		
+	</HediffDef>
+	
+	
+	
+	
+	
+	<BigAndSmall.NewFoodCategory>
+		<defName>SWCP_DroidFoodCategory</defName>
+		<foodDefs>
+			<li>guy762_DroidBattery</li>
+			<li>guy762_DroidBattery_adv</li>
+
+			<li>guy762_repairkit</li>
+			<li>guy762_repairkit_adv</li>
+			<li>guy762_repairkit_con</li>
+		</foodDefs>
+		<!--The setting makes pawns unable to eat the new type of food by default.-->
+		<allowByDefault>false</allowByDefault>
+		<filterListFor>
+		<!-- The preferred way is to use a DietFilter targeting this, but this can instead be patched into for easy compatibility for other modders. -->
+			<pawnThingsDefs>
+				<acceptlist/>
+			</pawnThingsDefs>
+			<geneDefs>
+				<acceptlist/>
+			</geneDefs>
+		</filterListFor>
+	</BigAndSmall.NewFoodCategory>
+	
+	<BigAndSmall.PawnDiet>
+		<defName>SWCP_DroidDiet</defName>
+		<!-- Don't accept drugs unless white-listed.-->
+		<alwaysAcceptProcessed>false</alwaysAcceptProcessed>
+		<alwaysAcceptNonIngestible>true</alwaysAcceptNonIngestible>
+		<alwaysAcceptNutrientPaste>false</alwaysAcceptNutrientPaste>
+
+		<foodFilters>
+			<whitelist>
+				<li>guy762_DroidBattery</li>
+				<li>guy762_DroidBattery_adv</li>
+				
+				<li>guy762_repairkit</li>
+				<li>guy762_repairkit_adv</li>
+				<li>guy762_repairkit_con</li>
+			</whitelist>
+		</foodFilters>
+		<newFoodCategoryFilters>
+			<!-- Also ONLY the listed... -->
+			<whitelist>
+			  <li>SWCP_DroidFoodCategory</li>
+			</whitelist>
+		</newFoodCategoryFilters>
+
+	</BigAndSmall.PawnDiet>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<XenotypeDef>
+		<defName>guy762_debugxenotype_droid</defName>
+		<label>droid</label>
+		<description>An artificially-constructed sapient being. This Xenotype primarily exists for behind-the-scenes dev purposes.</description>
+		<iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
+		<displayPriority>10000</displayPriority>
+		<factionlessGenerationWeight>0</factionlessGenerationWeight>
+	</XenotypeDef>
+	
+	<GeneDef ParentName="GeneJawBase">
+		<defName>guy762_DebugHead_nullForDroids</defName>
+		<label>no head</label>
+		<description>Carriers of this gene have no heads.</description>
+		<displayOrderInCategory>10000</displayOrderInCategory>
+		<displayCategory>guy762_SWparts_Category</displayCategory>
+		<iconPath>NullTex</iconPath>
+		<forcedHeadTypes>
+		  <li>guy762_DroidHeadType_null</li>
+		</forcedHeadTypes>
+	</GeneDef>
+	
+	<HeadTypeDef>
+        <defName>guy762_DroidHeadType_null</defName>
+        <graphicPath>NullTex</graphicPath>
+        <gender>None</gender>
+		<randomChosen>false</randomChosen>	
+		<requiredGenes>
+		  <li>guy762_DebugHead_nullForDroids</li>
+		</requiredGenes>
+    </HeadTypeDef>
+
+	
+
+</Defs>

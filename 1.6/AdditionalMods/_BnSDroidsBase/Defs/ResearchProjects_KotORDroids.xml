@@ -1,0 +1,288 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_droidsimple</defName>
+    <label>simple droids</label>
+    <description>Re-create and assemble simple, common droids.</description>
+    <baseCost>7500</baseCost>
+    <!-- <prerequisites> -->
+      <!-- <li>ABF_ResearchProject_Synstruct_Infrastructure</li> -->
+    <!-- </prerequisites> -->
+    <researchViewX>1.00</researchViewX>
+    <researchViewY>11.5</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_droidutilityadv</defName>
+    <label>adv. utility droids</label>
+    <description>Assemble more intricate utility droids.</description>
+    <baseCost>2500</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_droidsimple</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>11</researchViewY>
+  </ResearchProjectDef>
+  
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_droidcombatadv</defName>
+    <label>adv. combat droids</label>
+    <description>Assemble more intricate combat droids.</description>
+    <baseCost>2500</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_droidsimple</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>12</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_droidlaboradv</defName>
+    <label>adv. labor droids</label>
+    <description>Assemble more intricate laborer droids.</description>
+    <baseCost>2500</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_droidsimple</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>13</researchViewY>
+  </ResearchProjectDef>
+  
+  
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_droidassault</defName>
+    <label>assault droids</label>
+    <description>Assemble heavy-duty assault droids.</description>
+    <baseCost>5000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_droidcombatadv</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>3</researchViewX>
+    <researchViewY>11.5</researchViewY>
+  </ResearchProjectDef>
+  
+  
+  
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_droidassassin</defName>
+    <label>assassin droids</label>
+    <description>Assemble elite assassin droids.</description>
+    <baseCost>2500</baseCost>
+	<heldByFactionCategoryTags>
+      <li>Pirate</li>
+    </heldByFactionCategoryTags>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_droidcombatadv</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	<techprintCount>2</techprintCount>
+	<techprintCommonality>0.5</techprintCommonality>
+    <researchViewX>3</researchViewX>
+    <researchViewY>12.5</researchViewY>
+  </ResearchProjectDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_droidintel</defName>
+    <label>specialist droids</label>
+    <description>Assemble highly-advanced specialist utility droids.</description>
+    <baseCost>7500</baseCost>
+	<heldByFactionCategoryTags>
+      <li>Outlander</li>
+    </heldByFactionCategoryTags>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_droidutilityadv</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	<techprintCount>4</techprintCount>
+	<techprintCommonality>0.125</techprintCommonality>
+    <researchViewX>3</researchViewX>
+    <researchViewY>10.5</researchViewY>
+  </ResearchProjectDef>
+  
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_droidsith</defName>
+    <label>Sith war droids</label>
+    <description>Assemble elite heavy-duty war droids used by the Sith.</description>
+    <baseCost>5000</baseCost>
+	<heldByFactionCategoryTags>
+      <li>Outlander</li>
+    </heldByFactionCategoryTags>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_droidassault</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	<techprintCount>4</techprintCount>
+	<techprintCommonality>0.05</techprintCommonality>
+    <researchViewX>4</researchViewX>
+    <researchViewY>11.5</researchViewY>
+  </ResearchProjectDef>
+  
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_hk</defName>
+    <label>HK-51 assassin droids</label>
+    <description>Assemble highly-advanced HK-51 series assassin droids.</description>
+    <baseCost>10000</baseCost>
+    <techLevel>Spacer</techLevel>
+	<heldByFactionCategoryTags>
+      <li>Pirate</li>
+    </heldByFactionCategoryTags>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_droidassassin</li>
+      <li>guy762_ResearchKotOR_droidassault</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	<techprintCount>6</techprintCount>
+	<techprintCommonality>0.01</techprintCommonality>
+    <researchViewX>4</researchViewX>
+    <researchViewY>12.5</researchViewY>
+  </ResearchProjectDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_droidtech</defName>
+    <label>droid upgrades</label>
+    <description>Build simple droid hardware, software, and sensors.</description>
+    <baseCost>3500</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_droidsimple</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>2</researchViewX>
+    <researchViewY>9.5</researchViewY>
+  </ResearchProjectDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_droidarmor</defName>
+    <label>droid armor plating</label>
+    <description>Build sets of droid armor plating.</description>
+    <baseCost>2500</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_droidsimple</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>10</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_droidshields</defName>
+    <label>droid shields</label>
+    <description>Build droid-mounted personal energy shields.</description>
+    <baseCost>500</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_eshields</li>
+	  <li>guy762_ResearchKotOR_droidsimple</li>
+    </prerequisites>
+    <researchViewX>2</researchViewX>
+    <researchViewY>9.25</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_hvyshields</defName>
+    <label>heavy shield generators</label>
+    <description>Build heavy-duty shield generators for larger droids and vehicles.</description>
+    <baseCost>5000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_droidshields</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+    <researchViewX>3</researchViewX>
+    <researchViewY>9</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_iondamp</defName>
+    <label>ion-dampening technology</label>
+    <description>Build advanced droid shields and upgrades to mitigate the effects of ionizing and EMP weaponry on droids and vehicles.</description>
+    <baseCost>5000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_ion</li>
+      <li>guy762_ResearchKotOR_hvyshields</li>
+      <li>guy762_ResearchKotOR_droidtech</li>
+    </prerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	<heldByFactionCategoryTags>
+	  <li>Outlander</li>
+	</heldByFactionCategoryTags>
+	<techprintCount>1</techprintCount>
+	<techprintCommonality>0.25</techprintCommonality>
+    <researchViewX>4</researchViewX>
+    <researchViewY>9</researchViewY>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef ParentName="KOTOR_Research_Base">
+    <defName>guy762_ResearchKotOR_deflectors</defName>
+    <label>deflector shields</label>
+    <description>Build strong energy barriers capable of deflecting incoming blaster fire.</description>
+    <baseCost>5000</baseCost>
+    <prerequisites>
+      <li>guy762_ResearchKotOR_hvyshields</li>
+    </prerequisites>
+	<hiddenPrerequisites>
+	  <li>KOTOR_Research_UltraComponent</li>
+	</hiddenPrerequisites>
+    <requiredResearchFacilities>
+      <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+	<heldByFactionCategoryTags>
+	  <li>Empire</li>
+	</heldByFactionCategoryTags>
+	<techprintCount>2</techprintCount>
+	<techprintCommonality>0.125</techprintCommonality>
+    <researchViewX>5</researchViewX>
+    <researchViewY>9</researchViewY>
+  </ResearchProjectDef>
+  
+
+  
+</Defs>

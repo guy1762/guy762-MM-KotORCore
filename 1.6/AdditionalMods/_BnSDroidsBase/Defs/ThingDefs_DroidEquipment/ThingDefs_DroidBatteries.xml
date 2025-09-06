@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <ThingDef Name="guy762_DroidBatteryBase" Abstract="True">
+    <thingClass>ThingWithComps</thingClass>
+    <category>Item</category>
+    <drawerType>MapMeshOnly</drawerType>
+    <useHitPoints>true</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <selectable>true</selectable>
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Beauty>0</Beauty>
+      <Mass>0.6</Mass>
+    </statBases>
+    <altitudeLayer>Item</altitudeLayer>
+    <stackLimit>10</stackLimit>
+    <!--tickerType>Normal</tickerType-->
+    <socialPropernessMatters>false</socialPropernessMatters>
+    <thingCategories>
+      <li>FoodMeals</li>
+    </thingCategories>
+    <alwaysHaulable>true</alwaysHaulable>
+    <comps>
+      <li Class="CompProperties_Forbiddable" />
+	  <!--li Class="CompProperties_Explosive">
+		<explosiveRadius>1.5</explosiveRadius>
+		<explosiveDamageType>guy762_GrenadeDamage_energy</explosiveDamageType>
+		<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+	  </li-->
+    </comps>
+    <pathCost>14</pathCost>
+    <resourceReadoutPriority>Last</resourceReadoutPriority>
+    <drawGUIOverlay>true</drawGUIOverlay>
+    <ingestible>
+      <foodType>Processed</foodType>
+	  <preferability>DesperateOnlyForHumanlikes</preferability>
+	  <ingestEffect>ConstructMetal</ingestEffect>
+	  <ingestSound>kotorsound_healbeam</ingestSound>
+	  <baseIngestTicks>50</baseIngestTicks>
+      <maxNumToIngestAtOnce>1</maxNumToIngestAtOnce>
+    </ingestible>
+	<tradeability>All</tradeability>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidConsumables</li>
+	  <li>guy762TT_AllItemsSellable</li>
+	</tradeTags>
+	<!--modExtensions>
+		<li Class="ArtificialBeings.ABF_NeedFulfillerExtension">
+			<li><key>ABF_Need_Synstruct_Coolant</key><value>0.5</value></li>
+            <li><key>ABF_Need_Synstruct_Lubricant</key><value>2</value></li>
+		</li>
+	</modExtensions-->
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidBatteryBase">
+    <defName>guy762_DroidBattery</defName>
+    <label>droid recharge cell</label>
+    <description>This portable battery cell provides ample energy for the droid on the go.</description>
+    <graphicData>
+      <texPath>Items/batteries/battery</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>5</MarketValue>
+      <Nutrition>0.675</Nutrition>
+	  <WorkToMake>100</WorkToMake>
+    </statBases>
+	
+	<ingestible>
+	  <outcomeDoers>
+		<li MayRequire="Killathon.ArtificialBeings.SynCore" Class="ArtificialBeings.IngestionOutcomeDoer_OffsetArtificialNeed">
+			<need>ABF_Need_Synstruct_Energy</need>
+			<offset>0.675</offset>
+		</li>
+      </outcomeDoers>
+    </ingestible>
+		
+	<recipeMaker>
+      <researchPrerequisite>MicroelectronicsBasics</researchPrerequisite>
+	  <skillRequirements>
+         <Crafting>4</Crafting>
+	  </skillRequirements>
+	  <bulkRecipeCount>4</bulkRecipeCount>
+      <recipeUsers>
+        <li MayRequire="Killathon.ArtificialBeings.SynCore">ABF_Thing_Synstruct_PartWorkbench</li>
+		<li>KOTOR_ShieldBank</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <ComponentIndustrial>1</ComponentIndustrial>
+	  <Plasteel>1</Plasteel>
+    </costList>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidBatteryBase">
+    <defName>guy762_DroidBattery_adv</defName>
+    <label>droid high-density recharge cell</label>
+    <description>At the war's height, Republic droid division commanders demanded higher-density batteries for long-term engagements against the Mandalorians. Ordinary battery units of the time simply couldn't sustain large forces of war droids that lacked access to a support ship's power plant.</description>
+    <graphicData>
+      <texPath>Items/batteries/battery_adv</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <MarketValue>12</MarketValue>
+      <Nutrition>1</Nutrition>
+	  <WorkToMake>500</WorkToMake>
+    </statBases>
+	
+	<ingestible>
+	  <outcomeDoers>
+		<li MayRequire="Killathon.ArtificialBeings.SynCore" Class="ArtificialBeings.IngestionOutcomeDoer_OffsetArtificialNeed">
+			<need>ABF_Need_Synstruct_Energy</need>
+			<offset>1</offset>
+		</li>
+      </outcomeDoers>
+    </ingestible>
+	
+	<recipeMaker>
+      <researchPrerequisite>AdvancedFabrication</researchPrerequisite>
+	  <skillRequirements>
+         <Crafting>8</Crafting>
+	  </skillRequirements>
+	  <bulkRecipeCount>4</bulkRecipeCount>
+      <recipeUsers>
+        <li MayRequire="Killathon.ArtificialBeings.SynCore">ABF_Thing_Synstruct_PartWorkbench</li>
+        <li>KOTOR_ShieldBank</li>
+      </recipeUsers>
+    </recipeMaker>
+    <costList>
+      <ComponentIndustrial>3</ComponentIndustrial>
+	  <Plasteel>1</Plasteel>
+    </costList>
+  </ThingDef>
+  
+  
+  
+  
+  
+</Defs>

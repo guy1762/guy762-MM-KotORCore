@@ -5,6 +5,10 @@
         <defName>guy762_DroidHeadType_null</defName>
         <graphicPath>NullTex</graphicPath>
         <gender>None</gender>
+		<randomChosen>false</randomChosen>	
+		<!-- <requiredGenes> -->
+		  <!-- <li>guy762_DebugHead_nullForDroids</li> -->
+		<!-- </requiredGenes> -->
     </HeadTypeDef>
 	
 	

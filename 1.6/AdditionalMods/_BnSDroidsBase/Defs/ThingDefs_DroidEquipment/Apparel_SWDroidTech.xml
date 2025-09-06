@@ -1,0 +1,742 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  
+  
+  <ThingDef ParentName="guy762_DroidCraftableTech">
+    <defName>guy762_DroidSoftware_computer</defName>
+    <label>droid computer probe</label>
+    <description>This interface is streamlined for more efficient, and thus more effective, interactions with computer terminals.</description>
+    <graphicData>
+      <texPath>Items/droidtech/droidsoftware_E</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>250</MarketValue>
+	  
+	  <WorkToMake>4000</WorkToMake>
+    </statBases>
+	<equippedStatOffsets>
+		<ResearchSpeed>0.2</ResearchSpeed>
+	</equippedStatOffsets>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_droidtech</researchPrerequisite>
+		<skillRequirements>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>1</ComponentSpacer>
+	</costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_tech</li>
+		<li>KotORDroidUpgrade_computers</li>
+		<li>SWCPSpecificDroidTech_Plus2ResearchSoftware</li>
+		<li>SWCPDroidApparelRestrictionTag_SoftwareTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>guy762BG_Droid_Tech_software</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidCraftableTech">
+    <defName>guy762_DroidSoftware_security</defName>
+    <label>droid security interface tool</label>
+    <description>This interface is designed to bypass most standard lock-out and security measures common for mass-produced terminals and locks.</description>
+    <graphicData>
+      <texPath>Items/droidtech/droidsoftware_J</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>250</MarketValue>
+	  
+	  <WorkToMake>4000</WorkToMake>
+    </statBases>
+	<equippedStatOffsets>
+		<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.2</HackingSpeed>
+	</equippedStatOffsets>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_droidtech</researchPrerequisite>
+		<skillRequirements>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>10</Plasteel>
+		<ComponentSpacer>1</ComponentSpacer>
+	</costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_tech</li>
+		<li>KotORDroidUpgrade_hacking</li>
+		<li>KotORDroidUpgrade_computers</li>
+		<li>SWCPSpecificDroidTech_Plus2HackingSoftware</li>
+		<li>SWCPDroidApparelRestrictionTag_SoftwareTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>guy762BG_Droid_Tech_software</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidTech">
+    <defName>guy762_DroidSoftware_lockout</defName>
+    <label>droid lockout bypass</label>
+    <description>Pioneered by Toshan Gant, this is the basic droid security breaker in use across the galaxy. Gant did most of his research for the Republic military after private efforts led to his imprisonment.</description>
+    <graphicData>
+      <texPath>Items/droidtech/droidsoftware_B</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>850</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.3</HackingSpeed>
+		<ResearchSpeed>0.3</ResearchSpeed>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_tech</li>
+		<li>KotORDroidUpgrade_hacking</li>
+		<li>KotORDroidUpgrade_computers</li>
+		<li>SWCPSpecificDroidTech_Plus3HackingResearchSoftware</li>
+		<li>SWCPDroidApparelRestrictionTag_SoftwareTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>guy762BG_Droid_Tech_software</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <!-- <ThingDef ParentName="guy762_DroidCraftableTech"> -->
+    <!-- <defName>guy762_DroidSoftware_exchange</defName> -->
+    <!-- <label>droid Exchange interface</label> -->
+    <!-- <description>This interface solves the problem of unknown access codes - if you can find it on the black market.</description> -->
+    <!-- <graphicData> -->
+      <!-- <texPath>Items/droidtech/droidsoftware_K</texPath> -->
+      <!-- <graphicClass>Graphic_Single</graphicClass> -->
+    <!-- </graphicData> -->
+    <!-- <statBases> -->
+      <!-- <Mass>0.5</Mass> -->
+	  <!-- <MarketValue>9200</MarketValue> -->
+	  
+	  <!-- <WorkToMake>16000</WorkToMake> -->
+    <!-- </statBases> -->
+	<!-- <equippedStatOffsets> -->
+		<!-- <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.6</HackingSpeed> -->
+		<!-- <ResearchSpeed>0.3</ResearchSpeed> -->
+	<!-- </equippedStatOffsets> -->
+	
+	<!-- <recipeMaker> -->
+		<!-- <researchPrerequisite>guy762_ResearchKotOR_exchange</researchPrerequisite> -->
+		<!-- <skillRequirements> -->
+			<!-- <Intellectual>14</Intellectual> -->
+		<!-- </skillRequirements> -->
+	<!-- </recipeMaker> -->
+	<!-- <costList> -->
+		<!-- <Plasteel>10</Plasteel> -->
+		<!-- <Gold>100</Gold> -->
+		<!-- <ComponentSpacer>6</ComponentSpacer> -->
+	<!-- </costList> -->
+	
+    <!-- <apparel> -->
+	  <!-- <tags> -->
+		<!-- <li>KotORDroidUpgrade_tech</li> -->
+		<!-- <li>KotORDroidUpgrade_hacking</li> -->
+		<!-- <li>KotORDroidUpgrade_computers</li> -->
+		<!-- <li>SWKotORSpecificDroidTech_ExchangePlus6Hacking3ResearchSoftware</li> -->
+	  <!-- </tags> -->
+	  <!-- <bodyPartGroups> -->
+        <!-- <li>guy762BG_Droid_Tech_software</li> -->
+      <!-- </bodyPartGroups> -->
+    <!-- </apparel> -->
+	<!-- <tradeTags> -->
+      <!-- <li>guy762TT_KotORElite</li> -->
+	  <!-- <li>guy762TT_DroidUpgrades_rare</li> -->
+    <!-- </tradeTags> -->
+  <!-- </ThingDef> -->
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidTech">
+    <defName>guy762_DroidSoftware_repair</defName>
+    <label>droid machine interface</label>
+    <description>This interface is designed to interact with most standard types of droids, machines, and equipment, allowing complex and detailed analysis of problems to be sent to the droid for reference.</description>
+    <graphicData>
+      <texPath>Items/droidtech/droidsoftware_A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>3300</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<MechRepairSpeed>0.4</MechRepairSpeed>
+		<FixBrokenDownBuildingSuccessChance>0.4</FixBrokenDownBuildingSuccessChance>
+		<ConstructSuccessChance>0.4</ConstructSuccessChance>
+		<ABF_Stat_Artificial_SurgerySuccessChance MayRequire="Killathon.ArtificialBeings.SynCore">0.4</ABF_Stat_Artificial_SurgerySuccessChance>
+		<ABF_Stat_Artificial_TendQuality MayRequire="Killathon.ArtificialBeings.SynCore">0.4</ABF_Stat_Artificial_TendQuality>
+		<ABF_Stat_Artificial_TendSpeed MayRequire="Killathon.ArtificialBeings.SynCore">0.4</ABF_Stat_Artificial_TendSpeed>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_tech</li>
+		<li>KotORDroidUpgrade_repair</li>
+		<li>SWCPSpecificDroidTech_Plus4RepairSoftware</li>
+		<li>SWCPDroidApparelRestrictionTag_SoftwareTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>guy762BG_Droid_Tech_software</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidTech">
+    <defName>guy762_DroidSoftware_demo</defName>
+    <label>droid stabilization subroutine</label>
+    <description>This module provides extra computing power for the droid's motivators and actuators, allowing it to make smoother and more subtle movements... two very handy things to have when disarming a mine.</description>
+    <graphicData>
+      <texPath>Items/droidtech/droidsoftware_F</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>1000</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<PawnTrapSpringChance>-0.4</PawnTrapSpringChance>
+		<!--ConstructionSpeedFactor>0.4</ConstructionSpeedFactor-->
+		<MortarMissRadiusFactor>-0.4</MortarMissRadiusFactor>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_tech</li>
+		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus4AwarenessSoftware</li>
+		<li>SWCPDroidApparelRestrictionTag_SoftwareTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>guy762BG_Droid_Tech_software</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidTech">
+    <defName>guy762_DroidSoftware_anatomy</defName>
+    <label>droid anatomy library</label>
+    <description>This upgrade provides the droid with numerous files and other reference material relating to the anatomy of humanoid creatures, giving the droid an intimate knowledge of their strengths and weaknesses.</description>
+    <graphicData>
+      <texPath>Items/droidtech/droidsoftware_HK</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.5</Mass>
+	  <MarketValue>9000</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<MeleeHitChance>0.3</MeleeHitChance>
+		<ShootingAccuracyPawn>0.3</ShootingAccuracyPawn>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_combat</li>
+		<li>KotORDroidUpgrade_hk</li>
+		<li>SWCPSpecificDroidTech_Plus3AccuracySoftware</li>
+		<li>SWCPDroidApparelRestrictionTag_SoftwareTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>guy762BG_Droid_Tech_software</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORElite</li>
+	  <li>guy762TT_DroidUpgrades_rare</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidTech">
+    <defName>guy762_DroidHardware_motivator</defName>
+    <label>droid motivator booster</label>
+    <description>This module ties directly in with a droid's motivators, increasing their output drastically. Even the most sluggish droids will show a marked improvement.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_HardwareHediff_motivator</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidtech/droidhardware_E</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>1100</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus2Defense1AgilityHardware</li>
+		<li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>guy762BG_Droid_Tech_hardware</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+	<comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_HardwareHediff_motivator</hediff>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_HardwareHediff_motivator</defName>
+    <label>droid motivator booster</label>
+    <description>This module ties directly in with a droid's motivators, increasing their output drastically. Even the most sluggish droids will show a marked improvement.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.1</offset>
+          </li>
+		  <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.1</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidCraftableTech">
+    <defName>guy762_DroidHardware_durability</defName>
+    <label>droid durability upgrade</label>
+    <description>This module increases the droid's survivability by creating redundant programs and upgrading the self-repair software.</description>
+    <graphicData>
+      <texPath>Items/droidtech/droidhardware_B</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>2900</MarketValue>
+	  
+	  <WorkToMake>8000</WorkToMake>
+    </statBases>
+	<equippedStatOffsets>
+		<StaggerDurationFactor>-0.2</StaggerDurationFactor>
+		<IncomingDamageFactor>-0.1</IncomingDamageFactor>
+	</equippedStatOffsets>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_droidtech</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>6</Crafting>
+			<Intellectual>10</Intellectual>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>2</ComponentIndustrial>
+		<ComponentSpacer>2</ComponentSpacer>
+	</costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus1DefenseHardware</li>
+		<li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>guy762BG_Droid_Tech_hardware</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidCraftableTech">
+    <defName>guy762_DroidHardware_agility</defName>
+    <label>droid agility upgrade</label>
+    <description>This module increases the droid's agility by creating new programs to run its motivators and increase their reaction time.</description>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_HardwareHediff_agility</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidtech/droidhardware_D</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>4700</MarketValue>
+	  
+	  <WorkToMake>8000</WorkToMake>
+    </statBases>
+	<equippedStatOffsets>
+		<PawnTrapSpringChance>-0.2</PawnTrapSpringChance>
+	</equippedStatOffsets>
+	
+	<recipeMaker>
+		<researchPrerequisite>guy762_ResearchKotOR_droidtech</researchPrerequisite>
+		<skillRequirements>
+			<Crafting>8</Crafting>
+			<Intellectual>8</Intellectual>
+		</skillRequirements>
+	</recipeMaker>
+	<costList>
+		<Plasteel>20</Plasteel>
+		<ComponentIndustrial>6</ComponentIndustrial>
+		<ComponentSpacer>1</ComponentSpacer>
+	</costList>
+	
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus3AgilityHardware</li>
+		<li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>guy762BG_Droid_Tech_hardware</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+	<comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_HardwareHediff_agility</hediff>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_HardwareHediff_agility</defName>
+    <label>droid agility upgrade</label>
+    <description>This module increases the droid's agility by creating new programs to run its motivators and increase their reaction time.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>0.3</offset>
+          </li>
+		  <li>
+            <capacity>Manipulation</capacity>
+            <offset>0.3</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidTech">
+    <defName>guy762_DroidHardware_parabolic</defName>
+    <label>droid parabolic guides</label>
+    <description>These modifications tie directly into the droid's sensors and provides multiple trajectory possibilities and solutions for munitions fired at the droid.</description>
+    <graphicData>
+      <texPath>Items/droidtech/droidhardware_A</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>4700</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<PawnTrapSpringChance>-0.2</PawnTrapSpringChance>
+		<AimingDelayFactor>-0.3</AimingDelayFactor>
+		<MeleeDodgeChance>0.3</MeleeDodgeChance>
+		<MoveSpeed>0.3</MoveSpeed>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus3Agility3DexterityHardware</li>
+		<li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>guy762BG_Droid_Tech_hardware</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_DroidEquipment</li>
+	  <li>guy762TT_DroidUpgrades</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidTech">
+    <defName>guy762_DroidHardware_systems</defName>
+    <label>droid systems upgrade</label>
+    <description>Using higher mathematics and an advanced binary languages, this upgrade completely re-writes the droid's system software to be more efficient, more powerful, and much faster.</description>
+    <graphicData>
+      <texPath>Items/droidtech/droidhardware_F</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>13000</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+		<AimingDelayFactor>-0.4</AimingDelayFactor>
+		<MeleeDodgeChance>0.4</MeleeDodgeChance>
+		<MoveSpeed>0.4</MoveSpeed>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_combat</li>
+		<li>SWCPSpecificDroidTech_Plus2Defense4AgilityHardware</li>
+		<li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>guy762BG_Droid_Tech_hardware</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORElite</li>
+	  <li>guy762TT_DroidUpgrades_rare</li>
+    </tradeTags>
+  </ThingDef>
+  
+  <ThingDef ParentName="guy762_DroidTech">
+    <defName>guy762_DroidHardware_remote</defName>
+    <label>droid remote interface</label>
+    <description>This interface uses a wire-free signal to completely bypass security hardware and countermeasures. This signal takes much of the droid's power to maintain, however, and a loss of cognitive awareness is the result.</description>
+	<descriptionHyperlinks>
+		<HediffDef>guy762_HardwareHediff_remote</HediffDef>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidtech/droidhardware_I</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>11600</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">1</HackingSpeed>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_tech</li>
+		<li>KotORDroidUpgrade_computers</li>
+		<li>SWCPSpecificDroidTech_Plus10HackingHardware</li>
+		<li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li>
+	  </tags>
+	  <bodyPartGroups>
+        <li>guy762BG_Droid_Tech_hardware</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORElite</li>
+	  <li>guy762TT_DroidUpgrades_rare</li>
+    </tradeTags>
+	<comps>
+      <li Class="CompProperties_CauseHediff_Apparel">
+        <hediff>guy762_HardwareHediff_remote</hediff>
+        <part>BS_ArtificialBrain</part>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>guy762_HardwareHediff_remote</defName>
+    <label>droid remote interface</label>
+    <description>This interface uses a wire-free signal to completely bypass security hardware and countermeasures. This signal takes much of the droid's power to maintain, however, and a loss of cognitive awareness is the result.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Consciousness</capacity>
+            <offset>-0.3</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_RemoveIfApparelDropped" />
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  <ThingDef ParentName="guy762_DroidTech">
+    <defName>guy762_DroidHardware_scav</defName>
+    <label>droid scavenger upgrade</label>
+    <description>This upgrade enhances a droid's self-diagnostics and self-repair capability, allowing it to sustain itself by scavenging parts from the environment as well as its own non-critical systems.\n\nThis is an advanced piece of technology, and can only be equipped on the following droid models:</description>
+    <descriptionHyperlinks>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_T3series</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_3Cseries</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_ITseries</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_KX12UPD</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_HKseries</AlienRace.ThingDef_AlienRace>
+		<AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_GOTO</AlienRace.ThingDef_AlienRace>
+	</descriptionHyperlinks>
+	<graphicData>
+      <texPath>Items/droidtech/droidhardware_C</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>2</Mass>
+	  <MarketValue>12000</MarketValue>
+    </statBases>
+	<equippedStatOffsets>
+		<MechRepairSpeed>0.5</MechRepairSpeed>
+		<FixBrokenDownBuildingSuccessChance>0.5</FixBrokenDownBuildingSuccessChance>
+		<ConstructSuccessChance>0.5</ConstructSuccessChance>
+		<ABF_Stat_Artificial_SurgerySuccessChance MayRequire="Killathon.ArtificialBeings.SynCore">0.5</ABF_Stat_Artificial_SurgerySuccessChance>
+		<ABF_Stat_Artificial_TendQuality MayRequire="Killathon.ArtificialBeings.SynCore">0.5</ABF_Stat_Artificial_TendQuality>
+		<ABF_Stat_Artificial_TendSpeed MayRequire="Killathon.ArtificialBeings.SynCore">0.5</ABF_Stat_Artificial_TendSpeed>
+		
+		<StaggerDurationFactor>-0.3</StaggerDurationFactor>
+		<IncomingDamageFactor>-0.2</IncomingDamageFactor>
+	</equippedStatOffsets>
+    <apparel>
+	  <tags>
+		<li>KotORDroidUpgrade_tech</li>
+		<li>KotORDroidUpgrade_repair</li>
+		<li>SWCPSpecificDroidTech_ScavengerRepairHardware</li>
+		<li>SWCPDroidApparelRestrictionTag_DroidScavUpgrade</li>
+		<!-- <li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li> -->
+	  </tags>
+	  <bodyPartGroups>
+        <li>guy762BG_Droid_Tech_hardware</li>
+      </bodyPartGroups>
+    </apparel>
+	<tradeTags>
+      <li>guy762TT_KotORElite</li>
+	  <li>guy762TT_DroidUpgrades_rare</li>
+    </tradeTags>
+  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- <ThingDef ParentName="guy762_DroidCraftableTech"> -->
+    <!-- <defName>guy762_DroidHardware_regen</defName> -->
+    <!-- <label>droid self-sustaining unit</label> -->
+    <!-- <description>By reprogramming its internal systems, this upgrade takes the droid's built-in diagnostic routines to the next step: self-repair. Through several, closely-guarded processes, the droid can actually sustain and repair itself, regardless of availability of repair kits.\n\nThis is a highly advanced piece of technology, and can only be equipped on the following droid models:</description> -->
+    <!-- <descriptionHyperlinks> -->
+		<!-- <AlienRace.ThingDef_AlienRace MayRequire="guy762.KotORDroids">guy762_DroidRace_T3series</AlienRace.ThingDef_AlienRace> -->
+	<!-- </descriptionHyperlinks> -->
+	<!-- <graphicData> -->
+      <!-- <texPath>Items/droidtech/droidhardware_T3</texPath> -->
+      <!-- <graphicClass>Graphic_Single</graphicClass> -->
+    <!-- </graphicData> -->
+    <!-- <statBases> -->
+      <!-- <Mass>2</Mass> -->
+	  <!-- <MarketValue>6000</MarketValue> -->
+	  
+	  <!-- <WorkToMake>12000</WorkToMake> -->
+    <!-- </statBases> -->
+	<!-- <equippedStatOffsets> -->
+		<!-- <InjuryHealingFactor>0.3</InjuryHealingFactor> -->
+	<!-- </equippedStatOffsets> -->
+	
+	<!-- <recipeMaker> -->
+		<!-- <researchPrerequisite>guy762_ResearchKotOR_teethree</researchPrerequisite> -->
+		<!-- <skillRequirements> -->
+			<!-- <Intellectual>16</Intellectual> -->
+		<!-- </skillRequirements> -->
+	<!-- </recipeMaker> -->
+	<!-- <costList> -->
+		<!-- <Plasteel>20</Plasteel> -->
+		<!-- <ComponentIndustrial>10</ComponentIndustrial> -->
+		<!-- <ComponentSpacer>6</ComponentSpacer> -->
+	<!-- </costList> -->
+	
+    <!-- <apparel> -->
+	  <!-- <tags> -->
+		<!-- <li>KotORDroidUpgrade_T3M4</li> -->
+		<!-- <li>SWKotORSpecificDroidTech_T3M4RepairHardware</li> -->
+	  <!-- </tags> -->
+	  <!-- <bodyPartGroups> -->
+        <!-- <li>guy762BG_Droid_Tech_hardware</li> -->
+      <!-- </bodyPartGroups> -->
+    <!-- </apparel> -->
+	<!-- <tradeTags> -->
+      <!-- <li>guy762TT_KotORElite</li> -->
+	  <!-- <li>guy762TT_DroidUpgrades_rare</li> -->
+    <!-- </tradeTags> -->
+  <!-- </ThingDef> -->
+  
+  
+</Defs>
