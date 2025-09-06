@@ -48,6 +48,7 @@
 				<li>SWWarlordsAccessory_trooper</li>
 				<li>SaV_wookiee</li>
 				<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Accessories/suspenders_simple/Apparel</wornGraphicPath>
 			<drawData>
@@ -143,6 +144,7 @@
 				<li>KotORAccessory_specops</li>
 				<li>SaV_wookiee</li>
 				<li>SWCPSpecificApparelItem_EngineerSuspenders</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Accessories/suspenders_engi/Apparel</wornGraphicPath>
 			<drawData>
@@ -229,6 +231,7 @@
 				<li>KotORAccessory_trader</li>
 				<li>SaV_wookiee</li>
 				<li>SWCPSpecificApparelItem_HeavySuspenders</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Accessories/suspenders_heavy/Apparel</wornGraphicPath>
 			<drawData>
@@ -325,6 +328,7 @@
 				<li>SWWarlordsAccessory_scumtrooper</li>
 				<li>SaV_wookiee</li>
 				<li>SWCPSpecificApparelItem_DoubleBandolier</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Accessories/bandolier_double/Apparel</wornGraphicPath>
 			<drawData>
@@ -417,6 +421,7 @@
 				<li>KotORAccessory_bandolier</li>
 				<li>SaV_wookiee</li>
 				<li>SWCPSpecificApparelItem_ChewbaccaBandolier</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Accessories/bandolier_chewbacca/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -509,6 +514,7 @@
 				<li>SWWarlordsAccessory_scumtrooper</li>
 				<li>SaV_wookiee</li>
 				<li>SWCPSpecificApparelItem_TravelerBag</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Accessories/bandolier_traveler/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
@@ -621,6 +627,7 @@
 				<li>KotORClothing_civilian_hooded</li>
 				<li>SWCPAccessory_CloakOrPlainPoncho</li>
 				<li>SWCPSpecificApparelItem_PlainPoncho</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Accessories/poncho/Apparel</wornGraphicPath>
 			<drawData>
@@ -728,6 +735,7 @@
 				<li>KotORAccessory_any</li>
 				<li>KotORAccessory_camoponcho</li>
 				<li>SWCPSpecificApparelItem_CamoPoncho</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
 			<wornGraphicPath>SWApparel/Accessories/poncho/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>

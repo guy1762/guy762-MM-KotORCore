@@ -58,6 +58,7 @@
 		<li>KotORDroidArmorT3</li>
 		<li>KotORDroidArmorT3_stuffable</li>
 		<li>SWCPSpecificDroidArmor_StuffableHeavy</li>
+		<li>SWCPDroidApparelRestrictionTag_HeavyArmor</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -121,6 +122,7 @@
 		<li>KotORDroidArmorT3_weak</li>
 		<li>KotORDroidArmorT3_miningdroid</li>
 		<li>SWCPSpecificDroidArmor_EnvironmentHeavy</li>
+		<li>SWCPDroidApparelRestrictionTag_HeavyArmor</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -181,6 +183,7 @@
 		<li>KotORDroidArmorT3</li>
 		<li>KotORDroidArmorT3_weak</li>
 		<li>SWCPSpecificDroidArmor_DeshHeavy</li>
+		<li>SWCPDroidApparelRestrictionTag_HeavyArmor</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -242,6 +245,7 @@
 		<li>KotORDroidArmorT3_mid</li>
 		<li>KotORDroidArmorT3_czerka</li>
 		<li>SWCPSpecificDroidArmor_CzerkaHeavy</li>
+		<li>SWCPDroidApparelRestrictionTag_HeavyArmor</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -302,6 +306,7 @@
 		<li>KotORDroidArmorT3_mid</li>
 		<li>KotORDroidArmorT3_miningdroid</li>
 		<li>SWCPSpecificDroidArmor_ImpactHeavy</li>
+		<li>SWCPDroidApparelRestrictionTag_HeavyArmor</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -364,6 +369,7 @@
 		<li>KotORDroidArmorT3</li>
 		<li>KotORDroidArmorT3_strong</li>
 		<li>SWCPSpecificDroidArmor_CompositeHeavy</li>
+		<li>SWCPDroidApparelRestrictionTag_HeavyArmor</li>
 	  </tags>
     </apparel>
 	<tradeTags>
@@ -423,6 +429,7 @@
 		<li>EVA</li>
 		<li>KotORDroidArmorT3_strong</li>
 		<li>SWCPSpecificDroidArmor_DiatiumHeavy</li>
+		<li>SWCPDroidApparelRestrictionTag_HeavyArmor</li>
 	  </tags>
     </apparel>
 	<tradeTags>

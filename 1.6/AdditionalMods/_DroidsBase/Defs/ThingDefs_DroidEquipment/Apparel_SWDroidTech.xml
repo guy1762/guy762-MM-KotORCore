@@ -37,6 +37,7 @@
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_computers</li>
 		<li>SWCPSpecificDroidTech_Plus2ResearchSoftware</li>
+		<li>SWCPDroidApparelRestrictionTag_SoftwareTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_software</li>
@@ -83,6 +84,7 @@
 		<li>KotORDroidUpgrade_hacking</li>
 		<li>KotORDroidUpgrade_computers</li>
 		<li>SWCPSpecificDroidTech_Plus2HackingSoftware</li>
+		<li>SWCPDroidApparelRestrictionTag_SoftwareTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_software</li>
@@ -116,6 +118,7 @@
 		<li>KotORDroidUpgrade_hacking</li>
 		<li>KotORDroidUpgrade_computers</li>
 		<li>SWCPSpecificDroidTech_Plus3HackingResearchSoftware</li>
+		<li>SWCPDroidApparelRestrictionTag_SoftwareTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_software</li>
@@ -202,6 +205,7 @@
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_repair</li>
 		<li>SWCPSpecificDroidTech_Plus4RepairSoftware</li>
+		<li>SWCPDroidApparelRestrictionTag_SoftwareTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_software</li>
@@ -235,6 +239,7 @@
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_combat</li>
 		<li>SWCPSpecificDroidTech_Plus4AwarenessSoftware</li>
+		<li>SWCPDroidApparelRestrictionTag_SoftwareTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_software</li>
@@ -267,6 +272,7 @@
 		<li>KotORDroidUpgrade_combat</li>
 		<li>KotORDroidUpgrade_hk</li>
 		<li>SWCPSpecificDroidTech_Plus3AccuracySoftware</li>
+		<li>SWCPDroidApparelRestrictionTag_SoftwareTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_software</li>
@@ -307,6 +313,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
 		<li>SWCPSpecificDroidTech_Plus2Defense1AgilityHardware</li>
+		<li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_hardware</li>
@@ -390,6 +397,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
 		<li>SWCPSpecificDroidTech_Plus1DefenseHardware</li>
+		<li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_hardware</li>
@@ -443,6 +451,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
 		<li>SWCPSpecificDroidTech_Plus3AgilityHardware</li>
+		<li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_hardware</li>
@@ -510,6 +519,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
 		<li>SWCPSpecificDroidTech_Plus3Agility3DexterityHardware</li>
+		<li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_hardware</li>
@@ -543,6 +553,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
 		<li>SWCPSpecificDroidTech_Plus2Defense4AgilityHardware</li>
+		<li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_hardware</li>
@@ -577,6 +588,7 @@
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_computers</li>
 		<li>SWCPSpecificDroidTech_Plus10HackingHardware</li>
+		<li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_hardware</li>
@@ -658,6 +670,8 @@
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_repair</li>
 		<li>SWCPSpecificDroidTech_ScavengerRepairHardware</li>
+		<li>SWCPDroidApparelRestrictionTag_DroidScavUpgrade</li>
+		<!-- <li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li> -->
 	  </tags>
 	  <bodyPartGroups>
         <li>guy762BG_Droid_Tech_hardware</li>

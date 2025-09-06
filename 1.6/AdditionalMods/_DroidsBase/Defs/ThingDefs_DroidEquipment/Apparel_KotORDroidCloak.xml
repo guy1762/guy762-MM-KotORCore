@@ -46,6 +46,8 @@
 	  <tags>
 		<li>KotORDroidStealth</li>
 		<li>SWKotORSpecificDroidGadget_2minDroidStealthDevice</li>
+		<li>SWCPDroidApparelRestrictionTag_DroidCloakingDevice</li>
+		<!-- <li>SWCPDroidApparelRestrictionTag_ShieldSlot</li> -->
 	  </tags>
     </apparel>
 	<tradeTags>

@@ -42,6 +42,7 @@
 			<li>KotORAccessory_backpack</li>
 			<li>KotORAccessory_smallbackpack</li>
 			<li>SWCPSpecificApparelItem_KotORSmallBackpack</li>
+			<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/Accessories/backpacks/backpack_small</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -103,6 +104,7 @@
 		  <tags>
 			<li>KotORAccessory_scorchbackpack</li>
 			<li>SWCPSpecificApparelItem_KotORScorchBackpack</li>
+			<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/Accessories/backpacks/backpack_scorch</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -186,6 +188,7 @@
 			<li>KotORAccessory_backpack</li>
 			<li>KotORAccessory_bigbackpack</li>
 			<li>SWCPSpecificApparelItem_KotORBigBackpack</li>
+			<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/Accessories/backpacks/backpack_big</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -279,6 +282,7 @@
 		  <tags>
 			<li>NewRepublic_RebelBackpackMix</li>
 			<li>SWCPSpecificApparelItem_GCWRebelBackpack</li>
+			<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/Accessories/backpacks/Rebel/backpack</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
@@ -370,6 +374,7 @@
 		  <tags>
 			<li>NewRepublic_RebelBackpackMix</li>
 			<li>SWCPSpecificApparelItem_GCWRebelHeavyBackpack</li>
+			<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/Accessories/backpacks/Rebel/bedrollbackpack</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>

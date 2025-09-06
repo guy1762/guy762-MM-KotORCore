@@ -91,6 +91,7 @@
 			<tags>
 				<li>KotORUtility_weakgrenade</li>
 				<li>SWCPSpecificGadgetItem_FragGrenadeBelt</li>
+				<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
 			</tags>
         </apparel>
 		<tradeTags>
@@ -172,6 +173,7 @@
 			<tags>
 				<li>KotORUtility_utilitygrenade</li>
 				<li>SWCPSpecificGadgetItem_IonGrenadeBelt</li>
+				<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
 			</tags>
         </apparel>
 		<tradeTags>
@@ -254,6 +256,7 @@
 				<li>KotORUtility_utilitygrenade</li>
 				<li>KotORHeroAccessories_hanharr</li>
 				<li>SWCPSpecificGadgetItem_StunGrenadeBelt</li>
+				<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
 			</tags>
         </apparel>
 		<tradeTags>
@@ -337,6 +340,7 @@
 				<li>KotORUtility_stronggrenade</li>
 				<li>KotORHeroAccessories_hanharr</li>
 				<li>SWCPSpecificGadgetItem_PoisonGrenadeBelt</li>
+				<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
 			</tags>
         </apparel>
 		<tradeTags>
@@ -424,6 +428,7 @@
 				<li>KotORHeroAccessories_zaalbar</li>
 				<li>KotORHeroAccessories_hanharr</li>
 				<li>SWCPSpecificGadgetItem_PlasmaGrenadeBelt</li>
+				<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
 			</tags>
         </apparel>
 		<tradeTags>
@@ -517,6 +522,7 @@
 				<li>KotORHeroAccessories_canderousMerc</li>
 				<li>KotORHeroAccessories_zaalbar</li>
 				<li>SWCPSpecificGadgetItem_SonicGrenadeBelt</li>
+				<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
 			</tags>
         </apparel>
 		<tradeTags>
@@ -600,6 +606,7 @@
 				<li>KotORHeroAccessories_canderousMerc</li>
 				<li>KotORHeroAccessories_zaalbar</li>
 				<li>SWCPSpecificGadgetItem_ThermalDetonatorBelt</li>
+				<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
 			</tags>
         </apparel>
 		<tradeTags>

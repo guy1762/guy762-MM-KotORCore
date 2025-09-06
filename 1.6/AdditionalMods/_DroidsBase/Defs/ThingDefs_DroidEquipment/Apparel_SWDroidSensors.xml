@@ -42,6 +42,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
 		<li>SWCPSpecificDroidTech_Plus1Accuracy2AwarenessSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -115,6 +116,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
 		<li>SWCPSpecificDroidTech_Plus1Dodge3AwarenessSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -204,6 +206,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
 		<li>SWCPSpecificDroidTech_Plus2Accuracy2DefenseSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -264,6 +267,7 @@
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_repair</li>
 		<li>SWCPSpecificDroidTech_Plus4RepairSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -307,6 +311,7 @@
 		<li>KotORDroidUpgrade_tech</li>
 		<li>KotORDroidUpgrade_computers</li>
 		<li>SWCPSpecificDroidTech_Plus5Research2LearningSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -389,6 +394,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
 		<li>SWCPSpecificDroidTech_EMPResistanceSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -431,6 +437,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
 		<li>SWCPSpecificDroidTech_Plus3Accuracy2Dexterity2AwarenessSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -505,6 +512,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_tech</li>
 		<li>SWCPSpecificDroidTech_Plus5AwarenessSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -579,6 +587,7 @@
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
 		<li>SWCPSpecificDroidTech_Plus2Accuracy8AwarenessSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>
@@ -666,6 +675,8 @@
 	  <tags>
 		<li>KotORDroidUpgrade_combat</li>
 		<li>SWCPSpecificDroidTech_Plus3Accuracy2Agility2DefenseSensor</li>
+		<li>SWCPDroidApparelRestrictionTag_DroidWarfareUpgrade</li>
+		<!-- <li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li> -->
 	  </tags>
 	  <bodyPartGroups>
         <li>Eyes</li>

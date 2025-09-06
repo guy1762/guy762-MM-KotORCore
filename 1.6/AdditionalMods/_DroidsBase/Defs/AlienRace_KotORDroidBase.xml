@@ -156,6 +156,6 @@
 		<iconPath>UI/Icons/Xenotypes/Custom/CustomXenotypeIcon9</iconPath>
 		<displayPriority>10000</displayPriority>
 		<factionlessGenerationWeight>0</factionlessGenerationWeight>
-	  </XenotypeDef>
+	</XenotypeDef>
 
 </Defs>
