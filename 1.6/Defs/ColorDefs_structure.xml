@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ColorDef Name="guy762_StructureColorIdeoBase" ParentName="StructureColorBase" Abstract="True">
+		<displayOrder>762</displayOrder>
+	</ColorDef>
+	
+	
+	
+	
+	
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_JediSentinelBlue</defName>
+		<label>Jedi Sentinel Blue</label>
+		<color>(70,90,125)</color>
+	</ColorDef>
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_OldRepublicRed</defName>
+		<label>Old Republic Red</label>
+		<color>(190,60,40)</color>
+	</ColorDef>
+	
+
+	
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_NeoCrusaderBlue</defName>
+		<label>Neo-Crusader Blue</label>
+		<color>(125,155,195)</color>
+	</ColorDef>
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_RallyMasterRed</defName>
+		<label>Rally Master Red</label>
+		<color>(180,85,85)</color>
+	</ColorDef>
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_FieldMarshalGold</defName>
+		<label>Field Marshal Gold</label>
+		<color>(210,160,15)</color>
+	</ColorDef>
+	
+	
+	
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_VisasBurgundy</defName>
+		<label>Visas' Burgundy</label>
+		<color>(80,30,40)</color>
+	</ColorDef>
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_JuhaniBlue</defName>
+		<label>Juhani's Cyan</label>
+		<color>(150,200,200)</color>
+	</ColorDef>
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_ZalAlloyPurple</defName>
+		<label>Zal Alloy Purple</label>
+		<color>(135,100,140)</color>
+	</ColorDef>
+	
+	
+	
+	
+	
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_NewRepublicBlue</defName>
+		<label>New Republic Azure</label>
+		<color>(70,135,190)</color>
+	</ColorDef>
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_CorranViridian</defName>
+		<label>Corran's Viridian</label>
+		<color>(55,80,75)</color>
+	</ColorDef>
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_RebelEngiGreen</defName>
+		<label>Rebel Engineer Green</label>
+		<color>(95,130,80)</color>
+	</ColorDef>
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_501stBlue</defName>
+		<label>501st Blue</label>
+		<color>(55,90,135)</color>
+	</ColorDef>
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_212thOrange</defName>
+		<label>212th Orange</label>
+		<color>(170,70,0)</color>
+	</ColorDef>
+	
+	
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_ImpArmySlate</defName>
+		<label>Imperial Army Slate</label>
+		<color>(110,120,115)</color>
+	</ColorDef>
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_ImpOfficerOlive</defName>
+		<label>Imperial Officer Olive</label>
+		<color>(125,125,110)</color>
+	</ColorDef>
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_RoyalGuardRed</defName>
+		<label>Royal Guard Red</label>
+		<color>(200,45,65)</color>
+	</ColorDef>
+	
+	
+	
+	
+
+</Defs>

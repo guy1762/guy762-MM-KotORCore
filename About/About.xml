@@ -108,6 +108,7 @@
 			<li>SmashPhil.VehicleFramework</li>
 			<li>ShunTheWitch.CVNmechanoidwarfarecore</li>
 			
+			<li>adaptive.storage.framework</li>
 			<li>Dubwise.DubsBadHygiene</li>
 			
 			<li>DimonSever000.FactionLanguages</li>
@@ -117,9 +118,11 @@
 			
 			<li>kentington.saveourship2</li>
 			<li>sindre0830.rimnauts2</li>
-			<li>guy762.StarWarsXenotypes</li>
 			
+			<li>guy762.StarWarsXenotypes</li>
 			<li>lee.theforce.lightsaber</li>
+			<li>lee.theforce.standalone</li>
+			
 		</v1.6>
 	</loadAfterByVersion>
 	

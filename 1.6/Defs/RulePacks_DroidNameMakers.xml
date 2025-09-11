@@ -10,7 +10,11 @@
                 <li>Droid_TwoCode->droidnames/astrocode</li>
                 <li>Droid_ID->droidnames/genericID</li>
                 <li>Droid_R2->droidnames/R2</li>
+                <li>Droid_R3->droidnames/R3</li>
+                <li>Droid_R4->droidnames/R4</li>
+                <li>Droid_R5->droidnames/R5</li>
                 <li>Droid_B1->droidnames/B1</li>
+                <li>Droid_DUM->droidnames/DUM</li>
             </rulesFiles>
         </rulePack>
     </RulePackDef>
@@ -30,16 +34,64 @@
     </RulePackDef>
 	
 	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_R3AD</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ID] [Droid_R3]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_R4AD</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ID] [Droid_R4]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_R5AD</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ID] [Droid_R5]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
 	
 	
 	<RulePackDef>
-        <defName>guy762_DroidNamer_B1BD</defName>
+        <defName>SWCP_DroidNamer_B1BD</defName>
         <include>
             <li>SWCP_DroidNameRules</li>
         </include>
         <rulePack>
             <rulesStrings>
                 <li>r_name(p=12)->[Droid_B1] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_DUMpitdroid</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_DUM] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>

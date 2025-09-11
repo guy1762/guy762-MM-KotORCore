@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef Name="guy762_SecretFloorPanel_BASE" ParentName="AdaptiveStorageBase" Abstract="True">
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<graphicData>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		</graphicData> 
+
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<rotatable>true</rotatable>
+		<passability>Standable</passability>
+		<pathCost>0</pathCost>
+		<castEdgeShadows>false</castEdgeShadows>
+		<blockWind>false</blockWind>
+		<fillPercent>0</fillPercent>
+		<leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+		<minifiedDef />
+
+		<terrainAffordanceNeeded Inherit="False">Heavy</terrainAffordanceNeeded>
+		<building>
+			<!-- <isEdifice>false</isEdifice> mega incompatible, will not stack more than size amount with either of these nodes enabled for some reason -->
+			<!-- <paintable>false</paintable> -->
+			<destroySound>BuildingDestroyed_Metal_Small</destroySound>	
+		</building>
+
+	</ThingDef>
+	<!--=============================================================================================================================-->
+
+	<ThingDef ParentName="guy762_SecretFloorPanel_BASE">
+		<defName>guy762_SecretFloorPanel_darkwhiteoutlines</defName>
+		<label>floor panel</label>
+		<description>An inconspicuous floor panel.</description>
+		
+		<graphicData>
+		  <texPath>Buildings/ImpHangarTile_SecretFloorPanel</texPath>
+		  <drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(2,3)</size>
+		<uiIconPath>Buildings/ImpHangarTile_SecretFloorPanel</uiIconPath>
+        <uiIconScale>1</uiIconScale>
+		
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>120000</WorkToBuild>
+			
+			<Mass>8000</Mass>
+		</statBases>
+		<costList>
+		  <Steel>300</Steel>
+		</costList>
+		
+		<building>
+            <maxItemsInCell>40</maxItemsInCell>
+        </building>
+		<placeWorkers>
+            <li>PlaceWorker_NeverAdjacentSameDef</li>
+            <!-- <li>PlaceWorker_OnSubstructure</li> -->
+        </placeWorkers>
+		<modExtensions>
+            <li Class="AdaptiveStorage.Extension">
+                <temperature>
+                    <coolingOffset>10</coolingOffset>
+                </temperature>
+            </li>
+        </modExtensions>
+	</ThingDef>
+	
+	<AdaptiveStorage.GraphicsDef>
+        <defName>guy762_ASFGraphics_SecretFloorPanel_darkwhiteoutlines</defName>
+		<targetDefs>
+            <li>guy762_SecretFloorPanel_darkwhiteoutlines</li>
+        </targetDefs>
+        <showContainedItems>false</showContainedItems>
+        <graphics>
+            <li>
+                <graphicData>
+                    <texPath>Buildings/ImpHangarTile_SecretFloorPanel</texPath>
+					<drawSize>(3,3)</drawSize>
+					<graphicClass>Graphic_Single</graphicClass>
+                </graphicData>
+            </li>
+        </graphics>
+    </AdaptiveStorage.GraphicsDef>
+
+
+</Defs>

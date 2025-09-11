@@ -2,8 +2,8 @@
 <Defs>
 
    
-	<BodyDef Name="SWCP_BnSDroidBody_GenericAstromech">
-        <defName>SWCP_BnSDroidBody_GenericAstromech</defName>
+	<BodyDef Name="SWCP_BnSDroidBody_AstromechWithStandardWeapon">
+        <defName>SWCP_BnSDroidBody_AstromechWithStandardWeapon</defName>
         <label>Astromech Droid</label>
         <corePart>
             <def>BS_MechanicalTorso</def>
@@ -23,14 +23,14 @@
 						<li>guy762BG_Droid_GadgetMount</li>
 					</groups>
 				</li>
-				<!-- <li> -->
-					<!-- <def>guy762_BodyPart_weaponmount</def> -->
-					<!-- <customLabel>standard weapon mount</customLabel> -->
-					<!-- <coverage>0.1</coverage> -->
-					<!-- <groups> -->
-						<!-- <li>guy762BG_Droid_WeaponMount_basic</li> -->
-					<!-- </groups> -->
-				<!-- </li> -->
+				<li>
+					<def>guy762_BodyPart_weaponmount</def>
+					<customLabel>standard weapon mount</customLabel>
+					<coverage>0.1</coverage>
+					<groups>
+						<li>guy762BG_Droid_WeaponMount_basic</li>
+					</groups>
+				</li>
 				<!-- <li> -->
 					<!-- <def>guy762_BodyPart_weaponmount</def> -->
 					<!-- <customLabel>special weapon mount</customLabel> -->
@@ -132,7 +132,7 @@
 							</li>
 							<li>
 							  <def>BS_SightSensor</def>
-							  <customLabel>visual sensor</customLabel>
+							  <customLabel>video recorder</customLabel>
 							  <coverage>0.07</coverage>
 							  <groups>
 								<li>FullHead</li>
@@ -164,7 +164,7 @@
 							<li>
 							  <def>BS_MechanicalJaw</def>
 							  <coverage>0.15</coverage>
-							  <customLabel>charger socket</customLabel>
+							  <customLabel>fuel intake</customLabel>
 							  <groups>
 								<li>FullHead</li>
 								<li>Mouth</li>

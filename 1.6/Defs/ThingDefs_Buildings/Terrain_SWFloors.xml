@@ -2,60 +2,6 @@
 <Defs>
 
 
-	<ThingDef Name="guy762_SecretFloorPanel_BASE" ParentName="BuildingBase" Abstract="True" >
-		<designationCategory>KOTOR_BuildTab</designationCategory>
-		<graphicData>
-		  <graphicClass>Graphic_Single</graphicClass>
-		  <!-- <shaderType>CutoutComplex</shaderType> -->
-		</graphicData> 
-
-		<altitudeLayer>FloorEmplacement</altitudeLayer>
-		<rotatable>true</rotatable>
-		<destroyable>true</destroyable>
-		<useHitPoints>true</useHitPoints>
-		<passability>Standable</passability>
-		<canOverlapZones>false</canOverlapZones>
-		<pathCost>0</pathCost>
-		<castEdgeShadows>false</castEdgeShadows>
-		<blockWind>false</blockWind>
-		<minifiedDef>MinifiedThing</minifiedDef>
-		<thingCategories>
-		  <li>BuildingsArt</li>
-		</thingCategories>
-
-		<statBases>
-			<Flammability>1.0</Flammability>
-			<SellPriceFactor>1.10</SellPriceFactor>
-			<Mass>5</Mass>
-		</statBases>
-		<building>
-			<isEdifice>true</isEdifice>
-			<paintable>true</paintable>
-			<destroySound>BuildingDestroyed_Metal_Small</destroySound>	
-			<deconstructible>true</deconstructible>
-			<claimable>true</claimable>
-		</building>
-
-	</ThingDef>
-	<!--=============================================================================================================================-->
-
-	<ThingDef ParentName="guy762_SecretFloorPanel_BASE">
-		<defName>guy762_SecretFloorPanel_darkwhiteoutlines</defName>
-		<label>floor panel</label>
-		<description>An inconspicuous floor panel.</description>
-		
-		<graphicData>
-		  <texPath>Buildings/ImpHangarTile_SecretFloorPanel</texPath>
-		  <drawSize>(3,3)</drawSize>
-		</graphicData>
-		<size>(2,3)</size>
-		<costList>
-		  <Steel>30</Steel>
-		</costList>
-	</ThingDef>
-
-
-  
   
   <!-- ================= Metal Tiles ================= -->
 

@@ -54,6 +54,7 @@
 			<li>guy762BSC_Droid_labor</li>
 			<li>guy762BSC_Droid_all</li>
 			<li>guy762BSC_Droid_GE3LD</li>
+			<li>guy762BSC_Droid_PitDroid</li>
 		</spawnCategories>
 	</BackstoryDef>
 	
@@ -179,6 +180,9 @@
 			<li>guy762BSC_Droid_utility</li>
 			<li>guy762BSC_Droid_all</li>
 			<li>guy762BSC_Droid_R2AstDrd</li>
+			<li>guy762BSC_Droid_R3AstDrd</li>
+			<li>guy762BSC_Droid_R4AstDrd</li>
+			<li>guy762BSC_Droid_R5AstDrd</li>
 		</spawnCategories>
 	</BackstoryDef>
 	

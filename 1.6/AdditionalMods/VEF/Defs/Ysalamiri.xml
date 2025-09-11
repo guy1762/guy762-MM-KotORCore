@@ -1,0 +1,227 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ThingDef ParentName="EggUnfertBase">
+		<defName>SWPotF_eggUnfert_ysalamir</defName>
+		<label>ysalamir egg (unfert.)</label>
+		<description>An unfertilized ysalamir egg. It can be eaten raw, but it's much better cooked.</description>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+		</graphicData>
+		<statBases>
+		  <MarketValue>175</MarketValue>
+		</statBases>
+	</ThingDef>
+	
+	<ThingDef ParentName="EggFertBase">
+		<defName>SWPotF_egg_ysalamir</defName>
+		<label>ysalamir egg (fert.)</label>
+		<description>A fertilized ysalamir egg. If all goes well, it should hatch into a baby ysalamir. It can be eaten raw, but it's much better cooked.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+		  <texPath>Things/Item/Resource/AnimalProductRaw/EggOval</texPath>
+		  <color>(245,245,200)</color>
+		</graphicData>
+		<statBases>
+		  <MarketValue>250</MarketValue>
+		</statBases>
+		<comps>
+		  <li Class="CompProperties_Hatcher">
+			<hatcherDaystoHatch>3.5</hatcherDaystoHatch>
+			<hatcherPawn>SWPotF_ysalamir</hatcherPawn>
+		  </li>
+		</comps>
+	</ThingDef>
+	  
+	  
+	  
+	<HediffDef>
+		<defName>SWPotF_hediff_YsalamirForceDampen</defName>
+		<label>Force dampening</label>
+		<description>Nullified psychic sensitivity due to a nearby Ysalamir.</description>
+		<defaultLabelColor>(7,255,131)</defaultLabelColor> <!-- KotOR 2 green -->
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<statFactors>
+					<PsychicSensitivity>0</PsychicSensitivity>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+		  <!--2,500 ticks per hour in game-->
+		  <li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>3600</disappearsAfterTicks> <!-- 60 seconds -->
+			<showRemainingTime>True</showRemainingTime>
+		  </li>
+		  <li Class="HediffCompProperties_DisappearsOnDeath"/>
+		</comps>
+	</HediffDef>
+
+
+	<ThingDef ParentName="AnimalThingBase">
+		<defName>SWPotF_RaceDef_ysalamir</defName>
+		<label>ysalamir</label>
+		<description>.</description>
+		<statBases>
+		  <MoveSpeed>3.0</MoveSpeed>
+		  <MarketValue>500</MarketValue>
+		  <ComfyTemperatureMin>0</ComfyTemperatureMin>
+		  <ComfyTemperatureMax>60</ComfyTemperatureMax>
+		  <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.5</ToxicEnvironmentResistance>
+		  
+		  <Wildness>0.5</Wildness>
+		</statBases>
+		<tools>
+		  <li>
+			<label>left claw</label>
+			<labelNoLocation>claw</labelNoLocation>
+			<capacities>
+			  <li>Scratch</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>FrontLeftClaws</linkedBodyPartsGroup>
+		  </li>
+		  <li>
+			<label>right claw</label>
+			<labelNoLocation>claw</labelNoLocation>
+			<capacities>
+			  <li>Scratch</li>
+			</capacities>
+			<power>8</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>FrontRightClaws</linkedBodyPartsGroup>
+		  </li>
+		  <li>
+			<capacities>
+			  <li>Bite</li>
+			</capacities>
+			<power>10</power>
+			<cooldownTime>2.6</cooldownTime>
+			<linkedBodyPartsGroup>Teeth</linkedBodyPartsGroup>
+			<chanceFactor>0.7</chanceFactor>
+		  </li>
+		  <li>
+			<label>head</label>
+			<capacities>
+			  <li>Blunt</li>
+			</capacities>
+			<power>5</power>
+			<cooldownTime>2</cooldownTime>
+			<linkedBodyPartsGroup>HeadAttackTool</linkedBodyPartsGroup>
+			<ensureLinkedBodyPartsGroupAlwaysUsable>true</ensureLinkedBodyPartsGroupAlwaysUsable>
+			<chanceFactor>0.2</chanceFactor>
+		  </li>
+		</tools>
+		<comps>
+		  <li Class="CompProperties_EggLayer">
+			<eggUnfertilizedDef>SWPotF_eggUnfert_ysalamir</eggUnfertilizedDef>
+			<eggFertilizedDef>SWPotF_egg_ysalamir</eggFertilizedDef>
+			<eggFertilizationCountMax>1</eggFertilizationCountMax>
+			<eggLayIntervalDays>5.661</eggLayIntervalDays>
+			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+			<eggCountRange>1~2</eggCountRange>
+		  </li>
+		  <li Class="VEF.AnimalBehaviours.CompProperties_HediffEffecter">
+				<radius>40</radius>
+				<severity>1</severity>
+				<hediff>SWPotF_hediff_YsalamirForceDampen</hediff>
+				<tickInterval>900</tickInterval>
+				<notOnlyAffectColonists>true</notOnlyAffectColonists>
+			</li>
+		</comps>
+		<race>
+		  <body>QuadrupedAnimalWithClawsTailAndJowl</body>
+		  <baseBodySize>0.4</baseBodySize>
+		  <baseHealthScale>0.5</baseHealthScale>
+		  <baseHungerRate>0.2</baseHungerRate>
+		  <foodType>OmnivoreRoughAnimal</foodType>
+		  <leatherDef>Leather_Lizard</leatherDef>
+		  <!-- <wildness>0.5</wildness> now a statDef in 1.6 -->
+		  <trainability>Intermediate</trainability>
+		  <nuzzleMtbHours>12</nuzzleMtbHours>
+		  <petness>0.30</petness>
+		  <lifeExpectancy>12</lifeExpectancy>
+		  <soundEating>Reptile_Eat</soundEating>
+		  <lifeStageAges>
+			<li>
+			  <def>AnimalBaby</def>
+			  <minAge>0</minAge>
+			</li>
+			<li>
+			  <def>AnimalJuvenile</def>
+			  <minAge>0.1</minAge>
+			</li>
+			<li>
+			  <def>AnimalAdult</def>
+			  <minAge>0.2222</minAge>
+			  <soundWounded>Pawn_Iguana_Wounded</soundWounded>
+			  <soundDeath>Pawn_Iguana_Death</soundDeath>
+			  <soundCall>Pawn_Iguana_Call</soundCall>
+			  <soundAngry>Pawn_Iguana_Angry</soundAngry>
+			</li>
+		  </lifeStageAges>
+		  <soundMeleeHitPawn>Pawn_Melee_SmallScratch_HitPawn</soundMeleeHitPawn>
+		  <soundMeleeHitBuilding>Pawn_Melee_SmallScratch_HitBuilding</soundMeleeHitBuilding>
+		  <soundMeleeMiss>Pawn_Melee_SmallScratch_Miss</soundMeleeMiss>
+		  <headPosPerRotation>
+			<li>(-0.01, 0, 0.3)</li>
+			<li>(0.35, 0, 0.05)</li>
+			<li>(0.0, 0, -0.24)</li>
+			<li>(-0.35, 0, 0.05)</li>
+		  </headPosPerRotation>
+		</race>
+		<tradeTags>
+		  <li>guy762TT_ysalamiri</li>
+		  <li>AnimalExotic</li>
+		</tradeTags>
+	</ThingDef>
+	  
+	<PawnKindDef ParentName="AnimalKindBase">
+		<defName>SWPotF_ysalamir</defName>
+		<label>ysalamir</label>
+		<race>SWPotF_RaceDef_ysalamir</race>
+		<combatPower>40</combatPower>
+		<ecoSystemWeight>0.30</ecoSystemWeight>
+		<lifeStages>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>ysalamiri/ysalamiri</texPath>
+			  <drawSize>1</drawSize>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+			  <drawSize>1</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>ysalamiri/ysalamiri</texPath>
+			  <drawSize>1.25</drawSize>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+			  <drawSize>1.25</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		  <li>
+			<bodyGraphicData>
+			  <texPath>ysalamiri/ysalamiri</texPath>
+			  <drawSize>1.5</drawSize>
+			  <shadowData>
+				<volume>(0.25, 0.3, 0.25)</volume>
+				<offset>(0,0,0)</offset>
+			  </shadowData>
+			</bodyGraphicData>
+			<dessicatedBodyGraphicData>
+			  <texPath>Things/Pawn/Animal/Iguana/Dessicated_Iguana</texPath>
+			  <drawSize>1.5</drawSize>
+			</dessicatedBodyGraphicData>
+		  </li>
+		</lifeStages>
+	</PawnKindDef>
+
+</Defs>
