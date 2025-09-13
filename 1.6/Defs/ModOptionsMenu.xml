@@ -92,6 +92,20 @@
 			
 			
 			
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="XmlExtensions.Setting.GapLine"/>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="XmlExtensions.Setting.Checkbox">
+				<key>KotORCoreSettings_YsalamiriForceDampening</key>
+				<label>Toggle Ysalamiri Force Dampening</label>
+				<defaultValue>true</defaultValue>
+			</li>
+			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="XmlExtensions.Setting.Text">
+				<text>This patch toggles a function on the Ysalamiri that gives a psy sensitivity-dampening hediff to any pawn within a 40 tile radius every 900 ticks. Disabling this may help with performance.</text>
+			</li>
+			
+			
+			
+			
+			
 			<!-- <li Class="XmlExtensions.Setting.GapLine" MayRequire="Ludeon.RimWorld.Ideology"/> -->
 			<!-- <li Class="XmlExtensions.Setting.Checkbox" MayRequire="Ludeon.RimWorld.Ideology"> -->
 				<!-- <key>KotORCoreSettings_BroadwrapLayerTweak</key> -->

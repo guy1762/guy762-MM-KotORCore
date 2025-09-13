@@ -117,21 +117,21 @@
 		  </li>
 		</tools>
 		<comps>
-		  <li Class="CompProperties_EggLayer">
-			<eggUnfertilizedDef>SWPotF_eggUnfert_ysalamir</eggUnfertilizedDef>
-			<eggFertilizedDef>SWPotF_egg_ysalamir</eggFertilizedDef>
-			<eggFertilizationCountMax>1</eggFertilizationCountMax>
-			<eggLayIntervalDays>5.661</eggLayIntervalDays>
-			<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
-			<eggCountRange>1~2</eggCountRange>
-		  </li>
-		  <li Class="VEF.AnimalBehaviours.CompProperties_HediffEffecter">
-				<radius>40</radius>
-				<severity>1</severity>
-				<hediff>SWPotF_hediff_YsalamirForceDampen</hediff>
-				<tickInterval>900</tickInterval>
-				<notOnlyAffectColonists>true</notOnlyAffectColonists>
+			<li Class="CompProperties_EggLayer">
+				<eggUnfertilizedDef>SWPotF_eggUnfert_ysalamir</eggUnfertilizedDef>
+				<eggFertilizedDef>SWPotF_egg_ysalamir</eggFertilizedDef>
+				<eggFertilizationCountMax>1</eggFertilizationCountMax>
+				<eggLayIntervalDays>5.661</eggLayIntervalDays>
+				<eggProgressUnfertilizedMax>0.5</eggProgressUnfertilizedMax>
+				<eggCountRange>1~2</eggCountRange>
 			</li>
+			<!-- <li Class="VEF.AnimalBehaviours.CompProperties_HediffEffecter"> 		MOVED TO OPTIONAL PATCHES -->
+				<!-- <radius>40</radius> -->
+				<!-- <severity>1</severity> -->
+				<!-- <hediff>SWPotF_hediff_YsalamirForceDampen</hediff> -->
+				<!-- <tickInterval>900</tickInterval> -->
+				<!-- <notOnlyAffectColonists>true</notOnlyAffectColonists> -->
+			<!-- </li> -->
 		</comps>
 		<race>
 		  <body>QuadrupedAnimalWithClawsTailAndJowl</body>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	
+	<Operation Class="XmlExtensions.OptionalPatch">
+        <modId>guy762.MM.KotORCore</modId>
+        <key>KotORCoreSettings_YsalamiriForceDampening</key>
+        <defaultValue>true</defaultValue>
+        <caseTrue>
+		
+            <Operation Class="PatchOperationAdd">
+				<xpath>Defs/ThingDef[defName="SWPotF_RaceDef_ysalamir"]/comps</xpath>
+				<value>
+					<li Class="VEF.AnimalBehaviours.CompProperties_HediffEffecter">
+						<radius>40</radius>
+						<severity>1</severity>
+						<hediff>SWPotF_hediff_YsalamirForceDampen</hediff>
+						<tickInterval>900</tickInterval>
+						<notOnlyAffectColonists>true</notOnlyAffectColonists>
+					</li>
+				</value>
+			</Operation>
+			
+        </caseTrue>
+    </Operation>
+
+   
+
+</Patch>

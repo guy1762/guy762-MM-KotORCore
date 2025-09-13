@@ -265,6 +265,8 @@
 
 				<!-- <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">PsychicAmplifier</li> -->
 				
+				<li>PsychicShock</li>
+				
 				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicEntropy</li>
 				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicBreakdown</li>
 				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicAnesthesia</li>
@@ -313,6 +315,7 @@
 				<li>guy762_SonicDisorient</li>
 				<li>guy762_Electrocuted</li>
 				<li>guy762_Poison_saber</li>
+				<li>guy762_hediff_Decayed</li>
 
 
 
@@ -478,6 +481,8 @@
 			  <banlist>
 				<!-- <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">PsychicAmplifier</li> -->
 				
+				<li>PsychicShock</li>
+				
 				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicEntropy</li>
 				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicBreakdown</li>
 				<li MayRequire="Ludeon.RimWorld.Royalty">PsychicAnesthesia</li>
@@ -527,6 +532,7 @@
 				<li>guy762_SonicDisorient</li>
 				<li>guy762_Electrocuted</li>
 				<li>guy762_Poison_saber</li>
+				<li>guy762_hediff_Decayed</li>
 				
 				
 				
@@ -792,6 +798,9 @@
 		  <li>Body</li>
 		  <li>BS_Body</li>
 		  <li>Fur</li>
+		  
+		  <li>SkinColor</li>
+		  <li>SkinColorOverride</li>
 		</exclusionTags>
 		<bodyType>Standard</bodyType>
 	</GeneDef>
