@@ -5,7 +5,11 @@
         <label>colony droid</label>
         <defaultFactionType>PlayerColony</defaultFactionType>
 		<useFactionXenotypes>false</useFactionXenotypes>
-		<maxGenerationAge>1</maxGenerationAge>
+		
+		<minGenerationAge>20</minGenerationAge>
+		<maxGenerationAge>21</maxGenerationAge>
+		<chronologicalAgeRange>1~2</chronologicalAgeRange>
+		
 		<chemicalAddictionChance>0.00</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<initialResistanceRange>13~21</initialResistanceRange>
