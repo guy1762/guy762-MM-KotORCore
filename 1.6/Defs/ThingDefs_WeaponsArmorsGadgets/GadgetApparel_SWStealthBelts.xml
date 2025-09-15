@@ -2,7 +2,7 @@
 <Defs>
 
   
-  <ThingDef ParentName="guy762_CraftableUtilityBeltBase">
+  <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_CraftableUtilityBeltBase">
     <defName>guy762_stealthbelt</defName>
     <label>stealth field generator</label>
     <description>This device enables Stealth Mode, a camouflage field that hides the user. Combat is disabled while active, but performing mundane tasks are not. Movement speed is also reduced while active.\n\nThis basic version lasts up to 30 seconds.</description>
@@ -72,7 +72,7 @@
     </comps>
   </ThingDef>
   
-  <ThingDef ParentName="guy762_UtilityItemBase">
+  <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_UtilityItemBase">
     <defName>guy762_stealthbelt_aratech</defName>
     <label>Aratech SD Stealth Unit</label>
     <description>This Aratech Sound Dampening Belt reduces all sound that the user might make. Combat is disabled while active, but performing mundane tasks are not. Movement speed is also reduced while active.\n\nThis improved model lasts up to 60 seconds.</description>
@@ -131,7 +131,7 @@
   
 
   
-  <ThingDef ParentName="guy762_UtilityItemBase">
+  <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_UtilityItemBase">
     <defName>guy762_stealthbelt_eriadu</defName>
     <label>Eriadu Stealth Unit</label>
     <description>This sophisticated Eriadu Stealth Mode unit expertly camouflages the user. Combat is disabled while active, but performing mundane tasks are not. Movement speed is also reduced while active.\n\nThis more advanced model lasts up to three minutes.</description>

@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef Name="SWCPWorkTypeDisablerHediff_BASE" Abstract="True">
+		<defName>SWCPWorkTypeDisablerHediff_BASE</defName>
+		<!-- <label>debug disabled worktype:</label> -->
+		<description>This is a debug hediff that disables a specific work type. Big and Small Framework's droid race settings apply these to a pawn to disable the worktypes a droid is not supposed to have. Various upgrades will disable this hediff, thus re-enabling the pawn to perform this particular work type.</description>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<defaultLabelColor>(125,125,125)</defaultLabelColor>
+		<stages>
+			<!-- <li> -->
+				<!-- <becomeVisible>false</becomeVisible> -->
+				<!-- <disabledWorkTags> -->
+					<!-- <li>AllWork</li> -->
+						<!-- <li>Firefighting</li> -->
+						<!-- <li>Violent</li> -->
+						<!-- <li>Shooting</li> -->
+						<!-- <li>Hunting</li> -->
+						
+					<!-- <li>Commoner</li> -->
+						<!-- <li>Animals</li> -->
+						<!-- <li>Artistic</li> -->
+						<!-- <li>Caring</li> -->
+						<!-- <li>Social</li> -->
+						<!-- <li>Intellectual</li> -->
+						
+					<!-- <li>ManualDumb</li> -->
+						<!-- <li>Hauling</li> -->
+						<!-- <li>Cleaning</li> -->
+						
+					<!-- <li>ManualSkilled</li> -->
+						<!-- <li>Constructing</li> -->
+						<!-- <li>Mining</li> -->
+						<!-- <li>Cooking</li> -->
+						<!-- <li>PlantWork</li> -->
+						<!-- <li>Crafting</li> -->	
+				<!-- </disabledWorkTags> -->
+			<!-- </li> -->
+		</stages>
+		<comps>
+			<!-- <li Class="HediffCompProperties_RemoveIfOtherHediff"> -->
+				<!-- <hediffs> -->
+					<!-- <li></li> -->
+				<!-- </hediffs> -->
+			<!-- </li> -->
+		</comps>
+	</HediffDef>
+	
+	<!-- <HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE"> -->
+		<!-- <defName>SWCPWorkTypeDisablerHediff_</defName> -->
+		<!-- <label>debug disabled worktype: </label> -->
+		<!-- <stages> -->
+			<!-- <li> -->
+				<!-- <becomeVisible>false</becomeVisible> -->
+				<!-- <disabledWorkTags> -->
+					<!-- <li></li> -->
+				<!-- </disabledWorkTags> -->
+			<!-- </li> -->
+		<!-- </stages> -->
+	<!-- </HediffDef> -->
+	
+	
+	
+	
+	
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_Firefighting</defName>
+		<label>debug disabled worktype: Firefighting</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>Firefighting</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_Animals</defName>
+		<label>debug disabled worktype: Animals</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>Animals</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_Artistic</defName>
+		<label>debug disabled worktype: Artistic</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>Artistic</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_Caring</defName>
+		<label>debug disabled worktype: Caring</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>Caring</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_Social</defName>
+		<label>debug disabled worktype: Social</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>Social</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_Intellectual</defName>
+		<label>debug disabled worktype: Intellectual</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>Intellectual</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- ManualDumb -->
+	
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_ManualDumb</defName>
+		<label>debug disabled worktype: ManualDumb</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>ManualDumb</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_Hauling</defName>
+		<label>debug disabled worktype: Hauling</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>Hauling</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_Cleaning</defName>
+		<label>debug disabled worktype: Cleaning</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>Cleaning</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- ManualSkilled -->
+	
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_ManualSkilled</defName>
+		<label>debug disabled worktype: ManualSkilled</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>ManualSkilled</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_Constructing</defName>
+		<label>debug disabled worktype: Constructing</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>Constructing</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_Mining</defName>
+		<label>debug disabled worktype: Mining</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>Mining</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_Cooking</defName>
+		<label>debug disabled worktype: Cooking</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>Cooking</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_PlantWork</defName>
+		<label>debug disabled worktype: PlantWork</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>PlantWork</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_Crafting</defName>
+		<label>debug disabled worktype: Crafting</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>Crafting</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- Violent -->
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_Violent</defName>
+		<label>debug disabled worktype: Violent</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>Violent</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_Shooting</defName>
+		<label>debug disabled worktype: Shooting</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>Shooting</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+	
+	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
+		<defName>SWCPWorkTypeDisablerHediff_Hunting</defName>
+		<label>debug disabled worktype: Hunting</label>
+		<stages>
+			<li>
+				<becomeVisible>false</becomeVisible>
+				<disabledWorkTags>
+					<li>Hunting</li>
+				</disabledWorkTags>
+			</li>
+		</stages>
+	</HediffDef>
+
+
+</Defs>

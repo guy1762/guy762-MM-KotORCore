@@ -368,8 +368,33 @@
 				<li MayRequire="lee.theforce.standalone">Force_SithExperiment_DarkCorruption</li>
 				<li MayRequire="lee.theforce.standalone">Force_SithZombie</li>
 			</makeImmuneTo>
+			
 			<disabledWorkTags>
 				<li>Artistic</li>
+				
+				<!-- <li>AllWork</li> -->
+					<!-- <li>Firefighting</li> -->
+					<!-- <li>Violent</li> -->
+					<!-- <li>Shooting</li> -->
+					<!-- <li>Hunting</li> -->
+					
+				<!-- <li>Commoner</li> -->
+					<!-- <li>Animals</li> -->
+					<!-- <li>Artistic</li> -->
+					<!-- <li>Caring</li> -->
+					<!-- <li>Social</li> -->
+					<!-- <li>Intellectual</li> -->
+					
+				<!-- <li>ManualDumb</li> -->
+					<!-- <li>Hauling</li> -->
+					<!-- <li>Cleaning</li> -->
+					
+				<!-- <li>ManualSkilled</li> -->
+					<!-- <li>Constructing</li> -->
+					<!-- <li>Mining</li> -->
+					<!-- <li>Cooking</li> -->
+					<!-- <li>PlantWork</li> -->
+					<!-- <li>Crafting</li> -->	
 			</disabledWorkTags>
 			
 			<disablesNeeds>

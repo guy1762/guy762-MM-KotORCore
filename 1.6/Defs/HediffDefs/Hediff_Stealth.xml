@@ -2,7 +2,7 @@
 <Defs>
 
 	
-	<AbilityDef Name="guy762_StealthDeactivate_Base" Abstract="True">
+	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty" Name="guy762_StealthDeactivate_Base" Abstract="True">
 		<label>deactivate stealth field</label>
 		<description>Deactivate an equipped stealth field generator.</description>
 		<iconPath>UI/KotOR_Icon_Stealth_off</iconPath>
@@ -18,7 +18,7 @@
 		</verbProperties>
 	</AbilityDef>
 	 
-  <HediffDef Name="guy762_StealthField_Base" Abstract="True">
+  <HediffDef MayRequire="Ludeon.RimWorld.Royalty" Name="guy762_StealthField_Base" Abstract="True">
     <label>stealth field</label>
     <description>A camouflage field that hides the user. Combat is disabled while this is active, but performing mundane tasks are not. Movement speed is also reduced while active.</description>
     <hediffClass>HediffWithComps</hediffClass>
@@ -64,7 +64,7 @@
   
 
 	
-	<AbilityDef ParentName="guy762_StealthDeactivate_Base">
+	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthDeactivate_Base">
 		<defName>guy762_StealthDeactivate</defName>
 		<comps>
 		  <li Class="CompProperties_AbilityRemoveHediff">
@@ -78,7 +78,7 @@
 		</comps>
 	</AbilityDef>
   
-  <HediffDef ParentName="guy762_StealthField_Base">
+  <HediffDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthField_Base">
     <defName>guy762_StealthField</defName>
     <comps> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! --> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! -->
 	  <li Class="HediffCompProperties_GiveAbility">
@@ -98,7 +98,7 @@
   
 
 	
-	<AbilityDef ParentName="guy762_StealthDeactivate_Base">
+	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthDeactivate_Base">
 		<defName>guy762_StealthDeactivate_sixty</defName>
 		<comps>
 		  <li Class="CompProperties_AbilityRemoveHediff">
@@ -112,7 +112,7 @@
 		</comps>
 	</AbilityDef>
   
-  <HediffDef ParentName="guy762_StealthField_Base">
+  <HediffDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthField_Base">
     <defName>guy762_StealthField_sixty</defName>
     <comps> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! --> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! -->
 	  <li Class="HediffCompProperties_GiveAbility">
@@ -132,7 +132,7 @@
   
 
 	
-	<AbilityDef ParentName="guy762_StealthDeactivate_Base">
+	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthDeactivate_Base">
 		<defName>guy762_StealthDeactivate_twomin</defName>
 		<comps>
 		  <li Class="CompProperties_AbilityRemoveHediff">
@@ -146,7 +146,7 @@
 		</comps>
 	</AbilityDef>
   
-  <HediffDef ParentName="guy762_StealthField_Base">
+  <HediffDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthField_Base">
     <defName>guy762_StealthField_twomin</defName>
     <comps> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! --> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! -->
 	  <li Class="HediffCompProperties_GiveAbility">
@@ -167,7 +167,7 @@
   
 
 	
-	<AbilityDef ParentName="guy762_StealthDeactivate_Base">
+	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthDeactivate_Base">
 		<defName>guy762_StealthDeactivate_threemin</defName>
 		<comps>
 		  <li Class="CompProperties_AbilityRemoveHediff">
@@ -181,7 +181,7 @@
 		</comps>
 	</AbilityDef>
   
-  <HediffDef ParentName="guy762_StealthField_Base">
+  <HediffDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthField_Base">
     <defName>guy762_StealthField_threemin</defName>
     <comps> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! --> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! -->
 	  <li Class="HediffCompProperties_GiveAbility">
@@ -205,7 +205,7 @@
   
 
 	
-	<AbilityDef ParentName="guy762_StealthDeactivate_Base">
+	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthDeactivate_Base">
 		<defName>guy762_StealthDeactivate_fourmin</defName>
 		<comps>
 		  <li Class="CompProperties_AbilityRemoveHediff">
@@ -219,7 +219,7 @@
 		</comps>
 	</AbilityDef>
   
-  <HediffDef ParentName="guy762_StealthField_Base">
+  <HediffDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_StealthField_Base">
     <defName>guy762_StealthField_fourmin</defName>
     <comps> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! --> <!-- THIS NODE IS REPLACED BY A PATCH IN PotF!!! -->
 	  <li Class="HediffCompProperties_GiveAbility">
