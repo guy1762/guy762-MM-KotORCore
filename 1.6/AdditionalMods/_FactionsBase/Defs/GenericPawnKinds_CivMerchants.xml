@@ -3,7 +3,7 @@
 <Defs>
 
 	  
-	  <PawnKindDef Name="SWCPCivilian_shadydealer" ParentName="SWCPCivilian_Base">
+	<PawnKindDef Name="SWCPCivilian_shadydealer" ParentName="SWCPCivilian_Base">
 		<defName>SWCPCivilian_shadydealer</defName>
 		<label>shady dealer</label>
 		<minGenerationAge>19</minGenerationAge>
@@ -67,23 +67,35 @@
 		  <li>Simple</li>
 		</techHediffsTags>
 		
-		<skills>
-			<li>
-				<skill>Social</skill>
-				<range>4~8</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>4~8</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>10~17</initialResistanceRange>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Social</skill>
+						<range>4~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
 	  
 	  
 	  
-	  <PawnKindDef Name="SWCPCivilian_wanderingtrader" ParentName="SWCPCivilian_Base">
+	<PawnKindDef Name="SWCPCivilian_wanderingtrader" ParentName="SWCPCivilian_Base">
 		<defName>SWCPCivilian_wanderingtrader</defName>
 		<label>wandering trader</label>
 		<nameMaker>guy762_PawnNamer_GlupShitto</nameMaker>
@@ -164,23 +176,35 @@
 		  <li>Simple</li>
 		</techHediffsTags>
 		
-		<skills>
-			<li>
-				<skill>Social</skill>
-				<range>6~12</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Social</skill> -->
+				<!-- <range>6~12</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>10~17</initialResistanceRange>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Social</skill>
+						<range>6~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
 	  
 	  
 	  
-	  <PawnKindDef Name="SWCPCivilian_doctormid" ParentName="SWCPCivilian_FullXenoBase">
+	<PawnKindDef Name="SWCPCivilian_doctormid" ParentName="SWCPCivilian_FullXenoBase">
 		<defName>SWCPCivilian_doctormid</defName>
 		<label>offworld doctor</label>
 		<combatPower>25</combatPower>
@@ -255,12 +279,12 @@
 				</li>
 			</subOptionsChooseOne>
 		</inventoryOptions>
-		<skills>
-			<li>
-				<skill>Medicine</skill>
-				<range>10~14</range>
-			</li>
-		</skills>
+		<!-- <skills> -->
+			<!-- <li> -->
+				<!-- <skill>Medicine</skill> -->
+				<!-- <range>10~14</range> -->
+			<!-- </li> -->
+		<!-- </skills> -->
 		
 		<requiredWorkTags>
 		  <li>Caring</li>
@@ -269,7 +293,19 @@
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>10~17</initialResistanceRange>
 		<ignoreIdeoApparelColors>true</ignoreIdeoApparelColors>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Medicine</skill>
+						<range>10~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	  
 	  
 	  
@@ -306,20 +342,20 @@
 		  <li>KotORUtility_weakgrenade</li>
 		  <li>KotORClothing_smuggler</li>
 		</apparelTags>
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>8~16</range>
-		  </li>
-		  <li>
-			<skill>Social</skill>
-			<range>8~14</range>
-		  </li>
-		  <li>
-			<skill>Intellectual</skill>
-			<range>6~12</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>8~16</range> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <skill>Social</skill> -->
+			<!-- <range>8~14</range> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <skill>Intellectual</skill> -->
+			<!-- <range>6~12</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		<apparelAllowHeadgearChance>0.15</apparelAllowHeadgearChance>
 		<weaponMoney>100~5000</weaponMoney>
 		<weaponTags>
@@ -342,6 +378,25 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<isFighter>true</isFighter>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>8~16</range>
+					</li>
+					<li>
+						<skill>Social</skill>
+						<range>8~14</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>6~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 

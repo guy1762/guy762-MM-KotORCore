@@ -241,6 +241,22 @@
 		</stages>
 	</HediffDef>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
 		<defName>SWCPWorkTypeDisablerHediff_Mining</defName>
 		<label>debug disabled worktype: Mining</label>
@@ -252,7 +268,40 @@
 				</disabledWorkTags>
 			</li>
 		</stages>
+		<comps>
+			<li Class="HediffCompProperties_RemoveIfOtherHediff">
+				<hediffs>
+					<li>SWCP_SoftwareHediff_mining</li>
+				</hediffs>
+			</li>
+		</comps>
 	</HediffDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	<HediffDef ParentName="SWCPWorkTypeDisablerHediff_BASE">
 		<defName>SWCPWorkTypeDisablerHediff_Cooking</defName>

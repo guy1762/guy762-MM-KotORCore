@@ -234,7 +234,7 @@
 			<statFactors>
 			  <SM_FlirtChance>0</SM_FlirtChance>
 			  <!-- <WorkSpeedGlobal>0.5</WorkSpeedGlobal> -->
-			  <!-- <GlobalLearningFactor>0.4</GlobalLearningFactor> -->
+			  <GlobalLearningFactor>0</GlobalLearningFactor>
 			  <PsychicSensitivity>0</PsychicSensitivity>
 			</statFactors>
 			<statOffsets>
@@ -651,6 +651,48 @@
 				<!-- </tags> -->
 			<!-- </apparelRestrictions> -->
 			
+			
+			
+			
+			
+			
+			
+			<!-- <disabledWorkTypes> -->
+				<!-- <li>PatientBedRest</li> -->
+				<!-- <li>Patient</li> -->
+				<!-- <li>BasicWorker</li> -->
+				
+				<!-- <li>Firefighter</li> -->
+				<!-- <li>Hauling</li> -->
+				<!-- <li>Cleaning</li> -->
+				
+				<!-- <li>Hunting</li> -->
+				<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Fishing</li> -->
+				<!-- <li>Construction</li> -->
+				<!-- <li>Mining</li> -->
+				<!-- <li MayRequire="Ogliss.TheWhiteCrayon.Quarry">QuarryMining</li> -->
+				<!-- <li>Growing</li> -->
+				<!-- <li>PlantCutting</li> -->
+				<!-- <li>Cooking</li> -->
+				<!-- <li>Handling</li> -->
+				<!-- <li>Smithing</li> -->
+				<!-- <li>Tailoring</li> -->
+				<!-- <li>Crafting</li> -->
+				<!-- <li>Art</li> -->
+				<!-- <li>Doctor</li> -->
+				<!-- <li>Warden</li> -->
+				<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li> -->
+				<!-- <li MayRequire="Orion.Hospitality">Diplomat</li> -->
+				<!-- <li MayRequire="Adamas.Storefront">Storefront_Selling</li> -->
+				<!-- <li MayRequire="Orion.Gastronomy">Gastronomy_Waiting</li> -->
+				<!-- <li>Research</li> -->
+			<!-- </disabledWorkTypes> -->
+			
+			<!-- default for hediffs is 100 -->
+			<!-- <priority>99</priority> -->
+			<!-- <exclusionTags> -->
+				<!-- <li></li> -->
+			<!-- </exclusionTags> -->
 
 			
 			<immutableEndogenes>

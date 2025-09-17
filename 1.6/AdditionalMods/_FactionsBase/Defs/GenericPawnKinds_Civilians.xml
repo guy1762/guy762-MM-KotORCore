@@ -195,7 +195,7 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="SWCPCivilian_villager" ParentName="SWCPCivilian_Base">
+	<PawnKindDef Name="SWCPCivilian_villager" ParentName="SWCPCivilian_Base">
 		<defName>SWCPCivilian_villager</defName>
 		<label>civilian</label>
 		<combatPower>25</combatPower>
@@ -222,11 +222,11 @@
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>10~17</initialResistanceRange>
 		<disallowedTraits Inherit="False" />
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	  
-	  <PawnKindDef Name="SWCPCivilian_prole" ParentName="SWCPCivilian_Base">
+	<PawnKindDef Name="SWCPCivilian_prole" ParentName="SWCPCivilian_Base">
 		<defName>SWCPCivilian_prole</defName>
 		<label>civilian</label>
 		<combatPower>25</combatPower>
@@ -257,13 +257,13 @@
 		
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>10~17</initialResistanceRange>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	  
 	  
 	  
-	  <PawnKindDef Name="SWCPCivilian_poortraveler" ParentName="SWCPCivilian_Base">
+	<PawnKindDef Name="SWCPCivilian_poortraveler" ParentName="SWCPCivilian_Base">
 		<defName>SWCPCivilian_poortraveler</defName>
 		<label>civilian</label>
 		<combatPower>25</combatPower>
@@ -324,13 +324,13 @@
 		
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>10~17</initialResistanceRange>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	  
 	  
 	  
-	  <PawnKindDef Name="SWCPCivilian_mid" ParentName="SWCPCivilian_Base">
+	<PawnKindDef Name="SWCPCivilian_mid" ParentName="SWCPCivilian_Base">
 		<defName>SWCPCivilian_mid</defName>
 		<label>civilian</label>
 		<combatPower>25</combatPower>
@@ -360,12 +360,12 @@
 		</techHediffsTags>
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>10~17</initialResistanceRange>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	  
 	  
-	  <PawnKindDef Name="SWCPCivilian_bougie" ParentName="SWCPCivilian_Base">
+	<PawnKindDef Name="SWCPCivilian_bougie" ParentName="SWCPCivilian_Base">
 		<defName>SWCPCivilian_bougie</defName>
 		<label>civilian</label>
 		<combatPower>25</combatPower>
@@ -424,12 +424,12 @@
 		
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>10~17</initialResistanceRange>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	  
 	  
-	  <PawnKindDef Name="SWCPCivilian_exotictraveler" ParentName="SWCPCivilian_Base">
+	<PawnKindDef Name="SWCPCivilian_exotictraveler" ParentName="SWCPCivilian_Base">
 		<defName>SWCPCivilian_exotictraveler</defName>
 		<label>civilian</label>
 		<combatPower>25</combatPower>
@@ -538,7 +538,7 @@
 		
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>10~17</initialResistanceRange>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	  
@@ -553,7 +553,7 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="SWCPCivilian_hooded" ParentName="SWCPCivilian_Base">
+	<PawnKindDef Name="SWCPCivilian_hooded" ParentName="SWCPCivilian_Base">
 		<defName>SWCPCivilian_hooded</defName>
 		<label>civilian</label>
 		<minGenerationAge>25</minGenerationAge>
@@ -664,7 +664,7 @@
 		
 		<initialWillRange>0~1</initialWillRange>
 		<initialResistanceRange>10~17</initialResistanceRange>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 
 	  
@@ -672,7 +672,7 @@
 	  
 	  
 	  
-	  <PawnKindDef Name="SWCPCivilian_spacer" ParentName="SWCPCivilian_Base">
+	<PawnKindDef Name="SWCPCivilian_spacer" ParentName="SWCPCivilian_Base">
 		<defName>SWCPCivilian_spacer</defName>
 		<label>spacer</label>
 		<combatPower>50</combatPower>
@@ -742,16 +742,16 @@
 		</weaponTags>
 		<biocodeWeaponChance>0.6</biocodeWeaponChance>
 		
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>4~12</range>
-		  </li>
-		  <li>
-			<skill>Intellectual</skill>
-			<range>10~16</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>4~12</range> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <skill>Intellectual</skill> -->
+			<!-- <range>10~16</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		<inventoryOptions>
 		  <subOptionsChooseOne>
 			<li>
@@ -770,6 +770,22 @@
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<isFighter>false</isFighter>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~12</range>
+					</li>
+					<li>
+						<skill>Intellectual</skill>
+						<range>10~16</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -1056,22 +1072,38 @@
 		  <li>KotORStunBaton</li>
 		</weaponTags>
 		<biocodeWeaponChance>0.75</biocodeWeaponChance>
-		<skills>
-		  <li>
-			<skill>Shooting</skill>
-			<range>4~8</range>
-		  </li>
-		  <li>
-			<skill>Melee</skill>
-			<range>4~8</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Shooting</skill> -->
+			<!-- <range>4~8</range> -->
+		  <!-- </li> -->
+		  <!-- <li> -->
+			<!-- <skill>Melee</skill> -->
+			<!-- <range>4~8</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		<initialWillRange>0.5~2</initialWillRange>
 		<initialResistanceRange>5~10</initialResistanceRange>
 		<isFighter>true</isFighter>
 		<allowOldAgeInjuries>False</allowOldAgeInjuries>
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
-	  </PawnKindDef>
+		
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Shooting</skill>
+						<range>4~8</range>
+					</li>
+					<li>
+						<skill>Melee</skill>
+						<range>4~8</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
+	</PawnKindDef>
 	
 	
 	
@@ -1093,12 +1125,12 @@
 		  <li>Apparel_Tailcap</li>
 		  <li>guy762_Accessory_ponchoCamo</li>
 		</apparelRequired>
-		<skills>
-		  <li>
-			<skill>Animals</skill>
-			<range>4~12</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Animals</skill> -->
+			<!-- <range>4~12</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		<backstoryFiltersOverride>
 		  <li>
 			<categoriesAdulthood>
@@ -1106,6 +1138,17 @@
 			</categoriesAdulthood>
 		  </li>
 		</backstoryFiltersOverride>
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Animals</skill>
+						<range>4~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="SWCPCivilian_logger" ParentName="SWCPCivilian_villager">
@@ -1118,12 +1161,12 @@
 		  <li>Apparel_Tailcap</li>
 		  <li>guy762_Accessory_suspendersA</li>
 		</apparelRequired>
-		<skills>
-		  <li>
-			<skill>Plants</skill>
-			<range>4~12</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Plants</skill> -->
+			<!-- <range>4~12</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		<backstoryFiltersOverride>
 		  <li>
 			<categoriesAdulthood>
@@ -1131,6 +1174,17 @@
 			</categoriesAdulthood>
 		  </li>
 		</backstoryFiltersOverride>
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Plants</skill>
+						<range>4~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="SWCPCivilian_farmer" ParentName="SWCPCivilian_villager">
@@ -1142,12 +1196,12 @@
 		<apparelRequired>
 		  <li>Apparel_Shadecone</li>
 		</apparelRequired>
-		<skills>
-		  <li>
-			<skill>Plants</skill>
-			<range>4~12</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Plants</skill> -->
+			<!-- <range>4~12</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		<techHediffsMoney>1000~1000</techHediffsMoney>
 		<techHediffsTags>
 		  <li>FieldHand</li>
@@ -1161,6 +1215,17 @@
 			</categoriesAdulthood>
 		  </li>
 		</backstoryFiltersOverride>
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Plants</skill>
+						<range>4~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	<PawnKindDef Name="SWCPCivilian_miner" ParentName="SWCPCivilian_prole">
@@ -1178,12 +1243,12 @@
 		  <li>guy762_Accessory_suspendersA</li>
 		  <li>Apparel_SimpleHelmet</li>
 		</apparelRequired>
-		<skills>
-		  <li>
-			<skill>Mining</skill>
-			<range>4~12</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Mining</skill> -->
+			<!-- <range>4~12</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		
 		<techHediffsMoney>1000~1000</techHediffsMoney>
 		<techHediffsTags>
@@ -1198,6 +1263,17 @@
 			</categoriesAdulthood>
 		  </li>
 		</backstoryFiltersOverride>
+		<modExtensions>
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Mining</skill>
+						<range>4~12</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	
@@ -1254,6 +1330,9 @@
 		  <li>guy762_Bodysuit_Dyeable</li>
 		  <li>guy762_Jacket_scout</li>
 		</apparelRequired>
+		
+		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+		
 		<specificApparelRequirements>
 			<li>
 				<apparelLayer>Overhead</apparelLayer>
@@ -1274,12 +1353,12 @@
 			</li>
 		</specificApparelRequirements>
 		
-		<skills>
-		  <li>
-			<skill>Construction</skill>
-			<range>8~14</range>
-		  </li>
-		</skills>
+		<!-- <skills> -->
+		  <!-- <li> -->
+			<!-- <skill>Construction</skill> -->
+			<!-- <range>8~14</range> -->
+		  <!-- </li> -->
+		<!-- </skills> -->
 		<modExtensions Inherit="False">
 			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
 			  <whitelist>
@@ -1299,9 +1378,17 @@
 			  <!--Align body gender to pawn's gender (default: True)-->
 			  <checkGender>True</checkGender>
 			</li>
+			
+			<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnKindExtension">
+				<skillRange>
+					<li>
+						<skill>Construction</skill>
+						<range>8~14</range>
+					</li>
+				</skillRange>
+				<skillRangeApplyToBabies>false</skillRangeApplyToBabies>
+			</li>
 		</modExtensions>
-		
-		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 	</PawnKindDef>
 	
 	
