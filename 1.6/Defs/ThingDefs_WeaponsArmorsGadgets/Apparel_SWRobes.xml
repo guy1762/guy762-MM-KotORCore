@@ -2,7 +2,7 @@
 <Defs>
 	
 
-  <ThingDef ParentName="guy762_ModdableMakeableArmor_soft">
+	<ThingDef ParentName="guy762_ModdableMakeableArmor_soft">
 		<defName>guy762_Robes_jawa</defName>
 		<label>robes, rustic</label>
 		<description>Thick robes like these are worn to protect the wearer from temperature extremes.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description>
@@ -108,11 +108,11 @@
 				</partsMounts>
 			</li>
 		</comps>
-	  </ThingDef>
+	</ThingDef>
 	  
 	  
 	  
-	  <ThingDef ParentName="guy762_ModdableMakeableArmor_soft">
+	<ThingDef ParentName="guy762_ModdableMakeableArmor_soft">
 		<defName>guy762_Robes_tusken</defName>
 		<label>robes, rugged</label>
 		<description>Thick robes like these are worn to protect the wearer from temperature extremes.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description>
@@ -223,21 +223,117 @@
 				</partsMounts>
 			</li>
 		</comps>
-	  </ThingDef>
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_ModdableMakeableArmor_soft">
+		<defName>guy762_Robes_zuckuss</defName>
+		<label>robes, heavy</label>
+		<description>Thick robes like these are worn to protect the wearer from temperature extremes.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description>
+		<graphicData>
+		  <texPath>SWApparel/Robes/zuckuss/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+			<Mass>8</Mass>
+			<MarketValue>50</MarketValue>
+			<MaxHitPoints>225</MaxHitPoints>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.15</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.2</ArmorRating_Heat>
+			
+			<Insulation_Cold>25</Insulation_Cold>
+			<Insulation_Heat>25</Insulation_Heat>
+			
+			<EquipDelay>9</EquipDelay>
+			
+			<WorkToMake>12500</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+			<MoveSpeed>-0.1</MoveSpeed>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+		</equippedStatOffsets>
+		
+		<costList>
+			<Cloth>160</Cloth>
+		</costList>
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>5</Crafting>
+			</skillRequirements>
+			<recipeUsers Inherit="False">
+				<li>HandTailoringBench</li>
+				<li>ElectricTailoringBench</li>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+		</recipeMaker>
+		
+		
+		<apparel>
+			<layers>
+				<li>Middle</li>
+				<li>OnSkin</li>
+			</layers>
+			<bodyPartGroups>
+				<li>Torso</li>
+				<li>Shoulders</li>
+				<!-- <li>Neck</li> -->
+				<li>Arms</li>
+				<li>Hands</li>
+				<li>Legs</li>
+				<li>Feet</li>
+			</bodyPartGroups>
+			<tags Inherit="False">
+				<li>KotORClothing_civilian_villager</li>
+				<li>KotORClothing_civilian_hooded</li>
+				<li>SWCPSpecificApparelItem_ZuckussRobes</li>
+			</tags>
+			<wornGraphicPath>SWApparel/Robes/zuckuss/Apparel</wornGraphicPath>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(90,75,60)</only> <!-- probably patchleather or something idk -->
+				</li>
+			</options>
+		</colorGenerator>
+		<comps>
+			<li MayRequire="kaitorisenkou.ModularWeapons2" Class="ModularWeapons2.CompProperties_ModularWeapon">
+				<baseGraphicData>
+					<texPath>SWApparel/Robes/zuckuss/Apparel</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+				</baseGraphicData>
+				<partsMounts>
+				  <li>
+					<mountDef>guy762_KotORMount_underlay_robe</mountDef>
+					<offset>(0,0)</offset>
+					<layerOrder>1</layerOrder>
+				  </li>
+				</partsMounts>
+			</li>
+		</comps>
+	</ThingDef>
   
   
   
   
   
-  <ThingDef ParentName="guy762_ModdableMakeableArmor_soft">
+	<ThingDef ParentName="guy762_ModdableMakeableArmor_soft">
 		<defName>guy762_Robes_onderon</defName>
 		<label>robes, wayfarer's</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.\n\nUPGRADE SLOTS:\n- Armor Underlay (robe)</description>
 		<graphicData>
 		  <texPath>SWApparel/Robes/onderon/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(100,145,160)</colorTwo>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(100,145,160)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>8</Mass>
@@ -294,6 +390,29 @@
 			</tags>
 			<wornGraphicPath>SWApparel/Robes/onderon/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
+			
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Robes/onderon/Apparel</li></texturePaths>
+					  <colorA>
+						<color>200,210,210</color> <!-- snow white -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>100,145,160</color> <!-- teal -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -368,7 +487,15 @@
 				</partsMounts>
 			</li>
 		</comps>
-	  </ThingDef>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
   
   
   

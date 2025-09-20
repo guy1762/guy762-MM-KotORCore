@@ -75,15 +75,15 @@
 	  </ThingDef>
 	  
 	  
-	  <ThingDef ParentName="guy762_clothingbase">
+	<ThingDef ParentName="guy762_clothingbase">
 		<defName>guy762_Clothing_gamorrean</defName>
 		<label>Gamorrean leathers</label>
 		<description>These simple garments do not protect the modesty of the wearer, but they do offer a reasonable level of protection according to the leather hide it is fashioned out of.</description>
 		<graphicData>
 		  <texPath>SWApparel/Undersuits/gamorrean/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(50,50,50)</colorTwo> <!--  -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(50,50,50)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>4</Mass>
@@ -122,6 +122,29 @@
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
 		  </defaultOutfitTags>
+			
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Undersuits/gamorrean/Apparel</li></texturePaths>
+					  <colorA>
+						<color>130,75,50</color> <!-- copper -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>50,50,50</color> <!-- black -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORAntique</li>
@@ -135,7 +158,15 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
 	  
 	  
 	  

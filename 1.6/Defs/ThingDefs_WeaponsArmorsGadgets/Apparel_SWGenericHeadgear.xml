@@ -200,7 +200,7 @@
 			<options>
 				<li>
 					<weight>15</weight>
-					<only>(160,115,80)</only>       <!-- darker khaki -->
+					<only>(160,115,80)</only>       <!-- soft orange -->
 				</li>
 			</options>
 		</colorGenerator>
@@ -216,7 +216,6 @@
 		  <texPath>SWApparel/Rebel/PaoHat/PaoHat_Goggles</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(170,170,190)</colorTwo> <!-- sith grey -->
 		</graphicData>
 		<statBases>
 		  <MarketValue>100</MarketValue>
@@ -270,7 +269,7 @@
 			<options>
 				<li>
 					<weight>15</weight>
-					<only>(160,115,80)</only>       <!-- darker khaki -->
+					<only>(160,115,80)</only>       <!-- soft orange -->
 				</li>
 			</options>
 		</colorGenerator>
@@ -307,8 +306,8 @@
 		<graphicData>
 		  <texPath>SWApparel/RebelEngineer/hat</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(170,170,190)</colorTwo> <!-- sith grey -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(170,170,190)</colorTwo> -->
 		</graphicData>
 		<statBases>
 		  <MarketValue>50</MarketValue>
@@ -355,6 +354,28 @@
 		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 		  <canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
 		  <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			
+			<renderNodeProperties>
+				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>71</baseLayer>	<!-- OVERHEAD -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/RebelEngineer/hat</li></texturePaths>
+					  <colorA>
+						<color>175,150,120</color> <!-- bespin beige -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>170,170,190</color> <!-- sith grey -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>71</layer> </dataNorth> </drawData>	<!-- OVERHEAD -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -367,6 +388,14 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
 	

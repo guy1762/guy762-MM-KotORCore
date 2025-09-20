@@ -9,8 +9,8 @@
 		<graphicData>
 		  <texPath>SWApparel/Undersuits/scum/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(190,155,120)</colorTwo> <!-- beige -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(190,155,120)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>3</Mass>
@@ -41,6 +41,29 @@
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
 		  </defaultOutfitTags>
+			
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Undersuits/scum/Apparel</li></texturePaths>
+					  <colorA>
+						<color>70,70,75</color> <!-- soft black -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>190,155,120</color> <!-- beige -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -49,7 +72,7 @@
 			<options>
 				<li>
 					<weight>15</weight>
-					<only>(70,70,75)</only> <!-- black -->
+					<only>(70,70,75)</only> <!-- soft black -->
 				</li>
 				<li>
 					<weight>7</weight>
@@ -65,6 +88,14 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	  
 	<ThingDef ParentName="guy762_clothingbase">
@@ -149,8 +180,8 @@
 		<graphicData>
 		  <texPath>SWApparel/Undersuits/scum/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(50,50,50)</colorTwo> <!-- black -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(50,50,50)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>3</Mass>
@@ -182,6 +213,29 @@
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
 		  </defaultOutfitTags>
+		  
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Undersuits/scum/Apparel</li></texturePaths>
+					  <colorA>
+						<color>250,250,250</color> <!-- white -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>50,50,50</color> <!-- black -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -198,6 +252,14 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
 	
@@ -219,7 +281,7 @@
 	  
 	  
 	  
-	  <ThingDef ParentName="guy762_clothingbase">
+	<ThingDef ParentName="guy762_clothingbase">
 		<defName>guy762_Clothing_civilian</defName>
 		<label>clothing, plain</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
@@ -294,7 +356,7 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+	</ThingDef>
 	  
 	  
 	  
@@ -305,8 +367,8 @@
 		<graphicData>
 		  <texPath>SWApparel/Undersuits/rebel/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(175,175,175)</colorTwo>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(175,175,175)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>3</Mass>
@@ -336,6 +398,29 @@
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
 		  </defaultOutfitTags>
+		  
+		  <renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Undersuits/rebel/Apparel</li></texturePaths>
+					  <colorA>
+						<color>145,195,230</color> <!-- sky blue -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>175,175,175</color> <!-- banal grey -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -352,21 +437,29 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	  
 	  
 	  
 	  
 	  
-	  <ThingDef ParentName="guy762_clothingbase">
+	<ThingDef ParentName="guy762_clothingbase">
 		<defName>guy762_Clothing_smuggler</defName>
 		<label>clothing, loose</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
 		  <texPath>SWApparel/Undersuits/smuggler/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(140,0,0)</colorTwo> <!-- crimson -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(140,0,0)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>3</Mass>
@@ -403,6 +496,29 @@
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
 		  </defaultOutfitTags>
+		  
+		  <renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Undersuits/smuggler/Apparel</li></texturePaths>
+					  <colorA>
+						<color>130,130,135</color> <!-- dark -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>140,0,0</color> <!-- crimson -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -435,17 +551,27 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
-	  
-	  <ThingDef ParentName="guy762_clothingbase">
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="guy762_clothingbase">
 		<defName>guy762_Clothing_trendy</defName>
 		<label>clothing, trendy</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
 		  <texPath>SWApparel/Undersuits/trendy/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(255,130,65)</colorTwo> <!-- orange -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(255,130,65)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>3</Mass>
@@ -481,6 +607,29 @@
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
 		  </defaultOutfitTags>
+		  
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Undersuits/trendy/Apparel</li></texturePaths>
+					  <colorA>
+						<color>210,190,140</color> <!-- beige -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>255,130,65</color> <!-- orange -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -493,19 +642,27 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
 	  
 	  
 	  
-	  <ThingDef ParentName="guy762_clothingbase">
+	<ThingDef ParentName="guy762_clothingbase">
 		<defName>guy762_Clothing_cosmopolitan</defName>
 		<label>clothing, cosmopolitan</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
 		  <texPath>SWApparel/Undersuits/cosmopolitan/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(215,70,55)</colorTwo> <!-- red-orange -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(215,70,55)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>3</Mass>
@@ -539,6 +696,29 @@
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
 		  </defaultOutfitTags>
+		  
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Undersuits/cosmopolitan/Apparel</li></texturePaths>
+					  <colorA>
+						<color>165,170,200</color> <!-- light sand blue -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>215,70,55</color> <!-- red-orange -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -559,20 +739,28 @@
 				</li>
 			</options>
 		</colorGenerator>
-	  </ThingDef>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
 	  
 	  
 	  
 	  
-	  <ThingDef ParentName="guy762_clothingbase">
+	<ThingDef ParentName="guy762_clothingbase">
 		<defName>guy762_Clothing_light</defName>
 		<label>clothing, light</label>
 		<description>These are simple garments that protect little more than the modesty of the wearer.</description>
 		<graphicData>
 		  <texPath>SWApparel/Undersuits/light/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(50,50,50)</colorTwo> <!-- black -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(50,50,50)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>3</Mass>
@@ -604,6 +792,29 @@
 		  <defaultOutfitTags Inherit="False">
 			<li>Worker</li>
 		  </defaultOutfitTags>
+		  
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Undersuits/light/Apparel</li></texturePaths>
+					  <colorA>
+						<color>190,185,200</color> <!-- lighter bley -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>50,50,50</color> <!-- black -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -620,6 +831,14 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
 	
@@ -639,8 +858,8 @@
 		<graphicData>
 		  <texPath>SWApparel/Undersuits/rebel_camo/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(50,50,50)</colorTwo>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(50,50,50)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>3</Mass>
@@ -673,6 +892,29 @@
 		  <defaultOutfitTags Inherit="False">
 			<li>Soldier</li>
 		  </defaultOutfitTags>
+		  
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Undersuits/rebel_camo/Apparel</li></texturePaths>
+					  <colorA>
+						<color>75,75,75</color> <!-- dark grey -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>50,50,50</color> <!-- black -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -689,6 +931,14 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
 	
@@ -703,8 +953,8 @@
 		<graphicData>
 		  <texPath>SWApparel/Undersuits/rebel_camo2/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(175,150,120)</colorTwo>	<!-- bespin beige -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(175,150,120)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>3</Mass>
@@ -737,6 +987,29 @@
 		  <defaultOutfitTags Inherit="False">
 			<li>Soldier</li>
 		  </defaultOutfitTags>
+		  
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Undersuits/rebel_camo2/Apparel</li></texturePaths>
+					  <colorA>
+						<color>95,100,70</color> <!-- forest green -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>175,150,120</color> <!-- bespin beige -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -769,6 +1042,14 @@
 				<!-- </li> -->
 			</options>
 		</colorGenerator>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
 	
@@ -937,8 +1218,8 @@
 		<graphicData>
 		  <texPath>SWApparel/Undersuits/worker/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(230,185,45)</colorTwo>    <!-- republic yellow -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(230,185,45)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>4</Mass>
@@ -975,6 +1256,29 @@
 		  <!--renderSkipFlags>
 			<li>Body</li>
 		  </renderSkipFlags-->
+		  
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>21</baseLayer>	<!-- ONSKIN -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Undersuits/worker/Apparel</li></texturePaths>
+					  <colorA>
+						<color>70,60,80</color> <!-- plum -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>230,185,45</color> <!-- republic yellow -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -988,6 +1292,14 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
   
@@ -1108,8 +1420,8 @@
 		<graphicData>
 		  <texPath>SWApparel/Accessories/jacket_smuggler/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(160,170,175)</colorTwo>
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(160,170,175)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>4</Mass>
@@ -1146,6 +1458,29 @@
 			</tags>
 			<wornGraphicPath>SWApparel/Accessories/jacket_smuggler/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
+			
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer>	<!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Accessories/jacket_smuggler/Apparel</li></texturePaths>
+					  <colorA>
+						<color>125,25,25</color> <!--scoundrel red-->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>160,170,175</color> <!---->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -1191,6 +1526,14 @@
 				</partsMounts>
 			</li>
 		</comps>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	  
 	  
@@ -1202,8 +1545,8 @@
 		<graphicData>
 		  <texPath>SWApparel/Accessories/vest_mission/Apparel</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(175,120,55)</colorTwo> <!-- burnt orange -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(175,120,55)</colorTwo> -->
 		</graphicData>
 		<statBases>
 			<Mass>3</Mass>
@@ -1237,6 +1580,29 @@
 			</tags>
 			<wornGraphicPath>SWApparel/Accessories/vest_mission/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
+			
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>22</baseLayer>	<!-- MIDDLE -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Accessories/vest_mission/Apparel</li></texturePaths>
+					  <colorA>
+						<color>130,125,140</color> <!-- bley -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>175,120,55</color> <!-- burnt orange -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -1286,7 +1652,15 @@
 				</partsMounts>
 			</li>
 		</comps>
-	  </ThingDef>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
+	</ThingDef>
 	  
 	  
 	<ThingDef ParentName="KotORArmorModdable_soft">

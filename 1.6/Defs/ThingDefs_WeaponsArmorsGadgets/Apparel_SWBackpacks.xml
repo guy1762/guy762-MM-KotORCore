@@ -84,8 +84,8 @@
 		<graphicData>
 		  <texPath>SWApparel/Accessories/backpacks/backpack_scorch</texPath>
 		  <graphicClass>Graphic_Single</graphicClass>
-		  <shaderType>CutoutComplex</shaderType>
-		  <colorTwo>(230,185,45)</colorTwo> <!-- republic yellow -->
+		  <!-- <shaderType>CutoutComplex</shaderType> -->
+		  <!-- <colorTwo>(230,185,45)</colorTwo> -->
 		</graphicData>
 		<statBases>
 		  <Mass>4</Mass>
@@ -122,6 +122,31 @@
 				  <layer>68</layer>
 			  </dataNorth>
 			</drawData>
+			
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>24</baseLayer>	<!-- BACKPACK -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Accessories/backpacks/backpack_scorch</li></texturePaths>
+					  <colorA>
+						<color>140,140,150</color> <!--silver-->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>230,185,45</color> <!-- republic yellow -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData>
+						<dataSouth> <layer>-1</layer> </dataSouth>
+						<dataNorth> <layer>99</layer> </dataNorth>
+					</drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 		  <options>
@@ -136,6 +161,14 @@
 				<compClass>CompQuality</compClass>
 			</li>
 		</comps>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	  
 	  
@@ -192,6 +225,31 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/Accessories/backpacks/backpack_big</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
+		  
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>24</baseLayer>	<!-- BACKPACK -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Accessories/backpacks/backpack_scorch</li></texturePaths>
+					  <colorA>
+						<color>120,125,110</color> <!-- drab green -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>175,120,55</color> <!--faint orange-->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData>
+						<dataSouth> <layer>-1</layer> </dataSouth>
+						<dataNorth> <layer>99</layer> </dataNorth>
+					</drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 		  <options>
@@ -221,6 +279,14 @@
 		<tradeTags>
 		  <li>guy762TT_KotOREquipment_apparel</li>
 		</tradeTags>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
 	
@@ -279,28 +345,51 @@
 		
 		<tickerType>Never</tickerType>
 		<apparel>
-		  <tags>
-			<li>NewRepublic_RebelBackpackMix</li>
-			<li>SWCPSpecificApparelItem_GCWRebelBackpack</li>
-			<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Accessories/backpacks/Rebel/backpack</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>NewRepublic_RebelBackpackMix</li>
+				<li>SWCPSpecificApparelItem_GCWRebelBackpack</li>
+				<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
+			</tags>
+			<wornGraphicPath>SWApparel/Accessories/backpacks/Rebel/backpack</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 		  
 		  
 		  
-		  <wornGraphicData>
-			<east>
-				<male><offset>(0.05,0)</offset></male>
-				<female><offset>(0.05,0.05)</offset></female>
-			</east>
-			<west>
-				<male><offset>(-0.05,0)</offset></male>
-				<female><offset>(-0.05,0.05)</offset></female>
-			</west>
-		  </wornGraphicData>
+			<wornGraphicData>
+				<east>
+					<male><offset>(0.05,0)</offset></male>
+					<female><offset>(0.05,0.05)</offset></female>
+				</east>
+				<west>
+					<male><offset>(-0.05,0)</offset></male>
+					<female><offset>(-0.05,0.05)</offset></female>
+				</west>
+			</wornGraphicData>
 		  
-		  
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>24</baseLayer>	<!-- BACKPACK -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Accessories/backpacks/Rebel/backpack</li></texturePaths>
+					  <colorA>
+						<color>115,120,75</color> <!-- olive green -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>175,120,55</color> <!--faint orange-->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData>
+						<dataSouth> <layer>-1</layer> </dataSouth>
+						<dataNorth> <layer>99</layer> </dataNorth>
+					</drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 		  <options>
@@ -326,6 +415,14 @@
 		<tradeTags>
 			<li>guy762TT_RebelArmor</li>
 		</tradeTags>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
 	
 	
@@ -371,27 +468,50 @@
 		
 		<tickerType>Never</tickerType>
 		<apparel>
-		  <tags>
-			<li>NewRepublic_RebelBackpackMix</li>
-			<li>SWCPSpecificApparelItem_GCWRebelHeavyBackpack</li>
-			<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Accessories/backpacks/Rebel/bedrollbackpack</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>NewRepublic_RebelBackpackMix</li>
+				<li>SWCPSpecificApparelItem_GCWRebelHeavyBackpack</li>
+				<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
+			</tags>
+			<wornGraphicPath>SWApparel/Accessories/backpacks/Rebel/bedrollbackpack</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			  
+			  
+			<wornGraphicData>
+				<east>
+					<male><offset>(0.05,0)</offset></male>
+					<female><offset>(0.05,0.05)</offset></female>
+				</east>
+				<west>
+					<male><offset>(-0.05,0)</offset></male>
+					<female><offset>(-0.05,0.05)</offset></female>
+				</west>
+			</wornGraphicData>
 		  
-		  
-		  <wornGraphicData>
-			<east>
-				<male><offset>(0.05,0)</offset></male>
-				<female><offset>(0.05,0.05)</offset></female>
-			</east>
-			<west>
-				<male><offset>(-0.05,0)</offset></male>
-				<female><offset>(-0.05,0.05)</offset></female>
-			</west>
-		  </wornGraphicData>
-		  
-		  
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>24</baseLayer>	<!-- BACKPACK -->
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Accessories/backpacks/Rebel/bedrollbackpack</li></texturePaths>
+					  <colorA>
+						<color>125,125,125</color> <!-- mid grey -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>175,120,55</color> <!--faint orange-->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData>
+						<dataSouth> <layer>-1</layer> </dataSouth>
+						<dataNorth> <layer>99</layer> </dataNorth>
+					</drawData>
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<colorGenerator Class="ColorGenerator_Options">
 		  <options>
@@ -417,6 +537,14 @@
 		<tradeTags>
 			<li>guy762TT_RebelArmor</li>
 		</tradeTags>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
   
   

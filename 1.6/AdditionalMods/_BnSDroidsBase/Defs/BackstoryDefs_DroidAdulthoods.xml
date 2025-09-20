@@ -200,5 +200,18 @@
 		</spawnCategories>
 	</BackstoryDef>
 	
+	<BackstoryDef>
+		<defName>guy762_Backstory_medicaldroid</defName>
+		<title>medical droid</title>
+		<titleShort>medical droid</titleShort>
+		<description>This is a medical droid.</description>
+		<slot>Adulthood</slot>
+		<spawnCategories>
+			<li>guy762BSC_Droid_medical</li>
+			<li>guy762BSC_Droid_all</li>
+			<li>guy762BSC_Droid_21BMedDroid</li>
+		</spawnCategories>
+	</BackstoryDef>
+	
 	
 </Defs>

@@ -32,7 +32,7 @@
 			<DecompressionResistance MayRequire="kentington.saveourship2">1</DecompressionResistance>
 
 			<MaxNutrition>1</MaxNutrition>
-			<CarryingCapacity>50</CarryingCapacity>
+			<!-- <CarryingCapacity>50</CarryingCapacity> -->
 			<WorkSpeedGlobal>1</WorkSpeedGlobal>
 			<GlobalLearningFactor>1</GlobalLearningFactor>
 
@@ -417,10 +417,229 @@
 		</stages>
 
 		<modExtensions>
+			<!-- <li Class="BigAndSmall.PawnExtension"> -->
+				<!-- <priority>-100000</priority> -->
+				<!-- <exclusionTags> -->
+					<!-- <li>SWCPDroidRaceHediffExclusionTag_R2WorkTypeSettings</li> -->
+				<!-- </exclusionTags> -->
+				
+				<!-- NOTE: all greened-out types are ENABLED -->
+				
+				<!-- <disabledWorkTypes> -->
+					<!-- <li>PatientBedRest</li> -->
+					<!-- <li>Patient</li> -->
+					<!-- <li>BasicWorker</li> -->
+					
+					<!-- <li>Firefighter</li> -->
+					<!-- <li>Hauling</li> -->
+					<!-- <li>Cleaning</li> -->
+					
+					<!-- <li>Hunting</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Fishing</li> -->
+					<!-- <li>Construction</li> -->
+					<!-- <li>Mining</li> -->
+					<!-- <li MayRequire="Ogliss.TheWhiteCrayon.Quarry">QuarryMining</li> -->
+					<!-- <li>Growing</li> -->
+					<!-- <li>PlantCutting</li> -->
+					<!-- <li>Cooking</li> -->
+					<!-- <li>Handling</li> -->
+					<!-- <li>Smithing</li> -->
+					<!-- <li>Tailoring</li> -->
+					<!-- <li>Crafting</li> -->
+					<!-- <li>Art</li> -->
+					<!-- <li>Doctor</li> -->
+					<!-- <li>Warden</li> -->
+					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li> -->
+					<!-- <li MayRequire="Orion.Hospitality">Diplomat</li> -->
+					<!-- <li MayRequire="Adamas.Storefront">Storefront_Selling</li> -->
+					<!-- <li MayRequire="Orion.Gastronomy">Gastronomy_Waiting</li> -->
+					<!-- <li>Research</li> -->
+				<!-- </disabledWorkTypes> -->
+			<!-- </li> -->
+			
+			<!--
+			
+			THE BIG LIST
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_CleaningDisabled</li></exclusionTags>
+				<disabledWorkTypes><li>Cleaning</li></disabledWorkTypes>
+			</li>
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_HaulingDisabled</li></exclusionTags>
+				<disabledWorkTypes><li>Hauling</li></disabledWorkTypes>
+			</li>
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_FirefighterDisabled</li></exclusionTags>
+				<disabledWorkTypes><li>Firefighter</li></disabledWorkTypes>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_MiningDisabled</li></exclusionTags>
+				<disabledWorkTypes>
+					<li>Mining</li>
+					<li MayRequire="Ogliss.TheWhiteCrayon.Quarry">QuarryMining</li>
+				</disabledWorkTypes>
+			</li>
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_CookingDisabled</li></exclusionTags>
+				<disabledWorkTypes><li>Cooking</li></disabledWorkTypes>
+			</li>
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_PlantWorkDisabled</li></exclusionTags>
+				<disabledWorkTypes>
+					<li>Growing</li>
+					<li>PlantCutting</li>
+				</disabledWorkTypes>
+			</li>
+			
+			
+			
+			
+			
+			
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_AllCraftingDisabled</li></exclusionTags>
+				<disabledWorkTypes>
+					<li>Smithing</li>
+					<li>Tailoring</li>
+					<li>Crafting</li>
+				</disabledWorkTypes>
+			</li>
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_SmithingDisabled</li></exclusionTags>
+				<disabledWorkTypes><li>Smithing</li></disabledWorkTypes>
+			</li>
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_TailoringDisabled</li></exclusionTags>
+				<disabledWorkTypes><li>Tailoring</li></disabledWorkTypes>
+			</li>
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_CraftingDisabled</li></exclusionTags>
+				<disabledWorkTypes><li>Crafting</li></disabledWorkTypes>
+			</li>
+			
+			
+			
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_HuntingDisabled</li></exclusionTags>
+				<disabledWorkTypes><li>Hunting</li></disabledWorkTypes>
+			</li>
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_FishingDisabled</li></exclusionTags>
+				<disabledWorkTypes><li MayRequire="Ludeon.RimWorld.Odyssey">Fishing</li></disabledWorkTypes>
+			</li>
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_HandlingDisabled</li></exclusionTags>
+				<disabledWorkTypes><li>Handling</li></disabledWorkTypes>
+			</li>
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_DoctorDisabled</li></exclusionTags>
+				<disabledWorkTypes><li>Doctor</li></disabledWorkTypes>
+			</li>
+			
+			
+			
+			
+			
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_AllSocialDisabled</li></exclusionTags>
+				<disabledWorkTypes>
+					<li>Warden</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li>
+					<li MayRequire="Orion.Hospitality">Diplomat</li>
+					<li MayRequire="Adamas.Storefront">Storefront_Selling</li>
+					<li MayRequire="Orion.Gastronomy">Gastronomy_Waiting</li>
+				</disabledWorkTypes>
+			</li>
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_ChildcareDisabled</li></exclusionTags>
+				<disabledWorkTypes><li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li></disabledWorkTypes>
+			</li>
+			
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_ResearchDisabled</li></exclusionTags>
+				<disabledWorkTypes><li>Research</li></disabledWorkTypes>
+			</li>
+			
+			
+			
+			-->
+			
+			
+			
+			
+			
 		  <li Class="BigAndSmall.PawnExtension">
 			<traitIcon>BS_Traits/robot</traitIcon>
 			
-			<!-- <forcedHediffs><li>BS_RobotSapient</li></forcedHediffs> -->
+			
+			
+			<!--
+			
+			<forcedHediffs>
+				<li>SWCPWorkTypeDisablerHediff_Artistic</li>
+				<li>SWCPWorkTypeDisablerHediff_Social</li>
+				<li>SWCPWorkTypeDisablerHediff_Intellectual</li>
+				
+				<li>SWCPWorkTypeDisablerHediff_Animals</li>
+				<li>SWCPWorkTypeDisablerHediff_Caring</li>
+				
+					<li>SWCPWorkTypeDisablerHediff_Violent</li>
+				<li>SWCPWorkTypeDisablerHediff_Shooting</li>
+				<li>SWCPWorkTypeDisablerHediff_Hunting</li>
+				
+				
+					<li>SWCPWorkTypeDisablerHediff_ManualSkilled</li>
+				<li>SWCPWorkTypeDisablerHediff_Constructing</li>
+				<li>SWCPWorkTypeDisablerHediff_Mining</li>
+				<li>SWCPWorkTypeDisablerHediff_Cooking</li>
+				<li>SWCPWorkTypeDisablerHediff_PlantWork</li>
+				<li>SWCPWorkTypeDisablerHediff_Crafting</li>
+				
+					<li>SWCPWorkTypeDisablerHediff_ManualDumb</li>
+				<li>SWCPWorkTypeDisablerHediff_Hauling</li>
+				<li>SWCPWorkTypeDisablerHediff_Cleaning</li>
+			</forcedHediffs>
+			
+			-->
+			
 			<nullsThoughts>
 			  <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalReceived</li>
 			  <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalDemanded</li>
@@ -651,48 +870,6 @@
 				<!-- </tags> -->
 			<!-- </apparelRestrictions> -->
 			
-			
-			
-			
-			
-			
-			
-			<!-- <disabledWorkTypes> -->
-				<!-- <li>PatientBedRest</li> -->
-				<!-- <li>Patient</li> -->
-				<!-- <li>BasicWorker</li> -->
-				
-				<!-- <li>Firefighter</li> -->
-				<!-- <li>Hauling</li> -->
-				<!-- <li>Cleaning</li> -->
-				
-				<!-- <li>Hunting</li> -->
-				<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Fishing</li> -->
-				<!-- <li>Construction</li> -->
-				<!-- <li>Mining</li> -->
-				<!-- <li MayRequire="Ogliss.TheWhiteCrayon.Quarry">QuarryMining</li> -->
-				<!-- <li>Growing</li> -->
-				<!-- <li>PlantCutting</li> -->
-				<!-- <li>Cooking</li> -->
-				<!-- <li>Handling</li> -->
-				<!-- <li>Smithing</li> -->
-				<!-- <li>Tailoring</li> -->
-				<!-- <li>Crafting</li> -->
-				<!-- <li>Art</li> -->
-				<!-- <li>Doctor</li> -->
-				<!-- <li>Warden</li> -->
-				<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li> -->
-				<!-- <li MayRequire="Orion.Hospitality">Diplomat</li> -->
-				<!-- <li MayRequire="Adamas.Storefront">Storefront_Selling</li> -->
-				<!-- <li MayRequire="Orion.Gastronomy">Gastronomy_Waiting</li> -->
-				<!-- <li>Research</li> -->
-			<!-- </disabledWorkTypes> -->
-			
-			<!-- default for hediffs is 100 -->
-			<!-- <priority>99</priority> -->
-			<!-- <exclusionTags> -->
-				<!-- <li></li> -->
-			<!-- </exclusionTags> -->
 
 			
 			<immutableEndogenes>
@@ -859,6 +1036,8 @@
 		<biostatMet>0</biostatMet>
 		<!-- <skinIsHairColor>true</skinIsHairColor> -->
 		<tattoosVisible>false</tattoosVisible>
+		
+		<skinColorBase>(125,125,125)</skinColorBase>
 		<exclusionTags>
 		  <li>AG_Bodies</li>
 		  <li>Bodies</li>

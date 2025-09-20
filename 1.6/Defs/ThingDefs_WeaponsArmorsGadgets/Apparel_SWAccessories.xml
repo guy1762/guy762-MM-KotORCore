@@ -744,6 +744,29 @@
 				<layer>65</layer>
 			  </dataNorth>
 			</drawData>
+			
+			<renderNodeProperties>
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
+					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
+					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
+					<parentTagDef>ApparelBody</parentTagDef>
+					<shader>BS_CutoutThreeColor</shader>
+					<baseLayer>23</baseLayer>	<!-- SHELL? -->
+					<autoBodyTypePaths>true</autoBodyTypePaths>
+					<conditionalGraphics>
+					  <texturePaths><li>SWApparel/Accessories/poncho/Apparel</li></texturePaths>
+					  <colorA>
+						<color>90,85,65</color> <!-- grease green -->
+						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
+					  </colorA>
+					  <colorB>
+						<color>130,125,105</color> <!-- khaki -->
+						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
+					  </colorB>
+					</conditionalGraphics>
+					<drawData> <dataNorth> <layer>23</layer> </dataNorth> </drawData>	<!-- SHELL? -->
+				</li>
+			</renderNodeProperties>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
@@ -781,6 +804,14 @@
 				</li>
 			</options>
 		</colorGenerator>
+		<modExtensions>
+		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
+			<!-- Tag is not needed for apparel. -->
+			<colorA>true</colorA>
+			<colorB>true</colorB>
+			<!-- <colorC>true</colorC> -->
+		  </li>
+		</modExtensions>
 	</ThingDef>
   
   
