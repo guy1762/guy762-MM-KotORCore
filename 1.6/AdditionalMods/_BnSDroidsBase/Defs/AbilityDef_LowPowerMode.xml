@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<AbilityDef MayRequire="Ludeon.RimWorld.Royalty">
+		<defName>SWCP_DroidAbility_EnterLowPowerMode</defName>
+		<label>enter low power mode</label>
+		<description>Temporarily switch this droid pawn off to prevent unnecessary power useage.</description>
+		<descriptionHyperlinks>
+			<HediffDef>SWCPDroidHediff_LowPowerMode</HediffDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/Icons/PowerButton_red</iconPath>
+		<cooldownTicksRange>10</cooldownTicksRange>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		
+		<showCastingProgressBar>true</showCastingProgressBar>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<showWhenDrafted>true</showWhenDrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		
+		
+		<aiCanUse>true</aiCanUse>
+		<targetRequired>false</targetRequired>
+		<displayOrder>301</displayOrder>
+		<statBases>
+		</statBases>
+		<hotKey>Misc12</hotKey>
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<warmupTime>2</warmupTime>
+			<drawAimPie>False</drawAimPie>
+			<range>-1</range>
+			<soundCast>kotorsound_DroidOff</soundCast>
+			<targetParams>
+				<canTargetSelf>True</canTargetSelf>
+			</targetParams>
+		</verbProperties>
+		<comps>
+			<li Class = "CompProperties_AbilityGiveHediff">
+				<compClass>TheForce_Standalone.CompAbilityEffect_GiveHediffToSelf</compClass>
+				<hediffDef>SWCPDroidHediff_LowPowerMode</hediffDef>
+				<psychic>false</psychic>
+				<applicableToMechs>False</applicableToMechs>
+				<onlyApplyToSelf>true</onlyApplyToSelf>
+			</li>
+			  
+			<!-- <li Class="CompProperties_AbilityFleckOnTarget"> -->
+				<!-- <sound>kotorsound_DroidOff</sound> -->
+			<!-- </li> -->
+		</comps>
+	</AbilityDef>
+	
+	
+	
+  
+	<HediffDef>
+		<defName>SWCPDroidHediff_LowPowerMode</defName>
+		<label>low power mode</label>
+		<description>This droid has been temporarily switched off in order to prevent unnecessary power use.</description>
+		<defaultLabelColor>(7,255,131)</defaultLabelColor> <!-- KotOR 2 green -->
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<hungerRateFactor>0</hungerRateFactor>
+				<capMods>
+					<li><capacity>Consciousness</capacity><setMax>0.1</setMax></li>
+				</capMods>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>SWCP_DroidAbility_ExitLowPowerMode</abilityDef>
+			</li>
+		</comps>
+	</HediffDef>
+	
+	
+	
+	
+	<AbilityDef>
+		<defName>SWCP_DroidAbility_ExitLowPowerMode</defName>
+		<label>exit low power mode</label>
+		<description>Reactivate a droid currently in low power mode.</description>
+		<iconPath>UI/Icons/PowerButton_green</iconPath>
+		<!--hotKey>Misc12</hotKey-->
+		<writeCombatLog>True</writeCombatLog>
+		<hostile>false</hostile>
+		<aiCanUse>true</aiCanUse>
+		<targetRequired>false</targetRequired>
+		
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<showWhenDrafted>true</showWhenDrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		
+		<verbProperties>
+			<verbClass>Verb_CastAbility</verbClass>
+			<!-- <warmupTime>10</warmupTime> has to be instant -->
+			<soundCast>kotorsound_DroidOn</soundCast>
+			<range>-1</range>
+			<drawAimPie>false</drawAimPie>
+		</verbProperties>
+		<comps>
+			<li Class="CompProperties_AbilityRemoveHediff">
+				<hediffDef>SWCPDroidHediff_LowPowerMode</hediffDef>
+				<applyToSelf>true</applyToSelf>
+				<applyToTarget>false</applyToTarget>
+			</li>
+			<!-- <li Class="CompProperties_AbilityFleckOnTarget"> -->
+				<!-- <sound>kotorsound_DroidOn</sound> -->
+			<!-- </li> -->
+		</comps>
+		<modExtensions>
+			<li Class="CastableInUnconscious.ModExtension_CastableInUnconscious">
+				<castableInUnconscious>true</castableInUnconscious>
+				<castableInMentalbreak>false</castableInMentalbreak>
+			</li>
+		</modExtensions>
+	</AbilityDef>
+
+  
+  
+</Defs>

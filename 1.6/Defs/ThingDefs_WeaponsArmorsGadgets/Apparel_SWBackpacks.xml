@@ -133,7 +133,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/Accessories/backpacks/backpack_scorch</li></texturePaths>
 					  <colorA>
-						<color>140,140,150</color> <!--silver-->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -236,7 +236,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/Accessories/backpacks/backpack_scorch</li></texturePaths>
 					  <colorA>
-						<color>120,125,110</color> <!-- drab green -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -376,7 +376,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/Accessories/backpacks/Rebel/backpack</li></texturePaths>
 					  <colorA>
-						<color>115,120,75</color> <!-- olive green -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -498,7 +498,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/Accessories/backpacks/Rebel/bedrollbackpack</li></texturePaths>
 					  <colorA>
-						<color>125,125,125</color> <!-- mid grey -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>

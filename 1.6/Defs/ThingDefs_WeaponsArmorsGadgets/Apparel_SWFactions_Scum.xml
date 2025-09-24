@@ -134,7 +134,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/Undersuits/gamorrean/Apparel</li></texturePaths>
 					  <colorA>
-						<color>130,75,50</color> <!-- copper -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>

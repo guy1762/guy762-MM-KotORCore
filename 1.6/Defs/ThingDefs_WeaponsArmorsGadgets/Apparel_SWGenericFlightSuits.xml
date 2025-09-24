@@ -194,7 +194,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/FlightArmor/Apparel</li></texturePaths>
 					  <colorA>
-						<color>180,185,185</color> <!-- KotOR armor silver -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
@@ -215,7 +215,7 @@
 			<options>
 				<li>
 					<weight>15</weight>
-					<only>(180,185,185)</only>
+					<only>(180,185,185)</only> <!-- KotOR armor silver -->
 				</li>
 			</options>
 		</colorGenerator>

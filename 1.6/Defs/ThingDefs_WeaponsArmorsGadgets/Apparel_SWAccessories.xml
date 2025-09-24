@@ -756,7 +756,7 @@
 					<conditionalGraphics>
 					  <texturePaths><li>SWApparel/Accessories/poncho/Apparel</li></texturePaths>
 					  <colorA>
-						<color>90,85,65</color> <!-- grease green -->
+						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
