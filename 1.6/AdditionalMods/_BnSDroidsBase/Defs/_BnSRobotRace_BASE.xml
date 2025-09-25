@@ -234,7 +234,7 @@
 			<painFactor>0</painFactor>
 			<totalBleedFactor>0</totalBleedFactor>
 			<statFactors>
-			  <SM_FlirtChance>0</SM_FlirtChance>
+			  <!-- <SM_FlirtChance>0</SM_FlirtChance> -->
 			  <!-- <WorkSpeedGlobal>0.5</WorkSpeedGlobal> -->
 			  <GlobalLearningFactor>0</GlobalLearningFactor>
 			  <PsychicSensitivity>0</PsychicSensitivity>
@@ -374,29 +374,31 @@
 			<disabledWorkTags>
 				<li>Artistic</li>
 				
-				<!-- <li>AllWork</li> -->
-					<!-- <li>Firefighting</li> -->
-					<!-- <li>Violent</li> -->
-					<!-- <li>Shooting</li> -->
-					<!-- <li>Hunting</li> -->
+				<!--
+				<li>AllWork</li>
+					<li>Firefighting</li>
+					<li>Violent</li>
+					<li>Shooting</li>
+					<li>Hunting</li>
 					
-				<!-- <li>Commoner</li> -->
-					<!-- <li>Animals</li> -->
-					<!-- <li>Artistic</li> -->
-					<!-- <li>Caring</li> -->
-					<!-- <li>Social</li> -->
-					<!-- <li>Intellectual</li> -->
+				<li>Commoner</li>
+					<li>Animals</li>
+					<li>Artistic</li>
+					<li>Caring</li>
+					<li>Social</li>
+					<li>Intellectual</li>
 					
-				<!-- <li>ManualDumb</li> -->
-					<!-- <li>Hauling</li> -->
-					<!-- <li>Cleaning</li> -->
+				<li>ManualDumb</li>
+					<li>Hauling</li>
+					<li>Cleaning</li>
 					
-				<!-- <li>ManualSkilled</li> -->
-					<!-- <li>Constructing</li> -->
-					<!-- <li>Mining</li> -->
-					<!-- <li>Cooking</li> -->
-					<!-- <li>PlantWork</li> -->
-					<!-- <li>Crafting</li> -->	
+				<li>ManualSkilled</li>
+					<li>Constructing</li>
+					<li>Mining</li>
+					<li>Cooking</li>
+					<li>PlantWork</li>
+					<li>Crafting</li>
+				-->
 			</disabledWorkTags>
 			
 			<disablesNeeds>
@@ -419,45 +421,47 @@
 		</stages>
 
 		<modExtensions>
-			<!-- <li Class="BigAndSmall.PawnExtension"> -->
-				<!-- <priority>-100000</priority> -->
-				<!-- <exclusionTags> -->
-					<!-- <li>SWCPDroidRaceHediffExclusionTag_R2WorkTypeSettings</li> -->
-				<!-- </exclusionTags> -->
+			<!--
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags>
+					<li>SWCPDroidRaceHediffExclusionTag_R2WorkTypeSettings</li>
+				</exclusionTags>
 				
-				<!-- NOTE: all greened-out types are ENABLED -->
-				
-				<!-- <disabledWorkTypes> -->
-					<!-- <li>PatientBedRest</li> -->
-					<!-- <li>Patient</li> -->
-					<!-- <li>BasicWorker</li> -->
+				<disabledWorkTypes>
+					<li>PatientBedRest</li>
+					<li>Patient</li>
+					<li>BasicWorker</li>
 					
-					<!-- <li>Firefighter</li> -->
-					<!-- <li>Hauling</li> -->
-					<!-- <li>Cleaning</li> -->
+					<li>Firefighter</li>
+					<li>Hauling</li>
+					<li>Cleaning</li>
 					
-					<!-- <li>Hunting</li> -->
-					<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Fishing</li> -->
-					<!-- <li>Construction</li> -->
-					<!-- <li>Mining</li> -->
-					<!-- <li MayRequire="Ogliss.TheWhiteCrayon.Quarry">QuarryMining</li> -->
-					<!-- <li>Growing</li> -->
-					<!-- <li>PlantCutting</li> -->
-					<!-- <li>Cooking</li> -->
-					<!-- <li>Handling</li> -->
-					<!-- <li>Smithing</li> -->
-					<!-- <li>Tailoring</li> -->
-					<!-- <li>Crafting</li> -->
-					<!-- <li>Art</li> -->
-					<!-- <li>Doctor</li> -->
-					<!-- <li>Warden</li> -->
-					<!-- <li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li> -->
-					<!-- <li MayRequire="Orion.Hospitality">Diplomat</li> -->
-					<!-- <li MayRequire="Adamas.Storefront">Storefront_Selling</li> -->
-					<!-- <li MayRequire="Orion.Gastronomy">Gastronomy_Waiting</li> -->
-					<!-- <li>Research</li> -->
-				<!-- </disabledWorkTypes> -->
-			<!-- </li> -->
+					<li>Hunting</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">Fishing</li>
+					<li>Construction</li>
+					<li>Mining</li>
+					<li MayRequire="Ogliss.TheWhiteCrayon.Quarry">QuarryMining</li>
+					<li>Growing</li>
+					<li>PlantCutting</li>
+					<li>Cooking</li>
+					<li>Handling</li>
+					<li>Smithing</li>
+					<li>Tailoring</li>
+					<li>Crafting</li>
+					<li>Art</li>
+					<li>Doctor</li>
+					<li>Warden</li>
+					<li MayRequire="Ludeon.RimWorld.Biotech">Childcare</li>
+					<li MayRequire="Orion.Hospitality">Diplomat</li>
+					<li MayRequire="Adamas.Storefront">Storefront_Selling</li>
+					<li MayRequire="Orion.Gastronomy">Gastronomy_Waiting</li>
+					<li>Research</li>
+				</disabledWorkTypes>
+			</li>
+			
+			-->
 			
 			<!--
 			
@@ -487,6 +491,12 @@
 			
 			
 			
+			
+			<li Class="BigAndSmall.PawnExtension">
+				<priority>-100000</priority>
+				<exclusionTags><li>SWCPDroidRaceHediffExclusionTag_ConstructionDisabled</li></exclusionTags>
+				<disabledWorkTypes><li>Construction</li></disabledWorkTypes>
+			</li>
 			
 			<li Class="BigAndSmall.PawnExtension">
 				<priority>-100000</priority>
@@ -607,11 +617,26 @@
 			
 			
 			
-			
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\			 -->
 			<li Class="BigAndSmall.PawnExtension">
 				<traitIcon>BS_Traits/robot</traitIcon>
 				
+				<pawnDiet>SWCP_DroidDiet</pawnDiet>
+				<banAddictionsByDefault>true</banAddictionsByDefault>
+				<canUseChargers>true</canUseChargers>
+				<babyStartAge>20</babyStartAge>
+				<isMechanical>true</isMechanical>
+				<!-- <isDrone>true</isDrone> -->
+				<removeTattoos>true</removeTattoos>
 				
+				<applyBodyHediff>
+					<li>
+						<hediff>BS_VacuumInsulation</hediff>
+						<conditionals>
+							<li Class="BigAndSmall.ConditionalStatAffecter_InVacuum"/>
+						</conditionals>
+					</li>
+				</applyBodyHediff>
 				
 				<!--
 				
@@ -643,6 +668,14 @@
 				-->
 				
 				<nullsThoughts>
+				  <li>Pain</li>
+				  <li>MissingTongue</li>
+				  <li>RotStink</li>
+				  <li>RotStinkLingering</li>
+				  <li>SharedBed</li>
+				  <li>MasochistPain</li>
+				  <li>ProsthophobeUnhappy</li>
+				  
 				  <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalReceived</li>
 				  <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalDemanded</li>
 				  <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Male</li>
@@ -702,12 +735,15 @@
 					<li>BS_RepairRobotBrain</li>
 					<li>BS_RepairRobotOrgan</li>
 					<li>BS_RepairRobotPart</li>
+					
+					<!-- <li>BS_RepairAndroidBrain</li> -->
+					<!-- <li>BS_RepairAndroidReactor</li> -->
+					<!-- <li>BS_RepairAndroidOrgan</li> -->
+					<!-- <li>BS_RepairAndroidMinorOrganPart</li> -->
+					<!-- <li>BS_RepairAndroidPart</li> -->
+					<!-- <li>BS_RepairAndroidPartSmall</li> -->
 				  </allowlist>
 				</surgeryRecipes>
-				
-				<pawnDiet>SWCP_DroidDiet</pawnDiet>
-				<canUseChargers>true</canUseChargers>
-				<babyStartAge>20</babyStartAge>
 				
 				
 				<traitFilters>
@@ -729,6 +765,31 @@
 					<!-- <li MayRequireAnyOf="Ludeon.RimWorld.Royalty,Ludeon.RimWorld.Biotech">PsychicAmplifier</li> -->
 					
 					<li>PsychicShock</li>
+					
+					<li>Flu</li>
+					<li>Malaria</li>
+					<li>SleepingSickness</li>
+					<li>Plague</li>
+					<li>WoundInfection</li>
+					<li>LungRot</li>
+					<li>GutWorms</li>
+					<li>MuscleParasites</li>
+					<li>OrganDecay</li>
+					<li>FoodPoisoning</li>
+
+					<li>Carcinoma</li>
+					<li>HeartAttack</li>
+					<li>BadBack</li>
+					<li>Frail</li>
+					<li>Cataract</li>
+					<li>Dementia</li>
+					<li>Alzheimers</li>
+					<li>Asthma</li>
+					<li>HeartArteryBlockage</li>
+					<li>Anesthetic</li>
+
+					<li MayRequire="vanillaracesexpanded.fungoid">VRE_GeneInfection</li>
+					
 					
 					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicEntropy</li>
 					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicBreakdown</li>
@@ -835,44 +896,44 @@
 				  </banlist>
 				</hediffFilters>
 				
-				
-				<!-- <apparelRestrictions> -->
-					<!-- <absolutelyNothing>True</absolutelyNothing> -->
-					<!-- <tags> -->
-						<!-- <allowlist> -->
-							<!-- <li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li> -->
-							<!-- <li>SWCPDroidApparelRestrictionTag_Backpacks</li> -->
-							<!-- <li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li> -->
+				<!--
+				<apparelRestrictions>
+					<absolutelyNothing>True</absolutelyNothing>
+					<tags>
+						<allowlist>
+							<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
+							<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
+							<li>SWCPDroidApparelRestrictionTag_GrenadeDetpackBelts</li>
 							
-							<!-- <li>SWCPDroidApparelRestrictionTag_LightArmor</li> -->
-							<!-- <li>SWCPDroidApparelRestrictionTag_MediumArmor</li> -->
-							<!-- <li>SWCPDroidApparelRestrictionTag_HeavyArmor</li> -->
+							<li>SWCPDroidApparelRestrictionTag_LightArmor</li>
+							<li>SWCPDroidApparelRestrictionTag_MediumArmor</li>
+							<li>SWCPDroidApparelRestrictionTag_HeavyArmor</li>
 							
-							<!-- <li>SWCPDroidApparelRestrictionTag_ShieldSlot</li> -->
-							<!-- <li>SWCPDroidApparelRestrictionTag_HeavyShieldSlot</li> -->
+							<li>SWCPDroidApparelRestrictionTag_ShieldSlot</li>
+							<li>SWCPDroidApparelRestrictionTag_HeavyShieldSlot</li>
 							
-							<!-- <li>SWCPDroidApparelRestrictionTag_SoftwareTechSlot</li> -->
-							<!-- <li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li> -->
-							<!-- <li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li> -->
+							<li>SWCPDroidApparelRestrictionTag_SoftwareTechSlot</li>
+							<li>SWCPDroidApparelRestrictionTag_HardwareTechSlot</li>
+							<li>SWCPDroidApparelRestrictionTag_SensorTechSlot</li>
 							
-							<!-- <li>SWCPDroidApparelRestrictionTag_GadgetWeaponSlot</li> -->
-							<!-- <li>SWCPDroidApparelRestrictionTag_StandardWeaponSlot</li> -->
-							<!-- <li>SWCPDroidApparelRestrictionTag_HeavyWeaponSlot</li> -->
+							<li>SWCPDroidApparelRestrictionTag_GadgetWeaponSlot</li>
+							<li>SWCPDroidApparelRestrictionTag_StandardWeaponSlot</li>
+							<li>SWCPDroidApparelRestrictionTag_HeavyWeaponSlot</li>
 							
-							<!-- <li>SWCPDroidApparelRestrictionTag_LightCannonSlot</li> -->
-							<!-- <li>SWCPDroidApparelRestrictionTag_HeavyCannonSlot</li> -->
+							<li>SWCPDroidApparelRestrictionTag_LightCannonSlot</li>
+							<li>SWCPDroidApparelRestrictionTag_HeavyCannonSlot</li>
 							
-							<!-- <li>SWCPDroidApparelRestrictionTag_DroidCloakingDevice</li> -->
-							<!-- <li>SWCPDroidApparelRestrictionTag_DroidWarfareUpgrade</li> -->
-							<!-- <li>SWCPDroidApparelRestrictionTag_DroidScavUpgrade</li> -->
+							<li>SWCPDroidApparelRestrictionTag_DroidCloakingDevice</li>
+							<li>SWCPDroidApparelRestrictionTag_DroidWarfareUpgrade</li>
+							<li>SWCPDroidApparelRestrictionTag_DroidScavUpgrade</li>
 							
-							<!-- <li>SWCPDroidApparelRestrictionTag_T3M4Only</li> -->
-							<!-- <li>SWCPDroidApparelRestrictionTag_HK47Only</li> -->
-							<!-- <li>SWCPDroidApparelRestrictionTag_G0T0Only</li> -->
-						<!-- </allowlist> -->
-					<!-- </tags> -->
-				<!-- </apparelRestrictions> -->
-				
+							<li>SWCPDroidApparelRestrictionTag_T3M4Only</li>
+							<li>SWCPDroidApparelRestrictionTag_HK47Only</li>
+							<li>SWCPDroidApparelRestrictionTag_G0T0Only</li>
+						</allowlist>
+					</tags>
+				</apparelRestrictions>
+				-->
 
 				
 				<immutableEndogenes>
@@ -885,6 +946,7 @@
 				<disableFacialAnimations>true</disableFacialAnimations>
 				
 			</li>
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\			 -->
 		</modExtensions>
 		
 		<renderNodeProperties Inherit="False">

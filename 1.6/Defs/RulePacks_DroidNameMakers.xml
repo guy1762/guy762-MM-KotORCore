@@ -16,6 +16,7 @@
                 <li>Droid_B1->droidnames/B1</li>
                 <li>Droid_DUM->droidnames/DUM</li>
                 <li>Droid_21B->droidnames/21B</li>
+                <li>Droid_LOM->droidnames/LOM</li>
             </rulesFiles>
         </rulePack>
     </RulePackDef>
@@ -97,7 +98,6 @@
         </rulePack>
     </RulePackDef>
 	
-	
 	<RulePackDef>
         <defName>SWCP_DroidNamer_21BMedDroid</defName>
         <include>
@@ -106,6 +106,18 @@
         <rulePack>
             <rulesStrings>
                 <li>r_name(p=12)->[Droid_21B] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_LOMProtocolDroid</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99] [Droid_LOM]</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
