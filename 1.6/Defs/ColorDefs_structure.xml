@@ -2,8 +2,8 @@
 <Defs>
 
 	<ColorDef Name="guy762_StructureColorIdeoBase" ParentName="StructureColorBase" Abstract="True">
-		<!-- <displayOrder>762</displayOrder> -->
-		<displayOrder>1</displayOrder>
+		<displayOrder>762</displayOrder>
+		<!-- <displayOrder>1</displayOrder> -->
 	</ColorDef>
 	
 	

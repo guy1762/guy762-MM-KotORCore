@@ -30,6 +30,89 @@
       </rulesStrings>
     </rulePack>
   </RulePackDef>
+  
+  
+  <RulePackDef>
+    <defName>guy762_NamerPawnKind_TIEPilotID</defName>
+    <include>
+		<li>guy762_NamerPawnKindFiles_StormtrooperID</li>
+	</include>
+	<rulePack>
+	  <rulesStrings>
+		<li>r_name->TN-[SWStormieNamer_AnyTwoDigits][SWStormieNamer_AnyTwoDigits]-[SWStormieNamer_AnyTwoDigits]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  
+  <RulePackDef>
+    <defName>guy762_NamerPawnKind_RaptorID</defName>
+    <include>
+		<li>guy762_NamerPawnKindFiles_StormtrooperID</li>
+	</include>
+	<rulePack>
+	  <rulesStrings>
+		<li>r_name->ZR-[SWStormieNamer_AnyTwoDigits][SWStormieNamer_AnyTwoDigits]-[SWStormieNamer_AnyTwoDigits]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  <RulePackDef>
+    <defName>guy762_NamerPawnKind_RaptorPilotID</defName>
+    <include>
+		<li>guy762_NamerPawnKindFiles_StormtrooperID</li>
+	</include>
+	<rulePack>
+	  <rulesStrings>
+		<li>r_name->ZN-[SWStormieNamer_AnyTwoDigits][SWStormieNamer_AnyTwoDigits]-[SWStormieNamer_AnyTwoDigits]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+	<RulePackDef>
+		<defName>guy762_NamerPawnKindFiles_Inquisitorus</defName>
+		<rulePack>
+		  <rulesFiles>
+			<li>SWInquisitorNamer_1thru50->Names/PlacementNumbers_1_50</li>
+			<li>SWInquisitorNamer_14thru30->Names/PlacementNumbers_14_30</li>
+		  </rulesFiles>
+		</rulePack>
+	</RulePackDef>
+  
+	<RulePackDef>
+		<defName>guy762_NamerPawnKind_MaleInquisitor</defName>
+		<include>
+			<li>guy762_NamerPawnKindFiles_Inquisitorus</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>r_name->[SWInquisitorNamer_14thru30] Brother</li>
+		  </rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	<RulePackDef>
+		<defName>guy762_NamerPawnKind_FemaleInquisitor</defName>
+		<include>
+			<li>guy762_NamerPawnKindFiles_Inquisitorus</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<li>r_name->[SWInquisitorNamer_14thru30] Sister</li>
+		  </rulesStrings>
+		</rulePack>
+	</RulePackDef>
 	
 
 

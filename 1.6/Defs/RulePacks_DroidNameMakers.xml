@@ -30,7 +30,7 @@
         </include>
         <rulePack>
             <rulesStrings>
-                <li>r_name(p=12)->[Droid_ID] [Droid_R2]</li>
+                <li>r_name(p=12)->[Droid_R2] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
@@ -43,7 +43,7 @@
         </include>
         <rulePack>
             <rulesStrings>
-                <li>r_name(p=12)->[Droid_ID] [Droid_R3]</li>
+                <li>r_name(p=12)->[Droid_R3] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
@@ -55,7 +55,7 @@
         </include>
         <rulePack>
             <rulesStrings>
-                <li>r_name(p=12)->[Droid_ID] [Droid_R4]</li>
+                <li>r_name(p=12)->[Droid_R4] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
@@ -67,7 +67,7 @@
         </include>
         <rulePack>
             <rulesStrings>
-                <li>r_name(p=12)->[Droid_ID] [Droid_R5]</li>
+                <li>r_name(p=12)->[Droid_R5] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>

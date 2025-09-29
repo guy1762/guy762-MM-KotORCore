@@ -620,6 +620,7 @@
 <!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\			 -->
 			<li Class="BigAndSmall.PawnExtension">
 				<traitIcon>BS_Traits/robot</traitIcon>
+				<frequentUpdate>false</frequentUpdate>
 				
 				<pawnDiet>SWCP_DroidDiet</pawnDiet>
 				<banAddictionsByDefault>true</banAddictionsByDefault>
