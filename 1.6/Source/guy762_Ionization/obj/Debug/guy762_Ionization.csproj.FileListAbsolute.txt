@@ -1,0 +1,9 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\guy762-KotORWeaponsArmor\1.4\Assemblies\guy762_Ionization.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\guy762-KotORWeaponsArmor\1.4\Source\guy762_Ionization\obj\Debug\guy762_Ionization.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\guy762-KotORWeaponsArmor\1.4\Source\guy762_Ionization\obj\Debug\guy762_Ionization.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\guy762-KotORWeaponsArmor\1.4\Source\guy762_Ionization\obj\Debug\guy762_Ionization.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\guy762-StarWarsRaces\1.4\AdditionalMods\_NO_KotORWeapons\Assemblies\guy762_Ionization.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\guy762-MM-KotORCore\1.5\Assemblies\guy762_Ionization.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\guy762-KnightsOfTheOuterRim\1.4\Source\guy762_Ionization\obj\Debug\guy762_Ionization.csproj.AssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\guy762-KnightsOfTheOuterRim\1.4\Source\guy762_Ionization\obj\Debug\guy762_Ionization.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\guy762-KnightsOfTheOuterRim\1.4\Source\guy762_Ionization\obj\Debug\guy762_Ionization.dll

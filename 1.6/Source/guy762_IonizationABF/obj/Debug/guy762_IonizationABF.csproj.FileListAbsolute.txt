@@ -1,0 +1,5 @@
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\guy762-KnightsOfTheOuterRim\1.4\Source\guy762_IonizationMHC\obj\Debug\guy762_IonizationABF.csprojAssemblyReference.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\guy762-KnightsOfTheOuterRim\1.4\Source\guy762_IonizationMHC\obj\Debug\guy762_IonizationMHC.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\guy762-KnightsOfTheOuterRim\1.4\AdditionalMods\MHC\Assemblies\guy762_IonizationMHC.dll
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\guy762-KnightsOfTheOuterRim\1.4\Source\guy762_IonizationMHC\obj\Debug\guy762_IonizationABF.csproj.CoreCompileInputs.cache
+C:\Program Files (x86)\Steam\steamapps\common\RimWorld\Mods\guy762-KnightsOfTheOuterRim\1.4\Source\guy762_IonizationMHC\obj\Debug\guy762_IonizationABF.csproj.CopyComplete
