@@ -27,7 +27,7 @@
 	</IdeoColorDef>
 	<ColorDef ParentName="guy762_FactionColorIdeoBase">
 		<defName>guy762_FactionColor_MilitiaGreen</defName>
-		<label>Militia Slate Green</label>
+		<label>Militia Mint Green</label>
 		<color>(165,190,160)</color>
 	</ColorDef>
   

@@ -17,6 +17,8 @@
                 <li>Droid_DUM->droidnames/DUM</li>
                 <li>Droid_21B->droidnames/21B</li>
                 <li>Droid_LOM->droidnames/LOM</li>
+                <li>Droid_3PO->droidnames/3PO</li>
+                <li>Droid_TC->droidnames/TC</li>
             </rulesFiles>
         </rulePack>
     </RulePackDef>
@@ -118,6 +120,19 @@
         <rulePack>
             <rulesStrings>
                 <li>r_name(p=12)->[Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99] [Droid_LOM]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_3POProtocolDroid</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_TC] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+                <li>r_name(p=3)->[Droid_3PO] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
