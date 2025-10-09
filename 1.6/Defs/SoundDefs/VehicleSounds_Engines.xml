@@ -832,6 +832,29 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_ATPTsteppy</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/ATPT_steppy</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
 
 
 	

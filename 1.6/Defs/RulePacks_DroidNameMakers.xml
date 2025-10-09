@@ -19,12 +19,11 @@
                 <li>Droid_LOM->droidnames/LOM</li>
                 <li>Droid_3PO->droidnames/3PO</li>
                 <li>Droid_TC->droidnames/TC</li>
+                <li>Droid_RA7->droidnames/RA7</li>
             </rulesFiles>
         </rulePack>
     </RulePackDef>
 
-    <!-- This is the item that goes into the racedef's namegenerator
-        Example - <nameGenerator>ATR_AndroidMaleNames</nameGenerator> -->
     <RulePackDef>
         <defName>SWCP_DroidNamer_R2AD</defName>
         <include>
@@ -133,6 +132,18 @@
             <rulesStrings>
                 <li>r_name(p=12)->[Droid_TC] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
                 <li>r_name(p=3)->[Droid_3PO] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_RA7ProtocolDroid</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_RA7] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>

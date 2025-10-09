@@ -627,6 +627,7 @@
 				<canUseChargers>true</canUseChargers>
 				<babyStartAge>20</babyStartAge>
 				<isMechanical>true</isMechanical>
+				<empVulnerable>true</empVulnerable>
 				<!-- <isDrone>true</isDrone> -->
 				<removeTattoos>true</removeTattoos>
 				
