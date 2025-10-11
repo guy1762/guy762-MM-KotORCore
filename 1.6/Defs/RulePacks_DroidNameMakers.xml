@@ -20,6 +20,7 @@
                 <li>Droid_3PO->droidnames/3PO</li>
                 <li>Droid_TC->droidnames/TC</li>
                 <li>Droid_RA7->droidnames/RA7</li>
+                <li>Droid_CLLM2->droidnames/CLLM2</li>
             </rulesFiles>
         </rulePack>
     </RulePackDef>
@@ -144,6 +145,18 @@
         <rulePack>
             <rulesStrings>
                 <li>r_name(p=12)->[Droid_RA7] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
+            </rulesStrings>
+        </rulePack>
+    </RulePackDef>
+	
+	<RulePackDef>
+        <defName>SWCP_DroidNamer_CLLM2BinaryLoadlifter</defName>
+        <include>
+            <li>SWCP_DroidNameRules</li>
+        </include>
+        <rulePack>
+            <rulesStrings>
+                <li>r_name(p=12)->[Droid_CLLM2] [Droid_ID][Digit_01_99][Digit_01_99][Digit_01_99][Digit_01_99]</li>
             </rulesStrings>
         </rulePack>
     </RulePackDef>
