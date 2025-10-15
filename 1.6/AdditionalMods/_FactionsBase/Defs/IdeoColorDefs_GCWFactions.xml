@@ -75,6 +75,21 @@
 	
 	
 	
+	<IdeoColorDef>
+		<defName>guy762_IdeoFactionColor_EriaduMint</defName>
+		<colorDef>guy762_FactionColor_EriaduMint</colorDef>
+		<memes>
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_MemeDef_empire</li> -->
+		</memes>
+	</IdeoColorDef>
+	<ColorDef ParentName="guy762_FactionColorIdeoBase">
+		<defName>guy762_FactionColor_EriaduMint</defName>
+		<label>Eriadu Mint</label>
+		<color>(135,240,190)</color>
+	</ColorDef>
+	
+	
+	
 	
 	
 	
@@ -149,6 +164,34 @@
 		<defName>guy762_FactionColor_BlackSunViolet</defName>
 		<label>Black Sun Violet</label>
 		<color>(85,65,150)</color>
+	</ColorDef>
+	
+	
+	<IdeoColorDef>
+		<defName>guy762_IdeoFactionColor_HuttLime</defName>
+		<colorDef>guy762_FactionColor_HuttLime</colorDef>
+		<memes>
+			<li>guy762_MemeDef_hutt</li>
+		</memes>
+	</IdeoColorDef>
+	<ColorDef ParentName="guy762_FactionColorIdeoBase">
+		<defName>guy762_FactionColor_HuttLime</defName>
+		<label>Hutt Lime</label>
+		<color>(155,190,35)</color>
+	</ColorDef>
+	
+	
+	<IdeoColorDef>
+		<defName>guy762_IdeoFactionColor_CorpSecPink</defName>
+		<colorDef>guy762_FactionColor_CorpSecPink</colorDef>
+		<memes>
+			<!-- <li MayRequire="VanillaExpanded.VMemesE">VME_Republic</li> -->
+		</memes>
+	</IdeoColorDef>
+	<ColorDef ParentName="guy762_FactionColorIdeoBase">
+		<defName>guy762_FactionColor_CorpSecPink</defName>
+		<label>Corporate Sector Pink</label>
+		<color>(170,120,160)</color>
 	</ColorDef>
   
   

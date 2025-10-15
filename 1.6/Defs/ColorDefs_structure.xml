@@ -89,6 +89,12 @@
 		<!-- <color>(205,15,40)</color> -->
 	<!-- </ColorDef> -->
 	
+	<!-- <ColorDef ParentName="guy762_StructureColorIdeoBase"> -->
+		<!-- <defName>guy762_StructureColor_EriaduMint</defName> -->
+		<!-- <label>Eriadu Mint</label> -->
+		<!-- <color>(135,240,190)</color> -->
+	<!-- </ColorDef> -->
+	
 	<ColorDef ParentName="guy762_StructureColorIdeoBase">
 		<defName>guy762_StructureColor_ImpArmySlate</defName>
 		<label>Imperial Army Slate</label>
@@ -203,6 +209,12 @@
 	<!-- </ColorDef> -->
 	
 	<!-- <ColorDef ParentName="guy762_StructureColorIdeoBase"> -->
+		<!-- <defName>guy762_FactionColor_HuttLime</defName> -->
+		<!-- <label>Hutt Lime</label> -->
+		<!-- <color>(155,190,35)</color> -->
+	<!-- </ColorDef> -->
+	
+	<!-- <ColorDef ParentName="guy762_StructureColorIdeoBase"> -->
 		<!-- <defName>guy762_StructureColor_BlackSunViolet</defName> -->
 		<!-- <label>Black Sun Violet</label> -->
 		<!-- <color>(85,65,150)</color> -->
@@ -212,6 +224,18 @@
 		<!-- <defName>guy762_StructureColor_ZannConsortiumYellow</defName> -->
 		<!-- <label>Consortium Yellow</label> -->
 		<!-- <color>(230,170,45)</color> -->
+	<!-- </ColorDef> -->
+	
+	<!-- <ColorDef ParentName="guy762_StructureColorIdeoBase"> -->
+		<!-- <defName>guy762_StructureColor_ZannConsortiumYellow</defName> -->
+		<!-- <label>Consortium Yellow</label> -->
+		<!-- <color>(230,170,45)</color> -->
+	<!-- </ColorDef> -->
+	
+	<!-- <ColorDef ParentName="guy762_StructureColorIdeoBase"> -->
+		<!-- <defName>guy762_FactionColor_CorpSecPink</defName> -->
+		<!-- <label>Corporate Sector Pink</label> -->
+		<!-- <color>(170,120,160)</color> -->
 	<!-- </ColorDef> -->
 	
 	
