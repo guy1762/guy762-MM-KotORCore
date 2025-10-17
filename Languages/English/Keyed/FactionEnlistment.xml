@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+
+	<!--__________ Enlistments with Factions Letter Text __________-->
+
+	<!--_____ NCR _____-->
+
+	<!-- Enlistment Options -->
+
+	<SWCP_Enlist_Letter_Title>You have Enlisted into the {FACTION_name}.</SWCP_Enlist_Letter_Title>
+	<SWCP_Enlist_Button_Label>Enlist into the army of The {FACTION_name}.</SWCP_Enlist_Button_Label>
+	<SWCP_Enlist_Button_Desc>Sign a new contract with The {FACTION_name}.</SWCP_Enlist_Button_Desc>
+	<SWCP_Enlist_Requrements_Not_Satisfied>You need to have minimum of 10 goodwill, currently you have only {0} goodwill.</SWCP_Enlist_Requrements_Not_Satisfied>
+	<SWCP_Enlisted_With_Key>Enlisted with: The {FACTION_name}</SWCP_Enlisted_With_Key>
+	<SWCP_Active_Enlist_Options>Active enlist options</SWCP_Active_Enlist_Options>
+
+	<!-- Mission Options -->
+
+	<SWCP_Missions_Label>Tasks</SWCP_Missions_Label>
+	<SWCP_Missions_Desc>Task descriptions</SWCP_Missions_Desc>
+	<SWCP_Menu_Missions_Desc>While leaving the HQ, you ask around about any potential tasks that need doing.</SWCP_Menu_Missions_Desc>
+	<SWCP_Menu_Missions_Select_Quest>Select a Task: </SWCP_Menu_Missions_Select_Quest>
+	<SWCP_Menu_Missions_Start_Quest>Start Task ({0})</SWCP_Menu_Missions_Start_Quest>
+	<SWCP_Cancel>Cancel</SWCP_Cancel>
+	<SWCP_Not_Enough_Money>Not enough money</SWCP_Not_Enough_Money>
+
+	<!-- Salary Options -->
+
+	<SWCP_Salary_Label>Wages</SWCP_Salary_Label>
+	<SWCP_Salary_Desc>You are entitled to collect wages from this faction every 14 days.</SWCP_Salary_Desc>
+
+	<!-- Provision Options -->
+
+	<SWCP_Provisions_Label>Provisions</SWCP_Provisions_Label>
+	<SWCP_Provisions_Desc>Provisions will add the following items to your caravan inventory every 10 days:\n\n- 6x Supply Container</SWCP_Provisions_Desc>
+
+	<!-- Storage Options -->
+
+	<SWCP_Storage_Label>Storage</SWCP_Storage_Label>
+	<SWCP_Storage_Desc>Store items from your caravan to your faction stash. Faction stashes transfer across all of the faction's outposts and will save contents even if you are no longer enlisted.</SWCP_Storage_Desc>
+	<SWCP_Storage_Inventory>Storage inventory</SWCP_Storage_Inventory>
+	<SWCP_Caravan_Inventory>Caravan inventory</SWCP_Caravan_Inventory>
+
+	<!-- Work Options -->
+
+	<SWCP_Part_Time_Job_Label>Part-Time Job</SWCP_Part_Time_Job_Label>
+	<SWCP_Part_Time_Job_Desc>Pull extra duties and cover shifts for your battle buddies for $12 an hour.</SWCP_Part_Time_Job_Desc>
+	<SWCP_Hospital_Label>Hospital</SWCP_Hospital_Label>
+	<SWCP_Hospital_Desc>Check in with the hospital of this base. This service tends to all of your troopers with spacer medkits. Immunity gain is also increased while your troopers are in the hospital.</SWCP_Hospital_Desc>
+	<SWCP_Medical_Training_Label>Training: Medical</SWCP_Medical_Training_Label>
+	<SWCP_Medical_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Medical\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Medical_Training_Desc>
+	<SWCP_Shooting_Training_Label>Training: Ranged Combat</SWCP_Shooting_Training_Label>
+	<SWCP_Shooting_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Shooting\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Shooting_Training_Desc>
+	<SWCP_Survival_Training_Label>Training: Survival</SWCP_Survival_Training_Label>
+	<SWCP_Survival_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Animals\n- Construction\n- Cooking\n- Crafting\n- Mining\n- Plants\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Survival_Training_Desc>
+
+	<!-- Bounty Options -->
+
+	<SWCP_Turn_In_Label>Turn in</SWCP_Turn_In_Label>
+
+	<!-- Resign Options -->
+
+	<SWCP_Resign_Menu_Text>You will resign from active duty in the {FACTION_name} effective immediately. (-25 in relations)</SWCP_Resign_Menu_Text>
+	<SWCP_Resign_Letter_Title>Resigned</SWCP_Resign_Letter_Title>
+	<SWCP_Resign_Letter_Label>Resign</SWCP_Resign_Letter_Label>
+	<SWCP_Resign_Button_Label>You have successfully resigned from active duty in the {FACTION_name}. (-25 relations)</SWCP_Resign_Button_Label>
+	<SWCP_Resign_Button_Desc>Leave active duty from this faction.</SWCP_Resign_Button_Desc>
+	<SWCP_Player_Settlement_Required>Player's settlement required</SWCP_Player_Settlement_Required>
+	<SWCP_Enlisted_To_Hostile_Faction>cannot join because you are enlisted with their enemy, {HOSTILEFACTION_name}</SWCP_Enlisted_To_Hostile_Faction>
+
+	<!-- Kicked Out Options -->
+
+	<SWCP_Kick_Out_Letter_Title>Kicked out</SWCP_Kick_Out_Letter_Title>
+	<SWCP_Kick_Out_Label_Title>An order for your contract's immediate termination from service has been filed by {LEADER_nameDef}. You have been kicked out from the {FACTION_name}.</SWCP_Kick_Out_Label_Title>
+
+	<!-- Reinforcement Options -->
+
+	<SWCP_Reinforcements_Button_Label>Reinforcements</SWCP_Reinforcements_Button_Label>
+	<SWCP_Reinforcements_Button_Desc>Call for reinforcements from your faction. Amount of troopers they send depends on your current relations.</SWCP_Reinforcements_Button_Desc>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ generic, personalize per faction \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ -->
+	<SWCP_Enlist_Letter_Label>Howdy, this is a message from your commanding officer. I would like to formally welcome you to the finest army the wastes have ever seen, The {FACTION_name} Army. Be ready to make yourself available and report to any of our bases or cities to enhance your skills.\n\n You will be issued a standard salary every week for you and your troopers as well as provisions that can be picked up at our bases when you are not on patrol. The {FACTION_name} military has fine facilities in order to better train your troopers, use them wisely.\n\n If you're patroling the mojave good luck, almost makes you wish for a nuclear winter.</SWCP_Enlist_Letter_Label>
+	
+	<SWCP_Provisions_Label_Standard_Issue>Standard Issue</SWCP_Provisions_Label_Standard_Issue>
+	<SWCP_Provisions_Desc_Standard_Issue>NCR standard Issue gear will arrive via your caravan inventory every 30 days:\n\n- ×2 NCR Army Weapon Crate \n- ×2 NCR Army Uniform Crate</SWCP_Provisions_Desc_Standard_Issue>
+	
+	<SWCP_Turn_In_Desc>Turn in suspected outlaws and criminals to NCRCF facilities.\n\n -Turning over any hostile pawns do not result in a slavery debuff-</SWCP_Turn_In_Desc>
+	<SWCP_Turn_In_Trader_Name>New California Republic Correctional Facility Warden</SWCP_Turn_In_Trader_Name>
+
+</LanguageData>

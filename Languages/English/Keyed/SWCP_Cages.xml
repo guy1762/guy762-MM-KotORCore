@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<LanguageData>
+  <SWCP_ReleaseAnimalFromCage>Release {0}</SWCP_ReleaseAnimalFromCage>
+  <SWCP_CarryAnimalToCage>Carry {0} to cage</SWCP_CarryAnimalToCage>
+  <SWCP_ShouldCaptureCommand>Will this cage capture wild animals.</SWCP_ShouldCaptureCommand>
+  <SWCP_ShouldCaptureTrue>Will capture wild animals.</SWCP_ShouldCaptureTrue>
+  <SWCP_ShouldCaptureFalse>Will not capture wild animals.</SWCP_ShouldCaptureFalse>
+  <SWCP_CageAnimalCapturedLabel>Animal captured!</SWCP_CageAnimalCapturedLabel>
+  <SWCP_CageAnimalCapturedText>You have captured {0} in your cage.</SWCP_CageAnimalCapturedText>
+  <SWCP_ChooseAnimalCage>Choose new cage</SWCP_ChooseAnimalCage>
+  <SWCP_SelectThisCage>Select this cage.</SWCP_SelectThisCage>
+  <SWCP_TransferAnimalBetweenCages>Transfer {0} to another cage.</SWCP_TransferAnimalBetweenCages>
+</LanguageData>
