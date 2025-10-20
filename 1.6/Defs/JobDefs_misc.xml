@@ -60,6 +60,20 @@
         <driverClass>SWCP_RadiantQuests.JobDriver_RefuelAnimalCage_Atomic</driverClass>
         <reportString>refueling cage.</reportString>
     </JobDef>
+	
+	<WorkGiverDef>
+		<defName>SWCP_RefuelCages</defName>
+		<label>refueling cages</label>
+		<giverClass>SWCP_RadiantQuests.WorkGiver_AnimalCageRefuel</giverClass>
+		<workType>Hauling</workType>
+		<verb>refuel</verb>
+		<gerund>refueling</gerund>
+		<priorityInType>141</priorityInType>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		 <prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
 
     <!--_____ V.A.T.S. _____-->
 

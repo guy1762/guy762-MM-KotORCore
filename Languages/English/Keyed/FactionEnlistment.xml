@@ -56,14 +56,14 @@
 
 	<!-- Bounty Options -->
 
-	<SWCP_Turn_In_Label>Turn in</SWCP_Turn_In_Label>
+	<SWCP_Turn_In_Label>Turn in prisoners</SWCP_Turn_In_Label>
 
 	<!-- Resign Options -->
 
 	<SWCP_Resign_Menu_Text>You will resign from active duty in the {FACTION_name} effective immediately. (-25 in relations)</SWCP_Resign_Menu_Text>
 	<SWCP_Resign_Letter_Title>Resigned</SWCP_Resign_Letter_Title>
-	<SWCP_Resign_Letter_Label>Resign</SWCP_Resign_Letter_Label>
-	<SWCP_Resign_Button_Label>You have successfully resigned from active duty in the {FACTION_name}. (-25 relations)</SWCP_Resign_Button_Label>
+	<SWCP_Resign_Letter_Label>You have successfully resigned from active duty in the {FACTION_name}. (-25 relations)</SWCP_Resign_Letter_Label>
+	<SWCP_Resign_Button_Label>Resign (-25 relations)</SWCP_Resign_Button_Label>
 	<SWCP_Resign_Button_Desc>Leave active duty from this faction.</SWCP_Resign_Button_Desc>
 	<SWCP_Player_Settlement_Required>Player's settlement required</SWCP_Player_Settlement_Required>
 	<SWCP_Enlisted_To_Hostile_Faction>cannot join because you are enlisted with their enemy, {HOSTILEFACTION_name}</SWCP_Enlisted_To_Hostile_Faction>

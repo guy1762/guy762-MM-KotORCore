@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+    <guy762_ContrabandGeneric_GiftWarning>Gifting {ILLEGALTHING_label} is against {FACTION_name} law. This may or may not affect your relations with them in the future</guy762_ContrabandGeneric_GiftWarning>
+    <guy762_ContrabandGeneric_SellWarning>Selling {ILLEGALTHING_label} is against {FACTION_name} law. This may or may not affect your relations with them in the future</guy762_ContrabandGeneric_SellWarning>
+	
+    <guy762_ContrabandGeneric_GiftIllegalFactionWarning>Gifting {ILLEGALTHING_label} to {ILLEGALFACTION_name} is against {FACTION_name} law. This may or may not affect your relations with them in the future</guy762_ContrabandGeneric_GiftIllegalFactionWarning>
+    <guy762_ContrabandGeneric_SellIllegalFactionWarning>Selling {ILLEGALTHING_label} to {ILLEGALFACTION_name} is against {FACTION_name} law. This may or may not affect your relations with them in the future</guy762_ContrabandGeneric_SellIllegalFactionWarning>
+	
+    <guy762_ContrabandGeneric_LetterLabel>{FACTION_name} angered</guy762_ContrabandGeneric_LetterLabel>
+    <guy762_ContrabandGeneric_LetterDescGift>{FACTION_name} caught wind that you have been gifting {ILLEGALTHING_label} behind their back. They consider it to be against the law, and your relations have degraded</guy762_ContrabandGeneric_LetterDescGift>
+	
+    <guy762_ContrabandGeneric_LetterDescSold>{FACTION_name} caught wind that you have been selling {ILLEGALTHING_label} behind their back. They consider it to be against the law, and your relations have degraded</guy762_ContrabandGeneric_LetterDescSold>
+	
+    <guy762_ContrabandGeneric_RelationInfo>Goodwill with {FACTION_name} is now {1}. (Reduced by {2})</guy762_ContrabandGeneric_RelationInfo>
+	
+</LanguageData>
