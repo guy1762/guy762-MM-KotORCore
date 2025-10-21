@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace" MayRequire="Killathon.ArtificialBeings">
+	  <xpath>Defs/DamageDef[defName="guy762_RangedDamage_ion"]/workerClass</xpath>
+	  <value>
+		<workerClass>guy762_IonizationBnS.DamageWorker_Ionize</workerClass>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace" MayRequire="Killathon.ArtificialBeings">
+	  <xpath>Defs/DamageDef[defName="guy762_MeleeDamage_ion"]/workerClass</xpath>
+	  <value>
+		<workerClass>guy762_IonizationBnS.DamageWorker_Ionize</workerClass>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace" MayRequire="Killathon.ArtificialBeings">
+	  <xpath>Defs/DamageDef[defName="guy762_GrenadeDamage_ion"]/workerClass</xpath>
+	  <value>
+		<workerClass>guy762_IonizationBnS.DamageWorker_Ionize</workerClass>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace" MayRequire="Killathon.ArtificialBeings">
+	  <xpath>Defs/DamageDef[defName="guy762_ExplosiveDamage_ion"]/workerClass</xpath>
+	  <value>
+		<workerClass>guy762_IonizationBnS.DamageWorker_Ionize</workerClass>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace" MayRequire="Killathon.ArtificialBeings">
+	  <xpath>Defs/DamageDef[defName="guy762_InternalDamage_ion"]/workerClass</xpath>
+	  <value>
+		<workerClass>guy762_IonizationBnS.DamageWorker_Ionize</workerClass>
+	  </value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	<!--Operation Class="PatchOperationReplace" MayRequire="Killathon.ArtificialBeings">
+	  <xpath>Defs/DamageDef[defName="guy762_RangedDamage_plasma"]/workerClass</xpath>
+	  <value>
+		<workerClass>guy762_IonizationABF.DamageWorker_Ionize</workerClass>
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace" MayRequire="Killathon.ArtificialBeings">
+	  <xpath>Defs/DamageDef[defName="guy762_GrenadeDamage_plasma"]/workerClass</xpath>
+	  <value>
+		<workerClass>guy762_IonizationABF.DamageWorker_Ionize</workerClass>
+	  </value>
+	</Operation-->
+
+</Patch>
