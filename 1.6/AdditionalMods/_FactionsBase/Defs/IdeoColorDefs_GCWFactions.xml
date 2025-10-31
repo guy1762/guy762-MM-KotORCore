@@ -93,6 +93,24 @@
 	
 	
 	
+	<IdeoColorDef>
+		<defName>guy762_IdeoFactionColor_AscendencyBlue</defName>
+		<colorDef>guy762_FactionColor_AscendencyBlue</colorDef>
+		<memes>
+			<!-- <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_MemeDef_empire</li> -->
+		</memes>
+	</IdeoColorDef>
+	<ColorDef ParentName="guy762_FactionColorIdeoBase">
+		<defName>guy762_FactionColor_AscendencyBlue</defName>
+		<label>Ascendency Blue</label>
+		<color>(105,180,200)</color>
+	</ColorDef>
+	
+	
+	
+	
+	
+	
 	
 	<IdeoColorDef>
 		<defName>guy762_IdeoFactionColor_NewRepublicOrange</defName>

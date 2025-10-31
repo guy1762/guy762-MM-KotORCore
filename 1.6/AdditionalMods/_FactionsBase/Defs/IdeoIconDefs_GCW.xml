@@ -74,6 +74,15 @@
 		</memes>
 	</IdeoIconDef>
 	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_thrawn7th</defName>
+		<iconPath>World/Thrawn7th</iconPath>
+		<memes>
+			<li MayRequire="SWCP.guy762.WarlordEmpire">guy762_MemeDef_empire</li>
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_MemeDef_sith</li> -->
+		</memes>
+	</IdeoIconDef>
+	
 	
 	
 	
