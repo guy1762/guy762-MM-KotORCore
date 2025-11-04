@@ -68,5 +68,254 @@
   </TerrainDef>
   
   
+  
+  
+  
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>guy762_FloorTiles_dreadnaughtcabin_H</defName>
+    <label>starcruiser cabin tile (blue, horizontal)</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Steel tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+    <texturePath>Buildings/Floors/DreadnaughtCabinTile_H</texturePath>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
+	<color>(65,65,80)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+    <uiOrder>2040</uiOrder>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>guy762_FloorTiles_dreadnaughtcabin_V</defName>
+    <label>starcruiser cabin tile (blue, vertical)</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Steel tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+    <texturePath>Buildings/Floors/DreadnaughtCabinTile_V</texturePath>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
+	<color>(65,65,80)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+    <uiOrder>2040</uiOrder>
+  </TerrainDef>
+
+
+
+
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>guy762_FloorTiles_dreadnaughtcabin_blackH</defName>
+    <label>starcruiser cabin tile (black, horizontal)</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Steel tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+    <texturePath>Buildings/Floors/DreadnaughtCabinTile_H</texturePath>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
+	<color>(50,50,50)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+    <uiOrder>2040</uiOrder>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>guy762_FloorTiles_dreadnaughtcabin_blackV</defName>
+    <label>starcruiser cabin tile (black, vertical)</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Steel tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+    <texturePath>Buildings/Floors/DreadnaughtCabinTile_V</texturePath>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
+	<color>(50,50,50)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+    <uiOrder>2040</uiOrder>
+  </TerrainDef>
+  
+  
+  
+  
+  
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>guy762_FloorTiles_DoomgiverFoorMetal</defName>
+    <label>metal plating (light slate)</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Steel tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+    <texturePath>Buildings/Floors/FoorMetal2</texturePath>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
+	<color>(165,165,180)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+    <uiOrder>2040</uiOrder>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>guy762_FloorTiles_DoomgiverFoorMetal_dark</defName>
+    <label>metal plating (iron)</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Steel tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+    <texturePath>Buildings/Floors/FoorMetal2</texturePath>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
+	<color>(85,80,75)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+    <uiOrder>2040</uiOrder>
+  </TerrainDef>
+  
+  
+  
+  
+  
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>guy762_FloorTiles_HuttOfficeTile</defName>
+    <label>outland office tile</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Steel tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+    <texturePath>Buildings/Floors/HuttOfficeTile</texturePath>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
+	<!-- <color>(85,80,75)</color> -->
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+    <uiOrder>2040</uiOrder>
+  </TerrainDef>
+  
+  
+  
+  
+  
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>guy762_FloorTiles_XGrate_iron</defName>
+    <label>crossed grate (iron)</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Steel tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+    <texturePath>Buildings/Floors/XGrate</texturePath>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
+	<color>(115,95,75)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+    <uiOrder>2040</uiOrder>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>guy762_FloorTiles_XGrate_yellow</defName>
+    <label>crossed grate (worn yellow)</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Steel tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+    <texturePath>Buildings/Floors/XGrate</texturePath>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
+	<color>(160,130,70)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+    <uiOrder>2040</uiOrder>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>guy762_FloorTiles_XGrate_grey</defName>
+    <label>crossed grate (steel grey)</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Steel tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+    <texturePath>Buildings/Floors/XGrate</texturePath>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
+	<color>(125,125,130)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+    <uiOrder>2040</uiOrder>
+  </TerrainDef>
+  
+  
 
 </Defs>
