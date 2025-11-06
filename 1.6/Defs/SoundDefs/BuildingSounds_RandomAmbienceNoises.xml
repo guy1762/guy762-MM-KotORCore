@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_AllRepComMetalCreaking</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>kotor_ambient_ship/AllMetalCreaking</clipFolderPath>
+					</li>
+				</grains>
+				<distRange>62~75</distRange>
+				<volumeRange><min>20</min><max>20</max></volumeRange>	
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_SubtleRepComMetalCreaking</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>kotor_ambient_ship/SubtleMetalCreaking</clipFolderPath>
+					</li>
+				</grains>
+				<distRange>35~50</distRange>
+				<volumeRange><min>20</min><max>20</max></volumeRange>
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+
+</Defs>

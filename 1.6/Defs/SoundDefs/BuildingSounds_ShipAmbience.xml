@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_ShipAmbience_ActionVI</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<!-- <maxVoices>1</maxVoices> -->
+		<subSounds>
+		  <li>
+			<muteWhenPaused>false</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_ship/amb_GEO_05a3_PostSbd_01</clipPath>
+			  </li>
+			</grains>
+			<distRange>35~50</distRange>
+			<volumeRange><min>75</min><max>75</max></volumeRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	<SoundDef>
+		<defName>kotorsound_ShipAmbience_YT1300transport</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<!-- <maxVoices>1</maxVoices> -->
+		<subSounds>
+		  <li>
+			<muteWhenPaused>false</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_ship/amb_RAS_bridgeHall_01</clipPath>
+			  </li>
+			</grains>
+			<distRange>25~35</distRange>
+			<volumeRange><min>100</min><max>100</max></volumeRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	<SoundDef>
+		<defName>kotorsound_ShipAmbience_RaiderCorvette</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<!-- <maxVoices>1</maxVoices> -->
+		<subSounds>
+		  <li>
+			<muteWhenPaused>false</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_ship/amb_RAS_bridge_01</clipPath>
+			  </li>
+			</grains>
+			<distRange>65~75</distRange>
+			<volumeRange><min>50</min><max>50</max></volumeRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	<SoundDef>
+		<defName>kotorsound_ShipAmbience_CROCGozanti</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<!-- <maxVoices>1</maxVoices> -->
+		<subSounds>
+		  <li>
+			<muteWhenPaused>false</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_ship/amb_GEO_05c1_hallways_01</clipPath>
+			  </li>
+			</grains>
+			<distRange>35~45</distRange>
+			<volumeRange><min>100</min><max>100</max></volumeRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_ShipAmbience_ImpGozanti</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<!-- <maxVoices>1</maxVoices> -->
+		<subSounds>
+		  <li>
+			<muteWhenPaused>false</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_ship/amb_RAS_torpBay_lp_01</clipPath>
+			  </li>
+			</grains>
+			<distRange>35~45</distRange>
+			<volumeRange><min>75</min><max>75</max></volumeRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_ShipAmbience_CivGozanti</defName>
+		<sustain>True</sustain>
+		<context>MapOnly</context>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<maxSimultaneous>1</maxSimultaneous>
+		<!-- <maxVoices>1</maxVoices> -->
+		<subSounds>
+		  <li>
+			<muteWhenPaused>false</muteWhenPaused>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_ambient_ship/amb_RAS_corridor_lp_01</clipPath>
+			  </li>
+			</grains>
+			<distRange>35~45</distRange>
+			<volumeRange><min>75</min><max>75</max></volumeRange>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+
+</Defs>

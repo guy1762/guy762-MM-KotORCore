@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+	<!-- ================= Autodoors ================= -->
+	
+	<DesignatorDropdownGroupDef>
+		<defName>guy762_DoorDropdown_SWAutoDoors</defName>
+		<label>autodoors</label>
+	</DesignatorDropdownGroupDef>
+	
+	<ThingDef ParentName="BuildingBase" Name="guy762_AutoDoorBase" Abstract="True">
+		<thingClass>Building_Door</thingClass>
+		<category>Building</category>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<fillPercent>1</fillPercent>
+		<useHitPoints>true</useHitPoints>
+		
+		<graphicData>
+			<!--  no damage marks because they don't move with the door  -->
+			<damageData><enabled>false</enabled></damageData>
+		</graphicData>
+		
+		<!-- <stuffCategories> -->
+		  <!-- <li>Metallic</li> -->
+		  <!-- <li>Woody</li> -->
+		  <!-- <li>Stony</li> -->
+		<!-- </stuffCategories> -->
+		<statBases>
+		  <WorkToBuild>1100</WorkToBuild>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		<rotatable>false</rotatable>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<blockWind>true</blockWind>
+		<uiOrder>2010</uiOrder>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<drawerType>RealtimeOnly</drawerType>
+		<forceMoveItemsBeforeConstruction>true</forceMoveItemsBeforeConstruction>
+		<building>
+			<isInert>true</isInert>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<!-- <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered> -->
+			<!-- <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered> -->
+			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+			<blueprintClass>Blueprint_Door</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Building/Door/Door_Blueprint</texPath>
+			</blueprintGraphicData>
+			<ai_chillDestination>false</ai_chillDestination>
+			<paintable>true</paintable>
+			<canExchangeVacuum>true</canExchangeVacuum>
+		</building>
+		<comps>
+			<li Class="CompProperties_Forbiddable">
+				<allowNonPlayer>true</allowNonPlayer>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<replaceTags>
+		  <li>Door</li>
+		</replaceTags>
+		<placeWorkers>
+		  <li>PlaceWorker_DoorLearnOpeningSpeed</li>
+		</placeWorkers>
+		
+		<designationHotKey>Misc2</designationHotKey>
+		<researchPrerequisites>
+		  <li>Autodoors</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<designatorDropdown>guy762_DoorDropdown_SWAutoDoors</designatorDropdown>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="guy762_AutoDoorBase">
+		<defName>guy762_Autodoor_NarShaddaa</defName>
+		<label>cheap autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<graphicData>
+			<texPath>Buildings/Doors/NarShaddaaDoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<color>(65,65,80)</color>
+			<!-- <colorTwo>(65,65,80)</colorTwo> -->
+		</graphicData>
+		<uiIconPath>Buildings/Doors/NarShaddaaDoor_icon</uiIconPath>
+		
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<DoorOpenSpeed>0.35</DoorOpenSpeed>
+		</statBases>
+		<building>
+			<isAirtight>true</isAirtight>
+			<soundDoorOpenPowered>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenPowered>
+			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
+		</building>
+		
+		<costList>
+			<Steel>45</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="guy762_AutoDoorBase">
+		<defName>guy762_Autodoor_NarShaddaa_colorable</defName>
+		<label>cheap autodoor (accented)</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<graphicData>
+			<texPath>Buildings/Doors/NarShaddaaDoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(145,65,50)</color> <!-- rust of some kind -->
+			<colorTwo>(65,65,80)</colorTwo>
+		</graphicData>
+		<uiIconPath>Buildings/Doors/NarShaddaaDoorColorable_icon</uiIconPath>
+		
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<DoorOpenSpeed>0.35</DoorOpenSpeed>
+		</statBases>
+		<building>
+			<isAirtight>true</isAirtight>
+			<soundDoorOpenPowered>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenPowered>
+			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
+		</building>
+		
+		<costList>
+			<Steel>45</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_AutoDoorBase">
+		<defName>guy762_Autodoor_Vjun</defName>
+		<label>bulky autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<graphicData>
+			<texPath>Buildings/Doors/VjunDoor</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<color>(175,175,170)</color>
+			<!-- <colorTwo>(65,65,80)</colorTwo> -->
+		</graphicData>
+		<uiIconPath>Buildings/Doors/VjunDoor_icon</uiIconPath>
+		
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<DoorOpenSpeed>0.3</DoorOpenSpeed>
+		</statBases>
+		<building>
+			<isAirtight>true</isAirtight>
+			<soundDoorOpenPowered>kotorsound_building_PressurizedDoor</soundDoorOpenPowered>
+			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
+		</building>
+		
+		<costList>
+			<Steel>95</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- ================= Double Autodoors ================= -->
+	
+	<DesignatorDropdownGroupDef>
+		<defName>guy762_DoorDropdown_SWDoubleAutoDoors</defName>
+		<label>double autodoors</label>
+	</DesignatorDropdownGroupDef>
+	
+	<ThingDef ParentName="BuildingBase" Name="guy762_DoubleAutoDoorBase" Abstract="True">
+		<thingClass>Building_MultiTileDoor</thingClass>
+		<category>Building</category>
+		<altitudeLayer>DoorMoveable</altitudeLayer>
+		<fillPercent>1</fillPercent>
+		<useHitPoints>true</useHitPoints>
+		
+		<graphicData>
+			<!--  no damage marks because they don't move with the door  -->
+			<damageData><enabled>false</enabled></damageData>
+		</graphicData>
+		
+		<!-- <stuffCategories> -->
+		  <!-- <li>Metallic</li> -->
+		  <!-- <li>Woody</li> -->
+		  <!-- <li>Stony</li> -->
+		<!-- </stuffCategories> -->
+		<statBases>
+		  <WorkToBuild>2500</WorkToBuild>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<selectable>true</selectable>
+		<tickerType>Normal</tickerType>
+		
+		<useBlueprintGraphicAsGhost>true</useBlueprintGraphicAsGhost>
+		<size>(2, 1)</size>
+		<rotatable>true</rotatable>
+		
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		<blockWind>true</blockWind>
+		<uiOrder>2010</uiOrder>
+		<holdsRoof>true</holdsRoof>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<drawerType>RealtimeOnly</drawerType>
+		<forceMoveItemsBeforeConstruction>true</forceMoveItemsBeforeConstruction>
+		<building>
+			<isInert>true</isInert>
+			<canPlaceOverWall>true</canPlaceOverWall>
+			<!-- <soundDoorOpenPowered>Door_OpenPowered</soundDoorOpenPowered> -->
+			<!-- <soundDoorClosePowered>Door_ClosePowered</soundDoorClosePowered> -->
+			<soundDoorOpenManual>Door_OpenManual</soundDoorOpenManual>
+			<soundDoorCloseManual>Door_CloseManual</soundDoorCloseManual>
+			<blueprintClass>Blueprint_Build</blueprintClass>
+			<blueprintGraphicData>
+				<texPath>Things/Building/OrnateDoor/OrnateDoor_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(2.6, 3.1)</drawSize>
+			</blueprintGraphicData>
+			<ai_chillDestination>false</ai_chillDestination>
+			<paintable>true</paintable>
+			<canExchangeVacuum>true</canExchangeVacuum>
+		</building>
+		<comps>
+			<li Class="CompProperties_Forbiddable">
+				<allowNonPlayer>true</allowNonPlayer>
+			</li>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>50</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_Breakdownable"/>
+		</comps>
+		<replaceTags>
+		  <li>Door</li>
+		</replaceTags>
+		<placeWorkers>
+			<li>PlaceWorker_DoorLearnOpeningSpeed</li>
+			<li>PlaceWorker_MultiCellDoor</li>
+		</placeWorkers>
+		
+		<designationHotKey>Misc3</designationHotKey>
+		<researchPrerequisites>
+		  <li>Autodoors</li>
+		</researchPrerequisites>
+		<constructionSkillPrerequisite>6</constructionSkillPrerequisite>
+		
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<designatorDropdown>guy762_DoorDropdown_SWDoubleAutoDoors</designatorDropdown>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_DoubleAutoDoorBase">
+		<defName>guy762_DoubleAutodoor_Vjun</defName>
+		<label>bulky double autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<graphicData>
+			<texPath>Buildings/Doors/VjunDoorDouble</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<color>(175,175,170)</color>
+			<!-- <colorTwo>(65,65,80)</colorTwo> -->
+		</graphicData>
+		<uiIconPath>Buildings/Doors/VjunDoor_icon</uiIconPath>
+		
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<DoorOpenSpeed>0.3</DoorOpenSpeed>
+		</statBases>
+		<building>
+			<isAirtight>true</isAirtight>
+			<soundDoorOpenPowered>kotorsound_building_PressurizedDoor</soundDoorOpenPowered>
+			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
+			
+			<isSupportDoor>true</isSupportDoor>
+			<!-- <doorTopGraphic> -->
+				<!-- <texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Top</texPath> -->
+				<!-- <graphicClass>Graphic_Multi</graphicClass> -->
+				<!-- <drawSize>(3.1, 2.3)</drawSize> -->
+			<!-- </doorTopGraphic> -->
+			<!-- <doorSupportGraphic> -->
+				<!-- <texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Support</texPath> -->
+				<!-- <graphicClass>Graphic_Multi</graphicClass> -->
+				<!-- <drawSize>(3.1, 2.3)</drawSize> -->
+			<!-- </doorSupportGraphic> -->
+		</building>
+		
+		<costList>
+			<Steel>135</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_DoubleAutoDoorBase">
+		<defName>guy762_DoubleAutodoor_NarShaddaa</defName>
+		<label>cheap double autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<graphicData>
+			<texPath>Buildings/Doors/NarShaddaaDoorDouble</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<color>(65,65,80)</color>
+			<!-- <colorTwo>(65,65,80)</colorTwo> -->
+		</graphicData>
+		<uiIconPath>Buildings/Doors/NarShaddaaDoor_icon</uiIconPath>
+		
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<DoorOpenSpeed>0.35</DoorOpenSpeed>
+		</statBases>
+		<building>
+			<isAirtight>true</isAirtight>
+			<soundDoorOpenPowered>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenPowered>
+			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
+			
+			<isSupportDoor>true</isSupportDoor>
+			<!-- <doorTopGraphic> -->
+				<!-- <texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Top</texPath> -->
+				<!-- <graphicClass>Graphic_Multi</graphicClass> -->
+				<!-- <drawSize>(3.1, 2.3)</drawSize> -->
+			<!-- </doorTopGraphic> -->
+			<!-- <doorSupportGraphic> -->
+				<!-- <texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Support</texPath> -->
+				<!-- <graphicClass>Graphic_Multi</graphicClass> -->
+				<!-- <drawSize>(3.1, 2.3)</drawSize> -->
+			<!-- </doorSupportGraphic> -->
+		</building>
+		
+		<costList>
+			<Steel>90</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="guy762_DoubleAutoDoorBase">
+		<defName>guy762_DoubleAutodoor_NarShaddaa_colorable</defName>
+		<label>cheap double autodoor (accented)</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<graphicData>
+			<texPath>Buildings/Doors/NarShaddaaDoorDouble</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(145,65,50)</color> <!-- rust of some kind -->
+			<colorTwo>(65,65,80)</colorTwo>
+		</graphicData>
+		<uiIconPath>Buildings/Doors/NarShaddaaDoorColorable_icon</uiIconPath>
+		
+		<statBases>
+			<MaxHitPoints>400</MaxHitPoints>
+			<DoorOpenSpeed>0.35</DoorOpenSpeed>
+		</statBases>
+		<building>
+			<isAirtight>true</isAirtight>
+			<soundDoorOpenPowered>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenPowered>
+			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
+			
+			<isSupportDoor>true</isSupportDoor>
+			<!-- <doorTopGraphic> -->
+				<!-- <texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Top</texPath> -->
+				<!-- <graphicClass>Graphic_Multi</graphicClass> -->
+				<!-- <drawSize>(3.1, 2.3)</drawSize> -->
+			<!-- </doorTopGraphic> -->
+			<!-- <doorSupportGraphic> -->
+				<!-- <texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Support</texPath> -->
+				<!-- <graphicClass>Graphic_Multi</graphicClass> -->
+				<!-- <drawSize>(3.1, 2.3)</drawSize> -->
+			<!-- </doorSupportGraphic> -->
+		</building>
+		
+		<costList>
+			<Steel>90</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+	
+	
+</Defs>
