@@ -316,11 +316,11 @@
 		<graphicData>
 			<texPath>Buildings/Doors/VjunDoorDouble</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<shaderType>CutoutComplex</shaderType>
 			<color>(175,175,170)</color>
 			<!-- <colorTwo>(65,65,80)</colorTwo> -->
 		</graphicData>
-		<uiIconPath>Buildings/Doors/VjunDoor_icon</uiIconPath>
+		<uiIconPath>Buildings/Doors/VjunDoorDouble_icon_south</uiIconPath>
 		
 		<statBases>
 			<MaxHitPoints>800</MaxHitPoints>
@@ -333,12 +333,13 @@
 			
 			<isSupportDoor>true</isSupportDoor>
 			<doorTopGraphic>
-				<texPath>Things/Building/CO_VacDoor/CO_VacDoorDouble_Top</texPath>
+				<texPath>Buildings/Doors/DoubleDoorFrame_Square</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
 				<drawSize>(2.5, 1.5)</drawSize>
 			</doorTopGraphic>
 			<blueprintGraphicData>
-				<texPath>Things/Building/CO_VacDoor/CO_VacDoorDouble_MenuIcon</texPath>
+				<texPath>Buildings/Doors/VjunDoorDouble_icon_south</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<shaderType>EdgeDetect</shaderType>
 				<drawSize>(2.5, 1.5)</drawSize>
@@ -365,7 +366,7 @@
 			<color>(65,65,80)</color>
 			<!-- <colorTwo>(65,65,80)</colorTwo> -->
 		</graphicData>
-		<uiIconPath>Buildings/Doors/NarShaddaaDoor_icon</uiIconPath>
+		<uiIconPath>Buildings/Doors/NarShaddaaDoorDouble_icon_south</uiIconPath>
 		
 		<statBases>
 			<MaxHitPoints>400</MaxHitPoints>
@@ -378,12 +379,13 @@
 			
 			<isSupportDoor>true</isSupportDoor>
 			<doorTopGraphic>
-				<texPath>Things/Building/CO_VacDoor/CO_VacDoorDouble_Top</texPath>
+				<texPath>Buildings/Doors/DoubleDoorFrame_Square</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
 				<drawSize>(2.5, 1.5)</drawSize>
 			</doorTopGraphic>
 			<blueprintGraphicData>
-				<texPath>Things/Building/CO_VacDoor/CO_VacDoorDouble_MenuIcon</texPath>
+				<texPath>Buildings/Doors/NarShaddaaDoorDouble_icon</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<shaderType>EdgeDetect</shaderType>
 				<drawSize>(2.5, 1.5)</drawSize>
@@ -405,10 +407,10 @@
 			<texPath>Buildings/Doors/NarShaddaaDoorDouble</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>CutoutComplex</shaderType>
-			<color>(145,65,50)</color> <!-- rust of some kind -->
+			<color>(225,110,30)</color> <!-- orange rust of some kind -->
 			<colorTwo>(65,65,80)</colorTwo>
 		</graphicData>
-		<uiIconPath>Buildings/Doors/NarShaddaaDoorColorable_icon</uiIconPath>
+		<uiIconPath>Buildings/Doors/NarShaddaaDoorDoubleColorable_icon_south</uiIconPath>
 		
 		<statBases>
 			<MaxHitPoints>400</MaxHitPoints>
@@ -421,12 +423,13 @@
 			
 			<isSupportDoor>true</isSupportDoor>
 			<doorTopGraphic>
-				<texPath>Things/Building/CO_VacDoor/CO_VacDoorDouble_Top</texPath>
+				<texPath>Buildings/Doors/DoubleDoorFrame_Square</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
 				<drawSize>(2.5, 1.5)</drawSize>
 			</doorTopGraphic>
 			<blueprintGraphicData>
-				<texPath>Things/Building/CO_VacDoor/CO_VacDoorDouble_MenuIcon</texPath>
+				<texPath>Buildings/Doors/NarShaddaaDoorDoubleColorable_icon</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<shaderType>EdgeDetect</shaderType>
 				<drawSize>(2.5, 1.5)</drawSize>
