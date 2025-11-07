@@ -2,8 +2,14 @@
 <Defs>
 
 
+	<DesignatorDropdownGroupDef>
+		<defName>guy762_SecretFloorPanelDropdown</defName>
+		<label>inconspicuous floor panels</label>
+	</DesignatorDropdownGroupDef>
+	
 	<ThingDef Name="guy762_SecretFloorPanel_BASE" ParentName="AdaptiveStorageBase" Abstract="True">
 		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<designatorDropdown>guy762_SecretFloorPanelDropdown</designatorDropdown>
 		<graphicData>
 		  <graphicClass>Graphic_Single</graphicClass>
 		  <!-- <shaderType>CutoutComplex</shaderType> -->
@@ -27,6 +33,10 @@
 		</building>
 
 	</ThingDef>
+	
+	
+  
+  
 	<!--=============================================================================================================================-->
 
 	<ThingDef ParentName="guy762_SecretFloorPanel_BASE">
@@ -35,11 +45,11 @@
 		<description>An inconspicuous floor panel.</description>
 		
 		<graphicData>
-		  <texPath>Buildings/ImpHangarTile_SecretFloorPanel</texPath>
+		  <texPath>Buildings/Floors/SecretFloorPanels/ImpHangarTile</texPath>
 		  <drawSize>(3,3)</drawSize>
 		</graphicData>
 		<size>(2,3)</size>
-		<uiIconPath>Buildings/ImpHangarTile_SecretFloorPanel</uiIconPath>
+		<uiIconPath>Buildings/Floors/SecretFloorPanels/ImpHangarTile</uiIconPath>
         <uiIconScale>1</uiIconScale>
 		
 		<statBases>
@@ -77,7 +87,195 @@
         <graphics>
             <li>
                 <graphicData>
-                    <texPath>Buildings/ImpHangarTile_SecretFloorPanel</texPath>
+                    <texPath>Buildings/Floors/SecretFloorPanels/ImpHangarTile</texPath>
+					<drawSize>(3,3)</drawSize>
+					<graphicClass>Graphic_Single</graphicClass>
+                </graphicData>
+            </li>
+        </graphics>
+    </AdaptiveStorage.GraphicsDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_SecretFloorPanel_BASE">
+		<defName>guy762_SecretFloorPanel_DoomgiverTile</defName>
+		<label>floor panel</label>
+		<description>An inconspicuous floor panel.</description>
+		
+		<graphicData>
+		  <texPath>Buildings/Floors/SecretFloorPanels/DoomgiverTile</texPath>
+		  <drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(2,3)</size>
+		<uiIconPath>Buildings/Floors/SecretFloorPanels/DoomgiverTile</uiIconPath>
+        <uiIconScale>1</uiIconScale>
+		
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>120000</WorkToBuild>
+			
+			<Mass>8000</Mass>
+		</statBases>
+		<costList>
+		  <Steel>300</Steel>
+		</costList>
+		
+		<building>
+            <maxItemsInCell>40</maxItemsInCell>
+        </building>
+		<placeWorkers>
+            <li>PlaceWorker_NeverAdjacentSameDef</li>
+            <!-- <li>PlaceWorker_OnSubstructure</li> -->
+        </placeWorkers>
+		<modExtensions>
+            <li Class="AdaptiveStorage.Extension">
+                <temperature>
+                    <coolingOffset>10</coolingOffset>
+                </temperature>
+            </li>
+        </modExtensions>
+	</ThingDef>
+	
+	<AdaptiveStorage.GraphicsDef>
+        <defName>guy762_ASFGraphics_SecretFloorPanel_DoomgiverTile</defName>
+		<targetDefs>
+            <li>guy762_SecretFloorPanel_DoomgiverTile</li>
+        </targetDefs>
+        <showContainedItems>false</showContainedItems>
+        <graphics>
+            <li>
+                <graphicData>
+                    <texPath>Buildings/Floors/SecretFloorPanels/DoomgiverTile</texPath>
+					<drawSize>(3,3)</drawSize>
+					<graphicClass>Graphic_Single</graphicClass>
+                </graphicData>
+            </li>
+        </graphics>
+    </AdaptiveStorage.GraphicsDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_SecretFloorPanel_BASE">
+		<defName>guy762_SecretFloorPanel_DreadnaughtCabinTile_blue</defName>
+		<label>floor panel</label>
+		<description>An inconspicuous floor panel.</description>
+		
+		<graphicData>
+		  <texPath>Buildings/Floors/SecretFloorPanels/DreadnaughtCabinTile_blue</texPath>
+		  <drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(2,3)</size>
+		<uiIconPath>Buildings/Floors/SecretFloorPanels/DreadnaughtCabinTile_blue</uiIconPath>
+        <uiIconScale>1</uiIconScale>
+		
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>120000</WorkToBuild>
+			
+			<Mass>8000</Mass>
+		</statBases>
+		<costList>
+		  <Steel>300</Steel>
+		</costList>
+		
+		<building>
+            <maxItemsInCell>40</maxItemsInCell>
+        </building>
+		<placeWorkers>
+            <li>PlaceWorker_NeverAdjacentSameDef</li>
+            <!-- <li>PlaceWorker_OnSubstructure</li> -->
+        </placeWorkers>
+		<modExtensions>
+            <li Class="AdaptiveStorage.Extension">
+                <temperature>
+                    <coolingOffset>10</coolingOffset>
+                </temperature>
+            </li>
+        </modExtensions>
+	</ThingDef>
+	
+	<AdaptiveStorage.GraphicsDef>
+        <defName>guy762_ASFGraphics_SecretFloorPanel_DreadnaughtCabinTile_blue</defName>
+		<targetDefs>
+            <li>guy762_SecretFloorPanel_DreadnaughtCabinTile_blue</li>
+        </targetDefs>
+        <showContainedItems>false</showContainedItems>
+        <graphics>
+            <li>
+                <graphicData>
+                    <texPath>Buildings/Floors/SecretFloorPanels/DreadnaughtCabinTile_blue</texPath>
+					<drawSize>(3,3)</drawSize>
+					<graphicClass>Graphic_Single</graphicClass>
+                </graphicData>
+            </li>
+        </graphics>
+    </AdaptiveStorage.GraphicsDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_SecretFloorPanel_BASE">
+		<defName>guy762_SecretFloorPanel_DreadnaughtCabinTile_black</defName>
+		<label>floor panel</label>
+		<description>An inconspicuous floor panel.</description>
+		
+		<graphicData>
+		  <texPath>Buildings/Floors/SecretFloorPanels/DreadnaughtCabinTile_black</texPath>
+		  <drawSize>(3,3)</drawSize>
+		</graphicData>
+		<size>(2,3)</size>
+		<uiIconPath>Buildings/Floors/SecretFloorPanels/DreadnaughtCabinTile_black</uiIconPath>
+        <uiIconScale>1</uiIconScale>
+		
+		<statBases>
+			<MaxHitPoints>300</MaxHitPoints>
+            <WorkToBuild>120000</WorkToBuild>
+			
+			<Mass>8000</Mass>
+		</statBases>
+		<costList>
+		  <Steel>300</Steel>
+		</costList>
+		
+		<building>
+            <maxItemsInCell>40</maxItemsInCell>
+        </building>
+		<placeWorkers>
+            <li>PlaceWorker_NeverAdjacentSameDef</li>
+            <!-- <li>PlaceWorker_OnSubstructure</li> -->
+        </placeWorkers>
+		<modExtensions>
+            <li Class="AdaptiveStorage.Extension">
+                <temperature>
+                    <coolingOffset>10</coolingOffset>
+                </temperature>
+            </li>
+        </modExtensions>
+	</ThingDef>
+	
+	<AdaptiveStorage.GraphicsDef>
+        <defName>guy762_ASFGraphics_SecretFloorPanel_DreadnaughtCabinTile_black</defName>
+		<targetDefs>
+            <li>guy762_SecretFloorPanel_DreadnaughtCabinTile_black</li>
+        </targetDefs>
+        <showContainedItems>false</showContainedItems>
+        <graphics>
+            <li>
+                <graphicData>
+                    <texPath>Buildings/Floors/SecretFloorPanels/DreadnaughtCabinTile_black</texPath>
 					<drawSize>(3,3)</drawSize>
 					<graphicClass>Graphic_Single</graphicClass>
                 </graphicData>

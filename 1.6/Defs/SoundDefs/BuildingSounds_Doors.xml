@@ -46,6 +46,27 @@
 	</SoundDef>
 	
 	<SoundDef>
+		<defName>kotorsound_building_OtherNarShaddaaDoor</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+		  <li>
+			<gameSpeedRange>1~2</gameSpeedRange>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_buildings_doors/door_small_05</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>10</min><max>10</max></volumeRange>
+			<!-- very quiet sound range -->
+			<distRange>10~40</distRange> <!-- enabled per user request -->
+			<sustainLoop>False</sustainLoop>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
 		<defName>kotorsound_building_PressurizedDoor</defName>
 		<context>MapOnly</context>
 		<eventNames />

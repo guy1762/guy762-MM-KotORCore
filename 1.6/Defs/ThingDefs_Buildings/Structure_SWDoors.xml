@@ -332,16 +332,17 @@
 			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
 			
 			<isSupportDoor>true</isSupportDoor>
-			<!-- <doorTopGraphic> -->
-				<!-- <texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Top</texPath> -->
-				<!-- <graphicClass>Graphic_Multi</graphicClass> -->
-				<!-- <drawSize>(3.1, 2.3)</drawSize> -->
-			<!-- </doorTopGraphic> -->
-			<!-- <doorSupportGraphic> -->
-				<!-- <texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Support</texPath> -->
-				<!-- <graphicClass>Graphic_Multi</graphicClass> -->
-				<!-- <drawSize>(3.1, 2.3)</drawSize> -->
-			<!-- </doorSupportGraphic> -->
+			<doorTopGraphic>
+				<texPath>Things/Building/CO_VacDoor/CO_VacDoorDouble_Top</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(2.5, 1.5)</drawSize>
+			</doorTopGraphic>
+			<blueprintGraphicData>
+				<texPath>Things/Building/CO_VacDoor/CO_VacDoorDouble_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(2.5, 1.5)</drawSize>
+			</blueprintGraphicData>
 		</building>
 		
 		<costList>
@@ -372,20 +373,21 @@
 		</statBases>
 		<building>
 			<isAirtight>true</isAirtight>
-			<soundDoorOpenPowered>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenPowered>
+			<soundDoorOpenPowered>kotorsound_building_OtherNarShaddaaDoor</soundDoorOpenPowered>
 			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
 			
 			<isSupportDoor>true</isSupportDoor>
-			<!-- <doorTopGraphic> -->
-				<!-- <texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Top</texPath> -->
-				<!-- <graphicClass>Graphic_Multi</graphicClass> -->
-				<!-- <drawSize>(3.1, 2.3)</drawSize> -->
-			<!-- </doorTopGraphic> -->
-			<!-- <doorSupportGraphic> -->
-				<!-- <texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Support</texPath> -->
-				<!-- <graphicClass>Graphic_Multi</graphicClass> -->
-				<!-- <drawSize>(3.1, 2.3)</drawSize> -->
-			<!-- </doorSupportGraphic> -->
+			<doorTopGraphic>
+				<texPath>Things/Building/CO_VacDoor/CO_VacDoorDouble_Top</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(2.5, 1.5)</drawSize>
+			</doorTopGraphic>
+			<blueprintGraphicData>
+				<texPath>Things/Building/CO_VacDoor/CO_VacDoorDouble_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(2.5, 1.5)</drawSize>
+			</blueprintGraphicData>
 		</building>
 		
 		<costList>
@@ -414,20 +416,21 @@
 		</statBases>
 		<building>
 			<isAirtight>true</isAirtight>
-			<soundDoorOpenPowered>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenPowered>
+			<soundDoorOpenPowered>kotorsound_building_OtherNarShaddaaDoor</soundDoorOpenPowered>
 			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
 			
 			<isSupportDoor>true</isSupportDoor>
-			<!-- <doorTopGraphic> -->
-				<!-- <texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Top</texPath> -->
-				<!-- <graphicClass>Graphic_Multi</graphicClass> -->
-				<!-- <drawSize>(3.1, 2.3)</drawSize> -->
-			<!-- </doorTopGraphic> -->
-			<!-- <doorSupportGraphic> -->
-				<!-- <texPath>Things/Building/OrnateDoor/OrnateDoor2x1_Support</texPath> -->
-				<!-- <graphicClass>Graphic_Multi</graphicClass> -->
-				<!-- <drawSize>(3.1, 2.3)</drawSize> -->
-			<!-- </doorSupportGraphic> -->
+			<doorTopGraphic>
+				<texPath>Things/Building/CO_VacDoor/CO_VacDoorDouble_Top</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<drawSize>(2.5, 1.5)</drawSize>
+			</doorTopGraphic>
+			<blueprintGraphicData>
+				<texPath>Things/Building/CO_VacDoor/CO_VacDoorDouble_MenuIcon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(2.5, 1.5)</drawSize>
+			</blueprintGraphicData>
 		</building>
 		
 		<costList>
