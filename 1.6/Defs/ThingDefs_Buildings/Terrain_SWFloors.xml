@@ -172,14 +172,15 @@
   
   <TerrainDef ParentName="TileMetalBase">
     <defName>guy762_FloorTiles_DoomgiverFoorMetal</defName>
-    <label>metal plating (light slate)</label>
+    <label>metal plating (slate)</label>
     <renderPrecedence>240</renderPrecedence>
     <description>Steel tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
     <texturePath>Buildings/Floors/FoorMetal2</texturePath>
 	
 	<designationCategory>KOTOR_BuildTab</designationCategory>
 	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
-	<color>(165,165,180)</color>
+	<!-- <color>(165,165,180)</color> -->
+	<color>(145,145,155)</color> <!-- slate bley -->
     <statBases>
       <WorkToBuild>800</WorkToBuild>
       <Beauty>0</Beauty>
@@ -378,14 +379,15 @@
   
   <TerrainDef ParentName="TileMetalBase">
     <defName>guy762_FloorTiles_DivotedTile_slate</defName>
-    <label>divoted tile (light slate)</label>
+    <label>divoted tile (slate)</label>
     <renderPrecedence>240</renderPrecedence>
     <description>Steel tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
     <texturePath>Buildings/Floors/DivotedTile</texturePath>
 	
 	<designationCategory>KOTOR_BuildTab</designationCategory>
 	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
-	<color>(165,165,180)</color>
+	<!-- <color>(165,165,180)</color> -->
+	<color>(145,145,155)</color> <!-- slate bley -->
     <statBases>
       <WorkToBuild>800</WorkToBuild>
       <Beauty>0</Beauty>

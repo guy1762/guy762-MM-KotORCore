@@ -1,0 +1,245 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  
+  <!-- ================= powered walls for ships ================= -->
+
+
+	<DesignatorDropdownGroupDef>
+		<defName>guy762_WallDropdown_SWPowered</defName>
+		<label>powered fortified walls</label>
+	</DesignatorDropdownGroupDef>
+  
+	<ThingDef Name="guy762_PoweredWallBase" ParentName="BuildingBase" Abstract="True">
+		<defName>guy762_PoweredWallBase</defName>
+		<!-- <label>wall</label> -->
+		<thingClass>Building</thingClass>
+		<category>Building</category>
+		
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<designatorDropdown>guy762_WallDropdown_SWPowered</designatorDropdown>
+		
+		<noRightClickDraftAttack>true</noRightClickDraftAttack>
+		<replaceTags>
+		  <li>Wall</li>
+		</replaceTags>
+		
+		<graphicData>
+		  <!-- <texPath>Things/Building/Linked/Wall</texPath> -->
+		  <!-- <graphicClass>Graphic_Appearances</graphicClass> -->
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <linkType>CornerFiller</linkType>
+		  <!-- <linkType>Basic</linkType> -->
+		  <linkFlags>
+			<li>Wall</li>
+			<li>Rock</li>
+		  </linkFlags>
+		  <damageData>
+			<cornerTL>Damage/Corner</cornerTL>
+			<cornerTR>Damage/Corner</cornerTR>
+			<cornerBL>Damage/Corner</cornerBL>
+			<cornerBR>Damage/Corner</cornerBR>
+			<edgeTop>Damage/Edge</edgeTop>
+			<edgeBot>Damage/Edge</edgeBot>
+			<edgeLeft>Damage/Edge</edgeLeft>
+			<edgeRight>Damage/Edge</edgeRight>
+		  </damageData>
+		</graphicData>
+		<uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+		
+		<statBases>
+		  <!-- <MaxHitPoints>300</MaxHitPoints> -->
+		  <!-- <WorkToBuild>135</WorkToBuild> -->
+		  <Flammability>0</Flammability>
+		  <MeditationFocusStrength>0.22</MeditationFocusStrength>
+		</statBases>
+		
+		<!-- <costStuffCount>5</costStuffCount> -->
+		<!-- <useStuffTerrainAffordance>true</useStuffTerrainAffordance> -->
+		<!-- <stuffCategories> -->
+		  <!-- <li>Metallic</li> -->
+		  <!-- <li>Woody</li> -->
+		  <!-- <li>Stony</li> -->
+		<!-- </stuffCategories> -->
+		
+		<leaveResourcesWhenKilled>false</leaveResourcesWhenKilled>
+		<killedLeavings>
+			<ChunkSlagSteel>1</ChunkSlagSteel>
+		</killedLeavings>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<coversFloor>true</coversFloor>
+		<drawStyleCategory>Walls</drawStyleCategory>
+		<tickerType>Never</tickerType>
+		<rotatable>false</rotatable>
+		<selectable>true</selectable>
+		<neverMultiSelect>true</neverMultiSelect>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> <!-- Best affordance needed for stone -->
+		<holdsRoof>true</holdsRoof>
+		<uiOrder>2000</uiOrder>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<blockLight>true</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fertility>0</fertility>
+		
+		<building>
+			<paintable>true</paintable>
+			<isAirtight>true</isAirtight>
+			<!-- <shipPart>true</shipPart> -->
+			<isInert>true</isInert>
+			<isWall>true</isWall>
+			<isPlaceOverableWall>true</isPlaceOverableWall>
+			<ai_chillDestination>false</ai_chillDestination>
+			<supportsWallAttachments>true</supportsWallAttachments>
+			<!-- <isStuffableAirtight>true</isStuffableAirtight> -->
+			<blueprintGraphicData>
+				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+			</blueprintGraphicData>
+		</building>
+		
+		<researchPrerequisites>
+			<li>ShipBasics</li>
+		</researchPrerequisites>
+		
+		<comps>
+			<li Class="CompProperties_MeditationFocus">
+				<statDef>MeditationFocusStrength</statDef>
+				<focusTypes>
+					<li>Minimal</li>
+				</focusTypes>
+			</li>
+			<!-- <li Class="SaveOurShip2.CompProps_ShipCachePart"> -->
+				<!-- <isHull>true</isHull> -->
+				<!-- <hermetic>true</hermetic> -->
+				<!-- <roof>true</roof> -->
+			<!-- </li> -->
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<!-- <li Class="SaveOurShip2.CompProps_ShipHeat"> -->
+				<!-- <compClass>SaveOurShip2.CompShipHeat</compClass> -->
+			<!-- </li> -->
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+		</comps>
+		<damageMultipliers>
+			<li>
+				<damageDef>Bomb</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+			<li>
+				<damageDef>Thump</damageDef>
+				<multiplier>2</multiplier>
+			</li>
+			
+			
+			<li>
+				 <damageDef>guy762_RangedDamage_sonic</damageDef>
+				 <multiplier>2</multiplier>
+			</li>
+			<li>
+				 <damageDef>guy762_MeleeDamage_sonic</damageDef>
+				 <multiplier>2</multiplier>
+			</li>
+			<li>
+				 <damageDef>guy762_GrenadeDamage_sonic</damageDef>
+				 <multiplier>4</multiplier>
+			</li>
+			
+			<li>
+				 <damageDef>guy762_ExplosiveDamage_conc</damageDef>
+				 <multiplier>2</multiplier>
+			</li>
+			
+			<li>
+				 <damageDef>guy762_GrenadeDamage_detpack</damageDef>
+				 <multiplier>4</multiplier>
+			</li>
+		</damageMultipliers>
+		<designationHotKey>Misc3</designationHotKey>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_PoweredWallBase">
+		<defName>guy762_PoweredWall_DoomgiverA</defName>
+		<label>powered durasteel wall</label>
+		<!-- <description>The outer structural elements of a ship's hull. Includes conduits for power.</description> -->
+		<description>Reinforced durasteel wall. Includes conduits for power.</description>
+		<graphicData>
+			<texPath>Buildings/Walls/DoomgiverWallA</texPath>
+			<color>(75,75,80)</color>
+		</graphicData>
+		<uiIconPath>Buildings/Walls/DoomgiverWallA_icon</uiIconPath>
+		<statBases>
+			<WorkToBuild>1600</WorkToBuild>
+			<MaxHitPoints>1000</MaxHitPoints>
+		</statBases>
+		<building>
+			<relatedBuildCommands>
+				<li>guy762_DoubleAutodoor_Vjun</li>
+			</relatedBuildCommands>
+		</building>
+		
+		<costList>
+			<KOTOR_AlloyDurasteel>6</KOTOR_AlloyDurasteel>
+			<Steel>1</Steel>
+			
+			<!-- <ComponentIndustrial>1</ComponentIndustrial> -->
+		</costList>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="guy762_PoweredWallBase">
+		<defName>guy762_PoweredWall_DreadnaughtA</defName>
+		<label>powered durasteel wall</label>
+		<description>Reinforced durasteel wall. Includes conduits for power.</description>
+		<graphicData>
+			<texPath>Buildings/Walls/DreadnaughtWallA</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(140,65,65)</color> <!-- darker rally master red -->
+			<colorTwo>(165,165,180)</colorTwo> <!-- light slate bley -->
+			
+			<!-- slate bley -->
+			<!-- <colorTwo>(145,145,155)</colorTwo> -->
+		</graphicData>
+		<uiIconPath>Buildings/Walls/DreadnaughtWallA_icon</uiIconPath>
+		<statBases>
+			<WorkToBuild>1600</WorkToBuild>
+			<MaxHitPoints>1000</MaxHitPoints>
+		</statBases>
+		<building>
+			<relatedBuildCommands>
+				<li>guy762_DoubleAutodoor_Vjun</li>
+			</relatedBuildCommands>
+		</building>
+		
+		<costList>
+			<KOTOR_AlloyDurasteel>6</KOTOR_AlloyDurasteel>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+  
+  
+
+</Defs>
