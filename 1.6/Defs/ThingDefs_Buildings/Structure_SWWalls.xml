@@ -239,6 +239,40 @@
 			<Steel>1</Steel>
 		</costList>
 	</ThingDef>
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_PoweredWallBase">
+		<defName>guy762_PoweredWall_NarShaddaaCantinaA</defName>
+		<label>powered duracrete wall</label>
+		<!-- <description>The outer structural elements of a ship's hull. Includes conduits for power.</description> -->
+		<description>Reinforced duracrete wall. Includes conduits for power.</description>
+		<graphicData>
+			<texPath>Buildings/Walls/NarShaddaaCantinaWallA</texPath>
+			<color>(105,110,105)</color> <!-- stone green -->
+		</graphicData>
+		<uiIconPath>Buildings/Walls/NarShaddaaCantinaWallA_icon</uiIconPath>
+		<statBases>
+			<WorkToBuild>2400</WorkToBuild>
+			<MaxHitPoints>1000</MaxHitPoints>
+		</statBases>
+		<building>
+			<relatedBuildCommands>
+				<li>guy762_DoubleAutodoor_NarShaddaa</li>
+				<li>guy762_DoubleAutodoor_NarShaddaa_colorable</li>
+			</relatedBuildCommands>
+		</building>
+		
+		<costList>
+			<KOTOR_Duracrete>6</KOTOR_Duracrete>
+			<Steel>1</Steel>
+			
+			<!-- <ComponentIndustrial>1</ComponentIndustrial> -->
+		</costList>
+	</ThingDef>
   
   
 
