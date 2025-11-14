@@ -197,7 +197,8 @@
 		</statBases>
 		<building>
 			<relatedBuildCommands>
-				<li>guy762_DoubleAutodoor_Vjun</li>
+				<li>guy762_Autodoor1x1_DoomgiverA</li>
+				<li>guy762_DoubleAutodoor_DoomgiverVerticalA</li>
 			</relatedBuildCommands>
 		</building>
 		
@@ -230,7 +231,8 @@
 		</statBases>
 		<building>
 			<relatedBuildCommands>
-				<li>guy762_DoubleAutodoor_Vjun</li>
+				<li>guy762_Autodoor1x1_DreadnaughtA</li>
+				<li>guy762_DoubleAutodoor_DreadnaughtVerticalA</li>
 			</relatedBuildCommands>
 		</building>
 		

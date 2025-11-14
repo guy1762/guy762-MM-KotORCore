@@ -88,102 +88,99 @@
 	</ThingDef>
 	
 	
-	<ThingDef ParentName="guy762_AutoDoorBase">
-		<defName>guy762_Autodoor_NarShaddaa</defName>
-		<label>cheap autodoor</label>
-		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
-		<graphicData>
-			<texPath>Buildings/Doors/NarShaddaaDoor</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
+	<!-- <ThingDef ParentName="guy762_AutoDoorBase"> -->
+		<!-- <defName>guy762_Autodoor_NarShaddaa</defName> -->
+		<!-- <label>cheap autodoor</label> -->
+		<!-- <description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Buildings/Doors/NarShaddaaDoor</texPath> -->
+			<!-- <graphicClass>Graphic_Single</graphicClass> -->
+			<!-- <color>(65,65,80)</color> -->
+		<!-- </graphicData> -->
+		<!-- <uiIconPath>Buildings/Doors/NarShaddaaDoor_icon</uiIconPath> -->
+		
+		<!-- <statBases> -->
+			<!-- <MaxHitPoints>200</MaxHitPoints> -->
+			<!-- <DoorOpenSpeed>0.35</DoorOpenSpeed> -->
+		<!-- </statBases> -->
+		<!-- <building> -->
+			<!-- <isAirtight>true</isAirtight> -->
+			<!-- <soundDoorOpenPowered>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenPowered> -->
+			<!-- <soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered> -->
+		<!-- </building> -->
+		
+		<!-- <costList> -->
+			<!-- <Steel>45</Steel> -->
+			<!-- <ComponentIndustrial>2</ComponentIndustrial> -->
+		<!-- </costList> -->
+	<!-- </ThingDef> -->
+	
+	
+	<!-- <ThingDef ParentName="guy762_AutoDoorBase"> -->
+		<!-- <defName>guy762_Autodoor_NarShaddaa_colorable</defName> -->
+		<!-- <label>cheap autodoor (accented)</label> -->
+		<!-- <description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Buildings/Doors/NarShaddaaDoor</texPath> -->
+			<!-- <graphicClass>Graphic_Single</graphicClass> -->
 			<!-- <shaderType>CutoutComplex</shaderType> -->
-			<color>(65,65,80)</color>
+			<!-- rust of some kind -->
+			<!-- <color>(145,65,50)</color> -->
 			<!-- <colorTwo>(65,65,80)</colorTwo> -->
-		</graphicData>
-		<uiIconPath>Buildings/Doors/NarShaddaaDoor_icon</uiIconPath>
+		<!-- </graphicData> -->
+		<!-- <uiIconPath>Buildings/Doors/NarShaddaaDoorColorable_icon</uiIconPath> -->
 		
-		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<DoorOpenSpeed>0.35</DoorOpenSpeed>
-		</statBases>
-		<building>
-			<isAirtight>true</isAirtight>
-			<soundDoorOpenPowered>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenPowered>
-			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
-		</building>
+		<!-- <statBases> -->
+			<!-- <MaxHitPoints>200</MaxHitPoints> -->
+			<!-- <DoorOpenSpeed>0.35</DoorOpenSpeed> -->
+		<!-- </statBases> -->
+		<!-- <building> -->
+			<!-- <isAirtight>true</isAirtight> -->
+			<!-- <soundDoorOpenPowered>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenPowered> -->
+			<!-- <soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered> -->
+		<!-- </building> -->
 		
-		<costList>
-			<Steel>45</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-		</costList>
-	</ThingDef>
+		<!-- <costList> -->
+			<!-- <Steel>45</Steel> -->
+			<!-- <ComponentIndustrial>2</ComponentIndustrial> -->
+		<!-- </costList> -->
+	<!-- </ThingDef> -->
 	
 	
-	<ThingDef ParentName="guy762_AutoDoorBase">
-		<defName>guy762_Autodoor_NarShaddaa_colorable</defName>
-		<label>cheap autodoor (accented)</label>
-		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
-		<graphicData>
-			<texPath>Buildings/Doors/NarShaddaaDoor</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>CutoutComplex</shaderType>
-			<color>(145,65,50)</color> <!-- rust of some kind -->
-			<colorTwo>(65,65,80)</colorTwo>
-		</graphicData>
-		<uiIconPath>Buildings/Doors/NarShaddaaDoorColorable_icon</uiIconPath>
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- <ThingDef ParentName="guy762_AutoDoorBase"> -->
+		<!-- <defName>guy762_Autodoor_Vjun</defName> -->
+		<!-- <label>bulky autodoor</label> -->
+		<!-- <description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description> -->
+		<!-- <graphicData> -->
+			<!-- <texPath>Buildings/Doors/VjunDoor</texPath> -->
+			<!-- <graphicClass>Graphic_Single</graphicClass> -->
+			<!-- <color>(175,175,170)</color> -->
+		<!-- </graphicData> -->
+		<!-- <uiIconPath>Buildings/Doors/VjunDoor_icon</uiIconPath> -->
 		
-		<statBases>
-			<MaxHitPoints>200</MaxHitPoints>
-			<DoorOpenSpeed>0.35</DoorOpenSpeed>
-		</statBases>
-		<building>
-			<isAirtight>true</isAirtight>
-			<soundDoorOpenPowered>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenPowered>
-			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
-		</building>
+		<!-- <statBases> -->
+			<!-- <MaxHitPoints>400</MaxHitPoints> -->
+			<!-- <DoorOpenSpeed>0.3</DoorOpenSpeed> -->
+		<!-- </statBases> -->
+		<!-- <building> -->
+			<!-- <isAirtight>true</isAirtight> -->
+			<!-- <soundDoorOpenPowered>kotorsound_building_PressurizedDoor</soundDoorOpenPowered> -->
+			<!-- <soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered> -->
+		<!-- </building> -->
 		
-		<costList>
-			<Steel>45</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-		</costList>
-	</ThingDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<ThingDef ParentName="guy762_AutoDoorBase">
-		<defName>guy762_Autodoor_Vjun</defName>
-		<label>bulky autodoor</label>
-		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
-		<graphicData>
-			<texPath>Buildings/Doors/VjunDoor</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<!-- <shaderType>CutoutComplex</shaderType> -->
-			<color>(175,175,170)</color>
-			<!-- <colorTwo>(65,65,80)</colorTwo> -->
-		</graphicData>
-		<uiIconPath>Buildings/Doors/VjunDoor_icon</uiIconPath>
-		
-		<statBases>
-			<MaxHitPoints>400</MaxHitPoints>
-			<DoorOpenSpeed>0.3</DoorOpenSpeed>
-		</statBases>
-		<building>
-			<isAirtight>true</isAirtight>
-			<soundDoorOpenPowered>kotorsound_building_PressurizedDoor</soundDoorOpenPowered>
-			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
-		</building>
-		
-		<costList>
-			<Steel>95</Steel>
-			<ComponentIndustrial>2</ComponentIndustrial>
-		</costList>
-	</ThingDef>
+		<!-- <costList> -->
+			<!-- <Steel>95</Steel> -->
+			<!-- <ComponentIndustrial>2</ComponentIndustrial> -->
+		<!-- </costList> -->
+	<!-- </ThingDef> -->
 	
 	
 	
@@ -200,9 +197,9 @@
 		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
 		<graphicData>
 			<texPath>Buildings/Doors/Doomgiver1x1DoorA</texPath>
-			<graphicClass>Graphic_Multi</graphicClass>
+			<graphicClass>Graphic_Single</graphicClass>
 			<!-- <shaderType>CutoutComplex</shaderType> -->
-			<color>(145,145,165)</color>
+			<color>(155,155,165)</color>
 		</graphicData>
 		<uiIconPath>Buildings/Doors/Doomgiver1x1DoorA_icon</uiIconPath>
 		
@@ -212,7 +209,7 @@
 			<li Class="RimframeGrineerHome.DoorPartGraphicsExtension">
 				<leftPartGraphicData>
 					<texPath>Buildings/Doors/Doomgiver1x1DoorA</texPath>
-					<graphicClass>Graphic_Multi</graphicClass>
+					<graphicClass>Graphic_Single</graphicClass>
 					<!-- <shaderType>CutoutComplex</shaderType> -->
 					<drawSize>(1, 1)</drawSize>
 				</leftPartGraphicData>
@@ -220,17 +217,24 @@
 		</modExtensions>
 		
 		<statBases>
-			<MaxHitPoints>400</MaxHitPoints>
-			<DoorOpenSpeed>0.3</DoorOpenSpeed>
+			<MaxHitPoints>200</MaxHitPoints>
+			<DoorOpenSpeed>0.5</DoorOpenSpeed>
 		</statBases>
 		<building>
 			<isAirtight>true</isAirtight>
 			<soundDoorOpenPowered>kotorsound_building_PressurizedDoor</soundDoorOpenPowered>
 			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
+			
+			<doorTopGraphic>
+				<texPath>Buildings/Doors/SingleDoorFrame_Square</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
+				<drawSize>1.25</drawSize>
+			</doorTopGraphic>
 		</building>
 		
 		<costList>
-			<Steel>95</Steel>
+			<Steel>45</Steel>
 			<ComponentIndustrial>2</ComponentIndustrial>
 		</costList>
 	</ThingDef>
@@ -272,6 +276,67 @@
 			<isAirtight>true</isAirtight>
 			<soundDoorOpenPowered>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenPowered>
 			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
+			
+			<doorTopGraphic>
+				<texPath>Buildings/Doors/SingleDoorFrame_Square</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
+				<drawSize>1.25</drawSize>
+			</doorTopGraphic>
+		</building>
+		
+		<costList>
+			<Steel>95</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_AutoDoorBase">
+		<defName>guy762_Autodoor1x1_DreadnaughtA</defName>
+		<label>reinforced autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<graphicData>
+			<texPath>Buildings/Doors/Dreadnaught1x1DoorA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(140,65,65)</color>
+			<colorTwo>(155,155,165)</colorTwo>
+		</graphicData>
+		<uiIconPath>Buildings/Doors/Dreadnaught1x1DoorA_icon</uiIconPath>
+		
+		
+		<thingClass>RimframeGrineerHome.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
+		 <modExtensions>
+			<li Class="RimframeGrineerHome.DoorPartGraphicsExtension">
+				<rightPartGraphicData>
+					<texPath>Buildings/Doors/Dreadnaught1x1DoorA</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<color>(140,65,65)</color>
+					<colorTwo>(155,155,165)</colorTwo>
+					<drawSize>(1, 1)</drawSize>
+				</rightPartGraphicData>
+			</li>
+		</modExtensions>
+		
+		<statBases>
+			<MaxHitPoints>600</MaxHitPoints>
+			<DoorOpenSpeed>0.3</DoorOpenSpeed>
+		</statBases>
+		<building>
+			<isAirtight>true</isAirtight>
+			<soundDoorOpenPowered>kotorsound_building_PressurizedDoor</soundDoorOpenPowered>
+			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
+			
+			<doorTopGraphic>
+				<texPath>Buildings/Doors/SingleDoorFrame_Square</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
+				<drawSize>1.25</drawSize>
+			</doorTopGraphic>
 		</building>
 		
 		<costList>
@@ -402,7 +467,65 @@
 	
 	
 	
-	
+	<ThingDef ParentName="guy762_DoubleAutoDoorBase">
+		<defName>guy762_DoubleAutodoor_DoomgiverVerticalA</defName>
+		<label>plain vertical autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<graphicData>
+			<texPath>Buildings/Doors/DoomgiverDoorVertical1</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <graphicClass>Graphic_Multi</graphicClass> -->
+			<shaderType>CutoutComplex</shaderType>
+			<color>(155,155,165)</color>
+		</graphicData>
+		<uiIconPath>Buildings/Doors/DoomgiverDoorVertical1_icon</uiIconPath>
+		
+		<thingClass>RimframeGrineerHome.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
+		<modExtensions>
+			<li Class="RimframeGrineerHome.DoorPartGraphicsExtension">
+				<topPartGraphicData>
+					<texPath>Buildings/Doors/DoomgiverDoorVertical1</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<drawSize>(2, 1)</drawSize>
+				</topPartGraphicData>
+				<!-- <downPartGraphicData> -->
+					<!-- <texPath>Things/GrineerBuildings/Doors/2x1/GDoor_2x1_MoverBottom</texPath> -->
+					<!-- <graphicClass>Graphic_Single</graphicClass> -->
+					<!-- <drawSize>(2, 1)</drawSize> -->
+				<!-- </downPartGraphicData> -->
+			</li>
+		</modExtensions>
+		
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<DoorOpenSpeed>0.3</DoorOpenSpeed>
+		</statBases>
+		<building>
+			<isAirtight>true</isAirtight>
+			<soundDoorOpenPowered>kotorsound_building_PressurizedDoor</soundDoorOpenPowered>
+			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
+			
+			<isSupportDoor>true</isSupportDoor>
+			<doorTopGraphic>
+				<texPath>Buildings/Doors/DoubleDoorFrame_Square</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
+				<drawSize>(2.5, 1.5)</drawSize>
+			</doorTopGraphic>
+			<blueprintGraphicData>
+				<texPath>Buildings/Doors/DoomgiverDoorVertical1_icon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(2.5, 1.5)</drawSize>
+			</blueprintGraphicData>
+		</building>
+		
+		<costList>
+			<Steel>90</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+	</ThingDef>
 	
 	
 	
@@ -543,36 +666,30 @@
 	
 	
 	
-	
-	
-	
 	<ThingDef ParentName="guy762_DoubleAutoDoorBase">
-		<defName>guy762_DoubleAutodoor_DoomgiverVerticalA</defName>
-		<label>plain vertical autodoor</label>
+		<defName>guy762_DoubleAutodoor_DreadnaughtVerticalA</defName>
+		<label>reinforced double autodoor</label>
 		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
 		<graphicData>
-			<texPath>Buildings/Doors/DoomgiverDoorVertical1</texPath>
+			<texPath>Buildings/Doors/Dreadnaught2x1DoorA</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
-			<!-- <graphicClass>Graphic_Multi</graphicClass> -->
 			<shaderType>CutoutComplex</shaderType>
-			<color>(145,145,165)</color>
+			<color>(140,65,65)</color>
+			<colorTwo>(155,155,165)</colorTwo>
 		</graphicData>
-		<uiIconPath>Buildings/Doors/DoomgiverDoorVertical1_icon</uiIconPath>
+		<uiIconPath>Buildings/Doors/Dreadnaught2x1DoorA_icon</uiIconPath>
 		
 		<thingClass>RimframeGrineerHome.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
-		 <modExtensions>
+		<modExtensions>
 			<li Class="RimframeGrineerHome.DoorPartGraphicsExtension">
 				<topPartGraphicData>
-					<texPath>Buildings/Doors/DoomgiverDoorVertical1</texPath>
+					<texPath>Buildings/Doors/Dreadnaught2x1DoorA</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
 					<shaderType>CutoutComplex</shaderType>
+					<color>(140,65,65)</color>
+					<colorTwo>(155,155,165)</colorTwo>
 					<drawSize>(2, 1)</drawSize>
 				</topPartGraphicData>
-				<!-- <downPartGraphicData> -->
-					<!-- <texPath>Things/GrineerBuildings/Doors/2x1/GDoor_2x1_MoverBottom</texPath> -->
-					<!-- <graphicClass>Graphic_Single</graphicClass> -->
-					<!-- <drawSize>(2, 1)</drawSize> -->
-				<!-- </downPartGraphicData> -->
 			</li>
 		</modExtensions>
 		
@@ -593,7 +710,7 @@
 				<drawSize>(2.5, 1.5)</drawSize>
 			</doorTopGraphic>
 			<blueprintGraphicData>
-				<texPath>Buildings/Doors/DoomgiverDoorVertical1_icon</texPath>
+				<texPath>Buildings/Doors/Dreadnaught2x1DoorA_icon</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
 				<shaderType>EdgeDetect</shaderType>
 				<drawSize>(2.5, 1.5)</drawSize>
