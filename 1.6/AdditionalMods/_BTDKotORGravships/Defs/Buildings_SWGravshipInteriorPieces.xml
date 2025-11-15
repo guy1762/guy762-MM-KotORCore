@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+
+  <!-- <ThingDef ParentName="Wall"> -->
+    <!-- <defName>GravshipHull</defName> -->
+    <!-- <label>gravship hull</label> -->
+    <!-- <description>A strong airtight wall that prevents oxygen leaks in the vacuum of space. The wall connects directly into the underlying substructure, meaning it can only be built on a gravship.</description> -->
+    <!-- <designationCategory>Odyssey</designationCategory> -->
+    <!-- <uiOrder>1800</uiOrder> -->
+    <!-- <uiIconPath>Things/Building/Linked/GravshipHull/GravshipHull_MenuIcon</uiIconPath> -->
+    <!-- <graphicData> -->
+      <!-- <texPath>Things/Building/Linked/GravshipHull/GravshipHull_Atlas</texPath> -->
+      <!-- <graphicClass>Graphic_Single</graphicClass> -->
+    <!-- </graphicData> -->
+    <!-- <researchPrerequisites> -->
+      <!-- <li>BasicGravtech</li> -->
+    <!-- </researchPrerequisites> -->
+    <!-- <statBases> -->
+      <!-- <MaxHitPoints>420</MaxHitPoints> -->
+      <!-- <WorkToBuild>300</WorkToBuild> -->
+      <!-- <Flammability>0</Flammability> -->
+    <!-- </statBases> -->
+    <!-- <costStuffCount>7</costStuffCount> -->
+    <!-- <building> -->
+      <!-- <isAirtight>true</isAirtight> -->
+    <!-- </building> -->
+    <!-- <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded> -->
+    <!-- <useStuffTerrainAffordance>false</useStuffTerrainAffordance> -->
+    <!-- <stuffCategories Inherit="False"> -->
+      <!-- <li>Metallic</li> -->
+    <!-- </stuffCategories> -->
+    <!-- <comps Inherit="False"/> -->
+  <!-- </ThingDef> -->
+
+  
+  
+  <ThingDef ParentName="GravshipComponentBase">
+    <defName>guy762_SWGravshipPilotConsole_YT1300transport</defName>
+    <label>pilot console</label>
+    <description>An interface that allows launching and piloting a gravship. It draws power directly from the grav engine.</description>
+    <graphicData>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <texPath>Gravships/YT1300/controlpoint_2x2</texPath>
+      <drawSize>(2.5,2.5)</drawSize>
+	  
+		<!-- <drawOffset>(-0.425,0,0)</drawOffset> -->
+		<drawOffsetEast>(-0.425,0,0)</drawOffsetEast>
+		<drawOffsetNorth>(0,0,-0.425)</drawOffsetNorth>
+		<drawOffsetSouth>(0,0,0.425)</drawOffsetSouth>
+		<drawOffsetWest>(0.425,0,0)</drawOffsetWest>
+	  
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Mass>50</Mass>
+      <Flammability>0</Flammability>
+      <Beauty>0</Beauty>
+      <WorkToBuild>2500</WorkToBuild>
+    </statBases>
+    <size>(2, 1)</size>
+	<interactionCellOffset>(0, 0,-1)</interactionCellOffset>
+	
+    <rotatable>true</rotatable>
+    <fillPercent>0.4</fillPercent>
+    <passability>PassThroughOnly</passability>
+    <pathCost>14</pathCost>
+    <canOverlapZones>false</canOverlapZones>
+    <costList>
+      <Steel>140</Steel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
+    <resourcesFractionWhenDeconstructed>1</resourcesFractionWhenDeconstructed>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <designationCategory>KOTOR_BuildTab</designationCategory>
+    <hasInteractionCell>true</hasInteractionCell>
+	
+    <researchPrerequisites>
+      <li>BasicGravtech</li>
+    </researchPrerequisites>
+    <terrainAffordanceNeeded>Substructure</terrainAffordanceNeeded>
+    <comps>
+      <li Class="CompProperties_GravshipFacility">
+        <compClass>CompPilotConsole</compClass>
+        <componentTypeDef>Controls</componentTypeDef>
+        <requiresLOS>false</requiresLOS>
+        <showMaxSimultaneous>false</showMaxSimultaneous>
+        <maxSimultaneous>1</maxSimultaneous>
+        <maxDistance>200</maxDistance>
+      </li>
+      <li Class="CompProperties_Breakdownable" />
+    </comps>
+    <uiOrder>2100</uiOrder>
+  </ThingDef>
+  
+
+</Defs>

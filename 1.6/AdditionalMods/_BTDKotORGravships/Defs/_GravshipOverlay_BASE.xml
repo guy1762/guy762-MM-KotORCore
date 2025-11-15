@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<ThingDef ParentName="GravshipComponentBase" Abstract="True" Name="guy762_SWGravshipOverlayBASE">
+		<thingClass>Building</thingClass>
+		<description>.</description>
+		
+		
+		<graphicData>
+		  <damageData>
+			<enabled>false</enabled>
+		  </damageData>
+		</graphicData>
+		<drawerType>RealtimeOnly</drawerType>
+		
+		
+		<altitudeLayer>Filth</altitudeLayer>
+		<rotatable>true</rotatable>
+		<destroyable>true</destroyable>
+		<useHitPoints>true</useHitPoints>
+		<tickerType>Normal</tickerType>
+		<selectable>true</selectable>
+		<neverOverlapFloors>true</neverOverlapFloors>
+		<blockPlants>true</blockPlants>
+		<tradeability>Buyable</tradeability>
+		<blockWind>true</blockWind>
+		<blockLight>false</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<fillPercent>0.5</fillPercent>
+		<castEdgeShadows>false</castEdgeShadows>
+		
+		<uiOrder>100</uiOrder>
+		<designationCategory>MM_StarWarsShipBuildTab</designationCategory>
+		
+		<!-- <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded> -->
+		<terrainAffordanceNeeded IsNull="True" />
+		
+		<holdsRoof>false</holdsRoof>
+		<statBases>
+		  <WorkToBuild>3500</WorkToBuild>
+		  <Mass>50</Mass>
+		  <MaxHitPoints>1500</MaxHitPoints>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+		<building>
+		  <isEdifice>false</isEdifice>
+		  <uninstallWork>3500</uninstallWork>
+		  <shipPart>true</shipPart>
+		</building>
+		<thingCategories>
+		  <!-- <li>CEC_ShipParts</li> -->
+		</thingCategories>
+		
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<comps>
+		  <!-- <li Class="CompProperties_ShipPart"/> -->
+		</comps>
+		<tradeTags>
+		  <li>CEC_OrbitalTrader_Tag</li>
+		</tradeTags>
+		
+		<comps>
+            <li Class="SWCP.Core.ThingComps.CompProperties_HideShipRoof">
+				<!-- <layer>225</layer> -->
+				<layer>10225</layer> <!-- subtractive from the below terrain layer -->
+				<!-- cutoff is somewhere between 500 and 425? this is somehow tied to camera zoom distance, so depending on what distance you're scrolled in at the ship will either appear or disappear according to what layer it's set at, 500-425 is at close Camera+ zoom range -->
+			</li>
+        </comps>
+	</ThingDef>
+
+
+  
+</Defs>

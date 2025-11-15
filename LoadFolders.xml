@@ -55,6 +55,7 @@
 		<li IfModNotActive="BlackMarket420.PandoraFramework">1.6/AdditionalMods/SharedCodeFromShun</li>
 		
 		
+		<li IfModActive="btd.gbp.shippack.kotor">1.6/AdditionalMods/_BTDKotORGravships</li>
 		<li IfModActive="SWCP.GCWVehicles">1.6/AdditionalMods/_VehiclesBase</li>
 		<!-- <li IfModActive="guy762.MM.KotORVehicles">1.6/AdditionalMods/_VehiclesBase</li> -->
 		

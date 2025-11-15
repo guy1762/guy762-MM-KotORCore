@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<ThingDef ParentName="guy762_SWGravshipOverlayBASE">
+		<defName>guy762_SWGravshipOverlay_DynamicFreighter</defName>
+		<label>Dynamic-class freighter</label>
+		<graphicData>
+		  <texPath>Gravships/Dynamic/Dynamic</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>(32,32)</drawSize>
+		  
+		  <!-- <drawOffset>(0.25,0,-0.12)</drawOffset> -->
+		  
+		  <shaderType>CutoutComplex</shaderType>
+		  <color>(135,90,50)</color> <!-- ebon hawk brown -->
+		  <colorTwo>(225,225,225)</colorTwo> <!-- lesser white -->
+		</graphicData>
+		<size>(1,1)</size>
+		<!-- <size>(25,37)</size> -->
+		<uiIconScale>0.04</uiIconScale>
+		<costList>
+		  <KOTOR_AlloyDurasteel>56</KOTOR_AlloyDurasteel>
+		  <ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<statBases>
+		  <MaxHitPoints>11200</MaxHitPoints>
+		  <WorkToBuild>44800</WorkToBuild>
+		</statBases>
+		
+		<!-- <altitudeLayer>WorldClipper</altitudeLayer> -->
+		<altitudeLayer>VisEffects</altitudeLayer>
+		<!-- <altitudeLayer>BelowTerrain</altitudeLayer> -->
+		
+		<researchPrerequisites>
+		  <!-- <li>CEC_KDY_Victory_Parts</li> -->
+		</researchPrerequisites>
+	</ThingDef>
+	
+	
+	<!-- guy762_GravshipPrefab_ -->
+	
+	<!-- <PrefabDef> -->
+	 
+	<!-- </PrefabDef> -->
+
+
+
+
+</Defs>

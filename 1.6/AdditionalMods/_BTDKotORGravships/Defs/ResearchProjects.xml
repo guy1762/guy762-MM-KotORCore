@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ResearchProjectDef>
+    <tab>MM_StarWarsShipTab</tab>
+    <defName>MM_Research_Repulsor</defName>
+    <label>Basic Repulsor Vehicles</label>
+    <description>Learn how to make cheap flying vehicles</description>
+    <baseCost>3000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+	  <li>TransportPod</li>
+    </prerequisites>
+      <researchViewX>0</researchViewX>
+      <researchViewY>0</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+	  <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  
+    <ResearchProjectDef>
+    <tab>MM_StarWarsShipTab</tab>
+    <defName>MM_Research_AncientShipDesigns</defName>
+    <label>Ancient Era Ship Designs</label>
+    <description>Learn how to make ancient ships.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+	  <li>MM_Research_Repulsor</li>
+    </prerequisites>
+      <researchViewX>1</researchViewX>
+      <researchViewY>0</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+	  <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <tab>MM_StarWarsShipTab</tab>
+    <defName>MM_Research_CWShipDesigns</defName>
+    <label>Clone Wars Era Ship Designs</label>
+    <description>Learn how to make ships from the Clone Wars.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+	  <li>MM_Research_AncientShipDesigns</li>
+    </prerequisites>
+      <researchViewX>2</researchViewX>
+      <researchViewY>0</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+	  <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  
+  <ResearchProjectDef>
+    <tab>MM_StarWarsShipTab</tab>
+    <defName>MM_Research_EmpireShipDesigns</defName>
+    <label>Empire Era Ship Designs</label>
+    <description>Learn how to make ships from the time of the Empire.</description>
+    <baseCost>5000</baseCost>
+    <techLevel>Spacer</techLevel>
+    <prerequisites>
+	  <li>MM_Research_CWShipDesigns</li>
+    </prerequisites>
+      <researchViewX>3</researchViewX>
+      <researchViewY>0</researchViewY>
+    <requiredResearchBuilding>HiTechResearchBench</requiredResearchBuilding>
+    <requiredResearchFacilities>
+	  <li>MultiAnalyzer</li>
+    </requiredResearchFacilities>
+  </ResearchProjectDef>
+  
+
+</Defs>
+
+
+
+
+
+
+
