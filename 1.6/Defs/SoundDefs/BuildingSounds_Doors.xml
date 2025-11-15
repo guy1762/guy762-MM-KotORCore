@@ -24,6 +24,10 @@
 	</SoundDef>
 	
 	
+	
+	
+	
+	
 	<SoundDef>
 		<defName>kotorsound_building_ShittyNarShaddaaDoor</defName>
 		<context>MapOnly</context>
@@ -80,6 +84,152 @@
 			  </li>
 			</grains>
 			<volumeRange><min>10</min><max>10</max></volumeRange>
+			<!-- very quiet sound range -->
+			<distRange>10~40</distRange> <!-- enabled per user request -->
+			<sustainLoop>False</sustainLoop>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_BespinPressurizedDoor</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+		  <li>
+			<gameSpeedRange>1~2</gameSpeedRange>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_buildings_doors/door_medium_01</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>10</min><max>10</max></volumeRange>
+			<!-- very quiet sound range -->
+			<distRange>10~40</distRange> <!-- enabled per user request -->
+			<sustainLoop>False</sustainLoop>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_RuggedPressurizedDoor</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+		  <li>
+			<gameSpeedRange>1~2</gameSpeedRange>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_buildings_doors/door1</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>10</min><max>10</max></volumeRange>
+			<!-- very quiet sound range -->
+			<distRange>10~40</distRange> <!-- enabled per user request -->
+			<sustainLoop>False</sustainLoop>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_ImperialDoor</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+		  <li>
+			<gameSpeedRange>1~2</gameSpeedRange>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_buildings_doors/door1start</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>20</min><max>20</max></volumeRange>
+			<!-- very quiet sound range -->
+			<distRange>10~40</distRange> <!-- enabled per user request -->
+			<sustainLoop>False</sustainLoop>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_BiggerImperialDoor</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+		  <li>
+			<gameSpeedRange>1~2</gameSpeedRange>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_buildings_doors/door7</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>10</min><max>10</max></volumeRange>
+			<!-- very quiet sound range -->
+			<distRange>10~40</distRange> <!-- enabled per user request -->
+			<sustainLoop>False</sustainLoop>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_ClassicJKDoor</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+		  <li>
+			<gameSpeedRange>1~2</gameSpeedRange>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_buildings_doors/door2start</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>20</min><max>20</max></volumeRange>
+			<!-- very quiet sound range -->
+			<distRange>10~40</distRange> <!-- enabled per user request -->
+			<sustainLoop>False</sustainLoop>
+		  </li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_building_ClassicBiggerJKDoor</defName>
+		<context>MapOnly</context>
+		<eventNames />
+		<maxSimultaneous>1</maxSimultaneous>
+		<subSounds>
+		  <li>
+			<gameSpeedRange>1~2</gameSpeedRange>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotor_buildings_doors/door8</clipPath>
+			  </li>
+			</grains>
+			<volumeRange><min>20</min><max>20</max></volumeRange>
 			<!-- very quiet sound range -->
 			<distRange>10~40</distRange> <!-- enabled per user request -->
 			<sustainLoop>False</sustainLoop>

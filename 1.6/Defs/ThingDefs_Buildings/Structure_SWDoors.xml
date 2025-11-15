@@ -204,9 +204,9 @@
 		<uiIconPath>Buildings/Doors/Doomgiver1x1DoorA_icon</uiIconPath>
 		
 		
-		<thingClass>RimframeGrineerHome.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
+		<thingClass>SWCP.RimframeGrineerDoors.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
 		 <modExtensions>
-			<li Class="RimframeGrineerHome.DoorPartGraphicsExtension">
+			<li Class="SWCP.RimframeGrineerDoors.DoorPartGraphicsExtension">
 				<leftPartGraphicData>
 					<texPath>Buildings/Doors/Doomgiver1x1DoorA</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -222,9 +222,10 @@
 		</statBases>
 		<building>
 			<isAirtight>true</isAirtight>
-			<soundDoorOpenPowered>kotorsound_building_PressurizedDoor</soundDoorOpenPowered>
+			<soundDoorOpenPowered>kotorsound_building_ImperialDoor</soundDoorOpenPowered>
 			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
 			
+			<paintable>false</paintable>
 			<doorTopGraphic>
 				<texPath>Buildings/Doors/SingleDoorFrame_Square</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
@@ -243,6 +244,60 @@
 	
 	
 	<ThingDef ParentName="guy762_AutoDoorBase">
+		<defName>guy762_Autodoor1x1_TatooineA</defName>
+		<label>cheap autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<graphicData>
+			<texPath>Buildings/Doors/Tatooine1x1DoorA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(175,115,75)</color>
+		</graphicData>
+		<uiIconPath>Buildings/Doors/Tatooine1x1DoorA_icon</uiIconPath>
+		
+		
+		<thingClass>SWCP.RimframeGrineerDoors.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
+		 <modExtensions>
+			<li Class="SWCP.RimframeGrineerDoors.DoorPartGraphicsExtension">
+				<rightPartGraphicData>
+					<texPath>Buildings/Doors/Tatooine1x1DoorA</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<color>(110,65,15)</color>
+					<drawSize>(1, 1)</drawSize>
+				</rightPartGraphicData>
+			</li>
+		</modExtensions>
+		
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<DoorOpenSpeed>0.4</DoorOpenSpeed>
+		</statBases>
+		<building>
+			<isAirtight>true</isAirtight>
+			<soundDoorOpenPowered>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenPowered>
+			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
+			
+			<paintable>false</paintable>
+			<doorTopGraphic>
+				<texPath>Buildings/Doors/SingleDoorFrame_Square</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
+				<drawSize>1.25</drawSize>
+			</doorTopGraphic>
+		</building>
+		
+		<costList>
+			<Steel>45</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_AutoDoorBase">
 		<defName>guy762_Autodoor1x1_SandcrawlerA</defName>
 		<label>rugged autodoor</label>
 		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
@@ -255,9 +310,9 @@
 		<uiIconPath>Buildings/Doors/Sandcrawler1x1DoorA_icon</uiIconPath>
 		
 		
-		<thingClass>RimframeGrineerHome.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
+		<thingClass>SWCP.RimframeGrineerDoors.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
 		 <modExtensions>
-			<li Class="RimframeGrineerHome.DoorPartGraphicsExtension">
+			<li Class="SWCP.RimframeGrineerDoors.DoorPartGraphicsExtension">
 				<leftPartGraphicData>
 					<texPath>Buildings/Doors/Sandcrawler1x1DoorA</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -274,9 +329,10 @@
 		</statBases>
 		<building>
 			<isAirtight>true</isAirtight>
-			<soundDoorOpenPowered>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenPowered>
+			<soundDoorOpenPowered>kotorsound_building_RuggedPressurizedDoor</soundDoorOpenPowered>
 			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
 			
+			<paintable>false</paintable>
 			<doorTopGraphic>
 				<texPath>Buildings/Doors/SingleDoorFrame_Square</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
@@ -308,9 +364,9 @@
 		<uiIconPath>Buildings/Doors/Dreadnaught1x1DoorA_icon</uiIconPath>
 		
 		
-		<thingClass>RimframeGrineerHome.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
+		<thingClass>SWCP.RimframeGrineerDoors.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
 		 <modExtensions>
-			<li Class="RimframeGrineerHome.DoorPartGraphicsExtension">
+			<li Class="SWCP.RimframeGrineerDoors.DoorPartGraphicsExtension">
 				<rightPartGraphicData>
 					<texPath>Buildings/Doors/Dreadnaught1x1DoorA</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -328,9 +384,10 @@
 		</statBases>
 		<building>
 			<isAirtight>true</isAirtight>
-			<soundDoorOpenPowered>kotorsound_building_PressurizedDoor</soundDoorOpenPowered>
+			<soundDoorOpenPowered>kotorsound_building_ClassicJKDoor</soundDoorOpenPowered>
 			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
 			
+			<paintable>false</paintable>
 			<doorTopGraphic>
 				<texPath>Buildings/Doors/SingleDoorFrame_Square</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
@@ -480,9 +537,9 @@
 		</graphicData>
 		<uiIconPath>Buildings/Doors/DoomgiverDoorVertical1_icon</uiIconPath>
 		
-		<thingClass>RimframeGrineerHome.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
+		<thingClass>SWCP.RimframeGrineerDoors.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
 		<modExtensions>
-			<li Class="RimframeGrineerHome.DoorPartGraphicsExtension">
+			<li Class="SWCP.RimframeGrineerDoors.DoorPartGraphicsExtension">
 				<topPartGraphicData>
 					<texPath>Buildings/Doors/DoomgiverDoorVertical1</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -503,10 +560,12 @@
 		</statBases>
 		<building>
 			<isAirtight>true</isAirtight>
-			<soundDoorOpenPowered>kotorsound_building_PressurizedDoor</soundDoorOpenPowered>
+			<soundDoorOpenPowered>kotorsound_building_BiggerImperialDoor</soundDoorOpenPowered>
 			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
 			
 			<isSupportDoor>true</isSupportDoor>
+			
+			<paintable>false</paintable>
 			<doorTopGraphic>
 				<texPath>Buildings/Doors/DoubleDoorFrame_Square</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>
@@ -548,7 +607,7 @@
 		</statBases>
 		<building>
 			<isAirtight>true</isAirtight>
-			<soundDoorOpenPowered>kotorsound_building_PressurizedDoor</soundDoorOpenPowered>
+			<soundDoorOpenPowered>kotorsound_building_ClassicJKDoor</soundDoorOpenPowered>
 			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
 			
 			<isSupportDoor>true</isSupportDoor>
@@ -679,9 +738,9 @@
 		</graphicData>
 		<uiIconPath>Buildings/Doors/Dreadnaught2x1DoorA_icon</uiIconPath>
 		
-		<thingClass>RimframeGrineerHome.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
+		<thingClass>SWCP.RimframeGrineerDoors.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
 		<modExtensions>
-			<li Class="RimframeGrineerHome.DoorPartGraphicsExtension">
+			<li Class="SWCP.RimframeGrineerDoors.DoorPartGraphicsExtension">
 				<topPartGraphicData>
 					<texPath>Buildings/Doors/Dreadnaught2x1DoorA</texPath>
 					<graphicClass>Graphic_Single</graphicClass>
@@ -699,10 +758,12 @@
 		</statBases>
 		<building>
 			<isAirtight>true</isAirtight>
-			<soundDoorOpenPowered>kotorsound_building_PressurizedDoor</soundDoorOpenPowered>
+			<soundDoorOpenPowered>kotorsound_building_ClassicBiggerJKDoor</soundDoorOpenPowered>
 			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
 			
 			<isSupportDoor>true</isSupportDoor>
+			
+			<paintable>false</paintable>
 			<doorTopGraphic>
 				<texPath>Buildings/Doors/DoubleDoorFrame_Square</texPath>
 				<graphicClass>Graphic_Multi</graphicClass>

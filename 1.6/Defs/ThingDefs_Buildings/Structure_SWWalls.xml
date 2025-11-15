@@ -153,7 +153,7 @@
 				 <multiplier>4</multiplier>
 			</li>
 			
-			<li>
+			<li MayRequire="SWCP.GCWVehicles">
 				 <damageDef>guy762_ExplosiveDamage_conc</damageDef>
 				 <multiplier>2</multiplier>
 			</li>

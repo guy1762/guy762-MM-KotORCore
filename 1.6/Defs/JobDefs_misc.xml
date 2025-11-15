@@ -19,61 +19,6 @@
 	
 	
 	
-	<!--_____ Animal Cage Job Defs _____-->
-
-    <!-- Release Animal From Cage -->
-
-    <JobDef>
-        <defName>SWCP_ReleaseAnimalFromCage</defName>
-        <driverClass>SWCP.RadiantQuests.JobDriver_ReleaseAnimalFromCage</driverClass>
-        <reportString>Releasing animal from cage.</reportString>
-    </JobDef>
-
-    <!-- Carry Animal To Cage -->
-
-    <JobDef>
-        <defName>SWCP_CarryAnimalToCage</defName>
-        <driverClass>SWCP.RadiantQuests.JobDriver_CarryAnimalToCage</driverClass>
-        <reportString>Bringing animal to cage.</reportString>
-    </JobDef>
-
-    <!-- Transfer Animal Between Cages -->
-
-    <JobDef>
-        <defName>SWCP_TransferAnimalBetweenCages</defName>
-        <driverClass>SWCP.RadiantQuests.JobDriver_TransferAnimalBetweenCages</driverClass>
-        <reportString>Transferring animal to another cage.</reportString>
-    </JobDef>
-
-    <!-- Refuel Animal Cage -->
-
-    <JobDef>
-        <defName>SWCP_RefuelAnimalCage</defName>
-        <driverClass>SWCP.RadiantQuests.JobDriver_RefuelAnimalCage</driverClass>
-        <reportString>refueling cage.</reportString>
-    </JobDef>
-
-    <!-- Refuel Animal Cage Atomic -->
-
-    <JobDef>
-        <defName>SWCP_RefuelAnimalCage_Atomic</defName>
-        <driverClass>SWCP.RadiantQuests.JobDriver_RefuelAnimalCage_Atomic</driverClass>
-        <reportString>refueling cage.</reportString>
-    </JobDef>
-	
-	<WorkGiverDef>
-		<defName>SWCP_RefuelCages</defName>
-		<label>refueling cages</label>
-		<giverClass>SWCP.RadiantQuests.WorkGiver_AnimalCageRefuel</giverClass>
-		<workType>Hauling</workType>
-		<verb>refuel</verb>
-		<gerund>refueling</gerund>
-		<priorityInType>141</priorityInType>
-		<requiredCapacities>
-			<li>Manipulation</li>
-		</requiredCapacities>
-		 <prioritizeSustains>true</prioritizeSustains>
-	</WorkGiverDef>
 
     <!--_____ V.A.T.S. _____-->
 
