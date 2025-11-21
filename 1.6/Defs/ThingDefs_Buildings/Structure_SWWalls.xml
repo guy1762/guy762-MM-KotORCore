@@ -100,6 +100,13 @@
 			<blueprintGraphicData>
 				<texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
 			</blueprintGraphicData>
+			
+			<relatedBuildCommands>
+				<li>WallLamp</li>
+				<li>Vent</li>
+				<li>guy762_ShipTech_LifeSupportUnit_heater</li>
+				<li>guy762_ShipTech_LifeSupportUnit_cooler</li>
+			</relatedBuildCommands>
 		</building>
 		
 		<researchPrerequisites>
@@ -268,8 +275,148 @@
 			</relatedBuildCommands>
 		</building>
 		
+		<killedLeavings Inherit="false" />
+		
 		<costList>
 			<KOTOR_Duracrete>6</KOTOR_Duracrete>
+			<Steel>1</Steel>
+			
+			<!-- <ComponentIndustrial>1</ComponentIndustrial> -->
+		</costList>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="guy762_PoweredWallBase">
+		<defName>guy762_PoweredWall_SandcrawlerInteriorWallA</defName>
+		<label>powered steel wall</label>
+		<!-- <description>The outer structural elements of a ship's hull. Includes conduits for power.</description> -->
+		<description>Reinforced steel wall. Includes conduits for power.</description>
+		<graphicData>
+			<texPath>Buildings/Walls/SandcrawlerInteriorWallB</texPath>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<color>(100,100,95)</color>
+		</graphicData>
+		<uiIconPath>Buildings/Walls/SandcrawlerInteriorWallB_icon</uiIconPath>
+		<statBases>
+			<WorkToBuild>1000</WorkToBuild>
+			<MaxHitPoints>500</MaxHitPoints>
+		</statBases>
+		<building>
+			<relatedBuildCommands>
+				<li>guy762_Autodoor1x1_SandcrawlerA</li>
+			</relatedBuildCommands>
+		</building>
+		
+		<costList>
+			<Steel>7</Steel>
+			
+			<!-- <ComponentIndustrial>1</ComponentIndustrial> -->
+		</costList>
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_PoweredWallBase">
+		<defName>guy762_PoweredWall_TatooineStuccoWallA</defName>
+		<label>powered stucco wall</label>
+		<!-- <description>The outer structural elements of a ship's hull. Includes conduits for power.</description> -->
+		<description>Stucco wall. Includes conduits for power.</description>
+		<graphicData>
+			<texPath>Buildings/Walls/TatooineStuccoWallA</texPath>
+			<color>(225,215,205)</color> <!-- off-white -->
+		</graphicData>
+		<uiIconPath>Buildings/Walls/TatooineStuccoWallA_icon</uiIconPath>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<building>
+			<relatedBuildCommands>
+				<li>guy762_Autodoor1x1_TatooineA</li>
+			</relatedBuildCommands>
+		</building>
+		
+		<killedLeavings Inherit="false" />
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		
+		<costList>
+			<KOTOR_Duracrete>3</KOTOR_Duracrete>
+			<Steel>1</Steel>
+			
+			<!-- <ComponentIndustrial>1</ComponentIndustrial> -->
+		</costList>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="guy762_PoweredWallBase">
+		<defName>guy762_PoweredWall_TatooineStuccoWallB</defName>
+		<label>powered stucco wall</label>
+		<!-- <description>The outer structural elements of a ship's hull. Includes conduits for power.</description> -->
+		<description>Stucco wall. Includes conduits for power.</description>
+		<graphicData>
+			<texPath>Buildings/Walls/TatooineStuccoWallB</texPath>
+			<color>(160,155,135)</color> <!-- vanilla "limestone" structure paint -->
+		</graphicData>
+		<uiIconPath>Buildings/Walls/TatooineStuccoWallB_icon</uiIconPath>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<building>
+			<relatedBuildCommands>
+				<li>guy762_Autodoor1x1_TatooineA</li>
+			</relatedBuildCommands>
+		</building>
+		
+		<killedLeavings Inherit="false" />
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		
+		<costList>
+			<KOTOR_Duracrete>3</KOTOR_Duracrete>
+			<Steel>1</Steel>
+			
+			<!-- <ComponentIndustrial>1</ComponentIndustrial> -->
+		</costList>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_PoweredWallBase">
+		<defName>guy762_PoweredWall_TatooineStuccoWallC</defName>
+		<label>powered stucco wall</label>
+		<!-- <description>The outer structural elements of a ship's hull. Includes conduits for power.</description> -->
+		<description>Stucco wall. Includes conduits for power.</description>
+		<graphicData>
+			<texPath>Buildings/Walls/TatooineStuccoWallA</texPath>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(175,110,15)</color> <!-- autumn orange -->
+			<colorTwo>(205,180,150)</colorTwo> <!-- tatooine tan -->
+		</graphicData>
+		<uiIconPath>Buildings/Walls/TatooineStuccoWallC_icon</uiIconPath>
+		<statBases>
+			<WorkToBuild>800</WorkToBuild>
+			<MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<building>
+			<relatedBuildCommands>
+				<li>guy762_Autodoor1x1_TatooineA</li>
+			</relatedBuildCommands>
+		</building>
+		
+		<killedLeavings Inherit="false" />
+		<terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+		
+		<costList>
+			<KOTOR_Duracrete>3</KOTOR_Duracrete>
 			<Steel>1</Steel>
 			
 			<!-- <ComponentIndustrial>1</ComponentIndustrial> -->

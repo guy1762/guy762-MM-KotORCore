@@ -234,7 +234,7 @@
 					<shader>BS_CutoutThreeColor</shader>
 					<baseLayer>24</baseLayer>	<!-- BACKPACK -->
 					<conditionalGraphics>
-					  <texturePaths><li>SWApparel/Accessories/backpacks/backpack_scorch</li></texturePaths>
+					  <texturePaths><li>SWApparel/Accessories/backpacks/backpack_big</li></texturePaths>
 					  <colorA>
 						<apparelColorA>true</apparelColorA> <!-- uses colorGenerator color, do not use colorOptions on colorOne -->
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>

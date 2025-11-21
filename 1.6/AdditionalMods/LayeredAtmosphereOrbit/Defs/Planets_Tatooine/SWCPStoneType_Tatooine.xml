@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <!-- ================ Tatooine Sandstone ================ -->
+
+  <ThingDef ParentName="UglyRockBase" Name="SWCPStone_TatooineSandstone">
+    <defName>SWCPStone_TatooineSandstone</defName>
+    <label>Tatooine sandstone</label>
+    <description>A sedimentary rock composed of sand particles compressed together.</description>
+    <graphicData>
+      <color>(140,110,80)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>400</MaxHitPoints>
+    </statBases>
+    <building>
+      <biomeSpecific>true</biomeSpecific>
+	  <mineableThing>SWCPStoneChunk_TatooineSandstone</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>SWCPStoneSmoothed_TatooineSandstone</smoothedThing>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="SWCPStone_TatooineSandstone">
+    <defName>SWCPStoneSmoothed_TatooineSandstone</defName>
+    <label>smoothed Tatooine sandstone</label>
+    <description>A sedimentary rock composed of sand particles compressed together. The sand layers have been polished to a flat, smooth surface.</description>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MarketValue>7</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+      <paintable>true</paintable>
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+  
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>SWCPStoneChunk_TatooineSandstone</defName>
+    <label>Tatooine sandstone chunk</label>
+    <graphicData>
+      <color>(140,110,80)</color>
+    </graphicData>
+    <statBases>
+      <Mass>22</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <SWCPStoneBlocks_TatooineSandstone>20</SWCPStoneBlocks_TatooineSandstone>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>SWCPStoneBlocks_TatooineSandstone</defName>
+    <label>Tatooine sandstone blocks</label>
+    <description>Blocks of solid Tatooine sandstone.</description>
+    <graphicData>
+      <color>(140,110,80)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1</Mass>
+      <SharpDamageMultiplier>0.5</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(140,110,80)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+      <stuffAdjective>sandstone</stuffAdjective>
+      <statFactors>
+        <Beauty>1.1</Beauty>  
+        <MaxHitPoints>1.4</MaxHitPoints>
+        <WorkToBuild>5.0</WorkToBuild>
+        <WorkToMake>1.1</WorkToMake>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>SWCPRecipe_BlocksTatooineSandstone</defName>
+    <label>make Tatooine sandstone blocks</label>
+    <description>Cuts Tatooine sandstone chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SWCPStoneChunk_TatooineSandstone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SWCPStoneChunk_TatooineSandstone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <SWCPStoneBlocks_TatooineSandstone>20</SWCPStoneBlocks_TatooineSandstone>
+    </products>
+  </RecipeDef>
+  
+  
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>SWCPTerrain_StoneTile_TatooineSandstone</defName>
+    <label>Tatooine sandstone tile</label>
+    <color>(140,110,80)</color>
+    <costList>
+      <SWCPStoneBlocks_TatooineSandstone>4</SWCPStoneBlocks_TatooineSandstone>
+    </costList>
+  </TerrainDef>
+  
+  
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>SWCPTerrain_Flagstone_TatooineSandstone</defName>
+    <label>Tatooine sandstone flagstone</label>
+    <color>(140,110,80)</color>
+    <costList>
+      <SWCPStoneBlocks_TatooineSandstone>4</SWCPStoneBlocks_TatooineSandstone>
+    </costList>
+  </TerrainDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- ================ Tatooine granite ================ -->
+
+  <ThingDef ParentName="UglyRockBase" Name="SWCPStone_TatooineGranite">
+    <defName>SWCPStone_TatooineGranite</defName>
+    <label>Tatooine granite</label>
+    <description>A very hard igneous rock.</description>
+    <graphicData>
+      <color>(100,75,55)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>900</MaxHitPoints>
+    </statBases>
+    <building>
+      <biomeSpecific>true</biomeSpecific>
+	  <mineableThing>SWCPStoneChunk_TatooineGranite</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>SWCPStoneSmoothed_TatooineGranite</smoothedThing>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="SWCPStone_TatooineGranite">
+    <defName>SWCPStoneSmoothed_TatooineGranite</defName>
+    <label>smoothed Tatooine granite</label>
+    <description>A very hard igneous rock.</description>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MarketValue>7</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+      <paintable>true</paintable>
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+  
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>SWCPStoneChunk_TatooineGranite</defName>
+    <label>Tatooine granite chunk</label>
+    <graphicData>
+      <color>(100,75,55)</color>
+    </graphicData>
+    <statBases>
+      <Mass>22</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <SWCPStoneBlocks_TatooineGranite>20</SWCPStoneBlocks_TatooineGranite>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>SWCPStoneBlocks_TatooineGranite</defName>
+    <label>Tatooine granite blocks</label>
+    <description>Blocks of solid Tatooine granite.</description>
+    <graphicData>
+      <color>(100,75,55)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+      <SharpDamageMultiplier>0.65</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(140,110,80)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+      <stuffAdjective>granite</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.7</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>SWCPRecipe_BlocksTatooineGranite</defName>
+    <label>make Tatooine granite blocks</label>
+    <description>Cuts Tatooine granite chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SWCPStoneChunk_TatooineGranite</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SWCPStoneChunk_TatooineGranite</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <SWCPStoneBlocks_TatooineGranite>20</SWCPStoneBlocks_TatooineGranite>
+    </products>
+  </RecipeDef>
+  
+  
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>SWCPTerrain_StoneTile_TatooineGranite</defName>
+    <label>Tatooine granite tile</label>
+    <color>(100,75,55)</color>
+    <costList>
+      <SWCPStoneBlocks_TatooineGranite>4</SWCPStoneBlocks_TatooineGranite>
+    </costList>
+  </TerrainDef>
+  
+  
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>SWCPTerrain_Flagstone_TatooineGranite</defName>
+    <label>Tatooine granite flagstone</label>
+    <color>(100,75,55)</color>
+    <costList>
+      <SWCPStoneBlocks_TatooineGranite>4</SWCPStoneBlocks_TatooineGranite>
+    </costList>
+  </TerrainDef>
+
+  
+</Defs>

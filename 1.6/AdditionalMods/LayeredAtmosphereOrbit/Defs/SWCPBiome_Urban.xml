@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FeatureDef> <!-- this is the thing that adds a label to it on the world map -->
+		<defName>SWCPBiomeFeature_Urban</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>409</order>
+		<minRootGroupSize>12</minRootGroupSize>
+		<rootBiomes>
+		  <li>SWCPBiome_Urban</li>
+		</rootBiomes>
+		<nameMaker>NamerScarlands</nameMaker>
+	</FeatureDef>
+	
+	<BiomeDef>
+		<defName>SWCPBiome_Urban</defName>
+		<label>urban</label>
+		<description>Ruins of an ancient city which was destroyed by weapons of mass destruction. Water here is toxic and scaria runs rampant among the animals. Mechanoids lurk among the shattered buildings, waiting to awaken and kill again.</description>
+		<settleWarning>Scarlands are inhabited by dangerous insects and rogue mechanoids. Water is toxic and scaria runs rampant among the animals.</settleWarning>
+		
+		<!-- <workerClass>BiomeWorker_TemperateSwamp</workerClass> -->
+		<workerClass>BiomeWorker_Scarlands</workerClass>
+		<!-- <workerClass>BiomesKit.UniversalBiomeWorker</workerClass> -->
+		
+		<animalDensity>4</animalDensity>
+		<plantDensity>0.4</plantDensity>
+		<wildAnimalScariaChance>0.1</wildAnimalScariaChance>
+		
+		<settlementSelectionWeight>1</settlementSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		<lakeBeachTerrain>Gravel</lakeBeachTerrain>
+		<mudTerrain>MarshyTerrain</mudTerrain>
+		<riverbankTerrain>MarshyTerrain</riverbankTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		<texture>World/Biomes/Urban</texture>
+		
+		<forageability>0.25</forageability>
+		<foragedFood>RawBerries</foragedFood>
+		<wildPlantRegrowDays>20</wildPlantRegrowDays>
+		<maxFishPopulation>0</maxFishPopulation>
+		
+		<diseaseMtbDays>50</diseaseMtbDays>
+		<pollutionOffset>0.05</pollutionOffset>
+		
+		<waterShallowTerrain>ToxicWaterShallow</waterShallowTerrain>
+		<waterDeepTerrain>ToxicWaterDeep</waterDeepTerrain>
+		<oceanShallowTerrain>ToxicWaterOceanShallow</oceanShallowTerrain>
+		<oceanDeepTerrain>ToxicWaterOceanDeep</oceanDeepTerrain>
+		<waterMovingShallowTerrain>ToxicWaterMovingShallow</waterMovingShallowTerrain>
+		<waterMovingChestDeepTerrain>ToxicWaterMovingChestDeep</waterMovingChestDeepTerrain>
+		
+		<layerWhitelist>
+			<li>Surface</li>
+			<!-- <li>SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li>SWCPPlanetLayer_TatooineOrbit</li> this method could be used to make Telos Citadel Station somehow? -->
+		</layerWhitelist>
+		
+		<soundsAmbient>
+		  <li>Ambient_NightInsects_Standard</li>
+		</soundsAmbient>
+		
+		<diseases>
+		  <li>
+			<diseaseInc>Disease_Flu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Plague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Malaria</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_GutWorms</diseaseInc>
+			<commonality>50</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_MuscleParasites</diseaseInc>
+			<commonality>50</commonality>
+		  </li>
+
+		  <li>
+			<diseaseInc>Disease_AnimalFlu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_AnimalPlague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_OrganDecay</diseaseInc>
+			<commonality>10</commonality>
+		  </li>
+		</diseases>
+		<terrainsByFertility>
+		  <li>
+			<terrain>AncientMegastructure</terrain>
+			<min>-999</min>
+			<max>0.7</max>
+		  </li>
+		  <li>
+			<terrain>Soil</terrain>
+			<min>0.7</min>
+			<max>999</max>
+		  </li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+		  <li>
+			<perlinFrequency>0.015</perlinFrequency>
+			<isPond>true</isPond>
+			<thresholds>
+			  <li>
+				<terrain>ToxicWaterShallow</terrain>
+				<min>0.93</min>
+				<max>1.06</max>
+			  </li>
+			  <li>
+				<terrain>ToxicWaterDeep</terrain>
+				<min>1.06</min>
+				<max>999</max>
+			  </li>
+			</thresholds>
+		  </li>
+		</terrainPatchMakers>
+		<baseWeatherCommonalities>
+		  <Clear>12</Clear>
+		  <Fog>1</Fog>
+		  <Rain>2</Rain>
+		  <DryThunderstorm>1</DryThunderstorm>
+		  <RainyThunderstorm>1</RainyThunderstorm>
+		  <FoggyRain>2</FoggyRain>
+		  <SnowGentle>2</SnowGentle>
+		  <SnowHard>2</SnowHard>
+		  <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+		  <ToxRain>1</ToxRain>
+		  <Overcast>6</Overcast>
+		</baseWeatherCommonalities>
+		<wildPlants>
+		  <Plant_YellowGrass>2.0</Plant_YellowGrass>
+		  <Plant_Thornvine>8.0</Plant_Thornvine>
+		  <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">2</Plant_GrayGrass>
+		  <Plant_Brambles_Leafless>1.0</Plant_Brambles_Leafless>
+		  <Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_Ripthorn>
+		  <Plant_Dandelion>0.5</Plant_Dandelion>
+		  <Plant_Bush_Leafless>0.6</Plant_Bush_Leafless>
+		  <Plant_TreeSnagroot>0.4</Plant_TreeSnagroot>
+		  <Plant_Berry_Leafless>0.02</Plant_Berry_Leafless>
+		  <Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_Witchwood>
+		</wildPlants>
+		<wildAnimals>
+			<!-- <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">0.1</Villager_Child> -->
+			<!-- <SWCPCivilian_villager>0.5</SWCPCivilian_villager> -->
+			<!-- <SWCPCivilian_prole>1</SWCPCivilian_prole> -->
+			<!-- <SWCPCivilian_poortraveler>0.25</SWCPCivilian_poortraveler> -->
+			<!-- <SWCPCivilian_mid>0.25</SWCPCivilian_mid> -->
+			<!-- <SWCPCivilian_bougie>0.1</SWCPCivilian_bougie> -->
+			<!-- <SWCPCivilian_exotictraveler>0.05</SWCPCivilian_exotictraveler> -->
+			<!-- <SWCPCivilian_hooded>0.1</SWCPCivilian_hooded> -->
+			<!-- <SWCPCivilian_spacer>0.1</SWCPCivilian_spacer> -->
+			<!-- <SWCPCivilian_ugnaught>0.1</SWCPCivilian_ugnaught> -->
+			<!-- <SWCPCivilian_jawa_offworld>0.1</SWCPCivilian_jawa_offworld> -->
+			
+			<!-- <SWCPCivilian_HostileThug>0.25</SWCPCivilian_HostileThug> -->
+			
+			<Villager_Child MayRequire="Ludeon.RimWorld.Biotech">0.25</Villager_Child>
+			<SWCPCivilian_villager>1</SWCPCivilian_villager>
+			<SWCPCivilian_prole>2</SWCPCivilian_prole>
+			<SWCPCivilian_poortraveler>0.5</SWCPCivilian_poortraveler>
+			<SWCPCivilian_mid>0.5</SWCPCivilian_mid>
+			<SWCPCivilian_bougie>0.25</SWCPCivilian_bougie>
+			<SWCPCivilian_exotictraveler>0.1</SWCPCivilian_exotictraveler>
+			<SWCPCivilian_hooded>0.25</SWCPCivilian_hooded>
+			<SWCPCivilian_spacer>0.25</SWCPCivilian_spacer>
+			<SWCPCivilian_ugnaught>0.25</SWCPCivilian_ugnaught>
+			<SWCPCivilian_jawa_offworld>0.25</SWCPCivilian_jawa_offworld>
+			
+			<SWCPCivilian_HostileThug>0.5</SWCPCivilian_HostileThug>
+			
+			<Rat>1.00</Rat>
+			<Raccoon>0.5</Raccoon>
+			<Pig>0.07</Pig>
+			<Boomalope>0.4</Boomalope>
+			<Boomrat>0.4</Boomrat>
+			<Panther>0.07</Panther>
+			<BogHound>0.5</BogHound>
+			<MonitorLizard>0.5</MonitorLizard>
+			<Crow>0.5</Crow>
+		</wildAnimals>
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
+			<Rat>1</Rat>
+			<Raccoon>0.5</Raccoon>
+			<Boomrat>0.4</Boomrat>
+			<Boomalope>0.1</Boomalope>
+			<Warg>0.05</Warg>
+			<MonitorLizard>0.5</MonitorLizard>
+		</pollutionWildAnimals>
+		<allowedPackAnimals>
+		  <li>Muffalo</li>
+		  <li>Alpaca</li>
+		</allowedPackAnimals>
+		<extraGenSteps>
+		  <li>AncientRuins_Scarlands</li>
+		  <!-- <li>CratersLarge</li> -->
+		  <!-- <li>CratersMedium</li> -->
+		  <!-- <li>CratersSmall</li> -->
+		  <li>ScarlandsJunkClusters</li>
+		  <li>ScarlandsJunkPrefabs</li>
+		</extraGenSteps>
+		
+		<!-- <modExtensions> -->
+			<!-- <li Class="BiomesKit.BiomesKitControls"> -->
+				<!-- <allowOnLand>True</allowOnLand> -->
+				<!-- <frequency>25</frequency> -->
+				<!-- <spawnOnBiomes> -->
+					<!-- <li>Scarlands</li> -->
+				<!-- </spawnOnBiomes> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+	</BiomeDef>
+
+</Defs>

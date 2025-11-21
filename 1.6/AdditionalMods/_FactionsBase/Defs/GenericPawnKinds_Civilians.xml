@@ -1044,6 +1044,11 @@
 		<apparelIgnoreSeasons>false</apparelIgnoreSeasons>
 	</PawnKindDef>
 	
+	<PawnKindDef Name="SWCPCivilian_HostileThug" ParentName="SWCPCivilian_thug">
+		<defName>SWCPCivilian_HostileThug</defName>
+		<defaultFactionType>AncientsHostile</defaultFactionType>
+	</PawnKindDef>
+	
 	
 	
 

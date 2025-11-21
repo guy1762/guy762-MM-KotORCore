@@ -205,7 +205,7 @@
 		
 		
 		<thingClass>SWCP.RimframeGrineerDoors.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
-		 <modExtensions>
+		<modExtensions>
 			<li Class="SWCP.RimframeGrineerDoors.DoorPartGraphicsExtension">
 				<leftPartGraphicData>
 					<texPath>Buildings/Doors/Doomgiver1x1DoorA</texPath>
@@ -257,7 +257,7 @@
 		
 		
 		<thingClass>SWCP.RimframeGrineerDoors.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
-		 <modExtensions>
+		<modExtensions>
 			<li Class="SWCP.RimframeGrineerDoors.DoorPartGraphicsExtension">
 				<rightPartGraphicData>
 					<texPath>Buildings/Doors/Tatooine1x1DoorA</texPath>
@@ -311,7 +311,7 @@
 		
 		
 		<thingClass>SWCP.RimframeGrineerDoors.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
-		 <modExtensions>
+		<modExtensions>
 			<li Class="SWCP.RimframeGrineerDoors.DoorPartGraphicsExtension">
 				<leftPartGraphicData>
 					<texPath>Buildings/Doors/Sandcrawler1x1DoorA</texPath>
@@ -365,7 +365,7 @@
 		
 		
 		<thingClass>SWCP.RimframeGrineerDoors.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
-		 <modExtensions>
+		<modExtensions>
 			<li Class="SWCP.RimframeGrineerDoors.DoorPartGraphicsExtension">
 				<rightPartGraphicData>
 					<texPath>Buildings/Doors/Dreadnaught1x1DoorA</texPath>

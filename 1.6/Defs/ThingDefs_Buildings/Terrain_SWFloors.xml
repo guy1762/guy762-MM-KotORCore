@@ -447,6 +447,29 @@
     <uiOrder>2040</uiOrder>
   </TerrainDef>
   
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>guy762_FloorTiles_DivotedTile_rust</defName>
+    <label>divoted tile (rust)</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Steel tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+    <texturePath>Buildings/Floors/DivotedTile</texturePath>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
+	<color>(110,85,70)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <Steel>5</Steel>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+    <uiOrder>2040</uiOrder>
+  </TerrainDef>
+  
   
 
 </Defs>
