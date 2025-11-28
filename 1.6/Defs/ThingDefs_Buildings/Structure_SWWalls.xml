@@ -104,8 +104,8 @@
 			<relatedBuildCommands>
 				<li>WallLamp</li>
 				<li>Vent</li>
-				<li>guy762_ShipTech_LifeSupportUnit_heater</li>
-				<li>guy762_ShipTech_LifeSupportUnit_cooler</li>
+				<li MayRequire="SWCP.GCWVehicles">guy762_ShipTech_LifeSupportUnit_heater</li>
+				<li MayRequire="SWCP.GCWVehicles">guy762_ShipTech_LifeSupportUnit_cooler</li>
 			</relatedBuildCommands>
 		</building>
 		
