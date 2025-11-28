@@ -66,6 +66,15 @@
 	</IdeoIconDef>
 	
 	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_jerec</defName>
+		<iconPath>World/BattleGroupVengeance</iconPath>
+		<memes>
+			<li MayRequire="SWCP.guy762.WarlordEmpire">guy762_MemeDef_empire</li>
+			<!-- <li MayRequire="guy762.KotORFactions">guy762_MemeDef_sith</li> -->
+		</memes>
+	</IdeoIconDef>
+	
+	<IdeoIconDef>
 		<defName>guy762_IdeoIcon_darkempire</defName>
 		<iconPath>World/DarkEmpire</iconPath>
 		<memes>

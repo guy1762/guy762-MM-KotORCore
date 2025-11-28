@@ -215,7 +215,7 @@
 	<!-- </ColorDef> -->
 	
 	<!-- <ColorDef ParentName="guy762_StructureColorIdeoBase"> -->
-		<!-- <defName>guy762_FactionColor_HuttLime</defName> -->
+		<!-- <defName>guy762_StructureColor_HuttLime</defName> -->
 		<!-- <label>Hutt Lime</label> -->
 		<!-- <color>(155,190,35)</color> -->
 	<!-- </ColorDef> -->
@@ -233,7 +233,19 @@
 	<!-- </ColorDef> -->
 	
 	<!-- <ColorDef ParentName="guy762_StructureColorIdeoBase"> -->
-		<!-- <defName>guy762_FactionColor_CorpSecPink</defName> -->
+		<!-- <defName>guy762_StructureColor_SunYellow</defName> -->
+		<!-- <label>Sun Yellow</label> -->
+		<!-- <color>(225,225,125)</color> -->
+	<!-- </ColorDef> -->
+
+	<!-- <ColorDef ParentName="guy762_StructureColorIdeoBase"> -->
+		<!-- <defName>guy762_StructureColor_InvidRed</defName> -->
+		<!-- <label>Invid Red</label> -->
+		<!-- <color>(235,120,100)</color> -->
+	<!-- </ColorDef> -->
+	
+	<!-- <ColorDef ParentName="guy762_StructureColorIdeoBase"> -->
+		<!-- <defName>guy762_StructureColor_CorpSecPink</defName> -->
 		<!-- <label>Corporate Sector Pink</label> -->
 		<!-- <color>(170,120,160)</color> -->
 	<!-- </ColorDef> -->

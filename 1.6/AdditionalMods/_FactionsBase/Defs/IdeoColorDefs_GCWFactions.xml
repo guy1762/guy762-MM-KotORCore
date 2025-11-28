@@ -200,6 +200,47 @@
 	
 	
 	<IdeoColorDef>
+		<defName>guy762_IdeoFactionColor_SunYellow</defName>
+		<colorDef>guy762_FactionColor_SunYellow</colorDef>
+		<memes>
+			<li>guy762_MemeDef_hutt</li>
+		</memes>
+	</IdeoColorDef>
+	<ColorDef ParentName="guy762_FactionColorIdeoBase">
+		<defName>guy762_FactionColor_SunYellow</defName>
+		<label>Hutt Yellow</label>
+		<color>(225,225,125)</color>
+	</ColorDef>
+	
+	
+	<IdeoColorDef>
+		<defName>guy762_IdeoFactionColor_RevenantsRed</defName>
+		<colorDef>guy762_FactionColor_RevenantsRed</colorDef>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</memes>
+	</IdeoColorDef>
+	<ColorDef ParentName="guy762_FactionColorIdeoBase">
+		<defName>guy762_FactionColor_RevenantsRed</defName>
+		<label>Revenants Red</label>
+		<color>(235,120,100)</color>
+	</ColorDef>
+	
+	<IdeoColorDef>
+		<defName>guy762_IdeoFactionColor_InvidPink</defName>
+		<colorDef>guy762_FactionColor_InvidPink</colorDef>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</memes>
+	</IdeoColorDef>
+	<ColorDef ParentName="guy762_FactionColorIdeoBase">
+		<defName>guy762_FactionColor_InvidPink</defName>
+		<label>Invid Pink</label>
+		<color>(175,60,110)</color>
+	</ColorDef>
+	
+	
+	<IdeoColorDef>
 		<defName>guy762_IdeoFactionColor_CorpSecPink</defName>
 		<colorDef>guy762_FactionColor_CorpSecPink</colorDef>
 		<memes>

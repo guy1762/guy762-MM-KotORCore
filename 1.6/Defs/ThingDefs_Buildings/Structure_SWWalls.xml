@@ -195,7 +195,8 @@
 		<description>Reinforced durasteel wall. Includes conduits for power.</description>
 		<graphicData>
 			<texPath>Buildings/Walls/DoomgiverWallA</texPath>
-			<color>(75,75,80)</color>
+			<color>(100,100,105)</color>
+			<!-- <color>(75,75,80)</color> -->
 		</graphicData>
 		<uiIconPath>Buildings/Walls/DoomgiverWallA_icon</uiIconPath>
 		<statBases>
@@ -417,6 +418,72 @@
 		
 		<costList>
 			<KOTOR_Duracrete>3</KOTOR_Duracrete>
+			<Steel>1</Steel>
+			
+			<!-- <ComponentIndustrial>1</ComponentIndustrial> -->
+		</costList>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_PoweredWallBase">
+		<defName>guy762_PoweredWall_SandcrawlerHull</defName>
+		<label>powered durasteel hull</label>
+		<description>Reinforced durasteel wall. Includes conduits for power.</description>
+		<graphicData>
+			<texPath>Buildings/Walls/CrustySandcrawlerHull</texPath>
+			<color>(95,70,50)</color> <!-- sandcrawler brown -->
+		</graphicData>
+		<uiIconPath>Buildings/Walls/CrustySandcrawlerHull_icon</uiIconPath>
+		<statBases>
+			<WorkToBuild>2000</WorkToBuild>
+			<MaxHitPoints>1400</MaxHitPoints>
+		</statBases>
+		
+		<damageMultipliers Inherit="false"/>
+		
+		<building>
+			<relatedBuildCommands>
+				<li>guy762_Autodoor1x1_SandcrawlerA</li>
+			</relatedBuildCommands>
+		</building>
+		
+		<costList>
+			<KOTOR_AlloyDurasteel>8</KOTOR_AlloyDurasteel>
+			<Steel>1</Steel>
+		</costList>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="guy762_PoweredWallBase">
+		<defName>guy762_PoweredWall_ImpBaseA</defName>
+		<label>powered duracrete wall</label>
+		<!-- <description>The outer structural elements of a ship's hull. Includes conduits for power.</description> -->
+		<description>Reinforced duracrete wall. Includes conduits for power.</description>
+		<graphicData>
+			<texPath>Buildings/Walls/DoomgiverWallA</texPath>
+			<!-- <color>(100,100,105)</color> -->
+			<color>(75,75,80)</color>
+		</graphicData>
+		<uiIconPath>Buildings/Walls/ImpBaseWallA_icon</uiIconPath>
+		<statBases>
+			<WorkToBuild>2400</WorkToBuild>
+			<MaxHitPoints>1000</MaxHitPoints>
+		</statBases>
+		<building>
+			<relatedBuildCommands>
+				<li>guy762_DoubleAutodoor_Vjun</li>
+			</relatedBuildCommands>
+		</building>
+		
+		<killedLeavings Inherit="false" />
+		
+		<costList>
+			<KOTOR_Duracrete>6</KOTOR_Duracrete>
 			<Steel>1</Steel>
 			
 			<!-- <ComponentIndustrial>1</ComponentIndustrial> -->

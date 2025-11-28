@@ -189,6 +189,7 @@
 		<defName>SWCPBiome_TatooineHighland</defName>
 		<label>Tatooine highland</label>
 		<description>A very dry area which supports little life. There is very little arable land, and animal life is very sparse. Deserts can be hot, or quite cold.</description>
+		<!-- <workerClass>BiomeWorker_Tundra</workerClass> -->
 		<workerClass>BiomeWorker_Desert</workerClass>
 		<!-- <workerClass>BiomesKit.UniversalBiomeWorker</workerClass> -->
 		<texture>World/Biomes/TatooineHighland</texture>
@@ -257,22 +258,21 @@
 			<li>Snow</li>
 			<!-- <li>Animals</li> -->
 			
-			<!-- <li>ScatterRuinsSimple</li> -->
-			<!-- <li>ScatterShrines</li> -->
-			<!-- <li>AncientUtilityBuilding</li> -->
+			<li>ScatterRuinsSimple</li>
+			<li>ScatterShrines</li>
+			<li>AncientUtilityBuilding</li>
 			<!-- <li>MechanoidRemains</li> -->
 			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientTurret</li> -->
 			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientMechs</li> -->
-			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientLandingPad</li> -->
-			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientFences</li> -->
-			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientPipelineSection</li> -->
-			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientJunkClusters</li> -->
+			<li MayRequire="Ludeon.RimWorld.Ideology">AncientLandingPad</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AncientFences</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AncientPipelineSection</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AncientJunkClusters</li>
 		</preventGenSteps>
-		<!-- <extraGenSteps> -->
-			<!-- <li>LAO_MoonCratersLarge</li> -->
-			<!-- <li>LAO_MoonCratersMedium</li> -->
-			<!-- <li>LAO_MoonCratersSmall</li> -->
-		<!-- </extraGenSteps> -->
+		<extraGenSteps>
+			<!-- <li>SWCPMapGenStep_TatooineStructure_test</li> -->
+			<!-- <li>SWCPMapGenStep_ImperialStructure_testbase</li> -->
+		</extraGenSteps>
 		
 		<wildPlants>
 		  <Plant_Grass>6</Plant_Grass>

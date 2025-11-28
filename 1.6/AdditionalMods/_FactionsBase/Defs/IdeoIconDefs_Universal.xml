@@ -72,6 +72,14 @@
 		</memes>
 	</IdeoIconDef>
 	
+	<IdeoIconDef>
+		<defName>guy762_IdeoIcon_lokrevenants</defName>
+		<iconPath>World/LokRevenants</iconPath>
+		<memes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+		</memes>
+	</IdeoIconDef>
+	
 	
 	
 	

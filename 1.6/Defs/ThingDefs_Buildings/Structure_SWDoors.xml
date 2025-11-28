@@ -785,4 +785,67 @@
 	</ThingDef>
 	
 	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_DoubleAutoDoorBase">
+		<defName>guy762_DoubleAutodoor_TatooineVerticalA</defName>
+		<label>heavy double autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<graphicData>
+			<texPath>Buildings/Doors/Tatooine2x1DoorA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>CutoutComplex</shaderType>
+			<color>(135,85,50)</color>
+		</graphicData>
+		<uiIconPath>Buildings/Doors/Tatooine2x1DoorA_icon</uiIconPath>
+		
+		<thingClass>SWCP.RimframeGrineerDoors.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
+		<modExtensions>
+			<li Class="SWCP.RimframeGrineerDoors.DoorPartGraphicsExtension">
+				<topPartGraphicData>
+					<texPath>Buildings/Doors/Tatooine2x1DoorA</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<shaderType>CutoutComplex</shaderType>
+					<color>(140,65,65)</color>
+					<colorTwo>(155,155,165)</colorTwo>
+					<drawSize>(2, 1)</drawSize>
+				</topPartGraphicData>
+			</li>
+		</modExtensions>
+		
+		<statBases>
+			<MaxHitPoints>800</MaxHitPoints>
+			<DoorOpenSpeed>0.2</DoorOpenSpeed>
+		</statBases>
+		<building>
+			<isAirtight>true</isAirtight>
+			<soundDoorOpenPowered>kotorsound_building_ClassicBiggerJKDoor</soundDoorOpenPowered>
+			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
+			
+			<isSupportDoor>true</isSupportDoor>
+			
+			<paintable>false</paintable>
+			<doorTopGraphic>
+				<texPath>Buildings/Doors/DoubleDoorFrame_Square</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
+				<drawSize>(2.5, 1.5)</drawSize>
+			</doorTopGraphic>
+			<blueprintGraphicData>
+				<texPath>Buildings/Doors/Tatooine2x1DoorA_icon</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>EdgeDetect</shaderType>
+				<drawSize>(2.5, 1.5)</drawSize>
+			</blueprintGraphicData>
+		</building>
+		
+		<costList>
+			<Steel>135</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+	</ThingDef>
+	
+	
 </Defs>

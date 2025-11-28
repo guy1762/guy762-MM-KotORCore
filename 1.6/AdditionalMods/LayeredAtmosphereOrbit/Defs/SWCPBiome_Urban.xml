@@ -50,7 +50,7 @@
 		<waterMovingChestDeepTerrain>ToxicWaterMovingChestDeep</waterMovingChestDeepTerrain>
 		
 		<layerWhitelist>
-			<li>Surface</li>
+			<!-- <li>Surface</li> -->
 			<!-- <li>SWCPPlanetLayer_Tatooine</li> -->
 			<!-- <li>SWCPPlanetLayer_TatooineOrbit</li> this method could be used to make Telos Citadel Station somehow? -->
 		</layerWhitelist>
@@ -158,32 +158,19 @@
 		  <Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_Witchwood>
 		</wildPlants>
 		<wildAnimals>
-			<!-- <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">0.1</Villager_Child> -->
-			<!-- <SWCPCivilian_villager>0.5</SWCPCivilian_villager> -->
-			<!-- <SWCPCivilian_prole>1</SWCPCivilian_prole> -->
-			<!-- <SWCPCivilian_poortraveler>0.25</SWCPCivilian_poortraveler> -->
-			<!-- <SWCPCivilian_mid>0.25</SWCPCivilian_mid> -->
-			<!-- <SWCPCivilian_bougie>0.1</SWCPCivilian_bougie> -->
-			<!-- <SWCPCivilian_exotictraveler>0.05</SWCPCivilian_exotictraveler> -->
-			<!-- <SWCPCivilian_hooded>0.1</SWCPCivilian_hooded> -->
-			<!-- <SWCPCivilian_spacer>0.1</SWCPCivilian_spacer> -->
-			<!-- <SWCPCivilian_ugnaught>0.1</SWCPCivilian_ugnaught> -->
-			<!-- <SWCPCivilian_jawa_offworld>0.1</SWCPCivilian_jawa_offworld> -->
+			<!-- <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">0.25</Villager_Child> -->
+			<!-- <SWCPCivilian_villager>1</SWCPCivilian_villager> -->
+			<!-- <SWCPCivilian_prole>2</SWCPCivilian_prole> -->
+			<!-- <SWCPCivilian_poortraveler>0.5</SWCPCivilian_poortraveler> -->
+			<!-- <SWCPCivilian_mid>0.5</SWCPCivilian_mid> -->
+			<!-- <SWCPCivilian_bougie>0.25</SWCPCivilian_bougie> -->
+			<!-- <SWCPCivilian_exotictraveler>0.1</SWCPCivilian_exotictraveler> -->
+			<!-- <SWCPCivilian_hooded>0.25</SWCPCivilian_hooded> -->
+			<!-- <SWCPCivilian_spacer>0.25</SWCPCivilian_spacer> -->
+			<!-- <SWCPCivilian_ugnaught>0.25</SWCPCivilian_ugnaught> -->
+			<!-- <SWCPCivilian_jawa_offworld>0.25</SWCPCivilian_jawa_offworld> -->
 			
-			<!-- <SWCPCivilian_HostileThug>0.25</SWCPCivilian_HostileThug> -->
-			
-			<Villager_Child MayRequire="Ludeon.RimWorld.Biotech">0.25</Villager_Child>
-			<SWCPCivilian_villager>1</SWCPCivilian_villager>
-			<SWCPCivilian_prole>2</SWCPCivilian_prole>
-			<SWCPCivilian_poortraveler>0.5</SWCPCivilian_poortraveler>
-			<SWCPCivilian_mid>0.5</SWCPCivilian_mid>
-			<SWCPCivilian_bougie>0.25</SWCPCivilian_bougie>
-			<SWCPCivilian_exotictraveler>0.1</SWCPCivilian_exotictraveler>
-			<SWCPCivilian_hooded>0.25</SWCPCivilian_hooded>
-			<SWCPCivilian_spacer>0.25</SWCPCivilian_spacer>
-			<SWCPCivilian_ugnaught>0.25</SWCPCivilian_ugnaught>
-			<SWCPCivilian_jawa_offworld>0.25</SWCPCivilian_jawa_offworld>
-			
+			<CorellianHound MayRequire="Mlie.StarWarsAnimalCollection">1</CorellianHound>
 			<SWCPCivilian_HostileThug>0.5</SWCPCivilian_HostileThug>
 			
 			<Rat>1.00</Rat>
@@ -217,6 +204,7 @@
 		  <!-- <li>CratersSmall</li> -->
 		  <li>ScarlandsJunkClusters</li>
 		  <li>ScarlandsJunkPrefabs</li>
+		  <li>SWCPMapGenStep_UrbanBiome_CivilianPawns</li>
 		</extraGenSteps>
 		
 		<!-- <modExtensions> -->
@@ -229,5 +217,17 @@
 			<!-- </li> -->
 		<!-- </modExtensions> -->
 	</BiomeDef>
+	
+	
+	<GenStepDef>
+		<defName>SWCPMapGenStep_UrbanBiome_CivilianPawns</defName>
+		<order>700</order>
+		<!-- <genStep Class="GenStep_SettlementPawnsLoot"> -->
+		<genStep Class="SWCP_LevelDesignStuff.GenStep_FactionFortressPawns">
+		  <factionDef>guy762_KotORFaction_Civilians</factionDef>
+		  <!-- <lootMarketValue>5000~10000</lootMarketValue>  -->
+		  <!-- <lootThingSetMaker>guy762_RaidLootMaker_ImpRemnant</lootThingSetMaker>  -->
+		</genStep>
+	</GenStepDef>
 
 </Defs>

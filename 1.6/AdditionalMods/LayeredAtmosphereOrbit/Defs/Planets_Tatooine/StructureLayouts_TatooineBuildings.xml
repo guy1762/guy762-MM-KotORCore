@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<GenStepDef>
+		<defName>SWCPMapGenStep_TatooineStructure_test</defName>
+		<order>740</order>
+		<genStep Class="GenStep_AncientRuins">
+		  <layoutDef>SWCPTatooineStructure_test</layoutDef>
+		</genStep>
+	</GenStepDef>
+	
+	<StructureLayoutDef>
+		<defName>SWCPTatooineStructure_test</defName>
+		<workerClass>LayoutWorker_AncientRuins</workerClass>
+		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
+		<shouldDamage>true</shouldDamage>
+		
+		<wallLampDef>AncientEmergencyLight_Green</wallLampDef>
+		<wallDef>guy762_PoweredWall_TatooineStuccoWallA</wallDef>
+		<doorDef>guy762_Autodoor1x1_TatooineA</doorDef>
+		<terrainDef>guy762_FloorTiles_DivotedTile_rust</terrainDef>
+		<!-- <surroundingTerrainDef>guy762_FloorTiles_DivotedTile_iron</surroundingTerrainDef> will morphology outline all buildings -->
+		<!-- <exteriorDoorDef>guy762_DoubleAutodoor_TatooineVerticalA</exteriorDoorDef> -->
+		
+		<roomDefs>
+			<!-- Decorative -->
+			<AncientRuinsRubble>3</AncientRuinsRubble>
+			<AncientRuinsIndustrialStorage>1</AncientRuinsIndustrialStorage>
+			<AncientRuinsStorage>1</AncientRuinsStorage>
+			<AncientRuinsBarracks>1</AncientRuinsBarracks>
+			<AncientRuinsKitchen>1</AncientRuinsKitchen>
+			<AncientRuinsOperatingRoom>1</AncientRuinsOperatingRoom>
+			<AncientRuinsDiningHall>1</AncientRuinsDiningHall>
+			<AncientRuinsShelfRoom>1</AncientRuinsShelfRoom>
+			<AncientSleepingArea>1</AncientSleepingArea>
+			<AncientRuinsCryptosleepCasketNoThreat>0.25</AncientRuinsCryptosleepCasketNoThreat>
+			<AncientOrbitalUplink>0.05</AncientOrbitalUplink>
+
+			<!-- Smaller threats -->
+			<AncientRuinsSecureRoom>1</AncientRuinsSecureRoom>
+			<AncientRuinsShelfRoomWithLoot>0.1</AncientRuinsShelfRoomWithLoot>
+
+			<!-- Threats -->
+			<AncientRuinsMechsWithLoot>0.3</AncientRuinsMechsWithLoot>
+			<AncientRuinsInsectHive>0.2</AncientRuinsInsectHive>
+			<AncientRuinsCryptosleepCasket>0.25</AncientRuinsCryptosleepCasket>
+		</roomDefs>
+		<junkScaterrers>
+			<Filth_Trash>
+				<groupsPerHundredCells>0~3</groupsPerHundredCells>
+				<itemsPerGroup>2~4</itemsPerGroup>
+				<groupDistRange>3~5</groupDistRange>
+			</Filth_Trash>
+			<Filth_BlastMark>
+				<groupsPerHundredCells>-2~1</groupsPerHundredCells> <!-- ~66% to not appear -->
+				<itemsPerGroup>1~1</itemsPerGroup>
+			</Filth_BlastMark>
+			<Filth_MachineBits>
+				<groupsPerHundredCells>-1~1</groupsPerHundredCells> <!-- ~50% to not appear -->
+				<itemsPerGroup>2~4</itemsPerGroup>
+				<groupDistRange>2~4</groupDistRange>
+			</Filth_MachineBits>
+			<RubblePile>
+				<groupsPerHundredCells>2~4</groupsPerHundredCells>
+				<itemsPerGroup>2~4</itemsPerGroup>
+				<groupDistRange>3~5</groupDistRange>
+				<minGroups>1</minGroups>
+			</RubblePile>
+			<Filth_RubbleRock>
+				<groupsPerHundredCells>2~4</groupsPerHundredCells>
+				<itemsPerGroup>3~8</itemsPerGroup>
+				<groupDistRange>3~5</groupDistRange>
+				<minGroups>1</minGroups>
+			</Filth_RubbleRock>
+		</junkScaterrers>
+		<scatteredPrefabs>
+			<li>
+				<countPer10kCellsRange>0.5~0.7</countPer10kCellsRange>
+				<minSpacing>10</minSpacing>
+				<maxDistFromStructure>50</maxDistFromStructure>
+				<prefabs>
+					<!-- <Exterior_AncientRoad_Long> -->
+						<!-- <weight>1.0</weight> -->
+						<!-- <indoorRuin>false</indoorRuin> -->
+						<!-- <filthDef>Filth_RubbleRock</filthDef> -->
+						<!-- <filthExpandBy>1</filthExpandBy> -->
+						<!-- <filthChance>0.4</filthChance> -->
+						<!-- <max>2</max> -->
+					<!-- </Exterior_AncientRoad_Long> -->
+					<!-- <Exterior_ChemtruckParkingLot_Long> -->
+						<!-- <weight>1.0</weight> -->
+						<!-- <indoorRuin>false</indoorRuin> -->
+						<!-- <filthDef>Filth_RubbleRock</filthDef> -->
+						<!-- <filthExpandBy>1</filthExpandBy> -->
+						<!-- <filthChance>0.4</filthChance> -->
+						<!-- <max>2</max> -->
+					<!-- </Exterior_ChemtruckParkingLot_Long> -->
+					<!-- <Exterior_ChembarrelStorage> -->
+						<!-- <weight>1.0</weight> -->
+						<!-- <indoorRuin>false</indoorRuin> -->
+						<!-- <filthDef>Filth_RubbleRock</filthDef> -->
+						<!-- <filthExpandBy>1</filthExpandBy> -->
+						<!-- <filthChance>0.4</filthChance> -->
+						<!-- <max>2</max> -->
+					<!-- </Exterior_ChembarrelStorage> -->
+					<!-- <Exterior_ChemtruckParkingLot> -->
+						<!-- <weight>1.0</weight> -->
+						<!-- <indoorRuin>false</indoorRuin> -->
+						<!-- <filthDef>Filth_RubbleRock</filthDef> -->
+						<!-- <filthExpandBy>1</filthExpandBy> -->
+						<!-- <filthChance>0.4</filthChance> -->
+						<!-- <max>2</max> -->
+					<!-- </Exterior_ChemtruckParkingLot> -->
+					
+					<!-- <Exterior_AncientMegaCannonEmplacement> -->
+						<!-- <weight>0.25</weight> -->
+						<!-- <indoorRuin>false</indoorRuin> -->
+						<!-- <filthDef>Filth_RubbleRock</filthDef> -->
+						<!-- <filthExpandBy>1</filthExpandBy> -->
+						<!-- <filthChance>0.4</filthChance> -->
+						<!-- <max>2</max> -->
+					<!-- </Exterior_AncientMegaCannonEmplacement> -->
+					<!-- <Exterior_AncientTankBlockade> -->
+						<!-- <weight>1.0</weight> -->
+						<!-- <indoorRuin>false</indoorRuin> -->
+						<!-- <filthDef>Filth_RubbleRock</filthDef> -->
+						<!-- <filthExpandBy>1</filthExpandBy> -->
+						<!-- <filthChance>0.4</filthChance> -->
+						<!-- <max>2</max> -->
+					<!-- </Exterior_AncientTankBlockade> -->
+					<!-- <Exterior_AncientTankTraps> -->
+						<!-- <weight>1.0</weight> -->
+						<!-- <indoorRuin>false</indoorRuin> -->
+						<!-- <filthDef>Filth_RubbleRock</filthDef> -->
+						<!-- <filthExpandBy>1</filthExpandBy> -->
+						<!-- <filthChance>0.4</filthChance> -->
+						<!-- <max>2</max> -->
+					<!-- </Exterior_AncientTankTraps> -->
+					<!-- <Exterior_AncientTank_Cluster> -->
+						<!-- <weight>1.0</weight> -->
+						<!-- <indoorRuin>false</indoorRuin> -->
+						<!-- <filthDef>Filth_RubbleRock</filthDef> -->
+						<!-- <filthExpandBy>1</filthExpandBy> -->
+						<!-- <filthChance>0.4</filthChance> -->
+						<!-- <max>2</max> -->
+					<!-- </Exterior_AncientTank_Cluster> -->
+					
+					<Exterior_AncientBunker>
+						<weight>0.25</weight>
+						<indoorRuin>false</indoorRuin>
+						<filthDef>Filth_RubbleRock</filthDef>
+						<filthExpandBy>1</filthExpandBy>
+						<filthChance>0.4</filthChance>
+						<max>2</max>
+					</Exterior_AncientBunker>
+					<Exterior_ContainerSite>
+						<weight>1.0</weight>
+						<indoorRuin>false</indoorRuin>
+						<filthDef>Filth_RubbleRock</filthDef>
+						<filthExpandBy>1</filthExpandBy>
+						<filthChance>0.4</filthChance>
+						<max>2</max>
+					</Exterior_ContainerSite>
+					<Exterior_MilitaryBlockade>
+						<weight>1.0</weight>
+						<indoorRuin>false</indoorRuin>
+						<filthDef>Filth_RubbleRock</filthDef>
+						<filthExpandBy>1</filthExpandBy>
+						<filthChance>0.4</filthChance>
+						<max>2</max>
+					</Exterior_MilitaryBlockade>
+					<Exterior_FourSmallBuildings>
+						<weight>0.2</weight>
+						<indoorRuin>false</indoorRuin>
+						<filthDef>Filth_RubbleRock</filthDef>
+						<filthExpandBy>1</filthExpandBy>
+						<filthChance>0.4</filthChance>
+						<max>1</max>
+					</Exterior_FourSmallBuildings>
+					<Exterior_CrashedCrane>
+						<weight>1.0</weight>
+						<indoorRuin>false</indoorRuin>
+						<filthDef>Filth_RubbleRock</filthDef>
+						<filthExpandBy>1</filthExpandBy>
+						<filthChance>0.4</filthChance>
+						<max>1</max>
+						</Exterior_CrashedCrane>
+					<Exterior_AncientContainerForklift>
+						<weight>1.0</weight>
+						<indoorRuin>false</indoorRuin>
+						<filthDef>Filth_RubbleRock</filthDef>
+						<filthExpandBy>1</filthExpandBy>
+						<filthChance>0.4</filthChance>
+						<max>1</max>
+					</Exterior_AncientContainerForklift>
+				</prefabs>
+			</li>
+		</scatteredPrefabs>
+	</StructureLayoutDef>
+	
+
+</Defs>

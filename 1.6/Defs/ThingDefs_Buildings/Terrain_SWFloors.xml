@@ -220,6 +220,7 @@
   
   
   
+  
   <TerrainDef ParentName="TileMetalBase">
     <defName>guy762_FloorTiles_DoomgiverRectangleTile_H</defName>
     <label>rectangular tile (horizontal)</label>
@@ -387,7 +388,7 @@
 	<designationCategory>KOTOR_BuildTab</designationCategory>
 	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
 	<!-- <color>(165,165,180)</color> -->
-	<color>(145,145,155)</color> <!-- slate bley -->
+	<color>(145,145,150)</color> <!-- slate bley -->
     <statBases>
       <WorkToBuild>800</WorkToBuild>
       <Beauty>0</Beauty>
@@ -465,6 +466,32 @@
     </statBases>
     <costList>
       <Steel>5</Steel>
+    </costList>
+    <designationHotKey>Misc7</designationHotKey>
+    <uiOrder>2040</uiOrder>
+  </TerrainDef>
+  
+  
+  
+  
+  <TerrainDef ParentName="TileMetalBase">
+    <defName>guy762_FloorTiles_ImpBaseTile</defName>
+    <label>duracrete tile</label>
+    <renderPrecedence>240</renderPrecedence>
+    <description>Duracrete tiles, for that spaceship look. They are quick to clean and get a bonus to cleanliness for use in medical settings.</description>
+    <texturePath>Buildings/Floors/FoorMetal2_LowContrast</texturePath>
+	
+	<designationCategory>KOTOR_BuildTab</designationCategory>
+	<designatorDropdown>guy762_FloorTileDropdown_SWMetallic</designatorDropdown>
+	<color>(170,170,175)</color>
+    <statBases>
+      <WorkToBuild>800</WorkToBuild>
+      <Beauty>0</Beauty>
+      <Cleanliness>0.2</Cleanliness>
+      <CleaningTimeFactor>0.6</CleaningTimeFactor>
+    </statBases>
+    <costList>
+      <KOTOR_Duracrete>2</KOTOR_Duracrete>
     </costList>
     <designationHotKey>Misc7</designationHotKey>
     <uiOrder>2040</uiOrder>
