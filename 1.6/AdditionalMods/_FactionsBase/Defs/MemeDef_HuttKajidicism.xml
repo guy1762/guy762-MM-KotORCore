@@ -3,7 +3,7 @@
 	
 	
 	
-	<MemeDef>
+	<MemeDef MayRequire="Ludeon.RimWorld.Ideology">
 		<defName>guy762_MemeDef_hutt</defName>
 		<label>Hutt Kajidicism</label>
 		<description>The Hutts hold the divine right to rule the galaxy, and in their cunning and wisdom they rule through the invisible hand of economic might.\n\nDEV'S NOTE: I was going to have this meme force a 'preferred xenotype' precept targeting the Hutts, but I'm not able to target a specific xenotype on my end. I encourage you to add it in manually.</description>

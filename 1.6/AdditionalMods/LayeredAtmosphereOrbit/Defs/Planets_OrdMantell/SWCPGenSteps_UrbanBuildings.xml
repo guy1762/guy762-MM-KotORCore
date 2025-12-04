@@ -1,0 +1,448 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+	<!-- <GenStepDef Name="" Abstract="True"> -->
+		<!-- <preventsGenSteps> -->
+			<!-- <li>KOTOR_JunkPileClusters</li> -->
+			<!-- <li MayRequire="SWCP.GCWVehicles">SWVehicles_ShipWreckage</li> -->
+		<!-- </preventsGenSteps> -->
+	<!-- </GenStepDef> -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPMapGenStep_UrbanBiome_CleanBuildings</defName>
+		<order>740</order>
+		<genStep Class="GenStep_AncientRuins">
+			<layoutDef>SWCPLayout_UrbanCleanBuildings</layoutDef>
+		</genStep>
+	</GenStepDef>
+	
+	<StructureLayoutDef>
+		<defName>SWCPLayout_UrbanCleanBuildings</defName>
+		<workerClass>LayoutWorker_AncientRuins</workerClass>
+		<shouldDamage>false</shouldDamage>
+		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
+		
+		<wallLampDef>AncientEmergencyLight_Green</wallLampDef>
+		<wallLampChancePerPosition>1</wallLampChancePerPosition>
+		
+		<wallDef>guy762_PoweredWall_TatooineStuccoWallA</wallDef>
+		<doorDef>guy762_Autodoor1x1_TatooineA</doorDef>
+		<terrainDef>guy762_FloorTiles_DivotedTile_rust</terrainDef>
+		<surroundingTerrainDef>AncientMegastructure</surroundingTerrainDef> <!-- will morphology outline all buildings -->
+		
+		<roomDefs>
+		<!-- Decorative -->
+			<SWCPRoomLayout_NPCReactor>1</SWCPRoomLayout_NPCReactor>
+			
+			<AncientRuinsEmpty>2</AncientRuinsEmpty>
+			<SWCPRoomLayout_UrbanIndustrialStorage>2</SWCPRoomLayout_UrbanIndustrialStorage>
+			<SWCPRoomLayout_UrbanStorage>2</SWCPRoomLayout_UrbanStorage>
+
+
+			<SWCPRoomLayout_UrbanKitchen>3</SWCPRoomLayout_UrbanKitchen>
+			<SWCPRoomLayout_UrbanDiningHall>3</SWCPRoomLayout_UrbanDiningHall>
+
+			<SWCPRoomLayout_UrbanBarracks>1</SWCPRoomLayout_UrbanBarracks>
+			<SWCPRoomLayout_UrbanLockerRoom>1</SWCPRoomLayout_UrbanLockerRoom>
+			<SWCPRoomLayout_UrbanShelfRoom>2</SWCPRoomLayout_UrbanShelfRoom>
+			<SWCPRoomLayout_UrbanOperatingRoom>1</SWCPRoomLayout_UrbanOperatingRoom>
+			
+			<SWCPRoomLayout_UrbanLivingArea>3</SWCPRoomLayout_UrbanLivingArea>
+			<SWCPRoomLayout_UrbanSleepingArea>4</SWCPRoomLayout_UrbanSleepingArea>
+
+			<!-- <AncientRuinsReactorToxicWaterRoom>2</AncientRuinsReactorToxicWaterRoom> -->
+			<!-- <AncientRuinsCryptosleepCasketNoThreat>0.05</AncientRuinsCryptosleepCasketNoThreat> -->
+			<!-- <AncientOrbitalUplink>0.05</AncientOrbitalUplink> -->
+
+		<!-- Smaller threats -->
+			<!-- <AncientRuinsChemfuelWorkshop>1</AncientRuinsChemfuelWorkshop> -->
+			<!-- <AncientRuinsSecureRoom>1</AncientRuinsSecureRoom> -->
+			<!-- <AncientRuinsShelfRoomWithLoot>0.05</AncientRuinsShelfRoomWithLoot> -->
+
+		<!-- Threats -->
+			<!-- <AncientRuinsMechsWithLoot>0.1</AncientRuinsMechsWithLoot> -->
+			<!-- <AncientRuinsInsectHive>0.1</AncientRuinsInsectHive> -->
+			<!-- <AncientRuinsCryptosleepCasket>0.05</AncientRuinsCryptosleepCasket> -->
+		</roomDefs>
+	</StructureLayoutDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPMapGenStep_UrbanBiome_MunicipalBuildings</defName>
+		<order>740</order>
+		<genStep Class="GenStep_AncientRuins">
+			<layoutDef>SWCPLayout_UrbanMunicipalBuildings</layoutDef>
+		</genStep>
+	</GenStepDef>
+	
+	<StructureLayoutDef>
+		<defName>SWCPLayout_UrbanMunicipalBuildings</defName>
+		<workerClass>LayoutWorker_AncientRuins</workerClass>
+		<shouldDamage>false</shouldDamage>
+		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
+		
+		<wallLampDef>AncientEmergencyLight_Green</wallLampDef>
+		<wallLampChancePerPosition>1</wallLampChancePerPosition>
+		
+		<wallDef>guy762_PoweredWall_TatooineStuccoWallC</wallDef>
+		<doorDef>guy762_Autodoor1x1_TatooineA</doorDef>
+		<terrainDef>guy762_FloorTiles_DivotedTile_rust</terrainDef>
+		<surroundingTerrainDef>AncientMegastructure</surroundingTerrainDef> <!-- will morphology outline all buildings -->
+		
+		<roomDefs>
+		<!-- Decorative -->
+			<SWCPRoomLayout_NPCReactor>2</SWCPRoomLayout_NPCReactor>
+			
+			<AncientRuinsEmpty>2</AncientRuinsEmpty>
+			<SWCPRoomLayout_UrbanIndustrialStorage>2</SWCPRoomLayout_UrbanIndustrialStorage>
+			<SWCPRoomLayout_UrbanStorage>2</SWCPRoomLayout_UrbanStorage>
+
+			<SWCPRoomLayout_UrbanBarracks>1</SWCPRoomLayout_UrbanBarracks>
+			<SWCPRoomLayout_UrbanLockerRoom>1</SWCPRoomLayout_UrbanLockerRoom>
+			<SWCPRoomLayout_UrbanShelfRoom>2</SWCPRoomLayout_UrbanShelfRoom>
+			<SWCPRoomLayout_UrbanOperatingRoom>1</SWCPRoomLayout_UrbanOperatingRoom>
+		</roomDefs>
+	</StructureLayoutDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<GenStepDef>
+		<defName>SWCPMapGenStep_UrbanBiome_Dormitories</defName>
+		<order>741</order>
+		<genStep Class="GenStep_AncientRuins">
+			<layoutDef>SWCPLayout_UrbanDormitories</layoutDef>
+		</genStep>
+	</GenStepDef>
+	
+	<StructureLayoutDef>
+		<defName>SWCPLayout_UrbanDormitories</defName>
+		<workerClass>LayoutWorker_AncientRuins</workerClass>
+		<shouldDamage>false</shouldDamage>
+		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
+		
+		<wallLampDef>AncientEmergencyLight_Green</wallLampDef>
+		<wallLampChancePerPosition>1</wallLampChancePerPosition>
+		
+		<wallDef>guy762_PoweredWall_TatooineStuccoWallA</wallDef>
+		<doorDef>guy762_Autodoor1x1_TatooineA</doorDef>
+		<terrainDef>guy762_FloorTiles_DivotedTile_rust</terrainDef>
+		<surroundingTerrainDef>AncientMegastructure</surroundingTerrainDef> <!-- will morphology outline all buildings -->
+		
+		<roomDefs>
+			<SWCPRoomLayout_NPCReactor>2</SWCPRoomLayout_NPCReactor>
+			
+			<SWCPRoomLayout_UrbanKitchen>3</SWCPRoomLayout_UrbanKitchen>
+			<SWCPRoomLayout_UrbanDiningHall>3</SWCPRoomLayout_UrbanDiningHall>
+			
+			<SWCPRoomLayout_UrbanLivingArea>3</SWCPRoomLayout_UrbanLivingArea>
+			<SWCPRoomLayout_UrbanSleepingArea>4</SWCPRoomLayout_UrbanSleepingArea>
+
+		</roomDefs>
+	</StructureLayoutDef>
+	
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_UrbanIndustrialStorage</defName>
+		<spawnJunk>false</spawnJunk>
+		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
+		<roomContentsWorkerType>RoomContents_IndustrialStorage</roomContentsWorkerType>
+		<scatter>
+		  <AncientBarrel>
+			<groupsPerHundredCells>2~3</groupsPerHundredCells>
+			<itemsPerGroup>1~5</itemsPerGroup>
+			<groupDistRange>2~4</groupDistRange>
+			<minGroups>1</minGroups>
+		  </AncientBarrel>
+		</scatter>
+	</LayoutRoomDef>
+
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_UrbanStorage</defName>
+		<spawnJunk>false</spawnJunk>
+		<fillEdges>
+		  <AncientDisplayBank>
+			<groupsPerTenEdgeCells>1~3</groupsPerTenEdgeCells>
+			<groupCountRange>1~2</groupCountRange>
+		  </AncientDisplayBank>
+		</fillEdges>
+		<fillInterior>
+		  <AncientSystemRack>
+			<thingsPerHundredCells>10~20</thingsPerHundredCells>
+			<alignWithRect>true</alignWithRect>
+		  </AncientSystemRack>
+		</fillInterior>
+	</LayoutRoomDef>
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_UrbanKitchen</defName>
+		<spawnJunk>false</spawnJunk>
+		<roomContentsWorkerType>RoomContents_Kitchen</roomContentsWorkerType>
+	</LayoutRoomDef>
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_UrbanDiningHall</defName>
+		<spawnJunk>false</spawnJunk>
+		<roomContentsWorkerType>RoomContents_DiningHall</roomContentsWorkerType>
+		<itemsPer100CellsRange>2~4</itemsPer100CellsRange>
+		<floorTypes>
+		  <li>AncientTile</li>
+		  <li>AncientConcrete</li>
+		</floorTypes>
+	</LayoutRoomDef>
+
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_UrbanOperatingRoom</defName>
+		<spawnJunk>false</spawnJunk>
+		<roomContentsWorkerType>RoomContents_OperatingRoom</roomContentsWorkerType>
+	</LayoutRoomDef>
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_UrbanBarracks</defName>
+		<spawnJunk>false</spawnJunk>
+		<fillEdges>
+		  <AncientLockerBank>
+			<groupsPerTenEdgeCells>1~3</groupsPerTenEdgeCells>
+			<groupCountRange>1~2</groupCountRange>
+		  </AncientLockerBank>
+		</fillEdges>
+		<fillInterior>
+		  <AncientBed>
+			<thingsPerHundredCells>2~3</thingsPerHundredCells>
+			<alignWithRect>true</alignWithRect>
+		  </AncientBed>
+		</fillInterior>
+	</LayoutRoomDef>
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_UrbanLockerRoom</defName>
+		<spawnJunk>false</spawnJunk>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<prefabs>
+		  <AncientLockers_Row>
+			<countPerTenEdgeCells>3</countPerTenEdgeCells>
+			<minMaxRange>5~15</minMaxRange>
+		  </AncientLockers_Row>
+		  <TableWithStools_2x2>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </TableWithStools_2x2>
+		  <TableWithStools_1x2>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>0~3</minMaxRange>
+		  </TableWithStools_1x2>
+		  <TVWithArmchairs>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </TVWithArmchairs>
+		  <AncientCratesWithComponents>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientCratesWithComponents>
+		  <AncientCardboardBox_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientCardboardBox_Cluster>
+		</prefabs>
+		<floorTypes>
+		  <li>AncientWoodPlankFloor</li>
+		  <li>AncientTile</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_UrbanLivingArea</defName>
+		<spawnJunk>false</spawnJunk>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<prefabs>
+		  <SurvivalMealPallet>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </SurvivalMealPallet>
+		  <TableWithStools_2x2>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </TableWithStools_2x2>
+		  <TableWithStools_1x2>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </TableWithStools_1x2>
+		  <AncientTableStoveElectric_Edge>
+			<countPerTenEdgeCells>5</countPerTenEdgeCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </AncientTableStoveElectric_Edge>
+		  <ShowerAndToilet_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </ShowerAndToilet_Edge>
+		  <AncientStove_Cluster>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientStove_Cluster>
+		  <AncientFortifiedWall_Pillar3x3>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </AncientFortifiedWall_Pillar3x3>
+		  <AncientFortifiedWall_PillarGroup>
+			<countPerHundredCells>2</countPerHundredCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </AncientFortifiedWall_PillarGroup>
+		  <AncientCardboardBox_Cluster>
+			<countPerHundredCells>15</countPerHundredCells>
+			<minMaxRange>0~5</minMaxRange>
+		  </AncientCardboardBox_Cluster>
+		</prefabs>
+	</LayoutRoomDef>
+
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_UrbanSleepingArea</defName>
+		<spawnJunk>false</spawnJunk>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<prefabs>
+		  <AncientBed_Rows>
+			<countPerHundredCells>3</countPerHundredCells>
+			<minMaxRange>1~1</minMaxRange>
+		  </AncientBed_Rows>
+		  <ShowerAndToilet_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </ShowerAndToilet_Edge>
+		  <Subroom_Bedrooms>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </Subroom_Bedrooms>
+		  <AncientCratesWithComponents>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </AncientCratesWithComponents>
+		  <AncientCardboardBox_Cluster>
+			<countPerHundredCells>15</countPerHundredCells>
+			<minMaxRange>0~5</minMaxRange>
+		  </AncientCardboardBox_Cluster>
+		</prefabs>
+		<floorTypes>
+		  <li>AncientWoodPlankFloor</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_UrbanShelfRoom</defName>
+		<spawnJunk>false</spawnJunk>
+		<dontDestroyWallsDoors>true</dontDestroyWallsDoors>
+		<canMergeWithAdjacentRoom>true</canMergeWithAdjacentRoom>
+		<minSingleRectWidth>6</minSingleRectWidth>
+		<minSingleRectHeight>6</minSingleRectHeight>
+		<prefabs>
+		  <IndustrialShelf_Edge>
+			<countPerTenEdgeCells>2</countPerTenEdgeCells>
+			<minMaxRange>10~20</minMaxRange>
+		  </IndustrialShelf_Edge>
+		  <IndustrialShelf_Rows>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>1~2</minMaxRange>
+		  </IndustrialShelf_Rows>
+		  <WoodenCratesWithSomeLoot>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </WoodenCratesWithSomeLoot>
+		  <WoodenCrate_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </WoodenCrate_Cluster>
+		  <AncientCratePallet_Cluster>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientCratePallet_Cluster>
+		  <AncientFortifiedWall_Pillar3x3>
+			<countPerHundredCells>1</countPerHundredCells>
+			<minMaxRange>0~1</minMaxRange>
+		  </AncientFortifiedWall_Pillar3x3>
+		</prefabs>
+	</LayoutRoomDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<LayoutRoomDef>
+		<defName>SWCPRoomLayout_NPCReactor</defName>
+		<spawnJunk>false</spawnJunk>
+		<minSingleRectWidth>5</minSingleRectWidth>
+		<minSingleRectHeight>5</minSingleRectHeight>
+		<prefabs>
+		  <SWCPRoomPrefab_NPCPowerGenerator>
+			<countPerTenEdgeCells>1</countPerTenEdgeCells>
+			<minMaxRange>1</minMaxRange>
+		  </SWCPRoomPrefab_NPCPowerGenerator>
+		</prefabs>
+		<floorTypes>
+			<li>guy762_FloorTiles_XGrate_iron</li>
+		</floorTypes>
+	</LayoutRoomDef>
+	
+	<PrefabDef>
+		<defName>SWCPRoomPrefab_NPCPowerGenerator</defName>
+		<size>(5,5)</size>
+		<things>
+			<PowerConduit>
+			  <rects>
+				<li>(0,0,4,0)</li>
+				<li>(0,1,0,4)</li>
+				<li>(4,1,4,4)</li>
+				<li>(1,4,3,4)</li>
+			  </rects>
+			</PowerConduit>
+			<SWCPBuilding_NPCPowerGenerator>
+			  <position>(2, 0, 2)</position>
+			</SWCPBuilding_NPCPowerGenerator>
+		</things>
+	</PrefabDef>
+
+
+
+</Defs>

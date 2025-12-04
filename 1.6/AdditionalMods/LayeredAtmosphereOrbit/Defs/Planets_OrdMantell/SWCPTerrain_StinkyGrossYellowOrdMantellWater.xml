@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <!-- Deep -->
+
+  <TerrainDef Abstract="True" Name="SWCPTerrain_OrdMantellYellowToxicWaterDeepBase" ParentName="WaterDeepBase">
+    <renderPrecedence>395</renderPrecedence>
+    <texturePath>BiomeTerrain/YellowToxicWaterDeepRamp</texturePath>
+    <pollutedTexturePath>BiomeTerrain/YellowToxicWaterDeepRamp</pollutedTexturePath>
+    <toxicBuildupFactor>3</toxicBuildupFactor>
+    <pathCost>400</pathCost>
+    <traversedThought>ToxWater</traversedThought>
+    <waterBodyType>Other</waterBodyType>
+    <statBases>
+      <Beauty>-8</Beauty>
+    </statBases>
+  </TerrainDef>
+  
+  <TerrainDef ParentName="SWCPTerrain_OrdMantellYellowToxicWaterDeepBase">
+    <defName>SWCPTerrain_OrdMantellYellowToxicWaterDeep</defName>
+    <label>toxic deep water</label>
+    <renderPrecedence>395</renderPrecedence>
+  </TerrainDef>
+
+  <TerrainDef ParentName="SWCPTerrain_OrdMantellYellowToxicWaterDeepBase">
+    <defName>SWCPTerrain_OrdMantellYellowToxicWaterOceanDeep</defName>
+    <label>toxic deep ocean water</label>
+    <renderPrecedence>397</renderPrecedence>
+    <tags>
+      <li>Ocean</li>
+    </tags>
+  </TerrainDef>
+
+  <!-- Chest-deep -->
+  
+  <TerrainDef Abstract="True" Name="SWCPTerrain_OrdMantellYellowToxicWaterChestDeepBase" ParentName="WaterChestDeepBase">
+    <texturePath>BiomeTerrain/YellowToxicWaterChestDeepRamp</texturePath>
+    <pollutedTexturePath>BiomeTerrain/YellowToxicWaterChestDeepRamp</pollutedTexturePath>
+    <waterDepthShader>Map/WaterDepth</waterDepthShader>
+    <toxicBuildupFactor>3</toxicBuildupFactor>
+    <pathCost>150</pathCost>
+    <traversedThought>ToxWater</traversedThought>
+    <waterBodyType>Other</waterBodyType>
+    <floodTerrain>ToxicFlood</floodTerrain>
+    <statBases>
+      <Beauty>-8</Beauty>
+    </statBases>
+  </TerrainDef>
+
+  <TerrainDef ParentName="SWCPTerrain_OrdMantellYellowToxicWaterChestDeepBase">
+    <defName>SWCPTerrain_OrdMantellYellowToxicWaterMovingChestDeep</defName>
+    <label>toxic chest-deep moving water</label>
+    <renderPrecedence>399</renderPrecedence>
+    <affordances>
+      <li>MovingFluid</li>
+    </affordances>
+    <tags>
+      <li>River</li>
+    </tags>
+    <waterDepthShaderParameters>
+      <_UseWaterOffset>1</_UseWaterOffset>
+    </waterDepthShaderParameters>
+  </TerrainDef>
+
+  <!-- Shallow -->
+
+  <TerrainDef Abstract="True" Name="SWCPTerrain_OrdMantellYellowToxicWaterShallowBase" ParentName="WaterShallowBase">
+    <texturePath>BiomeTerrain/YellowToxicWaterShallowRamp</texturePath>
+    <pollutedTexturePath>BiomeTerrain/YellowToxicWaterShallowRamp</pollutedTexturePath>
+    <waterDepthShader>Map/WaterDepth</waterDepthShader>
+    <toxicBuildupFactor>3</toxicBuildupFactor>
+    <pathCost>100</pathCost>
+    <traversedThought>ToxWater</traversedThought>
+    <waterBodyType>Other</waterBodyType>
+    <floodTerrain>ToxicFlood</floodTerrain>
+    <statBases>
+      <Beauty>-8</Beauty>
+    </statBases>
+  </TerrainDef>
+
+  <TerrainDef ParentName="SWCPTerrain_OrdMantellYellowToxicWaterShallowBase">
+    <defName>SWCPTerrain_OrdMantellYellowToxicWaterShallow</defName>
+    <label>toxic shallow water</label>
+    <renderPrecedence>394</renderPrecedence>
+    <driesTo>Gravel</driesTo>
+  </TerrainDef>
+
+  <TerrainDef ParentName="SWCPTerrain_OrdMantellYellowToxicWaterShallowBase">
+    <defName>SWCPTerrain_OrdMantellYellowToxicWaterOceanShallow</defName>
+    <label>toxic shallow ocean water</label>
+    <renderPrecedence>396</renderPrecedence>
+    <driesTo>Gravel</driesTo>
+    <tags>
+      <li>Ocean</li>
+    </tags>
+  </TerrainDef>
+
+  <TerrainDef ParentName="SWCPTerrain_OrdMantellYellowToxicWaterShallowBase">
+    <defName>SWCPTerrain_OrdMantellYellowToxicWaterMovingShallow</defName>
+    <label>toxic shallow moving water</label>
+    <renderPrecedence>398</renderPrecedence>
+    <affordances>
+      <li>MovingFluid</li>
+    </affordances>
+    <tags>
+      <li>River</li>
+    </tags>
+    <waterDepthShaderParameters>
+      <_UseWaterOffset>1</_UseWaterOffset>
+    </waterDepthShaderParameters>
+  </TerrainDef>
+
+
+</Defs>

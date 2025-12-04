@@ -1,0 +1,935 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<FeatureDef> <!-- this is the thing that adds a label to it on the world map -->
+		<defName>SWCPBiomeFeature_OrdMantellUrban</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>409</order>
+		<!-- <minRootGroupSize>12</minRootGroupSize> -->
+		<minRootGroupSize>1</minRootGroupSize>
+		<maxRootGroupSize>12</maxRootGroupSize>
+		<rootBiomes>
+		  <li>SWCPBiome_OrdMantellUrban</li>
+		</rootBiomes>
+		<nameMaker>SWCPBiomeNamer_OrdMantellUrban</nameMaker>
+	</FeatureDef>
+	
+	<RulePackDef>
+		<defName>SWCPBiomeNamer_OrdMantellUrban</defName>
+		<include>
+		  <li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<!-- <li>r_name(p=0.2)->[ruin_adjective] [narrative_name]</li> -->
+			<li>r_name(p=0.2)->[narrative_name] [terrain_word]</li>
+			<li>r_name(p=0.2)->[narrative_name]</li>
+			
+			<!-- <li>ruin_adjective(p=2)->ruined</li> -->
+			<!-- <li>ruin_adjective->ancient</li> -->
+			<!-- <li>ruin_adjective->old</li> -->
+			<!-- <li>ruin_adjective->shattered</li> -->
+			<!-- <li>ruin_adjective->blighted</li> -->
+			<!-- <li>ruin_adjective->ashen</li> -->
+			
+			<li>terrain_word(p=6)->city</li>
+			<li>terrain_word(p=3)->metro</li>
+		  </rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	
+	<FeatureDef> <!-- this is the thing that adds a label to it on the world map -->
+		<defName>SWCPBiomeFeature_OrdMantellMegacity</defName>
+		<workerClass>FeatureWorker_Biome</workerClass>
+		<order>409</order>
+		<minRootGroupSize>12</minRootGroupSize>
+		<rootBiomes>
+		  <li>SWCPBiome_OrdMantellUrban</li>
+		</rootBiomes>
+		<nameMaker>SWCPBiomeNamer_OrdMantellMegacity</nameMaker>
+	</FeatureDef>
+	
+	<RulePackDef>
+		<defName>SWCPBiomeNamer_OrdMantellMegacity</defName>
+		<include>
+		  <li>WorldFeatureNamerCommon</li>
+		</include>
+		<rulePack>
+		  <rulesStrings>
+			<!-- <li>r_name(p=0.2)->[ruin_adjective] [narrative_name]</li> -->
+			<li>r_name(p=0.2)->[narrative_name] [terrain_word]</li>
+			<li>r_name(p=0.2)->[narrative_name]</li>
+			
+			<li>terrain_word(p=6)->megacity</li>
+			<li>terrain_word(p=3)->metropolis</li>
+			<li>terrain_word(p=1)->arcology</li>
+		  </rulesStrings>
+		</rulePack>
+	</RulePackDef>
+	
+	
+	<BiomeDef>
+		<defName>SWCPBiome_OrdMantellUrban</defName>
+		<label>urbanized district</label>
+		<description>Ruins of an ancient city which was destroyed by weapons of mass destruction. Water here is toxic and scaria runs rampant among the animals. Mechanoids lurk among the shattered buildings, waiting to awaken and kill again.</description>
+		<settleWarning>Scarlands are inhabited by dangerous insects and rogue mechanoids. Water is toxic and scaria runs rampant among the animals.</settleWarning>
+		
+		<workerClass>BiomeWorker_Glowforest</workerClass>
+		<!-- <workerClass>BiomeWorker_Scarlands</workerClass> -->
+		<!-- <workerClass>BiomesKit.UniversalBiomeWorker</workerClass> -->
+		
+		<!-- <texture>World/Biomes/OrdMantellUrban</texture> -->
+		<texture>World/Biomes/Urban</texture>
+		
+		<animalDensity>4</animalDensity>
+		<plantDensity>0.4</plantDensity>
+		<wildAnimalScariaChance>0.1</wildAnimalScariaChance>
+		
+		<settlementSelectionWeight>1</settlementSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		
+		<gravelTerrain>SWCPTerrain_OrdMantellGravel</gravelTerrain>
+		<lakeBeachTerrain>Gravel</lakeBeachTerrain>
+		<mudTerrain>MarshyTerrain</mudTerrain>
+		<riverbankTerrain>MarshyTerrain</riverbankTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		
+		<forageability>0.25</forageability>
+		<foragedFood>MealNutrientPaste</foragedFood>
+		<wildPlantRegrowDays>20</wildPlantRegrowDays>
+		<maxFishPopulation>0</maxFishPopulation>
+		
+		<diseaseMtbDays>50</diseaseMtbDays>
+		<pollutionOffset>0.05</pollutionOffset>
+		
+		<waterShallowTerrain>ToxicWaterShallow</waterShallowTerrain>
+		<waterDeepTerrain>ToxicWaterDeep</waterDeepTerrain>
+		<oceanShallowTerrain>ToxicWaterOceanShallow</oceanShallowTerrain>
+		<oceanDeepTerrain>ToxicWaterOceanDeep</oceanDeepTerrain>
+		<waterMovingShallowTerrain>ToxicWaterMovingShallow</waterMovingShallowTerrain>
+		<waterMovingChestDeepTerrain>ToxicWaterMovingChestDeep</waterMovingChestDeepTerrain>
+		
+		<!-- <layerWhitelist> -->
+			<!-- <li>SWCPPlanetLayer_OrdMantell</li> whitelist is actually on the planetlayerdef in a modextension -->
+		<!-- </layerWhitelist> -->
+		
+		<soundsAmbient>
+		  <li>Ambient_NightInsects_Standard</li>
+		</soundsAmbient>
+		
+		<diseases>
+		  <li>
+			<diseaseInc>Disease_Flu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Plague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Malaria</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_GutWorms</diseaseInc>
+			<commonality>50</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_MuscleParasites</diseaseInc>
+			<commonality>50</commonality>
+		  </li>
+
+		  <li>
+			<diseaseInc>Disease_AnimalFlu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_AnimalPlague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_OrganDecay</diseaseInc>
+			<commonality>10</commonality>
+		  </li>
+		</diseases>
+		
+		
+		<terrainsByFertility>
+		  <li>
+			<!-- <terrain>AncientMegastructure</terrain> -->
+			<terrain>Sand</terrain>
+			<min>-999</min>
+			<max>0.7</max>
+		  </li>
+		  <li>
+			<!-- <terrain>SWCPTerrain_junkyardgarbage</terrain> -->
+			<terrain>GrasslandSoil</terrain>
+			<min>0.7</min>
+			<max>999</max>
+		  </li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+		  <li>
+			<perlinFrequency>0.015</perlinFrequency>
+			<isPond>true</isPond>
+			<thresholds>
+			  <li>
+				<terrain>SWCPTerrain_junkyardgarbage_soggy</terrain>
+				<min>0.80</min>
+				<max>0.93</max>
+			  </li>
+			  <li>
+				<terrain>ToxicWaterShallow</terrain>
+				<min>0.93</min>
+				<max>1.06</max>
+			  </li>
+			  <li>
+				<terrain>ToxicWaterDeep</terrain>
+				<min>1.06</min>
+				<max>999</max>
+			  </li>
+			</thresholds>
+		  </li>
+		</terrainPatchMakers>
+		<forceRockTypes>
+			<li>Sandstone</li>
+			<li>SWCPStone_OrdMantellGranite</li>
+		</forceRockTypes>
+		<!-- <fogOfWarColor>(180,135,75)</fogOfWarColor> -->
+		
+		<!-- shadows of the empire ord mantell khaki -->
+		<!-- <fogOfWarColor>(180,135,75)</fogOfWarColor> -->
+		
+		
+		
+		
+		<baseWeatherCommonalities>
+		  <Clear>8</Clear>
+		  <Fog>2</Fog>
+		  <Rain>0</Rain>
+		  <DryThunderstorm>2</DryThunderstorm>
+		  <RainyThunderstorm>1</RainyThunderstorm>
+		  <FoggyRain>3</FoggyRain>
+		  <SnowGentle>0.5</SnowGentle>
+		  <SnowHard>0.125</SnowHard>
+		  <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+		  <ToxRain>4</ToxRain>
+		  <Overcast>8</Overcast>
+		</baseWeatherCommonalities>
+		<wildPlants>
+			<!-- <SWCPPlant_OrangeGrass>2.0</SWCPPlant_OrangeGrass> -->
+			<Plant_YellowGrass>2.0</Plant_YellowGrass>
+			
+			<Plant_Thornvine>8.0</Plant_Thornvine>
+			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">2</Plant_GrayGrass>
+			<Plant_Brambles_Leafless>1.0</Plant_Brambles_Leafless>
+			<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.8</Plant_Ripthorn>
+			<Plant_Dandelion>0.5</Plant_Dandelion>
+			<Plant_Bush_Leafless>0.6</Plant_Bush_Leafless>
+			<Plant_TreeSnagroot>0.4</Plant_TreeSnagroot>
+			<Plant_Berry_Leafless>0.02</Plant_Berry_Leafless>
+			<Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">0.5</Plant_Witchwood>
+		</wildPlants>
+		<wildAnimals>
+			<!-- <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">0.25</Villager_Child> -->
+			<!-- <SWCPCivilian_villager>1</SWCPCivilian_villager> -->
+			<!-- <SWCPCivilian_prole>2</SWCPCivilian_prole> -->
+			<!-- <SWCPCivilian_poortraveler>0.5</SWCPCivilian_poortraveler> -->
+			<!-- <SWCPCivilian_mid>0.5</SWCPCivilian_mid> -->
+			<!-- <SWCPCivilian_bougie>0.25</SWCPCivilian_bougie> -->
+			<!-- <SWCPCivilian_exotictraveler>0.1</SWCPCivilian_exotictraveler> -->
+			<!-- <SWCPCivilian_hooded>0.25</SWCPCivilian_hooded> -->
+			<!-- <SWCPCivilian_spacer>0.25</SWCPCivilian_spacer> -->
+			<!-- <SWCPCivilian_ugnaught>0.25</SWCPCivilian_ugnaught> -->
+			<!-- <SWCPCivilian_jawa_offworld>0.25</SWCPCivilian_jawa_offworld> -->
+			
+			<Gizka MayRequire="Mlie.StarWarsAnimalCollection">1</Gizka>
+			<Cannok MayRequire="Mlie.StarWarsAnimalCollection">0.5</Cannok>
+			<GraniteSlug MayRequire="Mlie.StarWarsAnimalCollection">0.5</GraniteSlug>
+			<Hawkbat MayRequire="Mlie.StarWarsAnimalCollection">0.25</Hawkbat>
+			<Pufferpig MayRequire="Mlie.StarWarsAnimalCollection">0.05</Pufferpig>
+			<Scavrat MayRequire="Mlie.StarWarsAnimalCollection">1</Scavrat>
+			
+			<CorellianHound MayRequire="Mlie.StarWarsAnimalCollection">1</CorellianHound>
+			<SWCPCivilian_HostileThug>0.5</SWCPCivilian_HostileThug>
+			
+			<Rat>1.00</Rat>
+			<Raccoon>0.5</Raccoon>
+			<BogHound>0.5</BogHound>
+			<MonitorLizard>0.5</MonitorLizard>
+			<Crow>0.5</Crow>
+		</wildAnimals>
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
+			<Rat>1</Rat>
+			<Raccoon>0.5</Raccoon>
+			<Boomrat>0.4</Boomrat>
+			<Boomalope>0.1</Boomalope>
+			<Warg>0.05</Warg>
+			<MonitorLizard>0.5</MonitorLizard>
+		</pollutionWildAnimals>
+		<allowedPackAnimals>
+		  <li>Muffalo</li>
+		  <li>Alpaca</li>
+		  
+		  <li MayRequire="Mlie.StarWarsAnimalCollection">Bantha</li>
+		  <li MayRequire="Mlie.StarWarsAnimalCollection">Dewback</li>
+		  <li MayRequire="Mlie.StarWarsAnimalCollection">Ronto</li>
+		  <li MayRequire="Mlie.StarWarsAnimalCollection">Eopie</li>
+		</allowedPackAnimals>
+		<extraGenSteps>
+		  <li>SWCPMapGenStep_UrbanBiome_MunicipalBuildings</li>
+		  <li>SWCPMapGenStep_UrbanBiome_Dormitories</li>
+		  <!-- <li>CratersLarge</li> -->
+		  <!-- <li>CratersMedium</li> -->
+		  <!-- <li>CratersSmall</li> -->
+		  <li>ScarlandsJunkClusters</li>
+		  <li>ScarlandsJunkPrefabs</li>
+		  <li>SWCPMapGenStep_UrbanBiome_CivilianPawns</li>
+		  <li>GrasslandsElevationReduction</li>
+		</extraGenSteps>
+		
+		<!-- <modExtensions> -->
+			<!-- <li Class="BiomesKit.BiomesKitControls"> -->
+				<!-- <allowOnLand>True</allowOnLand> -->
+				<!-- <frequency>25</frequency> -->
+				<!-- <spawnOnBiomes> -->
+					<!-- <li>Scarlands</li> -->
+				<!-- </spawnOnBiomes> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+	</BiomeDef>
+	
+	
+	<GenStepDef>
+		<defName>SWCPMapGenStep_UrbanBiome_CivilianPawns</defName>
+		<order>700</order>
+		<!-- <genStep Class="GenStep_SettlementPawnsLoot"> -->
+		<genStep Class="SWCP_LevelDesignStuff.GenStep_FactionFortressPawns">
+		  <factionDef>guy762_KotORFaction_Civilians</factionDef>
+		  <!-- <lootMarketValue>5000~10000</lootMarketValue>  -->
+		  <!-- <lootThingSetMaker>guy762_RaidLootMaker_ImpRemnant</lootThingSetMaker>  -->
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<BiomeDef Name="SWCPBiome_OrdMantellJunkyard">
+		<defName>SWCPBiome_OrdMantellJunkyard</defName>
+		<label>wasteland</label>
+		<description>A massive waste dumping area, heavily polluted by millenia of trash sediment.</description>
+		<workerClass>BiomeWorker_TemperateSwamp</workerClass>
+		<!-- <workerClass>BiomeWorker_Desert</workerClass> -->
+		<settleWarning>Scarlands are inhabited by dangerous insects and rogue mechanoids. Water is toxic and scaria runs rampant among the animals.</settleWarning>
+		<texture>World/Biomes/OrdMantellJunkyard</texture>
+		
+		<allowFarmingCamps>false</allowFarmingCamps>
+		<animalDensity>0.4</animalDensity>
+		<plantDensity>0</plantDensity>
+		<wildAnimalScariaChance>0.35</wildAnimalScariaChance>
+		
+		<pollutionOffset>0.5</pollutionOffset>
+		<settlementSelectionWeight>0.25</settlementSelectionWeight>
+		<campSelectionWeight>0.2</campSelectionWeight>
+		<movementDifficulty>4</movementDifficulty>
+		
+		<lakeBeachTerrain>SWCPTerrain_junkyardgarbage_soggy</lakeBeachTerrain>
+		<mudTerrain>SWCPTerrain_junkyardgarbage_soggy</mudTerrain>
+		<riverbankTerrain>SWCPTerrain_junkyardgarbage_soggy</riverbankTerrain>
+
+		<forageability>0.125</forageability>
+		<foragedFood>MealNutrientPaste</foragedFood>
+		<wildPlantRegrowDays>20</wildPlantRegrowDays>
+		<maxFishPopulation>0</maxFishPopulation>
+		
+		<waterShallowTerrain>SWCPTerrain_OrdMantellYellowToxicWaterShallow</waterShallowTerrain>
+		<waterDeepTerrain>SWCPTerrain_OrdMantellYellowToxicWaterDeep</waterDeepTerrain>
+		<oceanShallowTerrain>SWCPTerrain_OrdMantellYellowToxicWaterOceanShallow</oceanShallowTerrain>
+		<oceanDeepTerrain>SWCPTerrain_OrdMantellYellowToxicWaterOceanDeep</oceanDeepTerrain>
+		<waterMovingShallowTerrain>SWCPTerrain_OrdMantellYellowToxicWaterMovingShallow</waterMovingShallowTerrain>
+		<waterMovingChestDeepTerrain>SWCPTerrain_OrdMantellYellowToxicWaterMovingChestDeep</waterMovingChestDeepTerrain>
+		
+		<diseaseMtbDays>30</diseaseMtbDays>
+		<diseases>
+		  <li>
+			<diseaseInc>Disease_Flu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Plague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Malaria</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_GutWorms</diseaseInc>
+			<commonality>50</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_MuscleParasites</diseaseInc>
+			<commonality>50</commonality>
+		  </li>
+
+		  <li>
+			<diseaseInc>Disease_AnimalFlu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_AnimalPlague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_OrganDecay</diseaseInc>
+			<commonality>10</commonality>
+		  </li>
+		</diseases>
+		
+		
+		
+		<gravelTerrain>SWCPTerrain_OrdMantellGravel</gravelTerrain>
+		
+		<terrainsByFertility>
+		  <li>
+			<terrain>SWCPTerrain_junkyardgarbage</terrain>
+			<min>-999</min>
+			<max>0.80</max>
+		  </li>
+		  <li>
+			<terrain>Sand</terrain>
+			<min>0.80</min>
+			<max>999</max>
+		  </li>
+		</terrainsByFertility>
+		
+		<terrainPatchMakers>
+		  <li>
+			<perlinFrequency>0.05</perlinFrequency>
+			<maxFertility>0.8</maxFertility>
+			<minSize>13</minSize>
+			<thresholds>
+			  <li>
+				<terrain>SWCPTerrain_junkyardgarbage_soggy</terrain>
+				<min>0.65</min>
+				<max>999</max>
+			  </li>
+			</thresholds>
+		  </li>
+		  <li>
+			<perlinFrequency>0.015</perlinFrequency>
+			<isPond>true</isPond>
+			<thresholds>
+			  <li>
+				<terrain>SWCPTerrain_junkyardgarbage_soggy</terrain>
+				<min>0.80</min>
+				<max>0.93</max>
+			  </li>
+			  <li>
+				<terrain>SWCPTerrain_OrdMantellYellowToxicWaterShallow</terrain>
+				<min>0.93</min>
+				<max>1.06</max>
+			  </li>
+			  <li>
+				<terrain>SWCPTerrain_OrdMantellYellowToxicWaterDeep</terrain>
+				<min>1.06</min>
+				<max>999</max>
+			  </li>
+			</thresholds>
+		  </li>
+		</terrainPatchMakers>
+		
+		<forceRockTypes>
+			<li>KOTOR_MineableJunk</li>
+		</forceRockTypes>
+		
+		
+		
+		
+		
+		<baseWeatherCommonalities>
+			<Clear>8</Clear>
+			<Fog>8</Fog>
+			<DryThunderstorm>4</DryThunderstorm>
+			<!-- <RainyThunderstorm>2</RainyThunderstorm> -->
+			<!-- <FoggyRain>2</FoggyRain> -->
+			<SnowGentle>0.5</SnowGentle>
+			<SnowHard>0.125</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<ToxRain>8</ToxRain>
+			<Overcast>4</Overcast>
+		</baseWeatherCommonalities>
+		
+		<!-- <wildPlants> -->
+		  <!-- <Plant_Grass>6</Plant_Grass> -->
+		  <!-- <Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass> -->
+		  <!-- <Plant_PincushionCactus>1</Plant_PincushionCactus> -->
+		  <!-- <Plant_SaguaroCactus>1.0</Plant_SaguaroCactus> -->
+		  <!-- <Plant_Dandelion>0.5</Plant_Dandelion> -->
+		  <!-- <Plant_TreeDrago>0.45</Plant_TreeDrago> -->
+		  <!-- <Plant_Agave>0.25</Plant_Agave> -->
+		  <!-- <Plant_Bush>0.25</Plant_Bush> -->
+		  <!-- <Plant_PebbleCactus MayRequire="Ludeon.RimWorld.Biotech">1</Plant_PebbleCactus> -->
+		  <!-- <Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds> -->
+		<!-- </wildPlants> -->
+		
+		<wildAnimals>
+			<Scavrat MayRequire="Mlie.StarWarsAnimalCollection">1</Scavrat>
+			<CorellianHound MayRequire="Mlie.StarWarsAnimalCollection">1</CorellianHound>
+			
+			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
+			<Rat>1</Rat>
+			<Raccoon>0.5</Raccoon>
+			<Boomrat>0.4</Boomrat>
+			<Boomalope>0.1</Boomalope>
+			<Warg>0.05</Warg>
+			<MonitorLizard>0.5</MonitorLizard>
+		</wildAnimals>
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+			<Scavrat MayRequire="Mlie.StarWarsAnimalCollection">1</Scavrat>
+			<CorellianHound MayRequire="Mlie.StarWarsAnimalCollection">1</CorellianHound>
+
+			<Iguana>1</Iguana>
+			<Megascarab>1</Megascarab>
+			
+			<Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.4</Toxalope>
+			<WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
+			<Rat>1</Rat>
+			<Raccoon>0.5</Raccoon>
+			<Boomrat>0.4</Boomrat>
+			<Boomalope>0.1</Boomalope>
+			<Warg>0.05</Warg>
+			<MonitorLizard>0.5</MonitorLizard>
+		</pollutionWildAnimals>
+		<coastalWildAnimals>
+		  <HermitCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</HermitCrab>
+		  <StoneCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</StoneCrab>
+		</coastalWildAnimals>
+		
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Dromedary</li>
+
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Bantha</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Dewback</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Ronto</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Eopie</li>
+		</allowedPackAnimals>
+		
+		<preventGenSteps>
+			<li>ScatterRuinsSimple</li>
+			<li>ScatterShrines</li>
+			<!-- <li>AncientUtilityBuilding</li> -->
+		</preventGenSteps>
+		<extraGenSteps>
+		  <!-- <li>AncientRuins_Scarlands</li> -->
+		  <!-- <li>CratersLarge</li> -->
+		  <!-- <li>CratersMedium</li> -->
+		  <!-- <li>CratersSmall</li> -->
+		  <!-- <li>ScarlandsJunkClusters</li> -->
+		  <li>SWCP_ScarlandsJunkPrefabs_NoRoads</li>
+		  
+		  <!-- <li>KOTOR_JunkPileClusters</li> -->
+		  <!-- <li>RocksFromGrid_NoMinerals</li> -->
+		  <li>SWCP_MegaJunkyardClusters</li>
+		  <!-- <li MayRequire="SWCP.GCWVehicles">SWVehicles_ShipWreckage</li> -->
+		  <!-- <li MayRequire="SWCP.GCWVehicles">SWVehicles_MoreShipWreckage</li> -->
+		  <!-- <li MayRequire="SWCP.GCWVehicles">SWVehicles_EvenMoreShipWreckage</li> -->
+		</extraGenSteps>
+	</BiomeDef>
+	
+	
+	
+	
+	
+	
+	
+	
+  
+  
+	<BiomeDef ParentName="SWCPBiome_OrdMantellJunkyard">
+		<defName>SWCPBiome_OrdMantellJunkSwamp</defName>
+		<label>soggy wasteland</label>
+		<description>A densely-clustered waste dumping region filled with mountains of trash sediment and seas of industrial wastewater. Only the hardiest scavenging fauna are able to survive these disgusting mires. Attempting to traverse these regions without proper protective equipment is certain suicide.</description>
+		<workerClass>BiomeWorker_TropicalSwamp</workerClass>
+		<settleWarning>Scarlands are inhabited by dangerous insects and rogue mechanoids. Water is toxic and scaria runs rampant among the animals.</settleWarning>
+		<texture>World/Biomes/OrdMantellJunkSwamp</texture>
+		
+		<animalDensity>0.4</animalDensity>
+		<wildAnimalScariaChance>0.75</wildAnimalScariaChance>
+		
+		<pollutionOffset>0.85</pollutionOffset>
+		<settlementSelectionWeight>0</settlementSelectionWeight>
+		<campSelectionWeight>0</campSelectionWeight>
+		<movementDifficulty>8</movementDifficulty>
+
+		<forageability>0.125</forageability>
+		<foragedFood>MealNutrientPaste</foragedFood>
+		<wildPlantRegrowDays>20</wildPlantRegrowDays>
+		
+		<waterShallowTerrain>SWCPTerrain_OrdMantellYellowToxicWaterShallow</waterShallowTerrain>
+		<waterDeepTerrain>SWCPTerrain_OrdMantellYellowToxicWaterDeep</waterDeepTerrain>
+		<oceanShallowTerrain>SWCPTerrain_OrdMantellYellowToxicWaterOceanShallow</oceanShallowTerrain>
+		<oceanDeepTerrain>SWCPTerrain_OrdMantellYellowToxicWaterOceanDeep</oceanDeepTerrain>
+		<waterMovingShallowTerrain>SWCPTerrain_OrdMantellYellowToxicWaterMovingShallow</waterMovingShallowTerrain>
+		<waterMovingChestDeepTerrain>SWCPTerrain_OrdMantellYellowToxicWaterMovingChestDeep</waterMovingChestDeepTerrain>
+		
+		<maxFishPopulation>200</maxFishPopulation>
+		<fishTypes>
+		  <freshwater_Common>
+			<Fish_Bass>1</Fish_Bass>
+		  </freshwater_Common>
+		  <freshwater_Uncommon>
+			<Fish_Catfish>1</Fish_Catfish>
+		  </freshwater_Uncommon>
+		  <saltwater_Common>
+			<Fish_Bluefish>1</Fish_Bluefish>
+		  </saltwater_Common>
+		  <saltwater_Uncommon>
+			<Fish_Marlin>1</Fish_Marlin>
+			<Fish_Flounder>1</Fish_Flounder>
+		  </saltwater_Uncommon>
+		  <rareCatchesSetMaker>RareFishingCatches_Glowforest</rareCatchesSetMaker>
+		</fishTypes>
+		
+		<diseaseMtbDays>20</diseaseMtbDays>
+		
+		<gravelTerrain>SWCPTerrain_junkyardgarbage_soggy</gravelTerrain>
+		
+		<terrainsByFertility Inherit="False">
+		  <li>
+			<terrain>SWCPTerrain_OrdMantellYellowToxicWaterShallow</terrain>
+			<min>-999</min>
+			<max>0.80</max>
+		  </li>
+		  <li>
+			<terrain>SWCPTerrain_OrdMantellYellowToxicWaterDeep</terrain>
+			<min>0.80</min>
+			<max>999</max>
+		  </li>
+		</terrainsByFertility>
+		
+		<terrainPatchMakers Inherit="False">
+		  <li>
+			<perlinFrequency>0.05</perlinFrequency>
+			<maxFertility>0.8</maxFertility>
+			<minSize>13</minSize>
+			<thresholds>
+			  <li>
+				<terrain>SWCPTerrain_junkyardgarbage_soggy</terrain>
+				<min>0.65</min>
+				<max>999</max>
+			  </li>
+			</thresholds>
+		  </li>
+		  <li>
+			<perlinFrequency>0.015</perlinFrequency>
+			<isPond>true</isPond>
+			<thresholds>
+			  <li>
+				<terrain>SWCPTerrain_junkyardgarbage_soggy</terrain>
+				<min>0.80</min>
+				<max>0.93</max>
+			  </li>
+			  <li>
+				<terrain>SWCPTerrain_junkyardgarbage</terrain>
+				<min>0.93</min>
+				<max>999</max>
+			  </li>
+			</thresholds>
+		  </li>
+		</terrainPatchMakers>	
+		
+		<baseWeatherCommonalities Inherit="False">
+			<Clear>8</Clear>
+			<Fog>8</Fog>
+			<DryThunderstorm>4</DryThunderstorm>
+			<!-- <RainyThunderstorm>2</RainyThunderstorm> -->
+			<!-- <FoggyRain>2</FoggyRain> -->
+			<SnowGentle>0.5</SnowGentle>
+			<SnowHard>0.125</SnowHard>
+			<GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+			<ToxRain>8</ToxRain>
+			<Overcast>4</Overcast>
+		</baseWeatherCommonalities>
+		
+		<wildAnimals Inherit="False">
+			<Dianoga MayRequire="Mlie.StarWarsAnimalCollection">1</Dianoga>
+			
+			<MonitorLizard>0.5</MonitorLizard>
+		</wildAnimals>
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech" Inherit="False">
+			<Dianoga MayRequire="Mlie.StarWarsAnimalCollection">1</Dianoga>
+
+			<Iguana>1</Iguana>
+			<Megascarab>1</Megascarab>
+			<MonitorLizard>0.5</MonitorLizard>
+		</pollutionWildAnimals>
+		
+		<extraGenSteps Inherit="False">
+		  <li>SWCP_ScarlandsJunkPrefabs_NoRoads</li>
+		  <li>SWCP_MegaJunkSwampClusters</li>
+		</extraGenSteps>
+	</BiomeDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<BiomeDef>
+		<defName>SWCPBiome_OrdMantellScrubland</defName>
+		<label>Mantellan scrubland</label>
+		<description>A dry region, but not dry enough to become a true desert. Open plains with grasses and bushes give way to scattered groves of trees. Plants are hardy and there is a moderate density of animals, but arable soil is hard to find.</description>
+		<workerClass>BiomeWorker_AridShrubland</workerClass>
+		<texture>World/Biomes/OrdMantellScrubland</texture>
+		
+		<allowFarmingCamps>false</allowFarmingCamps>
+		<animalDensity>1.8</animalDensity>
+		<plantDensity>0.24</plantDensity>
+		<settlementSelectionWeight>0.7</settlementSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		
+		<!-- <gravelTerrain>SWCPTerrain_OrdMantellGravel</gravelTerrain> -->
+		<lakeBeachTerrain>Sand</lakeBeachTerrain>
+		<riverbankTerrain>Riverbank</riverbankTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		
+		<forageability>0.5</forageability>
+		<foragedFood>RawAgave</foragedFood>
+		
+		<wildPlantRegrowDays>27</wildPlantRegrowDays>
+		<maxFishPopulation>480</maxFishPopulation>
+		<fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
+		  <freshwater_Common>
+			<Fish_Tilapia MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tilapia>
+		  </freshwater_Common>
+		  <freshwater_Uncommon>
+			<Fish_Catfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Catfish>
+		  </freshwater_Uncommon>
+		  <saltwater_Common>
+			<Fish_Bluefish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Bluefish>
+		  </saltwater_Common>
+		  <saltwater_Uncommon>
+			<Fish_Tuna MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tuna>
+		  </saltwater_Uncommon>
+		  <rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Hot</rareCatchesSetMaker>
+		</fishTypes>
+		
+		<soundsAmbient>
+		  <li>Ambient_NightInsects_Standard</li>
+		</soundsAmbient>
+		
+		
+		<diseaseMtbDays>65</diseaseMtbDays>
+		<diseases>
+		  <li>
+			<diseaseInc>Disease_Flu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Plague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_GutWorms</diseaseInc>
+			<commonality>60</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_MuscleParasites</diseaseInc>
+			<commonality>60</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+
+		  <li>
+			<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_AnimalFlu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_AnimalPlague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_OrganDecay</diseaseInc>
+			<commonality>10</commonality>
+		  </li>
+		</diseases>
+		<terrainsByFertility>
+		  <li>
+			<terrain>Sand</terrain>
+			<min>-999</min>
+			<max>0.45</max>
+		  </li>
+		  <li>
+			<terrain>GrasslandSoil</terrain>
+			<min>0.45</min>
+			<max>0.90</max>
+		  </li>
+		  <li>
+			<terrain>SoilRich</terrain>
+			<min>0.90</min>
+			<max>999</max>
+		  </li>
+		</terrainsByFertility>
+		
+		<forceRockTypes>
+			<li>Sandstone</li>
+			<li>SWCPStone_OrdMantellGranite</li>
+			<!-- <li>SWCPStone_OrdMantellSlate</li> -->
+		</forceRockTypes>
+		
+		
+		<baseWeatherCommonalities>
+		  <Clear>18</Clear>
+		  <Fog>1</Fog>
+		  <Rain>2</Rain>
+		  <DryThunderstorm>1</DryThunderstorm>
+		  <RainyThunderstorm>1</RainyThunderstorm>
+		  <FoggyRain>0.5</FoggyRain>
+		  <SnowGentle>4</SnowGentle>
+		  <SnowHard>4</SnowHard>
+		  <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+		  <Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
+		</baseWeatherCommonalities>
+		
+		
+		<wildPlants>
+			<Plant_YellowGrass>7.0</Plant_YellowGrass>
+			<Plant_YellowTallGrass>7.0</Plant_YellowTallGrass>
+			<SWCPPlant_OrdMantellTreeDrago>0.20</SWCPPlant_OrdMantellTreeDrago>
+			
+			<Plant_Thornvine>8.0</Plant_Thornvine>
+			<Plant_Brambles_Leafless>1.0</Plant_Brambles_Leafless>
+			<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.6</Plant_Ripthorn>
+			<Plant_Dandelion>0.8</Plant_Dandelion>
+			<Plant_Bush_Leafless>0.7</Plant_Bush_Leafless>
+			<Plant_TreeSnagroot>0.4</Plant_TreeSnagroot>
+			<Plant_Berry_Leafless>0.10</Plant_Berry_Leafless>
+			<Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">0.26</Plant_Witchwood>
+			<Plant_Agave>0.2</Plant_Agave>
+			<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
+		</wildPlants>
+		<wildAnimals>
+		  <Donkey>0.2</Donkey>
+		  <GuineaPig>0.017</GuineaPig>
+		  <Horse>0.1</Horse>
+		  <Bison>0.1</Bison>
+		  <Rat>1.3</Rat>
+		  <Hare>1.3</Hare>
+		  <Iguana>0.7</Iguana>
+		  <Gazelle>0.7</Gazelle>
+		  <Ostrich>0.7</Ostrich>
+		  <Emu>0.7</Emu>
+		  <Dromedary>0.7</Dromedary>
+		  <Boomrat>0.5</Boomrat>
+		  <Elephant>0.5</Elephant>
+		  <Rhinoceros>0.5</Rhinoceros>
+		  <Boomalope>0.5</Boomalope>
+		  <Cougar>0.15</Cougar>
+		  <Fox_Fennec>0.15</Fox_Fennec>
+		  <Megasloth>0.1</Megasloth>
+		  <MonitorLizard MayRequire="Ludeon.RimWorld.Odyssey">0.5</MonitorLizard>
+		  <Flamingo MayRequire="Ludeon.RimWorld.Odyssey">0.5</Flamingo>
+		  <Sparrow MayRequire="Ludeon.RimWorld.Odyssey">0.5</Sparrow>
+		  <Quail MayRequire="Ludeon.RimWorld.Odyssey">0.5</Quail>
+		  <Vulture MayRequire="Ludeon.RimWorld.Odyssey">0.5</Vulture>
+		  <Hippo MayRequire="Ludeon.RimWorld.Odyssey">0.25</Hippo>
+		  <Armadillo MayRequire="Ludeon.RimWorld.Odyssey">0.2</Armadillo>
+		</wildAnimals>
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+		  <Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.1</Toxalope>
+		  <WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
+		  <Iguana>1</Iguana>
+		  <Rat>0.6</Rat>
+		  <Boomalope>0.4</Boomalope>
+		  <Boomrat>0.4</Boomrat>
+		  <Megascarab>0.2</Megascarab>
+		</pollutionWildAnimals>
+		<coastalWildAnimals>
+		  <HermitCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</HermitCrab>
+		  <StoneCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</StoneCrab>
+		  <SeaTurtle MayRequire="Ludeon.RimWorld.Odyssey">0.1</SeaTurtle>
+		</coastalWildAnimals>
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Dromedary</li>
+			<li>Elephant</li>
+			<li>Alpaca</li>
+
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Bantha</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Dewback</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Ronto</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Eopie</li>
+		</allowedPackAnimals>
+	</BiomeDef>
+
+</Defs>

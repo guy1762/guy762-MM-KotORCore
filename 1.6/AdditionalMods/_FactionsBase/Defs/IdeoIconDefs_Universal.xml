@@ -34,7 +34,7 @@
 		<defName>guy762_IdeoIcon_huttsA</defName>
 		<iconPath>World/HuttClans</iconPath>
 		<memes>
-		  <li>guy762_MemeDef_hutt</li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">guy762_MemeDef_hutt</li>
 		</memes>
 	</IdeoIconDef>
 	
@@ -42,7 +42,7 @@
 		<defName>guy762_IdeoIcon_huttsB</defName>
 		<iconPath>World/ViciousHutts</iconPath>
 		<memes>
-		  <li>guy762_MemeDef_hutt</li>
+		  <li MayRequire="Ludeon.RimWorld.Ideology">guy762_MemeDef_hutt</li>
 		</memes>
 	</IdeoIconDef>
 	

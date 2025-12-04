@@ -1423,11 +1423,11 @@
 		</apparelTags>
 		<apparelRequired>
 		   <li MayRequire="lumi.slaveoutfit">Apparel_SlaveBikini_Old</li>	
-		   <li>Apparel_Collar</li>
+		   <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Collar</li>
 		</apparelRequired>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<specificApparelRequirements>
-			<li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<apparelLayer>Overhead</apparelLayer>
 				<stuff>Gold</stuff>
 			</li>
@@ -1472,17 +1472,17 @@
 			<li>SWCPSpecificApparelItem_RusticClothing</li>
 		</apparelTags>
 		<apparelRequired>
-		   <li>Apparel_BodyStrap</li>	
-		   <li>Apparel_Collar</li>
+		   <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_BodyStrap</li>	
+		   <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Collar</li>
 		   <li>guy762_Clothing_scumII</li>
 		</apparelRequired>
 		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
 		<specificApparelRequirements>
-			<li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<apparelLayer>Shell</apparelLayer>
 				<stuff>Leather_Plain</stuff>
 			</li>
-			<li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<apparelLayer>Overhead</apparelLayer>
 				<stuff>Steel</stuff>
 			</li>
@@ -1510,16 +1510,16 @@
 		  </xenotypeChances>
 		</xenotypeSet>
 		<apparelRequired Inherit="False">
-		   <li>Apparel_BodyStrap</li>	
-		   <li>Apparel_Collar</li>
+		   <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_BodyStrap</li>	
+		   <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Collar</li>
 		</apparelRequired>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<specificApparelRequirements Inherit="False">
-			<li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<apparelLayer>Shell</apparelLayer>
 				<stuff>KOTOR_FabricArmorweave</stuff>
 			</li>
-			<li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">
 				<apparelLayer>Overhead</apparelLayer>
 				<stuff>KOTOR_AlloyDurasteel</stuff>
 			</li>

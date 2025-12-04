@@ -1,0 +1,681 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<GenStepDef Name="SWCP_MegaJunkyardClusters">
+		<defName>SWCP_MegaJunkyardClusters</defName>
+		<order>1100</order>
+		<!-- <order>301</order> -->
+		<preventsGenSteps>
+			<!-- <li>KOTOR_JunkPileClusters</li> -->
+			<li MayRequire="SWCP.GCWVehicles">SWVehicles_ShipWreckage</li>
+		</preventsGenSteps>
+		<genStep Class="GenStep_ScatterGroup">
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>5</minSpacing>
+			<countPer10kCellsRange>6~9</countPer10kCellsRange> <!-- density of chunks on map -->
+			<!-- <countPer10kCellsRange>5.0~10.0</countPer10kCellsRange> -->
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowRoofed>false</allowRoofed>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>5</radius>
+					<affordance>Heavy</affordance>
+					<!-- <affordance>Bridgeable</affordance> -->
+				</li>
+			</validators>
+			<groups>
+				<li>
+				  <things>
+					<KOTOR_MineableJunk>1</KOTOR_MineableJunk>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>2~3</coveredCellsPer10Cells>
+				  <!-- <coveredCellsPer10Cells>13~14</coveredCellsPer10Cells> -->
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <!-- <clusterRectRadius>4~5</clusterRectRadius> -->
+				  <clusterRectRadius>14~15</clusterRectRadius>
+				</li>
+				<li>
+				  <things>
+					<KOTOR_MineableJunk>0.35</KOTOR_MineableJunk>
+					<KOTOR_MineableDurasteel>0.1</KOTOR_MineableDurasteel>
+					<MineableComponentsIndustrial>0.05</MineableComponentsIndustrial>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells> <!-- controls amount of stuff spawned within the square -->
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <!-- <clusterRectRadius>6~8</clusterRectRadius> -->
+				  <clusterRectRadius>16~18</clusterRectRadius>
+				</li>
+				
+				
+				<li MayRequire="SWCP.GCWVehicles">
+				  <things>
+					<KOTOR_MineableJunk>0.35</KOTOR_MineableJunk>
+					<KOTOR_MineableDurasteel>0.1</KOTOR_MineableDurasteel>
+					<MineableComponentsIndustrial>0.05</MineableComponentsIndustrial>
+					
+					<guy762_ShipChunk_ATST>0.025</guy762_ShipChunk_ATST>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>3~4</coveredCellsPer10Cells>
+				  <!-- <coveredCellsPer10Cells>24~25</coveredCellsPer10Cells> -->
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <!-- <clusterRectRadius>6~8</clusterRectRadius> -->
+				  <clusterRectRadius>16~18</clusterRectRadius>
+				</li>
+				<li MayRequire="SWCP.GCWVehicles">
+				  <things>
+					<KOTOR_MineableJunk>0.35</KOTOR_MineableJunk>
+					<KOTOR_MineableDurasteel>0.1</KOTOR_MineableDurasteel>
+					<MineableComponentsIndustrial>0.05</MineableComponentsIndustrial>
+					
+					<guy762_ShipChunk_TIEInterceptor>0.025</guy762_ShipChunk_TIEInterceptor>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>3~4</coveredCellsPer10Cells>
+				  <!-- <coveredCellsPer10Cells>24~25</coveredCellsPer10Cells> -->
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <!-- <clusterRectRadius>6~8</clusterRectRadius> -->
+				  <clusterRectRadius>16~18</clusterRectRadius>
+				</li>
+				<li MayRequire="SWCP.GCWVehicles">
+				  <things>
+					<KOTOR_MineableJunk>0.35</KOTOR_MineableJunk>
+					<KOTOR_MineableDurasteel>0.1</KOTOR_MineableDurasteel>
+					<MineableComponentsIndustrial>0.025</MineableComponentsIndustrial>
+					
+					<guy762_ShipChunk_z95a>0.025</guy762_ShipChunk_z95a>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>3~4</coveredCellsPer10Cells>
+				  <!-- <coveredCellsPer10Cells>24~25</coveredCellsPer10Cells> -->
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <!-- <clusterRectRadius>6~8</clusterRectRadius> -->
+				  <clusterRectRadius>16~18</clusterRectRadius>
+				</li>
+				<li MayRequire="SWCP.GCWVehicles">
+				  <things>
+					<KOTOR_MineableJunk>0.35</KOTOR_MineableJunk>
+					<KOTOR_MineableDurasteel>0.1</KOTOR_MineableDurasteel>
+					<MineableComponentsIndustrial>0.025</MineableComponentsIndustrial>
+					
+					<guy762_ShipChunk_YWing>0.025</guy762_ShipChunk_YWing>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>3~4</coveredCellsPer10Cells>
+				  <!-- <coveredCellsPer10Cells>24~25</coveredCellsPer10Cells> -->
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <!-- <clusterRectRadius>6~8</clusterRectRadius> -->
+				  <clusterRectRadius>16~18</clusterRectRadius>
+				</li>
+				
+				
+				
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					<KOTOR_MineableDurasteel>0.1</KOTOR_MineableDurasteel>
+					<MineableComponentsIndustrial>0.025</MineableComponentsIndustrial>
+					
+					<AncientTankTrap>0.3</AncientTankTrap>
+					<AncientAPC>0.3</AncientAPC>
+					<AncientWarwalkerClaw>0.3</AncientWarwalkerClaw>
+					<AncientWarwalkerLeg>0.3</AncientWarwalkerLeg>
+					<AncientWarwalkerFoot>0.3</AncientWarwalkerFoot>
+					<AncientLargeRustedEngineBlock>0.3</AncientLargeRustedEngineBlock>
+					<AncientTank>0.2</AncientTank>
+					<AncientWarwalkerTorso>0.2</AncientWarwalkerTorso>
+					<AncientWarspiderRemains>0.2</AncientWarspiderRemains>
+					<AncientWarwalkerShell>0.2</AncientWarwalkerShell>
+					<AncientMiniWarwalkerRemains>0.2</AncientMiniWarwalkerRemains>
+					<AncientRustedJeep>0.2</AncientRustedJeep>
+					<AncientJetEngine>0.2</AncientJetEngine>
+					<AncientDropshipEngine>0.2</AncientDropshipEngine>
+					<AncientRustedDropship>0.2</AncientRustedDropship>
+					<AncientMilitaryCrate>0.1</AncientMilitaryCrate>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>3~4</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>16~18</clusterRectRadius>
+				</li>
+				
+				
+				
+				
+				
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					
+					<AncientWheel>0.1</AncientWheel>
+					<AncientSmallCrate>0.0833</AncientSmallCrate>
+					<AncientLargeCrate>0.0833</AncientLargeCrate>
+					<AncientLongCrate>0.0833</AncientLongCrate>
+					<AncientMilitaryCrate>0.0833</AncientMilitaryCrate>
+					<AncientSpacerCrate>0.0833</AncientSpacerCrate>
+					<AncientCrate>0.0833</AncientCrate>
+					<AncientBarrel>0.2</AncientBarrel>
+					<AncientStorageCylinder>0.2</AncientStorageCylinder>
+					<AncientLargeContainer>0.1</AncientLargeContainer>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>8~10</clusterRectRadius>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					
+					<AncientShoppingCart>0.5</AncientShoppingCart>
+					<AncientSmallCrate>0.0166</AncientSmallCrate>
+					<AncientLargeCrate>0.0166</AncientLargeCrate>
+					<AncientLongCrate>0.0166</AncientLongCrate>
+					<AncientMilitaryCrate>0.0166</AncientMilitaryCrate>
+					<AncientSpacerCrate>0.0166</AncientSpacerCrate>
+					<AncientCrate>0.0166</AncientCrate>
+					<AncientVendingMachine>0.1</AncientVendingMachine>
+					<AncientATM>0.1</AncientATM>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>8~10</clusterRectRadius>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					
+					<AncientSmallCrate>0.0221</AncientSmallCrate>
+					<AncientLargeCrate>0.0221</AncientLargeCrate>
+					<AncientLongCrate>0.0221</AncientLongCrate>
+					<AncientCrate>0.0221</AncientCrate>
+					<AncientMilitaryCrate>0.0221</AncientMilitaryCrate>
+					<AncientSpacerCrate>0.0221</AncientSpacerCrate>
+					<AncientRefrigerator>0.1</AncientRefrigerator>
+					<AncientStove>0.1</AncientStove>
+					<AncientOven>0.1</AncientOven>
+					<AncientKitchenSink>0.1</AncientKitchenSink>
+					<AncientWashingMachine>0.1</AncientWashingMachine>
+					<AncientAirConditioner>0.2</AncientAirConditioner>
+					<AncientPostbox>0.1</AncientPostbox>
+					<AncientLamp>0.25</AncientLamp>
+					<AncientBed>0.25</AncientBed>
+					<AncientLockerBank>0.25</AncientLockerBank>
+					<AncientMicrowave>0.1</AncientMicrowave>
+					<AncientToilet>0.1</AncientToilet>
+					<AncientPipes>0.1</AncientPipes>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>8~10</clusterRectRadius>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					
+					<AncientWheel>0.5</AncientWheel>
+					<AncientGiantWheel>1</AncientGiantWheel>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>8~10</clusterRectRadius>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					
+					<AncientOperatingTable>0.3</AncientOperatingTable>
+					<AncientAirConditioner>0.1</AncientAirConditioner>
+					<AncientKitchenSink>0.2</AncientKitchenSink>
+					<AncientRefrigerator>0.3</AncientRefrigerator>
+					<AncientSmallCrate>0.2</AncientSmallCrate>
+					<AncientPipes>0.1</AncientPipes>
+					<AncientToilet>0.1</AncientToilet>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>8~10</clusterRectRadius>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					
+					<AncientStorageCylinder>0.3</AncientStorageCylinder>
+					<AncientBarrel>0.3</AncientBarrel>
+					<AncientGenerator>0.2</AncientGenerator>
+					<AncientSmallCrate>0.1</AncientSmallCrate>
+					<AncientLargeContainer>0.15</AncientLargeContainer>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>8~10</clusterRectRadius>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					
+					<AncientMegaCannonBarrel>0.3</AncientMegaCannonBarrel>
+					<AncientMegaCannonTripod>0.1</AncientMegaCannonTripod>
+					<AncientSmallCrate>0.3</AncientSmallCrate>
+					<AncientSecurityTurret>0.3</AncientSecurityTurret>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>8~10</clusterRectRadius>
+				</li>
+			</groups>
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+	
+	
+	
+	
+	<GenStepDef>
+		<order>950</order>
+		<defName>SWCP_ScarlandsJunkPrefabs_NoRoads</defName>
+		<genStep Class="GenStep_ScatterGroupPrefabs">
+		  <allowInWaterBiome>false</allowInWaterBiome>
+		  <isJunk>true</isJunk>
+		  <minSpacing>85</minSpacing>
+		  <countPer10kCellsRange>0.4~0.6</countPer10kCellsRange>
+		  <spotMustBeStandable>true</spotMustBeStandable>
+		  <allowRoofed>false</allowRoofed>
+		  <groups>
+			<Exterior_AncientContainerForklift>
+			  <weight>1.0</weight>
+			  <indoorRuin>false</indoorRuin>
+			  <filthDef>Filth_MachineBits</filthDef>
+			  <filthExpandBy>1</filthExpandBy>
+			  <filthChance>0.4</filthChance>
+			  <max>1</max>
+			</Exterior_AncientContainerForklift>
+			<Exterior_CrashedCrane>
+			  <weight>0.5</weight>
+			  <indoorRuin>false</indoorRuin>
+			  <filthDef>Filth_MachineBits</filthDef>
+			  <filthExpandBy>1</filthExpandBy>
+			  <filthChance>0.4</filthChance>
+			  <max>1</max>
+			</Exterior_CrashedCrane>
+			<Exterior_FourSmallBuildings>
+			  <weight>0.5</weight>
+			  <indoorRuin>false</indoorRuin>
+			  <filthDef>Filth_MachineBits</filthDef>
+			  <filthExpandBy>1</filthExpandBy>
+			  <filthChance>0.4</filthChance>
+			  <max>3</max>
+			</Exterior_FourSmallBuildings>
+			<Exterior_MilitaryBlockade>
+			  <weight>1.0</weight>
+			  <indoorRuin>false</indoorRuin>
+			  <filthDef>Filth_MachineBits</filthDef>
+			  <filthExpandBy>1</filthExpandBy>
+			  <filthChance>0.4</filthChance>
+			  <max>4</max>
+			</Exterior_MilitaryBlockade>
+			<Exterior_ContainerSite>
+			  <weight>1.0</weight>
+			  <indoorRuin>false</indoorRuin>
+			  <filthDef>Filth_MachineBits</filthDef>
+			  <filthExpandBy>1</filthExpandBy>
+			  <filthChance>0.4</filthChance>
+			  <max>1</max>
+			</Exterior_ContainerSite>
+		  </groups>
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+  
+  
+	
+	<GenStepDef Name="SWCP_MegaJunkSwampClusters">
+		<defName>SWCP_MegaJunkSwampClusters</defName>
+		<order>1100</order>
+		<!-- <order>301</order> -->
+		<preventsGenSteps>
+			<!-- <li>KOTOR_JunkPileClusters</li> -->
+			<li MayRequire="SWCP.GCWVehicles">SWVehicles_ShipWreckage</li>
+		</preventsGenSteps>
+		<genStep Class="GenStep_ScatterGroup">
+			<allowInWaterBiome>false</allowInWaterBiome>
+			<minSpacing>5</minSpacing>
+			<countPer10kCellsRange>7~12</countPer10kCellsRange> <!-- density of chunks on map -->
+			<!-- <countPer10kCellsRange>5.0~10.0</countPer10kCellsRange> -->
+			<spotMustBeStandable>true</spotMustBeStandable>
+			<allowRoofed>false</allowRoofed>
+			<validators>
+				<li Class="ScattererValidator_Buildable">
+					<radius>5</radius>
+					<!-- <affordance>Heavy</affordance> -->
+					<affordance>Bridgeable</affordance>
+				</li>
+			</validators>
+			<groups>
+				<li>
+				  <things>
+					<KOTOR_MineableJunk>1</KOTOR_MineableJunk>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>2~3</coveredCellsPer10Cells>
+				  <!-- <coveredCellsPer10Cells>13~14</coveredCellsPer10Cells> -->
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <!-- <clusterRectRadius>4~5</clusterRectRadius> -->
+				  <clusterRectRadius>14~15</clusterRectRadius>
+				</li>
+				<li>
+				  <things>
+					<KOTOR_MineableJunk>0.35</KOTOR_MineableJunk>
+					<KOTOR_MineableDurasteel>0.1</KOTOR_MineableDurasteel>
+					<MineableComponentsIndustrial>0.05</MineableComponentsIndustrial>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells> <!-- controls amount of stuff spawned within the square -->
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <!-- <clusterRectRadius>6~8</clusterRectRadius> -->
+				  <clusterRectRadius>16~18</clusterRectRadius>
+				</li>
+				
+				
+				<li MayRequire="SWCP.GCWVehicles">
+				  <things>
+					<KOTOR_MineableJunk>0.35</KOTOR_MineableJunk>
+					<KOTOR_MineableDurasteel>0.1</KOTOR_MineableDurasteel>
+					<MineableComponentsIndustrial>0.05</MineableComponentsIndustrial>
+					
+					<guy762_ShipChunk_ATST>0.025</guy762_ShipChunk_ATST>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>3~4</coveredCellsPer10Cells>
+				  <!-- <coveredCellsPer10Cells>24~25</coveredCellsPer10Cells> -->
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <!-- <clusterRectRadius>6~8</clusterRectRadius> -->
+				  <clusterRectRadius>16~18</clusterRectRadius>
+				</li>
+				<li MayRequire="SWCP.GCWVehicles">
+				  <things>
+					<KOTOR_MineableJunk>0.35</KOTOR_MineableJunk>
+					<KOTOR_MineableDurasteel>0.1</KOTOR_MineableDurasteel>
+					<MineableComponentsIndustrial>0.05</MineableComponentsIndustrial>
+					
+					<guy762_ShipChunk_TIEInterceptor>0.025</guy762_ShipChunk_TIEInterceptor>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>3~4</coveredCellsPer10Cells>
+				  <!-- <coveredCellsPer10Cells>24~25</coveredCellsPer10Cells> -->
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <!-- <clusterRectRadius>6~8</clusterRectRadius> -->
+				  <clusterRectRadius>16~18</clusterRectRadius>
+				</li>
+				<li MayRequire="SWCP.GCWVehicles">
+				  <things>
+					<KOTOR_MineableJunk>0.35</KOTOR_MineableJunk>
+					<KOTOR_MineableDurasteel>0.1</KOTOR_MineableDurasteel>
+					<MineableComponentsIndustrial>0.025</MineableComponentsIndustrial>
+					
+					<guy762_ShipChunk_z95a>0.025</guy762_ShipChunk_z95a>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>3~4</coveredCellsPer10Cells>
+				  <!-- <coveredCellsPer10Cells>24~25</coveredCellsPer10Cells> -->
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <!-- <clusterRectRadius>6~8</clusterRectRadius> -->
+				  <clusterRectRadius>16~18</clusterRectRadius>
+				</li>
+				<li MayRequire="SWCP.GCWVehicles">
+				  <things>
+					<KOTOR_MineableJunk>0.35</KOTOR_MineableJunk>
+					<KOTOR_MineableDurasteel>0.1</KOTOR_MineableDurasteel>
+					<MineableComponentsIndustrial>0.025</MineableComponentsIndustrial>
+					
+					<guy762_ShipChunk_YWing>0.025</guy762_ShipChunk_YWing>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>3~4</coveredCellsPer10Cells>
+				  <!-- <coveredCellsPer10Cells>24~25</coveredCellsPer10Cells> -->
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <!-- <clusterRectRadius>6~8</clusterRectRadius> -->
+				  <clusterRectRadius>16~18</clusterRectRadius>
+				</li>
+				
+				
+				
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					<KOTOR_MineableDurasteel>0.1</KOTOR_MineableDurasteel>
+					<MineableComponentsIndustrial>0.025</MineableComponentsIndustrial>
+					
+					<AncientTankTrap>0.3</AncientTankTrap>
+					<AncientAPC>0.3</AncientAPC>
+					<AncientWarwalkerClaw>0.3</AncientWarwalkerClaw>
+					<AncientWarwalkerLeg>0.3</AncientWarwalkerLeg>
+					<AncientWarwalkerFoot>0.3</AncientWarwalkerFoot>
+					<AncientLargeRustedEngineBlock>0.3</AncientLargeRustedEngineBlock>
+					<AncientTank>0.2</AncientTank>
+					<AncientWarwalkerTorso>0.2</AncientWarwalkerTorso>
+					<AncientWarspiderRemains>0.2</AncientWarspiderRemains>
+					<AncientWarwalkerShell>0.2</AncientWarwalkerShell>
+					<AncientMiniWarwalkerRemains>0.2</AncientMiniWarwalkerRemains>
+					<AncientRustedJeep>0.2</AncientRustedJeep>
+					<AncientJetEngine>0.2</AncientJetEngine>
+					<AncientDropshipEngine>0.2</AncientDropshipEngine>
+					<AncientRustedDropship>0.2</AncientRustedDropship>
+					<AncientMilitaryCrate>0.1</AncientMilitaryCrate>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>3~4</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>16~18</clusterRectRadius>
+				</li>
+				
+				
+				
+				
+				
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					
+					<AncientWheel>0.1</AncientWheel>
+					<AncientSmallCrate>0.0833</AncientSmallCrate>
+					<AncientLargeCrate>0.0833</AncientLargeCrate>
+					<AncientLongCrate>0.0833</AncientLongCrate>
+					<AncientMilitaryCrate>0.0833</AncientMilitaryCrate>
+					<AncientSpacerCrate>0.0833</AncientSpacerCrate>
+					<AncientCrate>0.0833</AncientCrate>
+					<AncientBarrel>0.2</AncientBarrel>
+					<AncientStorageCylinder>0.2</AncientStorageCylinder>
+					<AncientLargeContainer>0.1</AncientLargeContainer>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>8~10</clusterRectRadius>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					
+					<AncientShoppingCart>0.5</AncientShoppingCart>
+					<AncientSmallCrate>0.0166</AncientSmallCrate>
+					<AncientLargeCrate>0.0166</AncientLargeCrate>
+					<AncientLongCrate>0.0166</AncientLongCrate>
+					<AncientMilitaryCrate>0.0166</AncientMilitaryCrate>
+					<AncientSpacerCrate>0.0166</AncientSpacerCrate>
+					<AncientCrate>0.0166</AncientCrate>
+					<AncientVendingMachine>0.1</AncientVendingMachine>
+					<AncientATM>0.1</AncientATM>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>8~10</clusterRectRadius>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					
+					<AncientSmallCrate>0.0221</AncientSmallCrate>
+					<AncientLargeCrate>0.0221</AncientLargeCrate>
+					<AncientLongCrate>0.0221</AncientLongCrate>
+					<AncientCrate>0.0221</AncientCrate>
+					<AncientMilitaryCrate>0.0221</AncientMilitaryCrate>
+					<AncientSpacerCrate>0.0221</AncientSpacerCrate>
+					<AncientRefrigerator>0.1</AncientRefrigerator>
+					<AncientStove>0.1</AncientStove>
+					<AncientOven>0.1</AncientOven>
+					<AncientKitchenSink>0.1</AncientKitchenSink>
+					<AncientWashingMachine>0.1</AncientWashingMachine>
+					<AncientAirConditioner>0.2</AncientAirConditioner>
+					<AncientPostbox>0.1</AncientPostbox>
+					<AncientLamp>0.25</AncientLamp>
+					<AncientBed>0.25</AncientBed>
+					<AncientLockerBank>0.25</AncientLockerBank>
+					<AncientMicrowave>0.1</AncientMicrowave>
+					<AncientToilet>0.1</AncientToilet>
+					<AncientPipes>0.1</AncientPipes>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>8~10</clusterRectRadius>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					
+					<AncientWheel>0.5</AncientWheel>
+					<AncientGiantWheel>1</AncientGiantWheel>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>8~10</clusterRectRadius>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					
+					<AncientOperatingTable>0.3</AncientOperatingTable>
+					<AncientAirConditioner>0.1</AncientAirConditioner>
+					<AncientKitchenSink>0.2</AncientKitchenSink>
+					<AncientRefrigerator>0.3</AncientRefrigerator>
+					<AncientSmallCrate>0.2</AncientSmallCrate>
+					<AncientPipes>0.1</AncientPipes>
+					<AncientToilet>0.1</AncientToilet>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>8~10</clusterRectRadius>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					
+					<AncientStorageCylinder>0.3</AncientStorageCylinder>
+					<AncientBarrel>0.3</AncientBarrel>
+					<AncientGenerator>0.2</AncientGenerator>
+					<AncientSmallCrate>0.1</AncientSmallCrate>
+					<AncientLargeContainer>0.15</AncientLargeContainer>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>8~10</clusterRectRadius>
+				</li>
+				<li MayRequire="Ludeon.RimWorld.Ideology">
+				  <things>
+					<KOTOR_MineableJunk>0.5</KOTOR_MineableJunk>
+					
+					<AncientMegaCannonBarrel>0.3</AncientMegaCannonBarrel>
+					<AncientMegaCannonTripod>0.1</AncientMegaCannonTripod>
+					<AncientSmallCrate>0.3</AncientSmallCrate>
+					<AncientSecurityTurret>0.3</AncientSecurityTurret>
+				  </things>
+				  <indoorRuin>false</indoorRuin>
+				  <coveredCellsPer10Cells>4~5</coveredCellsPer10Cells>
+				  <filthDef>Filth_MachineBits</filthDef>
+				  <filthExpandBy>1</filthExpandBy>
+				  <filthChance>0.8</filthChance>
+				  <clusterRectRadius>8~10</clusterRectRadius>
+				</li>
+			</groups>
+		</genStep>
+	</GenStepDef>
+	
+	
+	
+	
+	
+	
+	
+</Defs>

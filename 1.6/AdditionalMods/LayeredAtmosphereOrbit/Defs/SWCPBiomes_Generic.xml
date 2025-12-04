@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- <BiomeDef Name="SpaceBiome"> -->
+    <!-- <defName>Space</defName> -->
+    <!-- <label>space</label> -->
+    <!-- <description>Empty void.</description> -->
+    <!-- <workerClass>BiomeWorker_Space</workerClass> -->
+    <!-- <wildAnimalsCanWanderInto>false</wildAnimalsCanWanderInto> -->
+    <!-- <generatesNaturally>false</generatesNaturally> -->
+    <!-- <animalDensity>0</animalDensity> -->
+    <!-- <plantDensity>0</plantDensity> -->
+    <!-- <noAmbientWind>true</noAmbientWind> -->
+    <!-- <constantOutdoorTemperature>-75</constantOutdoorTemperature> -->
+    <!-- <inVacuum>true</inVacuum> -->
+    <!-- <canAutoChoose>false</canAutoChoose> -->
+    <!-- <maxFishPopulation>0</maxFishPopulation> -->
+    <!-- <allowRoads>false</allowRoads> -->
+    <!-- <allowRivers>false</allowRivers> -->
+    <!-- <allowFarmingCamps>false</allowFarmingCamps> -->
+    <!-- <hasVirtualPlants>false</hasVirtualPlants> -->
+    <!-- <allowPollution>true</allowPollution> -->
+    <!-- <hasBedrock>false</hasBedrock> -->
+    <!-- <baseWeatherCommonalities> -->
+      <!-- <Orbit>1</Orbit> -->
+    <!-- </baseWeatherCommonalities> -->
+    <!-- <diseases> -->
+      <!-- <li> -->
+        <!-- <diseaseInc>Disease_OrganDecay</diseaseInc> -->
+        <!-- <commonality>20</commonality> -->
+      <!-- </li> -->
+    <!-- </diseases> -->
+    <!-- <soundsAmbient> -->
+      <!-- <li>Ambient_SpaceMap</li> -->
+    <!-- </soundsAmbient> -->
+    <!-- <forceRockTypes> -->
+      <!-- <li>Vacstone</li> -->
+    <!-- </forceRockTypes> -->
+    <!-- <canExitMap>false</canExitMap> -->
+  <!-- </BiomeDef> -->
+  
+	<BiomeDef ParentName="SpaceBiome">
+		<defName>SWCP_Orbit</defName>
+		<label>orbit</label>
+		<description>Empty space a few hundred kilometers above the surface of the world.</description>
+
+		<wildAnimals>
+			<Mynock MayRequire="Mlie.StarWarsAnimalCollection">0.1</Mynock>
+		</wildAnimals>
+	</BiomeDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<BiomeDef Name="SWCPBiome_Ocean">
+		<defName>SWCPBiome_Ocean</defName>
+		<label>ocean</label>
+		<description>Open ocean. Great for fish. Not so great for you.</description>
+		<workerClass>BiomeWorker_Ocean</workerClass>
+		<isWaterBiome>true</isWaterBiome>
+		<canBuildBase>false</canBuildBase>
+		<allowRoads>false</allowRoads>
+		<allowRivers>false</allowRivers>
+		<hasVirtualPlants>false</hasVirtualPlants>
+		<texture>World/Biomes/OrdMantellOcean</texture>
+		<impassable>true</impassable>
+		<isBackgroundBiome>true</isBackgroundBiome>
+		
+		<layerWhitelist>
+			<li>SWCPPlanetLayer_OrdMantell</li>
+		</layerWhitelist>
+	</BiomeDef>
+
+	<BiomeDef Name="SWCPBiome_Lake">
+		<defName>SWCPBiome_Lake</defName>
+		<label>lake</label>
+		<description>A large lake. Beautiful to live next to. Not so beautiful to live in.</description>
+		<workerClass>BiomeWorker_Ocean</workerClass>
+		<isWaterBiome>true</isWaterBiome>
+		<canBuildBase>false</canBuildBase>
+		<allowRoads>false</allowRoads>
+		<allowRivers>false</allowRivers>
+		<hasVirtualPlants>false</hasVirtualPlants>
+		<texture>World/Biomes/OrdMantellOcean</texture>
+		<impassable>true</impassable>
+		<isBackgroundBiome>true</isBackgroundBiome>
+		
+		<layerWhitelist>
+			<li>SWCPPlanetLayer_OrdMantell</li>
+		</layerWhitelist>
+	</BiomeDef>
+	
+	
+
+	
+
+</Defs>

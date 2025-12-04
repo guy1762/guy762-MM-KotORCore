@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+	
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/GenStepDef[defName="AsteroidBasic"]/genStep/mineableCounts</xpath>
+		<order>Append</order>
+		<value>
+			<!-- <MineableGold>14~22</MineableGold> -->
+			<!-- <MineableSilver>50~70</MineableSilver> -->
+			<!-- <MineableSteel>80~110</MineableSteel> -->
+			<!-- <MineableUranium>15~25</MineableUranium> -->
+			<!-- <MineablePlasteel>12~15</MineablePlasteel> -->
+			<!-- <MineableComponentsIndustrial>65~85</MineableComponentsIndustrial> -->
+			<!-- <MineableJade>20~35</MineableJade> -->
+			<!-- <KOTOR_MineableJunk>65~85</KOTOR_MineableJunk> -->
+			<KOTOR_MineableDurasteel>50~70</KOTOR_MineableDurasteel>
+			<KOTOR_MineableBronzium>80~110</KOTOR_MineableBronzium>
+			<KOTOR_MineableCortosis>20~35</KOTOR_MineableCortosis>
+			<KOTOR_MineableBeskar>12~15</KOTOR_MineableBeskar>
+			<KOTOR_MineableRhydonium>50~70</KOTOR_MineableRhydonium>
+			<KOTOR_MineableSpice>20~35</KOTOR_MineableSpice>
+		</value>
+	</Operation>
+	
+
+	
+</Patch>

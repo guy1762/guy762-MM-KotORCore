@@ -20,10 +20,11 @@
 			<BeautyOutdoors>-10</BeautyOutdoors>
 		</statBases>
 		<filthLeaving>Filth_MachineBits</filthLeaving>
-		<!--building>
-			<mineableScatterCommonality>0.25</mineableScatterCommonality>
-			<mineableScatterLumpSizeRange>10~25</mineableScatterLumpSizeRange>
-		</building-->
+		<building>
+			<!-- <mineableScatterCommonality>0.25</mineableScatterCommonality> -->
+			<!-- <mineableScatterLumpSizeRange>10~25</mineableScatterLumpSizeRange> -->
+			<naturalTerrain>SWCPTerrain_junkyardgarbage</naturalTerrain>
+		</building>
 		<modExtensions>
 		  <li Class="SecondaryMineableYield.ModExtension_SecondaryMineableYield">
 			<mineableDropChance>1.0</mineableDropChance>
@@ -685,8 +686,98 @@
 		  </li>
 		</modExtensions>
 	</ThingDef-->
-	  
 	
 	
-  
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>SWCPTerrain_junkyardgarbage</defName>
+		<label>trash-covered soil</label>
+		<texturePath>BiomeTerrain/trash</texturePath>
+		<!-- <pollutionOverlayTexturePath>BiomeTerrain/trash_polluted</pollutionOverlayTexturePath> -->
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 0.15)</pollutionColor>
+		<edgeType>FadeRough</edgeType>
+		<!-- <categoryType>Soil</categoryType> -->
+		<renderPrecedence>340</renderPrecedence>
+		<pathCost>6</pathCost>
+		<statBases>
+		  <Beauty>-25</Beauty>
+		  <BeautyOutdoors>0</BeautyOutdoors>
+		  <Cleanliness>-25</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0.75</fertility>
+		<takeFootprints>True</takeFootprints>
+		<driesTo>Gravel</driesTo>
+		<tools>
+		  <li>
+			<label>dirt</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>DirtInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+		<tags>
+		  <li>SWCPOrdMantellTerrain_Soil</li>
+		</tags>
+	</TerrainDef>
+	
+	
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>SWCPTerrain_junkyardgarbage_soggy</defName>
+		<label>trash sediment</label>
+		<texturePath>BiomeTerrain/trash_polluted</texturePath>
+		<!-- <pollutionOverlayTexturePath>BiomeTerrain/trash_polluted</pollutionOverlayTexturePath> -->
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<pollutionColor>(1, 1, 1, 0.15)</pollutionColor>
+		<edgeType>FadeRough</edgeType>
+		<!-- <categoryType>Soil</categoryType> -->
+		<renderPrecedence>337</renderPrecedence>
+		<pathCost>16</pathCost>
+		<statBases>
+		  <Beauty>-50</Beauty>
+		  <BeautyOutdoors>0</BeautyOutdoors>
+		  <Cleanliness>-50</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		  <li>Bridgeable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0.25</fertility>
+		<takeFootprints>True</takeFootprints>
+		<driesTo>Gravel</driesTo>
+		<tools>
+		  <li>
+			<label>mud</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>MudInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+		<tags>
+		  <li>SWCPOrdMantellTerrain_Soil</li>
+		</tags>
+	</TerrainDef>
+	
+	
+	
 </Defs>

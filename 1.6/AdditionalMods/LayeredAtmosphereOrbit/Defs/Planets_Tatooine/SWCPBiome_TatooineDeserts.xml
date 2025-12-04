@@ -85,11 +85,13 @@
 			<li MayRequire="Ludeon.RimWorld.Biotech">Pollution</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech">AncientPollutionJunk</li>
 		</preventGenSteps>
-		<!-- <extraGenSteps> -->
+		<extraGenSteps>
+			<!-- <li>GrasslandsElevationReduction</li> -->
+			
 			<!-- <li>LAO_MoonCratersLarge</li> -->
 			<!-- <li>LAO_MoonCratersMedium</li> -->
 			<!-- <li>LAO_MoonCratersSmall</li> -->
-		<!-- </extraGenSteps> -->
+		</extraGenSteps>
 		
 		
 		
@@ -288,12 +290,20 @@
 			<MonitorLizard MayRequire="Ludeon.RimWorld.Odyssey">0.5</MonitorLizard>
 			<Vulture MayRequire="Ludeon.RimWorld.Odyssey">0.5</Vulture>
 			<Armadillo MayRequire="Ludeon.RimWorld.Odyssey">0.2</Armadillo>
-
+			
+			<WompRat MayRequire="Ludeon.RimWorld.Odyssey">1</WompRat>
 			<Bantha MayRequire="Mlie.StarWarsAnimalCollection">0.5</Bantha>
 			<Dewback MayRequire="Mlie.StarWarsAnimalCollection">0.25</Dewback>
 			<Ronto MayRequire="Mlie.StarWarsAnimalCollection">0.1</Ronto>
 			<Eopie MayRequire="Mlie.StarWarsAnimalCollection">0.25</Eopie>
+			
+			<Wraid MayRequire="Mlie.StarWarsAnimalCollection">0.25</Wraid>
+			
+			<Kreetle MayRequire="Mlie.StarWarsAnimalCollection">0.125</Kreetle>
+			<Scurrier MayRequire="Mlie.StarWarsAnimalCollection">0.125</Scurrier>
+			<Worrt MayRequire="Mlie.StarWarsAnimalCollection">0.125</Worrt>
 		</wildAnimals>
+		
 		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
 		  <Iguana>1</Iguana>
 		  <Megascarab>1</Megascarab>

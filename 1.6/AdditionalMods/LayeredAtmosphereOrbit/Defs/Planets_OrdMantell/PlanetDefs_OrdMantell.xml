@@ -3,9 +3,9 @@
 	
 	
 	<LayeredAtmosphereOrbit.PlanetDef>
-		<defName>SWCPPlanet_Tatooine</defName>
-		<label>Tatooine</label>
-		<description>I hate sand.\n\nDistance to Rimworld: 375000 km.\nDiameter: 100% of Rimworld.\n\nGravity well elevation: 1000 km.</description>
+		<defName>SWCPPlanet_OrdMantell</defName>
+		<label>Ord Mantell</label>
+		<description>I've been monitoring you, Captain Rendar...\n\nDistance to Rimworld: 375000 km.\nDiameter: 100% of Rimworld.\n\nGravity well elevation: 1000 km.</description>
 		<viewGizmoTexPath>UI/Commands/LAO_ViewLuna</viewGizmoTexPath>
 		
 		<posFromRimworld>(-156055.71, 14671.31, 0)</posFromRimworld>
@@ -17,13 +17,13 @@
 	
 
 	<LayeredAtmosphereOrbit.PlanetLayerGroupDef>
-		<defName>SWCPPlanetLayerGroup_Tatooine</defName>
-		<label>Tatooine</label>
-		<description>I hate sand.</description>
+		<defName>SWCPPlanetLayerGroup_OrdMantell</defName>
+		<label>Ord Mantell</label>
+		<description>I've been monitoring you, Captain Rendar...</description>
 		<!-- <description>The foundational layer of pulverized rock and dust where ancient impacts scar the terrain. This is the airless ground that forms the outermost shell of the Luna. This stark surface is where sunlight meets shadow and where vast, barren plains stretch endlessly. It provides the base for all of the Luna's natural geography, from towering peaks of crater rims to deep, shadowed chasms.</description> -->
-		<defaultPlanetLayer>SWCPPlanetLayer_Tatooine</defaultPlanetLayer>
+		<defaultPlanetLayer>SWCPPlanetLayer_OrdMantell</defaultPlanetLayer>
 		<viewGizmoTexPath>UI/Commands/LAO_ViewLuna</viewGizmoTexPath>
-		<planet>SWCPPlanet_Tatooine</planet>
+		<planet>SWCPPlanet_OrdMantell</planet>
 		
 		<modExtensions>
 			<li Class="LayeredAtmosphereOrbit.LayeredAtmosphereOrbitDefModExtension">
@@ -64,7 +64,7 @@
 					<li>SolarFlare</li>
 					<li>Planetkiller</li>
 					<li>PsychicDroner</li>
-					<!-- <li MayRequire="Ludeon.RimWorld.Royalty">SunBlocker</li> -->
+					<li MayRequire="Ludeon.RimWorld.Royalty">SunBlocker</li>
 					<li MayRequire="Ludeon.RimWorld.Royalty">PsychicSuppression</li>
 					<li MayRequire="Ludeon.RimWorld.Royalty">EMIField</li>
 					<li MayRequire="Ludeon.RimWorld.Anomaly">GrayPall</li>
@@ -100,12 +100,12 @@
 	
 	
 	
-	<!-- /////////////////////////////// Tatooine Surface /////////////////////////////// -->
+	<!-- /////////////////////////////// Ord Mantell Surface /////////////////////////////// -->
 	
 	
 	<PlanetLayerSettingsDef>
-		<defName>SWCPPlanetLayer_Tatooine</defName> <!-- "defName of PlanetLayerDef, PlanetLayerSettingsDef and ScenPartDef must be same" -->
-		<label>Tatooine surface</label>
+		<defName>SWCPPlanetLayer_OrdMantell</defName> <!-- "defName of PlanetLayerDef, PlanetLayerSettingsDef and ScenPartDef must be same" -->
+		<label>Ord Mantell surface</label>
 		<settings>
 			<!-- <origin>(-300,25,0)</origin> -->
 			<radius>100</radius>
@@ -119,8 +119,8 @@
 	</PlanetLayerSettingsDef>
 	
 	<ScenPartDef>
-		<defName>SWCPPlanetLayer_Tatooine</defName> <!-- "defName of PlanetLayerDef, PlanetLayerSettingsDef and ScenPartDef must be same" -->
-		<label>Tatooine surface layer type</label>
+		<defName>SWCPPlanetLayer_OrdMantell</defName> <!-- "defName of PlanetLayerDef, PlanetLayerSettingsDef and ScenPartDef must be same" -->
+		<label>Ord Mantell surface layer type</label>
 		<scenPartClass>ScenPart_PlanetLayerFixed</scenPartClass>
 		<category>Fixed</category>
 		<summaryPriority>100</summaryPriority>
@@ -129,12 +129,13 @@
 	</ScenPartDef>
 	
 	<PlanetLayerDef>
-		<defName>SWCPPlanetLayer_Tatooine</defName> <!-- "defName of PlanetLayerDef, PlanetLayerSettingsDef and ScenPartDef must be same" -->
-		<label>Tatooine</label>
-		<viewGizmoTooltip>View locations that are on Tatooine's surface.</viewGizmoTooltip>
-		<viewGizmoTexPath>World/PlanetIcons/tatooine</viewGizmoTexPath>
-		<defaultBiome>SWCPBiome_TatooineHighland</defaultBiome>
-		<backgroundBiome>SWCPBiome_TatooineExtremeDesert</backgroundBiome>
+		<defName>SWCPPlanetLayer_OrdMantell</defName> <!-- "defName of PlanetLayerDef, PlanetLayerSettingsDef and ScenPartDef must be same" -->
+		<label>Ord Mantell</label>
+		<viewGizmoTooltip>View locations that are on Ord Mantell's surface.</viewGizmoTooltip>
+		<viewGizmoTexPath>World/PlanetIcons/ordmantell</viewGizmoTexPath>
+		<defaultBiome>SWCPBiome_OrdMantellGrasslands</defaultBiome>
+		<!-- <backgroundBiome>SWCPBiome_Ocean</backgroundBiome> -->
+		<backgroundBiome>Ocean</backgroundBiome>
 		
 		<layerType>SurfaceLayer</layerType>
 		<tileType>SurfaceTile</tileType>
@@ -146,20 +147,21 @@
 		<onlyAllowWhitelistedQuests>true</onlyAllowWhitelistedQuests>
 		
 		<worldGenSteps>
-			<!-- high mountain generation and highlights all mountainous tiles I guess? -->
-			<!-- <li>LAO_TerrainLuna</li> -->
-			
 			<li>Terrain</li>
+			<li>Lakes</li>
+			<li>Rivers</li>
 			<li>Mutators</li>
 			<li MayRequire="Ludeon.RimWorld.Odyssey">Landmarks</li>
 			<li>AncientSites</li>
 			<li>AncientRoads</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Pollution</li>
 			<li>Factions</li>
+			<li>Roads</li>
 			<li>Features</li>
 		</worldGenSteps>
 		
-		<settlementsPer100kTiles>25~35</settlementsPer100kTiles> <!-- 75~85 is default -->
-		<generatedLocationFactor>0.25</generatedLocationFactor>
+		<settlementsPer100kTiles>75~85</settlementsPer100kTiles> <!-- 75~85 is default -->
+		<generatedLocationFactor>1</generatedLocationFactor>
 		
 		<worldDrawLayers>
 		  <li>WorldDrawLayer_CurrentMapTile</li>
@@ -191,7 +193,7 @@
 				<isOptionToAutoAdd>true</isOptionToAutoAdd>
 				<isSurface>true</isSurface>
 				<elevation>0</elevation>
-				<planetLayerGroup>SWCPPlanetLayerGroup_Tatooine</planetLayerGroup>
+				<planetLayerGroup>SWCPPlanetLayerGroup_OrdMantell</planetLayerGroup>
 				<multScatterLumpsMineable>0.4</multScatterLumpsMineable>
 				<IncidentChanceMultipliers>
 					<OrbitalDebris>5</OrbitalDebris>
@@ -199,6 +201,31 @@
 					<MeteoriteImpact>4</MeteoriteImpact>
 					<Infestation>1.5</Infestation>
 				</IncidentChanceMultipliers>
+				
+				<WhitelistBiomeDef>
+					<!-- <li>SWCPBiome_Ocean</li> -->
+					<!-- <li>SWCPBiome_Lake</li> -->
+					<li>Ocean</li>
+					<li>Lake</li>
+					
+					<!-- <li>IceSheet</li> -->
+					<!-- <li>SeaIce</li> "Since fossil fuels were the predominant energy source throughout most of the Old Republic era, massive amounts of greenhouse gases like carbon dioxide were in the Ord Mantellian atmosphere. As a result, Ord Mantell lacked polar icecaps, and the average global temperature was far above the pre-industrial level." -->
+					<!-- <li>GlacialPlain</li> -->
+					<!-- <li>LavaField</li> -->
+					
+					<!-- <li>Tundra</li> -->
+					<li>Desert</li>
+					<li>ExtremeDesert</li>
+					
+					<li>SWCPBiome_OrdMantellUrban</li>
+					<li>SWCPBiome_OrdMantellJunkyard</li>
+					<li>SWCPBiome_OrdMantellJunkSwamp</li>
+					<li>SWCPBiome_OrdMantellGrasslands</li>
+					<li>SWCPBiome_OrdMantellScrubland</li>
+					<li>SWCPBiome_OrdMantellTundra</li>
+					<li>SWCPBiome_OrdMantellLavaField</li>
+				</WhitelistBiomeDef>
+				
 				<WhitelistIncidentDef>
 					<li>Infestation</li>
 					<li>DeepDrillInfestation</li>
@@ -257,25 +284,24 @@
 	
 	
 	
-	<!-- /////////////////////////////// Tatooine Orbit /////////////////////////////// -->	
+	<!-- /////////////////////////////// Ord Mantell Orbit /////////////////////////////// -->	
 	
 	<GeneratedLocationDef>
-		<defName>SWCPGeneratedLocation_TatooineAsteroids</defName>
+		<defName>SWCPGeneratedLocation_OrdMantellAsteroids</defName>
 		<worldObjectDef>AsteroidBasic</worldObjectDef>
 		<layerDefs>
-		  <li>SWCPPlanetLayer_TatooineOrbit</li>
+		  <li>SWCPPlanetLayer_OrdMantellOrbit</li>
 		</layerDefs>
 		<preciousResources>
-		  <li>MineableGold</li>
-		  <li>MineableSilver</li>
+		  <!-- <li>MineableGold</li> -->
+		  <!-- <li>MineableSilver</li> -->
 		  <li>MineableSteel</li>
 		  <li>MineableUranium</li>
-		  <!-- <li>MineablePlasteel</li> -->
+		  <li>MineablePlasteel</li>
 		  <li>MineableComponentsIndustrial</li>
 		  <!-- <li>MineableJade</li> -->
-		  
 		  <!-- <li>KOTOR_MineableJunk</li> doesn't generate maps for some reason -->
-		  <!-- <li>KOTOR_MineableDurasteel</li> -->
+		  <li>KOTOR_MineableDurasteel</li>
 		  <!-- <li>KOTOR_MineableBronzium</li> -->
 		  <!-- <li>KOTOR_MineableCortosis</li> -->
 		  <!-- <li>KOTOR_MineableBeskar</li> -->
@@ -285,11 +311,11 @@
 	</GeneratedLocationDef>
 	
 	<PlanetLayerSettingsDef>
-		<defName>SWCPPlanetLayer_TatooineOrbit</defName> <!-- "defName of PlanetLayerDef, PlanetLayerSettingsDef and ScenPartDef must be same" -->
-		<label>Tatooine orbit</label>
+		<defName>SWCPPlanetLayer_OrdMantellOrbit</defName> <!-- "defName of PlanetLayerDef, PlanetLayerSettingsDef and ScenPartDef must be same" -->
+		<label>Ord Mantell orbit</label>
 		<settings>
 			<radius>130</radius>
-			<subdivisions>4</subdivisions>
+			<subdivisions>6</subdivisions> <!-- vanilla orbit has 5 -->
 			<extraCameraAltitude>300</extraCameraAltitude>
 			<backgroundWorldCameraOffset>160</backgroundWorldCameraOffset>
 			<backgroundWorldCameraParallaxDistancePer100Cells>2.5</backgroundWorldCameraParallaxDistancePer100Cells>
@@ -298,8 +324,8 @@
 	</PlanetLayerSettingsDef>
 	
 	<ScenPartDef>
-		<defName>SWCPPlanetLayer_TatooineOrbit</defName> <!-- "defName of PlanetLayerDef, PlanetLayerSettingsDef and ScenPartDef must be same" -->
-		<label>Tatooine orbit layer type</label>
+		<defName>SWCPPlanetLayer_OrdMantellOrbit</defName> <!-- "defName of PlanetLayerDef, PlanetLayerSettingsDef and ScenPartDef must be same" -->
+		<label>Ord Mantell orbit layer type</label>
 		<scenPartClass>ScenPart_PlanetLayerFixed</scenPartClass>
 		<category>Fixed</category>
 		<summaryPriority>100</summaryPriority>
@@ -308,9 +334,9 @@
 	</ScenPartDef>
 	
 	<PlanetLayerDef ParentName="OrbitLayer">
-		<defName>SWCPPlanetLayer_TatooineOrbit</defName>
-		<label>Tatooine orbit</label>
-		<viewGizmoTooltip>View locations that are orbiting Tatooine.</viewGizmoTooltip>
+		<defName>SWCPPlanetLayer_OrdMantellOrbit</defName>
+		<label>Ord Mantell orbit</label>
+		<viewGizmoTooltip>View locations that are orbiting Ord Mantell.</viewGizmoTooltip>
 		<viewGizmoTexPath>UI/Commands/ViewOrbit</viewGizmoTexPath>
 		<elevationString>200km</elevationString>
 		<defaultBiome>SWCP_Orbit</defaultBiome>
@@ -322,7 +348,7 @@
 				<isReplaceConnections>true</isReplaceConnections>
 				<elevation>200</elevation>
 				<tempOffest>-95</tempOffest>
-				<planetLayerGroup>SWCPPlanetLayerGroup_Tatooine</planetLayerGroup>
+				<planetLayerGroup>SWCPPlanetLayerGroup_OrdMantell</planetLayerGroup>
 			</li>
 		</modExtensions>
 	</PlanetLayerDef>

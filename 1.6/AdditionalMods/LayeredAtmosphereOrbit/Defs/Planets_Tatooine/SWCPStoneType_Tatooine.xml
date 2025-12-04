@@ -221,7 +221,7 @@
       <SharpDamageMultiplier>0.65</SharpDamageMultiplier>
     </statBases>
     <stuffProps>
-      <color>(140,110,80)</color>
+      <color>(100,75,55)</color>
       <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
       <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
       <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
