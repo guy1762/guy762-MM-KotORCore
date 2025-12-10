@@ -35,6 +35,8 @@
 				<WhitelistFactionDef>
 					<li>Insect</li>
 					
+					<li>guy762_KotORFaction_Civilians</li>
+					
 					<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_Czerka</li> -->
 					<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_HuttCartel</li> -->
 					<!-- <li MayRequire="guy762.KotORFactions">guy762_KotORFaction_ViciousHutts</li> -->
@@ -203,28 +205,24 @@
 				</IncidentChanceMultipliers>
 				
 				<WhitelistBiomeDef>
-					<!-- <li>SWCPBiome_Ocean</li> -->
-					<!-- <li>SWCPBiome_Lake</li> -->
 					<li>Ocean</li>
 					<li>Lake</li>
 					
 					<!-- <li>IceSheet</li> -->
 					<!-- <li>SeaIce</li> "Since fossil fuels were the predominant energy source throughout most of the Old Republic era, massive amounts of greenhouse gases like carbon dioxide were in the Ord Mantellian atmosphere. As a result, Ord Mantell lacked polar icecaps, and the average global temperature was far above the pre-industrial level." -->
 					<!-- <li>GlacialPlain</li> -->
-					<!-- <li>LavaField</li> -->
-					
-					<!-- <li>Tundra</li> -->
-					<li>Desert</li>
-					<li>ExtremeDesert</li>
+					<!-- <li>ExtremeDesert</li> -->
 					
 					<li>SWCPBiome_OrdMantellUrban</li>
 					<li>SWCPBiome_OrdMantellJunkyard</li>
 					<li>SWCPBiome_OrdMantellJunkSwamp</li>
 					<li>SWCPBiome_OrdMantellGrasslands</li>
 					<li>SWCPBiome_OrdMantellScrubland</li>
+					<li>SWCPBiome_OrdMantellDesert</li>
 					<li>SWCPBiome_OrdMantellTundra</li>
 					<li>SWCPBiome_OrdMantellLavaField</li>
 				</WhitelistBiomeDef>
+				<tempOffest>10</tempOffest>
 				
 				<WhitelistIncidentDef>
 					<li>Infestation</li>

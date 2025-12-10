@@ -28,13 +28,13 @@
 		<allowPollution>true</allowPollution>
 		<geyserCountFactor>0.125</geyserCountFactor>
 
-		<layerWhitelist>
-			<li>SWCPPlanetLayer_Tatooine</li>
-		</layerWhitelist>
+		<!-- <layerWhitelist> -->
+			<!-- <li>SWCPPlanetLayer_Tatooine</li> -->
+		<!-- </layerWhitelist> -->
 
-		<!-- <soundsAmbient> -->
-			<!-- <li>Ambient_SpaceMap</li> -->
-		<!-- </soundsAmbient> -->
+		<soundsAmbient>
+			<li>Ambient_Wind_Desolate</li>
+		</soundsAmbient>
 		
 		
 		<allowRoads>false</allowRoads>
@@ -148,6 +148,9 @@
 		  <Sandstorm MayRequire="Ludeon.RimWorld.Odyssey">7.5</Sandstorm>
 		  <Overcast>1</Overcast>
 		</baseWeatherCommonalities>
+		<biomeMapConditions>
+			<li>HeatWave</li>
+		</biomeMapConditions>
 		
 		<!-- <modExtensions> -->
 			<!-- <li Class="BiomesKit.BiomesKitControls"> -->
@@ -218,13 +221,13 @@
 		<allowPollution>true</allowPollution>
 		<geyserCountFactor>0.25</geyserCountFactor>
 
-		<layerWhitelist>
-			<li>SWCPPlanetLayer_Tatooine</li>
-		</layerWhitelist>
+		<!-- <layerWhitelist> -->
+			<!-- <li>SWCPPlanetLayer_Tatooine</li> -->
+		<!-- </layerWhitelist> -->
 
-		<!-- <soundsAmbient> -->
-			<!-- <li>Ambient_SpaceMap</li> -->
-		<!-- </soundsAmbient> -->
+		<soundsAmbient>
+			<li>Ambient_Wind_Desolate</li>
+		</soundsAmbient>
 		
 		
 		<allowRoads>true</allowRoads>
@@ -371,6 +374,9 @@
 		  <Sandstorm MayRequire="Ludeon.RimWorld.Odyssey">2.5</Sandstorm>
 		  <Overcast>6</Overcast>
 		</baseWeatherCommonalities>
+		<!-- <biomeMapConditions> -->
+			<!-- <li>HeatWave</li> -->
+		<!-- </biomeMapConditions> -->
 		
 		<!-- <modExtensions> -->
 			<!-- <li Class="BiomesKit.BiomesKitControls"> -->

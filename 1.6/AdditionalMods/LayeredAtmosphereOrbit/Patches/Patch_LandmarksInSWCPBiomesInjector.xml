@@ -8,6 +8,8 @@
 		<value>
 			<li>SWCPBiome_OrdMantellGrasslands</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
+			
+			<li>SWCPBiome_RhenVarGlacialWastes</li>
 		</value>
 	</Operation>
 	
@@ -18,17 +20,20 @@
 			<li>SWCPBiome_OrdMantellGrasslands</li>
 			<li>SWCPBiome_OrdMantellScrubland</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
+			
+			<li>SWCPBiome_RhenVarGlacialWastes</li>
 		</value>
 	</Operation>
 	
-	<!-- <Operation Class="PatchOperationAdd"> -->
-		<!-- <xpath>Defs/TileMutatorDef[defName="Oasis"]/biomeWhitelist</xpath> -->
-		<!-- <order>Append</order> -->
-		<!-- <value> -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Oasis"]/biomeWhitelist</xpath>
+		<order>Append</order>
+		<value>
 			<!-- <li>SWCPBiome_TatooineExtremeDesert</li> -->
 			<!-- <li>SWCPBiome_TatooineHighland</li> -->
-		<!-- </value> -->
-	<!-- </Operation> -->
+			<li>SWCPBiome_OrdMantellDesert</li>
+		</value>
+	</Operation>
 	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="DryLake"]/biomeWhitelist</xpath>
@@ -38,6 +43,7 @@
 			<li>SWCPBiome_TatooineHighland</li>
 			
 			<li>SWCPBiome_OrdMantellGrasslands</li>
+			<li>SWCPBiome_OrdMantellDesert</li>
 			<li>SWCPBiome_OrdMantellScrubland</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
 		</value>
@@ -83,6 +89,8 @@
 		<value>
 			<li>SWCPBiome_OrdMantellLavaField</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
+			
+			<li>SWCPBiome_RhenVarGlacialWastes</li>
 		</value>
 	</Operation>
 	
@@ -98,9 +106,12 @@
 			<!-- <li>SWCPBiome_TatooineHighland</li> -->
 			
 			<li>SWCPBiome_OrdMantellGrasslands</li>
+			<li>SWCPBiome_OrdMantellDesert</li>
 			<li>SWCPBiome_OrdMantellScrubland</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
 			<li>SWCPBiome_OrdMantellLavaField</li>
+			
+			<li>SWCPBiome_RhenVarGlacialWastes</li>
 		</value>
 	</Operation>
 	
@@ -111,17 +122,18 @@
 			<!-- <li>SWCPBiome_TatooineHighland</li> -->
 			
 			<li>SWCPBiome_OrdMantellGrasslands</li>
+			<li>SWCPBiome_OrdMantellDesert</li>
 			<li>SWCPBiome_OrdMantellScrubland</li>
 		</value>
 	</Operation>
 	
-	<!-- <Operation Class="PatchOperationAdd"> -->
-		<!-- <xpath>Defs/TileMutatorDef[defName="Iceberg"]/biomeWhitelist</xpath> -->
-		<!-- <order>Append</order> -->
-		<!-- <value> -->
-			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
-		<!-- </value> -->
-	<!-- </Operation> -->
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Iceberg"]/biomeWhitelist</xpath>
+		<order>Append</order>
+		<value>
+			<li>SWCPBiome_RhenVarGlacialWastes</li>
+		</value>
+	</Operation>
 	
 	
 	
@@ -160,8 +172,11 @@
 			<li>SWCPBiome_TatooineHighland</li>
 			
 			<li>SWCPBiome_OrdMantellGrasslands</li>
+			<li>SWCPBiome_OrdMantellDesert</li>
 			<li>SWCPBiome_OrdMantellScrubland</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
+			
+			<li>SWCPBiome_RhenVarGlacialHighland</li>
 		</value>
 	</Operation>
 	
@@ -173,9 +188,16 @@
 			<li>SWCPBiome_TatooineHighland</li>
 			
 			<li>SWCPBiome_OrdMantellGrasslands</li>
+			<li>SWCPBiome_OrdMantellDesert</li>
 			<li>SWCPBiome_OrdMantellScrubland</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
 			<li>SWCPBiome_OrdMantellLavaField</li>
+			
+			<!-- <li>SeaIce</li> -->
+			<!-- <li>IceSheet</li> -->
+			<li>SWCPBiome_RhenVarGlacialWastes</li>
+			<li>SWCPBiome_RhenVarGlacialHighland</li>
+			<li>SWCPBiome_RhenVarGlacialPeaks</li>
 		</value>
 	</Operation>
 	
@@ -195,8 +217,13 @@
 			<li>SWCPBiome_TatooineHighland</li>
 			
 			<li>SWCPBiome_OrdMantellGrasslands</li>
+			<li>SWCPBiome_OrdMantellDesert</li>
 			<li>SWCPBiome_OrdMantellScrubland</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
+			
+			<li>SWCPBiome_RhenVarGlacialPeaks</li>
+			<li>SWCPBiome_RhenVarGlacialHighland</li>
+			<li>SWCPBiome_RhenVarGlacialWastes</li>
 		</value>
 	</Operation>
 	
@@ -208,9 +235,14 @@
 			<li>SWCPBiome_TatooineHighland</li>
 			
 			<li>SWCPBiome_OrdMantellGrasslands</li>
+			<li>SWCPBiome_OrdMantellDesert</li>
 			<li>SWCPBiome_OrdMantellScrubland</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
 			<li>SWCPBiome_OrdMantellLavaField</li>
+			
+			<li>SWCPBiome_RhenVarGlacialPeaks</li>
+			<li>SWCPBiome_RhenVarGlacialHighland</li>
+			<li>SWCPBiome_RhenVarGlacialWastes</li>
 		</value>
 	</Operation>
 	
@@ -221,6 +253,10 @@
 			<li>SWCPBiome_OrdMantellGrasslands</li>
 			<li>SWCPBiome_OrdMantellTundra</li>
 			<li>SWCPBiome_OrdMantellLavaField</li>
+			
+			<li>SWCPBiome_RhenVarGlacialPeaks</li>
+			<li>SWCPBiome_RhenVarGlacialHighland</li>
+			<li>SWCPBiome_RhenVarGlacialWastes</li>
 		</value>
 	</Operation>
 	
@@ -257,9 +293,42 @@
 		</value>
 	</Operation>
 	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="ObsidianDeposits"]/biomeWhitelist</xpath>
+		<order>Append</order>
+		<value>
+			<li>SWCPBiome_OrdMantellTundra</li>
+			<li>SWCPBiome_OrdMantellLavaField</li>
+			
+			<li>SWCPBiome_RhenVarGlacialPeaks</li>
+		</value>
+	</Operation>
 	
 	
 	
+	
+	
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Crevasse"]/biomeWhitelist</xpath>
+		<order>Append</order>
+		<value>
+			<li>SWCPBiome_RhenVarGlacialPeaks</li>
+			<li>SWCPBiome_RhenVarGlacialHighland</li>
+			<li>SWCPBiome_RhenVarGlacialWastes</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="IceDunes"]/biomeWhitelist</xpath>
+		<order>Append</order>
+		<value>
+			<!-- <li>SeaIce</li> -->
+			<!-- <li>IceSheet</li> -->
+			<li>SWCPBiome_RhenVarGlacialWastes</li>
+		</value>
+	</Operation>
 	
 	
 	
@@ -325,5 +394,167 @@
 			<!-- <li>SWCPBiome_OrdMantellUrban</li> -->
 		<!-- </value> -->
 	<!-- </Operation> -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="Fish_Increased"]/biomeBlacklist</xpath>
+		<order>Append</order>
+		<value>
+			<li>SWCPBiome_TatooineExtremeDesert</li>
+			<li>SWCPBiome_TatooineHighland</li>
+			
+			<li>SWCPBiome_OrdMantellDesert</li>
+			<li>SWCPBiome_OrdMantellUrban</li>
+			<li>SWCPBiome_OrdMantellJunkyard</li>
+			<li>SWCPBiome_OrdMantellJunkSwamp</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="MineralRich"]/biomeBlacklist</xpath>
+		<order>Append</order>
+		<value>
+			<!-- <li>SWCPBiome_RhenVarGlacialPeaks</li> -->
+			<!-- <li>SWCPBiome_RhenVarGlacialHighland</li> -->
+			<li>SWCPBiome_RhenVarGlacialWastes</li>
+			
+			<li>SWCPBiome_TatooineExtremeDesert</li>
+			<li>SWCPBiome_TatooineHighland</li>
+			
+			<li>SWCPBiome_OrdMantellUrban</li>
+			<li>SWCPBiome_OrdMantellJunkyard</li>
+			<li>SWCPBiome_OrdMantellJunkSwamp</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="PlantLife_Increased"]/biomeBlacklist</xpath>
+		<order>Append</order>
+		<value>
+			<li>SWCPBiome_RhenVarGlacialPeaks</li>
+			<!-- <li>SWCPBiome_RhenVarGlacialHighland</li> -->
+			<li>SWCPBiome_RhenVarGlacialWastes</li>
+			
+			<li>SWCPBiome_TatooineExtremeDesert</li>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[defName="PlantGrove"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>TemperateForest</li> -->
+			<!-- <li>TemperateSwamp</li> -->
+			<!-- <li>ColdBog</li> -->
+			<!-- <li>BorealForest</li> -->
+			<!-- <li>TropicalSwamp</li> -->
+			<!-- <li>TropicalRainforest</li> -->
+			<!-- <li>Glowforest</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="WildPlants"]/biomeWhitelist</xpath>
+		<order>Append</order>
+		<value>
+			<li>SWCPBiome_OrdMantellGrasslands</li>
+			<li>SWCPBiome_OrdMantellScrubland</li>
+			<li>SWCPBiome_OrdMantellTundra</li>
+			<li>SWCPBiome_OrdMantellLavaField</li>
+		</value>
+	</Operation>
+	
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[defName="WildTropicalPlants"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>TropicalSwamp</li> -->
+			<!-- <li>TropicalRainforest</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="FoggyMutator"]/biomeWhitelist</xpath>
+		<order>Append</order>
+		<value>
+			<li>SWCPBiome_OrdMantellGrasslands</li>
+			<li>SWCPBiome_OrdMantellScrubland</li>
+			<li>SWCPBiome_OrdMantellTundra</li>
+			
+			<li>SWCPBiome_OrdMantellUrban</li>
+			<li>SWCPBiome_OrdMantellJunkyard</li>
+			<li>SWCPBiome_OrdMantellJunkSwamp</li>
+		</value>
+	</Operation>
+	
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="WetClimate"]/biomeWhitelist</xpath>
+		<order>Append</order>
+		<value>
+			<!-- <li>BorealForest</li> -->
+			<!-- <li>ColdBog</li> -->
+			<!-- <li>IceSheet</li> -->
+			<!-- <li>SeaIce</li> -->
+			<!-- <li>TemperateForest</li> -->
+			<!-- <li>TemperateSwamp</li> -->
+			<!-- <li>TropicalRainforest</li> -->
+			<!-- <li>TropicalSwamp</li> -->
+			<!-- <li>Glowforest</li> -->
+			<li>SWCPBiome_RhenVarGlacialPeaks</li>
+			<li>SWCPBiome_RhenVarGlacialHighland</li>
+			<li>SWCPBiome_RhenVarGlacialWastes</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/TileMutatorDef[defName="WindyMutator"]/biomeWhitelist</xpath>
+		<order>Append</order>
+		<value>
+			<li>SWCPBiome_TatooineExtremeDesert</li>
+			<li>SWCPBiome_TatooineHighland</li>
+			
+			<li>SWCPBiome_OrdMantellGrasslands</li>
+			<li>SWCPBiome_OrdMantellDesert</li>
+			<li>SWCPBiome_OrdMantellScrubland</li>
+			<li>SWCPBiome_OrdMantellTundra</li>
+			<li>SWCPBiome_OrdMantellLavaField</li>
+			
+			<li>SWCPBiome_OrdMantellUrban</li>
+			<li>SWCPBiome_OrdMantellJunkyard</li>
+			<li>SWCPBiome_OrdMantellJunkSwamp</li>
+			
+			<li>SWCPBiome_RhenVarGlacialPeaks</li>
+			<li>SWCPBiome_RhenVarGlacialHighland</li>
+			<li>SWCPBiome_RhenVarGlacialWastes</li>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	
 	
 </Patch>

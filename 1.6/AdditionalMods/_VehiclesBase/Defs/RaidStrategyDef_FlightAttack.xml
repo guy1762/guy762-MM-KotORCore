@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <RaidStrategyDef>
+    <defName>guy762_RaidStrategy_FlightAttack</defName>
+    <workerClass>taranchuk_flightcombat.RaidStrategyWorker_FlightCombatAttack</workerClass>
+    <selectionWeightPerPointsCurve>
+      <points>
+        <li>(0, 1)</li>
+      </points>
+    </selectionWeightPerPointsCurve>
+    <pointsFactorCurve>
+      <points>
+        <li>0, 1</li>
+      </points>
+    </pointsFactorCurve>
+    <arriveModes>
+      <li>EdgeWalkInGroups</li>
+    </arriveModes>
+    <letterLabelEnemy>Raid</letterLabelEnemy>
+    <arrivalTextEnemy>They are attacking immediately.</arrivalTextEnemy>
+    <letterLabelFriendly>Friendlies</letterLabelFriendly>
+    <arrivalTextFriendly>They are moving in to help you immediately.</arrivalTextFriendly>
+  </RaidStrategyDef>
+
+</Defs>

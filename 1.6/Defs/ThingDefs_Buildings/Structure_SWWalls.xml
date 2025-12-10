@@ -393,7 +393,7 @@
 	
 	
 	
-	<ThingDef ParentName="guy762_PoweredWallBase">
+	<ThingDef Name="guy762_PoweredWall_TatooineStuccoWallC" ParentName="guy762_PoweredWallBase">
 		<defName>guy762_PoweredWall_TatooineStuccoWallC</defName>
 		<label>powered stucco wall</label>
 		<!-- <description>The outer structural elements of a ship's hull. Includes conduits for power.</description> -->
@@ -425,6 +425,16 @@
 			
 			<!-- <ComponentIndustrial>1</ComponentIndustrial> -->
 		</costList>
+	</ThingDef>
+	
+	
+	
+	<ThingDef Name="guy762_PoweredWall_OrdMantellStuccoWallC" ParentName="guy762_PoweredWall_TatooineStuccoWallC">
+		<defName>guy762_PoweredWall_OrdMantellStuccoWallC</defName>
+		<graphicData>
+			<color>(125,50,50)</color> <!-- rebel red -->
+			<colorTwo>(160,155,135)</colorTwo> <!-- vanilla "limestone" structure paint -->
+		</graphicData>
 	</ThingDef>
 	
 	

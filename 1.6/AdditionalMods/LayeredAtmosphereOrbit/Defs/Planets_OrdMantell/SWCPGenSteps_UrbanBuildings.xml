@@ -44,7 +44,7 @@
 			
 			<AncientRuinsEmpty>2</AncientRuinsEmpty>
 			<SWCPRoomLayout_UrbanIndustrialStorage>2</SWCPRoomLayout_UrbanIndustrialStorage>
-			<SWCPRoomLayout_UrbanStorage>2</SWCPRoomLayout_UrbanStorage>
+			<SWCPRoomLayout_UrbanServerRoom>2</SWCPRoomLayout_UrbanServerRoom>
 
 
 			<SWCPRoomLayout_UrbanKitchen>3</SWCPRoomLayout_UrbanKitchen>
@@ -81,7 +81,13 @@
 	
 	
 	
-	
+	<MapGeneratorDef ParentName="MapCommonBase">
+		<defName>SWCPMapGenerator_UrbanBiome</defName>
+		<genSteps>
+		  <li>SWCPMapGenStep_UrbanBiome_Dormitories</li>
+		  <li>SWCPMapGenStep_UrbanBiome_MunicipalBuildings</li>
+		</genSteps>
+	</MapGeneratorDef>
 	
 	
 	
@@ -100,8 +106,12 @@
 	<GenStepDef>
 		<defName>SWCPMapGenStep_UrbanBiome_MunicipalBuildings</defName>
 		<order>740</order>
-		<genStep Class="GenStep_AncientRuins">
+		<!-- <genStep Class="GenStep_AncientRuins"> -->
+			<!-- <layoutDef>SWCPLayout_UrbanMunicipalBuildings</layoutDef> -->
+		<!-- </genStep> -->
+		<genStep Class="SWCP_LevelDesignStuff.GenStep_UrbanBuildings">
 			<layoutDef>SWCPLayout_UrbanMunicipalBuildings</layoutDef>
+			<factionDef>guy762_KotORFaction_Civilians</factionDef>
 		</genStep>
 	</GenStepDef>
 	
@@ -111,27 +121,61 @@
 		<shouldDamage>false</shouldDamage>
 		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
 		
-		<wallLampDef>AncientEmergencyLight_Green</wallLampDef>
+		<wallLampDef>AncientEmergencyLight_Blue</wallLampDef>
 		<wallLampChancePerPosition>1</wallLampChancePerPosition>
 		
-		<wallDef>guy762_PoweredWall_TatooineStuccoWallC</wallDef>
-		<doorDef>guy762_Autodoor1x1_TatooineA</doorDef>
-		<terrainDef>guy762_FloorTiles_DivotedTile_rust</terrainDef>
-		<surroundingTerrainDef>AncientMegastructure</surroundingTerrainDef> <!-- will morphology outline all buildings -->
+		<wallDef>guy762_PoweredWall_OrdMantellStuccoWallC</wallDef>
+		<doorDef>guy762_NPCAutodoor1x1_TatooineA</doorDef>
+		<terrainDef>guy762_FloorTiles_DivotedTile_iron</terrainDef>
+		<surroundingTerrainDef>BrokenAsphalt</surroundingTerrainDef> <!-- will morphology outline all buildings -->
 		
+		<corridorShapes>AsymmetricCross, H, Cross, T</corridorShapes>
+		<corridorDef>AncientRuinsCorridor</corridorDef>
+		<!-- <areaPrunePercent>0.15</areaPrunePercent> -->
+		<!-- <canDisconnectRooms>false</canDisconnectRooms> -->
+		
+		<wallAttachments>
+		  <AncientEmergencyLight_Green>
+			<countRange>1~2</countRange>
+		  </AncientEmergencyLight_Green>
+		</wallAttachments>
+		
+		<!-- <importantRoomDef>SWCPRoomLayout_NPCReactor</importantRoomDef> -->
 		<roomDefs>
-		<!-- Decorative -->
-			<SWCPRoomLayout_NPCReactor>2</SWCPRoomLayout_NPCReactor>
+			<!-- <SWCPRoomLayout_NPCReactor>1</SWCPRoomLayout_NPCReactor> -->
 			
-			<AncientRuinsEmpty>2</AncientRuinsEmpty>
+			<!-- <AncientRuinsEmpty>2</AncientRuinsEmpty> -->
 			<SWCPRoomLayout_UrbanIndustrialStorage>2</SWCPRoomLayout_UrbanIndustrialStorage>
-			<SWCPRoomLayout_UrbanStorage>2</SWCPRoomLayout_UrbanStorage>
+			<SWCPRoomLayout_UrbanServerRoom>2</SWCPRoomLayout_UrbanServerRoom>
 
 			<SWCPRoomLayout_UrbanBarracks>1</SWCPRoomLayout_UrbanBarracks>
 			<SWCPRoomLayout_UrbanLockerRoom>1</SWCPRoomLayout_UrbanLockerRoom>
 			<SWCPRoomLayout_UrbanShelfRoom>2</SWCPRoomLayout_UrbanShelfRoom>
 			<SWCPRoomLayout_UrbanOperatingRoom>1</SWCPRoomLayout_UrbanOperatingRoom>
 		</roomDefs>
+		
+		<junkScaterrers>
+		  <Filth_Trash>
+			<groupsPerHundredCells>0~1</groupsPerHundredCells>
+			<itemsPerGroup>2~4</itemsPerGroup>
+			<groupDistRange>3~5</groupDistRange>
+		  </Filth_Trash>
+		  <Filth_MoldyUniform>
+			<groupsPerHundredCells>0~1</groupsPerHundredCells>
+			<itemsPerGroup>1~2</itemsPerGroup>
+			<groupDistRange>3~5</groupDistRange>
+		  </Filth_MoldyUniform>
+		  <Filth_ScatteredDocuments>
+			<groupsPerHundredCells>0~1</groupsPerHundredCells>
+			<itemsPerGroup>1~1</itemsPerGroup>
+			<groupDistRange>3~5</groupDistRange>
+		  </Filth_ScatteredDocuments>
+		  <AncientCardboardBox>
+			<groupsPerHundredCells>0~1</groupsPerHundredCells>
+			<itemsPerGroup>2~5</itemsPerGroup>
+			<groupDistRange>3~5</groupDistRange>
+		  </AncientCardboardBox>
+		</junkScaterrers>
 	</StructureLayoutDef>
 	
 	
@@ -145,8 +189,12 @@
 	<GenStepDef>
 		<defName>SWCPMapGenStep_UrbanBiome_Dormitories</defName>
 		<order>741</order>
-		<genStep Class="GenStep_AncientRuins">
+		<!-- <genStep Class="GenStep_AncientRuins"> -->
+			<!-- <layoutDef>SWCPLayout_UrbanDormitories</layoutDef> -->
+		<!-- </genStep> -->
+		<genStep Class="SWCP_LevelDesignStuff.GenStep_UrbanBuildings">
 			<layoutDef>SWCPLayout_UrbanDormitories</layoutDef>
+			<factionDef>guy762_KotORFaction_Civilians</factionDef>
 		</genStep>
 	</GenStepDef>
 	
@@ -156,21 +204,33 @@
 		<shouldDamage>false</shouldDamage>
 		<canHaveMultipleLayoutsInRoom>true</canHaveMultipleLayoutsInRoom>
 		
-		<wallLampDef>AncientEmergencyLight_Green</wallLampDef>
+		<wallLampDef>AncientEmergencyLight_Blue</wallLampDef>
 		<wallLampChancePerPosition>1</wallLampChancePerPosition>
 		
 		<wallDef>guy762_PoweredWall_TatooineStuccoWallA</wallDef>
-		<doorDef>guy762_Autodoor1x1_TatooineA</doorDef>
+		<doorDef>guy762_NPCAutodoor1x1_TatooineA</doorDef>
 		<terrainDef>guy762_FloorTiles_DivotedTile_rust</terrainDef>
-		<surroundingTerrainDef>AncientMegastructure</surroundingTerrainDef> <!-- will morphology outline all buildings -->
+		<surroundingTerrainDef>BrokenAsphalt</surroundingTerrainDef> <!-- will morphology outline all buildings -->
 		
+		<corridorDef>AncientRuinsCorridor</corridorDef>
+		<corridorShapes>AsymmetricCross, H, Cross, T</corridorShapes>
+		<!-- <areaPrunePercent>0.15</areaPrunePercent> -->
+		<!-- <canDisconnectRooms>false</canDisconnectRooms> -->
+		
+		<wallAttachments>
+		  <AncientEmergencyLight_Green>
+			<countRange>1~2</countRange>
+		  </AncientEmergencyLight_Green>
+		</wallAttachments>
+		
+		<!-- <importantRoomDef>SWCPRoomLayout_NPCReactor</importantRoomDef> -->
 		<roomDefs>
-			<SWCPRoomLayout_NPCReactor>2</SWCPRoomLayout_NPCReactor>
+			<!-- <SWCPRoomLayout_NPCReactor>1</SWCPRoomLayout_NPCReactor> -->
 			
 			<SWCPRoomLayout_UrbanKitchen>3</SWCPRoomLayout_UrbanKitchen>
 			<SWCPRoomLayout_UrbanDiningHall>3</SWCPRoomLayout_UrbanDiningHall>
 			
-			<SWCPRoomLayout_UrbanLivingArea>3</SWCPRoomLayout_UrbanLivingArea>
+			<SWCPRoomLayout_UrbanLivingArea>2</SWCPRoomLayout_UrbanLivingArea>
 			<SWCPRoomLayout_UrbanSleepingArea>4</SWCPRoomLayout_UrbanSleepingArea>
 
 		</roomDefs>
@@ -194,7 +254,7 @@
 	</LayoutRoomDef>
 
 	<LayoutRoomDef>
-		<defName>SWCPRoomLayout_UrbanStorage</defName>
+		<defName>SWCPRoomLayout_UrbanServerRoom</defName>
 		<spawnJunk>false</spawnJunk>
 		<fillEdges>
 		  <AncientDisplayBank>
@@ -412,6 +472,14 @@
 	<LayoutRoomDef>
 		<defName>SWCPRoomLayout_NPCReactor</defName>
 		<spawnJunk>false</spawnJunk>
+		
+		<fillEdges>
+		  <PowerConduit>
+			<groupsPerTenEdgeCells>9~10</groupsPerTenEdgeCells>
+			<groupCountRange>9~10</groupCountRange>
+		  </PowerConduit>
+		</fillEdges>
+		
 		<minSingleRectWidth>5</minSingleRectWidth>
 		<minSingleRectHeight>5</minSingleRectHeight>
 		<prefabs>
@@ -425,23 +493,41 @@
 		</floorTypes>
 	</LayoutRoomDef>
 	
+	<!-- <PrefabDef> -->
+		<!-- <defName>SWCPRoomPrefab_NPCPowerGenerator</defName> -->
+		<!-- <size>(5,5)</size> -->
+		<!-- <things> -->
+			<!-- <PowerConduit> -->
+			  <!-- <rects> -->
+				<!-- <li>(0,0,4,0)</li> -->
+				<!-- <li>(0,1,0,4)</li> -->
+				<!-- <li>(4,1,4,4)</li> -->
+				<!-- <li>(1,4,3,4)</li> -->
+			  <!-- </rects> -->
+			<!-- </PowerConduit> -->
+			<!-- <SWCPBuilding_NPCPowerGenerator> -->
+			  <!-- <position>(2, 0, 2)</position> -->
+			<!-- </SWCPBuilding_NPCPowerGenerator> -->
+		<!-- </things> -->
+	<!-- </PrefabDef> -->
 	<PrefabDef>
 		<defName>SWCPRoomPrefab_NPCPowerGenerator</defName>
-		<size>(5,5)</size>
+		<size>(7,7)</size>
 		<things>
 			<PowerConduit>
 			  <rects>
-				<li>(0,0,4,0)</li>
-				<li>(0,1,0,4)</li>
-				<li>(4,1,4,4)</li>
-				<li>(1,4,3,4)</li>
+				<li>(0,0,6,1)</li>
+				<li>(0,2,1,6)</li>
+				<li>(5,2,6,6)</li>
+				<li>(2,5,4,6)</li>
 			  </rects>
 			</PowerConduit>
 			<SWCPBuilding_NPCPowerGenerator>
-			  <position>(2, 0, 2)</position>
+			  <position>(3, 0, 3)</position>
 			</SWCPBuilding_NPCPowerGenerator>
 		</things>
 	</PrefabDef>
+
 
 
 

@@ -321,6 +321,49 @@
 			  <Town_Councilman>10</Town_Councilman>
 			</options>
 		  </li>
+		  
+		  
+		  
+		  <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">
+			<kindDef>SWCPPawnGroupKind_CityBiome</kindDef>
+			<commonality>1</commonality>
+			<options>
+			  <SWCPCivilian_villager>5</SWCPCivilian_villager>
+			  <SWCPCivilian_poortraveler>10</SWCPCivilian_poortraveler>
+			  <SWCPCivilian_hooded>5</SWCPCivilian_hooded>
+			  <Villager_Child MayRequire="Ludeon.RimWorld.Biotech">10</Villager_Child>
+			  
+			  <SWCPCivilian_prole>25</SWCPCivilian_prole>
+			  <SWCPCivilian_mid>15</SWCPCivilian_mid>
+			  
+			  <SWCPCivilian_bougie>2</SWCPCivilian_bougie>
+			  <SWCPCivilian_exotictraveler>0.25</SWCPCivilian_exotictraveler>
+			  
+			  <SWCPCivilian_spacer>2</SWCPCivilian_spacer>
+			  <SWCPCivilian_doctormid>2</SWCPCivilian_doctormid>
+			  <SWCPCivilian_ugnaught>2</SWCPCivilian_ugnaught>
+			  <SWCPCivilian_jawa_offworld>1</SWCPCivilian_jawa_offworld>
+			  
+			  <!-- <SWCPCivilian_thug>1</SWCPCivilian_thug> -->
+			  <!-- <SWCPCivilian_cop MayRequire="guy762.KotORFactions">10</SWCPCivilian_cop> -->
+			  
+			  <!-- <KotORMerc_merc MayRequire="guy762.KotORFactions">2.5</KotORMerc_merc> -->
+			  <!-- <KotORMerc_warrior MayRequire="guy762.KotORFactions">1.5</KotORMerc_warrior> -->
+			  
+			  <!-- <KotORMlita_droid_GE3PD MayRequire="guy762.KotORDroids">3</KotORMlita_droid_GE3PD> -->
+			  <!-- <KotORDroidGood_GE3LD MayRequire="guy762.KotORDroids">7</KotORDroidGood_GE3LD> -->
+			  <!-- <KotORDroidGood_R8009 MayRequire="guy762.KotORDroids">5</KotORDroidGood_R8009> -->
+			  <!-- <KotORDroidGood_3C MayRequire="guy762.KotORDroids">2</KotORDroidGood_3C> -->
+			  <!-- <KotORDroidBad_SentWD MayRequire="guy762.KotORDroids">7</KotORDroidBad_SentWD> -->
+			  
+			  <!-- <Town_Councilman>10</Town_Councilman> -->
+			</options>
+		  </li>
+		  
+		  
+		  
+		  
+		  
 		  <li MayRequire="Ludeon.RimWorld.Ideology">
 			<kindDef>Loggers</kindDef>
 			<commonality>1</commonality>

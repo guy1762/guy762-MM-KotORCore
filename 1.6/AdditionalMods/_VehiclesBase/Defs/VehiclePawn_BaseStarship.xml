@@ -443,7 +443,7 @@
 		<properties>
 			
 			<customTerrainCosts>
-				<li>
+				<li MayRequire="kentington.saveourship2">
 					<key>EmptySpace</key>
 					<value>0</value>
 				</li>

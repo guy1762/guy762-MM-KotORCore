@@ -290,7 +290,28 @@
 	
 	
 	
-	
+	<SoundDef>
+		<defName>kotorsound_enginehum_LAATi</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/eng_repGunship_mid_lp</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
 	
 	
 	

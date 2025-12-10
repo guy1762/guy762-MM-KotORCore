@@ -179,7 +179,7 @@
 		</terrainsByFertility>
 		<terrainPatchMakers>
 		  <li>
-			<perlinFrequency>0.015</perlinFrequency>
+			<perlinFrequency>0.0015</perlinFrequency>
 			<isPond>true</isPond>
 			<thresholds>
 			  <li>
@@ -290,12 +290,13 @@
 		<extraGenSteps>
 		  <li>SWCPMapGenStep_UrbanBiome_MunicipalBuildings</li>
 		  <li>SWCPMapGenStep_UrbanBiome_Dormitories</li>
-		  <!-- <li>CratersLarge</li> -->
-		  <!-- <li>CratersMedium</li> -->
-		  <!-- <li>CratersSmall</li> -->
+		  <li>SWCPMapGenStep_NPCMoistureVaporators</li>
+		  
 		  <li>ScarlandsJunkClusters</li>
 		  <li>ScarlandsJunkPrefabs</li>
+		  
 		  <li>SWCPMapGenStep_UrbanBiome_CivilianPawns</li>
+		  
 		  <li>GrasslandsElevationReduction</li>
 		</extraGenSteps>
 		
@@ -314,16 +315,24 @@
 	<GenStepDef>
 		<defName>SWCPMapGenStep_UrbanBiome_CivilianPawns</defName>
 		<order>700</order>
-		<!-- <genStep Class="GenStep_SettlementPawnsLoot"> -->
 		<genStep Class="SWCP_LevelDesignStuff.GenStep_FactionFortressPawns">
 		  <factionDef>guy762_KotORFaction_Civilians</factionDef>
-		  <!-- <lootMarketValue>5000~10000</lootMarketValue>  -->
-		  <!-- <lootThingSetMaker>guy762_RaidLootMaker_ImpRemnant</lootThingSetMaker>  -->
 		</genStep>
 	</GenStepDef>
 	
 	
-	
+	<GenStepDef>
+		<defName>SWCPMapGenStep_NPCMoistureVaporators</defName>
+		<order>952</order>
+		<!-- <linkWithSite>AncientReactor</linkWithSite> -->
+		<genStep Class="GenStep_ScatterThings">
+		  <thingDef>SWCPBuilding_NPCMoistureVaporator</thingDef>
+		  <createUsedRect>true</createUsedRect>
+		  <skipRoofed>true</skipRoofed>
+		  <countPer10kCellsRange>2~6</countPer10kCellsRange>
+		  <warnOnFail>false</warnOnFail>
+		</genStep>
+	</GenStepDef>
 	
 	
 	
@@ -709,15 +718,15 @@
 		
 		<wildAnimals Inherit="False">
 			<Dianoga MayRequire="Mlie.StarWarsAnimalCollection">1</Dianoga>
-			
-			<MonitorLizard>0.5</MonitorLizard>
+			<Megascarab>1</Megascarab>
+			<!-- <MonitorLizard>0.5</MonitorLizard> -->
 		</wildAnimals>
 		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech" Inherit="False">
 			<Dianoga MayRequire="Mlie.StarWarsAnimalCollection">1</Dianoga>
 
-			<Iguana>1</Iguana>
+			<!-- <Iguana>1</Iguana> -->
 			<Megascarab>1</Megascarab>
-			<MonitorLizard>0.5</MonitorLizard>
+			<!-- <MonitorLizard>0.5</MonitorLizard> -->
 		</pollutionWildAnimals>
 		
 		<extraGenSteps Inherit="False">
@@ -726,210 +735,8 @@
 		</extraGenSteps>
 	</BiomeDef>
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<BiomeDef>
-		<defName>SWCPBiome_OrdMantellScrubland</defName>
-		<label>Mantellan scrubland</label>
-		<description>A dry region, but not dry enough to become a true desert. Open plains with grasses and bushes give way to scattered groves of trees. Plants are hardy and there is a moderate density of animals, but arable soil is hard to find.</description>
-		<workerClass>BiomeWorker_AridShrubland</workerClass>
-		<texture>World/Biomes/OrdMantellScrubland</texture>
-		
-		<allowFarmingCamps>false</allowFarmingCamps>
-		<animalDensity>1.8</animalDensity>
-		<plantDensity>0.24</plantDensity>
-		<settlementSelectionWeight>0.7</settlementSelectionWeight>
-		<movementDifficulty>1</movementDifficulty>
-		
-		<!-- <gravelTerrain>SWCPTerrain_OrdMantellGravel</gravelTerrain> -->
-		<lakeBeachTerrain>Sand</lakeBeachTerrain>
-		<riverbankTerrain>Riverbank</riverbankTerrain>
-		<riverbankSizeRange>6~8</riverbankSizeRange>
-		
-		<forageability>0.5</forageability>
-		<foragedFood>RawAgave</foragedFood>
-		
-		<wildPlantRegrowDays>27</wildPlantRegrowDays>
-		<maxFishPopulation>480</maxFishPopulation>
-		<fishTypes MayRequire="Ludeon.RimWorld.Odyssey">
-		  <freshwater_Common>
-			<Fish_Tilapia MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tilapia>
-		  </freshwater_Common>
-		  <freshwater_Uncommon>
-			<Fish_Catfish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Catfish>
-		  </freshwater_Uncommon>
-		  <saltwater_Common>
-			<Fish_Bluefish MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Bluefish>
-		  </saltwater_Common>
-		  <saltwater_Uncommon>
-			<Fish_Tuna MayRequire="Ludeon.RimWorld.Odyssey">1</Fish_Tuna>
-		  </saltwater_Uncommon>
-		  <rareCatchesSetMaker MayRequire="Ludeon.RimWorld.Odyssey">RareFishingCatches_Hot</rareCatchesSetMaker>
-		</fishTypes>
-		
-		<soundsAmbient>
-		  <li>Ambient_NightInsects_Standard</li>
-		</soundsAmbient>
-		
-		
-		<diseaseMtbDays>65</diseaseMtbDays>
-		<diseases>
-		  <li>
-			<diseaseInc>Disease_Flu</diseaseInc>
-			<commonality>100</commonality>
-		  </li>
-		  <li>
-			<diseaseInc>Disease_Plague</diseaseInc>
-			<commonality>100</commonality>
-		  </li>
-		  <li>
-			<diseaseInc>Disease_GutWorms</diseaseInc>
-			<commonality>60</commonality>
-		  </li>
-		  <li>
-			<diseaseInc>Disease_MuscleParasites</diseaseInc>
-			<commonality>60</commonality>
-		  </li>
-		  <li>
-			<diseaseInc>Disease_FibrousMechanites</diseaseInc>
-			<commonality>30</commonality>
-		  </li>
 
-		  <li>
-			<diseaseInc>Disease_SensoryMechanites</diseaseInc>
-			<commonality>30</commonality>
-		  </li>
-		  <li>
-			<diseaseInc>Disease_AnimalFlu</diseaseInc>
-			<commonality>100</commonality>
-		  </li>
-		  <li>
-			<diseaseInc>Disease_AnimalPlague</diseaseInc>
-			<commonality>100</commonality>
-		  </li>
-		  <li>
-			<diseaseInc>Disease_OrganDecay</diseaseInc>
-			<commonality>10</commonality>
-		  </li>
-		</diseases>
-		<terrainsByFertility>
-		  <li>
-			<terrain>Sand</terrain>
-			<min>-999</min>
-			<max>0.45</max>
-		  </li>
-		  <li>
-			<terrain>GrasslandSoil</terrain>
-			<min>0.45</min>
-			<max>0.90</max>
-		  </li>
-		  <li>
-			<terrain>SoilRich</terrain>
-			<min>0.90</min>
-			<max>999</max>
-		  </li>
-		</terrainsByFertility>
-		
-		<forceRockTypes>
-			<li>Sandstone</li>
-			<li>SWCPStone_OrdMantellGranite</li>
-			<!-- <li>SWCPStone_OrdMantellSlate</li> -->
-		</forceRockTypes>
-		
-		
-		<baseWeatherCommonalities>
-		  <Clear>18</Clear>
-		  <Fog>1</Fog>
-		  <Rain>2</Rain>
-		  <DryThunderstorm>1</DryThunderstorm>
-		  <RainyThunderstorm>1</RainyThunderstorm>
-		  <FoggyRain>0.5</FoggyRain>
-		  <SnowGentle>4</SnowGentle>
-		  <SnowHard>4</SnowHard>
-		  <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
-		  <Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
-		</baseWeatherCommonalities>
-		
-		
-		<wildPlants>
-			<Plant_YellowGrass>7.0</Plant_YellowGrass>
-			<Plant_YellowTallGrass>7.0</Plant_YellowTallGrass>
-			<SWCPPlant_OrdMantellTreeDrago>0.20</SWCPPlant_OrdMantellTreeDrago>
-			
-			<Plant_Thornvine>8.0</Plant_Thornvine>
-			<Plant_Brambles_Leafless>1.0</Plant_Brambles_Leafless>
-			<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.6</Plant_Ripthorn>
-			<Plant_Dandelion>0.8</Plant_Dandelion>
-			<Plant_Bush_Leafless>0.7</Plant_Bush_Leafless>
-			<Plant_TreeSnagroot>0.4</Plant_TreeSnagroot>
-			<Plant_Berry_Leafless>0.10</Plant_Berry_Leafless>
-			<Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">0.26</Plant_Witchwood>
-			<Plant_Agave>0.2</Plant_Agave>
-			<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
-		</wildPlants>
-		<wildAnimals>
-		  <Donkey>0.2</Donkey>
-		  <GuineaPig>0.017</GuineaPig>
-		  <Horse>0.1</Horse>
-		  <Bison>0.1</Bison>
-		  <Rat>1.3</Rat>
-		  <Hare>1.3</Hare>
-		  <Iguana>0.7</Iguana>
-		  <Gazelle>0.7</Gazelle>
-		  <Ostrich>0.7</Ostrich>
-		  <Emu>0.7</Emu>
-		  <Dromedary>0.7</Dromedary>
-		  <Boomrat>0.5</Boomrat>
-		  <Elephant>0.5</Elephant>
-		  <Rhinoceros>0.5</Rhinoceros>
-		  <Boomalope>0.5</Boomalope>
-		  <Cougar>0.15</Cougar>
-		  <Fox_Fennec>0.15</Fox_Fennec>
-		  <Megasloth>0.1</Megasloth>
-		  <MonitorLizard MayRequire="Ludeon.RimWorld.Odyssey">0.5</MonitorLizard>
-		  <Flamingo MayRequire="Ludeon.RimWorld.Odyssey">0.5</Flamingo>
-		  <Sparrow MayRequire="Ludeon.RimWorld.Odyssey">0.5</Sparrow>
-		  <Quail MayRequire="Ludeon.RimWorld.Odyssey">0.5</Quail>
-		  <Vulture MayRequire="Ludeon.RimWorld.Odyssey">0.5</Vulture>
-		  <Hippo MayRequire="Ludeon.RimWorld.Odyssey">0.25</Hippo>
-		  <Armadillo MayRequire="Ludeon.RimWorld.Odyssey">0.2</Armadillo>
-		</wildAnimals>
-		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
-		  <Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.1</Toxalope>
-		  <WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
-		  <Iguana>1</Iguana>
-		  <Rat>0.6</Rat>
-		  <Boomalope>0.4</Boomalope>
-		  <Boomrat>0.4</Boomrat>
-		  <Megascarab>0.2</Megascarab>
-		</pollutionWildAnimals>
-		<coastalWildAnimals>
-		  <HermitCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</HermitCrab>
-		  <StoneCrab MayRequire="Ludeon.RimWorld.Odyssey">0.1</StoneCrab>
-		  <SeaTurtle MayRequire="Ludeon.RimWorld.Odyssey">0.1</SeaTurtle>
-		</coastalWildAnimals>
-		<allowedPackAnimals>
-			<li>Muffalo</li>
-			<li>Dromedary</li>
-			<li>Elephant</li>
-			<li>Alpaca</li>
-
-			<li MayRequire="Mlie.StarWarsAnimalCollection">Bantha</li>
-			<li MayRequire="Mlie.StarWarsAnimalCollection">Dewback</li>
-			<li MayRequire="Mlie.StarWarsAnimalCollection">Ronto</li>
-			<li MayRequire="Mlie.StarWarsAnimalCollection">Eopie</li>
-		</allowedPackAnimals>
-	</BiomeDef>
-
+	
+	
+	
 </Defs>

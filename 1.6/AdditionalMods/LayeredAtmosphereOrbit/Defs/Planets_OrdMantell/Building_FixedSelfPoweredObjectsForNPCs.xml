@@ -100,4 +100,106 @@
 		</tradeTags>	
 	</ThingDef>
 	
+	
+	
+	
+	<ThingDef ParentName="BuildingBase">
+		<defName>SWCPBuilding_NPCMoistureVaporator</defName>
+		<label>fixed municipal moisture vaporator</label>
+		<description>A large device capable of condensing atmospheric water molecules into drinkable water. These devices are frequently employed by settlers in arid, dry climates where water is not readily available. Due to the complex nature of the moisture collection process, these devices are fine-tuned to only work in dry climates and the moisture-sensitive instruments employed to collect water will be non-functional in any other environment.</description>
+		<graphicData>
+		  <texPath>Buildings/MoistureVaporators/moisturevaporator_2</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>(3,3)</drawSize>
+		  <drawOffset>(0,0,1)</drawOffset>
+		  <color>(205,200,195)</color>         <!-- off-light-grey -->
+		  
+		  <shadowData>
+			<volume>(0.58, 0.35, 0.25)</volume>
+			<offset>(0,0,-0.1)</offset>
+		  </shadowData>
+		  <damageData>
+			<rect>(0.2,0.2,0.6,0.6)</rect>
+		  </damageData>
+		</graphicData>
+		
+		<size>(1,1)</size>
+		<uiIconScale>0.3</uiIconScale>
+		
+		<comps>
+		  <li Class="CompProperties_Spawner"> <!-- WARNING: patch in AdditionalMods for DBH references this specific <li> !!! -->
+			<requiresPower>false</requiresPower>
+			<thingToSpawn>KotOR_water</thingToSpawn>
+			<spawnCount>5</spawnCount>
+			<spawnIntervalRange><min>450000</min><max>450000</max></spawnIntervalRange>
+			<writeTimeLeftToSpawn>true</writeTimeLeftToSpawn>
+			<showMessageIfOwned>true</showMessageIfOwned>
+		  </li>
+		  <li Class="CompProperties_Forbiddable"/>
+		  <!-- <li Class="CompProperties_Power"> -->
+			<!-- <compClass>CompPowerTrader</compClass> -->
+			<!-- <basePowerConsumption>50</basePowerConsumption> -->
+		  <!-- </li> -->
+		  <li Class="CompProperties_Flickable"/>
+		  <li>
+			<compClass>CompColorable</compClass>
+		  </li>
+		  <!-- <li Class="CompProperties_TerrainPumpDry"> -->
+			<!-- <soundWorking>MoisturePump_Ambience</soundWorking> -->
+			<!-- <radius>6.9</radius> -->
+			<!-- <daysToRadius>60</daysToRadius> -->
+		  <!-- </li> -->
+		</comps>
+		
+		<placeWorkers>
+		  <li>PlaceWorker_NotUnderRoof</li>
+		  <li>PlaceWorker_NeverAdjacentSameDef</li>
+		</placeWorkers>
+		<!-- <terrainAffordanceNeeded>guy762_TerrainAffordance_softsand</terrainAffordanceNeeded> -->
+		<terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+		
+		<!-- <specialDisplayRadius>3</specialDisplayRadius> -->
+		
+		<tickerType>Normal</tickerType>
+		<altitudeLayer>Building</altitudeLayer>
+		<statBases>
+		  <MarketValue>2000</MarketValue>
+		  
+		  <MaxHitPoints>50</MaxHitPoints>
+		  <!-- <WorkToBuild>1500</WorkToBuild> -->
+		  <Flammability>1.0</Flammability>
+		  <Beauty>-25</Beauty>
+		  <Mass>35</Mass>
+		</statBases>
+		<fillPercent>0.3</fillPercent>
+		<canOverlapZones>false</canOverlapZones>
+		<building>
+		  <ai_chillDestination>false</ai_chillDestination>
+		  <destroySound>BuildingDestroyed_Metal_Small</destroySound>
+		  <allowAutoroof>false</allowAutoroof>
+		  <minDistanceToSameTypeOfBuilding>3</minDistanceToSameTypeOfBuilding>
+		</building>
+		<!-- <costList> -->
+		  <!-- <Steel>75</Steel> -->
+		  <!-- <ComponentIndustrial>4</ComponentIndustrial> -->
+		  <!-- <ComponentSpacer>2</ComponentSpacer> -->
+		<!-- </costList> -->
+		
+		<pathCost>30</pathCost>
+		<passability>PassThroughOnly</passability>
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<rotatable>false</rotatable>
+		<!-- <constructionSkillPrerequisite>6</constructionSkillPrerequisite> -->
+		
+		<!-- <researchPrerequisites> -->
+			<!-- <li>KOTOR_Research_MoistureVaporator</li> -->
+		<!-- </researchPrerequisites> -->
+		
+		<!-- <minifiedDef>MinifiedThing</minifiedDef> -->
+		<tradeability>All</tradeability>
+		<tradeTags>
+			<li>guy762TT_AllItemsSellable</li>
+		</tradeTags>
+	</ThingDef>
+	
 </Defs>

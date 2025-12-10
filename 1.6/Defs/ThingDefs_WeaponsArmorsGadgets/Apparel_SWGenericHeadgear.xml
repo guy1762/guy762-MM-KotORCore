@@ -356,7 +356,7 @@
 		  <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
 			
 			<renderNodeProperties>
-				<li Class="BigAndSmall.PawnRenderingProps_Ultimate">
+				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
 					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
 					<parentTagDef>ApparelHead</parentTagDef>

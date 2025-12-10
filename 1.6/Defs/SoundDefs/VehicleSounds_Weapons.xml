@@ -623,6 +623,38 @@
 	
 	
 	<SoundDef>
+		<defName>kotorsound_N1gun</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipweapons/N1_Laser_Fire</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>100</max>
+				</distRange>  
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	<SoundDef>
 		<defName>kotorsound_AATgun</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
@@ -1163,6 +1195,103 @@
 		</subSounds>
 	</SoundDef>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_LAATigun</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipweapons/wpn_gunship_blaster_fire</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>100</max>
+				</distRange>  
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	<SoundDef>
+		<defName>kotorsound_LAATi_beamturret_fire</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipweapons/wep_GEN_greenBeam_01</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>100</max>
+				</distRange>  
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_LAATi_beam_midair</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<sustain>true</sustain>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipweapons/wep_GEN_GnShpBeam_lp_01</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>
+				<sustainLoop>True</sustainLoop>				
+			</li>
+		</subSounds>
+	</SoundDef>
 	
 	
 	<!--SoundDef>

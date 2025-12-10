@@ -1,0 +1,529 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+
+  <!-- ================ Rhen Var granite ================ -->
+
+  <ThingDef ParentName="UglyRockBase" Name="SWCPStone_RhenVarGranite">
+    <defName>SWCPStone_RhenVarGranite</defName>
+    <label>Rhen Varian granite</label>
+    <description>A very hard igneous rock.</description>
+    <graphicData>
+      <color>(95,95,105)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>900</MaxHitPoints>
+    </statBases>
+    <building>
+      <biomeSpecific>true</biomeSpecific>
+	  <mineableThing>SWCPStoneChunk_RhenVarGranite</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>SWCPStoneSmoothed_RhenVarGranite</smoothedThing>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="SWCPStone_RhenVarGranite">
+    <defName>SWCPStoneSmoothed_RhenVarGranite</defName>
+    <label>smoothed Rhen Varian granite</label>
+    <description>A very hard igneous rock.</description>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MarketValue>7</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+      <paintable>true</paintable>
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+  
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>SWCPStoneChunk_RhenVarGranite</defName>
+    <label>Rhen Varian granite chunk</label>
+    <graphicData>
+      <color>(95,95,105)</color>
+    </graphicData>
+    <statBases>
+      <Mass>22</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <SWCPStoneBlocks_RhenVarGranite>20</SWCPStoneBlocks_RhenVarGranite>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>SWCPStoneBlocks_RhenVarGranite</defName>
+    <label>Rhen Varian granite blocks</label>
+    <description>Blocks of solid Rhen Varian granite.</description>
+    <graphicData>
+      <color>(95,95,105)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+      <SharpDamageMultiplier>0.65</SharpDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <color>(95,95,105)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+      <stuffAdjective>granite</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.7</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>SWCPRecipe_BlocksRhenVarGranite</defName>
+    <label>make Rhen Varian granite blocks</label>
+    <description>Cuts Rhen Varian granite chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SWCPStoneChunk_RhenVarGranite</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SWCPStoneChunk_RhenVarGranite</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <SWCPStoneBlocks_RhenVarGranite>20</SWCPStoneBlocks_RhenVarGranite>
+    </products>
+  </RecipeDef>
+  
+  
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>SWCPTerrain_StoneTile_RhenVarGranite</defName>
+    <label>Rhen Varian granite tile</label>
+    <color>(95,95,105)</color>
+    <costList>
+      <SWCPStoneBlocks_RhenVarGranite>4</SWCPStoneBlocks_RhenVarGranite>
+    </costList>
+  </TerrainDef>
+  
+  
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>SWCPTerrain_Flagstone_RhenVarGranite</defName>
+    <label>Rhen Varian granite flagstone</label>
+    <color>(95,95,105)</color>
+    <costList>
+      <SWCPStoneBlocks_RhenVarGranite>4</SWCPStoneBlocks_RhenVarGranite>
+    </costList>
+  </TerrainDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- ================ Rhen Varian marble ================ -->
+
+  <ThingDef ParentName="UglyRockBase" Name="SWCPStone_RhenVarMarble">
+    <defName>SWCPStone_RhenVarMarble</defName>
+    <label>Rhen Varian marble</label>
+    <description>A soft metamorphic rock.</description>
+    <graphicData>
+      <color>(125,135,135)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>450</MaxHitPoints>
+      <Beauty>-1</Beauty>
+    </statBases>
+    <building>
+      <biomeSpecific>true</biomeSpecific>
+	  <mineableThing>SWCPStoneChunk_RhenVarMarble</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>SWCPStoneSmoothed_RhenVarMarble</smoothedThing>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="SWCPStone_RhenVarMarble">
+    <defName>SWCPStoneSmoothed_RhenVarMarble</defName>
+    <label>smoothed Rhen Varian marble</label>
+    <description>A soft metamorphic rock. This semi-transparent rock almost appears to glow with its own inner light.</description>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>2</Beauty>
+      <MarketValue>7</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+      <paintable>true</paintable>
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+  
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>SWCPStoneChunk_RhenVarMarble</defName>
+    <label>Rhen Varian marble chunk</label>
+    <graphicData>
+      <color>(125,135,135)</color>
+    </graphicData>
+    <statBases>
+      <Mass>25</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <SWCPStoneBlocks_RhenVarMarble>20</SWCPStoneBlocks_RhenVarMarble>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>SWCPStoneBlocks_RhenVarMarble</defName>
+    <label>Rhen Varian marble blocks</label>
+    <description>Blocks of solid Rhen Varian marble.</description>
+    <graphicData>
+      <color>(125,135,135)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.25</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(125,135,135)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+      <stuffAdjective>marble</stuffAdjective>
+      <statFactors>
+        <Beauty>1.35</Beauty>
+        <MaxHitPoints>1.2</MaxHitPoints>
+        <WorkToBuild>5.5</WorkToBuild>
+        <WorkToMake>1.15</WorkToMake>
+      </statFactors>
+      <statOffsets>
+        <Beauty>1</Beauty>
+      </statOffsets>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>SWCPRecipe_BlocksRhenVarMarble</defName>
+    <label>make Rhen Varian marble blocks</label>
+    <description>Cuts Rhen Varian marble chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SWCPStoneChunk_RhenVarMarble</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SWCPStoneChunk_RhenVarMarble</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <SWCPStoneBlocks_RhenVarMarble>20</SWCPStoneBlocks_RhenVarMarble>
+    </products>
+  </RecipeDef>
+  
+  
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>SWCPTerrain_StoneTile_RhenVarMarble</defName>
+    <label>Rhen Varian marble tile</label>
+    <color>(125,135,135)</color>
+    <costList>
+      <SWCPStoneBlocks_RhenVarMarble>4</SWCPStoneBlocks_RhenVarMarble>
+    </costList>
+  </TerrainDef>
+  
+  
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>SWCPTerrain_Flagstone_RhenVarMarble</defName>
+    <label>Rhen Varian marble flagstone</label>
+    <color>(125,135,135)</color>
+    <costList>
+      <SWCPStoneBlocks_RhenVarMarble>4</SWCPStoneBlocks_RhenVarMarble>
+    </costList>
+  </TerrainDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- ================ Rhen Varian limestone ================ -->
+
+  <ThingDef ParentName="UglyRockBase" Name="SWCPStone_RhenVarLimestone">
+    <defName>SWCPStone_RhenVarLimestone</defName>
+    <label>Rhen Varian limestone</label>
+    <description>A sedimentary rock formed from the compacted remains of ancient seashells.</description>
+    <graphicData>
+      <color>(145,150,135)</color>
+    </graphicData>
+    <statBases>
+      <MaxHitPoints>700</MaxHitPoints>
+    </statBases>
+    <building>
+      <biomeSpecific>true</biomeSpecific>
+	  <mineableThing>SWCPStoneChunk_RhenVarLimestone</mineableThing>
+      <mineableDropChance>0.25</mineableDropChance>
+      <smoothedThing>SWCPStoneSmoothed_RhenVarLimestone</smoothedThing>
+    </building>
+  </ThingDef>
+
+  <ThingDef ParentName="SWCPStone_RhenVarLimestone">
+    <defName>SWCPStoneSmoothed_RhenVarLimestone</defName>
+    <label>smoothed Rhen Varian limestone</label>
+    <description>A soft metamorphic rock. This semi-transparent rock almost appears to glow with its own inner light.</description>
+    <uiIconPath>Things/Building/Linked/WallSmooth_MenuIcon</uiIconPath>
+    <graphicData>
+      <texPath>Things/Building/Linked/RockSmooth_Atlas</texPath>
+    </graphicData>
+    <statBases>
+      <Beauty>1</Beauty>
+      <MarketValue>7</MarketValue>
+    </statBases>
+    <building>
+      <isNaturalRock>false</isNaturalRock>
+      <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <smoothedThing />
+      <paintable>true</paintable>
+    </building>
+    <saveCompressible>false</saveCompressible>
+    <repairEffect>Repair</repairEffect>
+  </ThingDef>
+  
+  <ThingDef ParentName="ChunkRockBase">
+    <defName>SWCPStoneChunk_RhenVarLimestone</defName>
+    <label>Rhen Varian limestone chunk</label>
+    <graphicData>
+      <color>(145,150,135)</color>
+    </graphicData>
+    <statBases>
+      <Mass>22</Mass>
+    </statBases>
+    <soundDrop>ChunkRock_Drop</soundDrop>
+    <butcherProducts>
+      <SWCPStoneBlocks_RhenVarLimestone>20</SWCPStoneBlocks_RhenVarLimestone>
+    </butcherProducts>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>SWCPStoneBlocks_RhenVarLimestone</defName>
+    <label>Rhen Varian limestone blocks</label>
+    <description>Blocks of solid Rhen Varian limestone.</description>
+    <graphicData>
+      <color>(145,150,135)</color>
+    </graphicData>
+    <statBases>
+      <Mass>1.1</Mass>
+    </statBases>
+    <stuffProps>
+      <color>(145,150,135)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+      <stuffAdjective>limestone</stuffAdjective>
+      <statFactors>
+        <MaxHitPoints>1.55</MaxHitPoints>
+      </statFactors>
+      <canSuggestUseDefaultStuff>true</canSuggestUseDefaultStuff>
+    </stuffProps>
+  </ThingDef>
+
+  <RecipeDef ParentName="MakeStoneBlocksBase">
+    <defName>SWCPRecipe_BlocksRhenVarLimestone</defName>
+    <label>make Rhen Varian limestone blocks</label>
+    <description>Cuts Rhen Varian limestone chunks into usable blocks.</description>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>SWCPStoneChunk_RhenVarLimestone</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>SWCPStoneChunk_RhenVarLimestone</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <products>
+      <SWCPStoneBlocks_RhenVarLimestone>20</SWCPStoneBlocks_RhenVarLimestone>
+    </products>
+  </RecipeDef>
+  
+  
+  <TerrainDef ParentName="TileStoneBase">
+    <defName>SWCPTerrain_StoneTile_RhenVarLimestone</defName>
+    <label>Rhen Varian limestone tile</label>
+    <color>(145,150,135)</color>
+    <costList>
+      <SWCPStoneBlocks_RhenVarLimestone>4</SWCPStoneBlocks_RhenVarLimestone>
+    </costList>
+  </TerrainDef>
+  
+  
+  <TerrainDef ParentName="FlagstoneBase">
+    <defName>SWCPTerrain_Flagstone_RhenVarLimestone</defName>
+    <label>Rhen Varian limestone flagstone</label>
+    <color>(145,150,135)</color>
+    <costList>
+      <SWCPStoneBlocks_RhenVarLimestone>4</SWCPStoneBlocks_RhenVarLimestone>
+    </costList>
+  </TerrainDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <!-- ================ blue ice ================ -->
+  
+  <ThingDef ParentName="RockBase" Name="SWCPStone_RhenVarBlueIce">
+		<defName>SWCPStone_RhenVarBlueIce</defName>
+		<label>blue ice</label>
+		<description>Solid blue glacial ice. It can be mined through with relative ease.</description>
+		<uiIconPath>Things/Building/Linked/SolidIceWall_MenuIcon</uiIconPath>
+		<graphicData>
+		  <texPath>Things/Building/Linked/SolidIceWall_Atlas</texPath>
+		  <color>(165,205,240)</color>
+		  <linkFlags Inherit="false">
+			<li>SolidIce</li>
+			<li>MapEdge</li>
+		  </linkFlags>
+		</graphicData>
+		<statBases>
+		  <Flammability>0</Flammability>
+		  <Beauty>1</Beauty>
+		  <MaxHitPoints>240</MaxHitPoints>
+		</statBases>
+		<building>
+		  <smoothedThing>SWCPStone_RhenVarBlueSmoothedIce</smoothedThing>
+		  <mineableYieldWasteable>false</mineableYieldWasteable>
+		  <biomeSpecific>true</biomeSpecific>
+		  <mineableScatterLumpSizeRange>12~32</mineableScatterLumpSizeRange>
+		  <mineablePreventMeteorite>true</mineablePreventMeteorite>
+		  <naturalTerrain>SWCPTerrain_RhenVarBlueIce</naturalTerrain>
+		  <leaveTerrain>SWCPTerrain_RhenVarBlueIce</leaveTerrain>
+		</building>
+		<filthLeaving>Filth_ChippedIce</filthLeaving>
+	</ThingDef>
+
+	<ThingDef ParentName="SWCPStone_RhenVarBlueIce">
+		<defName>SWCPStone_RhenVarBlueSmoothedIce</defName>
+		<label>smoothed blue ice</label>
+		<description>Solid blue glacial ice. It can be mined through with relative ease. The polished surface glistens a bright blue.</description>
+		<uiIconPath>Things/Building/Linked/SmoothedIce_MenuIcon</uiIconPath>
+		<graphicData>
+		  <texPath>Things/Building/Linked/SmoothedIce_Atlas</texPath>
+		</graphicData>
+		<statBases>
+		  <Beauty>3</Beauty>
+		</statBases>
+		<building>
+		  <isNaturalRock>false</isNaturalRock>
+		  <canBuildNonEdificesUnder>true</canBuildNonEdificesUnder>
+		  <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+		  <smoothedThing />
+		</building>
+		<saveCompressible>false</saveCompressible>
+		<repairEffect>Repair</repairEffect>
+	</ThingDef>
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>SWCPTerrain_RhenVarBlueIce</defName>
+		<label>blue ice</label>
+		<texturePath>BiomeTerrain/RhenVarBlueIce</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>350</renderPrecedence>
+		<pathCost>14</pathCost>
+		<statBases>
+		  <Beauty>0</Beauty>
+		  <BeautyOutdoors>3</BeautyOutdoors>
+		</statBases>
+		<scatterType>SoftGray</scatterType>
+		<tags>
+		  <li>SWCPRhenVarTerrain_Ice</li>
+		</tags>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_ChippedIce</generatedFilth>
+		<fertility>0.00</fertility>
+		<takeFootprints>True</takeFootprints>
+		<pollutedTexturePath>Terrain/Surfaces/IcePolluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionIce</pollutionOverlayTexturePath>
+		<pollutionColor>(1, 1, 1, 1)</pollutionColor>
+		<pollutionCloudColor>(1, 1, 1, 0.66)</pollutionCloudColor>
+		<canEverTerraform>false</canEverTerraform>
+	</TerrainDef>
+
+  
+</Defs>
