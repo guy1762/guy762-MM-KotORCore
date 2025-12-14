@@ -1,0 +1,1014 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	
+	<BiomeDef Name="SWCPBiome_LavaLake">
+		<defName>SWCPBiome_LavaLake</defName>
+		<label>lava lake</label>
+		<description>A lake of lava. Not so great for fish. Not so great for you either.</description>
+		<workerClass>BiomeWorker_Scarlands</workerClass>
+		<isWaterBiome>true</isWaterBiome>
+		<canBuildBase>false</canBuildBase>
+		<allowRoads>false</allowRoads>
+		<allowRivers>false</allowRivers>
+		<hasVirtualPlants>false</hasVirtualPlants>
+		<texture>World/Biomes/LavaOcean</texture>
+		<impassable>true</impassable>
+		<isBackgroundBiome>true</isBackgroundBiome>
+	</BiomeDef>
+	
+	
+	<BiomeDef Name="SWCPBiome_NevarroAshFlatsDesert">
+		<defName>SWCPBiome_NevarroAshFlatsDesert</defName>
+		<label>Nevarro ash flats</label>
+		<description>A very dry area which supports little life. There is very little arable land, and animal life is very sparse. Deserts can be hot, or quite cold.</description>
+		<workerClass>BiomeWorker_Desert</workerClass>
+		<!-- <workerClass>BiomesKit.UniversalBiomeWorker</workerClass> -->
+		<texture>World/Biomes/NevarroAshFlats</texture>
+		
+		<wildAnimalsCanWanderInto>true</wildAnimalsCanWanderInto>
+		<animalDensity>1</animalDensity>
+		
+		<allowFarmingCamps>true</allowFarmingCamps>
+		<plantDensity>0.25</plantDensity>
+		<!-- <hasVirtualPlants>false</hasVirtualPlants> -->
+		
+		<forageability>0.25</forageability>
+		<foragedFood>RawBerries</foragedFood>
+		<wildPlantsCareAboutLocalFertility>false</wildPlantsCareAboutLocalFertility>
+		<wildPlantRegrowDays>35</wildPlantRegrowDays>
+		
+		<settlementSelectionWeight>2</settlementSelectionWeight>
+		<campSelectionWeight>2</campSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		
+		<!-- <allowRivers>true</allowRivers> -->
+		<allowRoads>true</allowRoads>
+		
+		<waterShallowTerrain>LavaDeep</waterShallowTerrain>
+		<waterDeepTerrain>LavaDeep</waterDeepTerrain>
+		<oceanShallowTerrain>LavaDeep</oceanShallowTerrain>
+		<oceanDeepTerrain>LavaDeep</oceanDeepTerrain>
+		<waterMovingShallowTerrain>LavaDeep</waterMovingShallowTerrain>
+		<waterMovingChestDeepTerrain>LavaDeep</waterMovingChestDeepTerrain>
+
+		<gravelTerrain>SWCPTerrain_RockGravel</gravelTerrain>
+		<lakeBeachTerrain>CooledLava</lakeBeachTerrain>
+		<mudTerrain>CooledLava</mudTerrain>
+		<riverbankTerrain>CooledLava</riverbankTerrain>
+		
+		<!-- <isExtremeBiome>true</isExtremeBiome> -->
+		<maxFishPopulation>0</maxFishPopulation>
+		<allowPollution>true</allowPollution>
+		<geyserCountFactor>0.25</geyserCountFactor>
+
+		<soundsAmbient>
+			<li>Ambient_Wind_Desolate</li>
+		</soundsAmbient>
+
+		<terrainsByFertility>
+		  <li>
+			<terrain>SWCPTerrain_RockGravel</terrain>
+			<min>-999</min>
+			<max>0.35</max>
+		  </li>
+		  <li>
+			<terrain>SWCPTerrain_BlackSand</terrain>
+			<min>0.35</min>
+			<max>999</max>
+		  </li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.05</perlinFrequency>
+				<minSize>13</minSize>
+				<thresholds>
+				  <li>
+					<terrain>SWCPTerrain_NevarroGrasslandSoil</terrain>
+					<min>0.95</min>
+					<max>999</max>
+				  </li>
+				</thresholds>
+			</li>
+			<li>
+				<perlinFrequency>0.05</perlinFrequency>
+				<minSize>13</minSize>
+				<thresholds>
+				  <li>
+					<terrain>SWCPTerrain_GreySoftSand</terrain>
+					<min>0.95</min>
+					<max>999</max>
+				  </li>
+				</thresholds>
+			</li>
+			<li>
+				<perlinFrequency>0.005</perlinFrequency>
+				<perlinLacunarity>1.5</perlinLacunarity>
+				<perlinOctaves>6</perlinOctaves>
+				<isPond>true</isPond>
+				<thresholds>
+				  <li>
+					<terrain>VolcanicRock</terrain>
+					<min>0.6</min>
+					<max>0.9</max>
+				  </li>
+				  <li>
+					<terrain>CooledLava</terrain>
+					<min>0.9</min>
+					<max>999</max>
+				  </li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		<forceRockTypes>
+			<li>Slate</li>
+			<li>Granite</li>
+		</forceRockTypes>
+		<fogOfWarColor>(50,50,50)</fogOfWarColor>
+
+		
+		<preventGenSteps>
+			<!-- <li>Plants</li> -->
+			<li>Snow</li>
+			<!-- <li>Animals</li> -->
+			
+			<li>ScatterRuinsSimple</li>
+			<li>ScatterShrines</li>
+			<!-- <li>AncientUtilityBuilding</li> -->
+			<!-- <li>MechanoidRemains</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientTurret</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientMechs</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientLandingPad</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientFences</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientPipelineSection</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Ideology">AncientJunkClusters</li> -->
+		</preventGenSteps>
+		<extraGenSteps>
+			<!-- <li>SWCPMapGenStep_TatooineStructure_test</li> -->
+			<!-- <li>SWCPMapGenStep_ImperialStructure_testbase</li> -->
+		</extraGenSteps>
+		
+		<wildPlants>
+			<Plant_Berry_Leafless>0.25</Plant_Berry_Leafless>
+			
+			<Plant_YellowGrass>6</Plant_YellowGrass>
+			
+			<Plant_Thornvine>1</Plant_Thornvine>
+			<Plant_Brambles_Leafless>1.0</Plant_Brambles_Leafless>
+			<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">1</Plant_Ripthorn>
+			<Plant_Dandelion>0.5</Plant_Dandelion>
+			<Plant_Bush_Leafless>0.25</Plant_Bush_Leafless>
+			<Plant_TreeSnagroot>1</Plant_TreeSnagroot>
+
+			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
+		</wildPlants>
+		<wildAnimals>
+			<Iguana>1.2</Iguana>
+			<Dromedary>0.7</Dromedary>
+			<MonitorLizard MayRequire="Ludeon.RimWorld.Odyssey">0.5</MonitorLizard>
+			<Vulture MayRequire="Ludeon.RimWorld.Odyssey">0.5</Vulture>
+			<Armadillo MayRequire="Ludeon.RimWorld.Odyssey">0.2</Armadillo>
+			
+			<WompRat MayRequire="Ludeon.RimWorld.Odyssey">1</WompRat>
+			<Wraid MayRequire="Mlie.StarWarsAnimalCollection">0.25</Wraid>
+		</wildAnimals>
+		
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+		  <Iguana>1</Iguana>
+		  <Megascarab>1</Megascarab>
+		</pollutionWildAnimals>
+		<allowedPackAnimals>
+		  <li>Muffalo</li>
+		  <li>Dromedary</li>
+		  
+		  <li MayRequire="Mlie.StarWarsAnimalCollection">Bantha</li>
+		  <li MayRequire="Mlie.StarWarsAnimalCollection">Dewback</li>
+		  <li MayRequire="Mlie.StarWarsAnimalCollection">Ronto</li>
+		  <li MayRequire="Mlie.StarWarsAnimalCollection">Eopie</li>
+		</allowedPackAnimals>
+		
+		
+		<diseaseMtbDays>90</diseaseMtbDays>
+		<diseases>
+		  <li>
+			<diseaseInc>Disease_Flu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Plague</diseaseInc>
+			<commonality>80</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_GutWorms</diseaseInc>
+			<commonality>60</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_MuscleParasites</diseaseInc>
+			<commonality>60</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+
+		  <li>
+			<diseaseInc>Disease_AnimalFlu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_AnimalPlague</diseaseInc>
+			<commonality>80</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_OrganDecay</diseaseInc>
+			<commonality>10</commonality>
+		  </li>
+		</diseases>
+		
+		<baseWeatherCommonalities>
+		  <Clear>16</Clear>
+		  <Rain>0</Rain>
+		  <DryThunderstorm>1</DryThunderstorm>
+		  <RainyThunderstorm>0</RainyThunderstorm>
+		  <SnowGentle>0</SnowGentle>
+		  <SnowHard>0</SnowHard>
+		  <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">2</GrayPall>
+		  <Sandstorm MayRequire="Ludeon.RimWorld.Odyssey">2.5</Sandstorm>
+		  <Windy>1</Windy>
+		  <Overcast>2</Overcast>
+		</baseWeatherCommonalities>
+		<!-- <biomeMapConditions> -->
+			<!-- <li>HeatWave</li> -->
+		<!-- </biomeMapConditions> -->
+		
+		<!-- <modExtensions> -->
+			<!-- <li Class="BiomesKit.BiomesKitControls"> -->
+				<!-- <allowOnLand>True</allowOnLand> -->
+				<!-- <minHilliness>Flat</minHilliness> -->
+				<!-- <maxHilliness>SmallHills</maxHilliness> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+	</BiomeDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>SWCPTerrain_NevarroGrasslandSoil</defName>
+		<label>soil</label>
+		<texturePath>BiomeTerrain/NevarroGrasslandSoil</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/SoilPolluted</pollutedTexturePath>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Soil</categoryType>
+		<renderPrecedence>340</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+		  <Beauty>-3</Beauty>
+		  <BeautyOutdoors>0</BeautyOutdoors>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>1.0</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>dirt</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>DirtInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+		<tags>
+			<li>SWCPNevarroTerrain_Soil</li>
+		</tags>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>SWCPTerrain_RockGravel</defName>
+		<label>gravel</label>
+		<texturePath>BiomeTerrain/RockGravel</texturePath>
+		<pollutedTexturePath>BiomeTerrain/RockGravel_polluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
+		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>320</renderPrecedence>
+		<pathCost>2</pathCost>
+		<statBases>
+		  <Beauty>-3</Beauty>
+		  <BeautyOutdoors>0</BeautyOutdoors>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<scatterType>Rocky</scatterType>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>GrowSoil</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_Dirt</generatedFilth>
+		<fertility>0.1</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>gravel</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>GravelInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+		<tags>
+			<li>SWCPNevarroTerrain_Soil</li>
+		</tags>
+	</TerrainDef>
+	
+	
+	<TerrainDef ParentName="NaturalTerrainBase" Name="SWCPTerrain_BlackSand">
+		<defName>SWCPTerrain_BlackSand</defName>
+		<label>black sand</label>
+		<texturePath>BiomeTerrain/BlackSand</texturePath>
+		<pollutedTexturePath>BiomeTerrain/BlackSand_polluted</pollutedTexturePath>
+		<pollutionOverlayTexturePath>Terrain/Surfaces/PollutionSand</pollutionOverlayTexturePath>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Sand</categoryType>
+		<renderPrecedence>350</renderPrecedence>
+		<pathCost>4</pathCost>
+		<statBases>
+		  <Beauty>-3</Beauty>
+		  <BeautyOutdoors>0</BeautyOutdoors>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<!-- <scatterType>SoftDry</scatterType> -->
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>SWCPFilth_BlackSand</generatedFilth>
+		<fertility>0.10</fertility>
+		<takeFootprints>True</takeFootprints>
+		<tools>
+		  <li>
+			<label>sand</label>
+			<capacities>
+			  <li>KickMaterialInEyes</li>
+			</capacities>
+			<hediff>SandInEyes</hediff>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		</tools>
+		<pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
+	</TerrainDef>
+
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>SWCPTerrain_GreySoftSand</defName>
+		<label>soft sand</label>
+		<texturePath>BiomeTerrain/GreySoftSand</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<renderPrecedence>352</renderPrecedence>
+		<pathCost>14</pathCost>
+		<driesTo>SWCPTerrain_BlackSand</driesTo>
+		<categoryType>Sand</categoryType>
+		<statBases>
+			<Beauty>-3</Beauty>
+			<BeautyOutdoors>0</BeautyOutdoors>
+			<Cleanliness>-1</Cleanliness>
+		</statBases>
+		<affordances>
+			<li>Light</li>
+			<li>Diggable</li>
+			<li>guy762_TerrainAffordance_softsand</li>
+		</affordances>
+		<generatedFilth>SWCPFilth_BlackSand</generatedFilth>
+		<fertility>0</fertility>
+		<takeFootprints>true</takeFootprints>
+		<tools>
+			<li>
+				<label>sand</label>
+				<capacities>
+				  <li>KickMaterialInEyes</li>
+				</capacities>
+				<hediff>SandInEyes</hediff>
+				<cooldownTime>1.5</cooldownTime>
+			</li>
+		</tools>
+		<pollutionColor>(1, 1, 1, 0.25)</pollutionColor>
+	</TerrainDef>
+	
+	<ThingDef ParentName="BaseFilth">
+		<defName>SWCPFilth_BlackSand</defName>
+		<label>black sand</label>
+		<graphicData>
+		  <texPath>Things/Filth/Grainy</texPath>
+		  <color>(75,75,75,97)</color>
+		</graphicData>
+		<filth>
+		  <placementMask>
+			<li>Terrain</li>
+		  </placementMask>
+		  <disappearsInDays>45~50</disappearsInDays>
+		  <cleaningWorkToReduceThickness>35</cleaningWorkToReduceThickness>
+		  <canFilthAttach>true</canFilthAttach>
+		  <cleaningSound>Interact_CleanFilth_Dirt</cleaningSound>
+		</filth>
+		<statBases>
+		  <BeautyOutdoors>-1</BeautyOutdoors>
+		</statBases>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<BiomeDef>
+		<defName>SWCPBiome_NevarroHighland</defName>
+		<label>Nevarro badlands</label>
+		<description>These craggy wastelands bear almost no trees and little vegetation. There are a few small animals interspersed with large herds of migratory grazers and their predators.</description>
+		<!-- <workerClass>BiomeWorker_Tundra</workerClass> -->
+		<workerClass>BiomeWorker_TemperateForest</workerClass>
+		<!-- <workerClass>BiomesKit.UniversalBiomeWorker</workerClass> -->
+		<texture>World/Biomes/NevarroBadlands</texture>
+		
+		<allowFarmingCamps>false</allowFarmingCamps>
+		<animalDensity>1</animalDensity>
+		<plantDensity>0.1</plantDensity>
+		
+		<settlementSelectionWeight>0.25</settlementSelectionWeight>
+		<campSelectionWeight>0.1</campSelectionWeight>
+		<movementDifficulty>1</movementDifficulty>
+		<forageability>0.5</forageability>
+		<foragedFood>RawBerries</foragedFood>
+		<wildPlantRegrowDays>28</wildPlantRegrowDays>
+		
+		<geyserCountFactor>2</geyserCountFactor>
+		<extraGenSteps>
+			<li>SWCPGenStep_GeothermalVentsNoFlora</li>
+		</extraGenSteps>
+		<preventGenSteps>
+			<li>ScatterRuinsSimple</li>
+			<li>ScatterShrines</li>
+			<li>AncientUtilityBuilding</li>
+		</preventGenSteps>
+		
+		<waterShallowTerrain>LavaDeep</waterShallowTerrain>
+		<waterDeepTerrain>LavaDeep</waterDeepTerrain>
+		<oceanShallowTerrain>LavaDeep</oceanShallowTerrain>
+		<oceanDeepTerrain>LavaDeep</oceanDeepTerrain>
+		<waterMovingShallowTerrain>LavaDeep</waterMovingShallowTerrain>
+		<waterMovingChestDeepTerrain>LavaDeep</waterMovingChestDeepTerrain>
+		
+		<gravelTerrain>SWCPTerrain_RockGravel</gravelTerrain>
+		<lakeBeachTerrain>CooledLava</lakeBeachTerrain>
+		<mudTerrain>CooledLava</mudTerrain>
+		<riverbankTerrain>CooledLava</riverbankTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		
+		<maxFishPopulation>0</maxFishPopulation>
+		
+		
+		<soundsAmbient>
+			<li>Ambient_Wind_Desolate</li>
+		</soundsAmbient>
+		
+		
+		<diseaseMtbDays>80</diseaseMtbDays>
+		<diseases>
+		  <li>
+			<diseaseInc>Disease_Flu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Plague</diseaseInc>
+			<commonality>80</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+			<commonality>40</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+			<commonality>40</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_GutWorms</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_MuscleParasites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+
+		  <li>
+			<diseaseInc>Disease_AnimalFlu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_AnimalPlague</diseaseInc>
+			<commonality>80</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_OrganDecay</diseaseInc>
+			<commonality>10</commonality>
+		  </li>
+		</diseases>
+		
+		<terrainsByFertility>
+		  <li>
+			<terrain>SWCPTerrain_NevarroVolcanicRock</terrain>
+			<min>-999</min>
+			<max>0.45</max>
+		  </li>
+		  <li>
+			<terrain>VolcanicRock</terrain>
+			<min>0.45</min>
+			<max>0.65</max>
+		  </li>
+		  <li>
+			<terrain>SWCPTerrain_RockGravel</terrain>
+			<min>0.65</min>
+			<max>0.8</max>
+		  </li>
+		  <li>
+			<terrain>SWCPTerrain_BlackSand</terrain>
+			<min>0.8</min>
+			<max>999</max>
+		  </li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+			<li>
+				<perlinFrequency>0.01</perlinFrequency>
+				<perlinLacunarity>1.5</perlinLacunarity>
+				<perlinOctaves>6</perlinOctaves>
+				<isPond>true</isPond>
+				<thresholds>
+				  <li>
+					<terrain>VolcanicRock</terrain>
+					<min>0.6</min>
+					<max>0.9</max>
+				  </li>
+				  <li>
+					<terrain>CooledLava</terrain>
+					<min>0.9</min>
+					<max>999</max>
+				  </li>
+				</thresholds>
+			</li>
+			<li>
+				<perlinFrequency>0.01</perlinFrequency>
+				<perlinLacunarity>1.5</perlinLacunarity>
+				<perlinOctaves>6</perlinOctaves>
+				<isPond>true</isPond>
+				<thresholds>
+				  <li>
+					<terrain>SWCPTerrain_NevarroVolcanicRock</terrain>
+					<min>0.6</min>
+					<max>0.9</max>
+				  </li>
+				  <li>
+					<terrain>SWCPTerrain_NevarroCooledLava</terrain>
+					<min>0.9</min>
+					<max>999</max>
+				  </li>
+				</thresholds>
+			</li>
+		</terrainPatchMakers>
+		
+		<forceRockTypes>
+			<li>Granite</li>
+			<li>Slate</li>
+		</forceRockTypes>
+		
+		
+		<baseWeatherCommonalities>
+		  <Clear>18</Clear>
+		  <Fog>1</Fog>
+		  <Rain>0</Rain>
+		  <DryThunderstorm>1</DryThunderstorm>
+		  <RainyThunderstorm>0</RainyThunderstorm>
+		  <FoggyRain>0</FoggyRain>
+		  <SnowGentle>0</SnowGentle>
+		  <SnowHard>0</SnowHard>
+		  <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+		  <Windy MayRequire="Ludeon.RimWorld.Odyssey">4</Windy>
+		  <Overcast MayRequire="Ludeon.RimWorld.Odyssey">2</Overcast>
+		  <Blizzard MayRequire="Ludeon.RimWorld.Odyssey">0</Blizzard>
+		</baseWeatherCommonalities>
+		
+		
+		<wildPlants>
+			<Plant_Dandelion>0.05</Plant_Dandelion>
+			<Plant_HealrootWild>0.05</Plant_HealrootWild>
+			<Plant_Reeds MayRequire="Ludeon.RimWorld.Odyssey">1</Plant_Reeds>
+			<Plant_Bulrush MayRequire="Ludeon.RimWorld.Odyssey">0.2</Plant_Bulrush>
+			<Plant_YellowGrass>3.6</Plant_YellowGrass>
+			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">3</Plant_GrayGrass>
+			<Plant_Bush_Leafless>0.3</Plant_Bush_Leafless>
+			<Plant_Brambles_Leafless>0.1</Plant_Brambles_Leafless>
+			<Plant_Berry_Leafless>0.07</Plant_Berry_Leafless>
+			<Plant_Thornvine>0.08</Plant_Thornvine>
+			<Plant_Ripthorn MayRequire="Ludeon.RimWorld.Biotech">0.08</Plant_Ripthorn>
+			<Plant_TreeSnagroot>0.08</Plant_TreeSnagroot>
+			<Plant_Witchwood MayRequire="Ludeon.RimWorld.Biotech">0.08</Plant_Witchwood>
+		</wildPlants>
+		<wildAnimals>
+		  <Iguana>1</Iguana>
+		  <Megascarab>0.2</Megascarab>
+		  <MonitorLizard>0.5</MonitorLizard>
+		  <Vulture>0.5</Vulture>
+		  <LavaSnail>0.5</LavaSnail>
+		</wildAnimals>
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+		  <WasteRat MayRequire="Ludeon.RimWorld.Biotech">1</WasteRat>
+		  <Warg>0.05</Warg>
+		</pollutionWildAnimals>
+		
+		
+		<allowedPackAnimals>
+		  <li>Muffalo</li>
+		  <li MayRequire="Mlie.StarWarsAnimalCollection">Bantha</li>
+		  <li MayRequire="Mlie.StarWarsAnimalCollection">Dewback</li>
+		  <li MayRequire="Mlie.StarWarsAnimalCollection">Ronto</li>
+		  <li MayRequire="Mlie.StarWarsAnimalCollection">Eopie</li>
+		</allowedPackAnimals>
+		
+		<preventGenSteps>
+			<li>Snow</li>
+			<li>ScatterRuinsSimple</li>
+			<li>ScatterShrines</li>
+		</preventGenSteps>
+		
+		<!-- <modExtensions> -->
+			<!-- <li Class="BiomesKit.BiomesKitControls"> -->
+				<!-- <allowOnLand>True</allowOnLand> -->
+				<!-- <minHilliness>SmallHills</minHilliness> -->
+				<!-- <maxHilliness>Impassable</maxHilliness> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+	</BiomeDef>
+	
+	
+	
+	
+	
+	
+	
+	<BiomeDef>
+		<defName>SWCPBiome_NevarroLavaField</defName>
+		<label>Nevarro lava field</label>
+		<description>Barren wastes burned clean by volcanic heat.</description>
+		<workerClass>BiomeWorker_TropicalRainforest</workerClass>
+		<!-- <workerClass>BiomeWorker_LavaField</workerClass> -->
+		<!-- <workerClass>BiomesKit.UniversalBiomeWorker</workerClass> -->
+		<settleWarning>This area has high volcanic activity. It is threatened by clouds of volcanic ash, as well as periodic lava eruptions.</settleWarning>
+		<texture>World/Biomes/NevarroLavaFields</texture>
+		
+		<allowRoads>false</allowRoads>
+		
+		<allowFarmingCamps>false</allowFarmingCamps>
+		<animalDensity>0.5</animalDensity>
+		<plantDensity>0</plantDensity>
+		<settlementSelectionWeight>0</settlementSelectionWeight>
+		<movementDifficulty>1.5</movementDifficulty>
+		
+		<waterShallowTerrain>LavaDeep</waterShallowTerrain>
+		<waterDeepTerrain>LavaDeep</waterDeepTerrain>
+		<oceanShallowTerrain>LavaDeep</oceanShallowTerrain>
+		<oceanDeepTerrain>LavaDeep</oceanDeepTerrain>
+		<waterMovingShallowTerrain>LavaDeep</waterMovingShallowTerrain>
+		<waterMovingChestDeepTerrain>LavaDeep</waterMovingChestDeepTerrain>
+		
+		<gravelTerrain>SWCPTerrain_RockGravel</gravelTerrain>
+		<lakeBeachTerrain>SWCPTerrain_NevarroCooledLava</lakeBeachTerrain>
+		<mudTerrain>SWCPTerrain_NevarroCooledLava</mudTerrain>
+		<riverbankTerrain>SWCPTerrain_NevarroCooledLava</riverbankTerrain>
+		<riverbankSizeRange>6~8</riverbankSizeRange>
+		<forageability>0</forageability>
+		<!-- <foragedFood>RawBerries</foragedFood> -->
+		<!-- <wildPlantRegrowDays>27</wildPlantRegrowDays> -->
+		
+		<geyserCountFactor>4</geyserCountFactor>
+		<extraGenSteps>
+			<li>SWCPGenStep_GeothermalVentsNoFlora</li>
+		</extraGenSteps>
+		
+		
+		<maxFishPopulation>0</maxFishPopulation>
+		
+		
+		<soundsAmbient>
+			<li>Ambient_Wind_Desolate</li>
+		</soundsAmbient>
+		
+		
+		
+		<diseaseMtbDays>65</diseaseMtbDays>
+		<diseases>
+		  <li>
+			<diseaseInc>Disease_Flu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_Plague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_GutWorms</diseaseInc>
+			<commonality>60</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_MuscleParasites</diseaseInc>
+			<commonality>60</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_FibrousMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+
+		  <li>
+			<diseaseInc>Disease_SensoryMechanites</diseaseInc>
+			<commonality>30</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_AnimalFlu</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_AnimalPlague</diseaseInc>
+			<commonality>100</commonality>
+		  </li>
+		  <li>
+			<diseaseInc>Disease_OrganDecay</diseaseInc>
+			<commonality>10</commonality>
+		  </li>
+		</diseases>
+		
+		
+		
+		<terrainsByFertility>
+		  <li>
+			<terrain>SWCPTerrain_NevarroVolcanicRock</terrain>
+			<min>-999</min>
+			<max>0.7</max>
+		  </li>
+		  <li>
+			<terrain>VolcanicRock</terrain>
+			<min>0.7</min>
+			<max>0.9</max>
+		  </li>
+		  <li>
+			<terrain>SWCPTerrain_RockGravel</terrain>
+			<min>0.9</min>
+			<max>999</max>
+		  </li>
+		</terrainsByFertility>
+		<terrainPatchMakers>
+		  <li>
+			<perlinFrequency>0.05</perlinFrequency>
+			<perlinLacunarity>1.5</perlinLacunarity>
+			<perlinOctaves>6</perlinOctaves>
+			<!-- <isPond>true</isPond> -->
+			<thresholds>
+			  <li>
+				<terrain>SWCPTerrain_NevarroCooledLava</terrain>
+				<min>0.6</min>
+				<max>0.9</max>
+			  </li>
+			  <li>
+				<terrain>LavaDeep</terrain>
+				<min>0.9</min>
+				<max>999</max>
+			  </li>
+			</thresholds>
+		  </li>
+		  <li>
+			<perlinFrequency>0.025</perlinFrequency>
+			<perlinLacunarity>1.5</perlinLacunarity>
+			<perlinOctaves>6</perlinOctaves>
+			<!-- <isPond>true</isPond> -->
+			<thresholds>
+			  <li>
+				<terrain>CooledLava</terrain>
+				<min>0.6</min>
+				<max>0.9</max>
+			  </li>
+			  <li>
+				<terrain>LavaDeep</terrain>
+				<min>0.9</min>
+				<max>999</max>
+			  </li>
+			</thresholds>
+		  </li>
+		</terrainPatchMakers>
+		<forceRockTypes>
+			<li>Granite</li>
+			<li>Slate</li>
+		</forceRockTypes>
+		
+		
+		<baseWeatherCommonalities>
+		  <Clear>12</Clear>
+		  <Fog>1</Fog>
+		  <Rain>0</Rain>
+		  <DryThunderstorm>4</DryThunderstorm>
+		  <RainyThunderstorm>0</RainyThunderstorm>
+		  <FoggyRain>0</FoggyRain>
+		  <SnowGentle>0</SnowGentle>
+		  <SnowHard>0</SnowHard>
+		  <GrayPall MayRequire="Ludeon.RimWorld.Anomaly">1</GrayPall>
+		  <Windy>1</Windy>
+		  <Overcast>2</Overcast>
+		</baseWeatherCommonalities>
+		<!--
+		<wildPlants>
+			<Plant_YellowGrass>7.0</Plant_YellowGrass>
+			<Plant_GrayGrass MayRequire="Ludeon.RimWorld.Biotech">5</Plant_GrayGrass>
+			<Plant_Dandelion>0.2</Plant_Dandelion>
+
+			<Plant_MagmaCactus>1.0</Plant_MagmaCactus>
+
+			<Plant_TreeSnagroot>0.2</Plant_TreeSnagroot>
+
+			<Plant_Bush_Leafless>0.7</Plant_Bush_Leafless>
+			<Plant_Berry_Leafless>0.075</Plant_Berry_Leafless>
+			<BurnedTree>0.1</BurnedTree>
+			<Plant_Reeds>1</Plant_Reeds>
+		</wildPlants>
+		-->
+		<wildAnimals>
+		  <Iguana>1</Iguana>
+		  <Megascarab>0.2</Megascarab>
+		  <MonitorLizard>0.5</MonitorLizard>
+		  <Vulture>0.5</Vulture>
+		  <LavaSnail>0.5</LavaSnail>
+		</wildAnimals>
+		<pollutionWildAnimals MayRequire="Ludeon.RimWorld.Biotech">
+		  <Toxalope MayRequire="Ludeon.RimWorld.Biotech">0.1</Toxalope>
+		  <WasteRat MayRequire="Ludeon.RimWorld.Biotech">0.1</WasteRat>
+		  <Iguana>1</Iguana>
+		  <Rat>0.6</Rat>
+		  <Boomalope>0.4</Boomalope>
+		  <Boomrat>0.4</Boomrat>
+		  <Megascarab>0.2</Megascarab>
+		</pollutionWildAnimals>
+		<allowedPackAnimals>
+			<li>Muffalo</li>
+			<li>Dromedary</li>
+			<li>Elephant</li>
+			<li>Alpaca</li>
+			
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Bantha</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Dewback</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Ronto</li>
+			<li MayRequire="Mlie.StarWarsAnimalCollection">Eopie</li>
+		</allowedPackAnimals>
+		
+		<preventGenSteps>
+			<li>KOTOR_JunkPileClusters</li>
+			
+			<li>Snow</li>
+			
+			<li>ScatterRuinsSimple</li>
+			<li>ScatterShrines</li>
+			<li>AncientUtilityBuilding</li>
+			<li>MechanoidRemains</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AncientTurret</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AncientMechs</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AncientLandingPad</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AncientFences</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AncientPipelineSection</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AncientJunkClusters</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">Pollution</li>
+			<li MayRequire="Ludeon.RimWorld.Biotech">AncientPollutionJunk</li>
+		</preventGenSteps>
+		
+		<!-- <modExtensions> -->
+			<!-- <li Class="BiomesKit.BiomesKitControls"> -->
+				<!-- <allowOnLand>True</allowOnLand> -->
+				<!-- <allowOnWater>True</allowOnWater> -->
+			<!-- </li> -->
+		<!-- </modExtensions> -->
+	</BiomeDef>
+	
+	
+	
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>SWCPTerrain_NevarroVolcanicRock</defName>
+		<label>volcanic rock</label>
+		<texturePath>BiomeTerrain/NevarroObsidian</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/VolcanicRockPolluted</pollutedTexturePath>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Stone</categoryType>
+		<renderPrecedence>205</renderPrecedence>
+		<pathCost>3</pathCost>
+		<scatterType>Rocky</scatterType>
+		<statBases>
+		  <Beauty>-1</Beauty>
+		  <Cleanliness>-1</Cleanliness>
+		</statBases>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>Walkable</li>
+		  <li>SmoothableStone</li>
+		</affordances>
+		<generatedFilth>Filth_VolcanicAsh</generatedFilth>
+		<fertility>0</fertility>
+		<smoothedTerrain>SWCPTerrain_NevarroVolcanicRock_Smooth</smoothedTerrain>
+	</TerrainDef>
+
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>SWCPTerrain_NevarroVolcanicRock_Smooth</defName>
+		<label>smooth volcanic rock</label>
+		<texturePath>BiomeTerrain/NevarroObsidian_smooth</texturePath>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Stone</categoryType>
+		<renderPrecedence>255</renderPrecedence>
+		<pathCost>0</pathCost>
+		<scatterType>Rocky</scatterType>
+		<statBases>
+		  <Beauty>2</Beauty>
+		  <MarketValue>5</MarketValue>
+		</statBases>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>Walkable</li>
+		</affordances>
+		<fertility>0</fertility>
+	</TerrainDef>
+	
+	<TerrainDef ParentName="NaturalTerrainBase">
+		<defName>SWCPTerrain_NevarroCooledLava</defName>
+		<label>cooled lava</label>
+		<texturePath>BiomeTerrain/NevarroObsidianLava</texturePath>
+		<pollutedTexturePath>Terrain/Surfaces/PollutedCooledLava</pollutedTexturePath>
+		<edgeType>FadeRough</edgeType>
+		<categoryType>Misc</categoryType>
+		<renderPrecedence>340</renderPrecedence>
+		<pathCost>3</pathCost>
+		<layerable>true</layerable>
+		<statBases>
+		  <Cleanliness>0</Cleanliness>
+		  <CleaningTimeFactor>0.8</CleaningTimeFactor>
+		</statBases>
+		<affordances>
+		  <li>Light</li>
+		  <li>Medium</li>
+		  <li>Heavy</li>
+		  <li>Diggable</li>
+		</affordances>
+		<generatedFilth>Filth_VolcanicAsh</generatedFilth>
+		<fertility>0</fertility>
+	</TerrainDef>
+	
+	
+	
+
+</Defs>

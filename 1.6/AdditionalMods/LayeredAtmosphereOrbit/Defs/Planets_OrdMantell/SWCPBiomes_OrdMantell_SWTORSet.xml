@@ -347,7 +347,7 @@
 		<defName>SWCPTerrain_OrdMantellGravel</defName>
 		<label>stony soil</label>
 		<texturePath>BiomeTerrain/OrdMantellGravel</texturePath>
-		<pollutedTexturePath>Terrain/Surfaces/GravelPolluted</pollutedTexturePath>
+		<pollutedTexturePath>BiomeTerrain/OrdMantellGravel_polluted</pollutedTexturePath>
 		<pollutionOverlayTexturePath>Terrain/Surfaces/RoughStonePollutionOverlay</pollutionOverlayTexturePath>
 		<pollutionShaderType MayRequire="Ludeon.RimWorld.Biotech">TerrainFadeRoughLinearAdd</pollutionShaderType>
 		<edgeType>FadeRough</edgeType>

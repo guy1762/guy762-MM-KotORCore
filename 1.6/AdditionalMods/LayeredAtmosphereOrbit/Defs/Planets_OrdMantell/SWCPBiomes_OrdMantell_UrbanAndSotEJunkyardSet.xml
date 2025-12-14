@@ -21,16 +21,17 @@
 		</include>
 		<rulePack>
 		  <rulesStrings>
-			<!-- <li>r_name(p=0.2)->[ruin_adjective] [narrative_name]</li> -->
+			<li>r_name(p=10)->Worlport</li> <!-- capital -->
+			
+			<li>r_name(p=5)->Great Rock</li>
+			<li>r_name(p=5)->Freelonn</li>
+			<li>r_name(p=5)->Savroia</li>
+			
+			<li>r_name(p=2.5)->Ord Mantell City</li>
+			<li>r_name(p=2.5)->Trader's Quarter</li>
+			
 			<li>r_name(p=0.2)->[narrative_name] [terrain_word]</li>
 			<li>r_name(p=0.2)->[narrative_name]</li>
-			
-			<!-- <li>ruin_adjective(p=2)->ruined</li> -->
-			<!-- <li>ruin_adjective->ancient</li> -->
-			<!-- <li>ruin_adjective->old</li> -->
-			<!-- <li>ruin_adjective->shattered</li> -->
-			<!-- <li>ruin_adjective->blighted</li> -->
-			<!-- <li>ruin_adjective->ashen</li> -->
 			
 			<li>terrain_word(p=6)->city</li>
 			<li>terrain_word(p=3)->metro</li>
@@ -39,7 +40,7 @@
 	</RulePackDef>
 	
 	
-	<FeatureDef> <!-- this is the thing that adds a label to it on the world map -->
+	<FeatureDef>
 		<defName>SWCPBiomeFeature_OrdMantellMegacity</defName>
 		<workerClass>FeatureWorker_Biome</workerClass>
 		<order>409</order>
@@ -57,7 +58,6 @@
 		</include>
 		<rulePack>
 		  <rulesStrings>
-			<!-- <li>r_name(p=0.2)->[ruin_adjective] [narrative_name]</li> -->
 			<li>r_name(p=0.2)->[narrative_name] [terrain_word]</li>
 			<li>r_name(p=0.2)->[narrative_name]</li>
 			

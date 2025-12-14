@@ -456,7 +456,7 @@
 		<statBases>
 			<PawnTrapSpringChance>0</PawnTrapSpringChance>
 		</statBases>
-		
+		<seeThroughFog>true</seeThroughFog>
 		<drawOffscreen>true</drawOffscreen>
 		
 		<soundOneShotsOnEvent Inherit = "False">

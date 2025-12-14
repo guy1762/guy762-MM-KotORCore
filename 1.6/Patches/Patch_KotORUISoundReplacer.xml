@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="TinyBell"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_prompt</clipPath>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Click"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_click</clipPath>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="ClickReject"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_error</clipPath>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="TabOpen"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<!-- <clipPath>kotorGUI/MenuBeepsBoops/gui_open</clipPath> -->
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_click</clipPath>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="TabClose"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_close</clipPath>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="PageChange"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_open</clipPath>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="MapSelected"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_open</clipPath>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="ThingSelected"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_click</clipPath>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="CancelMode"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_close</clipPath>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/SoundDef[defName="Tick_Tiny"]/subSounds/li[1]/grains</xpath> -->
+		<!-- <value> -->
+			<!-- <grains> -->
+			  <!-- <li Class="AudioGrain_Clip"> -->
+				<!-- <clipPath>kotorGUI/MenuBeepsBoops/gui_actqueue</clipPath> -->
+			  <!-- </li> -->
+			<!-- </grains> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+	
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/SoundDef[defName="Tick_Low"]/subSounds/li[1]/grains/li[1]/clipPath</xpath> -->
+		<!-- <value> -->
+			<!-- <clipPath>kotorGUI/MenuBeepsBoops/gui_close</clipPath> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+	
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/SoundDef[defName="Tick_High"]/subSounds/li[1]/grains/li[1]/clipPath</xpath> -->
+		<!-- <value> -->
+			<!-- <clipPath>kotorGUI/MenuBeepsBoops/gui_check</clipPath> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+
+	
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Checkbox_TurnedOff"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_close</clipPath>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Checkbox_TurnedOn"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_check</clipPath>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Mouseover_ButtonToggle"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_button</clipPath>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Mouseover_Standard"]/subSounds/li[1]/grains</xpath>
+		<value>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotorGUI/MenuBeepsBoops/gui_button</clipPath>
+			  </li>
+			</grains>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Mouseover_Thump"]/subSounds/li[1]/grains</xpath>
+		<value>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotorGUI/MenuBeepsBoops/gui_button</clipPath>
+			  </li>
+			</grains>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Mouseover_Category"]/subSounds/li[1]/grains</xpath>
+		<value>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotorGUI/MenuBeepsBoops/gui_button</clipPath>
+			  </li>
+			</grains>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Mouseover_Command"]/subSounds/li[1]/grains</xpath>
+		<value>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotorGUI/MenuBeepsBoops/gui_button</clipPath>
+			  </li>
+			</grains>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="ArchitectCategorySelect"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_invselect</clipPath>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="FloatMenu_Open"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_prompt</clipPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="FloatMenu_Cancel"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_close</clipPath>
+		</value>
+	</Operation>
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="CommsWindow_Open"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/commlink_on</clipPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="CommsWindow_Close"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/commlink_off</clipPath>
+		</value>
+	</Operation>
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="InfoCard_Open"]/subSounds/li[1]/grains</xpath>
+		<value>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotorGUI/MenuBeepsBoops/gui_prompt</clipPath>
+			  </li>
+			</grains>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="InfoCard_Close"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_close</clipPath>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Message_TaskCompletion"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_complete</clipPath>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="DialogBoxAppear"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_prompt</clipPath>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="DragElement"]/subSounds/li[1]/grains</xpath>
+		<value>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotorGUI/MenuBeepsBoops/gui_invadd</clipPath>
+			  </li>
+			</grains>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="DropElement"]/subSounds/li[1]/grains</xpath>
+		<value>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotorGUI/MenuBeepsBoops/gui_invdrop</clipPath>
+			  </li>
+			</grains>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="LetterArrive"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_quest</clipPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="LetterArrive_Good"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_complete</clipPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="LetterArrive_BadUrgentSmall"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_error</clipPath>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/SoundDef[defName="Message_NeutralEvent"]/subSounds/li[1]/grains/li[1]/clipPath</xpath> -->
+		<!-- <value> -->
+			<!-- <clipPath>kotorGUI/MenuBeepsBoops/gui_prompt</clipPath> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/SoundDef[defName="Message_PositiveEvent"]/subSounds/li[1]/grains/li[1]/clipPath</xpath> -->
+		<!-- <value> -->
+			<!-- <clipPath>kotorGUI/MenuBeepsBoops/gui_complete</clipPath> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/SoundDef[defName="Message_NegativeEvent"]/subSounds/li[1]/grains/li[1]/clipPath</xpath> -->
+		<!-- <value> -->
+			<!-- <clipPath>kotorGUI/MenuBeepsBoops/gui_error</clipPath> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+	
+	
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/SoundDef[defName="Message_ThreatSmall"]/subSounds/li[1]/grains/li[1]/clipPath</xpath> -->
+		<!-- <value> -->
+			<!-- <clipPath>kotorGUI/MenuBeepsBoops/gui_error</clipPath> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/SoundDef[defName="Message_ThreatBig"]/subSounds/li[1]/grains/li[1]/clipPath</xpath> -->
+		<!-- <value> -->
+			<!-- <clipPath>kotorGUI/MenuBeepsBoops/gui_error</clipPath> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+	
+	
+	
+	
+	
+	
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/SoundDef[defName="ExecuteTrade"]/subSounds/li[1]/grains/li[1]/clipPath</xpath> -->
+		<!-- <value> -->
+			<!-- <clipPath>kotorGUI/MenuBeepsBoops/gui_invadd</clipPath> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="DraftOn"]/subSounds/li[1]/grains</xpath>
+		<value>
+			<grains>
+			  <li Class="AudioGrain_Clip">
+				<clipPath>kotormisc/select_SotE</clipPath>
+				<!-- <clipPath>kotorGUI/commlink_on</clipPath> -->
+			  </li>
+			</grains>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="DraftOff"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotormisc/it_pistol</clipPath>
+			<!-- <clipPath>kotormisc/shieldcon_empty</clipPath> -->
+			<!-- <clipPath>kotorGUI/commlink_off</clipPath> -->
+		</value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="ColonistSelected"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_click</clipPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="ColonistOrdered"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_check</clipPath>
+		</value>
+	</Operation>
+
+
+
+
+
+
+
+
+
+
+
+
+	
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Quest_Accepted"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_complete</clipPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Quest_Succeded"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/gui_level</clipPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Quest_Concluded"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_quest</clipPath>
+		</value>
+	</Operation>
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/SoundDef[defName="Quest_Failed"]/subSounds/li[1]/grains/li[1]/clipPath</xpath>
+		<value>
+			<clipPath>kotorGUI/MenuBeepsBoops/gui_error</clipPath>
+		</value>
+	</Operation>
+
+
+
+
+
+
+
+
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/SoundDef[defName="TutorMessageAppear"]/subSounds/li[1]/grains/li[1]/clipPath</xpath> -->
+		<!-- <value> -->
+			<!-- <clipPath>kotorGUI/MenuBeepsBoops/gui_quest</clipPath> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+	
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/SoundDef[defName="Lesson_Activated"]/subSounds/li[1]/grains/li[1]/clipPath</xpath> -->
+		<!-- <value> -->
+			<!-- <clipPath>kotorGUI/MenuBeepsBoops/gui_quest</clipPath> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+	<!-- <Operation Class="PatchOperationReplace"> -->
+		<!-- <xpath>Defs/SoundDef[defName="Lesson_Deactivated"]/subSounds/li[1]/grains/li[1]/clipPath</xpath> -->
+		<!-- <value> -->
+			<!-- <clipPath>kotorGUI/MenuBeepsBoops/gui_quest</clipPath> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
+
+</Patch>
