@@ -285,7 +285,8 @@
 	<!-- ordnance -->
 
 	
-	<ThingDef ParentName="guy762_AAprojectileBASE">
+	<!-- <ThingDef ParentName="guy762_AAprojectileBASE"> -->
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
 		<defName>SWVehicleBullet_SFconcMissile</defName>
 		<label>concussion missile</label>
 		<graphicData>
