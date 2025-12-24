@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Patch>
+			
+			
+			
+			<!-- <li>SWCPBiome_Orbit</li> -->
+			
+			<!-- <li>SWCPBiome_TatooineExtremeDesert</li> -->
+			<!-- <li>SWCPBiome_TatooineHighland</li> -->
+			
+			<!-- <li>SWCPBiome_OrdMantellUrban</li> -->
+			<!-- <li>SWCPBiome_OrdMantellJunkyard</li> -->
+			<!-- <li>SWCPBiome_OrdMantellJunkSwamp</li> -->
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellScrubland</li> -->
+			<!-- <li>SWCPBiome_OrdMantellDesert</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
+			<!-- <li>SWCPBiome_OrdMantellLavaField</li> -->
+			
+			<!-- <li>SWCPBiome_RhenVarGlacialPeaks</li> -->
+			<!-- <li>SWCPBiome_RhenVarGlacialHighland</li> -->
+			<!-- <li>SWCPBiome_RhenVarGlacialWastes</li> -->
+			
+			<!-- <li>SWCPBiome_NevarroAshFlatsDesert</li> -->
+			<!-- <li>SWCPBiome_NevarroHighland</li> -->
+			<!-- <li>SWCPBiome_NevarroLavaField</li> -->
+			
+			
+			
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName="VolcanicAsh"]/allowedBiomes</xpath>
+		<order>Append</order>
+		<value>
+			<li>SWCPBiome_OrdMantellLavaField</li>
+			
+			<li>SWCPBiome_NevarroAshFlatsDesert</li>
+			<li>SWCPBiome_NevarroHighland</li>
+			<li>SWCPBiome_NevarroLavaField</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName="LavaEmergence"]/allowedBiomes</xpath>
+		<order>Append</order>
+		<value>
+			<li>SWCPBiome_OrdMantellLavaField</li>
+			
+			<li>SWCPBiome_NevarroLavaField</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName="LavaFlow"]/allowedBiomes</xpath>
+		<order>Append</order>
+		<value>
+			<li>SWCPBiome_OrdMantellLavaField</li>
+			
+			<li>SWCPBiome_NevarroLavaField</li>
+		</value>
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName="VolcanicDebris"]/allowedBiomes</xpath>
+		<order>Append</order>
+		<value>
+			<li>SWCPBiome_OrdMantellLavaField</li>
+			
+			<li>SWCPBiome_NevarroHighland</li>
+			<li>SWCPBiome_NevarroLavaField</li>
+		</value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName="DroughtInitial"]/allowedBiomes</xpath>
+		<order>Append</order>
+		<value>
+			<li>SWCPBiome_OrdMantellGrasslands</li>
+		</value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName="Drought"]/allowedBiomes</xpath>
+		<order>Append</order>
+		<value>
+			<li>SWCPBiome_OrdMantellGrasslands</li>
+		</value>
+	</Operation>
+	
+	
+	
+			<!-- <li>Surface</li> -->
+			<!-- <li MayRequire="Ludeon.RimWorld.Odyssey">Orbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">LAO_Surface_Luna</li> -->
+			
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Tatooine</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TatooineOrbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_OrdMantell</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_OrdMantellOrbit</li> -->
+			
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_RhenVar</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_RhenVarOrbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Nevarro</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_NevarroOrbit</li> -->
+			
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Baroonda</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_BaroondaOrbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_Taloraan</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TaloraanOrbit</li> -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/IncidentDef[defName="OrbitalDebris"]/layerWhitelist</xpath>
+		<order>Append</order>
+		<value>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TatooineOrbit</li>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_OrdMantellOrbit</li>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_RhenVarOrbit</li>
+			<li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_NevarroOrbit</li>
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_BaroondaOrbit</li> -->
+			<!-- <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">SWCPPlanetLayer_TaloraanOrbit</li> -->
+		</value>
+	</Operation>
+	
+	
+	
+</Patch>

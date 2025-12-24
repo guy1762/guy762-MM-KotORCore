@@ -11,16 +11,22 @@
 	<SWCP_Enlist_Button_Label>Enlist into the army of The {FACTION_name}.</SWCP_Enlist_Button_Label>
 	<SWCP_Enlist_Button_Desc>Sign a new contract with The {FACTION_name}.</SWCP_Enlist_Button_Desc>
 	<SWCP_Enlist_Requrements_Not_Satisfied>You need to have minimum of 10 goodwill, currently you have only {0} goodwill.</SWCP_Enlist_Requrements_Not_Satisfied>
+	<SWCP_Enlist_Requrements_Not_Satisfied_harsh>You need to have minimum of 35 goodwill, currently you have only {0} goodwill.</SWCP_Enlist_Requrements_Not_Satisfied_harsh>
+	<SWCP_Enlist_Requrements_Not_Satisfied_easy>You need to have minimum of 0 goodwill, currently you have only {0} goodwill.</SWCP_Enlist_Requrements_Not_Satisfied_easy>
 	<SWCP_Enlisted_With_Key>Enlisted with: The {FACTION_name}</SWCP_Enlisted_With_Key>
 	<SWCP_Active_Enlist_Options>Active enlist options</SWCP_Active_Enlist_Options>
 
 	<!-- Mission Options -->
 
-	<SWCP_Missions_Label>Tasks</SWCP_Missions_Label>
-	<SWCP_Missions_Desc>Task descriptions</SWCP_Missions_Desc>
-	<SWCP_Menu_Missions_Desc>While leaving the HQ, you ask around about any potential tasks that need doing.</SWCP_Menu_Missions_Desc>
-	<SWCP_Menu_Missions_Select_Quest>Select a Task: </SWCP_Menu_Missions_Select_Quest>
-	<SWCP_Menu_Missions_Start_Quest>Start Task ({0})</SWCP_Menu_Missions_Start_Quest>
+	<SWCP_Missions_Label>Missions</SWCP_Missions_Label>
+	<SWCP_Missions_Desc>Mission descriptions</SWCP_Missions_Desc>
+	<SWCP_Menu_Missions_Desc>While at HQ, you ask around about any planned operations that still need a team to handle it.</SWCP_Menu_Missions_Desc>
+	
+	<SWCP_Menu_Missions_Desc_imp>While at HQ, you bribe a low-level taskmaster to clue you in on any planned operations that still need a squad to lead it.</SWCP_Menu_Missions_Desc_imp>
+	
+	
+	<SWCP_Menu_Missions_Select_Quest>Select a Mission: </SWCP_Menu_Missions_Select_Quest>
+	<SWCP_Menu_Missions_Start_Quest>Start Mission ({0})</SWCP_Menu_Missions_Start_Quest>
 	<SWCP_Cancel>Cancel</SWCP_Cancel>
 	<SWCP_Not_Enough_Money>Not enough money</SWCP_Not_Enough_Money>
 
@@ -32,7 +38,10 @@
 	<!-- Provision Options -->
 
 	<SWCP_Provisions_Label>Provisions</SWCP_Provisions_Label>
-	<SWCP_Provisions_Desc>Provisions will add the following items to your caravan inventory every 10 days:\n\n- 6x Supply Container</SWCP_Provisions_Desc>
+	<SWCP_Provisions_Desc_6xSupplyContainer>Provisions will add the following items to your caravan inventory every 10 days:\n\n- 6x Supply Container</SWCP_Provisions_Desc_6xSupplyContainer>
+	
+	<SWCP_Provisions_Label_74zSpeeder>Scout Bikes</SWCP_Provisions_Label_74zSpeeder>
+	<SWCP_Provisions_Desc_74zSpeeder>Scout Bikes will add the following items to your caravan inventory every 60 days:\n\n- 1x Aratech 74-Z Speeder Bike</SWCP_Provisions_Desc_74zSpeeder>
 
 	<!-- Storage Options -->
 
@@ -45,14 +54,24 @@
 
 	<SWCP_Part_Time_Job_Label>Part-Time Job</SWCP_Part_Time_Job_Label>
 	<SWCP_Part_Time_Job_Desc>Pull extra duties and cover shifts for your battle buddies for $12 an hour.</SWCP_Part_Time_Job_Desc>
+	
+	<SWCP_Part_Time_Job_Desc_rebel>Pull extra duties and cover shifts for your comrades for 20cr an hour.</SWCP_Part_Time_Job_Desc_rebel>
+	<SWCP_Part_Time_Job_Desc_imp>Pull extra duties and cover shifts for your battle buddies for 5cr an hour.</SWCP_Part_Time_Job_Desc_imp>
+	
 	<SWCP_Hospital_Label>Hospital</SWCP_Hospital_Label>
 	<SWCP_Hospital_Desc>Check in with the hospital of this base. This service tends to all of your troopers with spacer medkits. Immunity gain is also increased while your troopers are in the hospital.</SWCP_Hospital_Desc>
+	
 	<SWCP_Medical_Training_Label>Training: Medical</SWCP_Medical_Training_Label>
 	<SWCP_Medical_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Medical\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Medical_Training_Desc>
 	<SWCP_Shooting_Training_Label>Training: Ranged Combat</SWCP_Shooting_Training_Label>
 	<SWCP_Shooting_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Shooting\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Shooting_Training_Desc>
+	<SWCP_Melee_Training_Label>Training: Melee Combat</SWCP_Melee_Training_Label>
+	<SWCP_Melee_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Melee\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Melee_Training_Desc>
 	<SWCP_Survival_Training_Label>Training: Survival</SWCP_Survival_Training_Label>
-	<SWCP_Survival_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Animals\n- Construction\n- Cooking\n- Crafting\n- Mining\n- Plants\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Survival_Training_Desc>
+	<SWCP_Survival_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Animals\n- Cooking\n- Plants\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Survival_Training_Desc>
+	<!-- <SWCP_Survival_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Animals\n- Construction\n- Cooking\n- Crafting\n- Mining\n- Plants\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Survival_Training_Desc> -->
+	<SWCP_Intelligence_Training_Label>Training: Intellectual</SWCP_Intelligence_Training_Label>
+	<SWCP_Intelligence_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Intellectual\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Intelligence_Training_Desc>
 
 	<!-- Bounty Options -->
 
@@ -67,6 +86,11 @@
 	<SWCP_Resign_Button_Desc>Leave active duty from this faction.</SWCP_Resign_Button_Desc>
 	<SWCP_Player_Settlement_Required>Player's settlement required</SWCP_Player_Settlement_Required>
 	<SWCP_Enlisted_To_Hostile_Faction>cannot join because you are enlisted with their enemy, {HOSTILEFACTION_name}</SWCP_Enlisted_To_Hostile_Faction>
+	
+	
+	<SWCP_Resign_Menu_Text_harsh>You will resign from active duty in the {FACTION_name} effective immediately. (-75 in relations)</SWCP_Resign_Menu_Text_harsh>
+	<SWCP_Resign_Letter_Label_harsh>You have successfully resigned from active duty in the {FACTION_name}. (-75 relations)</SWCP_Resign_Letter_Label_harsh>
+	<SWCP_Resign_Button_Label_harsh>Resign (-75 relations)</SWCP_Resign_Button_Label_harsh>
 
 	<!-- Kicked Out Options -->
 

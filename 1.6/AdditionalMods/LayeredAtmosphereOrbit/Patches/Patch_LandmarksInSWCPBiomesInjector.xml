@@ -95,7 +95,7 @@
 			<li>SWCPBiome_RhenVarGlacialWastes</li>
 			
 			<li>SWCPBiome_NevarroHighland</li>
-			<li>SWCPBiome_NevarroLavaField</li>
+			<!-- <li>SWCPBiome_NevarroLavaField</li> -->
 		</value>
 	</Operation>
 	
@@ -322,8 +322,8 @@
 		<value>
 			<li>SWCPBiome_OrdMantellLavaField</li>
 			
-			<li>SWCPBiome_NevarroHighland</li>
-			<li>SWCPBiome_NevarroLavaField</li>
+			<!-- <li>SWCPBiome_NevarroHighland</li> -->
+			<!-- <li>SWCPBiome_NevarroLavaField</li> -->
 		</value>
 	</Operation>
 	

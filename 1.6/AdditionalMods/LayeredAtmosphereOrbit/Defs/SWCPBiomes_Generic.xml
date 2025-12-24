@@ -40,9 +40,9 @@
   <!-- </BiomeDef> -->
   
 	<BiomeDef ParentName="SpaceBiome">
-		<defName>SWCP_Orbit</defName>
+		<defName>SWCPBiome_Orbit</defName>
 		<label>orbit</label>
-		<description>Empty space a few hundred kilometers above the surface of the world.</description>
+		<description>Empty space a few hundred kilometers above the surface of the world. May contain Mynocks.</description>
 
 		<wildAnimals>
 			<Mynock MayRequire="Mlie.StarWarsAnimalCollection">0.1</Mynock>

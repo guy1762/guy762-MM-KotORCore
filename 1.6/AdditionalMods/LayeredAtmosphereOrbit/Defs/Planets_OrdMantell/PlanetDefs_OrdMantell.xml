@@ -8,7 +8,7 @@
 		<description>I've been monitoring you, Captain Rendar...\n\nDistance to Rimworld: 375000 km.\nDiameter: 100% of Rimworld.\n\nGravity well elevation: 1000 km.</description>
 		<viewGizmoTexPath>UI/Commands/LAO_ViewLuna</viewGizmoTexPath>
 		
-		<posFromRimworld>(-156055.71, 14671.31, 0)</posFromRimworld>
+		<posFromRimworld>(-1000000, -1000000, 0)</posFromRimworld>
 		
 		<typeTag>Planet</typeTag>
 		<gravityWellExitElevation>1000</gravityWellExitElevation>
@@ -337,7 +337,7 @@
 		<viewGizmoTooltip>View locations that are orbiting Ord Mantell.</viewGizmoTooltip>
 		<viewGizmoTexPath>UI/Commands/ViewOrbit</viewGizmoTexPath>
 		<elevationString>200km</elevationString>
-		<defaultBiome>SWCP_Orbit</defaultBiome>
+		<defaultBiome>SWCPBiome_Orbit</defaultBiome>
 		<rangeDistanceFactor>20</rangeDistanceFactor>
 		
 		<modExtensions>

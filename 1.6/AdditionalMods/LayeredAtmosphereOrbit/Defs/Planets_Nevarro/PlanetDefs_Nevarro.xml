@@ -8,7 +8,7 @@
 		<description>.\n\nDistance to Rimworld: 375000 km.\nDiameter: 100% of Rimworld.\n\nGravity well elevation: 1000 km.</description>
 		<viewGizmoTexPath>UI/Commands/LAO_ViewLuna</viewGizmoTexPath>
 		
-		<posFromRimworld>(-156055.71, 14671.31, 0)</posFromRimworld>
+		<posFromRimworld>(-1100000, 5000000, 0)</posFromRimworld>
 		
 		<typeTag>Planet</typeTag>
 		<gravityWellExitElevation>1000</gravityWellExitElevation>
@@ -18,7 +18,7 @@
 
 	<LayeredAtmosphereOrbit.PlanetLayerGroupDef>
 		<defName>SWCPPlanetLayerGroup_Nevarro</defName>
-		<label>Rhen Var</label>
+		<label>Nevarro</label>
 		<description>.</description>
 		<!-- <description>The foundational layer of pulverized rock and dust where ancient impacts scar the terrain. This is the airless ground that forms the outermost shell of the Luna. This stark surface is where sunlight meets shadow and where vast, barren plains stretch endlessly. It provides the base for all of the Luna's natural geography, from towering peaks of crater rims to deep, shadowed chasms.</description> -->
 		<defaultPlanetLayer>SWCPPlanetLayer_Nevarro</defaultPlanetLayer>
@@ -331,7 +331,7 @@
 		<viewGizmoTooltip>View locations that are orbiting Nevarro.</viewGizmoTooltip>
 		<viewGizmoTexPath>UI/Commands/ViewOrbit</viewGizmoTexPath>
 		<elevationString>200km</elevationString>
-		<defaultBiome>SWCP_Orbit</defaultBiome>
+		<defaultBiome>SWCPBiome_Orbit</defaultBiome>
 		<rangeDistanceFactor>20</rangeDistanceFactor>
 		
 		<modExtensions>
