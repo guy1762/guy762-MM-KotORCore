@@ -416,6 +416,29 @@
 	</SoundDef>
 	
 	<SoundDef>
+		<defName>kotorsound_enginehum_zoomer</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/veh_zoomer_slow_</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>30</min>        
+				<max>30</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
 		<defName>kotorsound_enginehum_firespray</defName>	
 		<context>MapOnly</context>
 		<eventNames />	

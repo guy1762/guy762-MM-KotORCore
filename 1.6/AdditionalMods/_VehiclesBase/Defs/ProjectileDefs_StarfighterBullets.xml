@@ -109,6 +109,63 @@
 	
 	
 	
+	
+	
+	
+	<ThingDef ParentName="guy762_AVandAAprojectileBASE">
+		<defName>SWVehicleBullet_SFheavyion</defName>
+		<label>heavy ion bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/AntiVehicle_blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>4</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_ion</damageDef>
+			<damageAmountBase>75</damageAmountBase>
+			<armorPenetrationBase>0.325</armorPenetrationBase>
+			<speed>200</speed>
+			<!-- <explosionRadius>1</explosionRadius> -->
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>50</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_AVandAAprojectileBASE">
+		<defName>SWVehicleBullet_SFheavyion_xplosive</defName>
+		<label>heavy ion bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/AntiVehicle_blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>4</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_ion</damageDef>
+			<damageAmountBase>75</damageAmountBase>
+			<armorPenetrationBase>0.325</armorPenetrationBase>
+			<speed>200</speed>
+			<explosionRadius>2</explosionRadius>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>50</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	
+	
+	
+	
 	<ThingDef ParentName="guy762_AVandAAprojectileBASE">
 		<defName>SWVehicleBullet_SFdoublegreen</defName>
 		<label>laser bolts</label>
