@@ -3,10 +3,10 @@
 
 	<ThingDef Name="guy762_nonAAprojectileBASE" ParentName="BaseBullet" Abstract="True">
 		<modExtensions>
-			<!-- <li Class="taranchuk_flightcombat.ProjectileModes"> -->
-				<!-- <antiAir>false</antiAir> -->
-				<!-- <ground>true</ground> -->
-			<!-- </li> -->
+			<li Class="taranchuk_flightcombat.ProjectileModes">
+				<antiAir>false</antiAir>
+				<ground>true</ground>
+			</li>
 		</modExtensions> <!-- DISABLED PENDING 1.6 UPDATE -->
 	</ThingDef>
 	
@@ -337,21 +337,39 @@
 		<!-- <thingClass>Projectile_Explosive</thingClass> -->
 	</ThingDef>
 	
-	
-	
-	
-	
-	
-	
-	<!-- <ThingDef ParentName="guy762_AAprojectileBASE"> -->
 	<ThingDef ParentName="guy762_nonAAprojectileBASE">
+		<defName>SWFixedTurretBullet_heavyAVred</defName>
+		<label>heavy laser bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/heavysniper_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>125</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<speed>100</speed>
+			<!-- <explosionRadius>1</explosionRadius> -->
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_AAprojectileBASE">
 		<defName>SWFixedTurretBullet_AAdoublered</defName>
 		<label>anti-air laser bolts</label>
 		<graphicData>
 			<texPath>Weapons/Projectiles/doubleheavyblaster_red</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>2</drawSize>
+			<drawSize>4</drawSize>
 		</graphicData>
 		<projectile>
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>

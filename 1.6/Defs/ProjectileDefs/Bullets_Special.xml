@@ -641,8 +641,8 @@
 		</graphicData>
 		<projectile>
 			<damageDef>guy762_ExplosiveDamage_ion</damageDef>
-			<damageAmountBase>50</damageAmountBase>
-			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.125</armorPenetrationBase>
 			<speed>75</speed>
 			<explosionRadius>3</explosionRadius>
 			<stoppingPower>3</stoppingPower>

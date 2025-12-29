@@ -994,8 +994,8 @@
 					<max>1.2</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>40</min>
-					<max>70</max>
+					<min>50</min>
+					<max>100</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>

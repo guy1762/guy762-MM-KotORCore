@@ -323,6 +323,51 @@
 	</ThingDef>
 	
 	
+	<ThingDef ParentName="guy762_NPCAutoDoorBase">
+		<defName>guy762_NPCAutodoor1x1_DoomgiverA</defName>
+		<label>plain autodoor</label>
+		<description>Divides rooms. Powered operation allows people to move through the door without slowing down.</description>
+		<graphicData>
+			<texPath>Buildings/Doors/Doomgiver1x1DoorA</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<!-- <shaderType>CutoutComplex</shaderType> -->
+			<color>(155,155,165)</color>
+		</graphicData>
+		<uiIconPath>Buildings/Doors/Doomgiver1x1DoorA_icon</uiIconPath>
+		
+		
+		<thingClass>SWCP.RimframeGrineerDoors.Building_CustomMultiTileDoor_DoubleOpeningHeight</thingClass>
+		<modExtensions>
+			<li Class="SWCP.RimframeGrineerDoors.DoorPartGraphicsExtension">
+				<leftPartGraphicData>
+					<texPath>Buildings/Doors/Doomgiver1x1DoorA</texPath>
+					<graphicClass>Graphic_Single</graphicClass>
+					<!-- <shaderType>CutoutComplex</shaderType> -->
+					<drawSize>(1, 1)</drawSize>
+				</leftPartGraphicData>
+			</li>
+		</modExtensions>
+		
+		<statBases>
+			<MaxHitPoints>200</MaxHitPoints>
+			<DoorOpenSpeed>0.5</DoorOpenSpeed>
+		</statBases>
+		<building>
+			<isAirtight>true</isAirtight>
+			<soundDoorOpenPowered>kotorsound_building_ImperialDoor</soundDoorOpenPowered>
+			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
+			
+			<paintable>false</paintable>
+			<doorTopGraphic>
+				<texPath>Buildings/Doors/SingleDoorFrame_Square</texPath>
+				<graphicClass>Graphic_Multi</graphicClass>
+				<shaderType>CutoutComplex</shaderType>
+				<drawSize>1.25</drawSize>
+			</doorTopGraphic>
+		</building>
+	</ThingDef>
+	
+	
 	
 	
 	<ThingDef ParentName="guy762_AutoDoorBase">
