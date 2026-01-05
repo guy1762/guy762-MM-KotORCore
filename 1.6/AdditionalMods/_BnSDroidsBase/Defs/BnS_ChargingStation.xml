@@ -3,7 +3,7 @@
 	<ThingDef ParentName="BuildingBase">
 		<defName>BS_AndroidChargingStation</defName>
 		<label>charging station</label>
-		<description>A station where androids can recharge power cells. Requires batteries and a powerful power grid to support.\n\n(art pending)</description>
+		<description>A station where androids can recharge power cells. REQUIRES FULLY CHARGED BATTERIES!!!</description>
 		<thingClass>BigAndSmall.Building_AndroidCharger</thingClass>
 		<graphicData>
 		  <texPath>BS_Buildings/AndroidCharger</texPath>
@@ -57,6 +57,11 @@
 		  <li Class="CompProperties_Power">
 			<compClass>CompPowerTrader</compClass>
 			<basePowerConsumption>0</basePowerConsumption>
+		  </li>
+		  <li Class="CompProperties_AffectedByFacilities">
+			<linkableFacilities>
+			  <li>Battery</li>
+			</linkableFacilities>
 		  </li>
 		</comps>
 	</ThingDef>

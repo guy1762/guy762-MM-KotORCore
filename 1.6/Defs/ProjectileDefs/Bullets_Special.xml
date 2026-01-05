@@ -600,7 +600,7 @@
 			
 			<speed>25</speed>
 			<explosionRadius>1.9</explosionRadius>
-			<explosionDelay>100</explosionDelay>
+			<explosionDelay>25</explosionDelay>
 			<soundExplode>kotorsound_RepComDC17MortarExplode</soundExplode>
 		</projectile>
 		<thingClass>Projectile_Explosive</thingClass>

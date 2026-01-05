@@ -288,6 +288,25 @@
 	
 	
 	<ThingDef ParentName="guy762_AVandAAprojectileBASE">
+		<defName>SWVehicleBullet_kihraxz</defName>
+		<label>laser bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/advheavyblaster_orange</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.50</armorPenetrationBase>
+			<speed>200</speed>
+			<!-- <explosionRadius>0.25</explosionRadius> -->
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_AVandAAprojectileBASE">
 		<defName>SWVehicleBullet_scurrg</defName>
 		<label>heavy laser bolts</label>
 		<graphicData>

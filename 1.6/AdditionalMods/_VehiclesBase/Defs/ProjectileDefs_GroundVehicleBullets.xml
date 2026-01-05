@@ -82,10 +82,29 @@
 		<defName>SWVehicleBullet_AIred_heavy</defName>
 		<label>laser bolt</label>
 		<graphicData>
-			<texPath>Weapons/Projectiles/blaster_red</texPath>
+			<texPath>Weapons/Projectiles/heavyblaster_red</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>1.5</drawSize>
+			<drawSize>2.5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>1</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
+		<defName>SWVehicleBullet_AIgreen_heavy</defName>
+		<label>laser bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/heavyblaster_green</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2.5</drawSize>
 		</graphicData>
 		<projectile>
 			<damageDef>guy762_ExplosiveDamage_energy</damageDef>
@@ -301,7 +320,44 @@
 	
 	
 	
+	<ThingDef ParentName="guy762_AVandAAprojectileBASE">
+		<defName>SWVehicleBullet_AVheavydoublegreen</defName>
+		<label>heavy laser bolts</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/DoubleAntiVehicle_green</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>6</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>200</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<speed>100</speed>
+			<!-- <explosionRadius>0.25</explosionRadius> -->
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
 	
+	
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
+		<defName>SWVehicleBullet_AVheavydoublegreen_xplosive</defName>
+		<label>heavy laser bolts</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/DoubleAntiVehicle_green</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>6</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>200</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<speed>100</speed>
+			<explosionRadius>4</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
 	
 	
 	

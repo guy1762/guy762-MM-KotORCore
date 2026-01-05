@@ -240,6 +240,29 @@
 	</SoundDef>
 	
 	<SoundDef>
+		<defName>kotorsound_enginehum_YTfreighter</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/EGL_FALCON_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
 		<defName>kotorsound_enginehum_lancet</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
@@ -255,9 +278,9 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
-				</volumeRange>  		
+				</volumeRange>
 			</li>
 		</subSounds>
 	</SoundDef>
@@ -382,6 +405,75 @@
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipengine/freefall_engine</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_skiff</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/EaWX/Personnel_Skiff_Loop</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>30</min>        
+				<max>30</max>
+				</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_TIEAggressor</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/EaWX/TIE_Aggressor_Engine_Loop</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_Z95headhunter</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/EaWX/Z95_Engine_Loop</clipPath>
 					</li>
 				</grains>	
 				<volumeRange>
@@ -896,6 +988,33 @@
 				<min>45</min>        
 				<max>45</max>
 				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_ATATsteppy</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/ATAT_steppy_compressed</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+					<min>45</min>        
+					<max>45</max>
+				</volumeRange>  
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>100</min>
+					<max>500</max>
+				</distRange>				
 			</li>
 		</subSounds>
 	</SoundDef>
