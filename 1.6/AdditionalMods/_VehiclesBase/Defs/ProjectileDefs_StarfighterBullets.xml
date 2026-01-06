@@ -167,6 +167,25 @@
 	
 	
 	<ThingDef ParentName="guy762_AVandAAprojectileBASE">
+		<defName>SWVehicleBullet_SFlightdoublegreen</defName>
+		<label>laser bolts</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/longdoubleblaster_green</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>35</damageAmountBase>
+			<armorPenetrationBase>0.325</armorPenetrationBase>
+			<speed>200</speed>
+			<!-- <explosionRadius>1</explosionRadius> -->
+		</projectile>
+		<!-- <thingClass>Projectile_Explosive</thingClass> -->
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_AVandAAprojectileBASE">
 		<defName>SWVehicleBullet_SFdoublegreen</defName>
 		<label>laser bolts</label>
 		<graphicData>
@@ -350,7 +369,23 @@
 	</ThingDef>
 	
 	
-	
+	<ThingDef ParentName="guy762_AVandAAprojectileBASE">
+		<defName>SWVehicleBullet_MassDriver</defName>
+		<label>metallic bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/metalbolt</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>2</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationBase>0.875</armorPenetrationBase>
+			<stoppingPower>1</stoppingPower>
+			<speed>200</speed>
+		</projectile>
+	</ThingDef>
 	
 	
 	
@@ -421,6 +456,40 @@
 			<speed>50</speed>
 			<explosionRadius>2</explosionRadius>
 			<soundAmbient>kotorsound_missileflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="VEF.Weapons.CompProperties_HomingProjectile">
+				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
+				<homingCorrectionTickRate>5</homingCorrectionTickRate>
+				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
+			</li>
+		</comps>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="guy762_nonAAprojectileBASE">
+		<defName>SWVehicleBullet_SFiontorp</defName>
+		<label>ion torpedo</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/torp_cyan</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>6</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>EMP</damageDef>
+			<damageAmountBase>100</damageAmountBase>
+			<armorPenetrationBase>0.50</armorPenetrationBase>
+			<speed>50</speed>
+			<explosionRadius>5</explosionRadius>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+			<extraDamages>
+				<li>
+					<def>guy762_GrenadeDamage_ion</def>
+					<amount>50</amount>
+				</li>
+			</extraDamages>
 		</projectile>
 		<thingClass>Projectile_Explosive</thingClass>
 		<comps>
