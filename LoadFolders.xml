@@ -38,6 +38,9 @@
 		
 		<li IfModActive="DimonSever000.FactionLanguages">1.6/AdditionalMods/RimLanguages</li>
 		
+		<li IfModActive="MemeGoddess.DualWield">1.6/AdditionalMods/DualWield</li>
+		<li IfModActive="Roolo.DualWield">1.6/AdditionalMods/DualWield</li>
+		
 		<li IfModActive="Mlie.ShowMeYourHands">1.6/AdditionalMods/ShowMeYourHands</li>
 		
 		<li IfModActive="sindre0830.rimnauts2">1.6/AdditionalMods/RimNauts2</li>

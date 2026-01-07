@@ -88,12 +88,12 @@
 			</li>
 		</comps>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<designationCategory>KOTOR_BuildTab</designationCategory>
-		<uiOrder>2100</uiOrder>
+		<designationCategory>KOTOR_BuildTab</designationCategory><uiOrder>9999</uiOrder>
+		
 		<!-- <constructEffect>ConstructMetal</constructEffect> -->
-		<!-- <researchPrerequisites> -->
-			<!-- <li>KOTOR_Research_FuelProcessing</li> -->
-		<!-- </researchPrerequisites> -->
+		<researchPrerequisites>
+			<li>guy762_ResearchKotOR_uncraftable</li>
+		</researchPrerequisites>
 		<!-- <constructionSkillPrerequisite>14</constructionSkillPrerequisite> -->
 		<tradeTags>
 			<li>guy762TT_AllItemsSellable</li>
@@ -187,13 +187,13 @@
 		
 		<pathCost>30</pathCost>
 		<passability>PassThroughOnly</passability>
-		<designationCategory>KOTOR_BuildTab</designationCategory>
+		<designationCategory>KOTOR_BuildTab</designationCategory><uiOrder>9999</uiOrder>
 		<rotatable>false</rotatable>
 		<!-- <constructionSkillPrerequisite>6</constructionSkillPrerequisite> -->
 		
-		<!-- <researchPrerequisites> -->
-			<!-- <li>KOTOR_Research_MoistureVaporator</li> -->
-		<!-- </researchPrerequisites> -->
+		<researchPrerequisites>
+			<li>guy762_ResearchKotOR_uncraftable</li>
+		</researchPrerequisites>
 		
 		<!-- <minifiedDef>MinifiedThing</minifiedDef> -->
 		<tradeability>All</tradeability>

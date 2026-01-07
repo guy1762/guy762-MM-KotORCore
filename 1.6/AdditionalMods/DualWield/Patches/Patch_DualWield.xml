@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedModdable_OneHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedModdable_OffHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>True</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedModdable_TwoHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>True</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedMakeable_OneHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedMakeable_OffHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>True</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedMakeable_TwoHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>True</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	
+	
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedWeapon_OneHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedWeapon_OffHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>True</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedWeapon_TwoHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>True</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedModMakeable_OneHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedModMakeable_OffHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>True</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedModMakeable_TwoHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>True</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedNoQualityModMake_OneHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedNoQualityModMake_OffHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>True</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedNoQualityModMake_TwoHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>True</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedMakeableNoQuality_OneHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedMakeableNoQuality_OffHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>True</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORRangedMakeableNoQuality_TwoHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>True</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORMeleeModdable_OneHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORMeleeModdable_OffHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>True</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORMeleeModdable_TwoHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>True</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	
+	
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORMeleeMakeable_OneHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORMeleeMakeable_OffHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>True</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORMeleeMakeable_TwoHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>True</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORMeleeWeapon_OneHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORMeleeWeapon_OffHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>True</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORMeleeWeapon_TwoHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>True</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORMeleeModMakeable_OneHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORMeleeModMakeable_OffHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>True</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORMeleeModMakeable_TwoHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>True</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	
+	
+	
+	
+	
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORMeleeNoQualityModMake_OneHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORMeleeNoQualityModMake_OffHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>True</dualWield>
+				<twoHand>False</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	<Operation Class="PatchOperationAddModExtension">
+	  <xpath>Defs/ThingDef[defName="KotORMeleeNoQualityModMake_TwoHand"]</xpath>
+	  <value>
+		
+			<li Class="DualWield.DefModExtension_DefaultSettings">
+				<dualWield>False</dualWield>
+				<twoHand>True</twoHand> 
+			</li>
+		
+	  </value>
+	</Operation>
+	
+	
+	
+	
+
+
+</Patch>

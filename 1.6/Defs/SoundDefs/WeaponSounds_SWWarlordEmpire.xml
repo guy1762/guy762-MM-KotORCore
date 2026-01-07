@@ -264,31 +264,6 @@
 		</subSounds>
 	</SoundDef>
 	
-	<SoundDef>
-		<defName>kotorsound_BF2RebelBlaster</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorblasters/BF2_DH17Rifle</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>45</min>        
-				<max>45</max>
-				</volumeRange>
-				<pitchRange>
-					<min>0.8</min>				
-					<max>1.2</max>
-				</pitchRange>			
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
 	
 	<SoundDef>
 		<defName>kotorsound_RebelBlaster_mix</defName>	
@@ -368,7 +343,30 @@
 	
 	
 	
-	
+	<SoundDef>
+		<defName>kotorsound_BF2CommandoPistol</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorblasters/BF2CommandoPistol</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
 	
 	
 	

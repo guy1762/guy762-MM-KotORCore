@@ -17,7 +17,7 @@
   
   <ResearchProjectDef ParentName="KOTOR_UnobtainableResearch_Base">
     <defName>guy762_ResearchKotOR_uncraftable</defName>
-    <label>uncraftable weapons</label>
+    <label>uncraftable items and objects</label>
     <description>Hey! You're not supposed to unlock this one!</description>
     <researchViewX>21.00</researchViewX>
     <researchViewY>7.6</researchViewY>
