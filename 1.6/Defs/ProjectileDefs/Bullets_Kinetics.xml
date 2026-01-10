@@ -126,7 +126,7 @@
 			<explosionRadius>0.25</explosionRadius>
 			<extraDamages>
 				<li>
-					<def>Bullet</def>
+					<def>guy762_RangedDamage_AntiVehicleBullet</def>
 					<amount>16</amount>
 				</li>
 			</extraDamages>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+
+	<ThingDef Name="SWCP_FuelTankDamageReducerBASE" ParentName="BuildingBase" Abstract="True">
+		<damageMultipliers>
+			<li><damageDef>guy762_RangedDamage_energy</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_BeamDamage_energy</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="Ludeon.RimWorld.Biotech"><damageDef>Beam</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey"><damageDef>BeamBypassShields</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_ExplosiveDamage_energy</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_energy</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="lee.theforce.standalone"><damageDef>Force_EnergyBurn</damageDef><multiplier>0.25</multiplier></li>
+			
+			<li><damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_RangedDamage_AntiVehicleBullet</damageDef><multiplier>0.25</multiplier></li>
+
+			<li><damageDef>guy762_RangedDamage_ion</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_MeleeDamage_ion</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_ExplosiveDamage_ion</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_ion</damageDef><multiplier>0.25</multiplier></li>
+
+			<li><damageDef>guy762_GrenadeDamage_plasma</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_thermaldet</damageDef><multiplier>0.25</multiplier></li>
+			
+			<li MayRequire="guy762.NA.MM.SWVehicles"><damageDef>guy762_ExplosiveDamage_conc</damageDef><multiplier>0.25</multiplier></li>
+			
+			<li><damageDef>Flame</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>Burn</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>Bomb</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>Vaporize</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>BombSuper</damageDef><multiplier>0.25</multiplier></li>
+
+
+			<li><damageDef>RangedStab</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>Bullet</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="Ludeon.RimWorld.Biotech"><damageDef>BulletToxic</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey"><damageDef>Bullet_TraitTox</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey"><damageDef>Bullet_TraitIncendiary</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>Arrow</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>ArrowHighVelocity</damageDef><multiplier>0.25</multiplier></li>
+			
+			<li><damageDef>guy762_MeleeDamage_energy</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_MeleeDamage_ecut</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_MeleeDamage_estab</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="lee.theforce.lightsaber"><damageDef>Force_LightsaberCut</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="lee.theforce.lightsaber"><damageDef>Force_SaberSlash</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="lee.theforce.lightsaber"><damageDef>Force_SaberStab</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="lee.theforce.lightsaber"><damageDef>Force_LightsaberCutMechanoid</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="lee.theforce.lightsaber"><damageDef>Force_SaberSlashSharp</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="lee.theforce.lightsaber"><damageDef>Force_SaberStabSharp</damageDef><multiplier>0.25</multiplier></li>
+		</damageMultipliers>
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef Name="SWCPBuilding_TurretArmorProfileBASE" ParentName="BuildingBase" Abstract="True">
+		<damageMultipliers>
+	
+		<!-- energy: ranged/explosive -->
+			<li><damageDef>guy762_RangedDamage_energy</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_BeamDamage_energy</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>Beam</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey"><damageDef>BeamBypassShields</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_ExplosiveDamage_energy</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_energy</damageDef><multiplier>0.1</multiplier></li>
+			<li MayRequire="lee.theforce.standalone"><damageDef>Force_EnergyBurn</damageDef><multiplier>0.1</multiplier></li>
+		
+		<!-- EMP -->
+			<li><damageDef>EMP</damageDef><multiplier>1</multiplier></li>
+			<li MayRequire="Ludeon.RimWorld.Biotech"><damageDef>MechBandShockwave</damageDef><multiplier>1</multiplier></li>
+			
+		<!-- ion -->
+			<li><damageDef>guy762_RangedDamage_ion</damageDef><multiplier>2</multiplier></li>
+			<li><damageDef>guy762_ExplosiveDamage_ion</damageDef><multiplier>2</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_ion</damageDef><multiplier>2</multiplier></li>
+			<li><damageDef>guy762_MeleeDamage_ion</damageDef><multiplier>2</multiplier></li>
+		
+		<!-- anti-vehicle -->
+			<li><damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef><multiplier>1</multiplier></li>
+			<li><damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef><multiplier>1</multiplier></li>
+			<li><damageDef>guy762_RangedDamage_AntiVehicleBullet</damageDef><multiplier>1</multiplier></li>
+		
+		<!-- explosive -->
+			<li><damageDef>Bomb</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_frag</damageDef><multiplier>0.1</multiplier></li>
+			<li MayRequire="guy762.NA.MM.SWVehicles"><damageDef>guy762_ExplosiveDamage_conc</damageDef><multiplier>0.01</multiplier></li>
+			
+		<!-- explosive: piercing -->
+			<li MayRequire="Ludeon.RimWorld.Odyssey"><damageDef>MiningBomb</damageDef><multiplier>2</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_detpack</damageDef><multiplier>2</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_thermaldet</damageDef><multiplier>4</multiplier></li>
+			<li><damageDef>Vaporize</damageDef><multiplier>0.5</multiplier></li>
+			<li><damageDef>BombSuper</damageDef><multiplier>1</multiplier></li>
+			
+			
+			
+			
+		<!-- electrical -->
+			<li><damageDef>guy762_RangedDamage_electrical</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>guy762_MeleeDamage_electrical</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>guy762_BeamDamage_electrical</damageDef><multiplier>0.1</multiplier></li>
+			<li MayRequire="lee.theforce.standalone"><damageDef>Force_Lightning</damageDef><multiplier>0.1</multiplier></li>
+			
+		<!-- sonic -->
+			<li><damageDef>guy762_RangedDamage_sonic</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>guy762_MeleeDamage_sonic</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_sonic</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>Thump</damageDef><multiplier>0.1</multiplier></li>
+			
+		<!-- disruption/acid -->
+			<li><damageDef>AcidBurn</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_RangedDamage_disruptor</damageDef><multiplier>0.5</multiplier></li>
+			<li><damageDef>guy762_BeamDamage_disruptor</damageDef><multiplier>0.01</multiplier></li>
+			<li><damageDef>guy762_ExplosiveDamage_disruptor</damageDef><multiplier>0.5</multiplier></li>
+			<li><damageDef>guy762_MeleeDamage_unstoppable</damageDef><multiplier>1</multiplier></li>
+			
+		<!-- environmental -->
+			<li><damageDef>Flame</damageDef><multiplier>0.01</multiplier></li>
+			<li><damageDef>Burn</damageDef><multiplier>0.01</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_plasma</damageDef><multiplier>1</multiplier></li>
+			<li><damageDef>guy762_BeamDamage_radiation</damageDef><multiplier>0.01</multiplier></li>
+			<li><damageDef>Frostbite</damageDef><multiplier>0.01</multiplier></li>
+			
+		<!-- environmental: atmospheric -->
+			<li MayRequire="Ludeon.RimWorld.Biotech"><damageDef>ToxGas</damageDef><multiplier>0</multiplier></li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey"><damageDef>VacuumBurn</damageDef><multiplier>0</multiplier></li>
+			<li><damageDef>TornadoScratch</damageDef><multiplier>0.25</multiplier></li>
+			
+			
+			
+		<!-- physical: piercing melee -->
+			<li><damageDef>Demolish</damageDef><multiplier>1</multiplier></li>
+			
+		<!-- physical: melee -->
+			<li><damageDef>Cut</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>Crush</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>Blunt</damageDef><multiplier>0.1</multiplier></li>
+			<li MayRequire="lee.theforce.lightsaber"><damageDef>Force_BluntLightsaber</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>Poke</damageDef><multiplier>0.01</multiplier></li>
+			<li><damageDef>Stab</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>Scratch</damageDef><multiplier>0.01</multiplier></li>
+			<li><damageDef>ScratchToxic</damageDef><multiplier>0.01</multiplier></li>
+			<li><damageDef>Bite</damageDef><multiplier>0.01</multiplier></li>
+			<li><damageDef>ToxicBite</damageDef><multiplier>0.01</multiplier></li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey"><damageDef>PorcupineBite</damageDef><multiplier>0.01</multiplier></li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey"><damageDef>PorcupineScratch</damageDef><multiplier>0.01</multiplier></li>
+			
+		<!-- physical:ranged -->
+			<li><damageDef>RangedStab</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>Bullet</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="Ludeon.RimWorld.Biotech"><damageDef>BulletToxic</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey"><damageDef>Bullet_TraitTox</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey"><damageDef>Bullet_TraitIncendiary</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>Arrow</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>ArrowHighVelocity</damageDef><multiplier>0.25</multiplier></li>
+			
+		<!-- stun -->
+			<li><damageDef>Stun</damageDef><multiplier>0</multiplier></li>			
+			<li><damageDef>guy762_RangedDamage_KOstun</damageDef><multiplier>0</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_stun</damageDef><multiplier>0</multiplier></li>
+			
+		<!-- poison/healing -->
+			<li><damageDef>guy762_PoisonDamage_saber</damageDef><multiplier>0</multiplier></li>
+			<li><damageDef>guy762_RangedDamage_kolto</damageDef><multiplier>0</multiplier></li>
+			<li MayRequire="lee.theforce.standalone"><damageDef>Force_LightBurn</damageDef><multiplier>0</multiplier></li>
+			
+		<!-- energy: lightsaber -->
+			<li><damageDef>guy762_MeleeDamage_energy</damageDef><multiplier>1</multiplier></li>
+			<li><damageDef>guy762_MeleeDamage_ecut</damageDef><multiplier>1</multiplier></li>
+			<li><damageDef>guy762_MeleeDamage_estab</damageDef><multiplier>1</multiplier></li>
+			<li MayRequire="lee.theforce.lightsaber"><damageDef>Force_LightsaberCut</damageDef><multiplier>1</multiplier></li>
+			<li MayRequire="lee.theforce.lightsaber"><damageDef>Force_SaberSlash</damageDef><multiplier>1</multiplier></li>
+			<li MayRequire="lee.theforce.lightsaber"><damageDef>Force_SaberStab</damageDef><multiplier>1</multiplier></li>
+			<li MayRequire="lee.theforce.lightsaber"><damageDef>Force_LightsaberCutMechanoid</damageDef><multiplier>1</multiplier></li>
+			<li MayRequire="lee.theforce.lightsaber"><damageDef>Force_SaberSlashSharp</damageDef><multiplier>1</multiplier></li>
+			<li MayRequire="lee.theforce.lightsaber"><damageDef>Force_SaberStabSharp</damageDef><multiplier>1</multiplier></li>
+			
+		</damageMultipliers>
+	</ThingDef>
+	
+	
+</Defs>

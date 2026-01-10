@@ -238,9 +238,25 @@
 		<explosionColorEdge>(255,125,0)</explosionColorEdge>
 		<soundExplosion>kotorsound_blasterexplosion_mix</soundExplosion>
 		<combatLogRules>Damage_Bomb</combatLogRules>
-	  </DamageDef>
+	</DamageDef>
 	
 	
+	
+	
+	<DamageDef Name="guy762_RangedDamage_AntiVehicleBullet">
+		<defName>guy762_RangedDamage_AntiVehicleBullet</defName>
+		<label>mass driver bullet</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been shot to death.</deathMessage>
+		<hediff>Gunshot</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Sharp</armorCategory>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+	</DamageDef>
 	
 
 </Defs>

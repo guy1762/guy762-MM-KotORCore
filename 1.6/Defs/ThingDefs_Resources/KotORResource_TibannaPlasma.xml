@@ -352,22 +352,49 @@
 				<explosiveDamageType>guy762_ExplosiveDamage_energy</explosiveDamageType>
 				<explosiveExpandPerStackcount>0.037</explosiveExpandPerStackcount>
 				<startWickOnDamageTaken>
+				<!-- energy: ranged/explosive -->
 					<li>guy762_RangedDamage_energy</li>
-				    <li>guy762_MeleeDamage_energy</li>
-				    <li>guy762_MeleeDamage_ecut</li>
-				    <li>guy762_MeleeDamage_estab</li>
-				    <li>guy762_ExplosiveDamage_energy</li>
-				    <li MayRequire="Ludeon.RimWorld.Biotech">Beam</li>
+					<li>guy762_BeamDamage_energy</li>
+					<li>Beam</li>
+					<li MayRequire="Ludeon.RimWorld.Odyssey">BeamBypassShields</li>
+					<li>guy762_ExplosiveDamage_energy</li>
+					<li>guy762_GrenadeDamage_energy</li>
+					<li MayRequire="lee.theforce.standalone">Force_EnergyBurn</li>
+					
+				<!-- anti-vehicle -->		
+					<li>guy762_RangedDamage_AntiVehicleEnergy</li>
+					<li>guy762_ExplosiveDamage_AntiVehicleEnergy</li>
+					
+				<!-- ion -->
 					<li>guy762_RangedDamage_ion</li>
 					<li>guy762_ExplosiveDamage_ion</li>
 					<li>guy762_MeleeDamage_ion</li>
 					<li>guy762_GrenadeDamage_ion</li>
+					
+				<!-- environmental -->	
 					<li>Flame</li>
 					<li>Burn</li>
-					<li>Bomb</li>
-					<li>BombSuper</li>
 					<li>guy762_GrenadeDamage_plasma</li>
+					
+				<!-- explosive -->	
+					<li>Bomb</li>
+					<li>guy762_GrenadeDamage_frag</li>
+					<!-- <li MayRequire="guy762.NA.MM.SWVehicles">guy762_ExplosiveDamage_conc</li> -->
+				
+				<!-- explosive: piercing -->
+					<li MayRequire="Ludeon.RimWorld.Odyssey">MiningBomb</li>
+					<li>guy762_GrenadeDamage_detpack</li>
 					<li>guy762_GrenadeDamage_thermaldet</li>
+					<li>Vaporize</li>
+					<li>BombSuper</li>
+					
+				<!-- energy: lightsaber -->		
+					<li>guy762_MeleeDamage_energy</li>
+					<li>guy762_MeleeDamage_ecut</li>
+					<li>guy762_MeleeDamage_estab</li>
+					<li MayRequire="lee.theforce.lightsaber">Force_LightsaberCut</li>
+					<li MayRequire="lee.theforce.lightsaber">Force_SaberSlash</li>
+					<li MayRequire="lee.theforce.lightsaber">Force_SaberStab</li>
 				</startWickOnDamageTaken>
 				<startWickHitPointsPercent>0.333</startWickHitPointsPercent>
 				<preExplosionSpawnThingDef>Filth_Fuel</preExplosionSpawnThingDef>

@@ -71,6 +71,20 @@
   
   
   
+  <RulePackDef>
+    <defName>guy762_NamerPawnKind_DarkTrooperID</defName>
+    <include>
+		<li>guy762_NamerPawnKindFiles_StormtrooperID</li>
+	</include>
+	<rulePack>
+	  <rulesStrings>
+		<li>r_name->DT-[SWStormieNamer_AnyTwoDigits][SWStormieNamer_AnyTwoDigits]-[SWStormieNamer_AnyTwoDigits]</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+  
+  
+  
   
   
   

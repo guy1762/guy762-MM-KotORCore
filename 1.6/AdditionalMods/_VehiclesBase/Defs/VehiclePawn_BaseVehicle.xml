@@ -19,197 +19,126 @@
 			<empStuns>true</empStuns>
 			
 			<damageDefMultipliers>
-				<li>
-					 <key>guy762_RangedDamage_ion</key>
-					 <value>2</value>
-				</li>
-				<li>
-					 <key>guy762_ExplosiveDamage_ion</key>
-					 <value>2</value>
-				</li>
-				<li>
-					 <key>guy762_GrenadeDamage_ion</key>
-					 <value>2</value>
-				</li>
-				<li>
-					 <key>guy762_MeleeDamage_ion</key>
-					 <value>2</value>
-				</li>
 				
+			<!-- energy: ranged/explosive -->
+				<li><key>guy762_RangedDamage_energy</key><value>0.01</value></li>
+				<li><key>guy762_BeamDamage_energy</key><value>0.01</value></li>
+				<li><key>Beam</key><value>0.01</value></li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey"><key>BeamBypassShields</key><value>0.01</value></li>
+				<li><key>guy762_ExplosiveDamage_energy</key><value>0.1</value></li>
+				<li><key>guy762_GrenadeDamage_energy</key><value>0.1</value></li>
+				<li MayRequire="lee.theforce.standalone"><key>Force_EnergyBurn</key><value>0.1</value></li>
 				
-				<li>
-					 <key>Bomb</key>
-					 <value>0.1</value>
-				</li>
-				<li>
-					 <key>guy762_GrenadeDamage_frag</key>
-					 <value>0.1</value>
-				</li>
+			<!-- EMP -->
+				<li><key>EMP</key><value>1</value></li>
+				<li MayRequire="Ludeon.RimWorld.Biotech"><key>MechBandShockwave</key><value>1</value></li>
 				
-				<li>
-					 <key>guy762_ExplosiveDamage_conc</key>
-					 <value>0.1</value>
-				</li>
-				<li>
-					 <key>guy762_GrenadeDamage_thermaldet</key>
-					 <value>4</value>
-				</li>
+			<!-- ion -->
+				<li><key>guy762_RangedDamage_ion</key><value>2</value></li>
+				<li><key>guy762_ExplosiveDamage_ion</key><value>2</value></li>
+				<li><key>guy762_GrenadeDamage_ion</key><value>2</value></li>
+				<li><key>guy762_MeleeDamage_ion</key><value>2</value></li>
+			
+			<!-- anti-vehicle -->
+				<li><key>guy762_RangedDamage_AntiVehicleEnergy</key><value>1</value></li>
+				<li><key>guy762_ExplosiveDamage_AntiVehicleEnergy</key><value>1</value></li>
+				<li><key>guy762_RangedDamage_AntiVehicleBullet</key><value>1</value></li>
 				
+			<!-- explosive -->
+				<li><key>Bomb</key><value>0.1</value></li>
+				<li><key>guy762_GrenadeDamage_frag</key><value>0.1</value></li>
+				<li MayRequire="guy762.NA.MM.SWVehicles"><key>guy762_ExplosiveDamage_conc</key><value>0.1</value></li>
 				
-				
-				
-				
-				
-				
-				<li>
-					 <key>guy762_RangedDamage_AntiVehicleEnergy</key>
-					 <value>1</value>
-				</li>
-				<li>
-					 <key>guy762_ExplosiveDamage_AntiVehicleEnergy</key>
-					 <value>1</value>
-				</li>
-				
-				
-				<li>
-					 <key>guy762_RangedDamage_energy</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>guy762_ExplosiveDamage_energy</key>
-					 <value>0.1</value>
-				</li>
+			<!-- explosive: piercing -->
+				<li MayRequire="Ludeon.RimWorld.Odyssey"><key>MiningBomb</key><value>2</value></li>
+				<li><key>guy762_GrenadeDamage_detpack</key><value>2</value></li>
+				<li><key>guy762_GrenadeDamage_thermaldet</key><value>4</value></li>
+				<li><key>Vaporize</key><value>0.25</value></li>
+				<li><key>BombSuper</key><value>1</value></li>
 				
 				
 				
 				
-				<!-- <li> -->
-					 <!-- <key>guy762_RangedDamage_electrical</key> -->
-					 <!-- <value>0.01</value> -->
-				<!-- </li> -->
-				<!-- <li> -->
-					 <!-- <key>guy762_MeleeDamage_electrical</key> -->
-					 <!-- <value>0.01</value> -->
-				<!-- </li> -->
-				<!-- <li> -->
-					 <!-- <key>guy762_BeamDamage_electrical</key> -->
-					 <!-- <value>0.01</value> -->
-				<!-- </li> -->
+			<!-- electrical -->
+				<li><key>guy762_RangedDamage_electrical</key><value>0.01</value></li>
+				<li><key>guy762_MeleeDamage_electrical</key><value>0.01</value></li>
+				<li><key>guy762_BeamDamage_electrical</key><value>0.01</value></li>
+				<li MayRequire="lee.theforce.standalone"><key>Force_Lightning</key><value>0.1</value></li>
+
+			<!-- sonic -->
+				<li><key>guy762_RangedDamage_sonic</key><value>0.01</value></li>
+				<li><key>guy762_MeleeDamage_sonic</key><value>0.01</value></li>
+				<li><key>guy762_GrenadeDamage_sonic</key><value>0.01</value></li>
+				<li><key>Thump</key><value>0.01</value></li>
+				
+			<!-- disruption/acid -->
+				<li><key>AcidBurn</key><value>0.25</value></li>
+				<li><key>guy762_RangedDamage_disruptor</key><value>0.5</value></li>
+				<li><key>guy762_BeamDamage_disruptor</key><value>0.01</value></li>
+				<li><key>guy762_ExplosiveDamage_disruptor</key><value>0.5</value></li>
+				<li><key>guy762_MeleeDamage_unstoppable</key><value>1</value></li>
+				
+			<!-- environmental -->
+				<li><key>Flame</key><value>0.01</value></li>
+				<li><key>Burn</key><value>0.01</value></li>
+				<li><key>guy762_GrenadeDamage_plasma</key><value>1</value></li>
+				<li><key>guy762_BeamDamage_radiation</key><value>0.01</value></li>
+				<li><key>Frostbite</key><value>0.01</value></li>
+				
+			<!-- environmental: atmospheric -->
+				<li MayRequire="Ludeon.RimWorld.Biotech"><key>ToxGas</key><value>0</value></li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey"><key>VacuumBurn</key><value>0</value></li>
+				<li><key>TornadoScratch</key><value>0.1</value></li>
 				
 				
 				
 				
-				<li>
-					 <key>guy762_RangedDamage_sonic</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>guy762_MeleeDamage_sonic</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>guy762_GrenadeDamage_sonic</key>
-					 <value>0.01</value>
-				</li>
-				<!-- <li> -->
-					 <!-- <key>Thump</key> -->
-					 <!-- <value>0.01</value> -->
-				<!-- </li> -->
+			<!-- physical: piercing melee -->
+				<li><key>Demolish</key><value>0.5</value></li>
 				
+			<!-- physical: melee -->
+				<li><key>Cut</key><value>0.01</value></li>
+				<li><key>Crush</key><value>0.01</value></li>
+				<li><key>Blunt</key><value>0.01</value></li>
+				<li MayRequire="lee.theforce.lightsaber"><key>Force_BluntLightsaber</key><value>0.01</value></li>
+				<li><key>Poke</key><value>0.01</value></li>
+				<li><key>Stab</key><value>0.01</value></li>
+				<li><key>Scratch</key><value>0.01</value></li>
+				<li><key>ScratchToxic</key><value>0.01</value></li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey"><key>PorcupineBite</key><value>0.01</value></li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey"><key>PorcupineScratch</key><value>0.01</value></li>
+				<li><key>Bite</key><value>0.01</value></li>
+				<li><key>ToxicBite</key><value>0.01</value></li>
 				
-				<li>
-					 <key>Flame</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>Burn</key>
-					 <value>0.01</value>
-				</li>
-				<!-- <li> -->
-					 <!-- <key>guy762_GrenadeDamage_plasma</key> -->
-					 <!-- <value>0.01</value> -->
-				<!-- </li> -->
-				<li>
-					 <key>guy762_BeamDamage_radiation</key>
-					 <value>0.01</value>
-				</li>
+			<!-- physical:ranged -->
+				<li><key>RangedStab</key><value>0.01</value></li>
+				<li><key>Bullet</key><value>0.01</value></li>
+				<li MayRequire="Ludeon.RimWorld.Biotech"><key>BulletToxic</key><value>0.25</value></li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey"><key>Bullet_TraitTox</key><value>0.25</value></li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey"><key>Bullet_TraitIncendiary</key><value>0.25</value></li>
+				<li><key>Arrow</key><value>0.01</value></li>
+				<li><key>ArrowHighVelocity</key><value>0.01</value></li>
 				
+			<!-- stun -->
+				<li><key>Stun</key><value>0</value></li>
+				<li><key>guy762_RangedDamage_KOstun</key><value>0</value></li>
+				<li><key>guy762_GrenadeDamage_stun</key><value>0</value></li>
+			
+			<!-- poison/healing -->
+				<li><key>guy762_PoisonDamage_saber</key><value>0</value></li>
+				<li><key>guy762_RangedDamage_kolto</key><value>0</value></li>
+				<li MayRequire="lee.theforce.standalone"><key>Force_LightBurn</key><value>0</value></li>
 				
-				<li>
-					 <key>Frostbite</key>
-					 <value>0.01</value>
-				</li>
-				
-				
-				
-				
-				
-				
-				
-				<li>
-					 <key>Cut</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>Crush</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>Blunt</key>
-					 <value>0.01</value>
-				</li>
-				<li MayRequire="lee.theforce.lightsaber">
-					 <key>Force_BluntLightsaber</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>Poke</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>Stab</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>Scratch</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>ScratchToxic</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>Bite</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>ToxicBite</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>RangedStab</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>Bullet</key>
-					 <value>0.01</value>
-				</li>
-				<li>
-					 <key>Arrow</key>
-					 <value>0.01</value>
-				</li>
-				
-				
-				
-				<li>
-					 <key>ArrowHighVelocity</key>
-					 <value>0.1</value>
-				</li>
-				<li>
-					 <key>TornadoScratch</key>
-					 <value>0.1</value>
-				</li>
-				
+			<!-- energy: lightsaber -->
+				<li><key>guy762_MeleeDamage_energy</key><value>1</value></li>
+				<li><key>guy762_MeleeDamage_ecut</key><value>1</value></li>
+				<li><key>guy762_MeleeDamage_estab</key><value>1</value></li>
+				<li MayRequire="lee.theforce.lightsaber"><key>Force_LightsaberCut</key><value>1</value></li>
+				<li MayRequire="lee.theforce.lightsaber"><key>Force_SaberSlash</key><value>1</value></li>
+				<li MayRequire="lee.theforce.lightsaber"><key>Force_SaberStab</key><value>1</value></li>
+				<li MayRequire="lee.theforce.lightsaber"><key>Force_LightsaberCutMechanoid</key><value>1</value></li>
+				<li MayRequire="lee.theforce.lightsaber"><key>Force_SaberSlashSharp</key><value>1</value></li>
+				<li MayRequire="lee.theforce.lightsaber"><key>Force_SaberStabSharp</key><value>1</value></li>
 			</damageDefMultipliers>
 		</properties>
 	</Vehicles.VehicleDef>

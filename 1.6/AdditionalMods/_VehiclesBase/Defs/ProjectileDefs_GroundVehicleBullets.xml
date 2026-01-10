@@ -7,7 +7,7 @@
 				<antiAir>false</antiAir>
 				<ground>true</ground>
 			</li>
-		</modExtensions> <!-- DISABLED PENDING 1.6 UPDATE -->
+		</modExtensions>
 	</ThingDef>
 	
 	
