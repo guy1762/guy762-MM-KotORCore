@@ -749,7 +749,7 @@
 		<writeCombatLog>True</writeCombatLog>
 		<hostile>false</hostile>
 		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
-		<aiCanUse>true</aiCanUse>
+		<aiCanUse>false</aiCanUse>
 		<targetRequired>false</targetRequired>
 		<verbProperties>
 		  <verbClass>Verb_CastAbility</verbClass>
