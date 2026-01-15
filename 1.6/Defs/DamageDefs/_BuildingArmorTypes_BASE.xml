@@ -13,6 +13,7 @@
 			<li MayRequire="lee.theforce.standalone"><damageDef>Force_EnergyBurn</damageDef><multiplier>0.25</multiplier></li>
 			
 			<li><damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_BeamDamage_AntiVehicleEnergy</damageDef><multiplier>0.25</multiplier></li>
 			<li><damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef><multiplier>0.25</multiplier></li>
 			<li><damageDef>guy762_RangedDamage_AntiVehicleBullet</damageDef><multiplier>0.25</multiplier></li>
 

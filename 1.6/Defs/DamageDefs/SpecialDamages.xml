@@ -209,6 +209,25 @@
 		<defaultArmorPenetration>0.20</defaultArmorPenetration>
 	</DamageDef>
 	
+	<DamageDef Name="guy762_BeamDamage_AntiVehicleEnergy">
+		<defName>guy762_BeamDamage_AntiVehicleEnergy</defName>
+		<label>energy burn</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<deathMessage>{0} has been shot to death.</deathMessage>
+		<hediff>Burn</hediff>
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+		<impactSoundType>Bullet</impactSoundType>
+		<armorCategory>Heat</armorCategory>
+		<makesBlood>false</makesBlood>
+		<overkillPctToDestroyPart>0~0.7</overkillPctToDestroyPart>
+		<isRanged>true</isRanged>
+		<makesAnimalsFlee>true</makesAnimalsFlee>
+		<defaultDamage>5</defaultDamage>
+		<buildingDamageFactorImpassable>5</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>1.5</buildingDamageFactorPassable>
+	</DamageDef>
+	
 	<DamageDef Name="guy762_ExplosiveDamage_AntiVehicleEnergy">
 		<defName>guy762_ExplosiveDamage_AntiVehicleEnergy</defName>
 		<label>energy burn</label>

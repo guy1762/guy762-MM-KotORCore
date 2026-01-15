@@ -41,6 +41,7 @@
 			
 			<!-- anti-vehicle -->
 				<li><key>guy762_RangedDamage_AntiVehicleEnergy</key><value>1</value></li>
+				<li><key>guy762_BeamDamage_AntiVehicleEnergy</key><value>1</value></li>
 				<li><key>guy762_ExplosiveDamage_AntiVehicleEnergy</key><value>1</value></li>
 				<li><key>guy762_RangedDamage_AntiVehicleBullet</key><value>1</value></li>
 				

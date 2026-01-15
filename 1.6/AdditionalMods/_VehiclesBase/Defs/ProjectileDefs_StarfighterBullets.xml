@@ -518,7 +518,7 @@
 		</graphicData>
 	</ThingDef>
 	
-		<!-- used by: TIE Fighter, TIE Bomber -->
+		<!-- used by: TIE Fighter, TIE Bomber, DX-10 -->
 	<ThingDef ParentName="SWCPStarfighterBullet_StrikeAIAVAA_lightdualBASE">
 		<defName>SWCPStarfighterBullet_StrikeAIAVAAlight_dualgreen</defName>
 		<graphicData>

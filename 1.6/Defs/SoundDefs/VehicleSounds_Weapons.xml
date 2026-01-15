@@ -557,6 +557,35 @@
 		</subSounds>
 	</SoundDef>
 	
+	<SoundDef>
+		<defName>kotorsound_EaWShuttleGun</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipweapons/GUN_SHUTTLE_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>
+				<max>45</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>100</max>
+				</distRange>  
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
 	
 	<SoundDef>
 		<defName>kotorsound_freefalllightgun</defName>	
@@ -799,6 +828,129 @@
 			</li>
 		</subSounds>
 	</SoundDef>
+	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_AATPontoonGun</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipweapons/wpn_tank_turret</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>
+				<max>45</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>100</max>
+				</distRange>  
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_AATDorsalGun</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipweapons/wpn_AAT_missleLauncher_fire</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>
+				<max>45</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>100</max>
+				</distRange>  
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_EaWTankMissile</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipweapons/GUN_TANK_MISSILE_2</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>100</max>
+				</distRange>  
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_SWJSFJediStarfighterGun</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipweapons/wpn_jsf_laser.l</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>50</min>
+					<max>100</max>
+				</distRange>  
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
 	
 	
 	
