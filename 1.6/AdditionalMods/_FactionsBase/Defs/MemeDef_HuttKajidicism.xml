@@ -93,45 +93,45 @@
 		  <li>Abrasive</li>
 		</agreeableTraits>
 	</MemeDef>
-	<PreceptDef MayRequire="VanillaExpanded.VMemesE">
-		<defName>guy762_PreceptDef_HuttTitles</defName>
-		<issue>VME_Royalty</issue>
-		<label>exalted (Hutt Kajidic titles)</label>
-		<description>DEV'S NOTE: MAY NOT WORK</description>
-		<impact>Medium</impact>
-		<associatedMemes>
-			<li>guy762_MemeDef_hutt</li>
-		</associatedMemes>
-		<displayOrderInIssue>50</displayOrderInIssue>
-		<comps>
-			<li Class="PreceptComp_SituationalThought">
-				<thought>guy762_ThoughtDef_HuttTitles</thought>
-			</li>
-		</comps>
-	</PreceptDef>
-	<ThoughtDef MayRequire="VanillaExpanded.VMemesE">
-		<defName>guy762_ThoughtDef_HuttTitles</defName>
-		<thoughtClass>Thought_SituationalSocial</thoughtClass>
-		<workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Royalty</workerClass>
-		<stages>
-			<li>
-				<label>Hutt Kajidic: Lowtrader</label>
-				<baseOpinionOffset>15</baseOpinionOffset>
-			</li>
-			<li>
-				<label>Hutt Kajidic: Hightrader</label>
-				<baseOpinionOffset>30</baseOpinionOffset>
-			</li>
-			<li>
-				<label>Hutt Kajidic: H'uun</label>
-				<baseOpinionOffset>60</baseOpinionOffset>
-			</li>
-			<li>
-				<label>Hutt Kajidic: Hutt</label>
-				<baseOpinionOffset>80</baseOpinionOffset>
-			</li>
-		</stages>
-	</ThoughtDef>
+	<!-- <PreceptDef MayRequire="VanillaExpanded.VMemesE"> -->
+		<!-- <defName>guy762_PreceptDef_HuttTitles</defName> -->
+		<!-- <issue>VME_Royalty</issue> -->
+		<!-- <label>exalted (Hutt Kajidic titles)</label> -->
+		<!-- <description>DEV'S NOTE: MAY NOT WORK</description> -->
+		<!-- <impact>Medium</impact> -->
+		<!-- <associatedMemes> -->
+			<!-- <li>guy762_MemeDef_hutt</li> -->
+		<!-- </associatedMemes> -->
+		<!-- <displayOrderInIssue>50</displayOrderInIssue> -->
+		<!-- <comps> -->
+			<!-- <li Class="PreceptComp_SituationalThought"> -->
+				<!-- <thought>guy762_ThoughtDef_HuttTitles</thought> -->
+			<!-- </li> -->
+		<!-- </comps> -->
+	<!-- </PreceptDef> -->
+	<!-- <ThoughtDef MayRequire="VanillaExpanded.VMemesE"> -->
+		<!-- <defName>guy762_ThoughtDef_HuttTitles</defName> -->
+		<!-- <thoughtClass>Thought_SituationalSocial</thoughtClass> -->
+		<!-- <workerClass>VanillaMemesExpanded.ThoughtWorker_Precept_Royalty</workerClass> -->
+		<!-- <stages> -->
+			<!-- <li> -->
+				<!-- <label>Hutt Kajidic: Lowtrader</label> -->
+				<!-- <baseOpinionOffset>15</baseOpinionOffset> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <label>Hutt Kajidic: Hightrader</label> -->
+				<!-- <baseOpinionOffset>30</baseOpinionOffset> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <label>Hutt Kajidic: H'uun</label> -->
+				<!-- <baseOpinionOffset>60</baseOpinionOffset> -->
+			<!-- </li> -->
+			<!-- <li> -->
+				<!-- <label>Hutt Kajidic: Hutt</label> -->
+				<!-- <baseOpinionOffset>80</baseOpinionOffset> -->
+			<!-- </li> -->
+		<!-- </stages> -->
+	<!-- </ThoughtDef> disabled 1/24/26 because these never actually worked -->
 	
 
   
