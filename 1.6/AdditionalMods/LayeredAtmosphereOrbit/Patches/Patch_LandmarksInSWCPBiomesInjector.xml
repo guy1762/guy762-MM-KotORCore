@@ -2,24 +2,24 @@
 
 <Patch>
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[@Name="BaseLakeMut"]/biomeWhitelist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[@Name="BaseLakeMut"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[defName="Pond"]/biomeWhitelist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellScrubland</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[defName="Pond"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellScrubland</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
 	<!-- <Operation Class="PatchOperationAdd"> -->
 		<!-- <xpath>Defs/TileMutatorDef[defName="Oasis"]/biomeWhitelist</xpath> -->
@@ -37,54 +37,54 @@
 			<li>SWCPBiome_TatooineExtremeDesert</li>
 			<li>SWCPBiome_TatooineHighland</li>
 			
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellScrubland</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellScrubland</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
 		</value>
 	</Operation>
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[defName="ToxicLake"]/biomeWhitelist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellUrban</li>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[defName="ToxicLake"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>SWCPBiome_OrdMantellUrban</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[defName="Wetland"]/biomeWhitelist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellTundra</li>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[defName="Wetland"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[defName="Marshy"]/biomeWhitelist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[defName="Marshy"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[defName="Muddy"]/biomeWhitelist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[defName="Muddy"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[defName="HotSprings"]/biomeWhitelist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellLavaField</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[defName="HotSprings"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>SWCPBiome_OrdMantellLavaField</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
 	
 	
@@ -97,10 +97,10 @@
 			<!-- <li>SWCPBiome_TatooineExtremeDesert</li> -->
 			<!-- <li>SWCPBiome_TatooineHighland</li> -->
 			
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellScrubland</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
-			<li>SWCPBiome_OrdMantellLavaField</li>
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellScrubland</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
+			<!-- <li>SWCPBiome_OrdMantellLavaField</li> -->
 		</value>
 	</Operation>
 	
@@ -110,8 +110,8 @@
 		<value>
 			<!-- <li>SWCPBiome_TatooineHighland</li> -->
 			
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellScrubland</li>
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellScrubland</li> -->
 		</value>
 	</Operation>
 	
@@ -134,24 +134,24 @@
 	
 	
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[defName="WildPlants"]/biomeWhitelist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellScrubland</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
-			<li>SWCPBiome_OrdMantellLavaField</li>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[defName="WildPlants"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellScrubland</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
+			<!-- <li>SWCPBiome_OrdMantellLavaField</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[defName="Fertile"]/biomeWhitelist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[defName="Fertile"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
 	<Operation Class="PatchOperationAdd">
 		<xpath>Defs/TileMutatorDef[defName="Plateau"]/biomeWhitelist</xpath>
@@ -159,9 +159,9 @@
 		<value>
 			<li>SWCPBiome_TatooineHighland</li>
 			
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellScrubland</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellScrubland</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
 		</value>
 	</Operation>
 	
@@ -172,10 +172,10 @@
 			<li>SWCPBiome_TatooineExtremeDesert</li>
 			<li>SWCPBiome_TatooineHighland</li>
 			
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellScrubland</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
-			<li>SWCPBiome_OrdMantellLavaField</li>
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellScrubland</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
+			<!-- <li>SWCPBiome_OrdMantellLavaField</li> -->
 		</value>
 	</Operation>
 	
@@ -194,9 +194,9 @@
 			<li>SWCPBiome_TatooineExtremeDesert</li>
 			<li>SWCPBiome_TatooineHighland</li>
 			
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellScrubland</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellScrubland</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
 		</value>
 	</Operation>
 	
@@ -207,55 +207,55 @@
 			<li>SWCPBiome_TatooineExtremeDesert</li>
 			<li>SWCPBiome_TatooineHighland</li>
 			
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellScrubland</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
-			<li>SWCPBiome_OrdMantellLavaField</li>
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellScrubland</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
+			<!-- <li>SWCPBiome_OrdMantellLavaField</li> -->
 		</value>
 	</Operation>
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[defName="Basin"]/biomeWhitelist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
-			<li>SWCPBiome_OrdMantellLavaField</li>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[defName="Basin"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
+			<!-- <li>SWCPBiome_OrdMantellLavaField</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[defName="Sandy"]/biomeWhitelist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
-			<li>SWCPBiome_OrdMantellLavaField</li>
-		</value>
-	</Operation>
-	
-	
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[defName="Sandy"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
+			<!-- <li>SWCPBiome_OrdMantellLavaField</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
 	
 	
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[@Name="BaseLavaLakeMut"]/biomeWhitelist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellLavaField</li>
-		</value>
-	</Operation>
+	
+	
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[@Name="BaseLavaLakeMut"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>SWCPBiome_OrdMantellLavaField</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
 	
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[defName="LavaFlow"]/biomeWhitelist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellLavaField</li>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[defName="LavaFlow"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>SWCPBiome_OrdMantellLavaField</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
 	
 	
@@ -275,13 +275,13 @@
 			<!-- <li>SWCPBiome_TatooineExtremeDesert</li> -->
 			<li>SWCPBiome_TatooineHighland</li>
 			
-			<li>SWCPBiome_OrdMantellGrasslands</li>
-			<li>SWCPBiome_OrdMantellScrubland</li>
-			<li>SWCPBiome_OrdMantellTundra</li>
-			<li>SWCPBiome_OrdMantellLavaField</li>
-			<li>SWCPBiome_OrdMantellUrban</li>
+			<!-- <li>SWCPBiome_OrdMantellGrasslands</li> -->
+			<!-- <li>SWCPBiome_OrdMantellScrubland</li> -->
+			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
+			<!-- <li>SWCPBiome_OrdMantellLavaField</li> -->
+			<!-- <li>SWCPBiome_OrdMantellUrban</li> -->
 			
-			<li>SWCPBiome_OrdMantellJunkyard</li>
+			<!-- <li>SWCPBiome_OrdMantellJunkyard</li> -->
 		</value>
 	</Operation>
 	
@@ -297,26 +297,26 @@
 			<!-- <li>SWCPBiome_OrdMantellScrubland</li> -->
 			<!-- <li>SWCPBiome_OrdMantellTundra</li> -->
 			<!-- <li>SWCPBiome_OrdMantellLavaField</li> -->
-			<li>SWCPBiome_OrdMantellJunkyard</li>
+			<!-- <li>SWCPBiome_OrdMantellJunkyard</li> -->
 			<!-- <li>SWCPBiome_OrdMantellUrban</li> -->
 		</value>
 	</Operation>
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[defName="AncientHeatVent"]/biomeWhitelist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellUrban</li>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[defName="AncientHeatVent"]/biomeWhitelist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>SWCPBiome_OrdMantellUrban</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
-	<Operation Class="PatchOperationAdd">
-		<xpath>Defs/TileMutatorDef[@Name="AbandonedColonyMutatorBase"]/biomeBlacklist</xpath>
-		<order>Append</order>
-		<value>
-			<li>SWCPBiome_OrdMantellUrban</li>
-		</value>
-	</Operation>
+	<!-- <Operation Class="PatchOperationAdd"> -->
+		<!-- <xpath>Defs/TileMutatorDef[@Name="AbandonedColonyMutatorBase"]/biomeBlacklist</xpath> -->
+		<!-- <order>Append</order> -->
+		<!-- <value> -->
+			<!-- <li>SWCPBiome_OrdMantellUrban</li> -->
+		<!-- </value> -->
+	<!-- </Operation> -->
 	
 	<!-- <Operation Class="PatchOperationAdd"> -->
 		<!-- <xpath>Defs/TileMutatorDef[defName="Harbor"]/biomeBlacklist</xpath> -->
