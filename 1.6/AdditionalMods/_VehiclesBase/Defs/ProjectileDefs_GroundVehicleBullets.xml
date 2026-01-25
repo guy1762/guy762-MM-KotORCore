@@ -219,7 +219,7 @@
 	<!-- ANTI-VEHICLE -->
 	<!-- instead of explosion radius, AP changes between light/medium/heavy projectiles -->
 	
-		<!-- used by: AAC-1, SoroSuub V-25, TX-130 -->
+		<!-- used by: AAC-1, SoroSuub V-25, TX-130, Bantha-II Skiff -->
 	<ThingDef ParentName="guy762_nonAAprojectileBASE">
 		<defName>SWVehicleBullet_AVred_light</defName>
 		<label>laser bolt</label>

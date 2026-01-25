@@ -1304,6 +1304,32 @@
 	</SoundDef>
 	
 	
+	<SoundDef>
+		<defName>kotorsound_EaWturret_AA_quieter</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipweapons/GUN_ANTI_AIR</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+					<min>15</min>
+					<max>15</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
 	
 	
 	

@@ -3,6 +3,31 @@
 
 
 	
+	<ThingDef ParentName="BaseBullet">
+		<defName>SWProj_UWingIonBoltHeavy</defName>
+		<label>ion bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/heavyblaster_blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_ion</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.25</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>75</speed>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>25</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	
+	
 	
 	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>SWProj_TL50conc</defName>

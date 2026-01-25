@@ -255,8 +255,54 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
+				</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_YWingAlt</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/EGL_Y_WING_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>20</min>        
+				<max>20</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_UWing</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/EGL_X_WING_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>15</min>        
+				<max>15</max>
 				</volumeRange>  		
 			</li>
 		</subSounds>

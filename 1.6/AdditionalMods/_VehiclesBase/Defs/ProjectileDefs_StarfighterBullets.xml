@@ -635,6 +635,14 @@
 					<drawSize>2.5</drawSize>
 				</graphicData>
 			</ThingDef>
+			
+				<!-- used by: U-Wing -->
+			<ThingDef ParentName="SWCPStarfighterBullet_CannonAVAA_dualBASE">
+				<defName>SWCPStarfighterBullet_CannonAVAAmedium_UWingdualred</defName>
+				<graphicData>
+					<texPath>Weapons/Projectiles/UWingAdvAntiVehicle_red</texPath>
+				</graphicData>
+			</ThingDef>
 
 
 

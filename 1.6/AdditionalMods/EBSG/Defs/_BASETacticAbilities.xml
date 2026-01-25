@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<AbilityDef Name="SWPotF_TacticDelegationAbilityBASE" Abstract="True">
+		<uiOrder>762</uiOrder>
+
+		<aiCanUse>false</aiCanUse>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<showWhenDrafted>true</showWhenDrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		
+		
+		<cooldownTicksRange>600000</cooldownTicksRange>
+		<stunTargetWhileCasting>true</stunTargetWhileCasting>
+		<statBases>
+			<!-- this is in seconds, not ticks -->
+			<Ability_Duration>1000</Ability_Duration>
+		</statBases>
+		
+		<jobDef>CastAbilityOnThingMelee</jobDef>
+		
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<violent>false</violent>
+			<range>5</range>
+			<requireLineOfSight>True</requireLineOfSight>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>kotorsound_JKMissionUpdate_quiettriple</soundCast>
+			<targetParams>
+				<canTargetSelf>false</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetItems>false</canTargetItems>
+				
+				<neverTargetIncapacitated>True</neverTargetIncapacitated>
+				<onlyTargetColonists>True</onlyTargetColonists>
+				
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<!-- <li Class="CompProperties_AbilityGiveHediff"> -->
+				<!-- <compClass>CompAbilityEffect_GiveHediff</compClass> -->
+				<!-- <hediffDef>SWPotF_DelegatedTacticHediff_ambush</hediffDef> -->
+				<!-- <onlyApplyToSelf>false</onlyApplyToSelf> -->
+				<!-- <onlyBrain>True</onlyBrain> -->
+				<!-- <replaceExisting>true</replaceExisting> -->
+				<!-- <applicableToMechs>False</applicableToMechs> -->
+			<!-- </li> -->
+		</comps>
+	</AbilityDef>
+
+	<HediffDef Name="SWPotF_DelegatedTacticHediffBASE" Abstract="True">
+		<hediffClass>HediffWithComps</hediffClass>
+		<defaultLabelColor>(255,255,135)</defaultLabelColor> <!-- soft yellow -->
+		<comps>
+			<li Class="HediffCompProperties_Disappears">
+				<!-- <disappearsAfterTicks>60000</disappearsAfterTicks> -->
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<!-- <li Class="HediffCompProperties_GiveAbility"> -->
+				<!-- <abilityDef>SWPotF_TacticAbility_Ambush</abilityDef> -->
+			<!-- </li> -->
+		</comps>
+		<isBad>false</isBad>
+		<stages>
+		  <li>
+			<becomeVisible>false</becomeVisible>
+		  </li>
+		</stages>
+	</HediffDef>
+
+
+ 
+
+</Defs>

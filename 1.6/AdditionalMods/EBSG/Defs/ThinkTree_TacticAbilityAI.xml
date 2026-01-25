@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThinkTreeDef>
+		<defName>guy762_SWCPAI_TacticAbilities</defName>
+		<!-- <insertTag>EBSGAI_NonColonist_NearbyEnemy</insertTag> -->
+		<insertTag>EBSGAI_NonColonist</insertTag>
+		<insertPriority>100</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes> <!-- /////////////////////////////////// -->
+				
+				<li Class="ThinkNode_ConditionalHasAbility">
+					<ability>SWPotF_TacticAbility_TakeCover</ability>
+					<subNodes>
+						<li Class="EBSGFramework.ThinkNode_RecordPassage">
+							<output>ability check ThinkNode reached!</output>
+						</li>
+						<!-- <li Class="EBSGFramework.ThinkNode_ConditionalNearbyEnemyTarget"> -->
+							<!-- <searchRadius>50</searchRadius> -->
+						<li Class="EBSGFramework.ThinkNode_ConditionalTooManyNearbyThreats">
+							<dangerRadius>75</dangerRadius>
+							<minCount>5</minCount>
+							<subNodes>
+								<!-- <li Class="EBSGFramework.ThinkNode_RecordPassage"> -->
+									<!-- <output>active enemy check ThinkNode reached!</output> -->
+								<!-- </li> -->
+								<!-- <li Class="EBSGFramework.ThinkNode_ConditionalNearbyAllies"> -->
+									<!-- <radius>10</radius> -->
+									<!-- <minCount>5</minCount> -->
+									<!-- <subNodes> -->
+										<li Class="EBSGFramework.ThinkNode_RecordPassage">
+											<output>Take Cover tactic ThinkNode reached!</output>
+										</li>
+										<li Class="JobGiver_AICastAbilityOnSelf">
+											<ability>SWPotF_TacticAbility_TakeCover</ability>
+											<!-- <subNodes> -->
+												<!-- <li Class="EBSGFramework.ThinkNode_RecordPassage"> -->
+													<!-- <output>no enemies ThinkNode reached!</output> -->
+												<!-- </li> -->
+												<!-- <li Class="EBSGFramework.ThinkNode_ConditionalTooManyNearbyThreats"> -->
+													<!-- <dangerRadius>75</dangerRadius> -->
+													<!-- <minCount>0</minCount> -->
+													<!-- <subNodes> -->
+														<!-- <li Class="JobGiver_AICastAbilityOnSelf"> -->
+															<!-- <ability>SWPotF_TacticAbility_TakeCoverCancel</ability> -->
+															<!-- <subNodes> -->
+																<!-- <li Class="EBSGFramework.ThinkNode_RecordPassage"> -->
+																	<!-- <output>cancel Take Cover ThinkNode reached!</output> -->
+																<!-- </li> -->
+															<!-- </subNodes> -->
+														<!-- </li> -->
+													<!-- </subNodes> -->
+												<!-- </li> -->
+											<!-- </subNodes> -->
+										</li>
+									<!-- </subNodes> -->
+								<!-- </li> -->
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+				
+				
+				
+				<li Class="ThinkNode_ConditionalHasAbility">
+					<ability>SWPotF_TacticAbility_TakeCoverCancel</ability>
+					<subNodes>
+						<li Class="EBSGFramework.ThinkNode_RecordPassage">
+							<output>ability check (cancel Take Cover) ThinkNode reached!</output>
+						</li>
+						<li Class="EBSGFramework.ThinkNode_ConditionalTooManyNearbyThreats">
+							<dangerRadius>75</dangerRadius>
+							<minCount>0</minCount>
+							<subNodes>
+								<li Class="EBSGFramework.ThinkNode_RecordPassage">
+									<output>no enemies ThinkNode reached!</output>
+								</li>
+								<li Class="JobGiver_AICastAbilityOnSelf">
+									<ability>SWPotF_TacticAbility_TakeCoverCancel</ability>
+									<subNodes>
+										<li Class="EBSGFramework.ThinkNode_RecordPassage">
+											<output>cancel Take Cover ThinkNode reached!</output>
+										</li>
+									</subNodes>
+								</li>
+							</subNodes>
+						</li>
+					</subNodes>
+				</li>
+				
+			</subNodes> <!-- /////////////////////////////////// -->
+		</thinkRoot>
+	</ThinkTreeDef>
+	
+	
+	
+	
+	
+	
+</Defs>

@@ -4,25 +4,29 @@
   
   <AbilityDef Name="guy762_Ability_CommandTierBASE" Abstract="True">
 	<jobDef>CastAbilityOnThing</jobDef>
+	
+	<sendMessageOnCooldownComplete>true</sendMessageOnCooldownComplete>
+	
     <targetRequired>False</targetRequired>
     <canUseAoeToGetTargets>False</canUseAoeToGetTargets>
     <stunTargetWhileCasting>True</stunTargetWhileCasting>
     <showPsycastEffects>False</showPsycastEffects>
     <displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
     <disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
-    <groupDef>Leader</groupDef>
+    <!-- <groupDef>Leader</groupDef> breaks hediff application I guess -->
     <hotKey>Misc12</hotKey>
     <aiCanUse>true</aiCanUse>
 	<uiOrder>761</uiOrder>
     <warmupStartSound>CombatCommand_Warmup</warmupStartSound>
     <casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+	<cooldownTicksRange>600000</cooldownTicksRange>
     <statBases>
       <Ability_Duration>1000</Ability_Duration>
-      <Ability_EffectRadius>500</Ability_EffectRadius>
+      <Ability_EffectRadius>1</Ability_EffectRadius>
     </statBases>
     <verbProperties>
       <verbClass>Verb_CastAbility</verbClass>
-      <range>-1</range>
+      <range>1</range>
       <drawAimPie>False</drawAimPie>
       <requireLineOfSight>False</requireLineOfSight>
 	  <soundCast>kotorsound_static_on</soundCast>
@@ -43,58 +47,72 @@
   
   
   <AbilityDef ParentName="guy762_Ability_CommandTierBASE">
-    <defName>guy762_Ability_CommandTierV</defName>
-    <label>Command Tier V</label>
+    <defName>guy762_Ability_CommandTierVI</defName>
+    <label>Command Tier VI</label>
     <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.\n\nThis level of tactical command skill is the first level of noteworthy ability an aspiring officer may find themselves with. Their skills, capabilities, and identity as a battlefield commander have been firmly established by participation in a few noteworthy battles, and officers at this level are generally able to take command of any common fighting force. While skill of this level is promising for young officers, it may be seen as evidence of arrested development in older commanders with longer careers. This level of skill is considered the minimum requirement for those who graduate from a formal officer's academy, but is also easily obtainable for any experienced soldier capable of leading troops into battle.</description>
-    <iconPath>UI/CommandTier_V</iconPath>
-    <warmupMoteSocialSymbol>UI/CommandTier_V</warmupMoteSocialSymbol>
+    <iconPath>UI/TierIcons/CommandTier_VI</iconPath>
+    <warmupMoteSocialSymbol>UI/TierIcons/CommandTier_VI</warmupMoteSocialSymbol>
 	<verbProperties>
       <warmupTime>1</warmupTime> <!-- lowest-tier NPC commanders will always fire their ability last -->
     </verbProperties>
     <descriptionHyperlinks>
-		<HediffDef>guy762_hediff_CommandTierV_caster</HediffDef>
-		<HediffDef>guy762_hediff_CommandTierV_buff</HediffDef>
+		<HediffDef>guy762_hediff_CommandTierVI_caster</HediffDef>
+		<HediffDef>guy762_hediff_CommandTierVI_buff</HediffDef>
 	</descriptionHyperlinks>
 	<comps>
-      <li Class="CompProperties_AbilityGiveHediff">
-        <compClass>CompAbilityEffect_GiveHediff</compClass>
-        <hediffDef>guy762_hediff_CommandTierV_caster</hediffDef>
-        <onlyBrain>True</onlyBrain>
-        <onlyApplyToSelf>True</onlyApplyToSelf>
-        <replaceExisting>true</replaceExisting>
-      </li>
-	  <li MayRequire="EBSG.Framework" Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
-		<casterHasNoneOfHediffs>
-			<li>guy762_hediff_CommandTierV_buff</li>
-			
-			<li>guy762_hediff_CommandTierIV_buff</li>
-			<li>guy762_hediff_CommandTierIII_buff</li>
-			<li>guy762_hediff_CommandTierII_buff</li>
-			<li>guy762_hediff_CommandTierI_buff</li>
-			
-			<li>guy762_hediff_CommandTierV_caster</li>
-			<li>guy762_hediff_CommandTierIV_caster</li>
-			<li>guy762_hediff_CommandTierIII_caster</li>
-			<li>guy762_hediff_CommandTierII_caster</li>
-			<li>guy762_hediff_CommandTierI_caster</li>
-		</casterHasNoneOfHediffs>
-		<casterCapLimiters>
-			<li>
-				<capacity>Consciousness</capacity>
-				<minCapValue>0.75</minCapValue>
-			</li>
-			<li>
-				<capacity>Talking</capacity>
-				<minCapValue>0.5</minCapValue>
-			</li>
-		</casterCapLimiters>
-	  </li>
+		<li Class="CompProperties_AbilityGiveHediff">
+			<compClass>CompAbilityEffect_GiveHediff</compClass>
+			<hediffDef>guy762_hediff_CommandTierVI_caster</hediffDef>
+			<onlyBrain>True</onlyBrain>
+			<onlyApplyToSelf>True</onlyApplyToSelf>
+			<replaceExisting>true</replaceExisting>
+		</li>
+		<!-- <li Class="EBSGFramework.CompProperties_AbilityGiveMultipleHediffs"> -->
+			<!-- <hediffsToGive> -->
+				<!-- <li> -->
+					<!-- <hediffDef>guy762_hediff_CommandTierVI_caster</hediffDef> -->
+					<!-- <onlyBrain>True</onlyBrain> -->
+					<!-- <onlyApplyToSelf>True</onlyApplyToSelf> -->
+					<!-- <replaceExisting>true</replaceExisting> -->
+				<!-- </li> -->
+			<!-- </hediffsToGive> -->
+		<!-- </li> -->
+		<li MayRequire="EBSG.Framework" Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+			<casterHasNoneOfHediffs>
+				<li>guy762_hediff_CommandTierVI_buff</li>
+				
+				<li>guy762_hediff_CommandTierV_buff</li>
+				<li>guy762_hediff_CommandTierIV_buff</li>
+				<li>guy762_hediff_CommandTierIII_buff</li>
+				<li>guy762_hediff_CommandTierII_buff</li>
+				<li>guy762_hediff_CommandTierI_buff</li>
+				
+				<li>guy762_hediff_CommandTierVI_caster</li>
+				<li>guy762_hediff_CommandTierV_caster</li>
+				<li>guy762_hediff_CommandTierIV_caster</li>
+				<li>guy762_hediff_CommandTierIII_caster</li>
+				<li>guy762_hediff_CommandTierII_caster</li>
+				<li>guy762_hediff_CommandTierI_caster</li>
+			</casterHasNoneOfHediffs>
+			<casterCapLimiters>
+				<li>
+					<capacity>Consciousness</capacity>
+					<minCapValue>0.75</minCapValue>
+				</li>
+				<li>
+					<capacity>Talking</capacity>
+					<minCapValue>0.5</minCapValue>
+				</li>
+			</casterCapLimiters>
+			<!-- <noMessage>True</noMessage> -->
+			<!-- "Unfortunately, due to the way that Ludeon coded abilities and AI checks, you'll need to set this to True if you do have an enemy AI that can cast this ability, and said ability is likely to be cast by multiple pawns at once" -->
+		</li>
     </comps>
   </AbilityDef>
   
   <HediffDef>
-    <defName>guy762_hediff_CommandTierV_caster</defName>
-	<label>Command Tier V</label>
+    <defName>guy762_hediff_CommandTierVI_caster</defName>
+	<label>Command Tier VI</label>
     <description>By encouraging and commanding nearby allies, this person can enhance their focus in combat and thus their battle performance.</description>
     <hediffClass>HediffWithComps</hediffClass>
 	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
@@ -114,7 +132,7 @@
           <!-- <onlyTargetColonists>true</onlyTargetColonists> -->
 		  <!-- <neverTargetHostileFaction>true</neverTargetHostileFaction> -->
         </targetingParameters>
-        <hediff>guy762_hediff_CommandTierV_buff</hediff>
+        <hediff>guy762_hediff_CommandTierVI_buff</hediff>
       </li>
 	  <li Class="HediffCompProperties_GiveAbility">
 		<abilityDef>guy762_StopCommandTier</abilityDef>
@@ -125,9 +143,9 @@
 
 
   <HediffDef>
-    <defName>guy762_hediff_CommandTierV_buff</defName>
-    <label>Command Tier V buff</label>
-    <description>Combat abilities are boosted thanks to being near someone who is using the combat command ability.</description>
+    <defName>guy762_hediff_CommandTierVI_buff</defName>
+    <label>Command Tier VI buff</label>
+    <description>Combat stats are boosted thanks to being near someone who is using a command tier ability.</description>
     <debugLabelExtra>other</debugLabelExtra>
     <hediffClass>HediffWithComps</hediffClass>
 	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
@@ -181,13 +199,164 @@
   
   
   <AbilityDef ParentName="guy762_Ability_CommandTierBASE">
-    <defName>guy762_Ability_CommandTierIV</defName>
-    <label>Command Tier IV</label>
+    <defName>guy762_Ability_CommandTierV</defName>
+    <label>Command Tier V</label>
     <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.\n\nThis is a respectable level of tactical command skill for career officers to have obtained. Officers of this skill level have seen their way through a fair number of battles, some ending in victory and others with wise decisions to cut their losses and retreat. These are capable, reilable commanders whose expertise is valued in any engagement they find themselves in and are unquestionably a boon to any force they fight with. Those who dedicate themselves to the career of a military officer will surely find themselves holding this level of skill before long, and most experienced commanders one may face will have a similar skillset.</description>
-    <iconPath>UI/CommandTier_IV</iconPath>
-    <warmupMoteSocialSymbol>UI/CommandTier_IV</warmupMoteSocialSymbol>
+    <iconPath>UI/TierIcons/CommandTier_V</iconPath>
+    <warmupMoteSocialSymbol>UI/TierIcons/CommandTier_V</warmupMoteSocialSymbol>
 	<verbProperties>
       <warmupTime>0.8</warmupTime>
+    </verbProperties>
+    <descriptionHyperlinks>
+		<HediffDef>guy762_hediff_CommandTierV_caster</HediffDef>
+		<HediffDef>guy762_hediff_CommandTierV_buff</HediffDef>
+	</descriptionHyperlinks>
+	<comps>
+      <li Class="CompProperties_AbilityGiveHediff">
+        <compClass>CompAbilityEffect_GiveHediff</compClass>
+        <hediffDef>guy762_hediff_CommandTierV_caster</hediffDef>
+        <onlyBrain>True</onlyBrain>
+        <onlyApplyToSelf>True</onlyApplyToSelf>
+        <replaceExisting>true</replaceExisting>
+      </li>
+	  <li MayRequire="EBSG.Framework" Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+		<casterHasNoneOfHediffs>
+			<li>guy762_hediff_CommandTierV_buff</li>
+			
+			<li>guy762_hediff_CommandTierVI_buff</li>
+			<li>guy762_hediff_CommandTierIV_buff</li>
+			<li>guy762_hediff_CommandTierIII_buff</li>
+			<li>guy762_hediff_CommandTierII_buff</li>
+			<li>guy762_hediff_CommandTierI_buff</li>
+			
+			<li>guy762_hediff_CommandTierVI_caster</li>
+			<li>guy762_hediff_CommandTierV_caster</li>
+			<li>guy762_hediff_CommandTierIV_caster</li>
+			<li>guy762_hediff_CommandTierIII_caster</li>
+			<li>guy762_hediff_CommandTierII_caster</li>
+			<li>guy762_hediff_CommandTierI_caster</li>
+		</casterHasNoneOfHediffs>
+		<casterCapLimiters>
+			<li>
+				<capacity>Consciousness</capacity>
+				<minCapValue>0.75</minCapValue>
+			</li>
+			<li>
+				<capacity>Talking</capacity>
+				<minCapValue>0.5</minCapValue>
+			</li>
+		</casterCapLimiters>
+		<!-- <noMessage>True</noMessage> -->
+		<!-- "Unfortunately, due to the way that Ludeon coded abilities and AI checks, you'll need to set this to True if you do have an enemy AI that can cast this ability, and said ability is likely to be cast by multiple pawns at once" -->
+	  </li>
+    </comps>
+  </AbilityDef>
+  
+  <HediffDef>
+    <defName>guy762_hediff_CommandTierV_caster</defName>
+	<label>Command Tier V</label>
+    <description>By encouraging and commanding nearby allies, this person can enhance their focus in combat and thus their battle performance.</description>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>True</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <li Class="HediffCompProperties_GiveHediffsInRange">
+        <range>500</range>
+        <!-- <mote>Mote_CombatCommand</mote> -->
+        <hideMoteWhenNotDrafted>true</hideMoteWhenNotDrafted>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <!-- <onlyTargetColonists>true</onlyTargetColonists> -->
+		  <!-- <neverTargetHostileFaction>true</neverTargetHostileFaction> -->
+        </targetingParameters>
+        <hediff>guy762_hediff_CommandTierV_buff</hediff>
+      </li>
+	  <li Class="HediffCompProperties_GiveAbility">
+		<abilityDef>guy762_StopCommandTier</abilityDef>
+	  </li>
+    </comps>
+    <isBad>false</isBad>
+  </HediffDef>
+
+
+  <HediffDef>
+    <defName>guy762_hediff_CommandTierV_buff</defName>
+    <label>Command Tier V buff</label>
+    <description>Combat stats are boosted thanks to being near someone who is using a command tier ability.</description>
+    <debugLabelExtra>other</debugLabelExtra>
+    <hediffClass>HediffWithComps</hediffClass>
+	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
+    <comps>
+      <li Class="HediffCompProperties_Disappears">
+        <showRemainingTime>false</showRemainingTime>
+      </li>
+      <li Class="HediffCompProperties_DisappearsOnDeath"/>
+      <!-- <li Class="HediffCompProperties_Link"> -->
+        <!-- <requireLinkOnOtherPawn>false</requireLinkOnOtherPawn> -->
+        <!-- <maxDistance>500</maxDistance> -->
+        <!-- <customMote>Mote_CombatCommandLinkLine</customMote> -->
+      <!-- </li> -->
+    </comps>
+    <isBad>false</isBad>
+    <stages>
+      <li>
+        <statOffsets>
+        	<MeleeDamageFactor>0.05</MeleeDamageFactor>
+
+			<PainShockThreshold>0.05</PainShockThreshold>
+
+			<ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.05</AimingDelayFactor>
+			<MortarMissRadiusFactor>-0.05</MortarMissRadiusFactor>
+
+			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+
+			<ConstructionSpeed>0.05</ConstructionSpeed>
+			<FixBrokenDownBuildingSuccessChance>0.05</FixBrokenDownBuildingSuccessChance>
+			
+			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.05</PilotingAbility>
+        </statOffsets>
+      </li>
+    </stages>
+  </HediffDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <AbilityDef ParentName="guy762_Ability_CommandTierBASE">
+    <defName>guy762_Ability_CommandTierIV</defName>
+    <label>Command Tier IV</label>
+    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.\n\nThis level of tactical skill is considered the prime that all junior officers aspire to reach. Their expertise has been proven through the use of daring, bold strategies to bring them to victory in engagements that lesser commanders would consider hopeless. Officers of this calibre are well-respected by their factions and are tasked with leading only the most important battles. This level of skill is readily obtainable to most career officers, provided they have the tenacity, creativity, and thirst for challenge to achieve it.</description>
+    <iconPath>UI/TierIcons/CommandTier_IV</iconPath>
+    <warmupMoteSocialSymbol>UI/TierIcons/CommandTier_IV</warmupMoteSocialSymbol>
+	<verbProperties>
+      <warmupTime>0.6</warmupTime>
     </verbProperties>
     <descriptionHyperlinks>
 		<HediffDef>guy762_hediff_CommandTierIV_caster</HediffDef>
@@ -205,11 +374,13 @@
 		<casterHasNoneOfHediffs>
 			<li>guy762_hediff_CommandTierIV_buff</li>
 			
+			<li>guy762_hediff_CommandTierVI_buff</li>
 			<li>guy762_hediff_CommandTierV_buff</li>
 			<li>guy762_hediff_CommandTierIII_buff</li>
 			<li>guy762_hediff_CommandTierII_buff</li>
 			<li>guy762_hediff_CommandTierI_buff</li>
 			
+			<li>guy762_hediff_CommandTierVI_caster</li>
 			<li>guy762_hediff_CommandTierV_caster</li>
 			<li>guy762_hediff_CommandTierIV_caster</li>
 			<li>guy762_hediff_CommandTierIII_caster</li>
@@ -226,6 +397,8 @@
 				<minCapValue>0.5</minCapValue>
 			</li>
 		</casterCapLimiters>
+		<!-- <noMessage>True</noMessage> -->
+		<!-- "Unfortunately, due to the way that Ludeon coded abilities and AI checks, you'll need to set this to True if you do have an enemy AI that can cast this ability, and said ability is likely to be cast by multiple pawns at once" -->
 	  </li>
     </comps>
   </AbilityDef>
@@ -264,7 +437,7 @@
   <HediffDef>
     <defName>guy762_hediff_CommandTierIV_buff</defName>
     <label>Command Tier IV buff</label>
-    <description>Combat abilities are boosted thanks to being near someone who is using the combat command ability.</description>
+    <description>Combat stats are boosted thanks to being near someone who is using a command tier ability.</description>
     <debugLabelExtra>other</debugLabelExtra>
     <hediffClass>HediffWithComps</hediffClass>
 	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
@@ -283,18 +456,20 @@
     <stages>
       <li>
         <statOffsets>
-          <MeleeDamageFactor>0.05</MeleeDamageFactor>
-		  
-		  <PainShockThreshold>0.05</PainShockThreshold>
-		  
-		  <ShootingAccuracyPawn>0.05</ShootingAccuracyPawn>
-		  <AimingDelayFactor>-0.05</AimingDelayFactor>
-		  <MortarMissRadiusFactor>-0.05</MortarMissRadiusFactor>
-		  
-		  <IncomingDamageFactor>-0.05</IncomingDamageFactor>
-		  
-		  <ConstructionSpeed>0.05</ConstructionSpeed>
-          <FixBrokenDownBuildingSuccessChance>0.05</FixBrokenDownBuildingSuccessChance>
+			<MeleeDamageFactor>0.10</MeleeDamageFactor>
+
+			<PainShockThreshold>0.10</PainShockThreshold>
+
+			<ShootingAccuracyPawn>0.10</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.10</AimingDelayFactor>
+			<MortarMissRadiusFactor>-0.10</MortarMissRadiusFactor>
+
+			<IncomingDamageFactor>-0.10</IncomingDamageFactor>
+
+			<ConstructionSpeed>0.10</ConstructionSpeed>
+			<FixBrokenDownBuildingSuccessChance>0.10</FixBrokenDownBuildingSuccessChance>
+			
+			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.10</PilotingAbility>
         </statOffsets>
       </li>
     </stages>
@@ -327,11 +502,11 @@
   <AbilityDef ParentName="guy762_Ability_CommandTierBASE">
     <defName>guy762_Ability_CommandTierIII</defName>
     <label>Command Tier III</label>
-    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.\n\nThis level of tactical skill is considered the prime that all junior officers aspire to reach. Their expertise has been proven through the use of daring, bold strategies to bring them to victory in engagements that lesser commanders would consider hopeless. Officers of this calibre are well-respected by their factions and are tasked with leading only the most important battles. This level of skill is readily obtainable to most career officers, provided they have the tenacity, creativity, and thirst for challenge to achieve it.</description>
-    <iconPath>UI/CommandTier_III</iconPath>
-    <warmupMoteSocialSymbol>UI/CommandTier_III</warmupMoteSocialSymbol>
+    <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.</description>
+    <iconPath>UI/TierIcons/CommandTier_III</iconPath>
+    <warmupMoteSocialSymbol>UI/TierIcons/CommandTier_III</warmupMoteSocialSymbol>
 	<verbProperties>
-      <warmupTime>0.6</warmupTime>
+      <warmupTime>0.4</warmupTime>
     </verbProperties>
     <descriptionHyperlinks>
 		<HediffDef>guy762_hediff_CommandTierIII_caster</HediffDef>
@@ -349,11 +524,13 @@
 		<casterHasNoneOfHediffs>
 			<li>guy762_hediff_CommandTierIII_buff</li>
 			
+			<li>guy762_hediff_CommandTierVI_buff</li>
 			<li>guy762_hediff_CommandTierV_buff</li>
 			<li>guy762_hediff_CommandTierIV_buff</li>
 			<li>guy762_hediff_CommandTierII_buff</li>
 			<li>guy762_hediff_CommandTierI_buff</li>
 			
+			<li>guy762_hediff_CommandTierVI_caster</li>
 			<li>guy762_hediff_CommandTierV_caster</li>
 			<li>guy762_hediff_CommandTierIV_caster</li>
 			<li>guy762_hediff_CommandTierIII_caster</li>
@@ -370,6 +547,8 @@
 				<minCapValue>0.5</minCapValue>
 			</li>
 		</casterCapLimiters>
+		<!-- <noMessage>True</noMessage> -->
+		<!-- "Unfortunately, due to the way that Ludeon coded abilities and AI checks, you'll need to set this to True if you do have an enemy AI that can cast this ability, and said ability is likely to be cast by multiple pawns at once" -->
 	  </li>
     </comps>
   </AbilityDef>
@@ -408,7 +587,7 @@
   <HediffDef>
     <defName>guy762_hediff_CommandTierIII_buff</defName>
     <label>Command Tier III buff</label>
-    <description>Combat abilities are boosted thanks to being near someone who is using the combat command ability.</description>
+    <description>Combat stats are boosted thanks to being near someone who is using a command tier ability.</description>
     <debugLabelExtra>other</debugLabelExtra>
     <hediffClass>HediffWithComps</hediffClass>
 	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
@@ -427,20 +606,22 @@
     <stages>
       <li>
 		<statOffsets>
-          <MeleeDamageFactor>0.1</MeleeDamageFactor>
-		  
-		  <PainShockThreshold>0.1</PainShockThreshold>
-		  
-		  <ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
-		  <AimingDelayFactor>-0.1</AimingDelayFactor>
-		  <MortarMissRadiusFactor>-0.1</MortarMissRadiusFactor>
-		  
-		  <IncomingDamageFactor>-0.1</IncomingDamageFactor>
-		  
-		  <ConstructionSpeed>0.1</ConstructionSpeed>
-		  <FixBrokenDownBuildingSuccessChance>0.1</FixBrokenDownBuildingSuccessChance>
-		  
-		  <MoveSpeed>0.05</MoveSpeed>
+			<MeleeDamageFactor>0.15</MeleeDamageFactor>
+
+			<PainShockThreshold>0.15</PainShockThreshold>
+
+			<ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.15</AimingDelayFactor>
+			<MortarMissRadiusFactor>-0.15</MortarMissRadiusFactor>
+
+			<IncomingDamageFactor>-0.15</IncomingDamageFactor>
+
+			<ConstructionSpeed>0.15</ConstructionSpeed>
+			<FixBrokenDownBuildingSuccessChance>0.15</FixBrokenDownBuildingSuccessChance>
+			
+			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.15</PilotingAbility>
+
+			<MoveSpeed>0.05</MoveSpeed>
         </statOffsets>
       </li>
     </stages>
@@ -473,10 +654,10 @@
     <defName>guy762_Ability_CommandTierII</defName>
     <label>Command Tier II</label>
     <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.\n\nThis is considered the peak of attainable strategic command prowess. Individuals with this level of tactical skill are considered the best of the best, and are usually the de facto leaders of their faction's armed forces. They are considered extremely dangerous by their enemies and an invaluable asset to their allies, and their deployment to the front lines is not a decision made lightly. Very few commanders are capable of achieving this level of strategic talent, but those that do will surely shape the outcome of the wars they are tasked with directing.</description>
-    <iconPath>UI/CommandTier_II</iconPath>
-    <warmupMoteSocialSymbol>UI/CommandTier_II</warmupMoteSocialSymbol>
+    <iconPath>UI/TierIcons/CommandTier_II</iconPath>
+    <warmupMoteSocialSymbol>UI/TierIcons/CommandTier_II</warmupMoteSocialSymbol>
 	<verbProperties>
-      <warmupTime>0.4</warmupTime>
+      <warmupTime>0.2</warmupTime>
     </verbProperties>
     <descriptionHyperlinks>
 		<HediffDef>guy762_hediff_CommandTierII_caster</HediffDef>
@@ -494,11 +675,13 @@
 		<casterHasNoneOfHediffs>
 			<li>guy762_hediff_CommandTierII_buff</li>
 			
+			<li>guy762_hediff_CommandTierVI_buff</li>
 			<li>guy762_hediff_CommandTierV_buff</li>
 			<li>guy762_hediff_CommandTierIV_buff</li>
 			<li>guy762_hediff_CommandTierIII_buff</li>
 			<li>guy762_hediff_CommandTierI_buff</li>
 			
+			<li>guy762_hediff_CommandTierVI_caster</li>
 			<li>guy762_hediff_CommandTierV_caster</li>
 			<li>guy762_hediff_CommandTierIV_caster</li>
 			<li>guy762_hediff_CommandTierIII_caster</li>
@@ -515,6 +698,8 @@
 				<minCapValue>0.5</minCapValue>
 			</li>
 		</casterCapLimiters>
+		<!-- <noMessage>True</noMessage> -->
+		<!-- "Unfortunately, due to the way that Ludeon coded abilities and AI checks, you'll need to set this to True if you do have an enemy AI that can cast this ability, and said ability is likely to be cast by multiple pawns at once" -->
 	  </li>
     </comps>
   </AbilityDef>
@@ -553,7 +738,7 @@
   <HediffDef>
     <defName>guy762_hediff_CommandTierII_buff</defName>
     <label>Command Tier II buff</label>
-    <description>Combat abilities are boosted thanks to being near someone who is using the combat command ability.</description>
+    <description>Combat stats are boosted thanks to being near someone who is using a command tier ability.</description>
     <debugLabelExtra>other</debugLabelExtra>
     <hediffClass>HediffWithComps</hediffClass>
 	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
@@ -572,20 +757,22 @@
     <stages>
       <li>
 		<statOffsets>
-          <MeleeDamageFactor>0.15</MeleeDamageFactor>
-		  
-		  <PainShockThreshold>0.15</PainShockThreshold>
-		  
-		  <ShootingAccuracyPawn>0.15</ShootingAccuracyPawn>
-		  <AimingDelayFactor>-0.15</AimingDelayFactor>
-		  <MortarMissRadiusFactor>-0.15</MortarMissRadiusFactor>
-		  
-		  <IncomingDamageFactor>-0.15</IncomingDamageFactor>
-		  
-		  <ConstructionSpeed>0.15</ConstructionSpeed>
-		  <FixBrokenDownBuildingSuccessChance>0.15</FixBrokenDownBuildingSuccessChance>
-		  
-		  <MoveSpeed>0.1</MoveSpeed>
+			<MeleeDamageFactor>0.20</MeleeDamageFactor>
+
+			<PainShockThreshold>0.20</PainShockThreshold>
+
+			<ShootingAccuracyPawn>0.20</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.20</AimingDelayFactor>
+			<MortarMissRadiusFactor>-0.20</MortarMissRadiusFactor>
+
+			<IncomingDamageFactor>-0.20</IncomingDamageFactor>
+
+			<ConstructionSpeed>0.20</ConstructionSpeed>
+			<FixBrokenDownBuildingSuccessChance>0.20</FixBrokenDownBuildingSuccessChance>
+			
+			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.20</PilotingAbility>
+
+			<MoveSpeed>0.1</MoveSpeed>
         </statOffsets>
       </li>
     </stages>
@@ -611,10 +798,10 @@
     <defName>guy762_Ability_CommandTierI</defName>
     <label>Command Tier I</label>
     <description>Take command of a battle by giving orders and coordinating the attacks of all colonists on the map. The effect lasts 24 hours and remains attached to the leader for the duration.\n\nThis is the highest possible level of strategic command abilitity. Individuals who posess this level of tactical skill are considered galactic history-defining legends whose mere mention can cause opposing armies to lay down their arms and surrender without a single shot fired. Talent of this calibre is extraordinarily rare and is generally thought to emerge in only one or two individuals per era of major galactic conflict, if at all.</description>
-    <iconPath>UI/CommandTier_I</iconPath>
-    <warmupMoteSocialSymbol>UI/CommandTier_I</warmupMoteSocialSymbol>
+    <iconPath>UI/TierIcons/CommandTier_I</iconPath>
+    <warmupMoteSocialSymbol>UI/TierIcons/CommandTier_I</warmupMoteSocialSymbol>
 	<verbProperties>
-      <warmupTime>0.2</warmupTime> <!-- highest-tier NPC commanders will always fire their ability first -->
+      <warmupTime>0</warmupTime> <!-- highest-tier NPC commanders will always fire their ability first -->
     </verbProperties>
     <descriptionHyperlinks>
 		<HediffDef>guy762_hediff_CommandTierI_caster</HediffDef>
@@ -632,11 +819,13 @@
 		<casterHasNoneOfHediffs>
 			<li>guy762_hediff_CommandTierI_buff</li>
 			
+			<li>guy762_hediff_CommandTierVI_buff</li>
 			<li>guy762_hediff_CommandTierV_buff</li>
 			<li>guy762_hediff_CommandTierIV_buff</li>
 			<li>guy762_hediff_CommandTierIII_buff</li>
 			<li>guy762_hediff_CommandTierII_buff</li>
 			
+			<li>guy762_hediff_CommandTierVI_caster</li>
 			<li>guy762_hediff_CommandTierV_caster</li>
 			<li>guy762_hediff_CommandTierIV_caster</li>
 			<li>guy762_hediff_CommandTierIII_caster</li>
@@ -653,6 +842,8 @@
 				<minCapValue>0.5</minCapValue>
 			</li>
 		</casterCapLimiters>
+		<!-- <noMessage>True</noMessage> -->
+		<!-- "Unfortunately, due to the way that Ludeon coded abilities and AI checks, you'll need to set this to True if you do have an enemy AI that can cast this ability, and said ability is likely to be cast by multiple pawns at once" -->
 	  </li>
     </comps>
   </AbilityDef>
@@ -691,7 +882,7 @@
   <HediffDef>
     <defName>guy762_hediff_CommandTierI_buff</defName>
     <label>Command Tier I buff</label>
-    <description>Combat abilities are boosted thanks to being near someone who is using the combat command ability.</description>
+    <description>Combat stats are boosted thanks to being near someone who is using a command tier ability.</description>
     <debugLabelExtra>other</debugLabelExtra>
     <hediffClass>HediffWithComps</hediffClass>
 	<defaultLabelColor>(255,255,7)</defaultLabelColor> <!-- star wars yellow -->
@@ -710,20 +901,22 @@
     <stages>
       <li>
 		<statOffsets>
-          <MeleeDamageFactor>0.2</MeleeDamageFactor>
-		  
-		  <PainShockThreshold>0.2</PainShockThreshold>
-		  
-		  <ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
-		  <AimingDelayFactor>-0.2</AimingDelayFactor>
-		  <MortarMissRadiusFactor>-0.2</MortarMissRadiusFactor>
-		  
-		  <IncomingDamageFactor>-0.2</IncomingDamageFactor>
-		  
-		  <ConstructionSpeed>0.2</ConstructionSpeed>
-		  <FixBrokenDownBuildingSuccessChance>0.2</FixBrokenDownBuildingSuccessChance>
-		  
-		  <MoveSpeed>0.15</MoveSpeed>
+			<MeleeDamageFactor>0.25</MeleeDamageFactor>
+
+			<PainShockThreshold>0.25</PainShockThreshold>
+
+			<ShootingAccuracyPawn>0.25</ShootingAccuracyPawn>
+			<AimingDelayFactor>-0.25</AimingDelayFactor>
+			<MortarMissRadiusFactor>-0.25</MortarMissRadiusFactor>
+
+			<IncomingDamageFactor>-0.25</IncomingDamageFactor>
+
+			<ConstructionSpeed>0.25</ConstructionSpeed>
+			<FixBrokenDownBuildingSuccessChance>0.25</FixBrokenDownBuildingSuccessChance>
+			
+			<PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.25</PilotingAbility>
+
+			<MoveSpeed>0.15</MoveSpeed>
         </statOffsets>
       </li>
     </stages>
@@ -744,7 +937,7 @@
 		<defName>guy762_StopCommandTier</defName>
 		<label>relinquish command</label>
 		<description>Deactivate an active command tier ability.</description>
-		<iconPath>UI/CommandTierOff</iconPath>
+		<iconPath>UI/TierIcons/CommandTierOff</iconPath>
 		<!--hotKey>Misc12</hotKey-->
 		<writeCombatLog>True</writeCombatLog>
 		<hostile>false</hostile>
@@ -754,13 +947,14 @@
 		<verbProperties>
 		  <verbClass>Verb_CastAbility</verbClass>
 		  <soundCast>kotorsound_static_off</soundCast>
-		  <range>-1</range>
+		  <!-- <range>-1</range> -->
 		  <drawAimPie>false</drawAimPie>
 		</verbProperties>
 		<comps>
 		  <li Class="EBSGFramework.CompProperties_AbilityRemoveMultipleHediffs">
 				<compClass>EBSGFramework.CompAbilityEffect_RemoveMultipleHediffs</compClass>
 				<hediffs>
+					<li>guy762_hediff_CommandTierVI_caster</li>
 					<li>guy762_hediff_CommandTierV_caster</li>
 					<li>guy762_hediff_CommandTierIV_caster</li>
 					<li>guy762_hediff_CommandTierIII_caster</li>
