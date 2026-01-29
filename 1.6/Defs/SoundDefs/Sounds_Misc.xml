@@ -702,6 +702,32 @@
 	</SoundDef>
 	
 	
+	<SoundDef>
+		<defName>kotorsound_select_Goldeneye</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotormisc/rifcok1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>25</min>
+				<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>1</min>
+					<max>1</max>
+				</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
 	
 	
 	
