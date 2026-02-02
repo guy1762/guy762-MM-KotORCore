@@ -77,7 +77,89 @@
 		  </li>
 		</stages>
 	</HediffDef>
-
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<AbilityDef Name="SWPotF_TacticAbilityValidatorBASE" Abstract="True">
+		
+		<comps>
+			<li MayRequire="EBSG.Framework" Class="EBSGFramework.CompProperties_AbilityAbilityValidator">
+				<targetHasNoneOfHediffs>
+					<li>SWPotF_TacticAbilityHediff_AmbushWaiting</li>
+					<li>SWPotF_TacticAbilityHediff_AmbushAttacking</li>
+					<li>SWPotF_TacticAbilityHediff_TakeCover</li>
+					<li>SWPotF_TacticAbilityHediff_ZealousRage</li>
+					<li>SWPotF_TacticAbilityHediff_Sprint</li>
+				</targetHasNoneOfHediffs>
+				
+				<casterHasNoneOfHediffs>
+					<li>SWPotF_TacticAbilityHediff_AmbushWaiting</li>
+					<li>SWPotF_TacticAbilityHediff_AmbushAttacking</li>
+					<li>SWPotF_TacticAbilityHediff_TakeCover</li>
+					<li>SWPotF_TacticAbilityHediff_ZealousRage</li>
+					<li>SWPotF_TacticAbilityHediff_Sprint</li>
+				</casterHasNoneOfHediffs>
+				<casterCapLimiters>
+					<li>
+						<capacity>Consciousness</capacity>
+						<minCapValue>0.75</minCapValue>
+					</li>
+					<li>
+						<capacity>Talking</capacity>
+						<minCapValue>0.5</minCapValue>
+					</li>
+				</casterCapLimiters>
+			</li>
+		</comps>
+		
+	</AbilityDef>
+	
+	
+	
+	<HediffDef Name="SWPotF_TacticAbilityHediff_BreaksInMentalStateBASE" Abstract="True">
+        <comps>
+            <li Class="EBSGFramework.HediffCompProperties_SeverityByMentalState">
+                <defaultSeverity>1</defaultSeverity>
+                <fightingSeverity>1</fightingSeverity>
+                <draftedSeverity>1</draftedSeverity>
+                <mentalStateEffects>
+                    <li>
+                        <!-- <mentalStates> -->
+                            <!-- <li>Berserk</li> -->
+                            <!-- <li>Slaughterer</li> -->
+                            <!-- <li>MurderousRage</li> -->
+                            <!-- <li>Tantrum</li> -->
+                            <!-- <li>TargetedTantrum</li> -->
+                            <!-- <li>BedroomTantrum</li> -->
+                            <!-- <li>SadisticRage</li> -->
+                            <!-- <li>SocialFighting</li> -->
+                        <!-- </mentalStates> -->
+						<mentalState />
+						<mentalStates />
+						<mentalSeverity>0</mentalSeverity>
+                    </li>
+                </mentalStateEffects>
+            </li>
+        </comps>
+	</HediffDef>
 
  
 

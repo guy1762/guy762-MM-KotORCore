@@ -103,6 +103,26 @@
 	</ThingDef>
 	
 	
+	<ThingDef ParentName="BaseGrenadeProjectile">
+		<defName>SWProj_Fireball</defName>
+		<label>fireball</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/fireball</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Flame</damageDef>
+			<ai_IsIncendiary>true</ai_IsIncendiary>
+		    <damageAmountBase>25</damageAmountBase>
+			
+			<speed>25</speed>
+			<explosionRadius>0.25</explosionRadius>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+	</ThingDef>
+	
+	
 	
 	
 	

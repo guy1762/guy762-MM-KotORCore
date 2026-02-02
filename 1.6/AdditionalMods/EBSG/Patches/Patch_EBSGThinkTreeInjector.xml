@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+  
+	<Operation Class="PatchOperationAdd">
+        <xpath>Defs/EBSGFramework.EBSGRecorder[defName="EBSG_Recorder"]/thinkTreeSettings</xpath>
+        <value>
+            <li>
+                <uniqueID>guy762_SWPotFAI</uniqueID>
+            </li>
+			<li>
+                <uniqueID>guy762_SWCPAI</uniqueID>
+            </li>
+        </value>
+    </Operation>
+	
+	
+</Patch>

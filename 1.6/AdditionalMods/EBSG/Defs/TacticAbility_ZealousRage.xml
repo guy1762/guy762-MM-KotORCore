@@ -51,7 +51,7 @@
 
 
   
-	<AbilityDef>
+	<AbilityDef ParentName="SWPotF_TacticAbilityValidatorBASE">
 		<defName>SWPotF_TacticAbility_ZealousRage</defName>
 		<label>Zealous Rage</label>
 		<description>Inspire your units to attack with reckless, overzealous rage, increasing their movement and attack speed but lowering their defense and occasionally causing them to go berserk.</description>
@@ -92,7 +92,8 @@
 				<canTargetHumans>true</canTargetHumans>
 				<canTargetMechs>false</canTargetMechs>
 				
-				<neverTargetHostileFaction>true</neverTargetHostileFaction>
+				<neverTargetIncapacitated>true</neverTargetIncapacitated>
+				<!-- <neverTargetHostileFaction>true</neverTargetHostileFaction> don't use this, it checks for factions automatically -->
 			</targetParams>
 		</verbProperties>
 		

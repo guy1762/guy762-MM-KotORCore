@@ -264,6 +264,7 @@
 		<priorityMode>PrioritizeNearest</priorityMode>	
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Folder">
 						<clipFolderPath>kotorlightsaber/lightwhip_swing</clipFolderPath>

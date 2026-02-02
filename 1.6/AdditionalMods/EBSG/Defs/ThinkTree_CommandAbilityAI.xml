@@ -2,7 +2,7 @@
 <Defs>
 
 
-	<ThinkTreeDef>
+	<ThinkTreeDef>	<!-- REMINDER: THIS NEEDS A PATCH TO WORK -->
 		<defName>guy762_SWCPAI_CommandAbilities</defName>
 		<!-- <insertTag>EBSGAI_NonColonist_NearbyEnemy</insertTag> -->
 		<insertTag>EBSGAI_NonColonist</insertTag>
@@ -41,10 +41,12 @@
 				
 				
 				
-				<li Class="EBSGFramework.ThinkNode_RecordPassage">
-					<output>ok fucking work already please</output>
-				</li>
-				<li Class="ThinkNode_ConditionalHasAbility">
+				<!-- <li Class="EBSGFramework.ThinkNode_RecordPassage"> -->
+					<!-- <output>ok fucking work already please</output> -->
+				<!-- </li> -->
+				
+				<!-- <li Class="ThinkNode_ConditionalHasAbility"> -->
+				<li Class="EBSGFramework.ThinkNode_ConditionalHasAbilityUsable">
 					<ability>guy762_Ability_CommandTierVI</ability>
 					<subNodes>
 						<li Class="EBSGFramework.ThinkNode_RecordPassage">
@@ -65,10 +67,13 @@
 										<li Class="JobGiver_AICastAbilityOnSelf">
 											<ability>guy762_Ability_CommandTierVI</ability>
 											<subNodes>
-												<li Class="EBSGFramework.ThinkNode_RecordPassage">
-													<output>fall back ThinkNode reached!</output>
+												<li Class="JobGiver_WanderNearFallbackLocation">
+													<subNodes>
+														<li Class="EBSGFramework.ThinkNode_RecordPassage">
+															<output>fall back ThinkNode reached!</output>
+														</li>
+													</subNodes>
 												</li>
-												<li Class="JobGiver_WanderNearFallbackLocation" />
 											</subNodes>
 										</li>
 									<!-- </subNodes> -->
@@ -77,7 +82,8 @@
 						</li>
 					</subNodes>
 				</li>
-				<li Class="ThinkNode_ConditionalHasAbility">
+				<!-- <li Class="ThinkNode_ConditionalHasAbility"> -->
+				<li Class="EBSGFramework.ThinkNode_ConditionalHasAbilityUsable">
 					<ability>guy762_Ability_CommandTierV</ability>
 					<subNodes>
 						<li Class="EBSGFramework.ThinkNode_RecordPassage">
@@ -98,10 +104,13 @@
 										<li Class="JobGiver_AICastAbilityOnSelf">
 											<ability>guy762_Ability_CommandTierV</ability>
 											<subNodes>
-												<li Class="EBSGFramework.ThinkNode_RecordPassage">
-													<output>fall back ThinkNode reached!</output>
+												<li Class="JobGiver_WanderNearFallbackLocation">
+													<subNodes>
+														<li Class="EBSGFramework.ThinkNode_RecordPassage">
+															<output>fall back ThinkNode reached!</output>
+														</li>
+													</subNodes>
 												</li>
-												<li Class="JobGiver_WanderNearFallbackLocation" />
 											</subNodes>
 										</li>
 									<!-- </subNodes> -->
@@ -110,7 +119,8 @@
 						</li>
 					</subNodes>
 				</li>
-				<li Class="ThinkNode_ConditionalHasAbility">
+				<!-- <li Class="ThinkNode_ConditionalHasAbility"> -->
+				<li Class="EBSGFramework.ThinkNode_ConditionalHasAbilityUsable">
 					<ability>guy762_Ability_CommandTierIV</ability>
 					<subNodes>
 						<li Class="EBSGFramework.ThinkNode_RecordPassage">
@@ -143,7 +153,8 @@
 						</li>
 					</subNodes>
 				</li>
-				<li Class="ThinkNode_ConditionalHasAbility">
+				<!-- <li Class="ThinkNode_ConditionalHasAbility"> -->
+				<li Class="EBSGFramework.ThinkNode_ConditionalHasAbilityUsable">
 					<ability>guy762_Ability_CommandTierIII</ability>
 					<subNodes>
 						<li Class="EBSGFramework.ThinkNode_RecordPassage">
@@ -176,7 +187,8 @@
 						</li>
 					</subNodes>
 				</li>
-				<li Class="ThinkNode_ConditionalHasAbility">
+				<!-- <li Class="ThinkNode_ConditionalHasAbility"> -->
+				<li Class="EBSGFramework.ThinkNode_ConditionalHasAbilityUsable">
 					<ability>guy762_Ability_CommandTierII</ability>
 					<subNodes>
 						<li Class="EBSGFramework.ThinkNode_RecordPassage">
@@ -209,7 +221,8 @@
 						</li>
 					</subNodes>
 				</li>
-				<li Class="ThinkNode_ConditionalHasAbility">
+				<!-- <li Class="ThinkNode_ConditionalHasAbility"> -->
+				<li Class="EBSGFramework.ThinkNode_ConditionalHasAbilityUsable">
 					<ability>guy762_Ability_CommandTierI</ability>
 					<subNodes>
 						<li Class="EBSGFramework.ThinkNode_RecordPassage">

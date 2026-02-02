@@ -51,7 +51,7 @@
 
 
   
-	<AbilityDef>
+	<AbilityDef ParentName="SWPotF_TacticAbilityValidatorBASE">
 		<defName>SWPotF_TacticAbility_Sprint</defName>
 		<label>Sprint</label>
 		<description>Force your nearby units to sprint, doubling movement speed for a brief period but tiring your units out after the initial sprint ends.</description>
@@ -92,7 +92,8 @@
 				<canTargetHumans>true</canTargetHumans>
 				<canTargetMechs>false</canTargetMechs>
 				
-				<neverTargetHostileFaction>true</neverTargetHostileFaction>
+				<neverTargetIncapacitated>true</neverTargetIncapacitated>
+				<!-- <neverTargetHostileFaction>true</neverTargetHostileFaction> don't use this, it checks for factions automatically -->
 			</targetParams>
 		</verbProperties>
 		

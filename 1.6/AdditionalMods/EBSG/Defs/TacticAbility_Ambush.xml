@@ -51,7 +51,7 @@
 
 
   
-	<AbilityDef>
+	<AbilityDef ParentName="SWPotF_TacticAbilityValidatorBASE">
 		<defName>SWPotF_TacticAbility_Ambush</defName>
 		<label>Ambush</label>
 		<description>Position your units for a surprise attack against unsuspecting enemies. When activated, your units will become invisible but unable to attack or move (so be sure to position them correctly before activating).</description>
@@ -95,7 +95,8 @@
 				<canTargetHumans>true</canTargetHumans>
 				<canTargetMechs>false</canTargetMechs>
 				
-				<neverTargetHostileFaction>true</neverTargetHostileFaction>
+				<neverTargetIncapacitated>true</neverTargetIncapacitated>
+				<!-- <neverTargetHostileFaction>true</neverTargetHostileFaction> don't use this, it checks for factions automatically -->
 			</targetParams>
 		</verbProperties>
 		
@@ -104,6 +105,7 @@
 				<compClass>CompAbilityEffect_GiveHediff</compClass>
 				<hediffDef>SWPotF_TacticAbilityHediff_AmbushWaiting</hediffDef>
 				<applicableToMechs>False</applicableToMechs>
+				<severity>1</severity>
 				<!-- <onlyBrain>True</onlyBrain> -->
 				<!-- <onlyApplyToSelf>False</onlyApplyToSelf> -->
 				<!-- <replaceExisting>true</replaceExisting> -->
@@ -119,7 +121,7 @@
 	
 	
 	
-	<HediffDef>
+	<HediffDef ParentName="SWPotF_TacticAbilityHediff_BreaksInMentalStateBASE">
         <defName>SWPotF_TacticAbilityHediff_AmbushWaiting</defName>
         <label>Ambush strategy (waiting)</label>
         <description>This pawn is lying in wait as part of an ambush.</description>
@@ -128,7 +130,7 @@
         <isBad>false</isBad>
         <stages>
             <li>
-				<!-- <minSeverity>0</minSeverity> -->
+				<minSeverity>1</minSeverity>
 				<becomeVisible>true</becomeVisible>
 				<disabledWorkTags>Violent</disabledWorkTags>
 				<statFactors>
@@ -162,7 +164,7 @@
                     </li>
 					<li>
                         <abilityDef>SWPotF_TacticAbility_AmbushAttack</abilityDef>
-                        <validSeverity>1~99999</validSeverity>
+                        <validSeverity>2~99999</validSeverity>
                     </li>
                 </abilitiesAtSeverities>
             </li>
@@ -265,7 +267,7 @@
   
   
   
-	<HediffDef>
+	<HediffDef ParentName="SWPotF_TacticAbilityHediff_BreaksInMentalStateBASE">
         <defName>SWPotF_TacticAbilityHediff_AmbushAttacking</defName>
         <label>Ambush Strategy (attacking)</label>
         <description>This pawn is attacking as part of an ambush.</description>
@@ -274,7 +276,7 @@
         <isBad>false</isBad>
         <stages>
             <li>
-				<minSeverity>0</minSeverity>
+				<minSeverity>1</minSeverity>
 				<becomeVisible>true</becomeVisible>
 				<statFactors>
 					<MoveSpeed>0</MoveSpeed>
