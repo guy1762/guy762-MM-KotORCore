@@ -296,6 +296,8 @@
 		  <li>ScarlandsJunkPrefabs</li>
 		  
 		  <li>SWCPMapGenStep_UrbanBiome_CivilianPawns</li>
+		  <li>SWCPGenStep_UrbanCivilians_Defend</li>
+		  <li>SWCPGenStep_UrbanCivilians_Wander</li>
 		  
 		  <li>GrasslandsElevationReduction</li>
 		</extraGenSteps>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <DutyDef>
+    <defName>WanderCivilian</defName>
+    <thinkNode Class="ThinkNode_Priority">
+      <subNodes>
+        <li Class="ThinkNode_Tagger">
+          <tagToGive>SatisfyingNeeds</tagToGive>
+          <subNodes>
+            <li Class="ThinkNode_PrioritySorter">
+              <subNodes>
+                <li Class="JobGiver_GetFood" />
+                <li Class="JobGiver_GetRest" />
+              </subNodes>
+            </li>
+          </subNodes>
+        </li>
+        <li Class="ThinkNode_ChancePerHour_Constant">
+           <mtbHours>24</mtbHours>
+           <subNodes>
+             <li Class="JobGiver_ExitMapBest">
+               <defaultLocomotion>Walk</defaultLocomotion>
+             </li>
+           </subNodes>
+        </li>
+        <li Class="SWCPBiomes.JobGiver_WanderCivilian" />
+      </subNodes>
+    </thinkNode>
+  </DutyDef>
+
+</Defs>
