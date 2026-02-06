@@ -64,15 +64,15 @@
 			
 			
 			
-			<li Class="XmlExtensions.Setting.GapLine"/>
-			<li Class="XmlExtensions.Setting.Checkbox">
-				<key>KotORCoreSettings_AIJumpPack</key>
-				<label>Enable enemy pawn jump pack use (WARNING: may have performance impact!)</label>
-				<defaultValue>false</defaultValue>
-			</li>
-			<li Class="XmlExtensions.Setting.Text">
-				<text>This patch enables experimental pawn AI code that allows raiding pawns to use equipped jump packs/jetpacks to jump to melee range. This code may cause lag spikes when pausing/unpausing.</text>
-			</li>
+			<!-- <li Class="XmlExtensions.Setting.GapLine"/> -->
+			<!-- <li Class="XmlExtensions.Setting.Checkbox"> -->
+				<!-- <key>KotORCoreSettings_AIJumpPack</key> -->
+				<!-- <label>Enable enemy pawn jump pack use (WARNING: may have performance impact!)</label> -->
+				<!-- <defaultValue>false</defaultValue> -->
+			<!-- </li> -->
+			<!-- <li Class="XmlExtensions.Setting.Text"> -->
+				<!-- <text>This patch enables experimental pawn AI code that allows raiding pawns to use equipped jump packs/jetpacks to jump to melee range. This code may cause lag spikes when pausing/unpausing.</text> -->
+			<!-- </li> -->
 			
 			
 			

@@ -108,7 +108,11 @@
 					<li>SWPotF_TacticAbilityHediff_TakeCover</li>
 					<li>SWPotF_TacticAbilityHediff_ZealousRage</li>
 					<li>SWPotF_TacticAbilityHediff_Sprint</li>
+					<li>SWPotF_TacticAbilityHediff_Harass</li>
 				</targetHasNoneOfHediffs>
+				
+				<targetMentalStates />
+				<targetMentalStateCheck>Forbidden</targetMentalStateCheck>
 				
 				<casterHasNoneOfHediffs>
 					<li>SWPotF_TacticAbilityHediff_AmbushWaiting</li>
@@ -116,6 +120,7 @@
 					<li>SWPotF_TacticAbilityHediff_TakeCover</li>
 					<li>SWPotF_TacticAbilityHediff_ZealousRage</li>
 					<li>SWPotF_TacticAbilityHediff_Sprint</li>
+					<li>SWPotF_TacticAbilityHediff_Harass</li>
 				</casterHasNoneOfHediffs>
 				<casterCapLimiters>
 					<li>

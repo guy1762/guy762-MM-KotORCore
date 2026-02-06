@@ -2,82 +2,7 @@
 <Defs>
 	
 	
-	<SoundDef>
-		<defName>kotorsound_starfighter_activate</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipengine/shield_powerup</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>35</min>        
-				<max>35</max>
-				</volumeRange>  		
-				<!--pitchRange>
-					<min>0.8</min>				
-					<max>1.2</max>
-				</pitchRange-->			
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
 	
-	<SoundDef>
-		<defName>kotorsound_starfighter_deactivate</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipengine/shield_powerdow</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>35</min>        
-				<max>35</max>
-				</volumeRange>  		
-				<!--pitchRange>
-					<min>0.8</min>				
-					<max>1.2</max>
-				</pitchRange-->			
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	
-	
-	<SoundDef>
-		<defName>kotorsound_starfighter_malfunction</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipengine/SHIELDS_DOWN_1</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>35</min>        
-				<max>35</max>
-				</volumeRange>  		
-				<!--pitchRange>
-					<min>0.8</min>				
-					<max>1.2</max>
-				</pitchRange-->			
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
 	
 	
 	
@@ -85,8 +10,8 @@
 		<defName>kotorsound_engineTIE</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -128,8 +53,8 @@
 		<defName>kotorsound_enginehum_XWing</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -151,8 +76,8 @@
 		<defName>kotorsound_enginehum_YWing</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -174,8 +99,8 @@
 		<defName>kotorsound_enginehum_TIE</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -197,8 +122,8 @@
 		<defName>kotorsound_enginehum_TIEBomber</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -220,8 +145,8 @@
 		<defName>kotorsound_enginehum_starviper</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -243,8 +168,8 @@
 		<defName>kotorsound_enginehum_YTfreighter</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -266,8 +191,8 @@
 		<defName>kotorsound_enginehum_YWingAlt</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -289,8 +214,8 @@
 		<defName>kotorsound_enginehum_UWing</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -312,8 +237,8 @@
 		<defName>kotorsound_enginehum_lancet</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -338,8 +263,8 @@
 		<defName>kotorsound_enginehum_snowspeeder</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -361,8 +286,8 @@
 		<defName>kotorsound_enginehum_houndstooth</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -384,8 +309,8 @@
 		<defName>kotorsound_enginehum_roaringzoomer</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -409,8 +334,8 @@
 		<defName>kotorsound_enginehum_LAATi</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -442,8 +367,8 @@
 		<defName>kotorsound_enginehum_sigil</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -465,8 +390,8 @@
 		<defName>kotorsound_enginehum_n1naboo</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -488,8 +413,8 @@
 		<defName>kotorsound_enginehum_freefall</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -511,8 +436,8 @@
 		<defName>kotorsound_enginehum_skiff</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -534,8 +459,8 @@
 		<defName>kotorsound_enginehum_TIEAggressor</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -557,8 +482,8 @@
 		<defName>kotorsound_enginehum_Z95headhunter</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -580,8 +505,8 @@
 		<defName>kotorsound_enginehum_havoc</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -603,8 +528,8 @@
 		<defName>kotorsound_enginehum_zoomer</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -626,8 +551,8 @@
 		<defName>kotorsound_enginehum_firespray</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -659,7 +584,7 @@
 		<defName>kotorsound_speederbike_activate</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
+		<maxSimultaneous>5</maxSimultaneous>
 		<subSounds>
 			<li>
 				<grains>
@@ -684,7 +609,7 @@
 		<defName>kotorsound_speederbike_deactivate</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
+		<maxSimultaneous>5</maxSimultaneous>
 		<subSounds>
 			<li>
 				<grains>
@@ -709,8 +634,8 @@
 		<defName>kotorsound_speederbike_idle</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -732,8 +657,8 @@
 		<defName>kotorsound_speederbike_moving</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -760,8 +685,8 @@
 		<defName>kotorsound_hovercar_moving</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -783,8 +708,8 @@
 		<defName>kotorsound_hovercar_idle</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -809,8 +734,8 @@
 		<defName>kotorsound_hovertank_moving</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -832,8 +757,8 @@
 		<defName>kotorsound_hovertank_idle</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -857,8 +782,8 @@
 		<defName>kotorsound_AAT_moving</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -881,8 +806,8 @@
 		<defName>kotorsound_AAT_idle</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -907,8 +832,8 @@
 		<defName>kotorsound_hovertankheavy_moving</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -932,8 +857,8 @@
 		<defName>kotorsound_hovertankheavy_idle</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -970,8 +895,8 @@
 		<defName>kotorsound_trackedvehicle_idle</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -993,8 +918,8 @@
 		<defName>kotorsound_trackedvehicle_moving</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -1017,8 +942,8 @@
 		<defName>kotorsound_trackedvehicle_quietermoving</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -1042,8 +967,8 @@
 		<defName>kotorsound_ATSTsteppy</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -1065,8 +990,8 @@
 		<defName>kotorsound_ATPTsteppy</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
@@ -1088,8 +1013,8 @@
 		<defName>kotorsound_ATATsteppy</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain><maxVoices>1</maxVoices>
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>

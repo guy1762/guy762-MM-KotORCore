@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThinkTreeDef>	<!-- REMINDER: THIS NEEDS A PATCH TO WORK -->
+		<defName>guy762_SWCPAI_HealingAbilities</defName>
+		<insertTag>EBSGAI_NonColonist</insertTag>
+		<insertPriority>100</insertPriority>
+		<thinkRoot Class="ThinkNode_Priority">
+			<subNodes> <!-- /////////////////////////////////// -->
+				
+				<!-- <li Class="ThinkNode_ConditionalHasAbility"> -->
+				<!-- <li Class="EBSGFramework.ThinkNode_ConditionalHasAbilityUsable"> -->
+					<!-- <ability>guy762_Ability_MedicBeltHeal</ability> -->
+					<!-- <subNodes> -->
+						<!-- <li Class="EBSGFramework.ThinkNode_RecordPassage"> -->
+							<!-- <output>[Medic Belt Heal] ability check ThinkNode reached!</output> -->
+						<!-- </li> -->
+						<!-- <li Class="EBSGFramework.ThinkNode_ConditionalTendableAlly"> -->
+							<!-- <subNodes> -->
+								<!-- <li Class="EBSGFramework.ThinkNode_RecordPassage"> -->
+									<!-- <output>[Medic Belt Heal] tendable ally ThinkNode reached!</output> -->
+								<!-- </li> -->
+								<!-- <li Class="EBSGFramework.JobGiver_AICastHealingAbility"> -->
+									<!-- <ability>guy762_Ability_MedicBeltHeal</ability> -->
+								<!-- </li> -->
+							<!-- </subNodes> -->
+						<!-- </li> -->
+						
+					<!-- </subNodes> -->
+				<!-- </li> -->
+				
+				
+				
+				<!-- <li Class="EBSGFramework.ThinkNode_ConditionalHasAbilityUsable"> -->
+					<!-- <ability>guy762_Ability_MedicBeltRevive</ability> -->
+					<!-- <subNodes> -->
+						<!-- <li Class="EBSGFramework.ThinkNode_RecordPassage"> -->
+							<!-- <output>[Medic Belt Revive] ability check ThinkNode reached!</output> -->
+						<!-- </li> -->
+						<!-- <li Class="EBSGFramework.ThinkNode_ConditionalTendableAlly"> -->
+							<!-- <subNodes> -->
+								<!-- <li Class="EBSGFramework.ThinkNode_RecordPassage"> -->
+									<!-- <output>[Medic Belt Revive] tendable ally ThinkNode reached!</output> -->
+								<!-- </li> -->
+								<!-- <li Class="EBSGFramework.ThinkNode_ConditionalValidTargetForAbility"> -->
+									<!-- <ability>guy762_Ability_MedicBeltRevive</ability> -->
+									<!-- <subNodes> -->
+										<!-- <li Class="EBSGFramework.ThinkNode_RecordPassage"> -->
+											<!-- <output>[Medic Belt Revive] valid target ThinkNode reached!</output> -->
+										<!-- </li> -->
+										<!-- <li Class="EBSGFramework.JobGiver_AICastHealingAbility"> -->
+											<!-- <ability>guy762_Ability_MedicBeltRevive</ability> -->
+										<!-- </li> -->
+									<!-- </subNodes> -->
+								<!-- </li> -->
+							<!-- </subNodes> -->
+						<!-- </li> -->
+						
+					<!-- </subNodes> -->
+				<!-- </li> -->
+				
+				<!-- ISSUE: ignored the limited use thing and spammed the ability on everyone within the radius. also did not use the "go to target" jobdriver -->
+
+				
+			</subNodes> <!-- /////////////////////////////////// -->
+		</thinkRoot>
+	</ThinkTreeDef>
+	
+	
+	
+	
+	
+	
+</Defs>

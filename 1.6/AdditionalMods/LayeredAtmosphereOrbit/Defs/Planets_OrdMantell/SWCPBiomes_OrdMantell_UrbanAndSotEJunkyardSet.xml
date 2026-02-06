@@ -260,7 +260,7 @@
 			<Scavrat MayRequire="Mlie.StarWarsAnimalCollection">1</Scavrat>
 			
 			<CorellianHound MayRequire="Mlie.StarWarsAnimalCollection">1</CorellianHound>
-			<SWCPCivilian_HostileThug>0.5</SWCPCivilian_HostileThug>
+			<!-- <SWCPCivilian_HostileThug>0.5</SWCPCivilian_HostileThug> -->
 			
 			<Rat>1.00</Rat>
 			<Raccoon>0.5</Raccoon>
@@ -292,13 +292,11 @@
 		  <li>SWCPMapGenStep_UrbanBiome_Dormitories</li>
 		  <li>SWCPMapGenStep_NPCMoistureVaporators</li>
 		  
-		  <li>ScarlandsJunkClusters</li>
-		  <li>ScarlandsJunkPrefabs</li>
-		  
-		  <li>SWCPMapGenStep_UrbanBiome_CivilianPawns</li>
-		  <li>SWCPGenStep_UrbanCivilians_Defend</li>
 		  <li>SWCPGenStep_UrbanCivilians_Wander</li>
 		  
+		  <li>ScarlandsJunkClusters</li>
+		  <li>ScarlandsJunkPrefabs</li>
+
 		  <li>GrasslandsElevationReduction</li>
 		</extraGenSteps>
 		
@@ -313,14 +311,6 @@
 		<!-- </modExtensions> -->
 	</BiomeDef>
 	
-	
-	<GenStepDef>
-		<defName>SWCPMapGenStep_UrbanBiome_CivilianPawns</defName>
-		<order>700</order>
-		<genStep Class="SWCP_LevelDesignStuff.GenStep_FactionFortressPawns">
-		  <factionDef>guy762_KotORFaction_Civilians</factionDef>
-		</genStep>
-	</GenStepDef>
 	
 	
 	<GenStepDef>

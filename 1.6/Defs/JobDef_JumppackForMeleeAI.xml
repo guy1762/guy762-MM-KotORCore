@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Defs>
-  <JobDef>
-    <defName>CastJumpOnce</defName>
-    <!--driverClass>JumppackForMeleeAI.JobDriver_CastJumpOnce</driverClass>
-    <allowOpportunisticPrefix>false</allowOpportunisticPrefix-->
-  </JobDef>
-</Defs>

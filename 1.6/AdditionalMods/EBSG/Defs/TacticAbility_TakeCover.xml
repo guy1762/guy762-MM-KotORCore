@@ -71,7 +71,7 @@
 		<cooldownTicksRange>2</cooldownTicksRange>
 		<targetRequired>false</targetRequired>
 		<statBases>
-			<!-- <Ability_Duration>600</Ability_Duration> -->
+			<Ability_Duration>300</Ability_Duration>
 			<Ability_EffectRadius>10</Ability_EffectRadius>
 		</statBases>
 		<verbProperties>		
@@ -133,6 +133,7 @@
 				<becomeVisible>true</becomeVisible>
 				<statFactors>
 					<MoveSpeed>0</MoveSpeed>
+					<CrawlSpeed>0.25</CrawlSpeed>
 					<StaggerDurationFactor>0</StaggerDurationFactor>
 				</statFactors>
 				<statOffsets>
@@ -148,11 +149,12 @@
 			<li Class="HediffCompProperties_GiveAbility">
 				<abilityDef>SWPotF_TacticAbility_TakeCoverCancel</abilityDef>
 			</li>
+			<li><compClass>SWCP.Core.Hediffs.HediffComp_Prone</compClass></li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
-            <!-- <li Class="HediffCompProperties_Disappears"> -->
+            <li Class="HediffCompProperties_Disappears">
                 <!-- <disappearsAfterTicks>60000</disappearsAfterTicks> -->
-                <!-- <showRemainingTime>true</showRemainingTime> -->
-            <!-- </li> -->
+                <showRemainingTime>true</showRemainingTime>
+            </li>
         </comps>
     </HediffDef>
 	
@@ -214,6 +216,12 @@
 			<!-- <sound>kotorsound_cloak</sound> -->
 		  <!-- </li> -->
 		</comps>
+		<modExtensions>
+			<li Class="CastableInUnconscious.ModExtension_CastableInUnconscious">
+				<castableInUnconscious>false</castableInUnconscious>
+				<castableInMentalbreak>true</castableInMentalbreak>
+			</li>
+		</modExtensions>
 	</AbilityDef>
 
  

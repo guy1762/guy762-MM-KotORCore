@@ -11,6 +11,7 @@
 		<priorityMode>PrioritizeNearest</priorityMode>		
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorblasters/v_fnf_pwrblast</clipPath>
@@ -37,6 +38,7 @@
 		<priorityMode>PrioritizeNearest</priorityMode>
 		<subSounds>
 			<li>
+				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorblasters/bow_altcharge</clipPath>

@@ -100,20 +100,20 @@
         <!-- </caseTrue> -->
     <!-- </Operation> -->
 	
-	<Operation Class="XmlExtensions.OptionalPatch">
-        <modId>guy762.MM.KotORCore</modId>
-        <key>KotORCoreSettings_AIJumpPack</key>
-        <defaultValue>false</defaultValue>
-        <caseTrue>
-            <Operation Class="PatchOperationAdd">
-			<xpath>Defs/JobDef[defName="CastJumpOnce"]</xpath>
-			<value>
-				<driverClass>JumppackForMeleeAI.JobDriver_CastJumpOnce</driverClass>
-				<allowOpportunisticPrefix>false</allowOpportunisticPrefix>
-			</value>
-		  </Operation>
-        </caseTrue>
-    </Operation>
+	<!-- <Operation Class="XmlExtensions.OptionalPatch"> -->
+        <!-- <modId>guy762.MM.KotORCore</modId> -->
+        <!-- <key>KotORCoreSettings_AIJumpPack</key> -->
+        <!-- <defaultValue>false</defaultValue> -->
+        <!-- <caseTrue> -->
+            <!-- <Operation Class="PatchOperationAdd"> -->
+			<!-- <xpath>Defs/JobDef[defName="CastJumpOnce"]</xpath> -->
+			<!-- <value> -->
+				<!-- <driverClass>JumppackForMeleeAI.JobDriver_CastJumpOnce</driverClass> -->
+				<!-- <allowOpportunisticPrefix>false</allowOpportunisticPrefix> -->
+			<!-- </value> -->
+		  <!-- </Operation> -->
+        <!-- </caseTrue> -->
+    <!-- </Operation> -->
 	
 	<Operation Class="XmlExtensions.OptionalPatch">
         <modId>guy762.MM.KotORCore</modId>

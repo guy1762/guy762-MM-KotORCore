@@ -11,7 +11,20 @@
 	
 	
 	
-	
+	<GenStepDef>
+		<defName>SWCPGenStep_UrbanCivilians_Wander</defName>
+		<order>960</order>
+		<genStep Class="SWCPBiomes.GenStep_WanderingCivilians">
+		  <factionDef>guy762_KotORFaction_Civilians</factionDef>
+		  <initialCivilianCount>8~12</initialCivilianCount>
+		  <keepPopulationReplenished>true</keepPopulationReplenished>
+		  <maxPopulation>25</maxPopulation>
+		  <options>
+			<SWCPCivilian_villager>1</SWCPCivilian_villager>
+			<SWCPCivilian_prole>1</SWCPCivilian_prole>
+		  </options>
+		</genStep>
+	</GenStepDef>
 	
 	
 	

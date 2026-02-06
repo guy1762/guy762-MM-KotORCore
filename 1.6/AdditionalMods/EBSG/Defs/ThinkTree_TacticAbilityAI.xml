@@ -25,6 +25,7 @@
 								<li>SWPotF_TacticAbilityHediff_TakeCover</li>
 								<li>SWPotF_TacticAbilityHediff_ZealousRage</li>
 								<li>SWPotF_TacticAbilityHediff_Sprint</li>
+								<li>SWPotF_TacticAbilityHediff_Harass</li>
 							</hediffs>
 							<subNodes>
 									<li Class="EBSGFramework.ThinkNode_RecordPassage">

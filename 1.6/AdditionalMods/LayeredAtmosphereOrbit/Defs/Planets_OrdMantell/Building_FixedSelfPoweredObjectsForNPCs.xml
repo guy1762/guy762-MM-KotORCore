@@ -88,7 +88,9 @@
 			</li>
 		</comps>
 		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
-		<designationCategory>KOTOR_BuildTab</designationCategory><uiOrder>9999</uiOrder>
+		
+		<designationCategory Inherit="False"/>        <!-- important to not be able to be built normally-->
+		<!-- <designationCategory>KOTOR_BuildTab</designationCategory><uiOrder>9999</uiOrder> -->
 		
 		<!-- <constructEffect>ConstructMetal</constructEffect> -->
 		<researchPrerequisites>
@@ -187,7 +189,10 @@
 		
 		<pathCost>30</pathCost>
 		<passability>PassThroughOnly</passability>
-		<designationCategory>KOTOR_BuildTab</designationCategory><uiOrder>9999</uiOrder>
+		
+		<designationCategory Inherit="False"/>        <!-- important to not be able to be built normally-->
+		<!-- <designationCategory>KOTOR_BuildTab</designationCategory><uiOrder>9999</uiOrder> -->
+		
 		<rotatable>false</rotatable>
 		<!-- <constructionSkillPrerequisite>6</constructionSkillPrerequisite> -->
 		

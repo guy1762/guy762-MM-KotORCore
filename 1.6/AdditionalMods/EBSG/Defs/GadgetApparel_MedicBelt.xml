@@ -43,6 +43,7 @@
 	  </tags>
 	  
 		<abilities>
+			<li>guy762_Ability_MedicBeltRevive</li>
 			<li>guy762_Ability_MedicBeltHeal</li>
 		</abilities>
     </apparel>
@@ -54,11 +55,11 @@
   
   
 	<AbilityDef>
-        <defName>guy762_Ability_MedicBeltHeal</defName>
+        <defName>guy762_Ability_MedicBeltRevive</defName>
         <label>apply recovery stim</label>
         <description>Use a recovery stim on a nearby downed pawn.</description>
         <!-- <iconPath>UI/kolto_heal_icon</iconPath> -->
-        <iconPath>UI/medicbelt_heal_icon</iconPath>
+        <iconPath>UI/medicbelt_revive_icon</iconPath>
 		<uiOrder>999</uiOrder>
 		
         <jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
@@ -68,8 +69,14 @@
 		<showWhenDrafted>true</showWhenDrafted>
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		
-		<writeCombatLog>True</writeCombatLog>
+		<!-- <aiCanUse>true</aiCanUse> -->
+		<ai_IsOffensive>false</ai_IsOffensive>
 		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+		<canUseAoeToGetTargets>true</canUseAoeToGetTargets>
+		
+		<writeCombatLog>True</writeCombatLog>
 		<stunTargetWhileCasting>true</stunTargetWhileCasting>
 		
 		<statBases>
@@ -123,35 +130,79 @@
 	
 	
 	
-  <!-- <VFECore.Abilities.AbilityDef> -->
-	  <!-- <defName>guy762_MedicBelt</defName> -->
-	  <!-- <label>activate squad recovery stim</label> -->
-	  <!-- <description>Activate an equipped squad recovery stim.</description> -->
-      <!-- <iconPath>Items/Medpacs/medpac_party</iconPath> -->
-	  <!-- <targetMode>Self</targetMode> -->
-	  <!-- <castTime>10</castTime> -->
-	  <!-- <cooldownTime>3600</cooldownTime> 1 minute -->
-	  <!-- <rangeRingColor>(1, 1, 1)</rangeRingColor> -->
-	  <!-- <radiusRingColor>(0.3, 0.8, 1)</radiusRingColor> -->
-	  <!-- <abilityClass>VFECore.Abilities.Ability_Blank</abilityClass> -->
-	  <!-- <castSound>kotorsound_inject</castSound> -->
-	  <!-- <radius>4.9</radius> -->
-	  <!-- <hasAoE>true</hasAoE> -->
-	  <!-- <targetingParametersForAoE> -->
-		  <!-- <canTargetPawns>true</canTargetPawns> -->
-		  <!-- <canTargetHumans>true</canTargetHumans> -->
-		  <!-- <canTargetAnimals>false</canTargetAnimals> -->
-		  <!-- <canTargetMechs>false</canTargetMechs> -->
-		  <!-- <canTargetSelf>true</canTargetSelf> -->
-		  <!-- <canTargetBuildings>false</canTargetBuildings> -->
-		  <!-- <mustBeSameFaction>true</mustBeSameFaction> -->
-	  <!-- </targetingParametersForAoE> -->
-      <!-- <modExtensions> -->
-		<!-- <li Class="VFECore.Abilities.AbilityExtension_Hediff"> -->
-			<!-- <hediff>guy762_medpacHeal</hediff> -->
-		<!-- </li> -->
-      <!-- </modExtensions> -->
-    <!-- </VFECore.Abilities.AbilityDef> -->
 	
-
+	
+	<AbilityDef>
+        <defName>guy762_Ability_MedicBeltHeal</defName>
+        <label>apply medpac</label>
+        <description>Use a medpac on a nearby wounded pawn.</description>
+        <!-- <iconPath>UI/kolto_heal_icon</iconPath> -->
+        <iconPath>UI/medicbelt_heal_icon</iconPath>
+		<uiOrder>999</uiOrder>
+		
+        <jobDef>CastAbilityOnThingWithoutWeapon</jobDef>
+		
+        <hotKey>Misc4</hotKey>
+		<displayGizmoWhileUndrafted>True</displayGizmoWhileUndrafted>
+		<showWhenDrafted>true</showWhenDrafted>
+		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
+		
+		<!-- <aiCanUse>true</aiCanUse> -->
+		<ai_IsOffensive>false</ai_IsOffensive>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+		<canUseAoeToGetTargets>true</canUseAoeToGetTargets>
+		
+		<writeCombatLog>True</writeCombatLog>
+		<stunTargetWhileCasting>true</stunTargetWhileCasting>
+		
+		<statBases>
+			<Ability_Duration>15</Ability_Duration> <!-- this is in seconds, not ticks -->
+		</statBases>
+        <verbProperties>
+            <verbClass>Verb_CastAbility</verbClass>
+            <range>3</range>
+            <drawAimPie>true</drawAimPie>
+            <warmupTime>0.25</warmupTime>
+            <requireLineOfSight>True</requireLineOfSight>
+			<soundCast>kotorsound_inject</soundCast>
+            <targetParams>
+                <!-- <onlyTargetIncapacitatedPawns>true</onlyTargetIncapacitatedPawns> -->
+				<canTargetSelf>false</canTargetSelf>
+				
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetItems>false</canTargetItems>
+				
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetAnimals>true</canTargetAnimals>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+            </targetParams>
+        </verbProperties>
+		
+        <comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>guy762_medpacHeal_adv</hediffDef>
+				<!-- <hediffDef>guy762_hediff_kolto</hediffDef> -->
+				<!-- <applyToSelf>false</applyToSelf> -->
+				<applyToTarget>true</applyToTarget>
+				<applicableToMechs>False</applicableToMechs>
+				
+				<goodwillImpact>5</goodwillImpact>
+			</li>
+			<li Class="EBSGFramework.CompProperties_AbilityReloadable">
+                <maxCharges>10</maxCharges>
+                <ammoPerCharge>1</ammoPerCharge>
+                <ammoDef>guy762_medpac_adv</ammoDef>
+                <!-- <ammoDef>KOTOR_kolto</ammoDef> -->
+				<reloadSound>Standard_Reload</reloadSound>
+            </li>
+        </comps>
+    </AbilityDef>
+	
+	
+	
+  
 </Defs>

@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <GenStepDef>
-    <defName>SWCPGenStep_UrbanCivilians_Wander</defName>
-    <order>960</order>
-    <genStep Class="SWCPBiomes.GenStep_WanderingCivilians">
-      <factionDef>guy762_KotORFaction_Civilians</factionDef>
-      <initialCivilianCount>8~12</initialCivilianCount>
-      <keepPopulationReplenished>true</keepPopulationReplenished>
-      <maxPopulation>15</maxPopulation>
-      <options>
-        <SWCPCivilian_villager>1</SWCPCivilian_villager>
-      </options>
-    </genStep>
-  </GenStepDef>
+  <!-- <GenStepDef> -->
+    <!-- <defName>SWCPGenStep_UrbanCivilians_Wander</defName> -->
+    <!-- <order>960</order> -->
+    <!-- <genStep Class="SWCPBiomes.GenStep_WanderingCivilians"> -->
+      <!-- <factionDef>guy762_KotORFaction_Civilians</factionDef> -->
+      <!-- <initialCivilianCount>8~12</initialCivilianCount> -->
+      <!-- <keepPopulationReplenished>true</keepPopulationReplenished> -->
+      <!-- <maxPopulation>15</maxPopulation> -->
+      <!-- <options> -->
+        <!-- <SWCPCivilian_villager>1</SWCPCivilian_villager> -->
+      <!-- </options> -->
+    <!-- </genStep> -->
+  <!-- </GenStepDef> -->
 
-  <GenStepDef>
-    <defName>SWCPGenStep_UrbanCivilians_Defend</defName>
-    <order>960</order>
-    <genStep Class="SWCPBiomes.GenStep_DefendingPawns">
-      <factionDef>guy762_KotORFaction_Civilians</factionDef>
-      <defendRadius>8</defendRadius>
-      <pawnsPerBeacon>2~4</pawnsPerBeacon>
-      <beaconBuildingDefs>
-        <li>SWCPBuilding_NPCPowerGenerator</li>
-        <li>SWCPBuilding_NPCMoistureVaporator</li>
-      </beaconBuildingDefs>
-      <options>
-        <SWCPCivilian_thug>1</SWCPCivilian_thug>
-      </options>
-    </genStep>
-  </GenStepDef>
+  <!-- <GenStepDef> -->
+    <!-- <defName>SWCPGenStep_UrbanCivilians_Defend</defName> -->
+    <!-- <order>960</order> -->
+    <!-- <genStep Class="SWCPBiomes.GenStep_DefendingPawns"> -->
+      <!-- <factionDef>guy762_KotORFaction_Civilians</factionDef> -->
+      <!-- <defendRadius>8</defendRadius> -->
+      <!-- <pawnsPerBeacon>2~4</pawnsPerBeacon> -->
+      <!-- <beaconBuildingDefs> -->
+        <!-- <li>SWCPBuilding_NPCPowerGenerator</li> -->
+        <!-- <li>SWCPBuilding_NPCMoistureVaporator</li> -->
+      <!-- </beaconBuildingDefs> -->
+      <!-- <options> -->
+        <!-- <SWCPCivilian_thug>1</SWCPCivilian_thug> -->
+      <!-- </options> -->
+    <!-- </genStep> -->
+  <!-- </GenStepDef> -->
 
 </Defs>

@@ -73,6 +73,7 @@
 		
 		<cooldownTicksRange>12000</cooldownTicksRange>
 		<targetRequired>false</targetRequired>
+		<stunTargetWhileCasting>True</stunTargetWhileCasting>
 		<statBases>
 			<Ability_Duration>600</Ability_Duration>
 			<Ability_EffectRadius>10</Ability_EffectRadius>
@@ -82,8 +83,8 @@
 			<violent>false</violent>
 			<range>10</range>
 			<requireLineOfSight>false</requireLineOfSight>
-			<drawAimPie>False</drawAimPie>
-			<warmupTime>0.5</warmupTime>
+			<drawAimPie>True</drawAimPie>
+			<warmupTime>10</warmupTime>
 			<soundCast>kotorsound_EaWCloak_on</soundCast>
 			<targetParams>
 				<canTargetSelf>true</canTargetSelf>
@@ -135,6 +136,7 @@
 				<disabledWorkTags>Violent</disabledWorkTags>
 				<statFactors>
 					<MoveSpeed>0</MoveSpeed>
+					<CrawlSpeed>0</CrawlSpeed>
 				</statFactors>
 				<statOffsets>
 					<MeleeDodgeChance>0</MeleeDodgeChance>
@@ -169,9 +171,11 @@
                 </abilitiesAtSeverities>
             </li>
 			
+			<li><compClass>SWCP.Core.Hediffs.HediffComp_Prone</compClass></li>
 			<li Class="HediffCompProperties_Invisibility">
 				<visibleToPlayer>true</visibleToPlayer>
 			</li>
+			
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
             <li Class="HediffCompProperties_Disappears">
                 <!-- <disappearsAfterTicks>60000</disappearsAfterTicks> -->

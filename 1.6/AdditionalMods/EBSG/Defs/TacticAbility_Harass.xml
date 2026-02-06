@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<AbilityDef ParentName="SWPotF_TacticDelegationAbilityBASE">
+		<defName>SWPotF_TacticDelegationAbility_harass</defName>
+		<label>delegate tactic: Harass</label>
+		<description>Distribute temporary "Harass" tactical orders to a subordinate.</description>
+		<descriptionHyperlinks>
+			<AbilityDef>SWPotF_TacticAbility_Harass</AbilityDef>
+		</descriptionHyperlinks>
+		<iconPath>UI/EaWIcons/Delegation/Delegate_Harass</iconPath>
+		
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>SWPotF_DelegatedTacticHediff_harass</hediffDef>
+				<onlyApplyToSelf>false</onlyApplyToSelf>
+				<onlyBrain>True</onlyBrain>
+				<replaceExisting>true</replaceExisting>
+				<applicableToMechs>False</applicableToMechs>
+			</li>
+		</comps>
+	</AbilityDef>
+	
+	
+	
+
+	<HediffDef ParentName="SWPotF_DelegatedTacticHediffBASE">
+		<defName>SWPotF_DelegatedTacticHediff_harass</defName>
+		<label>temporary tactical orders: Harass</label>
+		<description>.</description>
+		<comps>
+			<li Class="HediffCompProperties_GiveAbility">
+				<abilityDef>SWPotF_TacticAbility_Harass</abilityDef>
+			</li>
+		</comps>
+	</HediffDef>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+	<AbilityDef ParentName="SWPotF_TacticAbilityValidatorBASE">
+		<defName>SWPotF_TacticAbility_Harass</defName>
+		<label>Harass</label>
+		<description>Command your units to charge near an enemy's position, intimidating them and creating chaos within their ranks. While moving, your units will have a high % chance to cause a mental break on nearby enemy pawns, and will lower their attack accuracy for some time afterwards.</description>
+		<iconPath>UI/EaWIcons/Harass</iconPath>
+		<warmupMoteSocialSymbol>UI/EaWIcons/Harass</warmupMoteSocialSymbol>
+		<uiOrder>762</uiOrder>
+		<hotKey>Misc10</hotKey>
+		
+		<aiCanUse>true</aiCanUse>
+		<ai_IsOffensive>false</ai_IsOffensive>
+		<hostile>false</hostile>
+		<casterMustBeCapableOfViolence>false</casterMustBeCapableOfViolence>
+		<groupAbility>true</groupAbility>
+		<ai_SearchAOEForTargets>true</ai_SearchAOEForTargets>
+		<canUseAoeToGetTargets>true</canUseAoeToGetTargets>
+		
+		<cooldownTicksRange>12000</cooldownTicksRange>
+		<targetRequired>false</targetRequired>
+		<statBases>
+			<Ability_Duration>15</Ability_Duration>
+			<Ability_EffectRadius>10</Ability_EffectRadius>
+		</statBases>
+		<verbProperties>		
+			<verbClass>Verb_CastAbility</verbClass>
+			<violent>false</violent>
+			<range>10</range>
+			<requireLineOfSight>false</requireLineOfSight>
+			<drawAimPie>False</drawAimPie>
+			<warmupTime>0.5</warmupTime>
+			<soundCast>kotorsound_BF2AbilityCast</soundCast>
+			<targetParams>
+				<canTargetSelf>true</canTargetSelf>
+				<canTargetBuildings>false</canTargetBuildings>
+				<canTargetItems>false</canTargetItems>
+				
+				<canTargetPawns>true</canTargetPawns>
+				<canTargetAnimals>false</canTargetAnimals>
+				<canTargetHumans>true</canTargetHumans>
+				<canTargetMechs>false</canTargetMechs>
+				
+				<neverTargetIncapacitated>true</neverTargetIncapacitated>
+				<!-- <neverTargetHostileFaction>true</neverTargetHostileFaction> don't use this, it checks for factions automatically -->
+			</targetParams>
+		</verbProperties>
+		
+		<comps>
+			<li Class="CompProperties_AbilityGiveHediff">
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
+				<hediffDef>SWPotF_TacticAbilityHediff_Harass</hediffDef>
+				<applicableToMechs>False</applicableToMechs>
+				<!-- <onlyBrain>True</onlyBrain> -->
+				<!-- <onlyApplyToSelf>False</onlyApplyToSelf> -->
+				<replaceExisting>true</replaceExisting>
+			</li>
+			<!-- <li Class="CompProperties_AbilityFleckOnTarget"> -->
+				<!-- <fleckDef>PsycastPsychicEffect</fleckDef> -->
+				<!-- <sound>kotorsound_force_JAteamheal</sound> -->
+			<!-- </li> -->
+		</comps>
+	</AbilityDef>
+	
+	
+	
+	
+	
+	<HediffDef>
+        <defName>SWPotF_TacticAbilityHediff_Harass</defName>
+        <label>Harass strategy</label>
+        <description>This pawn is using "harass" tactics to intimidate the enemy. As this is a mobility-focused strategy, aiming ranged attacks will be 10x slower while it is active. Once your pawn is moving, however, their movement speed and damage resistance will greatly increase.</description>
+		<defaultLabelColor>(255,255,135)</defaultLabelColor> <!-- soft yellow -->
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+        <stages>
+            <li>
+				<!-- <becomeVisible>false</becomeVisible> -->
+				<statFactors>
+					<!-- <MeleeCooldownFactor>10</MeleeCooldownFactor> -->
+					<!-- <RangedCooldownFactor>10</RangedCooldownFactor> -->
+					<AimingDelayFactor>10</AimingDelayFactor>
+				</statFactors>
+			</li>
+        </stages>
+        <comps>
+			<li Class="EBSGFramework.HediffCompProperties_HediffWhileMoving">
+                <hediffWhileMoving>SWPotF_TacticAbilityHediff_HarassMoving</hediffWhileMoving>
+				<initialMovingSeverity>1.5</initialMovingSeverity>
+            </li>
+			
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="HediffCompProperties_Disappears">
+                <!-- <disappearsAfterTicks>60000</disappearsAfterTicks> -->
+                <showRemainingTime>true</showRemainingTime>
+            </li>
+        </comps>
+    </HediffDef>
+	
+	
+	
+	
+	
+	<HediffDef>
+        <defName>SWPotF_TacticAbilityHediff_HarassMoving</defName>
+        <label>Harassing</label>
+        <description>This pawn is using "harass" tactics to intimidate the enemy. Movement speed and damage resistance is greatly increased</description>
+		<defaultLabelColor>(255,255,135)</defaultLabelColor> <!-- soft yellow -->
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+		<maxSeverity>1.5</maxSeverity>
+        <stages>
+            <li>
+				<minSeverity>0</minSeverity>
+				<becomeVisible>true</becomeVisible>
+				<statFactors>
+					<MoveSpeed>2</MoveSpeed>
+					<MeleeDodgeChance>2</MeleeDodgeChance>
+					<StaggerDurationFactor>0</StaggerDurationFactor>
+					<IncomingDamageFactor>0.5</IncomingDamageFactor>
+					<PainShockThreshold>2</PainShockThreshold>
+				</statFactors>
+			</li>
+        </stages>
+        <comps>
+			<li MayRequire="EBSG.Framework" Class="EBSGFramework.HediffCompProperties_GiveHediffsToNonAlliesInRange">
+				<targetingParameters>
+					<canTargetBuildings>false</canTargetBuildings>
+					<canTargetAnimals>false</canTargetAnimals>
+					<canTargetMechs>False</canTargetMechs>
+				</targetingParameters>
+				<hediff>SWPotF_TacticAbilityHediff_HarassDebuff</hediff>
+				<range>5</range>
+				<initialSeverity>10</initialSeverity>
+			</li>
+			<li Class="HediffCompProperties_SeverityPerSecond">
+				<severityPerSecond>-0.1</severityPerSecond>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+        </comps>
+    </HediffDef>
+	
+	
+	
+	
+	
+	
+	<HediffDef>
+        <defName>SWPotF_TacticAbilityHediff_HarassDebuff</defName>
+        <label>Harassed</label>
+        <description>This pawn is intimidated by an enemy harassing charge.</description>
+		<defaultLabelColor>(255,7,48)</defaultLabelColor> <!-- red -->
+        <hediffClass>HediffWithComps</hediffClass>
+        <isBad>false</isBad>
+		<maxSeverity>10</maxSeverity>
+        <stages>
+            <li>
+				<becomeVisible>true</becomeVisible>
+				<minSeverity>0</minSeverity>
+				<statFactors>
+					<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+					<MeleeHitChance>0.5</MeleeHitChance>
+					<MentalBreakThreshold>2</MentalBreakThreshold>
+				</statFactors>
+			</li>
+			<li>
+				<becomeVisible>true</becomeVisible>
+				<minSeverity>7.5</minSeverity>
+				<statFactors>
+					<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+					<MeleeHitChance>0.5</MeleeHitChance>
+					<MentalBreakThreshold>2</MentalBreakThreshold>
+				</statFactors>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Berserk</mentalState>
+						<mtbDays>0.5</mtbDays> <!-- mean time between (in days) -->
+					</li>
+					<li>
+						<mentalState>PanicFlee</mentalState>
+						<mtbDays>0.25</mtbDays> <!-- mean time between (in days) -->
+					</li>
+					<li>
+						<mentalState>Wander_Psychotic</mentalState>
+						<mtbDays>0.125</mtbDays> <!-- mean time between (in days) -->
+					</li>
+				</mentalStateGivers>
+			</li>
+			<li>
+				<becomeVisible>true</becomeVisible>
+				<minSeverity>9</minSeverity>
+				<statFactors>
+					<ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+					<MeleeHitChance>0.5</MeleeHitChance>
+					<MentalBreakThreshold>2</MentalBreakThreshold>
+				</statFactors>
+				<mentalStateGivers>
+					<li>
+						<mentalState>Berserk</mentalState>
+						<mtbDays>0.25</mtbDays> <!-- mean time between (in days) -->
+					</li>
+					<li>
+						<mentalState>PanicFlee</mentalState>
+						<mtbDays>0.125</mtbDays> <!-- mean time between (in days) -->
+					</li>
+					<li>
+						<mentalState>Wander_Psychotic</mentalState>
+						<mtbDays>0.0625</mtbDays> <!-- mean time between (in days) -->
+					</li>
+				</mentalStateGivers>
+			</li>
+        </stages>
+        <comps>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+            <li Class="HediffCompProperties_SeverityPerSecond">
+				<severityPerSecond>-0.1</severityPerSecond>
+			</li>
+        </comps>
+    </HediffDef>
+	
+	
+	
+	
+	
+  
+  
+    
+
+</Defs>

@@ -14,13 +14,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -40,13 +40,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -66,13 +66,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>25</min>        
+				<min>25</min>
 				<max>25</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -92,13 +92,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -119,13 +119,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -144,13 +144,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -169,13 +169,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -199,13 +199,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -224,13 +224,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -252,13 +252,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -278,13 +278,13 @@
 					</li>
 				</grains>		
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -304,13 +304,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -329,13 +329,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>65</min>        
+				<min>65</min>
 				<max>65</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -356,13 +356,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -383,13 +383,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -408,13 +408,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -436,13 +436,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -461,13 +461,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>15</min>        
+				<min>15</min>
 				<max>15</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -495,13 +495,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -520,13 +520,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -555,13 +555,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -580,13 +580,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -608,13 +608,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>50</min>        
+				<min>50</min>
 				<max>50</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -635,13 +635,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -662,13 +662,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -699,13 +699,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -725,13 +725,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -751,13 +751,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -765,6 +765,94 @@
 	
 	
 	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_SWGL_NN14alt</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorblasters/JA_SWGL_NN14_alt_fire</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>25</min>
+				<max>25</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.8</min>
+					<max>1.2</max>
+				</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_JKbowcaster</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorblasters/JKbowcaster_fire</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>
+				<max>45</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_JKbowcasterAlt</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorblasters/bow_alt_fire</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>
+				<max>45</max>
+				</volumeRange>
+				<pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange>
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
 	
 	
 	
@@ -787,13 +875,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -815,13 +903,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -841,13 +929,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -870,13 +958,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -896,13 +984,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -923,13 +1011,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -953,13 +1041,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -980,13 +1068,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1007,13 +1095,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1032,13 +1120,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1058,13 +1146,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1086,13 +1174,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1112,13 +1200,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1140,13 +1228,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1167,13 +1255,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1193,13 +1281,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1221,13 +1309,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1250,13 +1338,13 @@
 					<!-- </li> -->
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1280,13 +1368,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1306,13 +1394,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1333,13 +1421,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1360,13 +1448,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>  
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1390,13 +1478,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>55</min>        
+				<min>55</min>
 				<max>55</max>
 				</volumeRange>  
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1420,13 +1508,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>  
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1446,13 +1534,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>  
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1471,13 +1559,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>  
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1498,13 +1586,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>35</min>        
+				<min>35</min>
 				<max>35</max>
 				</volumeRange>  
 				<pitchRange>
 					<min>0.8</min>				
 					<max>1.2</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1530,13 +1618,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1555,13 +1643,13 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>        
+				<min>45</min>
 				<max>45</max>
 				</volumeRange>
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
-				</pitchRange>			
+				</pitchRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
