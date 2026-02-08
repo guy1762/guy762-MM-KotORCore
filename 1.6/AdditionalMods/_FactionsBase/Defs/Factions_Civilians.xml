@@ -87,6 +87,7 @@
 			<guy762_xenotype_falleen MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_falleen>
 			<guy762_xenotype_feeorin MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_feeorin>
 			<guy762_xenotype_iridonian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_iridonian>
+			<Lee_xenotype_kage MayRequire="guy762.StarWarsXenotypes">0.02</Lee_xenotype_kage>
 			<guy762_xenotype_klatoonian MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_klatoonian>
 			<guy762_xenotype_kubaz MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_kubaz>
 			<guy762_xenotype_lasat MayRequire="guy762.StarWarsXenotypes">0.02</guy762_xenotype_lasat>
@@ -128,6 +129,10 @@
 		</backstoryFilters>
 		
 		<classicIdeo>true</classicIdeo>
+		<allowedCultures>
+			<li>guy762_culture_coreworlds</li>
+			<li>guy762_culture_outerrim</li>
+		</allowedCultures>
 		<disallowedPrecepts>
 			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Strong_Subordinate</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">ApparelDesired_Soft_Subordinate</li>
@@ -193,7 +198,9 @@
 			  <KotORMlita_droid_GE3PD MayRequire="guy762.KotORDroids">1</KotORMlita_droid_GE3PD>
 			</traders>
 			<carriers>
-			  <Bantha MayRequire="Mlie.StarWarsAnimalCollection">5</Bantha>
+			  <Sovereign_Bantha>10</Sovereign_Bantha>
+			  
+			  <!-- <Bantha MayRequire="Mlie.StarWarsAnimalCollection">5</Bantha> -->
 			  <Dewback MayRequire="Mlie.StarWarsAnimalCollection">5</Dewback>
 			  <Ronto MayRequire="Mlie.StarWarsAnimalCollection">5</Ronto>
 			  <Eopie MayRequire="Mlie.StarWarsAnimalCollection">2.5</Eopie>
@@ -229,7 +236,9 @@
 			  <SWCPCivilian_jawatrader_offworld>100</SWCPCivilian_jawatrader_offworld>
 			</traders>
 			<carriers>
-			  <Bantha MayRequire="Mlie.StarWarsAnimalCollection">5</Bantha>
+			  <Sovereign_Bantha>10</Sovereign_Bantha>
+			  
+			  <!-- <Bantha MayRequire="Mlie.StarWarsAnimalCollection">5</Bantha> -->
 			  <Dewback MayRequire="Mlie.StarWarsAnimalCollection">5</Dewback>
 			  <Ronto MayRequire="Mlie.StarWarsAnimalCollection">5</Ronto>
 			  <Eopie MayRequire="Mlie.StarWarsAnimalCollection">2.5</Eopie>
@@ -262,7 +271,9 @@
 			  <SWCPCivilian_doctormid>100</SWCPCivilian_doctormid>
 			</traders>
 			<carriers>
-			  <Bantha MayRequire="Mlie.StarWarsAnimalCollection">5</Bantha>
+			  <Sovereign_Bantha>10</Sovereign_Bantha>
+			  
+			  <!-- <Bantha MayRequire="Mlie.StarWarsAnimalCollection">5</Bantha> -->
 			  <Dewback MayRequire="Mlie.StarWarsAnimalCollection">5</Dewback>
 			  <Ronto MayRequire="Mlie.StarWarsAnimalCollection">5</Ronto>
 			  <Eopie MayRequire="Mlie.StarWarsAnimalCollection">2.5</Eopie>
@@ -324,7 +335,7 @@
 		  
 		  
 		  
-		  <li MayRequire="MrHydralisk.LayeredAtmosphereOrbit">
+		  <li MayRequire="SWCP.guy762.Taran.SWGalaxy">
 			<kindDef>SWCPPawnGroupKind_CityBiome</kindDef>
 			<commonality>1</commonality>
 			<options>

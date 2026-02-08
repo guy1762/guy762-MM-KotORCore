@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+ 
+	<!--Magnetic Shield-->
+	<ThingDef Name="SWCP_ShipForcefieldWall" ParentName="BuildingBase">
+		<defName>SWCP_ShipForcefieldWall</defName>
+		<label>magnetic field wall</label>
+		<description>Magnetic fields were used throughout the galaxy to contain the atmosphere within starship hangars.</description>
+		<thingClass>Building</thingClass>
+		<graphicData>
+			<texPath>Structure/ForcefieldWallsB_Active</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+
+			<!-- <linkType>Basic</linkType> -->
+			<!-- <linkFlags> -->
+				<!-- <li>Wall</li> -->
+			<!-- </linkFlags> -->
+
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+
+			<damageData><enabled>false</enabled></damageData>
+		</graphicData>
+		<uiIconPath>Structure/ForcefieldWalls_Active_MenuIcon</uiIconPath>
+		
+		<altitudeLayer>Building</altitudeLayer>
+		<passability>Impassable</passability>
+		<neverMultiSelect>false</neverMultiSelect>
+		<blockWind>true</blockWind>
+		<castEdgeShadows>true</castEdgeShadows>
+		<fillPercent>1</fillPercent>
+		<pathCost>0</pathCost>
+		<blockLight>false</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		<statBases>
+		  <WorkToBuild>1600</WorkToBuild>
+		  <MaxHitPoints>300</MaxHitPoints>
+		  <Flammability>0</Flammability>
+		</statBases>
+		<designationCategory>MM_StarWarsShipBuildTab</designationCategory>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>40</basePowerConsumption>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>3</glowRadius>
+				<glowColor>(0,250,250,0)</glowColor>
+			</li>
+			<li Class="StructuralShift.CompProperties_StructureShift">
+                <uiIcon>Structure/ForcefieldWalls_Inactive_MenuIcon</uiIcon>
+                <alternativeDef>SWCP_ShipForcefieldWall_inactive</alternativeDef>
+                <label>deactivate [GAME WILL FREEZE MOMENTARILY]</label>
+                <description>Deactivate the magnetic field wall, instantly venting all heat and oxygen but allowing objects to pass through.</description>
+				<soundDef>kotorsound_ForcefieldShutdown</soundDef>
+            </li>
+		</comps>
+		
+		<soundImpactDefault>kotorsound_shielddeflect_big</soundImpactDefault>
+		
+		<building>
+			<isAirtight>true</isAirtight>
+			<shipPart>true</shipPart>
+			<isInert>true</isInert>
+			<isWall>true</isWall>
+			<canExchangeVacuum>false</canExchangeVacuum>
+			<blueprintGraphicData><texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath></blueprintGraphicData>
+		</building>
+		<costList>
+		  <ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+		<researchPrerequisites>
+			<!-- <li>CEC_Basics</li> -->
+		</researchPrerequisites>
+		<holdsRoof>true</holdsRoof>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef Name="SWCP_ShipForcefieldWall_inactive" ParentName="BuildingBase">
+		<defName>SWCP_ShipForcefieldWall_inactive</defName>
+		<label>inactive magnetic field wall</label>
+		<description>Magnetic fields were used throughout the galaxy to contain the atmosphere within starship hangars.</description>
+		<!-- <thingClass>Building</thingClass> -->
+		<graphicData>
+			<texPath>Structure/ForcefieldWallsB_Inactive</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>Transparent</shaderType>
+			<linkType>CornerFiller</linkType>
+			<linkFlags>
+				<li>Wall</li>
+				<li>Rock</li>
+			</linkFlags>
+			<damageData><enabled>false</enabled></damageData>
+		</graphicData>
+		<uiIconPath>Structure/ForcefieldWalls_Inactive_MenuIcon</uiIconPath>
+		
+		<!-- <altitudeLayer>Building</altitudeLayer> -->
+		<altitudeLayer>FloorEmplacement</altitudeLayer>
+		<passability>Standable</passability>
+		<neverMultiSelect>false</neverMultiSelect>
+		<blockWind>false</blockWind>
+
+		<!-- <fillPercent>1</fillPercent> -->
+		
+		<pathCost>0</pathCost>
+		<castEdgeShadows>false</castEdgeShadows>
+		<blockLight>false</blockLight>
+		<canOverlapZones>false</canOverlapZones>
+		
+		<useHitPoints>false</useHitPoints>
+		<statBases>
+		  <!-- <MaxHitPoints>400</MaxHitPoints> -->
+		  <Flammability>0</Flammability>
+		</statBases>
+		
+		<comps>
+			<!-- <li Class="CompProperties_Power"> -->
+				<!-- <compClass>CompPowerTrader</compClass> -->
+				<!-- <basePowerConsumption>5</basePowerConsumption> -->
+				<!-- <transmitsPower>true</transmitsPower> -->
+			<!-- </li> -->
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTransmitter</compClass>
+				<transmitsPower>true</transmitsPower>
+			</li>
+			<li Class="CompProperties_Glower">
+				<glowRadius>2</glowRadius>
+				<glowColor>(0,125,125,0)</glowColor>
+			</li>
+			<li Class="StructuralShift.CompProperties_StructureShift">
+                <uiIcon>Structure/ForcefieldWalls_Inactive_MenuIcon</uiIcon>
+                <alternativeDef>SWCP_ShipForcefieldWall</alternativeDef>
+                <label>activate [GAME WILL FREEZE MOMENTARILY]</label>
+                <description>Activate the magnetic field wall, preventing heat, oxygen, and objects from passing through it.</description>
+				<soundDef>kotorsound_shieldpowerup</soundDef>
+            </li>
+		</comps>
+		<building>
+			<!-- <isAirtight>true</isAirtight> -->
+			<shipPart>true</shipPart>
+			<isInert>true</isInert>
+			<canExchangeVacuum>false</canExchangeVacuum>
+			<!-- <isWall>true</isWall> -->
+		</building>
+		<terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+		<staticSunShadowHeight>1.0</staticSunShadowHeight>
+
+		<holdsRoof>false</holdsRoof>
+	</ThingDef>
+
+ 
+
+</Defs>
