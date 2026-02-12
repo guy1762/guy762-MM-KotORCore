@@ -102,7 +102,10 @@
 	<SWCP_Reinforcements_Button_Label>Reinforcements</SWCP_Reinforcements_Button_Label>
 	<SWCP_Reinforcements_Button_Desc>Call for reinforcements from your faction. Amount of troopers they send depends on your current relations.</SWCP_Reinforcements_Button_Desc>
 	
-	
+	<!-- Shuttle Service Options (Vertibird) -->
+
+	<SWCP_Shuttle_Service_Label>Shuttle Transport</SWCP_Shuttle_Service_Label>
+	<SWCP_Shuttle_Service_Desc_500credits>Call for a Shuttlecraft to transport your caravan to another location. Cost: 500 Credits.</SWCP_Shuttle_Service_Desc_500credits>
 	
 	
 	
