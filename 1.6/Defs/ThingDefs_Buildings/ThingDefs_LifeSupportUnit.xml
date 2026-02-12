@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<!-- <DesignatorDropdownGroupDef> -->
+		<!-- <defName>guy762_SWShipTechDropdown_LifeSupportUnit</defName> -->
+		<!-- <label>life support units</label> -->
+	<!-- </DesignatorDropdownGroupDef> -->
+	
+	<ThingDef Name="guy762_ShipTech_LifeSupportUnitBASE" ParentName="BuildingBase" Abstract="true">
+		<!-- <defName>guy762_ShipTech_LifeSupportUnit_heater</defName> -->
+		<label>life support unit</label>
+		<description>A bulky wall-mounted unit that releases temperature-controlled oxygen into the surrounding room, allowing enclosed areas to repressurize in space. Essential for long stays in orbit.</description>
+		
+		<!-- <designatorDropdown>guy762_SWShipTechDropdown_LifeSupportUnit</designatorDropdown> -->
+		
+		<tickerType>Rare</tickerType>
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+		  <li>BuildingsMisc</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>ShipTech/LifeSupportUnit/LifeSupportUnit</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<color>(185,185,185)</color>
+			
+			<drawOffsetNorth>(0,0,0.9)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-0.9)</drawOffsetSouth>
+			<drawOffsetWest>(-0.9,0,0)</drawOffsetWest>
+			<drawOffsetEast>(0.9,0,0)</drawOffsetEast>
+			<damageData><enabled>false</enabled></damageData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<statBases>
+			<MarketValue>1000</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>4000</WorkToBuild>
+			<Mass>20</Mass>
+		</statBases>
+		
+		<uiIconPath>ShipTech/LifeSupportUnit/LifeSupportUnit_north</uiIconPath>
+		<designationCategory>Odyssey</designationCategory>
+		
+		<passability>Standable</passability>
+		<terrainAffordanceNeeded IsNull="True" />
+		<pathCost>0</pathCost>
+		<overrideMinifiedRot>North</overrideMinifiedRot>
+		<minifiedDrawOffset>(0, 0, 0.2)</minifiedDrawOffset>
+		<building>
+			<isEdifice>false</isEdifice>
+			<isAttachment>true</isAttachment>
+			<expandHomeArea>false</expandHomeArea>
+			<paintable>true</paintable>
+		</building>
+		<costList>
+			<Steel>100</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+		</costList>
+		<placeWorkers>
+			<li>Placeworker_AttachedToWall</li>
+		</placeWorkers>
+
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>250</basePowerConsumption>
+			</li>
+			<li Class="CompProperties_LowPowerUnlessVacuum">
+				<lowPowerConsumptionFactor>0.5</lowPowerConsumptionFactor>
+			</li>
+			<!-- <li Class="CompProperties_TempControl"> -->
+				<!-- <energyPerSecond>25</energyPerSecond> -->
+			<!-- </li> -->
+			<li Class="CompProperties_Flickable"/>
+			<li Class="CompProperties_Breakdownable"/>
+			<!-- <li Class="CompProperties_OxygenPusher"> -->
+				<!-- <requiresPower>true</requiresPower> -->
+				<!-- <airPerSecondPerHundredCells>0.02</airPerSecondPerHundredCells> -->
+			<!-- </li> -->
+			<li Class="CompProperties_AmbientSound">
+				<sound>OxygenPump_Ambient</sound>
+				<disabledOnUnpowered>true</disabledOnUnpowered>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>OrbitalTech</li>
+		</researchPrerequisites>
+		<uiOrder>2505</uiOrder>
+	</ThingDef>
+	
+	
+	<ThingDef ParentName="guy762_ShipTech_LifeSupportUnitBASE">
+		<defName>guy762_ShipTech_LifeSupportUnit</defName>
+		<label>life support unit</label>
+		<description>A bulky wall-mounted unit that releases heated oxygen into the surrounding room, allowing enclosed areas to repressurize in space. Essential for long stays in orbit.\n\nTEMPERATURE RANGE: 55 ~ 75</description>
+		<graphicData><texPath>ShipTech/LifeSupportUnit/LifeSupportUnit_heater</texPath></graphicData>
+		<uiIconPath>ShipTech/LifeSupportUnit/LifeSupportUnit_heater_north</uiIconPath>
+
+		<thingClass>SWCP_Misc.Building_LifeSupport</thingClass>
+		<comps>
+			<li Class="CompProperties_TempControl">
+				<energyPerSecond>30</energyPerSecond>
+			</li>
+		</comps>
+	</ThingDef>
+
+</Defs>
