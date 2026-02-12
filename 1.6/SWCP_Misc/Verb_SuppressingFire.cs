@@ -1,4 +1,3 @@
-using RimWorld;
 using System.Linq;
 using Verse;
 
@@ -20,6 +19,11 @@ namespace SWCP_Misc
                         {
                             Hediff hediff = HediffMaker.MakeHediff(props.hediffDef, pawn);
                             pawn.health.AddHediff(hediff);
+                            hediff = pawn.health.hediffSet.GetFirstHediffOfDef(props.hediffDef);
+                            if (hediff != null && props.severityToAdd.HasValue)
+                            {
+                                hediff.Severity += props.severityToAdd.Value;
+                            }
                         }
                     }
                 }
