@@ -354,8 +354,10 @@
 		</statBases>
 		<building>
 			<isAirtight>true</isAirtight>
-			<soundDoorOpenPowered>kotorsound_building_ImperialDoor</soundDoorOpenPowered>
-			<soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered>
+			<!-- <soundDoorOpenPowered>kotorsound_building_ImperialDoor</soundDoorOpenPowered> -->
+			<!-- <soundDoorClosePowered>kotorsound_building_DoorClose</soundDoorClosePowered> -->
+			<soundDoorOpenManual>kotorsound_building_ImperialDoor</soundDoorOpenManual>
+			<soundDoorCloseManual>kotorsound_building_DoorClose</soundDoorCloseManual>
 			
 			<paintable>false</paintable>
 			<doorTopGraphic>
@@ -452,6 +454,8 @@
 		</statBases>
 		<building>
 			<isAirtight>true</isAirtight>
+			<!-- <soundDoorOpenManual>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenManual> -->
+			<!-- <soundDoorCloseManual>kotorsound_building_DoorClose</soundDoorCloseManual> -->
 			<soundDoorOpenManual>kotorsound_building_ShittyNarShaddaaDoor</soundDoorOpenManual>
 			<soundDoorCloseManual>kotorsound_building_DoorClose</soundDoorCloseManual>
 			

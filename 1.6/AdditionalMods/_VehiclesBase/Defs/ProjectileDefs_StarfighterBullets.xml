@@ -443,7 +443,7 @@
 	
 	
 	
-		<!-- used by: -->
+		<!-- used by: Hover Transport TC9 -->
 	<ThingDef ParentName="SWCPStarfighterBullet_IntAA_standardBASE">
 		<defName>SWCPStarfighterBullet_IntAAmedium_red</defName>
 		<graphicData>

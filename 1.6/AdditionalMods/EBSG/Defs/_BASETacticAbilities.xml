@@ -65,6 +65,7 @@
 				<!-- <disappearsAfterTicks>60000</disappearsAfterTicks> -->
 				<showRemainingTime>True</showRemainingTime>
 			</li>
+			<!-- <li Class="SWCP_Misc.HediffCompProperties_DisappearsOnDowned"/> -->
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 			<!-- <li Class="HediffCompProperties_GiveAbility"> -->
 				<!-- <abilityDef>SWPotF_TacticAbility_Ambush</abilityDef> -->

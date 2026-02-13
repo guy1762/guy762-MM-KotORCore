@@ -140,6 +140,7 @@
 				<initialMovingSeverity>1.5</initialMovingSeverity>
             </li>
 			
+			<li Class="SWCP_Misc.HediffCompProperties_DisappearsOnDowned"/>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
             <li Class="HediffCompProperties_Disappears">
                 <!-- <disappearsAfterTicks>60000</disappearsAfterTicks> -->
@@ -187,6 +188,7 @@
 			<li Class="HediffCompProperties_SeverityPerSecond">
 				<severityPerSecond>-0.1</severityPerSecond>
 			</li>
+			<li Class="SWCP_Misc.HediffCompProperties_DisappearsOnDowned"/>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
         </comps>
     </HediffDef>
