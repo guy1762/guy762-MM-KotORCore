@@ -417,7 +417,7 @@
 		</graphicData>
 	</ThingDef>
 	
-		<!-- used by: -->
+		<!-- used by: B-Wing (chin) -->
 	<ThingDef ParentName="SWCPStarfighterBullet_IntAA_lightdualBASE">
 		<defName>SWCPStarfighterBullet_IntAAlight_dualred</defName>
 		<graphicData>
@@ -510,7 +510,7 @@
 		</graphicData>
 	</ThingDef>
 	
-			<!-- used by: -->
+			<!-- used by: HWK-290 -->
 	<ThingDef ParentName="SWCPStarfighterBullet_StrikeAIAVAA_lightdualBASE">
 		<defName>SWCPStarfighterBullet_StrikeAIAVAAlight_dualred</defName>
 		<graphicData>
@@ -595,7 +595,7 @@
 	
 	
 	
-		<!-- used by: Rihkxyrk, Supa Fighter -->
+		<!-- used by: Rihkxyrk, Supa Fighter, B-Wing -->
 	<ThingDef ParentName="SWCPStarfighterBullet_CannonAVAA_standardBASE">
 		<defName>SWCPStarfighterBullet_CannonAVAAmedium_red</defName>
 		<graphicData>
@@ -742,11 +742,53 @@
 	
 
 	
+	
+	
+	
+	
+	
+	
+	
+		<!-- used by: B-Wing -->
+	<ThingDef ParentName="SWCPStarfighterBullet_Cannon_AntiVehicleAir_BASE">
+		<defName>SWVehicleBullet_CannonAVAA_mediumion</defName>
+		<label>ion bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/AdvAntiVehicle_blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_ion</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationBase>0.325</armorPenetrationBase>
+			<speed>200</speed>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>25</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<ThingDef ParentName="SWCPStarfighterBullet_Cannon_AntiVehicleAir_BASE">
 		<defName>SWVehicleBullet_CannonAVAA_heavyion</defName>
 		<label>heavy ion bolt</label>
 		<graphicData>
-			<texPath>Weapons/Projectiles/AntiVehicle_blue</texPath>
+			<texPath>Weapons/Projectiles/AdvAntiVehicle_blue</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>4</drawSize>
@@ -770,7 +812,7 @@
 		<defName>SWVehicleBullet_CannonAVAA_heavyion_xplosive</defName>
 		<label>heavy ion bolt</label>
 		<graphicData>
-			<texPath>Weapons/Projectiles/AntiVehicle_blue</texPath>
+			<texPath>Weapons/Projectiles/AdvAntiVehicle_blue</texPath>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
 			<drawSize>4</drawSize>

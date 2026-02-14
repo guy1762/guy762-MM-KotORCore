@@ -208,6 +208,7 @@
 		<maxSeverity>10</maxSeverity>
         <stages>
             <li>
+				<label>unnerved</label>
 				<becomeVisible>true</becomeVisible>
 				<minSeverity>0</minSeverity>
 				<statFactors>
@@ -217,6 +218,7 @@
 				</statFactors>
 			</li>
 			<li>
+				<label>intimidated</label>
 				<becomeVisible>true</becomeVisible>
 				<minSeverity>7.5</minSeverity>
 				<statFactors>
@@ -240,6 +242,7 @@
 				</mentalStateGivers>
 			</li>
 			<li>
+				<label>terrified</label>
 				<becomeVisible>true</becomeVisible>
 				<minSeverity>9</minSeverity>
 				<statFactors>

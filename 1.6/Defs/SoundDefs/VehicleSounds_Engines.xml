@@ -479,6 +479,53 @@
 	</SoundDef>
 	
 	<SoundDef>
+		<defName>kotorsound_enginehum_JKShuttle</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/shuttle_hover_8</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+				<min>20</min>
+				<max>20</max>
+				</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_enginehum_RavensClaw</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorshipengine/raven_hover_9</clipPath>
+					</li>
+				</grains>
+				<volumeRange>
+				<min>25</min>
+				<max>25</max>
+				</volumeRange>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	<SoundDef>
 		<defName>kotorsound_enginehum_Z95headhunter</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
@@ -492,11 +539,11 @@
 					<li Class="AudioGrain_Clip">
 						<clipPath>kotorshipengine/EaWX/Z95_Engine_Loop</clipPath>
 					</li>
-				</grains>	
+				</grains>
 				<volumeRange>
-				<min>35</min>        
-				<max>35</max>
-				</volumeRange>  		
+				<min>50</min>
+				<max>50</max>
+				</volumeRange>
 			</li>
 		</subSounds>
 	</SoundDef>
