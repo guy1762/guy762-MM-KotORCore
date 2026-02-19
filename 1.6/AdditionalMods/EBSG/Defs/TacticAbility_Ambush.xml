@@ -239,6 +239,8 @@
                 <hediffs>
                     <li>SWPotF_TacticAbilityHediff_AmbushWaiting</li>
 					
+                    <li>SWCP_StealthMode</li>
+					
 					<li>SWPotF_hediff_ForceCloak</li>
 					<li>SWPotF_hediff_KnightCloak</li>
 					<li>SWPotF_hediff_MstCloak</li>

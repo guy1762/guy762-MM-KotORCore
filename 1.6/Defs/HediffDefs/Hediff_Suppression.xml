@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>SWCPHediff_Suppression</defName>
+		<label>Suppressed</label>
+		<description>Negative psychological effects from being under suppressing blaster fire. At higher levels, this has a small chance to give a mental break while active. Each level lasts around 10 seconds before decreasing.</description>
+		<defaultLabelColor>(255,7,48)</defaultLabelColor> <!-- red -->
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>3</maxSeverity>
+		<isBad>true</isBad>
+		<stages>
+			<li>
+				<label>1x</label>
+				<becomeVisible>true</becomeVisible>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<ShootingAccuracyPawn>-0.15</ShootingAccuracyPawn>
+					<MeleeHitChance>-0.15</MeleeHitChance>
+					<PainShockThreshold>-0.15</PainShockThreshold>
+					<MentalBreakThreshold>0.15</MentalBreakThreshold>
+				</statOffsets>
+			</li>
+			<li>
+				<label>2x</label>
+				<becomeVisible>true</becomeVisible>
+				<minSeverity>1.01</minSeverity>
+				<statOffsets>
+					<ShootingAccuracyPawn>-0.30</ShootingAccuracyPawn>
+					<MeleeHitChance>-0.30</MeleeHitChance>
+					<PainShockThreshold>-0.30</PainShockThreshold>
+					<MentalBreakThreshold>0.30</MentalBreakThreshold>
+				</statOffsets>
+				<mentalStateGivers>
+					<li>
+						<mentalState>PanicFlee</mentalState>
+						<mtbDays>2</mtbDays> <!-- mean time between (in days) -->
+					</li>
+				</mentalStateGivers>
+			</li>
+			<li>
+				<label>3x</label>
+				<becomeVisible>true</becomeVisible>
+				<minSeverity>2.01</minSeverity>
+				<statOffsets>
+					<ShootingAccuracyPawn>-0.45</ShootingAccuracyPawn>
+					<MeleeHitChance>-0.45</MeleeHitChance>
+					<PainShockThreshold>-0.45</PainShockThreshold>
+					<MentalBreakThreshold>0.45</MentalBreakThreshold>
+				</statOffsets>
+				<mentalStateGivers>
+					<li>
+						<mentalState>PanicFlee</mentalState>
+						<mtbDays>1</mtbDays> <!-- mean time between (in days) -->
+					</li>
+				</mentalStateGivers>
+			</li>
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerSecond">
+				<severityPerSecond>-0.1</severityPerSecond>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<!-- <li Class="HediffCompProperties_RemoveIfOtherHediff"> -->
+				<!-- <hediffs> -->
+					<!-- <li>SWPotF_hediff_ForceValor</li> -->
+					<!-- <li>SWPotF_hediff_KnightValor</li> -->
+					<!-- <li>SWPotF_hediff_MstValor</li> -->
+				<!-- </hediffs> -->
+			<!-- </li> -->
+		</comps>
+	  </HediffDef>
+	  
+	  <ThoughtDef>
+		<defName>guy762_ThoughtDef_Suppression</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>SWCPHediff_Suppression</hediff>
+		<validWhileDespawned>false</validWhileDespawned>
+		<developmentalStageFilter>Baby, Child, Adult</developmentalStageFilter>
+		<stages>
+		  <li>
+			<label>under suppressing fire</label>
+			<description>I am about to die.</description>
+			<baseMoodEffect>-100</baseMoodEffect>
+		  </li>
+		</stages>
+		<lerpMoodToZero>true</lerpMoodToZero>
+		<stackLimit>1</stackLimit>
+	  </ThoughtDef>
+
+	
+
+</Defs>

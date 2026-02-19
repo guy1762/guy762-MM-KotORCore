@@ -9,9 +9,10 @@
     <makesSickThought>true</makesSickThought>
 	<hediffClass>HediffWithComps</hediffClass>
 	<comps>
-      <li Class="HediffCompProperties_SelfHeal">
-        <healAmount>0.001</healAmount>
-      </li>
+		<li Class="HediffCompProperties_SelfHeal">
+			<healAmount>0.001</healAmount>
+		</li>
+		<li Class="HediffCompProperties_DisappearsOnDeath"/>
     </comps>
     <stages>
       <li>

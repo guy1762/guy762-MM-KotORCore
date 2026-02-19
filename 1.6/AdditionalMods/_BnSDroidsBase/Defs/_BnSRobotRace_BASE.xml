@@ -318,6 +318,10 @@
 				<li>guy762_Electrocuted</li>
 				<li>guy762_Poison_saber</li>
 				<li>guy762_hediff_Decayed</li>
+				
+				
+				<li>SWCPHediff_Suppression</li>
+				<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbilityHediff_HarassDebuff</li>
 
 
 
@@ -670,32 +674,40 @@
 				-->
 				
 				<nullsThoughts>
-				  <li>Pain</li>
-				  <li>MissingTongue</li>
-				  <li>RotStink</li>
-				  <li>RotStinkLingering</li>
-				  <li>SharedBed</li>
-				  <li>MasochistPain</li>
-				  <li>ProsthophobeUnhappy</li>
-				  
-				  <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalReceived</li>
-				  <li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalDemanded</li>
-				  <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Male</li>
-				  <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Male</li>
-				  <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Male</li>
-				  <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Social_Male</li>
-				  <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Male</li>
-				  <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Male</li>
-				  <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Female</li>
-				  <li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Female</li>
-				  <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Female</li>
-				  <li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Social_Female</li>
-				  <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Female</li>
-				  <li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Female</li>
-				  <li>Naked</li>
-				  
-				  <li MayRequire="guy762.KotORFactions">guy762_ThoughtDef_MstBatlMed_Buff</li>
-				  <li MayRequire="guy762.KotORFactions">guy762_ThoughtDef_MstBatlMed_Debuff</li>
+					<li>Pain</li>
+					<li>MissingTongue</li>
+					<li>RotStink</li>
+					<li>RotStinkLingering</li>
+					<li>SharedBed</li>
+					<li>MasochistPain</li>
+					<li>ProsthophobeUnhappy</li>
+
+					<li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalReceived</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">AgeReversalDemanded</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Male</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Male</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Male</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Social_Male</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Male</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Male</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Female</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">GroinUncovered_Disapproved_Social_Female</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Female</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">GroinOrChestUncovered_Disapproved_Social_Female</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Female</li>
+					<li MayRequire="Ludeon.Rimworld.Ideology">GroinChestOrHairUncovered_Disapproved_Social_Female</li>
+					<li>Naked</li>
+
+					<li>guy762_ThoughtDef_Suppression</li>
+					<li MayRequire="guy762.Lee.KotORPotF">guy762_ThoughtDef_BatlMed_Buff</li>
+					<li MayRequire="guy762.Lee.KotORPotF">guy762_ThoughtDef_BatlMed_Debuff</li>
+					<li MayRequire="guy762.Lee.KotORPotF">guy762_ThoughtDef_AdvBatlMed_Buff</li>
+					<li MayRequire="guy762.Lee.KotORPotF">guy762_ThoughtDef_AdvBatlMed_Debuff</li>
+					<li MayRequire="guy762.Lee.KotORPotF">guy762_ThoughtDef_MstBatlMed_Buff</li>
+					<li MayRequire="guy762.Lee.KotORPotF">guy762_ThoughtDef_MstBatlMed_Debuff</li>
+
+					<li MayRequire="guy762.KotORFactions">guy762_ThoughtDef_MstBatlMed_Buff</li>
+					<li MayRequire="guy762.KotORFactions">guy762_ThoughtDef_MstBatlMed_Debuff</li>
 				</nullsThoughts>
 				<geneCategoryFilters>
 				  <blacklist>
@@ -843,6 +855,10 @@
 					<li>guy762_Electrocuted</li>
 					<li>guy762_Poison_saber</li>
 					<li>guy762_hediff_Decayed</li>
+					
+					
+					<li>SWCPHediff_Suppression</li>
+					<li MayRequire="guy762.Lee.KotORPotF">SWPotF_TacticAbilityHediff_HarassDebuff</li>
 					
 					
 					

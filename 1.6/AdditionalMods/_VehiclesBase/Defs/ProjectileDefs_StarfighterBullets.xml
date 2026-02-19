@@ -23,8 +23,8 @@
 		<modExtensions>
 			<li Class="taranchuk_flightcombat.ProjectileModes">
 				<antiAir>true</antiAir>
-				<ground>true</ground>
-				<!-- <antiBuilding>true</antiBuilding> -->
+				<antiVehicle>true</antiVehicle>
+				<antiBuilding>true</antiBuilding>
 			</li>
 		</modExtensions>
 	</ThingDef>

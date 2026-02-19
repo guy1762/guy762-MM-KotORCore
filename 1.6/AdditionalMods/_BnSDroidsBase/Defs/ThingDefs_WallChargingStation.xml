@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	<ThingDef Name="guy762_ShipTech_WallChargingStation" ParentName="BuildingBase">
+		<defName>guy762_ShipTech_WallChargingStation</defName>
+		<label>droid charging station</label>
+		<description>(REQUIRES A CONENCTED BATTERY)\n\nA wall-mounted station where droids can recharge power cells. Requires batteries and a powerful power grid to support.</description>
+		
+		<!-- <tickerType>Rare</tickerType> -->
+		<rotatable>true</rotatable>
+		<minifiedDef>MinifiedThing</minifiedDef>
+		<thingCategories>
+		  <li>BuildingsMisc</li>
+		</thingCategories>
+		<graphicData>
+			<texPath>Buildings/WallChargingStation/ChargingStation</texPath>
+			<graphicClass>Graphic_Multi</graphicClass>
+			<color>(185,185,185)</color>
+			
+			<drawOffsetNorth>(0,0,0.75)</drawOffsetNorth>
+			<drawOffsetSouth>(0,0,-0.75)</drawOffsetSouth>
+			<drawOffsetWest>(-0.75,0,0)</drawOffsetWest>
+			<drawOffsetEast>(0.75,0,0)</drawOffsetEast>
+			<damageData><enabled>false</enabled></damageData>
+		</graphicData>
+		<altitudeLayer>BuildingOnTop</altitudeLayer>
+		<statBases>
+			<MarketValue>250</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<WorkToBuild>4000</WorkToBuild>
+			<Mass>10</Mass>
+			<!-- 1.0 means 0.5 battery per 2 food, 4 means 0.5 battery per 4 food, etc. -->
+			<WorkTableEfficiencyFactor>1.0</WorkTableEfficiencyFactor>
+			<!-- 1.0 means 4.0 food provided per hour. -->
+			<WorkTableWorkSpeedFactor>1.0</WorkTableWorkSpeedFactor>
+		</statBases>
+		
+		<uiIconPath>Buildings/WallChargingStation/ChargingStation_north</uiIconPath>
+		<designationCategory>KOTOR_BuildTab</designationCategory>
+		
+		<passability>Standable</passability>
+		<terrainAffordanceNeeded IsNull="True" />
+		<pathCost>0</pathCost>
+		<overrideMinifiedRot>North</overrideMinifiedRot>
+		<minifiedDrawOffset>(0, 0, 0.2)</minifiedDrawOffset>
+		<building>
+			<isEdifice>false</isEdifice>
+			<isAttachment>true</isAttachment>
+			<expandHomeArea>false</expandHomeArea>
+			<paintable>true</paintable>
+		</building>
+		<costList>
+			<Steel>80</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+		</costList>
+		<placeWorkers>
+			<li>Placeworker_AttachedToWall</li>
+		</placeWorkers>
+		
+		<thingClass>BigAndSmall.Building_AndroidCharger</thingClass>
+		<comps>
+			<li Class="CompProperties_Power">
+				<compClass>CompPowerTrader</compClass>
+				<basePowerConsumption>0</basePowerConsumption>
+			</li>
+		</comps>
+		<researchPrerequisites>
+			<li>Batteries</li>
+		</researchPrerequisites>
+		<uiOrder>2505</uiOrder>
+	</ThingDef>
+
+</Defs>
