@@ -174,7 +174,21 @@
     </stages>
   </HediffDef>
   
-  
+	<ThoughtDef>
+		<defName>guy762_ThoughtDef_CommandTierVI</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>guy762_hediff_CommandTierVI_buff</hediff>
+		<validWhileDespawned>false</validWhileDespawned>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<stages>
+		  <li>
+			<label>active Command Tier VI</label>
+			<description>A battle is at hand! I'd better get ready...</description>
+			<baseMoodEffect>10</baseMoodEffect>
+		  </li>
+		</stages>
+		<stackLimit>1</stackLimit>
+	</ThoughtDef>
   
   
   
@@ -325,6 +339,22 @@
     </stages>
   </HediffDef>
   
+	<ThoughtDef>
+		<defName>guy762_ThoughtDef_CommandTierV</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>guy762_hediff_CommandTierV_buff</hediff>
+		<validWhileDespawned>false</validWhileDespawned>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<stages>
+		  <li>
+			<label>active Command Tier V</label>
+			<description>I'm being led into battle again... I'm ready to do my part!</description>
+			<baseMoodEffect>20</baseMoodEffect>
+		  </li>
+		</stages>
+		<stackLimit>1</stackLimit>
+	</ThoughtDef>
+  
   
   
   
@@ -474,7 +504,22 @@
       </li>
     </stages>
   </HediffDef>
-  
+
+	<ThoughtDef>
+		<defName>guy762_ThoughtDef_CommandTierIV</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>guy762_hediff_CommandTierIV_buff</hediff>
+		<validWhileDespawned>false</validWhileDespawned>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<stages>
+		  <li>
+			<label>active Command Tier IV</label>
+			<description>Our commander is with us, we can do this!</description>
+			<baseMoodEffect>30</baseMoodEffect>
+		  </li>
+		</stages>
+		<stackLimit>1</stackLimit>
+	</ThoughtDef>
   
   
   
@@ -626,6 +671,22 @@
       </li>
     </stages>
   </HediffDef>
+	
+	<ThoughtDef>
+		<defName>guy762_ThoughtDef_CommandTierIII</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>guy762_hediff_CommandTierIII_buff</hediff>
+		<validWhileDespawned>false</validWhileDespawned>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<stages>
+		  <li>
+			<label>active Command Tier III</label>
+			<description>I'm following an expert commander into battle, victory is assured!</description>
+			<baseMoodEffect>40</baseMoodEffect>
+		  </li>
+		</stages>
+		<stackLimit>1</stackLimit>
+	</ThoughtDef>
   
   
   
@@ -779,6 +840,23 @@
   </HediffDef>
   
   
+	<ThoughtDef>
+		<defName>guy762_ThoughtDef_CommandTierII</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>guy762_hediff_CommandTierII_buff</hediff>
+		<validWhileDespawned>false</validWhileDespawned>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<stages>
+		  <li>
+			<label>active Command Tier II</label>
+			<description>A great hero is leading me into battle, nothing can stop us!</description>
+			<baseMoodEffect>50</baseMoodEffect>
+		  </li>
+		</stages>
+		<stackLimit>1</stackLimit>
+	</ThoughtDef>
+  
+  
   
   
   
@@ -921,6 +999,22 @@
       </li>
     </stages>
   </HediffDef>
+	
+	<ThoughtDef>
+		<defName>guy762_ThoughtDef_CommandTierI</defName>
+		<workerClass>ThoughtWorker_Hediff</workerClass>
+		<hediff>guy762_hediff_CommandTierI_buff</hediff>
+		<validWhileDespawned>false</validWhileDespawned>
+		<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		<stages>
+		  <li>
+			<label>active Command Tier I</label>
+			<description>I'm fighting alongside a legendary hero of our time! It's an honor to even be here!</description>
+			<baseMoodEffect>60</baseMoodEffect>
+		  </li>
+		</stages>
+		<stackLimit>1</stackLimit>
+	</ThoughtDef>
   
   
   

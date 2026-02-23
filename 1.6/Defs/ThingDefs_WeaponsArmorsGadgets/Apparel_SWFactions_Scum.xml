@@ -63,6 +63,7 @@
 		<tradeTags>
 			<li>guy762TT_KotORAntique</li>
 			<li>guy762TT_KotORArmor_exotic</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -119,10 +120,6 @@
 		  </bodyPartGroups>
 		  <wornGraphicPath>SWApparel/Undersuits/gamorrean/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
-			
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -149,6 +146,7 @@
 		<tradeTags>
 			<li>guy762TT_KotORAntique</li>
 			<li>guy762TT_KotORArmor_exotic</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -231,6 +229,7 @@
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORAntique</li>
+			<li>guy762TT_GCWArmor_OutlawSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>

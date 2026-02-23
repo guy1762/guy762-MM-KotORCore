@@ -25,27 +25,29 @@
     </statBases>
 	
     <apparel>
-      <countsAsClothingForNudity>false</countsAsClothingForNudity>
-      <careIfWornByCorpse>false</careIfWornByCorpse>
-      <careIfDamaged>false</careIfDamaged>
-      <ignoredByNonViolent>true</ignoredByNonViolent>
-      <wearPerDay>0</wearPerDay>
-      <bodyPartGroups>
-        <li>Arms</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Belt</li>
-      </layers>
-	  <tags>
-		<li>KotOREquipment_jedi</li>
-		<li>KotORHeroAccessories_visas</li>
-		<li>KotORHeroAccessories_sion</li>
-		<li>KotORHeroAccessories_bastila</li>
-		<li>SWCPSpecificGadgetItem_JediArmband</li>
-	  </tags>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<careIfWornByCorpse>false</careIfWornByCorpse>
+		<careIfDamaged>false</careIfDamaged>
+		<ignoredByNonViolent>true</ignoredByNonViolent>
+		<wearPerDay>0</wearPerDay>
+		<bodyPartGroups>
+			<li>Arms</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Belt</li>
+		</layers>
+		<tags>
+			<li>KotOREquipment_jedi</li>
+			<li>KotORHeroAccessories_visas</li>
+			<li>KotORHeroAccessories_sion</li>
+			<li>KotORHeroAccessories_bastila</li>
+			<li>SWCPSpecificGadgetItem_JediArmband</li>
+		</tags>
     </apparel>
 	<tradeTags>
-      <li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+		<li>guy762TT_GCWGadgetEquipment_JediStuff</li>
     </tradeTags>
   </ThingDef>
   
@@ -74,24 +76,26 @@
     <techLevel>Spacer</techLevel>
 	
     <apparel>
-      <countsAsClothingForNudity>false</countsAsClothingForNudity>
-      <careIfWornByCorpse>false</careIfWornByCorpse>
-      <careIfDamaged>false</careIfDamaged>
-      <ignoredByNonViolent>true</ignoredByNonViolent>
-      <wearPerDay>0</wearPerDay>
-      <bodyPartGroups>
-        <li>Arms</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Belt</li>
-      </layers>
-	  <tags>
-		<li>KotOREquipment_moncal</li>
-		<li>SWCPSpecificGadgetItem_MonCalamariArmband</li>
-	  </tags>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<careIfWornByCorpse>false</careIfWornByCorpse>
+		<careIfDamaged>false</careIfDamaged>
+		<ignoredByNonViolent>true</ignoredByNonViolent>
+		<wearPerDay>0</wearPerDay>
+		<bodyPartGroups>
+			<li>Arms</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Belt</li>
+		</layers>
+		
+		<tags>
+			<li>KotOREquipment_moncal</li>
+			<li>SWCPSpecificGadgetItem_MonCalamariArmband</li>
+		</tags>
     </apparel>
 	<tradeTags>
-      <li>guy762TT_KotORAntique</li>
+		<li>guy762TT_KotORAntique</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
     </tradeTags>
   </ThingDef>
   
@@ -124,25 +128,28 @@
     <techLevel>Spacer</techLevel>
 	
     <apparel>
-      <countsAsClothingForNudity>false</countsAsClothingForNudity>
-      <careIfWornByCorpse>false</careIfWornByCorpse>
-      <careIfDamaged>false</careIfDamaged>
-      <ignoredByNonViolent>true</ignoredByNonViolent>
-      <wearPerDay>0</wearPerDay>
-      <bodyPartGroups>
-        <li>Arms</li>
-		<li>Hands</li>
-      </bodyPartGroups>
-      <layers>
-        <li>Belt</li>
-      </layers>
-	  <tags>
-		<li>SWCPSpecificGadgetItem_CortosisArmband</li>
-	  </tags>
-	  <useDeflectMetalEffect>true</useDeflectMetalEffect>
+		<countsAsClothingForNudity>false</countsAsClothingForNudity>
+		<careIfWornByCorpse>false</careIfWornByCorpse>
+		<careIfDamaged>false</careIfDamaged>
+		<ignoredByNonViolent>true</ignoredByNonViolent>
+		<wearPerDay>0</wearPerDay>
+		<bodyPartGroups>
+			<li>Arms</li>
+			<li>Hands</li>
+		</bodyPartGroups>
+		<layers>
+			<li>Belt</li>
+		</layers>  
+		<useDeflectMetalEffect>true</useDeflectMetalEffect>
+		
+		<tags>
+			<li>SWCPSpecificGadgetItem_CortosisArmband</li>
+		</tags>
     </apparel>
 	<tradeTags>
 		<li>guy762TT_KotORElite</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
+		<li>guy762TT_GCWGadgetEquipment_JediStuff</li>
     </tradeTags>
 	
 	<modExtensions>

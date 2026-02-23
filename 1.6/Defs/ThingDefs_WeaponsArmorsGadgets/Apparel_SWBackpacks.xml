@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
+	<!-- KotOR Backpacks -->
+	
+	
 	<ThingDef ParentName="guy762_jetpackMakeable">
 		<defName>guy762_Backpack_light</defName>
 		<label>backpack, light</label>
@@ -35,18 +38,24 @@
 		
 		<tickerType>Never</tickerType>
 		<apparel>
-		  <tags>
-			<li>KotORAccessory_any</li>
-			<li>KotORAccessory_trooper</li>
-			<li>KotORAccessory_civilian</li>
-			<li>KotORAccessory_backpack</li>
-			<li>KotORAccessory_smallbackpack</li>
-			<li>SWCPSpecificApparelItem_KotORSmallBackpack</li>
-			<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Accessories/backpacks/backpack_small</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
+			<wornGraphicPath>SWApparel/Accessories/backpacks/backpack_small</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			
+			 <tags>
+				<li>KotORAccessory_any</li>
+				<li>KotORAccessory_trooper</li>
+				<li>KotORAccessory_civilian</li>
+				<li>KotORAccessory_backpack</li>
+				<li>KotORAccessory_smallbackpack</li>
+				<li>SWCPSpecificApparelItem_KotORSmallBackpack</li>
+				<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
+			</tags>
 		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+		</tradeTags>
+		
 		<colorGenerator Class="ColorGenerator_Options">
 		  <options>
 			<li>
@@ -72,9 +81,7 @@
 				<compClass>CompQuality</compClass>
 			</li>
 		</comps>
-		<tradeTags>
-		  <li>guy762TT_KotOREquipment_apparel</li>
-		</tradeTags>
+		
 	</ThingDef>
 	  
 	<ThingDef ParentName="guy762_jetpackbase">
@@ -170,16 +177,7 @@
 		  </li>
 		</modExtensions>
 	</ThingDef>
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
-	  
+	 
 	<ThingDef ParentName="guy762_jetpackMakeable">
 		<defName>guy762_Backpack_heavy</defName>
 		<label>backpack, heavy</label>
@@ -215,17 +213,8 @@
 		
 		<tickerType>Never</tickerType>
 		<apparel>
-		  <tags>
-			<li>KotORAccessory_any</li>
-			<li>KotORAccessory_trooper</li>
-			<li>KotORAccessory_backpack</li>
-			<li>KotORAccessory_bigbackpack</li>
-			<li>SWCPSpecificApparelItem_KotORBigBackpack</li>
-			<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Accessories/backpacks/backpack_big</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  
+			<wornGraphicPath>SWApparel/Accessories/backpacks/backpack_big</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -250,7 +239,21 @@
 					</drawData>
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>KotORAccessory_any</li>
+				<li>KotORAccessory_trooper</li>
+				<li>KotORAccessory_backpack</li>
+				<li>KotORAccessory_bigbackpack</li>
+				<li>SWCPSpecificApparelItem_KotORBigBackpack</li>
+				<li>SWCPDroidApparelRestrictionTag_Backpacks</li>
+			</tags>
 		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+		</tradeTags>
+		
 		<colorGenerator Class="ColorGenerator_Options">
 		  <options>
 			<li>
@@ -276,9 +279,7 @@
 				<compClass>CompQuality</compClass>
 			</li>
 		</comps>
-		<tradeTags>
-		  <li>guy762TT_KotOREquipment_apparel</li>
-		</tradeTags>
+		
 		<modExtensions>
 		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
 			<!-- Tag is not needed for apparel. -->
@@ -305,7 +306,7 @@
 	
 	
 	
-	
+	<!-- GCW Backpacks -->
 	
 	
 	
@@ -413,7 +414,10 @@
 			</li>
 		</comps>
 		<tradeTags>
-			<li>guy762TT_RebelArmor</li>
+			<li>guy762TT_GCWGadgetEquipment_any</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
 		</tradeTags>
 		<modExtensions>
 		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">
@@ -535,7 +539,10 @@
 			</li>
 		</comps>
 		<tradeTags>
-			<li>guy762TT_RebelArmor</li>
+			<li>guy762TT_GCWGadgetEquipment_any</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
 		</tradeTags>
 		<modExtensions>
 		  <li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.HasCustomizableGraphics">

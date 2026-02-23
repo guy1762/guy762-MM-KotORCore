@@ -106,6 +106,8 @@
 		</weaponTags>
 		<tradeTags>
 			<li>guy762TT_KotORWeapon_exotic</li>
+			<li>guy762TT_GCWMelee</li>
+			<li>guy762TT_GCWWeapon_ExoticLegal</li>
 		</tradeTags>
 		<thingSetMakerTags>
 		  <li>RewardStandardLowFreq</li>

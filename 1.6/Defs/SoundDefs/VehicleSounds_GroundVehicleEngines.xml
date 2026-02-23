@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+	
+	
+	<SoundDef>
+		<defName>kotorsound_speederbike_activate</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/mgs_pwrup</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>50</min>        
+				<max>50</max>
+				</volumeRange>  		
+				<!--pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange-->			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_speederbike_deactivate</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/mgs_pwrdown</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  		
+				<!--pitchRange>
+					<min>0.8</min>				
+					<max>1.2</max>
+				</pitchRange-->			
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_speederbike_idle</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/eng_speederbike_low_lp</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_speederbike_moving</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/eng_speederbike_mid_lp</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_hovercar_moving</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/EGL_SKIFF_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_hovercar_idle</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/EGL_REPULSOR_1_IDLE</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>15</min>        
+				<max>15</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_hovertank_moving</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/eng_interceptorTank_mid_lp</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_hovertank_idle</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/EGL_REPULSOR_2_IDLE</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>20</min>        
+				<max>20</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_AAT_moving</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/eng_AAT_mid_lp</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>55</min>        
+				<max>55</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	<SoundDef>
+		<defName>kotorsound_AAT_idle</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/eng_AAT_low_lp</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>55</min>        
+				<max>55</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_hovertankheavy_moving</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/EGL_SKIFF_2</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_hovertankheavy_idle</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/EGL_REPULSOR_3_IDLE</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>25</min>        
+				<max>25</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_trackedvehicle_idle</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/EGL_TRACKED_IDLE</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_trackedvehicle_moving</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/EGL_TRACKED_1</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	<SoundDef>
+		<defName>kotorsound_trackedvehicle_quietermoving</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/eng_hailfire_mid_lp</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	<SoundDef>
+		<defName>kotorsound_ATSTsteppy</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/ATST_steppy_compressed</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_ATPTsteppy</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/ATPT_steppy</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>45</min>        
+				<max>45</max>
+				</volumeRange>  		
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_ATATsteppy</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>5</maxSimultaneous>
+		<sustain>true</sustain><maxVoices>5</maxVoices>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorlandvehicles/ATAT_steppy_compressed</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+					<min>45</min>        
+					<max>45</max>
+				</volumeRange>  
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>100</min>
+					<max>500</max>
+				</distRange>				
+			</li>
+		</subSounds>
+	</SoundDef>
+
+
+	
+
+</Defs>

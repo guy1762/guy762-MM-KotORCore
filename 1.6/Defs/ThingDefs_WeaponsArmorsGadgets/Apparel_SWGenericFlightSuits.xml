@@ -35,9 +35,6 @@
 			<li>SWCPSpecificApparelItem_RebelFlightSuitBox</li>
 		  </tags>
 		  <wornGraphicPath>SWApparel/RebelPilot/Apparel</wornGraphicPath>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
 		  <layers Inherit="False">
 			<li>Shell</li>
 		  </layers>
@@ -53,86 +50,91 @@
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORArmor_space</li>
+			<li>guy762TT_GCWApparel_space</li>
+			<li>guy762TT_GCWGadgetEquipment_any</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
+			<li>guy762TT_GCWArmor_PDFSpaceGear</li>
+			<li>guy762TT_GCWArmor_RebelSpaceGear</li>
 		</tradeTags>
 	</ThingDef>
 	  
 	  
 	  
   
-  <ThingDef ParentName="guy762_MakeNoQualityClothing">
-    <defName>guy762_FlightVest</defName>
-    <label>flight vest</label>
-    <description>A padded vest intended for starfighter pilots, it has a small amount of anti-radiation padding in order to protect the wearer's vital organs from background radiation during extravehicular operations.</description>
-    <graphicData>
-      <texPath>SWApparel/FlightVest/Apparel</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-	<statBases>
-		<Mass>2.5</Mass>
-		<MarketValue>100</MarketValue>
-		<MaxHitPoints>150</MaxHitPoints>
-		<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
-		<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
-		<ArmorRating_Heat>0.05</ArmorRating_Heat>
-		<Insulation_Cold>1</Insulation_Cold>
-		<Insulation_Heat>1</Insulation_Heat>
-		<EquipDelay>10</EquipDelay>
+	<ThingDef ParentName="guy762_MakeNoQualityClothing">
+		<defName>guy762_FlightVest</defName>
+		<label>flight vest</label>
+		<description>A padded vest intended for starfighter pilots, it has a small amount of anti-radiation padding in order to protect the wearer's vital organs from background radiation during extravehicular operations.</description>
+		<graphicData>
+		  <texPath>SWApparel/FlightVest/Apparel</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<statBases>
+			<Mass>2.5</Mass>
+			<MarketValue>100</MarketValue>
+			<MaxHitPoints>150</MaxHitPoints>
+			<ArmorRating_Sharp>0.01</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.05</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.05</ArmorRating_Heat>
+			<Insulation_Cold>1</Insulation_Cold>
+			<Insulation_Heat>1</Insulation_Heat>
+			<EquipDelay>10</EquipDelay>
+			
+			<WorkToMake>5000</WorkToMake>
+		</statBases>
+		<equippedStatOffsets>
+		  <ToxicEnvironmentResistance>0.1</ToxicEnvironmentResistance>
+		  <DecompressionResistance MayRequire="kentington.saveourship2">0.125</DecompressionResistance>
+		  
+		  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.1</PilotingAbility>
+		</equippedStatOffsets>
 		
-		<WorkToMake>5000</WorkToMake>
-	</statBases>
-	<equippedStatOffsets>
-      <ToxicEnvironmentResistance>0.1</ToxicEnvironmentResistance>
-	  <DecompressionResistance MayRequire="kentington.saveourship2">0.125</DecompressionResistance>
-	  
-	  <PilotingAbility MayRequire="Ludeon.RimWorld.Odyssey">0.1</PilotingAbility>
-    </equippedStatOffsets>
-	
-	
-	<recipeMaker>
-		<skillRequirements>
-			<Crafting>8</Crafting>
-		</skillRequirements>
-	</recipeMaker>
-	<costList>
-      <ComponentIndustrial>1</ComponentIndustrial>
-	  <Synthread>45</Synthread>
-    </costList>
-	
-    <apparel>
-      <tags Inherit="False">
-		<li>KotORClothing_pilot</li>
-		<li>SWCPSpecificApparelItem_FlightVest</li>
-      </tags>
-      <wornGraphicPath>SWApparel/FlightVest/Apparel</wornGraphicPath>
-	  <useWornGraphicMask>true</useWornGraphicMask>
-      <defaultOutfitTags Inherit="False">
-		<li>Worker</li>
-	  </defaultOutfitTags>
-	  <layers Inherit="False">
-		<li>Middle</li>
-	  </layers>
-	  <bodyPartGroups Inherit="False">
-		<li>Torso</li>
-	  </bodyPartGroups>
-    </apparel>
-	<tradeTags>
-		<li>guy762TT_KotORClothes</li>
-		<li>guy762TT_KotORArmor_space</li>
-	</tradeTags>
-	<colorGenerator Class="ColorGenerator_Options" Inherit="False">
-		<options>
-			<li>
-				<weight>10</weight>
-				<only>(255,255,255)</only>
-			</li>
-			<li>
-				<weight>5</weight>
-				<only>(130,130,130)</only>
-			</li>
-		</options>
-	</colorGenerator>
-  </ThingDef>
+		
+		<recipeMaker>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+		</recipeMaker>
+		<costList>
+		  <ComponentIndustrial>1</ComponentIndustrial>
+		  <Synthread>45</Synthread>
+		</costList>
+		
+		<apparel>
+		  <tags Inherit="False">
+			<li>KotORClothing_pilot</li>
+			<li>SWCPSpecificApparelItem_FlightVest</li>
+		  </tags>
+		  <wornGraphicPath>SWApparel/FlightVest/Apparel</wornGraphicPath>
+		  <useWornGraphicMask>true</useWornGraphicMask>
+		  <layers Inherit="False">
+			<li>Middle</li>
+		  </layers>
+		  <bodyPartGroups Inherit="False">
+			<li>Torso</li>
+		  </bodyPartGroups>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_KotORArmor_space</li>
+			<li>guy762TT_GCWApparel_space</li>
+			<li>guy762TT_GCWArmor_PDFSpaceGear</li>
+			<li>guy762TT_GCWArmor_RebelSpaceGear</li>
+		</tradeTags>
+		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
+			<options>
+				<li>
+					<weight>10</weight>
+					<only>(255,255,255)</only>
+				</li>
+				<li>
+					<weight>5</weight>
+					<only>(130,130,130)</only>
+				</li>
+			</options>
+		</colorGenerator>
+	</ThingDef>
   
 	<ThingDef ParentName="KotORArmorModdable_hard">
 		<defName>guy762_FlightArmor</defName>
@@ -173,9 +175,6 @@
 		  </tags>
 		  <wornGraphicPath>SWApparel/FlightArmor/Apparel</wornGraphicPath>
 		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
 		  <layers Inherit="False">
 			<li>Middle</li>
 		  </layers>

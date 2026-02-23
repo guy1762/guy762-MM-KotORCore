@@ -19,7 +19,7 @@
 		<!-- </modExtensions> -->
 	</ThingDef>
 	
-	<ThingDef Name="SWCPStarfighterBullet_Cannon_AntiVehicleAir_BASE" ParentName="BaseBullet" Abstract="True">
+	<ThingDef Name="SWCPStarfighterBullet_Assault_AntiVehicleAir_BASE" ParentName="BaseBullet" Abstract="True">
 		<modExtensions>
 			<li Class="taranchuk_flightcombat.ProjectileModes">
 				<antiAir>true</antiAir>
@@ -276,15 +276,15 @@
 
 
 
-<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ CANNON (AV/AA) PROJECTILES ////////////////////////////////////////////// -->
+<!-- \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\ Assault (AV/AA) PROJECTILES ////////////////////////////////////////////// -->
 	
 	
 	
 	<!-- light damage (two XWMG dice) -->
 	
 	
-	<ThingDef Name="SWCPStarfighterBullet_CannonAVAA_lightBASE" ParentName="SWCPStarfighterBullet_Cannon_AntiVehicleAir_BASE" Abstract="True">
-		<label>light cannon bolt</label>
+	<ThingDef Name="SWCPStarfighterBullet_AssaultAVAA_lightBASE" ParentName="SWCPStarfighterBullet_Assault_AntiVehicleAir_BASE" Abstract="True">
+		<label>light assault bolt</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
@@ -298,8 +298,8 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef Name="SWCPStarfighterBullet_CannonAVAA_lightdualBASE" ParentName="SWCPStarfighterBullet_Cannon_AntiVehicleAir_BASE" Abstract="True">
-		<label>light cannon double bolt</label>
+	<ThingDef Name="SWCPStarfighterBullet_AssaultAVAA_lightdualBASE" ParentName="SWCPStarfighterBullet_Assault_AntiVehicleAir_BASE" Abstract="True">
+		<label>light assault double bolt</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
@@ -318,8 +318,8 @@
 	
 	<!-- standard damage (three XWMG dice) -->
 	
-	<ThingDef Name="SWCPStarfighterBullet_CannonAVAA_standardBASE" ParentName="SWCPStarfighterBullet_Cannon_AntiVehicleAir_BASE" Abstract="True">
-		<label>cannon laser bolt</label>
+	<ThingDef Name="SWCPStarfighterBullet_AssaultAVAA_standardBASE" ParentName="SWCPStarfighterBullet_Assault_AntiVehicleAir_BASE" Abstract="True">
+		<label>assault laser bolt</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
@@ -333,8 +333,8 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef Name="SWCPStarfighterBullet_CannonAVAA_dualBASE" ParentName="SWCPStarfighterBullet_Cannon_AntiVehicleAir_BASE" Abstract="True">
-		<label>cannon double bolt</label>
+	<ThingDef Name="SWCPStarfighterBullet_AssaultAVAA_dualBASE" ParentName="SWCPStarfighterBullet_Assault_AntiVehicleAir_BASE" Abstract="True">
+		<label>assault double bolt</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
@@ -353,8 +353,8 @@
 	
 	<!-- heavy damage (four XWMG dice) -->
 	
-	<ThingDef Name="SWCPStarfighterBullet_CannonAVAA_heavyBASE" ParentName="SWCPStarfighterBullet_Cannon_AntiVehicleAir_BASE" Abstract="True">
-		<label>cannon heavy bolt</label>
+	<ThingDef Name="SWCPStarfighterBullet_AssaultAVAA_heavyBASE" ParentName="SWCPStarfighterBullet_Assault_AntiVehicleAir_BASE" Abstract="True">
+		<label>assault heavy bolt</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
@@ -368,8 +368,8 @@
 		</projectile>
 	</ThingDef>
 	
-	<ThingDef Name="SWCPStarfighterBullet_CannonAVAA_heavydualBASE" ParentName="SWCPStarfighterBullet_Cannon_AntiVehicleAir_BASE" Abstract="True">
-		<label>heavy cannon double bolt</label>
+	<ThingDef Name="SWCPStarfighterBullet_AssaultAVAA_heavydualBASE" ParentName="SWCPStarfighterBullet_Assault_AntiVehicleAir_BASE" Abstract="True">
+		<label>heavy assault double bolt</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<shaderType>TransparentPostLight</shaderType>
@@ -596,40 +596,40 @@
 	
 	
 		<!-- used by: Rihkxyrk, Supa Fighter, B-Wing -->
-	<ThingDef ParentName="SWCPStarfighterBullet_CannonAVAA_standardBASE">
-		<defName>SWCPStarfighterBullet_CannonAVAAmedium_red</defName>
+	<ThingDef ParentName="SWCPStarfighterBullet_AssaultAVAA_standardBASE">
+		<defName>SWCPStarfighterBullet_AssaultAVAAmedium_red</defName>
 		<graphicData>
 			<texPath>Weapons/Projectiles/AdvAntiVehicle_red</texPath>
 		</graphicData>
 	</ThingDef>
 	
 		<!-- used by: -->
-	<ThingDef ParentName="SWCPStarfighterBullet_CannonAVAA_standardBASE">
-		<defName>SWCPStarfighterBullet_CannonAVAAmedium_green</defName>
+	<ThingDef ParentName="SWCPStarfighterBullet_AssaultAVAA_standardBASE">
+		<defName>SWCPStarfighterBullet_AssaultAVAAmedium_green</defName>
 		<graphicData>
 			<texPath>Weapons/Projectiles/AdvAntiVehicle_green</texPath>
 		</graphicData>
 	</ThingDef>
 	
 		<!-- used by: -->
-	<ThingDef ParentName="SWCPStarfighterBullet_CannonAVAA_dualBASE">
-		<defName>SWCPStarfighterBullet_CannonAVAAmedium_dualred</defName>
+	<ThingDef ParentName="SWCPStarfighterBullet_AssaultAVAA_dualBASE">
+		<defName>SWCPStarfighterBullet_AssaultAVAAmedium_dualred</defName>
 		<graphicData>
 			<texPath>Weapons/Projectiles/DoubleAdvAntiVehicle_red</texPath>
 		</graphicData>
 	</ThingDef>
 	
 		<!-- used by:  -->
-	<ThingDef ParentName="SWCPStarfighterBullet_CannonAVAA_dualBASE">
-		<defName>SWCPStarfighterBullet_CannonAVAAmedium_dualgreen</defName>
+	<ThingDef ParentName="SWCPStarfighterBullet_AssaultAVAA_dualBASE">
+		<defName>SWCPStarfighterBullet_AssaultAVAAmedium_dualgreen</defName>
 		<graphicData>
 			<texPath>Weapons/Projectiles/DoubleAdvAntiVehicle_green</texPath>
 		</graphicData>
 	</ThingDef>
 
 				<!-- used by: Scurrg -->
-			<ThingDef ParentName="SWCPStarfighterBullet_CannonAVAA_dualBASE">
-				<defName>SWCPStarfighterBullet_CannonAVAAmedium_scurrgOrangeBalls</defName>
+			<ThingDef ParentName="SWCPStarfighterBullet_AssaultAVAA_dualBASE">
+				<defName>SWCPStarfighterBullet_AssaultAVAAmedium_scurrgOrangeBalls</defName>
 				<graphicData>
 					<texPath>Weapons/Projectiles/doubleadvheavyblaster_orange</texPath>
 					<drawSize>2.5</drawSize>
@@ -637,8 +637,8 @@
 			</ThingDef>
 			
 				<!-- used by: U-Wing -->
-			<ThingDef ParentName="SWCPStarfighterBullet_CannonAVAA_dualBASE">
-				<defName>SWCPStarfighterBullet_CannonAVAAmedium_UWingdualred</defName>
+			<ThingDef ParentName="SWCPStarfighterBullet_AssaultAVAA_dualBASE">
+				<defName>SWCPStarfighterBullet_AssaultAVAAmedium_UWingdualred</defName>
 				<graphicData>
 					<texPath>Weapons/Projectiles/UWingAdvAntiVehicle_red</texPath>
 				</graphicData>
@@ -650,482 +650,36 @@
 
 
 		<!-- used by: Kimogila, Skipray -->
-	<ThingDef ParentName="SWCPStarfighterBullet_CannonAVAA_heavyBASE">
-		<defName>SWCPStarfighterBullet_CannonAVAAheavy_red</defName>
+	<ThingDef ParentName="SWCPStarfighterBullet_AssaultAVAA_heavyBASE">
+		<defName>SWCPStarfighterBullet_AssaultAVAAheavy_red</defName>
 		<graphicData>
 			<texPath>Weapons/Projectiles/AdvAntiVehicle_red</texPath>
 		</graphicData>
 	</ThingDef>
 	
 		<!-- used by: TIE Reaper -->
-	<ThingDef ParentName="SWCPStarfighterBullet_CannonAVAA_heavyBASE">
-		<defName>SWCPStarfighterBullet_CannonAVAAheavy_green</defName>
+	<ThingDef ParentName="SWCPStarfighterBullet_AssaultAVAA_heavyBASE">
+		<defName>SWCPStarfighterBullet_AssaultAVAAheavy_green</defName>
 		<graphicData>
 			<texPath>Weapons/Projectiles/AdvAntiVehicle_green</texPath>
 		</graphicData>
 	</ThingDef>
 	
 			<!-- used by: YT-2400 -->
-	<ThingDef ParentName="SWCPStarfighterBullet_CannonAVAA_heavydualBASE">
-		<defName>SWCPStarfighterBullet_CannonAVAAheavy_dualred</defName>
+	<ThingDef ParentName="SWCPStarfighterBullet_AssaultAVAA_heavydualBASE">
+		<defName>SWCPStarfighterBullet_AssaultAVAAheavy_dualred</defName>
 		<graphicData>
 			<texPath>Weapons/Projectiles/DoubleAdvAntiVehicle_red</texPath>
 		</graphicData>
 	</ThingDef>
 	
 		<!-- used by:  -->
-	<ThingDef ParentName="SWCPStarfighterBullet_CannonAVAA_heavydualBASE">
-		<defName>SWCPStarfighterBullet_CannonAVAAheavy_dualgreen</defName>
+	<ThingDef ParentName="SWCPStarfighterBullet_AssaultAVAA_heavydualBASE">
+		<defName>SWCPStarfighterBullet_AssaultAVAAheavy_dualgreen</defName>
 		<graphicData>
 			<texPath>Weapons/Projectiles/DoubleAdvAntiVehicle_green</texPath>
 		</graphicData>
 	</ThingDef>
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		<!-- used by: R-41 Starchaser (special) -->
-	<ThingDef ParentName="guy762_AVandAAprojectileBASE">
-		<defName>SWVehicleBullet_IonTag</defName>
-		<label>ion bolt</label>
-		<graphicData>
-			<texPath>Weapons/Projectiles/sniper_blue</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>3</drawSize>
-		</graphicData>
-		<projectile>
-			<damageDef>guy762_RangedDamage_ion</damageDef>
-			<damageAmountBase>25</damageAmountBase>
-			<armorPenetrationBase>0.125</armorPenetrationBase>
-			<speed>400</speed>
-			<extraDamages>
-				<li>
-					<def>EMP</def>
-					<amount>25</amount>
-				</li>
-			</extraDamages>
-		</projectile>
-	</ThingDef>
-	
-	
-		<!-- used by: Y-Wing (turret), TIE Avenger (prototype) -->
-	<ThingDef ParentName="SWCPStarfighterBullet_Cannon_AntiVehicleAir_BASE">
-		<defName>SWCPStarfighterBullet_CannonAVAA_dualion</defName>
-		<label>ion bolts</label>
-		<graphicData>
-			<texPath>Weapons/Projectiles/longdoubleblaster_blue</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>3</drawSize>
-		</graphicData>
-		<projectile>
-			<damageDef>guy762_RangedDamage_ion</damageDef>
-			<damageAmountBase>50</damageAmountBase>
-			<armorPenetrationBase>0.25</armorPenetrationBase>
-			<speed>200</speed>
-			<extraDamages>
-				<li>
-					<def>EMP</def>
-					<amount>25</amount>
-				</li>
-			</extraDamages>
-		</projectile>
-	</ThingDef>
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-		<!-- used by: B-Wing -->
-	<ThingDef ParentName="SWCPStarfighterBullet_Cannon_AntiVehicleAir_BASE">
-		<defName>SWVehicleBullet_CannonAVAA_mediumion</defName>
-		<label>ion bolt</label>
-		<graphicData>
-			<texPath>Weapons/Projectiles/AdvAntiVehicle_blue</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>3</drawSize>
-		</graphicData>
-		<projectile>
-			<damageDef>guy762_RangedDamage_ion</damageDef>
-			<damageAmountBase>50</damageAmountBase>
-			<armorPenetrationBase>0.325</armorPenetrationBase>
-			<speed>200</speed>
-			<extraDamages>
-				<li>
-					<def>EMP</def>
-					<amount>25</amount>
-				</li>
-			</extraDamages>
-		</projectile>
-	</ThingDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<ThingDef ParentName="SWCPStarfighterBullet_Cannon_AntiVehicleAir_BASE">
-		<defName>SWVehicleBullet_CannonAVAA_heavyion</defName>
-		<label>heavy ion bolt</label>
-		<graphicData>
-			<texPath>Weapons/Projectiles/AdvAntiVehicle_blue</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>4</drawSize>
-		</graphicData>
-		<projectile>
-			<damageDef>guy762_RangedDamage_ion</damageDef>
-			<damageAmountBase>75</damageAmountBase>
-			<armorPenetrationBase>0.325</armorPenetrationBase>
-			<speed>200</speed>
-			<extraDamages>
-				<li>
-					<def>EMP</def>
-					<amount>50</amount>
-				</li>
-			</extraDamages>
-		</projectile>
-	</ThingDef>
-	
-		<!-- used by: Skipray (wings) -->
-	<ThingDef ParentName="SWCPStarfighterBullet_Cannon_AntiVehicleAir_BASE">
-		<defName>SWVehicleBullet_CannonAVAA_heavyion_xplosive</defName>
-		<label>heavy ion bolt</label>
-		<graphicData>
-			<texPath>Weapons/Projectiles/AdvAntiVehicle_blue</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>4</drawSize>
-		</graphicData>
-		<projectile>
-			<damageDef>guy762_ExplosiveDamage_ion</damageDef>
-			<damageAmountBase>75</damageAmountBase>
-			<armorPenetrationBase>0.325</armorPenetrationBase>
-			<speed>200</speed>
-			<explosionRadius>2</explosionRadius>
-			<extraDamages>
-				<li>
-					<def>EMP</def>
-					<amount>50</amount>
-				</li>
-			</extraDamages>
-		</projectile>
-		<thingClass>Projectile_Explosive</thingClass>
-	</ThingDef>
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<!-- special -->
-	
-	<ThingDef ParentName="guy762_AVandAAprojectileBASE">
-		<defName>SWVehicleBullet_MassDriver</defName>
-		<label>mass driver bolt</label>
-		<graphicData>
-			<texPath>Weapons/Projectiles/metalbolt</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>2</drawSize>
-		</graphicData>
-		<projectile>
-			<damageDef>guy762_RangedDamage_AntiVehicleBullet</damageDef>
-			<damageAmountBase>15</damageAmountBase>
-			<armorPenetrationBase>0.5</armorPenetrationBase>
-			<stoppingPower>1</stoppingPower>
-			<speed>200</speed>
-		</projectile>
-	</ThingDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<!-- ordnance -->
-
-	
-	
-	
-	
-	<ThingDef ParentName="guy762_nonAAprojectileBASE">
-		<defName>SWVehicleBullet_SFdumbRocket</defName>
-		<label>rocket</label>
-		<graphicData>
-			<texPath>Weapons/Projectiles/rocket_pink</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>2.5</drawSize>
-		</graphicData>
-		<projectile>
-			<damageDef>guy762_GrenadeDamage_frag</damageDef>
-			<damageAmountBase>25</damageAmountBase>
-			<armorPenetrationBase>0.375</armorPenetrationBase>
-			<speed>100</speed>
-			<explosionRadius>2.5</explosionRadius>
-			<soundAmbient>kotorsound_missileflying</soundAmbient>
-		</projectile>
-		<thingClass>Projectile_Explosive</thingClass>
-	</ThingDef>
-	
-	
-	
-	
-
-
-
-
-
-	
-	<ThingDef ParentName="guy762_nonAAprojectileBASE">
-		<defName>SWVehicleBullet_SFconcMissile</defName>
-		<label>concussion missile</label>
-		<graphicData>
-			<texPath>Weapons/Projectiles/missile_yellow</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>3</drawSize>
-		</graphicData>
-		<projectile>
-			<damageDef>guy762_ExplosiveDamage_conc</damageDef>
-			<damageAmountBase>25</damageAmountBase>
-			<armorPenetrationBase>0.375</armorPenetrationBase>
-			<speed>100</speed>
-			<explosionRadius>2.5</explosionRadius>
-			<soundAmbient>kotorsound_missileflying</soundAmbient>
-			<!-- <extraDamages> -->
-				<!-- <li> -->
-					<!-- <def>Stun</def>        doesn't work -->
-					<!-- <amount>6</amount> -->
-				<!-- </li> -->
-			<!-- </extraDamages> -->
-		</projectile>
-		<thingClass>Projectile_Explosive</thingClass>
-		<comps>
-			<!-- <li Class="VEF.Weapons.CompProperties_HomingProjectile"> -->
-				<!-- <homingDistanceFractionPassed>0.7</homingDistanceFractionPassed> -->
-				<!-- <homingCorrectionTickRate>5</homingCorrectionTickRate> -->
-				<!-- <initialDispersionFromTarget>2.5</initialDispersionFromTarget> -->
-			<!-- </li> -->
-			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
-				<tickRate>10</tickRate>
-				<lifetimeTicks>30000</lifetimeTicks>
-				<delayTurnInTicks>20</delayTurnInTicks>
-				<initialSpreadAngle>4</initialSpreadAngle>
-				<tailMote>guy762_OrbMote</tailMote>
-				<effectLifetime>600</effectLifetime>
-				<effectSize>2</effectSize>
-			</li>
-		</comps>
-	</ThingDef>
-	
-	
-	<ThingDef ParentName="guy762_nonAAprojectileBASE">
-		<defName>SWVehicleBullet_SFionMissile</defName>
-		<label>ion missile</label>
-		<graphicData>
-			<texPath>Weapons/Projectiles/missile_cyan</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>3</drawSize>
-		</graphicData>
-		<projectile>
-			<damageDef>EMP</damageDef>
-			<damageAmountBase>25</damageAmountBase>
-			<armorPenetrationBase>0.375</armorPenetrationBase>
-			<speed>100</speed>
-			<explosionRadius>2.5</explosionRadius>
-			<soundAmbient>kotorsound_missileflying</soundAmbient>
-			<extraDamages>
-				<li>
-					<def>guy762_GrenadeDamage_ion</def>
-					<amount>25</amount>
-				</li>
-			</extraDamages>
-		</projectile>
-		<thingClass>Projectile_Explosive</thingClass>
-		<comps>
-			<!-- <li Class="VEF.Weapons.CompProperties_HomingProjectile"> -->
-				<!-- <homingDistanceFractionPassed>0.7</homingDistanceFractionPassed> -->
-				<!-- <homingCorrectionTickRate>5</homingCorrectionTickRate> -->
-				<!-- <initialDispersionFromTarget>2.5</initialDispersionFromTarget> -->
-			<!-- </li> -->
-			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
-				<tickRate>10</tickRate>
-				<lifetimeTicks>30000</lifetimeTicks>
-				<delayTurnInTicks>20</delayTurnInTicks>
-				<initialSpreadAngle>4</initialSpreadAngle>
-				<tailMote>guy762_OrbMote</tailMote>
-				<effectLifetime>600</effectLifetime>
-				<effectSize>2</effectSize>
-			</li>
-		</comps>
-	</ThingDef>
-	
-	
-	
-	
-	
-	
-	
-	
-	<ThingDef ParentName="guy762_nonAAprojectileBASE">
-		<defName>SWVehicleBullet_SFprotorp</defName>
-		<label>proton torpedo</label>
-		<graphicData>
-			<texPath>Weapons/Projectiles/torp_pink</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>6</drawSize>
-		</graphicData>
-		<projectile>
-			<damageDef>guy762_GrenadeDamage_thermaldet</damageDef>
-			<damageAmountBase>75</damageAmountBase>
-			<armorPenetrationBase>0.875</armorPenetrationBase>
-			<speed>50</speed>
-			<explosionRadius>2</explosionRadius>
-			<soundAmbient>kotorsound_missileflying</soundAmbient>
-		</projectile>
-		<thingClass>Projectile_Explosive</thingClass>
-		<comps>
-			<li Class="VEF.Weapons.CompProperties_HomingProjectile">
-				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
-				<homingCorrectionTickRate>5</homingCorrectionTickRate>
-				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
-			</li>
-		</comps>
-	</ThingDef>
-	
-	
-	<ThingDef ParentName="guy762_nonAAprojectileBASE">
-		<defName>SWVehicleBullet_SFiontorp</defName>
-		<label>ion torpedo</label>
-		<graphicData>
-			<texPath>Weapons/Projectiles/torp_cyan</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>6</drawSize>
-		</graphicData>
-		<projectile>
-			<damageDef>EMP</damageDef>
-			<damageAmountBase>100</damageAmountBase>
-			<armorPenetrationBase>0.50</armorPenetrationBase>
-			<speed>50</speed>
-			<explosionRadius>5</explosionRadius>
-			<soundAmbient>kotorsound_missileflying</soundAmbient>
-			<extraDamages>
-				<li>
-					<def>guy762_GrenadeDamage_ion</def>
-					<amount>50</amount>
-				</li>
-			</extraDamages>
-		</projectile>
-		<thingClass>Projectile_Explosive</thingClass>
-		<comps>
-			<li Class="VEF.Weapons.CompProperties_HomingProjectile">
-				<homingDistanceFractionPassed>0.7</homingDistanceFractionPassed>
-				<homingCorrectionTickRate>5</homingCorrectionTickRate>
-				<initialDispersionFromTarget>2.5</initialDispersionFromTarget>
-			</li>
-		</comps>
-	</ThingDef>
-	
-	
-	
-	
-	
-	
-	
-	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>KotORSFBullet_bomblet</defName>
-		<label>energy bomblet</label>
-		<graphicData>
-			<texPath>Weapons/Projectiles/energybomb</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>2</drawSize>
-		</graphicData>
-		<!-- <thingClass>taranchuk_flightcombat.Bomb</thingClass> -->
-		<projectile>
-		  <damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef>
-		  <damageAmountBase>45</damageAmountBase>
-		  <armorPenetrationBase>0.25</armorPenetrationBase>
-		  <speed>20</speed>
-		  <explosionRadius>5</explosionRadius>
-		  <explosionDamageFalloff>true</explosionDamageFalloff>
-		  <explosionEffect>GiantExplosion</explosionEffect>
-		  <flyOverhead>true</flyOverhead>
-		  <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-		  <soundExplode>kotorsound_bombletexplode</soundExplode>
-		  <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-		  <soundAmbient>MortarRound_Ambient</soundAmbient>
-		</projectile>
-	</ThingDef>
-	
-	
-	<ThingDef ParentName="BaseGrenadeProjectile">
-		<defName>SWVehicleBullet_protonbomb</defName>
-		<label>proton bomb</label>
-		<graphicData>
-			<texPath>Weapons/Projectiles/energybomb</texPath>
-			<graphicClass>Graphic_Single</graphicClass>
-			<shaderType>TransparentPostLight</shaderType>
-			<drawSize>4</drawSize>
-		</graphicData>
-		<thingClass>taranchuk_flightcombat.Bomb</thingClass>
-		<projectile>
-		  <damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef>
-		  <damageAmountBase>90</damageAmountBase>
-		  <armorPenetrationBase>0.5</armorPenetrationBase>
-		  <speed>20</speed>
-		  <explosionRadius>10</explosionRadius>
-		  <explosionDamageFalloff>true</explosionDamageFalloff>
-		  <explosionEffect>GiantExplosion</explosionEffect>
-		  <flyOverhead>true</flyOverhead>
-		  <soundHitThickRoof>Artillery_HitThickRoof</soundHitThickRoof>
-		  <soundExplode>kotorsound_bombletexplode</soundExplode>
-		  <soundImpactAnticipate>MortarRound_PreImpact</soundImpactAnticipate>
-		  <soundAmbient>MortarRound_Ambient</soundAmbient>
-		</projectile>
-	</ThingDef>
-
-	
-	
-
 </Defs>

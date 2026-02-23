@@ -40,13 +40,20 @@
 	</costList>
 	
     <apparel>
-	  <tags>
-		<li>MNC_jetpack_light</li>
-		<li>SWCPSpecificApparelItem_SabineJetpack</li>
-	  </tags>
-	  <wornGraphicPath>SWApparel/Jetpacks/jetpack_light</wornGraphicPath>
-	  <useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>SWApparel/Jetpacks/jetpack_light</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
+		<tags>
+			<li>MNC_jetpack_light</li>
+			<li>SWCPSpecificApparelItem_SabineJetpack</li>
+		</tags>
     </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_hitech</li>
+		<li>guy762TT_MNCArmor</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+		<li>guy762TT_GCWGadgetEquipment_MandoSurplus</li>
+    </tradeTags>
+	
 	<colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
@@ -71,10 +78,7 @@
 		</li-->
       </options>
     </colorGenerator>
-	<tradeTags>
-      <li>guy762TT_KotOREquipment_hitech</li>
-	  <li>guy762TT_MNCArmor</li>
-    </tradeTags>
+	
 	<verbs>
       <li>
         <verbClass>Verb_Jump</verbClass>
@@ -164,14 +168,10 @@
 	</costList>
 	
     <apparel>
-	  <tags>
-		<li>SaV_jetpack</li>
-		<li>SWCPSpecificApparelItem_DashRendarJetpack</li>
-	  </tags>
-	  <wornGraphicPath>SWApparel/Jetpacks/jetpack_heavy</wornGraphicPath>
-	  <useWornGraphicMask>true</useWornGraphicMask>
+		<wornGraphicPath>SWApparel/Jetpacks/jetpack_heavy</wornGraphicPath>
+		<useWornGraphicMask>true</useWornGraphicMask>
 	  
-	  <wornGraphicData Inherit="False">
+		<wornGraphicData Inherit="False">
 			<renderUtilityAsPack>true</renderUtilityAsPack>
 			<east>
 			  <offset>(-0.35,-0.05)</offset>
@@ -190,8 +190,18 @@
 			<thin>  <scale>(0.6,0.6)</scale></thin>
 			<hulk>  <scale>(0.8,0.8)</scale></hulk>
 			<fat>   <scale>(0.8,0.8)</scale></fat>
-		  </wornGraphicData>
+		 </wornGraphicData>
+		 
+		 <tags>
+			<li>SaV_jetpack</li>
+			<li>SWCPSpecificApparelItem_DashRendarJetpack</li>
+		</tags>
     </apparel>
+	<tradeTags>
+		<li>guy762TT_KotOREquipment_hitech</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+    </tradeTags>
+	
 	<colorGenerator Class="ColorGenerator_Options">
       <options>
 		<li>
@@ -200,9 +210,7 @@
 		</li>
       </options>
     </colorGenerator>
-	<tradeTags>
-      <li>guy762TT_KotOREquipment_hitech</li>
-    </tradeTags>
+	
 	<verbs>
       <li>
         <verbClass>Verb_Jump</verbClass>

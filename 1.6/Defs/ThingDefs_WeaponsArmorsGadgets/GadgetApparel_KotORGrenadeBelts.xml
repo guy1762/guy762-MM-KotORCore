@@ -60,7 +60,7 @@
 
 
 
-  <ThingDef ParentName="guy762_GrenadeBeltBase">
+	<ThingDef ParentName="guy762_GrenadeBeltBase">
         <defName>guy762_grenadebelt_frag</defName>
         <label>frag grenade belt</label>
         <description>Fragmentation grenades are very basic. They explode when thrown, showering the enemy in shrapnel. It's not elegant, but it's definitely effective.</description>
@@ -95,7 +95,8 @@
 			</tags>
         </apparel>
 		<tradeTags>
-		  <li>guy762TT_KotOREquipment_consumables</li>
+			<li>guy762TT_KotOREquipment_consumables</li>
+			<li>guy762TT_GCWGadgetEquipment_Illegal</li>
 		</tradeTags>
         <verbs>
             <li>
@@ -177,7 +178,8 @@
 			</tags>
         </apparel>
 		<tradeTags>
-		  <li>guy762TT_KotOREquipment_consumables</li>
+			<li>guy762TT_KotOREquipment_consumables</li>
+			<li>guy762TT_GCWGadgetEquipment_Illegal</li>
 		</tradeTags>
         <verbs>
             <li>
@@ -260,7 +262,8 @@
 			</tags>
         </apparel>
 		<tradeTags>
-		  <li>guy762TT_KotOREquipment_consumables</li>
+			<li>guy762TT_KotOREquipment_consumables</li>
+			<li>guy762TT_GCWGadgetEquipment_Illegal</li>
 		</tradeTags>
         <verbs>
             <li>
@@ -344,7 +347,8 @@
 			</tags>
         </apparel>
 		<tradeTags>
-		  <li>guy762TT_KotOREquipment_consumables</li>
+			<li>guy762TT_KotOREquipment_consumables</li>
+			<li>guy762TT_GCWGadgetEquipment_Illegal</li>
 		</tradeTags>
         <verbs>
             <li>
@@ -432,7 +436,8 @@
 			</tags>
         </apparel>
 		<tradeTags>
-		  <li>guy762TT_KotOREquipment_consumables</li>
+			<li>guy762TT_KotOREquipment_consumables</li>
+			<li>guy762TT_GCWGadgetEquipment_Illegal</li>
 		</tradeTags>
         <verbs>
             <li>
@@ -526,7 +531,8 @@
 			</tags>
         </apparel>
 		<tradeTags>
-		  <li>guy762TT_KotOREquipment_consumables</li>
+			<li>guy762TT_KotOREquipment_consumables</li>
+			<li>guy762TT_GCWGadgetEquipment_Illegal</li>
 		</tradeTags>
         <verbs>
             <li>
@@ -610,7 +616,8 @@
 			</tags>
         </apparel>
 		<tradeTags>
-		  <li>guy762TT_KotORElite</li>
+			<li>guy762TT_KotORElite</li>
+			<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
 		</tradeTags>
         <verbs>
             <li>

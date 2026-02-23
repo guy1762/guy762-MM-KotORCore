@@ -31,17 +31,8 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>KotORClothing_any</li>
-			<li>SaV_apparel_thug</li>
-			<li>SWCPSpecificApparelItem_TwoToneRusticClothing</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Undersuits/scum/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
-			
+			<wornGraphicPath>SWApparel/Undersuits/scum/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -57,13 +48,25 @@
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
-						<color>190,155,120</color> <!-- beige -->
+						<color>(190,155,120)</color> <!-- beige -->
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					</conditionalGraphics>
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>KotORClothing_any</li>
+				<li>SaV_apparel_thug</li>
+				<li>SWCPSpecificApparelItem_TwoToneRusticClothing</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+				<li>SWCPOutfitTag_HuttSoldier</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -125,21 +128,25 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>KotORClothing_any</li>
-			<li>KotORClothing_civilian_villager</li>
-			<li>KotORClothing_civilian_hooded</li>
-			<li>SaV_apparel_thug</li>
-			<li>SithRem_apparel_undersuit</li>
-			<li>PartisanAlliance_trooperOnSkin</li>
-			<li>PartisanAlliance_sniperOnSkin</li>
-			<li>SWCPSpecificApparelItem_RusticClothing</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Undersuits/scum/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>false</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
+			<wornGraphicPath>SWApparel/Undersuits/scum/Apparel</wornGraphicPath>
+			<useWornGraphicMask>false</useWornGraphicMask>
+			
+			<tags>
+				<li>KotORClothing_any</li>
+				<li>KotORClothing_civilian_villager</li>
+				<li>KotORClothing_civilian_hooded</li>
+				<li>SaV_apparel_thug</li>
+				<li>SithRem_apparel_undersuit</li>
+				<li>PartisanAlliance_trooperOnSkin</li>
+				<li>PartisanAlliance_sniperOnSkin</li>
+				<li>SWCPSpecificApparelItem_RusticClothing</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+				<li>KotOROutfitTag_RebelCommando</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -202,18 +209,8 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>KotORClothing_any</li>
-			<li>SaV_apparel_thug</li>
-			<li>PartisanAlliance_sniperOnSkin</li>
-			<li>SWCPSpecificApparelItem_BlackPantsTwoToneRusticClothing</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Undersuits/scum/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
-		  
+			<wornGraphicPath>SWApparel/Undersuits/scum/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -229,13 +226,25 @@
 						<alts><li><triggers><li>CustomColorAIsSet</li></triggers><customColorA>(1,1,1)</customColorA> </li></alts>
 					  </colorA>
 					  <colorB>
-						<color>50,50,50</color> <!-- black -->
+						<color>(50,50,50)</color> <!-- black -->
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					</conditionalGraphics>
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>KotORClothing_any</li>
+				<li>SaV_apparel_thug</li>
+				<li>PartisanAlliance_sniperOnSkin</li>
+				<li>SWCPSpecificApparelItem_BlackPantsTwoToneRusticClothing</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -309,17 +318,18 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>KotORClothing_any</li>
-			<li>KotORClothing_civilian_mid</li>
-			<li>KotORClothing_smuggler</li>
-			<li>SWCPSpecificApparelItem_PlainClothing</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Undersuits/civilian/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
+			<wornGraphicPath>SWApparel/Undersuits/civilian/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>KotORClothing_any</li>
+				<li>KotORClothing_civilian_mid</li>
+				<li>KotORClothing_smuggler</li>
+				<li>SWCPSpecificApparelItem_PlainClothing</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>SWCPOutfitTag_Smuggler</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -389,17 +399,9 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>NewRepublic_alderaanguard</li>
-			<li>SWCPSpecificApparelItem_TwoTonePlainClothing</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Undersuits/rebel/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
-		  
-		  <renderNodeProperties>
+			<wornGraphicPath>SWApparel/Undersuits/rebel/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
 					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
@@ -421,6 +423,16 @@
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>NewRepublic_alderaanguard</li>
+				<li>SWCPSpecificApparelItem_TwoTonePlainClothing</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>SWCPOutfitTag_Smuggler</li>
+				<li>SWGCWOutfitTag_RebelFleetTrooper</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -482,22 +494,10 @@
 		  <Cloth>75</Cloth>
 		</costList>
 		
-		<apparel>
-		  <tags Inherit="False">
-			<li>KotORClothing_any</li>
-			<li>KotORClothing_smuggler</li>
-			<li>KotORClothing_civilian_punk</li>
-			<li>SaV_apparel_thug</li>
-			<li>SaV_apparel_crimelord</li>
-			<li>SWCPSpecificApparelItem_SmugglerClothing</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Undersuits/smuggler/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
-		  
-		  <renderNodeProperties>
+		<apparel> 
+			<wornGraphicPath>SWApparel/Undersuits/smuggler/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
 					<workerClass>BigAndSmall.URenderWorker_Apparel</workerClass>
@@ -519,6 +519,19 @@
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>KotORClothing_any</li>
+				<li>KotORClothing_smuggler</li>
+				<li>KotORClothing_civilian_punk</li>
+				<li>SaV_apparel_thug</li>
+				<li>SaV_apparel_crimelord</li>
+				<li>SWCPSpecificApparelItem_SmugglerClothing</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>SWCPOutfitTag_Smuggler</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -595,19 +608,8 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>KotORClothing_any</li>
-			<li>KotORClothing_civilian_bougie</li>
-			<li>SaV_apparel_roguetrader</li>
-			<li>KotORRoyaltyTag_drip</li>
-			<li>SWCPSpecificApparelItem_TrendyClothing</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Undersuits/trendy/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
-		  
+			<wornGraphicPath>SWApparel/Undersuits/trendy/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -630,6 +632,18 @@
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>KotORClothing_any</li>
+				<li>KotORClothing_civilian_bougie</li>
+				<li>SaV_apparel_roguetrader</li>
+				<li>KotORRoyaltyTag_drip</li>
+				<li>SWCPSpecificApparelItem_TrendyClothing</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>SWCPOutfitTag_RichCivilian</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -686,17 +700,8 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>KotORClothing_any</li>
-			<li>KotORClothing_civilian_bougie</li>
-			<li>SWCPSpecificApparelItem_CosmopolitanClothing</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Undersuits/cosmopolitan/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
-		  
+			<wornGraphicPath>SWApparel/Undersuits/cosmopolitan/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -719,6 +724,16 @@
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>KotORClothing_any</li>
+				<li>KotORClothing_civilian_bougie</li>
+				<li>SWCPSpecificApparelItem_CosmopolitanClothing</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>SWCPOutfitTag_RichCivilian</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -781,18 +796,8 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>KotORClothing_any</li>
-			<li>KotORClothing_civilian_mid</li>
-			<li>KotORClothing_civilian_punk</li>
-			<li>SWCPSpecificApparelItem_LightClothing</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Undersuits/light/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
-		  
+			<wornGraphicPath>SWApparel/Undersuits/light/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -815,6 +820,17 @@
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			 <tags>
+				<li>KotORClothing_any</li>
+				<li>KotORClothing_civilian_mid</li>
+				<li>KotORClothing_civilian_punk</li>
+				<li>SWCPSpecificApparelItem_LightClothing</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>SWCPOutfitTag_Smuggler</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -883,16 +899,8 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>NewRepublic_RebelSniperOnSkin</li>
-			<li>SWCPSpecificApparelItem_RebelCamoClothing</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Undersuits/rebel_camo/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Soldier</li>
-		  </defaultOutfitTags>
-		  
+			<wornGraphicPath>SWApparel/Undersuits/rebel_camo/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -915,9 +923,20 @@
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>NewRepublic_RebelSniperOnSkin</li>
+				<li>SWCPSpecificApparelItem_RebelCamoClothing</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+				<li>SWGCWOutfitTag_RebelSoldier</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -978,16 +997,8 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>NewRepublic_RebelTrooperOnSkin</li>
-			<li>SWCPSpecificApparelItem_AltRebelCamoClothing</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Undersuits/rebel_camo2/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Soldier</li>
-		  </defaultOutfitTags>
-		  
+			<wornGraphicPath>SWApparel/Undersuits/rebel_camo2/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -1016,9 +1027,20 @@
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>NewRepublic_RebelTrooperOnSkin</li>
+				<li>SWCPSpecificApparelItem_AltRebelCamoClothing</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+				<li>SWGCWOutfitTag_RebelSoldier</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -1092,20 +1114,30 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>RemnantEmpire_armytrooper</li>
-			<li>NewRepublic_RebelTrooperOnSkin</li>
-			<li>NewRepublic_RebelSniperOnSkin</li>
-			<li>SWCPSpecificApparelItem_GenericUniform</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/GenericMilitaryFatigues/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
+			<wornGraphicPath>SWApparel/GenericMilitaryFatigues/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			
+			<tags>
+				<li>RemnantEmpire_armytrooper</li>
+				<li>NewRepublic_RebelTrooperOnSkin</li>
+				<li>NewRepublic_RebelSniperOnSkin</li>
+				<li>SWCPSpecificApparelItem_GenericUniform</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
+				<li>SWCPOutfitTag_Engineer</li>
+				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+				<li>SWCPOutfitTag_HeavySoldier</li>
+				<li>SWGCWOutfitTag_RebelSoldier</li>
+				<li>SWGCWOutfitTag_ImpArmyTrooper</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
+			<li>guy762TT_GCWApparel</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -1177,20 +1209,34 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>KotORClothing_undersuit</li>
-			<li>KotORClothing_civilian_prole</li>
-			<li>SithRem_apparel_undersuit</li>
-			<li>SWCPSpecificApparelItem_DyeableFatigues</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Undersuits/worker/Apparel</wornGraphicPath>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
+			<wornGraphicPath>SWApparel/Undersuits/worker/Apparel</wornGraphicPath>
+			
+			<tags>
+				<li>KotORClothing_undersuit</li>
+				<li>KotORClothing_civilian_prole</li>
+				<li>SithRem_apparel_undersuit</li>
+				<li>SWCPSpecificApparelItem_DyeableFatigues</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
+				<li>SWCPOutfitTag_Engineer</li>
+				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+				<li>SWCPOutfitTag_HeavySoldier</li>
+				<li>SWCPOutfitTag_Pilot</li>
+				<li>SWGCWOutfitTag_RebelPilot</li>
+				<li>SWGCWOutfitTag_ImpArmyCommando</li>
+				<li>KotOROutfitTag_SithTrooper</li>
+				<li>SWCPOutfitTag_Mandalorian</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
 			<li>guy762TT_KotORUnderArmor</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+			<li>guy762TT_GCWArmor_PDFSpaceGear</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
+			<li>guy762TT_GCWArmor_RebelSpaceGear</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -1249,20 +1295,8 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>KotORClothing_undersuit</li>
-			<li>KotORClothing_civilian_prole</li>
-			<li>SWCPSpecificApparelItem_StripedFatigues</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Undersuits/worker/Apparel</wornGraphicPath>
-		  <useWornGraphicMask>true</useWornGraphicMask>
-		  <defaultOutfitTags Inherit="False">
-			<li>Worker</li>
-		  </defaultOutfitTags>
-		  <!--renderSkipFlags>
-			<li>Body</li>
-		  </renderSkipFlags-->
-		  
+			<wornGraphicPath>SWApparel/Undersuits/worker/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -1285,6 +1319,19 @@
 					<drawData> <dataNorth> <layer>21</layer> </dataNorth> </drawData>	<!-- ONSKIN -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>KotORClothing_undersuit</li>
+				<li>KotORClothing_civilian_prole</li>
+				<li>SWCPSpecificApparelItem_StripedFatigues</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
+				<li>SWCPOutfitTag_Engineer</li>
+				<li>SWCPOutfitTag_Smuggler</li>
+				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
+				<li>SWCPOutfitTag_Pilot</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -1342,22 +1389,35 @@
 		</costList>
 		
 		<apparel>
-		  <tags Inherit="False">
-			<li>KotORArmor_undersuit</li>
-			<li>MNC_outfit_mid</li>
-			<li>MNC_outfit_heavy</li>
-			<li>EVA</li>
-			<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
-		  </tags>
-		  <wornGraphicPath>SWApparel/Undersuits/vac/Apparel</wornGraphicPath>
-		  <defaultOutfitTags Inherit="False">
-			<li>Soldier</li>
-		  </defaultOutfitTags>
+			<wornGraphicPath>SWApparel/Undersuits/vac/Apparel</wornGraphicPath>
+			
+			<tags>
+				<li>KotORArmor_undersuit</li>
+				<li>MNC_outfit_mid</li>
+				<li>MNC_outfit_heavy</li>
+				<li>EVA</li>
+				<li>SWCPSpecificApparelItem_VacSealedBodysuit</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_HeavySoldier</li><li>Soldier</li>
+				<li>SWCPOutfitTag_Pilot</li>
+				<li>SWGCWOutfitTag_RebelPilot</li>
+				<li>SWGCWOutfitTag_Stormtrooper</li>
+				<li>SWGCWOutfitTag_ImpNavyCommando</li>
+				<li>KotOROutfitTag_SithCommando</li>
+				<li>KotOROutfitTag_OldRepubCommando</li>
+				<li>SWCPOutfitTag_Mandalorian</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORArmor</li>
 			<li>guy762TT_KotORUnderArmor</li>
 			<li>guy762TT_KotORArmor_space</li>
+			<li>guy762TT_GCWArmor_PDFSurplus</li>
+			<li>guy762TT_GCWArmor_PDFSpaceGear</li>
+			<li>guy762TT_GCWArmor_RebelSurplus</li>
+			<li>guy762TT_GCWArmor_RebelSpaceGear</li>
+			<li>guy762TT_GCWArmor_ImpSurplus</li>
 		</tradeTags>
 		<colorGenerator Class="ColorGenerator_Options" Inherit="False">
 			<options>
@@ -1456,15 +1516,8 @@
 				<li>Shoulders</li>
 				<li>Arms</li>
 			</bodyPartGroups>
-			<tags Inherit="False">
-				<li>KotORClothing_smuggler</li>
-				<li>KotORClothing_civilian_punk</li>
-				<li>KotORRoyaltyTag_drip</li>
-				<li>SWCPSpecificApparelItem_KotORScoundrelJacket</li>
-			</tags>
 			<wornGraphicPath>SWApparel/Accessories/jacket_smuggler/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -1487,6 +1540,17 @@
 					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>KotORClothing_smuggler</li>
+				<li>KotORClothing_civilian_punk</li>
+				<li>KotORRoyaltyTag_drip</li>
+				<li>SWCPSpecificApparelItem_KotORScoundrelJacket</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>SWCPOutfitTag_Smuggler</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -1579,14 +1643,8 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 			</bodyPartGroups>
-			<tags Inherit="False">
-				<li>KotORClothing_civilian_bougie</li>
-				<li>SaV_apparel_mission</li>
-				<li>SWCPSpecificApparelItem_TrendyVest</li>
-			</tags>
 			<wornGraphicPath>SWApparel/Accessories/vest_mission/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
-			
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -1609,6 +1667,17 @@
 					<drawData> <dataNorth> <layer>22</layer> </dataNorth> </drawData>	<!-- MIDDLE -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>KotORClothing_civilian_bougie</li>
+				<li>SaV_apparel_mission</li>
+				<li>SWCPSpecificApparelItem_TrendyVest</li>
+			</tags>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>SWCPOutfitTag_RichCivilian</li>
+				<li>SWCPOutfitTag_Smuggler</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
@@ -1706,7 +1775,10 @@
 				<li>Neck</li>
 				<li>Shoulders</li>
 			</bodyPartGroups>
-			<tags Inherit="False">
+			<wornGraphicPath>SWApparel/Accessories/vest_scout/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			
+			<tags>
 				<li>KotORClothing_smuggler</li>
 				<li>KotORClothing_civilian_prole</li>
 				<li>KotORClothing_civilian_mid</li>
@@ -1714,8 +1786,13 @@
 				<li>NewRepublic_rebeltrooper</li>
 				<li>SWCPSpecificApparelItem_ScoutVest</li>
 			</tags>
-			<wornGraphicPath>SWApparel/Accessories/vest_scout/Apparel</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
+			<defaultOutfitTags>
+				<li>SWCPOutfitTag_Worker</li><li>Worker</li>
+				<li>SWCPOutfitTag_Civilian</li>
+				<li>SWCPOutfitTag_Smuggler</li>
+				<li>SWGCWOutfitTag_RebelFleetTrooper</li>
+				<li>SWGCWOutfitTag_RebelSoldier</li>
+			</defaultOutfitTags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>

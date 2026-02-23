@@ -318,7 +318,7 @@
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<apparel>
-			<defaultOutfitTags Inherit="False">
+			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
@@ -359,7 +359,7 @@
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<apparel>
-			<defaultOutfitTags Inherit="False">
+			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
@@ -422,7 +422,7 @@
 			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
 		</descriptionHyperlinks>
 		<apparel>
-			<defaultOutfitTags Inherit="False">
+			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
@@ -491,7 +491,7 @@
 			<ThingDef MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</ThingDef>
 		</descriptionHyperlinks>
 		<apparel>
-			<defaultOutfitTags Inherit="False">
+			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
@@ -637,7 +637,7 @@
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<apparel>
-			<defaultOutfitTags Inherit="False">
+			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
@@ -698,7 +698,7 @@
 			<EquipDelay>3</EquipDelay>
 		</statBases>
 		<apparel>
-			<defaultOutfitTags Inherit="False">
+			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>
@@ -1272,7 +1272,7 @@
 			<Insulation_Heat>5</Insulation_Heat>
 		</statBases>
 		<apparel>
-			<defaultOutfitTags Inherit="False">
+			<defaultOutfitTags>
 				<li>Soldier</li>
 			</defaultOutfitTags>
 			<countsAsClothingForNudity>true</countsAsClothingForNudity>

@@ -25,8 +25,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -54,8 +54,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -83,8 +83,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -112,8 +112,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -141,8 +141,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -170,8 +170,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -199,8 +199,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -228,8 +228,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>75</min>
-					<max>150</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -257,95 +257,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
-				</distRange>  
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<SoundDef>
-		<defName>kotorsound_TankAntiInfantryGun</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/wpn_cmbtSpdr_blaster_fire</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>35</min>
-				<max>35</max>
-				</volumeRange>  		
-				<pitchRange>
-					<min>1</min>				
-					<max>1</max>
-				</pitchRange>
-				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
-				</distRange>  
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<SoundDef>
-		<defName>kotorsound_TankAntiVehicleGun</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/wpn_IFT_blaster_fire</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>35</min>
-				<max>35</max>
-				</volumeRange>  		
-				<pitchRange>
-					<min>1</min>				
-					<max>1</max>
-				</pitchRange>
-				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
-				</distRange>  
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<SoundDef>
-		<defName>kotorsound_TankMissileLauncher</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/wpn_IFT_missile_fire</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>35</min>
-				<max>35</max>
-				</volumeRange>  		
-				<pitchRange>
-					<min>1</min>				
-					<max>1</max>
-				</pitchRange>
-				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -353,64 +266,6 @@
 	</SoundDef>
 	
 	
-	<SoundDef>
-		<defName>kotorsound_T2BGun</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/GUN_TANK_CANNON</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>35</min>
-				<max>35</max>
-				</volumeRange>  		
-				<pitchRange>
-					<min>1</min>				
-					<max>1</max>
-				</pitchRange>
-				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
-				</distRange>  
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	
-	<SoundDef>
-		<defName>kotorsound_TIECrawlerGun</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/GUN_TIE_CRAWLER</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>35</min>
-				<max>35</max>
-				</volumeRange>  		
-				<pitchRange>
-					<min>1</min>				
-					<max>1</max>
-				</pitchRange>
-				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
-				</distRange>  
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
 	
 	<SoundDef>
 		<defName>kotorsound_nantexgun</defName>	
@@ -433,8 +288,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -462,9 +317,9 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
-				</distRange>  
+					<min>150</min>
+					<max>200</max>
+				</distRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -491,8 +346,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -520,8 +375,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -549,8 +404,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -578,8 +433,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -608,8 +463,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -637,8 +492,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -667,8 +522,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -696,8 +551,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -728,8 +583,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -760,8 +615,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -792,8 +647,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -821,8 +676,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -833,94 +688,11 @@
 	
 	
 	
-	<SoundDef>
-		<defName>kotorsound_AATPontoonGun</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/wpn_tank_turret</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>45</min>
-				<max>45</max>
-				</volumeRange>  		
-				<pitchRange>
-					<min>1</min>				
-					<max>1</max>
-				</pitchRange>
-				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
-				</distRange>  
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<SoundDef>
-		<defName>kotorsound_AATDorsalGun</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/wpn_AAT_missleLauncher_fire</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>45</min>
-				<max>45</max>
-				</volumeRange>  		
-				<pitchRange>
-					<min>1</min>				
-					<max>1</max>
-				</pitchRange>
-				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
-				</distRange>  
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
 	
 	
 	
-	<SoundDef>
-		<defName>kotorsound_EaWTankMissile</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/GUN_TANK_MISSILE_2</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>35</min>
-				<max>35</max>
-				</volumeRange>  		
-				<pitchRange>
-					<min>1</min>				
-					<max>1</max>
-				</pitchRange>
-				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
-				</distRange>  
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
+	
+	
 	
 	<SoundDef>
 		<defName>kotorsound_SWJSFJediStarfighterGun</defName>	
@@ -943,185 +715,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
-				</distRange>  
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	
-	
-	
-	
-	
-	<SoundDef>
-		<defName>kotorsound_AATgun</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/tanklasr</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>45</min>
-				<max>45</max>
-				</volumeRange>  		
-				<pitchRange>
-					<min>0.8</min>				
-					<max>1.2</max>
-				</pitchRange>
-				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
-				</distRange>  
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<SoundDef>
-		<defName>kotorsound_ATPTgun</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/wpn_spdrbike_blaster_fire</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>45</min>        
-				<max>45</max>
-				</volumeRange>  		
-				<pitchRange>
-					<min>0.8</min>				
-					<max>1.2</max>
-				</pitchRange>			
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<SoundDef>
-		<defName>kotorsound_ATSTgun</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/wpn_atst_chinBlaster_fire</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>45</min>        
-				<max>45</max>
-				</volumeRange>			
-				<pitchRange>
-					<min>1</min>				
-					<max>1</max>
-				</pitchRange>
-				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
-				</distRange>  
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<SoundDef>
-		<defName>kotorsound_ATATgun</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Folder">
-						<clipFolderPath>kotorshipweapons/JK_ATST</clipFolderPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>45</min>        
-				<max>45</max>
-				</volumeRange>			
-				<pitchRange>
-					<min>1</min>				
-					<max>1</max>
-				</pitchRange>
-				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>100</min>
-					<max>500</max>
-				</distRange>  
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	
-	
-	<SoundDef>
-		<defName>kotorsound_ATATsidegun</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/wpn_AAT_mainBlaster_fire</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>45</min>        
-				<max>45</max>
-				</volumeRange>			
-				<pitchRange>
-					<min>1</min>				
-					<max>1</max>
-				</pitchRange>
-				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>100</min>
-					<max>250</max>
-				</distRange>  
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
-	
-	<SoundDef>
-		<defName>kotorsound_ATDP</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/wep_GEN_laserAtat_01</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>45</min>
-				<max>45</max>
-				</volumeRange>  		
-				<pitchRange>
-					<min>1</min>				
-					<max>1</max>
-				</pitchRange>
-				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -1141,8 +736,15 @@
 	
 	
 	
+	
+	
+	
+	
+	
+	
+	
 	<SoundDef>
-		<defName>kotorsound_ioncannon</defName>	
+		<defName>kotorsound_VehicleIonCannonMix</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>	
@@ -1154,16 +756,16 @@
 					</li>
 				</grains>	
 				<volumeRange>
-				<min>45</min>
-				<max>45</max>
+				<min>65</min>
+				<max>65</max>
 				</volumeRange>  		
 				<pitchRange>
 					<min>1</min>				
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -1191,8 +793,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -1218,7 +820,7 @@
 				</grains>	
 				
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>100</min>
+					<min>150</min>
 					<max>300</max>
 				</distRange>  
 				
@@ -1242,34 +844,7 @@
 	
 	
 	
-	<SoundDef>
-		<defName>kotorsound_EaWturret</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/GUN_TURRET_1</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>45</min>
-				<max>45</max>
-				</volumeRange>  		
-				<pitchRange>
-					<min>0.8</min>				
-					<max>1.2</max>
-				</pitchRange>
-				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>40</min>
-					<max>70</max>
-				</distRange>  
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
+	
 	
 	
 	
@@ -1295,39 +870,16 @@
 					<max>1.2</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
-				</distRange>  
+					<min>150</min>
+					<max>200</max>
+				</distRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
 	</SoundDef>
 	
 	
-	<SoundDef>
-		<defName>kotorsound_EaWturret_AA_quieter</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/GUN_ANTI_AIR</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-					<min>15</min>
-					<max>15</max>
-				</volumeRange>  		
-				<pitchRange>
-					<min>0.8</min>				
-					<max>1.2</max>
-				</pitchRange>
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
+	
 	
 	
 	
@@ -1359,9 +911,9 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
-				</distRange>  				
+					<min>150</min>
+					<max>200</max>
+				</distRange>
 				<sustainLoop>False</sustainLoop>
 			</li>
 		</subSounds>
@@ -1389,8 +941,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -1418,8 +970,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -1447,8 +999,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -1476,8 +1028,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -1505,8 +1057,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -1535,8 +1087,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -1564,8 +1116,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -1599,8 +1151,8 @@
 					<max>1.2</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -1610,61 +1162,7 @@
 	
 	
 	
-	<SoundDef>
-		<defName>kotorsound_beamturret_fire</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/wpn_gunship_laser_fire</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>35</min>
-				<max>35</max>
-				</volumeRange>  		
-				<pitchRange>
-					<min>1</min>				
-					<max>1</max>
-				</pitchRange>
-				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
-				</distRange>  
-				<sustainLoop>False</sustainLoop>
-			</li>
-		</subSounds>
-	</SoundDef>
 	
-	<SoundDef>
-		<defName>kotorsound_beam_midair</defName>	
-		<context>MapOnly</context>
-		<eventNames />	
-		<maxSimultaneous>1</maxSimultaneous>	
-		<sustain>true</sustain>
-		<priorityMode>PrioritizeNearest</priorityMode>
-		<subSounds>
-			<li>
-				<grains>
-					<li Class="AudioGrain_Clip">
-						<clipPath>kotorshipweapons/wpn_gunship_laser_lp</clipPath>
-					</li>
-				</grains>	
-				<volumeRange>
-				<min>35</min>
-				<max>35</max>
-				</volumeRange>  		
-				<pitchRange>
-					<min>1</min>				
-					<max>1</max>
-				</pitchRange>
-				<sustainLoop>True</sustainLoop>				
-			</li>
-		</subSounds>
-	</SoundDef>
 	
 	
 	
@@ -1699,8 +1197,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>
@@ -1729,8 +1227,8 @@
 					<max>1</max>
 				</pitchRange>
 				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
-					<min>50</min>
-					<max>100</max>
+					<min>150</min>
+					<max>200</max>
 				</distRange>  
 				<sustainLoop>False</sustainLoop>
 			</li>

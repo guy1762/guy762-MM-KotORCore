@@ -35,7 +35,8 @@
 	  </tags>
     </apparel>
 	<tradeTags>
-      <li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
     </tradeTags>
   </ThingDef>
   
@@ -85,7 +86,8 @@
 	  </tags>
     </apparel>
 	<tradeTags>
-      <li>guy762TT_KotOREquipment</li>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
     </tradeTags>
   </ThingDef>
   
@@ -161,8 +163,9 @@
 		  </tags>
 		</apparel>
 		<tradeTags>
-		  <li>guy762TT_KotOREquipment_apparel</li>
-		  <li>guy762TT_CzerkaProduct</li>
+			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_CzerkaProduct</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
 		</tradeTags>
 	</ThingDef>
   
@@ -230,8 +233,9 @@
 	  </tags>
     </apparel>
 	<tradeTags>
-      <li>guy762TT_KotOREquipment_apparel</li>
-      <li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
     </tradeTags>
   </ThingDef>
   
@@ -282,8 +286,9 @@
 	  </tags>
     </apparel>
 	<tradeTags>
-      <li>guy762TT_KotOREquipment_apparel</li>
-	  <li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
     </tradeTags>
   </ThingDef>
   
@@ -355,8 +360,9 @@
 	  </tags>
     </apparel>
 	<tradeTags>
-      <li>guy762TT_KotOREquipment_apparel</li>
-	  <li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
     </tradeTags>
     <comps>
       <li Class="CompProperties_CauseHediff_Apparel">
@@ -442,8 +448,9 @@
 	  </tags>
     </apparel>
 	<tradeTags>
-      <li>guy762TT_KotOREquipment_apparel</li>
-	  <li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
     </tradeTags>
     <comps>
       <li Class="CompProperties_CauseHediff_Apparel">
@@ -556,8 +563,9 @@
 	  </tags>
     </apparel>
 	<tradeTags>
-      <li>guy762TT_KotOREquipment_apparel</li>
-	  <li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
     </tradeTags>
     <comps>
       <li Class="CompProperties_CauseHediff_Apparel">
@@ -627,8 +635,9 @@
 	  </tags>
     </apparel>
 	<tradeTags>
-      <li>guy762TT_KotOREquipment_apparel</li>
-	  <li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
     </tradeTags>
     <comps>
       <li Class="CompProperties_CauseHediff_Apparel">
@@ -694,8 +703,9 @@
 	  </tags>
     </apparel>
 	<tradeTags>
-      <li>guy762TT_KotOREquipment_apparel</li>
-	  <li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
     </tradeTags>
     <comps>
       <li Class="CompProperties_CauseHediff_Apparel">
@@ -794,8 +804,9 @@
 	  </tags>
     </apparel>
 	<tradeTags>
-      <li>guy762TT_KotORElite</li>
-	  <li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_KotORElite</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
     </tradeTags>
   </ThingDef>
   
@@ -840,8 +851,9 @@
 	  </tags>
     </apparel>
 	<tradeTags>
-      <li>guy762TT_KotORElite</li>
-	  <li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_KotORElite</li>
+		<li>guy762TT_AdascorpTrader_gadgets</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
     </tradeTags>
     <comps>
       <li Class="CompProperties_CauseHediff_Apparel">
@@ -940,7 +952,9 @@
 	  </tags>
     </apparel>
 	<tradeTags>
-      <li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_KotOREquipment_apparel</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
+		<li>guy762TT_GCWGadgetEquipment_JediStuff</li>
     </tradeTags>
   </ThingDef>
   
@@ -977,7 +991,9 @@
 	  </tags>
     </apparel>
 	<tradeTags>
-      <li>guy762TT_KotORElite</li>
+		<li>guy762TT_KotORElite</li>
+		<li>guy762TT_GCWGadgetEquipment_ExoticIllegal</li>
+		<li>guy762TT_GCWGadgetEquipment_JediStuff</li>
     </tradeTags>
   </ThingDef>
   

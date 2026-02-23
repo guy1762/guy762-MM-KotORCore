@@ -219,7 +219,7 @@
     <chemicalNeed>guy762_chemneed_spice</chemicalNeed>
     <comps>
       <li Class="HediffCompProperties_SeverityPerDay">
-        <severityPerDay>-0.03</severityPerDay>
+        <severityPerDay>-0.075</severityPerDay>
         <showDaysToRecover>true</showDaysToRecover>
       </li>
     </comps>
@@ -237,7 +237,7 @@
 		<capMods>
 			<li>
 			  <capacity>Consciousness</capacity>
-			  <offset>-0.75</offset>
+			  <offset>-0.25</offset>
 			</li>
 			<li>
 			  <capacity>Moving</capacity>

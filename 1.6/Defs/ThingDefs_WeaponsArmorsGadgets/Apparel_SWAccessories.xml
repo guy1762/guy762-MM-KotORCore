@@ -35,7 +35,14 @@
 				<!--li>Neck</li>
 				<li>Shoulders</li-->
 			</bodyPartGroups>
-			<tags Inherit="False">
+			<wornGraphicPath>SWApparel/Accessories/suspenders_simple/Apparel</wornGraphicPath>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			
+			<tags>
 				<li>KotORAccessory_any</li>
 				<li>KotORAccessory_light</li>
 				<li>KotORAccessory_engi</li>
@@ -50,15 +57,10 @@
 				<li>SWCPSpecificApparelItem_SimpleSuspenders</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
-			<wornGraphicPath>SWApparel/Accessories/suspenders_simple/Apparel</wornGraphicPath>
-			<drawData>
-			  <dataNorth>
-				<layer>65</layer>
-			  </dataNorth>
-			</drawData>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
 		</tradeTags>
 		<costList>
 			<KOTOR_FabricArmorweave>30</KOTOR_FabricArmorweave>
@@ -138,7 +140,14 @@
 				<!--li>Neck</li>
 				<li>Shoulders</li-->
 			</bodyPartGroups>
-			<tags Inherit="False">
+			<wornGraphicPath>SWApparel/Accessories/suspenders_engi/Apparel</wornGraphicPath>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			
+			<tags>
 				<li>KotORAccessory_any</li>
 				<li>KotORAccessory_engi</li>
 				<li>KotORAccessory_specops</li>
@@ -146,15 +155,10 @@
 				<li>SWCPSpecificApparelItem_EngineerSuspenders</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
-			<wornGraphicPath>SWApparel/Accessories/suspenders_engi/Apparel</wornGraphicPath>
-			<drawData>
-			  <dataNorth>
-				<layer>65</layer>
-			  </dataNorth>
-			</drawData>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
 		</tradeTags>
 		<costList>
 			<KOTOR_FabricArmorweave>35</KOTOR_FabricArmorweave>
@@ -225,7 +229,14 @@
 				<!--li>Neck</li>
 				<li>Shoulders</li-->
 			</bodyPartGroups>
-			<tags Inherit="False">
+			<wornGraphicPath>SWApparel/Accessories/suspenders_heavy/Apparel</wornGraphicPath>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			
+			<tags>
 				<li>KotORAccessory_any</li>
 				<li>KotORAccessory_heavy</li>
 				<li>KotORAccessory_trader</li>
@@ -233,15 +244,10 @@
 				<li>SWCPSpecificApparelItem_HeavySuspenders</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
-			<wornGraphicPath>SWApparel/Accessories/suspenders_heavy/Apparel</wornGraphicPath>
-			<drawData>
-			  <dataNorth>
-				<layer>65</layer>
-			  </dataNorth>
-			</drawData>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
 		</tradeTags>
 		<costList>
 			<KOTOR_FabricArmorweave>50</KOTOR_FabricArmorweave>
@@ -313,7 +319,14 @@
 				<!--li>Neck</li>
 				<li>Shoulders</li-->
 			</bodyPartGroups>
-			<tags Inherit="False">
+			<wornGraphicPath>SWApparel/Accessories/bandolier_double/Apparel</wornGraphicPath>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			
+			<tags>
 				<li>KotORAccessory_any</li>
 				<li>KotORAccessory_heavy</li>
 				<li>KotORAccessory_outlaw</li>
@@ -330,15 +343,10 @@
 				<li>SWCPSpecificApparelItem_DoubleBandolier</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
-			<wornGraphicPath>SWApparel/Accessories/bandolier_double/Apparel</wornGraphicPath>
-			<drawData>
-			  <dataNorth>
-				<layer>65</layer>
-			  </dataNorth>
-			</drawData>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
 		</tradeTags>
 		<costList>
 			<KOTOR_FabricArmorweave>30</KOTOR_FabricArmorweave>
@@ -410,7 +418,15 @@
 				<!--li>Neck</li>
 				<li>Shoulders</li-->
 			</bodyPartGroups>
-			<tags Inherit="False">
+			<wornGraphicPath>SWApparel/Accessories/bandolier_chewbacca/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			
+			<tags>
 				<li>KotORAccessory_any</li>
 				<li>KotORAccessory_heavy</li>
 				<li>KotORAccessory_outlaw</li>
@@ -423,16 +439,10 @@
 				<li>SWCPSpecificApparelItem_ChewbaccaBandolier</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
-			<wornGraphicPath>SWApparel/Accessories/bandolier_chewbacca/Apparel</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
-			<drawData>
-			  <dataNorth>
-				<layer>65</layer>
-			  </dataNorth>
-			</drawData>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWCharacterItem</li>
 		</tradeTags>
 		<costList>
 			<KOTOR_FabricArmorweave>30</KOTOR_FabricArmorweave>
@@ -504,7 +514,15 @@
 				<!--li>Neck</li>
 				<li>Shoulders</li-->
 			</bodyPartGroups>
-			<tags Inherit="False">
+			<wornGraphicPath>SWApparel/Accessories/bandolier_traveler/Apparel</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			
+			<tags>
 				<li>KotORAccessory_any</li>
 				<li>KotORAccessory_light</li>
 				<li>KotORAccessory_civilian</li>
@@ -516,16 +534,10 @@
 				<li>SWCPSpecificApparelItem_TravelerBag</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
-			<wornGraphicPath>SWApparel/Accessories/bandolier_traveler/Apparel</wornGraphicPath>
-			<useWornGraphicMask>true</useWornGraphicMask>
-			<drawData>
-			  <dataNorth>
-				<layer>65</layer>
-			  </dataNorth>
-			</drawData>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
 		</tradeTags>
 		<costList>
 			<KOTOR_FabricArmorweave>20</KOTOR_FabricArmorweave>
@@ -615,7 +627,14 @@
 				<!--li>Neck</li>
 				<li>Shoulders</li-->
 			</bodyPartGroups>
-			<tags Inherit="False">
+			<wornGraphicPath>SWApparel/Accessories/poncho/Apparel</wornGraphicPath>
+			<drawData>
+			  <dataNorth>
+				<layer>65</layer>
+			  </dataNorth>
+			</drawData>
+			
+			<tags>
 				<li>KotORAccessory_any</li>
 				<li>KotORAccessory_outlaw</li>
 				<li>KotORAccessory_trooper_withponcho</li>
@@ -629,15 +648,10 @@
 				<li>SWCPSpecificApparelItem_PlainPoncho</li>
 				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
 			</tags>
-			<wornGraphicPath>SWApparel/Accessories/poncho/Apparel</wornGraphicPath>
-			<drawData>
-			  <dataNorth>
-				<layer>65</layer>
-			  </dataNorth>
-			</drawData>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
 		</tradeTags>
 		<costList>
 			<Synthread>50</Synthread>
@@ -731,12 +745,7 @@
 				<!--li>Neck</li>
 				<li>Shoulders</li-->
 			</bodyPartGroups>
-			<tags Inherit="False">
-				<li>KotORAccessory_any</li>
-				<li>KotORAccessory_camoponcho</li>
-				<li>SWCPSpecificApparelItem_CamoPoncho</li>
-				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
-			</tags>
+			
 			<wornGraphicPath>SWApparel/Accessories/poncho/Apparel</wornGraphicPath>
 			<useWornGraphicMask>true</useWornGraphicMask>
 			<drawData>
@@ -744,7 +753,6 @@
 				<layer>65</layer>
 			  </dataNorth>
 			</drawData>
-			
 			<renderNodeProperties>
 				<li MayRequire="RedMattis.BetterPrerequisites" Class="BigAndSmall.PawnRenderingProps_Ultimate">
 					<nodeClass>BigAndSmall.PawnRenderNode_UltimateApparel</nodeClass>
@@ -767,9 +775,17 @@
 					<drawData> <dataNorth> <layer>23</layer> </dataNorth> </drawData>	<!-- SHELL? -->
 				</li>
 			</renderNodeProperties>
+			
+			<tags>
+				<li>KotORAccessory_any</li>
+				<li>KotORAccessory_camoponcho</li>
+				<li>SWCPSpecificApparelItem_CamoPoncho</li>
+				<li>SWCPDroidApparelRestrictionTag_TorsoAccessory</li>
+			</tags>
 		</apparel>
 		<tradeTags>
 			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_CivLegal</li>
 		</tradeTags>
 		<costList>
 			<Synthread>50</Synthread>

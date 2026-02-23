@@ -7,86 +7,88 @@
   
   
     <ThingDef ParentName="KotORMeleeMakeable_TwoHand">
-    <defName>GS_Gaffi</defName>
-    <label>Gaffi stick</label>
-    <description>The gaderffii, or gaffi stick, is the traditional melee weapon of the sandpeople. It was a pole weapon with a spike or blade on one end and some kind of bludgeoning instrument on the other.</description>
-    <possessionCount>1</possessionCount>
-    <graphicData>
-      <texPath>Weapons/Melee_Sovereign/Stick</texPath>
-	  <shaderType>CutoutComplex</shaderType>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <drawSize>1.5</drawSize>
-    </graphicData>
-    <techLevel>Neolithic</techLevel>
-	<equippedAngleOffset>-65</equippedAngleOffset>
-	 <weaponTags inherit="False">
-      <li>SandClub</li>
-    </weaponTags>
-	<tradeTags>
-		<li>guy762TT_KotORMelee</li>
-		<li>guy762TT_KotORAntique</li>
-		<li>guy762TT_KotORWeapon_exotic</li>
-	</tradeTags>
-	
-    <statBases>
-      <MarketValue>100</MarketValue>
-	  <Mass>4</Mass>
-	  
-	  <WorkToMake>26000</WorkToMake>
-    </statBases>
-	
-	<recipeMaker>
-      <researchPrerequisite>guy762_ResearchKotOR_tusken</researchPrerequisite>
-	  <skillRequirements>
-		<Crafting>6</Crafting>
-	  </skillRequirements>
-	  <recipeUsers>
-        <li>CraftingSpot</li>
-      </recipeUsers>
-      <displayPriority>1000</displayPriority>
-    </recipeMaker>
-	<stuffCategories>
-      <li>Metallic</li>
-      <li>Woody</li>
-	  <li>Stony</li>
-    </stuffCategories>
-	<costStuffCount>150</costStuffCount>
-	
-	
-    <relicChance>3</relicChance>
-	
-    <tools>
-      <li>
-        <label>pommel</label>
-        <capacities>
-          <li>Blunt</li>
-		  <li>Stab</li>
-        </capacities>
-        <power>17</power>
-        <cooldownTime>2.5</cooldownTime>
-      </li>
-	  
-      <li>
-        <label>point</label>
-        <capacities>
-          <li>Stab</li>
-        </capacities>
-        <power>20</power>
-        <cooldownTime>1.5</cooldownTime>
-      </li>
-	  
-      <li>
-        <label>edge</label>
-        <capacities>
-          <li>Cut</li>
-        </capacities>
-        <power>16</power>
-        <cooldownTime>1.5</cooldownTime>
-      </li>
-	  
-    </tools>
+		<defName>GS_Gaffi</defName>
+		<label>Gaffi stick</label>
+		<description>The gaderffii, or gaffi stick, is the traditional melee weapon of the sandpeople. It was a pole weapon with a spike or blade on one end and some kind of bludgeoning instrument on the other.</description>
+		<possessionCount>1</possessionCount>
+		<graphicData>
+		  <texPath>Weapons/Melee_Sovereign/Stick</texPath>
+		  <shaderType>CutoutComplex</shaderType>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <drawSize>1.5</drawSize>
+		</graphicData>
+		<techLevel>Neolithic</techLevel>
+		<equippedAngleOffset>-65</equippedAngleOffset>
+		<weaponTags>
+			<li>SandClub</li>
+		</weaponTags>
+		<tradeTags>
+			<li>guy762TT_KotORMelee</li>
+			<li>guy762TT_KotORAntique</li>
+			<li>guy762TT_KotORWeapon_exotic</li>
+			<li>guy762TT_GCWMelee</li>
+			<li>guy762TT_GCWWeapon_ExoticLegal</li>
+		</tradeTags>
+		
+		<statBases>
+		  <MarketValue>100</MarketValue>
+		  <Mass>4</Mass>
+		  
+		  <WorkToMake>26000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <researchPrerequisite>guy762_ResearchKotOR_tusken</researchPrerequisite>
+		  <skillRequirements>
+			<Crafting>6</Crafting>
+		  </skillRequirements>
+		  <recipeUsers>
+			<li>CraftingSpot</li>
+		  </recipeUsers>
+		  <displayPriority>1000</displayPriority>
+		</recipeMaker>
+		<stuffCategories>
+		  <li>Metallic</li>
+		  <li>Woody</li>
+		  <li>Stony</li>
+		</stuffCategories>
+		<costStuffCount>150</costStuffCount>
+		
+		
+		<relicChance>3</relicChance>
+		
+		<tools>
+		  <li>
+			<label>pommel</label>
+			<capacities>
+			  <li>Blunt</li>
+			  <li>Stab</li>
+			</capacities>
+			<power>17</power>
+			<cooldownTime>2.5</cooldownTime>
+		  </li>
+		  
+		  <li>
+			<label>point</label>
+			<capacities>
+			  <li>Stab</li>
+			</capacities>
+			<power>20</power>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		  
+		  <li>
+			<label>edge</label>
+			<capacities>
+			  <li>Cut</li>
+			</capacities>
+			<power>16</power>
+			<cooldownTime>1.5</cooldownTime>
+		  </li>
+		  
+		</tools>
 
-  </ThingDef>
+	</ThingDef>
   
   
   

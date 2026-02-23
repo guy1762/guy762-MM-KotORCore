@@ -33,12 +33,15 @@
 	<!-- Salary Options -->
 
 	<SWCP_Salary_Label>Wages</SWCP_Salary_Label>
-	<SWCP_Salary_Desc>You are entitled to collect wages from this faction every 14 days.</SWCP_Salary_Desc>
+	<SWCP_Salary_Desc_15days>You are entitled to collect wages from this faction every 15 days.</SWCP_Salary_Desc_15days>
+	<SWCP_Salary_Desc_10days>You are entitled to collect wages from this faction every 10 days.</SWCP_Salary_Desc_10days>
 
 	<!-- Provision Options -->
 
 	<SWCP_Provisions_Label>Provisions</SWCP_Provisions_Label>
-	<SWCP_Provisions_Desc_6xSupplyContainer>Provisions will add the following items to your caravan inventory every 10 days:\n\n- 6x Supply Container</SWCP_Provisions_Desc_6xSupplyContainer>
+	<SWCP_Provisions_Desc_4xSupplyContainer10days>Provisions will add the following items to your caravan inventory every 10 days:\n\n- 4x Supply Container</SWCP_Provisions_Desc_4xSupplyContainer10days>
+	<SWCP_Provisions_Desc_6xSupplyContainer10days>Provisions will add the following items to your caravan inventory every 10 days:\n\n- 6x Supply Container</SWCP_Provisions_Desc_6xSupplyContainer10days>
+	<SWCP_Provisions_Desc_6xSupplyContainer15days>Provisions will add the following items to your caravan inventory every 10 days:\n\n- 6x Supply Container</SWCP_Provisions_Desc_6xSupplyContainer15says>
 	
 	<SWCP_Provisions_Label_74zSpeeder>Scout Bikes</SWCP_Provisions_Label_74zSpeeder>
 	<SWCP_Provisions_Desc_74zSpeeder>Scout Bikes will add the following items to your caravan inventory every 60 days:\n\n- 1x Aratech 74-Z Speeder Bike</SWCP_Provisions_Desc_74zSpeeder>
@@ -61,17 +64,30 @@
 	<SWCP_Hospital_Label>Hospital</SWCP_Hospital_Label>
 	<SWCP_Hospital_Desc>Check in with the hospital of this base. This service tends to all of your troopers with spacer medkits. Immunity gain is also increased while your troopers are in the hospital.</SWCP_Hospital_Desc>
 	
+	
+	
+	
 	<SWCP_Medical_Training_Label>Training: Medical</SWCP_Medical_Training_Label>
 	<SWCP_Medical_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Medical\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Medical_Training_Desc>
+	
 	<SWCP_Shooting_Training_Label>Training: Ranged Combat</SWCP_Shooting_Training_Label>
 	<SWCP_Shooting_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Shooting\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Shooting_Training_Desc>
+	
 	<SWCP_Melee_Training_Label>Training: Melee Combat</SWCP_Melee_Training_Label>
 	<SWCP_Melee_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Melee\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Melee_Training_Desc>
+	
+	<SWCP_Engineering_Training_Label>Training: Engineering</SWCP_Engineering_Training_Label>
+	<SWCP_Engineering_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Construction\n- Crafting\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Engineering_Training_Desc>
+	
 	<SWCP_Survival_Training_Label>Training: Survival</SWCP_Survival_Training_Label>
 	<SWCP_Survival_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Animals\n- Cooking\n- Plants\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Survival_Training_Desc>
 	<!-- <SWCP_Survival_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Animals\n- Construction\n- Cooking\n- Crafting\n- Mining\n- Plants\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Survival_Training_Desc> -->
+	
 	<SWCP_Intelligence_Training_Label>Training: Intellectual</SWCP_Intelligence_Training_Label>
 	<SWCP_Intelligence_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Intellectual\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Intelligence_Training_Desc>
+	
+	<SWCP_Command_Training_Label>Training: Command</SWCP_Command_Training_Label>
+	<SWCP_Command_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Social\n- Intellectual\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Command_Training_Desc>
 
 	<!-- Bounty Options -->
 
@@ -100,12 +116,13 @@
 	<!-- Reinforcement Options -->
 
 	<SWCP_Reinforcements_Button_Label>Reinforcements</SWCP_Reinforcements_Button_Label>
-	<SWCP_Reinforcements_Button_Desc>Call for reinforcements from your faction. Amount of troopers they send depends on your current relations.</SWCP_Reinforcements_Button_Desc>
+	<SWCP_Reinforcements_Button_Desc>Call for reinforcements from your faction. The amount of troopers they send depends on your current relations.</SWCP_Reinforcements_Button_Desc>
 	
 	<!-- Shuttle Service Options (Vertibird) -->
 
 	<SWCP_Shuttle_Service_Label>Shuttle Transport</SWCP_Shuttle_Service_Label>
 	<SWCP_Shuttle_Service_Desc_500credits>Call for a Shuttlecraft to transport your caravan to another location. Cost: 500 Credits.</SWCP_Shuttle_Service_Desc_500credits>
+	<SWCP_Shuttle_Service_Desc_250credits>Call for a Shuttlecraft to transport your caravan to another location. Cost: 250 Credits.</SWCP_Shuttle_Service_Desc_250credits>
 	
 	
 	
