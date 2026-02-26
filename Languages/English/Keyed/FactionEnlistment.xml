@@ -86,6 +86,9 @@
 	<SWCP_Intelligence_Training_Label>Training: Intellectual</SWCP_Intelligence_Training_Label>
 	<SWCP_Intelligence_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Intellectual\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Intelligence_Training_Desc>
 	
+	<SWCP_Piloting_Training_Label>Training: Piloting</SWCP_Piloting_Training_Label>
+	<SWCP_Piloting_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Construction\n- Intellectual\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Piloting_Training_Desc>
+	
 	<SWCP_Command_Training_Label>Training: Command</SWCP_Command_Training_Label>
 	<SWCP_Command_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Social\n- Intellectual\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Command_Training_Desc>
 

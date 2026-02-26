@@ -27,7 +27,7 @@
 				<li MayRequire="Ludeon.RimWorld.Odyssey"><key>BeamBypassShields</key><value>0.01</value></li>
 				<li><key>guy762_ExplosiveDamage_energy</key><value>0.1</value></li>
 				<li><key>guy762_GrenadeDamage_energy</key><value>0.1</value></li>
-				<li MayRequire="lee.theforce.standalone"><key>Force_EnergyBurn</key><value>0.1</value></li>
+				<!-- <li MayRequire="lee.theforce.standalone"><key>Force_EnergyBurn</key><value>0.1</value></li> -->
 				
 			<!-- EMP -->
 				<li><key>EMP</key><value>1</value></li>
@@ -64,7 +64,7 @@
 				<li><key>guy762_RangedDamage_electrical</key><value>0.01</value></li>
 				<li><key>guy762_MeleeDamage_electrical</key><value>0.01</value></li>
 				<li><key>guy762_BeamDamage_electrical</key><value>0.01</value></li>
-				<li MayRequire="lee.theforce.standalone"><key>Force_Lightning</key><value>0.1</value></li>
+				<!-- <li MayRequire="lee.theforce.standalone"><key>Force_Lightning</key><value>0.1</value></li> -->
 
 			<!-- sonic -->
 				<li><key>guy762_RangedDamage_sonic</key><value>0.01</value></li>
@@ -128,7 +128,7 @@
 			<!-- poison/healing -->
 				<li><key>guy762_PoisonDamage_saber</key><value>0</value></li>
 				<li><key>guy762_RangedDamage_kolto</key><value>0</value></li>
-				<li MayRequire="lee.theforce.standalone"><key>Force_LightBurn</key><value>0</value></li>
+				<!-- <li MayRequire="lee.theforce.standalone"><key>Force_LightBurn</key><value>0</value></li> -->
 				
 			<!-- energy: lightsaber -->
 				<li><key>guy762_MeleeDamage_energy</key><value>1</value></li>

@@ -141,14 +141,36 @@
         <countRange>0~1</countRange>
       </li>
 	  
+	  <li Class="StockGenerator_Tag">
+        <tradeTag>Bionic</tradeTag>
+        <thingDefCountRange>4~5</thingDefCountRange>
+        <countRange>1~6</countRange>
+      </li>
 	  
 	  <li Class="StockGenerator_Category">
         <categoryDef>BodyPartsNatural</categoryDef>
         <thingDefCountRange>3~6</thingDefCountRange>
         <countRange>1~10</countRange>
       </li>
-	  
-	  
+	
+	
+			<!-- to make absolutely certain players are able to buy new parts at any given time: -->
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>BionicEye</thingDef>
+			<countRange>0~6</countRange>
+		</li>
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>BionicArm</thingDef>
+			<countRange>0~6</countRange>
+		</li>
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>BionicLeg</thingDef>
+			<countRange>0~6</countRange>
+		</li>
+		<!-- <li Class="StockGenerator_SingleDef"> -->
+			<!-- <thingDef>BionicSpine</thingDef> -->
+			<!-- <countRange>0~1</countRange> -->
+		<!-- </li> -->
 
       <!-- Gadgets -->
 	  <li Class="StockGenerator_Tag">
