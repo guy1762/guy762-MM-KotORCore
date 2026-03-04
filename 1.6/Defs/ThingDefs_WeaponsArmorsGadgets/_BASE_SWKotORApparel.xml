@@ -754,25 +754,36 @@
 		  <li>guy762_gadgets</li>
 		</thingCategories>
 		<smeltable>false</smeltable>
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		</apparel>
 	  </ThingDef>
 	  
 	  <ThingDef Name="guy762_HatCraftableBase" ParentName="guy762_armorbase_soft" Abstract="True">
 		<thingCategories>
 		  <li>Headgear</li>
 		</thingCategories>
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		</apparel>
 	  </ThingDef>
 	  
 	  <ThingDef Name="guy762_HatModdableBase" ParentName="KotORArmorModdable_soft" Abstract="True">
 		<thingCategories>
 		  <li>Headgear</li>
 		</thingCategories>
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		</apparel>
 	  </ThingDef>
 	  
 	  <ThingDef Name="guy762_HatNoCraftBase" ParentName="guy762_nocraftclothingbase" Abstract="True">
 		<thingCategories>
 		  <li>Headgear</li>
 		</thingCategories>
-		<apparel Inherit="False" />
+		<apparel Inherit="False">
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		</apparel>
 	  </ThingDef>
 	  
 	  <ThingDef Name="guy762_HatCraftableNoQualityBase" ParentName="guy762_ApparelNoQualityMakeable" Abstract="True">
@@ -780,6 +791,9 @@
 		  <li>Headgear</li>
 		</thingCategories>
 		<smeltable>false</smeltable>
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		</apparel>
 	  </ThingDef>
 	  
 	  <ThingDef Name="guy762_HeadbandCraftableNoQualityBase" ParentName="guy762_ApparelNoQualityMakeable" Abstract="True">
@@ -788,6 +802,9 @@
 		  <li>guy762_gadgets</li>
 		</thingCategories>
 		<smeltable>false</smeltable>
+		<apparel>
+			<developmentalStageFilter>Child, Adult</developmentalStageFilter>
+		</apparel>
 	  </ThingDef>
 	  
 	  
@@ -886,6 +903,7 @@
 		  <careIfDamaged>false</careIfDamaged>
 		  <ignoredByNonViolent>false</ignoredByNonViolent>
 		  <wearPerDay>0</wearPerDay>
+		  <developmentalStageFilter>Child, Adult</developmentalStageFilter>
 		  <layers>
 			<li>Belt</li>
 		  </layers>
@@ -997,6 +1015,7 @@
 		  <careIfDamaged>false</careIfDamaged>
 		  <ignoredByNonViolent>false</ignoredByNonViolent>
 		  <wearPerDay>0</wearPerDay>
+		  <developmentalStageFilter Inherit="False" />
 		  <layers>
 			<li>Belt</li>
 		  </layers>

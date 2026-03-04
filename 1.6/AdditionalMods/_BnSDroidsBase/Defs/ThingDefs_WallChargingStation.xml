@@ -5,8 +5,8 @@
 		<defName>guy762_ShipTech_WallChargingStation</defName>
 		<label>droid charging station</label>
 		<description>(REQUIRES A CONENCTED BATTERY)\n\nA wall-mounted station where droids can recharge power cells. Requires batteries and a powerful power grid to support.</description>
-		
-		<!-- <tickerType>Rare</tickerType> -->
+		<!-- THE ORIGINAL BnS CHARGING STATION DEF IS LOCATED HERE: 2925432336\1.6\Base\Patches\SelfPatches\AndroidPatches\AndroidRecharger.xml  -->
+		<tickerType>Normal</tickerType>
 		<rotatable>true</rotatable>
 		<minifiedDef>MinifiedThing</minifiedDef>
 		<thingCategories>

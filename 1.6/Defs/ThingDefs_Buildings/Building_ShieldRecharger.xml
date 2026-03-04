@@ -89,6 +89,7 @@
 		<priorityInType>75</priorityInType>
 		<fixedBillGiverDefs>
 			<li>KOTOR_ShieldBank</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBuilding_NPCShieldBank</li>
 		</fixedBillGiverDefs>
 		<verb>work</verb>
 		<gerund>working at</gerund>
@@ -124,6 +125,7 @@
 		<displayPriority>10</displayPriority>
 		<recipeUsers>
 			<li>KOTOR_ShieldBank</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBuilding_NPCShieldBank</li>
 		</recipeUsers>
 	</RecipeDef>
 	

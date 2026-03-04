@@ -31,12 +31,13 @@
 					<PainShockThreshold>-0.30</PainShockThreshold>
 					<MentalBreakThreshold>0.30</MentalBreakThreshold>
 				</statOffsets>
-				<mentalStateGivers>
-					<li>
-						<mentalState>PanicFlee</mentalState>
-						<mtbDays>2</mtbDays> <!-- mean time between (in days) -->
-					</li>
-				</mentalStateGivers>
+				 <!-- disabling these because one of my pawns rolled the mental break while testing, ran off the map, and just fully stopped being a colonist. not great to have when half of every pawnkind has a weapon that suppresses  -->
+				<!-- <mentalStateGivers>-->
+					<!-- <li> -->
+						<!-- <mentalState>PanicFlee</mentalState> -->
+						<!-- <mtbDays>2</mtbDays> -->
+					<!-- </li> -->
+				<!-- </mentalStateGivers> -->
 			</li>
 			<li>
 				<label>3x</label>
@@ -48,12 +49,12 @@
 					<PainShockThreshold>-0.45</PainShockThreshold>
 					<MentalBreakThreshold>0.45</MentalBreakThreshold>
 				</statOffsets>
-				<mentalStateGivers>
-					<li>
-						<mentalState>PanicFlee</mentalState>
-						<mtbDays>1</mtbDays> <!-- mean time between (in days) -->
-					</li>
-				</mentalStateGivers>
+				<!-- <mentalStateGivers> -->
+					<!-- <li> -->
+						<!-- <mentalState>PanicFlee</mentalState> -->
+						<!-- <mtbDays>1</mtbDays> -->
+					<!-- </li> -->
+				<!-- </mentalStateGivers> -->
 			</li>
 		</stages>
 		<comps>

@@ -440,6 +440,7 @@
 		<displayPriority>10</displayPriority>
 		<recipeUsers>
 			<li>KOTOR_PlasmaAmmoBank</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBuilding_NPCPlasmaAmmoBank</li>
 		</recipeUsers>
 	</RecipeDef>
 	
@@ -538,6 +539,7 @@
 		<priorityInType>75</priorityInType>
 		<fixedBillGiverDefs>
 			<li>KOTOR_PlasmaAmmoBank</li>
+			<li MayRequire="SWCP.guy762.Taran.SWGalaxy">SWCPBuilding_NPCPlasmaAmmoBank</li>
 		</fixedBillGiverDefs>
 		<verb>work</verb>
 		<gerund>working at</gerund>

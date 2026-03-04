@@ -135,7 +135,7 @@
 		<wearPerDay>0</wearPerDay>
 		<bodyPartGroups>
 			<li>Arms</li>
-			<li>Hands</li>
+			<!-- <li>Hands</li> -->
 		</bodyPartGroups>
 		<layers>
 			<li>Belt</li>

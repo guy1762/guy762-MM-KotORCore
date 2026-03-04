@@ -943,6 +943,8 @@
 			</bodyPartGroups>
 			<useDeflectMetalEffect>true</useDeflectMetalEffect>
 			
+			<immuneToToxGasExposure>true</immuneToToxGasExposure>
+			
 			<tags>
 				<li>RemnantEmpire_impworker</li>
 				<li>SWCPSpecificApparelItem_ImperialWorkerHelmet</li>
