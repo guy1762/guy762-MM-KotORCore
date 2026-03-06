@@ -62,7 +62,7 @@
 		</tradeTags>
 		
 		<comps>
-            <li Class="SWCP.Core.ThingComps.CompProperties_HideShipRoof">
+            <li Class="SWCP_Lee_Misc.ThingComps.CompProperties_HideShipRoof">
 				<!-- <layer>225</layer> -->
 				<layer>10225</layer> <!-- subtractive from the below terrain layer -->
 				<!-- cutoff is somewhere between 500 and 425? this is somehow tied to camera zoom distance, so depending on what distance you're scrolled in at the ship will either appear or disappear according to what layer it's set at, 500-425 is at close Camera+ zoom range -->

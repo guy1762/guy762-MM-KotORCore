@@ -28,11 +28,11 @@
 		
 		<settlementGenerationWeight>0</settlementGenerationWeight>
 		<modExtensions Inherit="False">
-			<li Class="SWCP.Currencies.CurrencyReplacement">
+			<li Class="FCP.Currencies.CurrencyReplacement">
 				<currency>guy762_KotORcredits</currency>
 			</li>
 			
-			<li Class="SWCP.Core.ModExtension_HiddenFactionHasCaravans" />
+			<li Class="FCP.Factions.FactionExtension_HiddenFactionHasCaravans" />
 
 			<li MayRequire="OskarPotocki.VanillaFactionsExpanded.Core" Class="VEF.Factions.FactionDefExtension">
 				<startingGoodwillByFactionDefs>
@@ -228,7 +228,7 @@
 		  
 		  
 		  
-		  <li Class="SWCP.Core.GroupMakerWithTraderKind">
+		  <li Class="FCP.Core.GroupMakerWithTraderKind">
 			<kindDef>Trader</kindDef> <!-- jawa caravan -->
 			<commonality>0.5</commonality>
 			<traderKinds><li>guy762_TraderKind_JawaScavs</li></traderKinds>
@@ -263,7 +263,7 @@
 		  
 		  
 		  
-		  <li Class="SWCP.Core.GroupMakerWithTraderKind">
+		  <li Class="FCP.Core.GroupMakerWithTraderKind">
 			<kindDef>Trader</kindDef> <!-- wandering doctor -->
 			<commonality>0.5</commonality>
 			<traderKinds><li>guy762_TraderKind_WanderingDoctor</li></traderKinds>

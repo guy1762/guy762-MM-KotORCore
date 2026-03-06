@@ -16,7 +16,7 @@
       <!-- </points> -->
     <!-- </commonalityMultFromPopulationIntent> -->
 	<modExtensions>
-		<li Class="SWCP.Currencies.CurrencyReplacement">
+		<li Class="FCP.Currencies.CurrencyReplacement">
 			<currency>Silver</currency>
 		</li>
 	</modExtensions>

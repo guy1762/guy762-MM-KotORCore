@@ -373,6 +373,40 @@
 			</li>
 		</comps>
 	</ThingDef>
+
+
+
+		<!-- used by: AAC-2, -->
+	<ThingDef ParentName="guy762_AAprojectileBASE">
+		<defName>SWVehicleBullet_AAprotonMissile</defName>
+		<label>proton missile</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/missile_pink</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>3</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_GrenadeDamage_thermaldet</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>0.375</armorPenetrationBase>
+			<speed>100</speed>
+			<explosionRadius>1.9</explosionRadius>
+			<soundAmbient>kotorsound_missileflying</soundAmbient>
+		</projectile>
+		<thingClass>Projectile_Explosive</thingClass>
+		<comps>
+			<li Class="taranchuk_homingprojectiles.CompProperties_HomingProjectile">
+				<tickRate>10</tickRate>
+				<lifetimeTicks>30000</lifetimeTicks>
+				<delayTurnInTicks>20</delayTurnInTicks>
+				<initialSpreadAngle>10</initialSpreadAngle>
+				<tailMote>guy762_OrbMote</tailMote>
+				<effectLifetime>600</effectLifetime>
+				<effectSize>2</effectSize>
+			</li>
+		</comps>
+	</ThingDef>
 	
 	
 	

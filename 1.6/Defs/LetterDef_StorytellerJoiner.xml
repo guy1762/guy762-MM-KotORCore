@@ -2,7 +2,7 @@
 <Defs>
 
     <LetterDef ParentName="CustomChoiceLetterBase">
-        <defName>SWCP_Letter_AcceptStoryteller</defName>
+        <defName>FCP_Letter_AcceptStoryteller</defName>
         <color>(41, 196, 80)</color>
         <arriveSound>GameStartSting</arriveSound>
         <letterClass>ChoiceLetter_AcceptJoiner</letterClass>

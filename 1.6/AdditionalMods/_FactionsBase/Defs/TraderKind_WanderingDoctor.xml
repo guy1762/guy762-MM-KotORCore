@@ -18,7 +18,7 @@
 		<!-- <li MayRequire="Rick.FCP.Core.Tools" Class="FalloutCurrencies_NonReplacement.CurrencyReplacement"> -->
 			<!-- <currency>guy762_KotORcredits</currency> -->
 		<!-- </li> -->
-		<li Class="SWCP.Currencies.CurrencyReplacement">
+		<li Class="FCP.Currencies.CurrencyReplacement">
 			<currency>guy762_KotORcredits</currency>
 		</li>
 	</modExtensions>

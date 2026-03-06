@@ -34,7 +34,7 @@
                 <useJob>UseItem</useJob>
                 <useLabel>Open {0}</useLabel>
             </li>
-            <li Class="SWCP.Core.CompProperties_UseEffectItemBox">
+            <li Class="FCP.Core.CompProperties_UseEffectItemBox">
                 <numWeightedDrops>2</numWeightedDrops>
                 <guaranteedDrops>
                     <li>
@@ -124,7 +124,7 @@
                 <useJob>UseItem</useJob>
                 <useLabel>Open {0}</useLabel>
             </li>
-            <li Class="SWCP.Core.CompProperties_UseEffectItemBox">
+            <li Class="FCP.Core.CompProperties_UseEffectItemBox">
                 <numWeightedDrops>2</numWeightedDrops>
                 <guaranteedDrops>
                     <li>
@@ -209,7 +209,7 @@
                 <useJob>UseItem</useJob>
                 <useLabel>Open {0}</useLabel>
             </li>
-            <li Class="SWCP.Core.CompProperties_UseEffectItemBox">
+            <li Class="FCP.Core.CompProperties_UseEffectItemBox">
                 <numWeightedDrops>1</numWeightedDrops>
                 <weightedDrops>
                     <li>

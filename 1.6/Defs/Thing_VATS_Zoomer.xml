@@ -5,35 +5,35 @@
 
     <!-- V.A.T.S. Zoom Effect -->
 
-    <!-- <ThingDef ParentName="BaseBullet"> -->
-        <!-- <defName>SWCP_VATS_Zoomer</defName> -->
-        <!-- <altitudeLayer>MoteOverhead</altitudeLayer> -->
-        <!-- <thingClass>SWCP.Core.VATS.Thing_Zoomer</thingClass> -->
-        <!-- <label>vats</label> -->
-        <!-- <graphicData> -->
-            <!-- <texPath>512blank</texPath> -->
-            <!-- <graphicClass>SWCP.Core.VATS.Graphic_Zoomer</graphicClass> -->
-            <!-- <drawSize>(10,10)</drawSize> -->
-        <!-- </graphicData> -->
-    <!-- </ThingDef> -->
+    <ThingDef ParentName="BaseBullet">
+        <defName>FCP_VATS_Zoomer</defName>
+        <altitudeLayer>MoteOverhead</altitudeLayer>
+        <thingClass>FCP.Core.VATS.Thing_Zoomer</thingClass>
+        <label>vats</label>
+        <graphicData>
+            <texPath>512blank</texPath>
+            <graphicClass>FCP.Core.VATS.Graphic_Zoomer</graphicClass>
+            <drawSize>(10,10)</drawSize>
+        </graphicData>
+    </ThingDef>
 	
-	<!-- <StatCategoryDef> -->
-        <!-- <defName>SWCP_LegendaryEffectStats</defName> -->
-        <!-- <displayOrder>71</displayOrder> -->
-    <!-- </StatCategoryDef> -->
+	<StatCategoryDef>
+        <defName>FCP_LegendaryEffectStats</defName>
+        <displayOrder>71</displayOrder>
+    </StatCategoryDef>
 	
-	<!-- <EffecterDef> -->
-        <!-- <defName>SWCP_VATSLegendaryEffect_Explosive_Explosion</defName> -->
-        <!-- <children> -->
-        <!-- </children> -->
-    <!-- </EffecterDef> -->
+	<EffecterDef>
+        <defName>FCP_VATSLegendaryEffect_Explosive_Explosion</defName>
+        <children>
+        </children>
+    </EffecterDef>
 	
-	<!-- <SWCP.Core.LegendaryEffectDef> -->
-        <!-- <defName>SWCP_VATSLegendaryEffect_Rapid</defName> -->
-        <!-- <label>Rapid</label> -->
-        <!-- <description>Boosts firing rate</description> -->
-        <!-- <IsForWeapon>true</IsForWeapon> -->
-        <!-- <IsForApparel>false</IsForApparel> -->
-    <!-- </SWCP.Core.LegendaryEffectDef> -->
+	<SWCP.Core.LegendaryEffectDef>
+        <defName>FCP_VATSLegendaryEffect_Rapid</defName>
+        <label>Rapid</label>
+        <description>Boosts firing rate</description>
+        <IsForWeapon>true</IsForWeapon>
+        <IsForApparel>false</IsForApparel>
+    </SWCP.Core.LegendaryEffectDef>
 	
 </Defs>

@@ -15,7 +15,7 @@
 		<!-- <li MayRequire="Rick.FCP.Core.Tools" Class="FalloutCurrencies_NonReplacement.CurrencyReplacement"> -->
 			<!-- <currency>Silver</currency> -->
 		<!-- </li> -->
-		<li Class="SWCP.Currencies.CurrencyReplacement">
+		<li Class="FCP.Currencies.CurrencyReplacement">
 			<currency>Silver</currency>
 		</li>
 	</modExtensions>
