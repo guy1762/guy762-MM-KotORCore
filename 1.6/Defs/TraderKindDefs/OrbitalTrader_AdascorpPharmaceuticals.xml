@@ -43,7 +43,12 @@
 	  
 	  <!-- Resources -->
 	  
-      <li Class="StockGenerator_SingleDef">
+		<li Class="StockGenerator_SingleDef">
+			<thingDef>SWCPItem_Bacta</thingDef>
+			<countRange>50~100</countRange>
+		</li>
+		
+	  <li Class="StockGenerator_SingleDef">
         <thingDef>KOTOR_kolto</thingDef>
         <countRange>200~600</countRange>
       </li>

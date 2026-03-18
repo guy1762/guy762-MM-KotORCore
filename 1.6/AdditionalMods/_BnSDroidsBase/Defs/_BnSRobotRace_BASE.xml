@@ -77,6 +77,7 @@
 			<li>guy762_medpac_adv</li>
 			<li>guy762_medpac_life</li>
 			<li>guy762_medpac_antidote</li>
+			<li>SWCPItem_Bacta</li>
 			
 			<li>guy762_stim_battle</li>
 			<li>guy762_stim_hyperbattle</li>
@@ -318,6 +319,12 @@
 				<li>guy762_Electrocuted</li>
 				<li>guy762_Poison_saber</li>
 				<li>guy762_hediff_Decayed</li>
+				
+				<li>guy762_medpacHeal</li>
+				<li>guy762_medpacHeal_adv</li>
+				<li>guy762_medpacHeal_life</li>
+				<li>guy762_medpacHeal_antidote</li>
+				<li>SWCPHediff_BactaHeal</li>
 				
 				
 				<li>SWCPHediff_Suppression</li>
@@ -855,6 +862,13 @@
 					<li>guy762_Electrocuted</li>
 					<li>guy762_Poison_saber</li>
 					<li>guy762_hediff_Decayed</li>
+					
+					
+					<li>guy762_medpacHeal</li>
+					<li>guy762_medpacHeal_adv</li>
+					<li>guy762_medpacHeal_life</li>
+					<li>guy762_medpacHeal_antidote</li>
+					<li>SWCPHediff_BactaHeal</li>
 					
 					
 					<li>SWCPHediff_Suppression</li>

@@ -91,9 +91,9 @@
 			<li MayRequire="guy762.NA.MM.SWVehicles"><damageDef>guy762_ExplosiveDamage_conc</damageDef><multiplier>0.01</multiplier></li>
 			
 		<!-- explosive: piercing -->
-			<li MayRequire="Ludeon.RimWorld.Odyssey"><damageDef>MiningBomb</damageDef><multiplier>2</multiplier></li>
-			<li><damageDef>guy762_GrenadeDamage_detpack</damageDef><multiplier>2</multiplier></li>
-			<li><damageDef>guy762_GrenadeDamage_thermaldet</damageDef><multiplier>4</multiplier></li>
+			<li MayRequire="Ludeon.RimWorld.Odyssey"><damageDef>MiningBomb</damageDef><multiplier>1</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_detpack</damageDef><multiplier>1</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_thermaldet</damageDef><multiplier>2</multiplier></li>
 			<li><damageDef>Vaporize</damageDef><multiplier>0.5</multiplier></li>
 			<li><damageDef>BombSuper</damageDef><multiplier>1</multiplier></li>
 			

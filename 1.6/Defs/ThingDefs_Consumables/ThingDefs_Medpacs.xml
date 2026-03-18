@@ -1,296 +1,352 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <HediffDef>
-    <defName>guy762_medpacHeal</defName>
-    <description>Fast-acting healing agents administered from a Medpac. Clears approximately one wound hediff.</description>
-    <label>Medpac</label>
-	<hediffClass>HediffWithComps</hediffClass>
-    <maxSeverity>1.0</maxSeverity>
-    <stages>
-      <li>
-        <naturalHealingFactor>1000</naturalHealingFactor>
-        <totalBleedFactor>0.75</totalBleedFactor>
-      </li>
-    </stages>
-    <comps>
-      <!--2,500 ticks per hour in game-->
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>500</disappearsAfterTicks>
-		<showRemainingTime>True</showRemainingTime>
-      </li>
-    </comps>
-  </HediffDef>
+	<HediffDef>
+		<defName>guy762_medpacHeal</defName>
+		<!-- <description>Fast-acting healing agents administered from a Medpac. Clears approximately one wound hediff.</description> -->
+		<description>Fast-acting healing agents administered from a Medpac. Heals 10 points of wound damage.</description>
+		<label>Medpac</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<!-- <naturalHealingFactor>1000</naturalHealingFactor> -->
+				<totalBleedFactor>0.75</totalBleedFactor>
+			</li>
+		</stages>
+		<comps>
+			<!--2,500 ticks per hour in game-->
+			<li Class="HediffCompProperties_Disappears">
+				<!-- <disappearsAfterTicks>500</disappearsAfterTicks> -->
+				<!-- <showRemainingTime>True</showRemainingTime> -->
+				<disappearsAfterTicks>500</disappearsAfterTicks><showRemainingTime>False</showRemainingTime> <!-- failsafe to remove the hediff if there's still healing points left over -->
+			</li>
+			
+			<li Class="FCP.Core.Stims.HediffCompProperties_Stimpack">
+                <HealPermanentInjuries>false</HealPermanentInjuries>
+                <HealMissingBodyParts>false</HealMissingBodyParts>
+                <RemoveHediffWhenDone>True</RemoveHediffWhenDone>
+                <ScaleHealedAmountWithTotalHitPoints>true</ScaleHealedAmountWithTotalHitPoints>
+                <HealedAmount>10</HealedAmount>
+                <TickMinimumBetweenHealing>2</TickMinimumBetweenHealing>
+                <TickMaximumBetweenHealing>4</TickMaximumBetweenHealing>
+            </li>
+		</comps>
+	</HediffDef>
   
   
   
   
   
-  <ThingDef ParentName="guy762_DrugPillBase">
-    <defName>guy762_medpac</defName>
-    <label>Medpac</label>
-    <description>A Medpac contains essential equipment for the treatment of wounds. They cannot be used by droids.</description>
-	<descriptionHyperlinks>
-		<HediffDef>guy762_medpacHeal</HediffDef>
-	</descriptionHyperlinks>
-	<possessionCount>7</possessionCount>
-    <graphicData>
-      <texPath>Items/Consumables/Medpacs/medpac</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-	  <drawSize>0.85</drawSize>
-    </graphicData>
-    <socialPropernessMatters>false</socialPropernessMatters>
-    <rotatable>false</rotatable>
-    <statBases>
-      <MarketValue>40</MarketValue>
-	  <WorkToMake>1000</WorkToMake>
-      <Mass>0.01</Mass>
-      <Flammability>0.5</Flammability>
-    </statBases>
-	<stackLimit>25</stackLimit>
-    <techLevel>Spacer</techLevel>
-    <ingestible>
-      <drugCategory>Medical</drugCategory>
-      <baseIngestTicks>10</baseIngestTicks>
-	  <ingestSound>kotorsound_inject</ingestSound>
-	  <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>guy762_medpacHeal</hediffDef>
-          <severity>1.0</severity>
-        </li>
-      </outcomeDoers>
-    </ingestible>
-	<tradeTags>
-      <li>guy762TT_KotORMedpac</li>
-    </tradeTags>
-    <comps>
-      <li Class="InstantHealingDrug.CompProperties_DrugInstantHeal">
-        <listOrder>1762</listOrder>
-		<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
-      </li>
-    </comps>
-    <orderedTakeGroup>Medicine</orderedTakeGroup>
-  </ThingDef>
+	<ThingDef ParentName="guy762_DrugPillBase">
+		<defName>guy762_medpac</defName>
+		<label>Medpac</label>
+		<description>A Medpac contains essential equipment for the treatment of wounds.\n\nHeals 10 points of wound damage. Cannot be used by droids.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_medpacHeal</HediffDef>
+		</descriptionHyperlinks>
+		<possessionCount>7</possessionCount>
+		<graphicData>
+		  <texPath>Items/Consumables/Medpacs/medpac</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<statBases>
+		  <MarketValue>40</MarketValue>
+		  <WorkToMake>1000</WorkToMake>
+		  <Mass>0.01</Mass>
+		  <Flammability>0.5</Flammability>
+		</statBases>
+		<stackLimit>25</stackLimit>
+		<techLevel>Spacer</techLevel>
+		<ingestible>
+		  <drugCategory>Medical</drugCategory>
+		  <baseIngestTicks>10</baseIngestTicks>
+		  <ingestSound>kotorsound_inject</ingestSound>
+		  <outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			  <hediffDef>guy762_medpacHeal</hediffDef>
+			  <severity>1.0</severity>
+			</li>
+		  </outcomeDoers>
+		</ingestible>
+		<tradeTags>
+		  <li>guy762TT_KotORMedpac</li>
+		</tradeTags>
+		<comps>
+		  <li Class="InstantHealingDrug.CompProperties_DrugInstantHeal">
+			<listOrder>1762</listOrder>
+			<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+		  </li>
+		</comps>
+		<orderedTakeGroup>Medicine</orderedTakeGroup>
+	</ThingDef>
   
   
   
   
   
   
-  <HediffDef>
-    <defName>guy762_medpacHeal_adv</defName>
-    <description>Fast-acting healing agents administered from an advanced Medpac. Clears approximately two wound hediffs.</description>
-    <label>Adv. Medpac</label>
-	<hediffClass>HediffWithComps</hediffClass>
-    <maxSeverity>1.0</maxSeverity>
-    <stages>
-      <li>
-        <naturalHealingFactor>5000</naturalHealingFactor>
-        <totalBleedFactor>0.5</totalBleedFactor>
-      </li>
-    </stages>
-    <comps>
-      <!--2,500 ticks per hour in game-->
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>1000</disappearsAfterTicks>
-		<showRemainingTime>True</showRemainingTime>
-      </li>
-    </comps>
-  </HediffDef>
+	<HediffDef>
+		<defName>guy762_medpacHeal_adv</defName>
+		<!-- <description>Fast-acting healing agents administered from an advanced Medpac. Clears approximately two wound hediffs.</description> -->
+		<description>Fast-acting healing agents administered from an advanced Medpac. Heals 20 points of wound damage.</description>
+		<label>Adv. Medpac</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+			<li>
+				<!-- <naturalHealingFactor>5000</naturalHealingFactor> -->
+				<totalBleedFactor>0.5</totalBleedFactor>
+			</li>
+		</stages>
+		<comps>
+			<!--2,500 ticks per hour in game-->
+			<li Class="HediffCompProperties_Disappears">
+				<!-- <disappearsAfterTicks>1000</disappearsAfterTicks> -->
+				<!-- <showRemainingTime>True</showRemainingTime> -->
+				<disappearsAfterTicks>500</disappearsAfterTicks><showRemainingTime>False</showRemainingTime> <!-- failsafe to remove the hediff if there's still healing points left over -->
+			</li>
+			<li Class="FCP.Core.Stims.HediffCompProperties_Stimpack">
+                <HealPermanentInjuries>false</HealPermanentInjuries>
+                <HealMissingBodyParts>false</HealMissingBodyParts>
+                <RemoveHediffWhenDone>True</RemoveHediffWhenDone>
+                <ScaleHealedAmountWithTotalHitPoints>true</ScaleHealedAmountWithTotalHitPoints>
+                <HealedAmount>20</HealedAmount>
+                <TickMinimumBetweenHealing>2</TickMinimumBetweenHealing>
+                <TickMaximumBetweenHealing>4</TickMaximumBetweenHealing>
+            </li>
+		</comps>
+	</HediffDef>
   
-  <ThingDef ParentName="guy762_DrugPillBase">
-    <defName>guy762_medpac_adv</defName>
-    <label>Advanced Medpac</label>
-    <description>An advanced Medpac contains an improved array of equipment for the treatment of wounds. They cannot be used by droids.</description>
-	<descriptionHyperlinks>
-		<HediffDef>guy762_medpacHeal_adv</HediffDef>
-	</descriptionHyperlinks>
-	<possessionCount>5</possessionCount>
-    <graphicData>
-      <texPath>Items/Consumables/Medpacs/medpac_adv</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-	  <drawSize>0.85</drawSize>
-    </graphicData>
-    <socialPropernessMatters>false</socialPropernessMatters>
-    <rotatable>false</rotatable>
-    <statBases>
-      <MarketValue>80</MarketValue>
-	  <WorkToMake>2000</WorkToMake>
-      <Mass>0.01</Mass>
-      <Flammability>0.5</Flammability>
-    </statBases>
-	<stackLimit>25</stackLimit>
-    <techLevel>Spacer</techLevel>
-    <ingestible>
-      <drugCategory>Medical</drugCategory>
-      <baseIngestTicks>10</baseIngestTicks>
-	  <ingestSound>kotorsound_inject</ingestSound>
-	  <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>guy762_medpacHeal_adv</hediffDef>
-          <severity>1.0</severity>
-        </li>
-      </outcomeDoers>
-    </ingestible>
-	<tradeTags>
-      <li>guy762TT_KotORMedpac</li>
-    </tradeTags>
-    <comps>
-      <li Class="InstantHealingDrug.CompProperties_DrugInstantHeal">
-        <listOrder>1763</listOrder>
-		<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
-      </li>
-    </comps>
-    <orderedTakeGroup>Medicine</orderedTakeGroup>
-  </ThingDef>
+	<ThingDef ParentName="guy762_DrugPillBase">
+		<defName>guy762_medpac_adv</defName>
+		<label>Advanced Medpac</label>
+		<description>An advanced Medpac contains an improved array of equipment for the treatment of wounds.\n\nHeals 20 points of wound damage. Cannot be used by droids.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_medpacHeal_adv</HediffDef>
+		</descriptionHyperlinks>
+		<possessionCount>5</possessionCount>
+		<graphicData>
+		  <texPath>Items/Consumables/Medpacs/medpac_adv</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<statBases>
+		  <MarketValue>80</MarketValue>
+		  <WorkToMake>2000</WorkToMake>
+		  <Mass>0.01</Mass>
+		  <Flammability>0.5</Flammability>
+		</statBases>
+		<stackLimit>25</stackLimit>
+		<techLevel>Spacer</techLevel>
+		<ingestible>
+		  <drugCategory>Medical</drugCategory>
+		  <baseIngestTicks>10</baseIngestTicks>
+		  <ingestSound>kotorsound_inject</ingestSound>
+		  <outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			  <hediffDef>guy762_medpacHeal_adv</hediffDef>
+			  <severity>1.0</severity>
+			</li>
+		  </outcomeDoers>
+		</ingestible>
+		<tradeTags>
+		  <li>guy762TT_KotORMedpac</li>
+		</tradeTags>
+		<comps>
+		  <li Class="InstantHealingDrug.CompProperties_DrugInstantHeal">
+			<listOrder>1763</listOrder>
+			<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+		  </li>
+		</comps>
+		<orderedTakeGroup>Medicine</orderedTakeGroup>
+	</ThingDef>
   
   
   
   
   
-  <HediffDef>
-    <defName>guy762_medpacHeal_life</defName>
-    <description>Fast-acting healing agents administered from a life support pack. Clears approximately three wound hediffs.</description>
-    <label>Life Support Pack</label>
-	<hediffClass>HediffWithComps</hediffClass>
-    <maxSeverity>1.0</maxSeverity>
-	
-	<preventsDeath>true</preventsDeath>
-	
-    <stages>
-      <li>
-        <naturalHealingFactor>10000</naturalHealingFactor>
-        <totalBleedFactor>0.25</totalBleedFactor>
-      </li>
-    </stages>
-    <comps>
-      <!--2,500 ticks per hour in game-->
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>1600</disappearsAfterTicks>
-		<showRemainingTime>True</showRemainingTime>
-      </li>
-    </comps>
-  </HediffDef>
+	<HediffDef>
+		<defName>guy762_medpacHeal_life</defName>
+		<!-- <description>Fast-acting healing agents administered from a life support pack. Clears approximately three wound hediffs.</description> -->
+		<description>Fast-acting healing agents administered from a life support pack. As the name implies, prevents death while active. Heals 30 points of wound damage.</description>
+		<label>Life Support Pack</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		
+		<preventsDeath>true</preventsDeath>
+		
+		<stages>
+			<li>
+				<!-- <naturalHealingFactor>10000</naturalHealingFactor> -->
+				<totalBleedFactor>0.25</totalBleedFactor>
+			</li>
+		</stages>
+		<comps>
+			<!--2,500 ticks per hour in game-->
+			<li Class="HediffCompProperties_Disappears">
+				<!-- <disappearsAfterTicks>1600</disappearsAfterTicks> -->
+				<!-- <showRemainingTime>True</showRemainingTime> -->
+				<disappearsAfterTicks>500</disappearsAfterTicks><showRemainingTime>False</showRemainingTime> <!-- failsafe to remove the hediff if there's still healing points left over -->
+			</li>
+			<li Class="FCP.Core.Stims.HediffCompProperties_Stimpack">
+                <HealPermanentInjuries>false</HealPermanentInjuries>
+                <HealMissingBodyParts>false</HealMissingBodyParts>
+                <RemoveHediffWhenDone>True</RemoveHediffWhenDone>
+                <ScaleHealedAmountWithTotalHitPoints>true</ScaleHealedAmountWithTotalHitPoints>
+                <HealedAmount>30</HealedAmount>
+                <TickMinimumBetweenHealing>2</TickMinimumBetweenHealing>
+                <TickMaximumBetweenHealing>4</TickMaximumBetweenHealing>
+            </li>
+		</comps>
+	</HediffDef>
   
-  <ThingDef ParentName="guy762_DrugPillBase">
-    <defName>guy762_medpac_life</defName>
-    <label>Life Support Pack</label>
-    <description>A life support pack contains dermal regenerators and other equipment for the treatment of wounds. They cannot be used by droids.</description>
-	<descriptionHyperlinks>
-		<HediffDef>guy762_medpacHeal_life</HediffDef>
-	</descriptionHyperlinks>
-	<possessionCount>3</possessionCount>
-    <graphicData>
-      <texPath>Items/Consumables/Medpacs/medpac_life</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-	  <drawSize>0.85</drawSize>
-    </graphicData>
-    <socialPropernessMatters>false</socialPropernessMatters>
-    <rotatable>false</rotatable>
-    <statBases>
-      <MarketValue>150</MarketValue>
-	  <WorkToMake>3000</WorkToMake>
-      <Mass>0.01</Mass>
-      <Flammability>0.5</Flammability>
-    </statBases>
-	<stackLimit>25</stackLimit>
-    <techLevel>Spacer</techLevel>
-    <ingestible>
-      <drugCategory>Medical</drugCategory>
-      <baseIngestTicks>10</baseIngestTicks>
-	  <ingestSound>kotorsound_inject</ingestSound>
-	  <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>guy762_medpacHeal_life</hediffDef>
-          <severity>1.0</severity>
-        </li>
-      </outcomeDoers>
-    </ingestible>
-	<tradeTags>
-      <li>guy762TT_KotORMedpac</li>
-    </tradeTags>
-    <comps>
-      <li Class="InstantHealingDrug.CompProperties_DrugInstantHeal">
-        <listOrder>1764</listOrder>
-		<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
-      </li>
-    </comps>
-    <orderedTakeGroup>Medicine</orderedTakeGroup>
-  </ThingDef>
+	<ThingDef ParentName="guy762_DrugPillBase">
+		<defName>guy762_medpac_life</defName>
+		<label>Life Support Pack</label>
+		<description>A life support pack contains dermal regenerators and other equipment for the treatment of wounds.\n\nHeals 30 points of wound damage. Cannot be used by droids.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_medpacHeal_life</HediffDef>
+		</descriptionHyperlinks>
+		<possessionCount>3</possessionCount>
+		<graphicData>
+		  <texPath>Items/Consumables/Medpacs/medpac_life</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<statBases>
+		  <MarketValue>150</MarketValue>
+		  <WorkToMake>3000</WorkToMake>
+		  <Mass>0.01</Mass>
+		  <Flammability>0.5</Flammability>
+		</statBases>
+		<stackLimit>25</stackLimit>
+		<techLevel>Spacer</techLevel>
+		<ingestible>
+		  <drugCategory>Medical</drugCategory>
+		  <baseIngestTicks>10</baseIngestTicks>
+		  <ingestSound>kotorsound_inject</ingestSound>
+		  <outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			  <hediffDef>guy762_medpacHeal_life</hediffDef>
+			  <severity>1.0</severity>
+			</li>
+		  </outcomeDoers>
+		</ingestible>
+		<tradeTags>
+		  <li>guy762TT_KotORMedpac</li>
+		</tradeTags>
+		<comps>
+		  <li Class="InstantHealingDrug.CompProperties_DrugInstantHeal">
+			<listOrder>1764</listOrder>
+			<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+		  </li>
+		</comps>
+		<orderedTakeGroup>Medicine</orderedTakeGroup>
+	</ThingDef>
   
-  <HediffDef>
-    <defName>guy762_medpacHeal_antidote</defName>
-    <description>Wide-spectrum antidote hypospray injectors administered from an antidote kit.</description>
-    <label>antidote kit</label>
-	<hediffClass>HediffWithComps</hediffClass>
-    <maxSeverity>1.0</maxSeverity>
-    <stages>
-      <li>
-        <makeImmuneTo>    <!-- poison hediffs also need a HediffCompProperties_RemoveIfOtherHediff to be removed by this hediff !!! -->
-			<li>guy762_Poison_saber</li>
-			<li>ToxicBuildup</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForceAffliction</li>
-			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForcePlague</li>
-		</makeImmuneTo>
-		<statOffsets>
-			<ImmunityGainSpeedFactor>100</ImmunityGainSpeedFactor>
-		</statOffsets>
-      </li>
-    </stages>
-    <comps>
-      <!--2,500 ticks per hour in game-->
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>1600</disappearsAfterTicks>
-		<showRemainingTime>True</showRemainingTime>
-      </li>
-    </comps>
-  </HediffDef>
   
-  <ThingDef ParentName="guy762_DrugPillBase">
-    <defName>guy762_medpac_antidote</defName>
-    <label>Antidote kit</label>
-    <description>This kit contains wide-spectrum antidote hypospray injectors designed to neutralize all known poisons and toxic buildup. Damage already suffered must still be healed by other means. They cannot be used by droids.</description>
-	<descriptionHyperlinks>
-		<HediffDef>guy762_medpacHeal_antidote</HediffDef>
-	</descriptionHyperlinks>
-	<possessionCount>3</possessionCount>
-    <graphicData>
-      <texPath>Items/Consumables/Medpacs/medpac_antidote</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-	  <drawSize>0.85</drawSize>
-    </graphicData>
-    <socialPropernessMatters>false</socialPropernessMatters>
-    <rotatable>false</rotatable>
-    <statBases>
-      <MarketValue>50</MarketValue>
-	  <WorkToMake>3000</WorkToMake>
-      <Mass>0.01</Mass>
-      <Flammability>0.5</Flammability>
-    </statBases>
-	<stackLimit>25</stackLimit>
-    <techLevel>Spacer</techLevel>
-    <ingestible>
-      <drugCategory>Medical</drugCategory>
-      <baseIngestTicks>10</baseIngestTicks>
-	  <ingestSound>kotorsound_inject</ingestSound>
-	  <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>guy762_medpacHeal_antidote</hediffDef>
-          <severity>1.0</severity>
-        </li>
-      </outcomeDoers>
-    </ingestible>
-	<tradeTags>
-      <li>guy762TT_KotORMedicine</li>
-    </tradeTags>
-    <comps>
-      <li Class="CompProperties_Drug">
-        <listOrder>1765</listOrder>
-		<isCombatEnhancingDrug>false</isCombatEnhancingDrug>
-      </li>
-    </comps>
-    <orderedTakeGroup>Medicine</orderedTakeGroup>
-  </ThingDef>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+	<HediffDef>
+		<defName>guy762_medpacHeal_antidote</defName>
+		<description>Wide-spectrum antidote hypospray injectors administered from an antidote kit.</description>
+		<label>antidote kit</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+		  <li>
+			<makeImmuneTo>    <!-- poison hediffs also need a HediffCompProperties_RemoveIfOtherHediff to be removed by this hediff !!! -->
+				<li>guy762_Poison_saber</li>
+				<li>ToxicBuildup</li>
+				<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForceAffliction</li>
+				<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForcePlague</li>
+			</makeImmuneTo>
+			<statOffsets>
+				<ImmunityGainSpeedFactor>100</ImmunityGainSpeedFactor>
+			</statOffsets>
+		  </li>
+		</stages>
+		<comps>
+		  <!--2,500 ticks per hour in game-->
+		  <li Class="HediffCompProperties_Disappears">
+			<disappearsAfterTicks>1600</disappearsAfterTicks>
+			<showRemainingTime>True</showRemainingTime>
+		  </li>
+		</comps>
+	</HediffDef>
+  
+	<ThingDef ParentName="guy762_DrugPillBase">
+		<defName>guy762_medpac_antidote</defName>
+		<label>Antidote kit</label>
+		<description>This kit contains wide-spectrum antidote hypospray injectors designed to neutralize all known poisons and toxic buildup. Damage already suffered must still be healed by other means. They cannot be used by droids.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_medpacHeal_antidote</HediffDef>
+		</descriptionHyperlinks>
+		<possessionCount>3</possessionCount>
+		<graphicData>
+		  <texPath>Items/Consumables/Medpacs/medpac_antidote</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<statBases>
+		  <MarketValue>50</MarketValue>
+		  <WorkToMake>3000</WorkToMake>
+		  <Mass>0.01</Mass>
+		  <Flammability>0.5</Flammability>
+		</statBases>
+		<stackLimit>25</stackLimit>
+		<techLevel>Spacer</techLevel>
+		<ingestible>
+		  <drugCategory>Medical</drugCategory>
+		  <baseIngestTicks>10</baseIngestTicks>
+		  <ingestSound>kotorsound_inject</ingestSound>
+		  <outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			  <hediffDef>guy762_medpacHeal_antidote</hediffDef>
+			  <severity>1.0</severity>
+			</li>
+		  </outcomeDoers>
+		</ingestible>
+		<tradeTags>
+		  <li>guy762TT_KotORMedicine</li>
+		</tradeTags>
+		<comps>
+		  <li Class="CompProperties_Drug">
+			<listOrder>1765</listOrder>
+			<isCombatEnhancingDrug>false</isCombatEnhancingDrug>
+		  </li>
+		</comps>
+		<orderedTakeGroup>Medicine</orderedTakeGroup>
+	</ThingDef>
   
   
   

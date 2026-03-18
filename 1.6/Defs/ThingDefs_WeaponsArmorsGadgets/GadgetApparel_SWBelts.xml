@@ -51,7 +51,8 @@
     </graphicData>
     <techLevel>Spacer</techLevel>
     <statBases>
-      <MarketValue>1000</MarketValue>
+      <!-- <MarketValue>1000</MarketValue> -->
+      <MarketValue>200</MarketValue>
 	  <Mass>1</Mass>
       <EquipDelay>2</EquipDelay>
       <MaxHitPoints>100</MaxHitPoints>

@@ -571,7 +571,7 @@
 		<defName>kotor_PlasmaFurnace</defName>
 		<label>plasma furnace</label>
 		<description>This large furnace superheats Tibanna gas into plasma and contains it in such a way that it can be used as a heat source to smelt and forge spacer-level alloys. The furnace also contains specialized equipment that utilizes the high levels of heat to pressurize carbon compounds like chemfuel to form highly-durable forms of plastic.</description>
-		<thingClass>Building_WorkTable</thingClass>
+		<thingClass>Building_WorkTable_HeatPush</thingClass>
 		<thingCategories Inherit="false" />
 		
 		<!-- Texture -->
@@ -672,14 +672,14 @@
 			</li>
 			<li Class="CompProperties_HeatPusher">
 				<compClass>CompHeatPusherPowered</compClass>
-				<heatPerSecond>21</heatPerSecond>
-				<heatPushMaxTemperature>32</heatPushMaxTemperature>
+				<heatPerSecond>7.5</heatPerSecond> <!-- REMINDER: ALL HEAT IN XML IS IN CELSIUS! -->
+				<heatPushMaxTemperature>17.5</heatPushMaxTemperature>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Biotech" Class="CompProperties_Atomizer">
 				<thingDef>Wastepack</thingDef>
-				<stackLimit>10</stackLimit>
+				<stackLimit>25</stackLimit>
 				<drawContainedThing>false</drawContainedThing>
-				<ticksPerAtomize>40000</ticksPerAtomize>
+				<ticksPerAtomize>5000</ticksPerAtomize>
 				<resolveEffecter>AtomizerResolve</resolveEffecter>
 				<workingEffecter>WastepackAtomizer_Working</workingEffecter>
 				<materialsAddedSound>WastepackAtomizer_MaterialInserted</materialsAddedSound>

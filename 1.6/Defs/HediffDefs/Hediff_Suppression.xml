@@ -4,7 +4,8 @@
 	<HediffDef>
 		<defName>SWCPHediff_Suppression</defName>
 		<label>Suppressed</label>
-		<description>Negative psychological effects from being under suppressing blaster fire. At higher levels, this has a small chance to give a mental break while active. Each level lasts around 10 seconds before decreasing.</description>
+		<description>Negative psychological effects from being under suppressing blaster fire, reducing attack accuracy and increasing the mental break threshold. Each level lasts around 10 seconds before decreasing.</description>
+		<!-- <description>Negative psychological effects from being under suppressing blaster fire. At higher levels, this has a small chance to give a mental break while active. Each level lasts around 10 seconds before decreasing.</description> -->
 		<defaultLabelColor>(255,7,48)</defaultLabelColor> <!-- red -->
 		<hediffClass>HediffWithComps</hediffClass>
 		<maxSeverity>3</maxSeverity>
@@ -17,7 +18,7 @@
 				<statOffsets>
 					<ShootingAccuracyPawn>-0.15</ShootingAccuracyPawn>
 					<MeleeHitChance>-0.15</MeleeHitChance>
-					<PainShockThreshold>-0.15</PainShockThreshold>
+					<!-- <PainShockThreshold>-0.15</PainShockThreshold> -->
 					<MentalBreakThreshold>0.15</MentalBreakThreshold>
 				</statOffsets>
 			</li>
@@ -28,7 +29,7 @@
 				<statOffsets>
 					<ShootingAccuracyPawn>-0.30</ShootingAccuracyPawn>
 					<MeleeHitChance>-0.30</MeleeHitChance>
-					<PainShockThreshold>-0.30</PainShockThreshold>
+					<!-- <PainShockThreshold>-0.30</PainShockThreshold> -->
 					<MentalBreakThreshold>0.30</MentalBreakThreshold>
 				</statOffsets>
 				 <!-- disabling these because one of my pawns rolled the mental break while testing, ran off the map, and just fully stopped being a colonist. not great to have when half of every pawnkind has a weapon that suppresses  -->
@@ -46,7 +47,7 @@
 				<statOffsets>
 					<ShootingAccuracyPawn>-0.45</ShootingAccuracyPawn>
 					<MeleeHitChance>-0.45</MeleeHitChance>
-					<PainShockThreshold>-0.45</PainShockThreshold>
+					<!-- <PainShockThreshold>-0.45</PainShockThreshold> -->
 					<MentalBreakThreshold>0.45</MentalBreakThreshold>
 				</statOffsets>
 				<!-- <mentalStateGivers> -->
@@ -82,7 +83,7 @@
 		  <li>
 			<label>under suppressing fire</label>
 			<description>I am about to die!</description>
-			<baseMoodEffect>-100</baseMoodEffect>
+			<baseMoodEffect>-50</baseMoodEffect>
 		  </li>
 		</stages>
 		<lerpMoodToZero>true</lerpMoodToZero>

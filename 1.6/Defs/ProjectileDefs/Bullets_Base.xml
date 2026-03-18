@@ -237,7 +237,7 @@
 			<extraDamages>
 				<li>
 					<def>Stun</def>
-					<amount>10</amount>
+					<amount>5</amount>
 				</li>
 			</extraDamages>
 		</projectile>

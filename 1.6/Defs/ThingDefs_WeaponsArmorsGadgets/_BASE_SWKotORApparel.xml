@@ -1329,7 +1329,86 @@
 	  
 	  
 	  
+	<ThingDef Name="guy762_backpackbase" ParentName="ApparelNoQualityBase" Abstract="True">
+		<techLevel>Spacer</techLevel>
+		<statBases>
+		  <EquipDelay>5</EquipDelay>
+		  <Flammability>0.4</Flammability>
+		  <MaxHitPoints>200</MaxHitPoints>
+		</statBases>
+		<tickerType>Normal</tickerType>
+		<thingCategories>
+		  <li>ApparelUtility</li>
+		  <li>guy762_gadgets</li>
+		</thingCategories>
+		<apparel>
+		  <countsAsClothingForNudity>false</countsAsClothingForNudity>
+		  <careIfWornByCorpse>true</careIfWornByCorpse>
+		  <careIfDamaged>false</careIfDamaged>
+		  <ignoredByNonViolent>false</ignoredByNonViolent>
+		  <wearPerDay>0</wearPerDay>
+		  <bodyPartGroups>
+			<li>Torso</li>
+		  </bodyPartGroups>
+		  <layers>
+			<li>Belt</li>
+		  </layers>
+		  <wornGraphicData>
+			<renderUtilityAsPack>true</renderUtilityAsPack>
+			<east>
+			  <offset>(-0.35,-0.05)</offset>
+			  <thin><offset>(0.05,0)</offset></thin>
+			  <hulk><offset>(-0.1,0)</offset></hulk>
+			  <fat><offset>(-0.15,0)</offset></fat>
+			</east>
+			<west>
+			  <offset>(0.35,-0.05)</offset>
+			  <thin><offset>(-0.05,0)</offset></thin>
+			  <hulk><offset>(0.1,0)</offset></hulk>
+			  <fat><offset>(0.15,0)</offset></fat>
+			</west>
+			<male>  <scale>(0.75,0.75)</scale></male>
+			<female><scale>(0.75,0.75)</scale></female>
+			<thin>  <scale>(0.7,0.7)</scale></thin>
+			<hulk>  <scale>(0.9,0.9)</scale></hulk>
+			<fat>   <scale>(0.9,0.9)</scale></fat>
+
+		  </wornGraphicData>
+		</apparel>
+		<resourceReadoutPriority>Middle</resourceReadoutPriority>
+		<tradeNeverStack>false</tradeNeverStack>
+		<smeltable>false</smeltable>
+		<burnableByRecipe>false</burnableByRecipe>
+		<!-- <drawGUIOverlay>false</drawGUIOverlay> -->
+	</ThingDef>
 	  
+	<ThingDef Name="guy762_backpackMakeable" ParentName="guy762_backpackbase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Jade</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<useIngredientsForColor>false</useIngredientsForColor>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+	</ThingDef> 
 	  
 	  
 	  
@@ -1392,34 +1471,34 @@
 		<smeltable>false</smeltable>
 		<burnableByRecipe>false</burnableByRecipe>
 		<drawGUIOverlay>false</drawGUIOverlay>
-	  </ThingDef>
+	</ThingDef>
 	  
-	  <ThingDef Name="guy762_jetpackMakeable" ParentName="guy762_jetpackbase" Abstract="True">
-			<recipeMaker>
-				<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
-				<workSkill>Crafting</workSkill>
-				<recipeUsers>
-					<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
-				</recipeUsers>
-				<defaultIngredientFilter>
-					<categories>
-						<li>Root</li>
-					</categories>
-					<disallowedThingDefs>
-						<li>Gold</li>
-						<li>Silver</li>
-						<li>Jade</li>
-					</disallowedThingDefs>
-				</defaultIngredientFilter>
-				<useIngredientsForColor>false</useIngredientsForColor>
-			</recipeMaker>
-			<comps>
-				<li Class="CompProperties_Forbiddable" />
-				<li>
-					<compClass>CompColorable</compClass>
-				</li>
-				<li Class="CompProperties_Styleable"></li>
-			</comps>
-		</ThingDef>
+	<ThingDef Name="guy762_jetpackMakeable" ParentName="guy762_jetpackbase" Abstract="True">
+		<recipeMaker>
+			<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+			<workSkill>Crafting</workSkill>
+			<recipeUsers>
+				<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			</recipeUsers>
+			<defaultIngredientFilter>
+				<categories>
+					<li>Root</li>
+				</categories>
+				<disallowedThingDefs>
+					<li>Gold</li>
+					<li>Silver</li>
+					<li>Jade</li>
+				</disallowedThingDefs>
+			</defaultIngredientFilter>
+			<useIngredientsForColor>false</useIngredientsForColor>
+		</recipeMaker>
+		<comps>
+			<li Class="CompProperties_Forbiddable" />
+			<li>
+				<compClass>CompColorable</compClass>
+			</li>
+			<li Class="CompProperties_Styleable"></li>
+		</comps>
+	</ThingDef>
 
 </Defs>

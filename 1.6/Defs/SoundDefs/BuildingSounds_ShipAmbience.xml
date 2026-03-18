@@ -8,8 +8,8 @@
 		<sustain>True</sustain>
 		<context>MapOnly</context>
 		<priorityMode>PrioritizeNearest</priorityMode>
-		<maxSimultaneous>1</maxSimultaneous>
-		<!-- <maxVoices>1</maxVoices> -->
+		<maxSimultaneous>5</maxSimultaneous>
+		<maxVoices>5</maxVoices>
 		<subSounds>
 		  <li>
 			<muteWhenPaused>false</muteWhenPaused>
@@ -30,8 +30,8 @@
 		<sustain>True</sustain>
 		<context>MapOnly</context>
 		<priorityMode>PrioritizeNearest</priorityMode>
-		<maxSimultaneous>1</maxSimultaneous>
-		<!-- <maxVoices>1</maxVoices> -->
+		<maxSimultaneous>5</maxSimultaneous>
+		<maxVoices>5</maxVoices>
 		<subSounds>
 		  <li>
 			<muteWhenPaused>false</muteWhenPaused>
@@ -52,8 +52,8 @@
 		<sustain>True</sustain>
 		<context>MapOnly</context>
 		<priorityMode>PrioritizeNearest</priorityMode>
-		<maxSimultaneous>1</maxSimultaneous>
-		<!-- <maxVoices>1</maxVoices> -->
+		<maxSimultaneous>5</maxSimultaneous>
+		<maxVoices>5</maxVoices>
 		<subSounds>
 		  <li>
 			<muteWhenPaused>false</muteWhenPaused>
@@ -74,8 +74,8 @@
 		<sustain>True</sustain>
 		<context>MapOnly</context>
 		<priorityMode>PrioritizeNearest</priorityMode>
-		<maxSimultaneous>1</maxSimultaneous>
-		<!-- <maxVoices>1</maxVoices> -->
+		<maxSimultaneous>5</maxSimultaneous>
+		<maxVoices>5</maxVoices>
 		<subSounds>
 		  <li>
 			<muteWhenPaused>false</muteWhenPaused>
@@ -97,8 +97,8 @@
 		<sustain>True</sustain>
 		<context>MapOnly</context>
 		<priorityMode>PrioritizeNearest</priorityMode>
-		<maxSimultaneous>1</maxSimultaneous>
-		<!-- <maxVoices>1</maxVoices> -->
+		<maxSimultaneous>5</maxSimultaneous>
+		<maxVoices>5</maxVoices>
 		<subSounds>
 		  <li>
 			<muteWhenPaused>false</muteWhenPaused>
@@ -118,8 +118,8 @@
 		<sustain>True</sustain>
 		<context>MapOnly</context>
 		<priorityMode>PrioritizeNearest</priorityMode>
-		<maxSimultaneous>1</maxSimultaneous>
-		<!-- <maxVoices>1</maxVoices> -->
+		<maxSimultaneous>5</maxSimultaneous>
+		<maxVoices>5</maxVoices>
 		<subSounds>
 		  <li>
 			<muteWhenPaused>false</muteWhenPaused>

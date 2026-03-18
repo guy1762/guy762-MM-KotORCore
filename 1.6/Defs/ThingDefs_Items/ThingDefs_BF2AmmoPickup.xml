@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+	<ThingDef ParentName="guy762_munitionbase">
+		<defName>SWCPItem_BF2AmmoSupplyPickup</defName>
+		<label>ammo container</label>
+		<description>This resupply container holds a number of spare grenades, light missiles, and other munitions for reloadable equipment. Coincidentally, they always seem to have exactly what you need.</description>
+		<soundInteract>kotorsound_BF2ammoThrow</soundInteract>
+		<soundDrop>kotorsound_BF2ammoThrow</soundDrop>
+		<graphicData>
+		  <texPath>Items/BF2AmmoSupply</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		</graphicData>
+		<statBases>
+			<MarketValue>10</MarketValue>
+			<Mass>1</Mass>
+		</statBases>
+		<stackLimit>10</stackLimit>
+		<tickerType>Never</tickerType>
+		<tradeTags>
+			<li>guy762TT_LightMunitions</li>
+		</tradeTags>
+	</ThingDef>
+	
+	<RecipeDef>
+		<defName>SWCPRecipe_BF2AmmoSupplyPickup</defName>
+		<label>make 5 ammo container</label>
+		<description>make 5 ammo containers.</description>
+		<jobString>making 5 ammo containers.</jobString>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Crafting</workSkill>
+		<effectWorking>Smith</effectWorking>
+		<soundWorking>Recipe_Smith</soundWorking>
+		<unfinishedThingDef>UnfinishedBelt</unfinishedThingDef>
+		<workAmount>3000</workAmount>
+		<ingredients>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>ComponentIndustrial</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>KOTOR_RawRhydonium</li>
+					</thingDefs>
+				</filter>
+				<count>5</count>
+			</li>
+			<li>
+				<filter>
+					<thingDefs>
+						<li>KOTOR_PlasmaCartridge</li>
+					</thingDefs>
+				</filter>
+				<count>1</count>
+			</li>
+		</ingredients>
+		<fixedIngredientFilter>
+		  <thingDefs>
+			<li>ComponentIndustrial</li>
+			<li>KOTOR_RawRhydonium</li>
+			<li>KOTOR_PlasmaCartridge</li>
+		  </thingDefs>
+		</fixedIngredientFilter>
+		<products>
+		  <SWCPItem_BF2AmmoSupplyPickup>5</SWCPItem_BF2AmmoSupplyPickup>
+		</products>
+		<researchPrerequisite>KOTOR_Research_AdvMunitions</researchPrerequisite>
+		<recipeUsers>
+			<li>FabricationBench</li>
+			<li MayRequire="guy762.KotORWeapons">guy762_KotORWorkbench</li>
+			<li>kotor_DrugLab</li>
+		</recipeUsers>
+		<!-- <skillRequirements> -->
+			<!-- <Crafting>7</Crafting> -->
+		<!-- </skillRequirements> -->
+	</RecipeDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</Defs>

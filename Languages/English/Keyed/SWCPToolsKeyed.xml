@@ -13,7 +13,7 @@
 	<SWCP_MechDetonate>Detonate</SWCP_MechDetonate>
 
 	<SWCP_CannotPickUp>Cannot pick up {0}</SWCP_CannotPickUp>
-	<SWCP_PickUp>Pick up {0}</SWCP_PickUp>
+	<SWCP_PickUp>Pick up all {0}</SWCP_PickUp>
 	<SWCP_PickUpMax>Pick up max</SWCP_PickUpMax>
 	<SWCP_PickUpOne>Pick up one {0}</SWCP_PickUpOne>
 	<SWCP_TooHeavy>Too Heavy</SWCP_TooHeavy>

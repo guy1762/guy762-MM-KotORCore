@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[@Name="BaseMechanoid"]/statBases/ArmorRating_Heat</xpath>
+		<value>
+			<ArmorRating_Heat>1.00</ArmorRating_Heat>
+		</value>
+	</Operation>
+	
+
+	
+</Patch>

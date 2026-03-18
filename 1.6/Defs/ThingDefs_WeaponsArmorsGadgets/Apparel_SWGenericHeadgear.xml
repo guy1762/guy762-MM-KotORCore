@@ -692,6 +692,7 @@
 			<renderSkipFlags>
 				<li>Hair</li>
 			</renderSkipFlags>
+			<drawData><defaultData><layer>67</layer></defaultData></drawData>
 			<bodyPartGroups>
 				<li>UpperHead</li>
 			</bodyPartGroups>
@@ -714,6 +715,13 @@
 				<li>SWCPOutfitTag_LightSoldier</li><li>Soldier</li>
 			</defaultOutfitTags>
 		</apparel>
+		
+		<randomStyleChance>1</randomStyleChance>
+		<randomStyle>
+			<li><styleDef>guy762_OpenHeadwrapStyle_chin</styleDef></li>
+			<li><styleDef>guy762_OpenHeadwrapStyle_nochin</styleDef></li>
+		</randomStyle>
+		
 		<tradeTags>
 			<li>guy762TT_KotORClothes</li>
 			<li>guy762TT_GCWArmor_OutlawSurplus</li>
@@ -766,6 +774,27 @@
 		</colorGenerator>
 	</ThingDef>
 	
+	<ThingStyleDef>
+		<defName>guy762_OpenHeadwrapStyle_chin</defName>
+		<wornGraphicPath>SWApparel/headwrap/openheadwrap</wornGraphicPath>
+		<graphicData>
+			<texPath>SWApparel/headwrap/openheadwrap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	<ThingStyleDef>
+		<defName>guy762_OpenHeadwrapStyle_nochin</defName>
+		<wornGraphicPath>SWApparel/headwrap/chinlessheadwrap</wornGraphicPath>
+		<graphicData>
+			<texPath>SWApparel/headwrap/chinlessheadwrap</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+	</ThingStyleDef>
+	
+	
+	
+	
 	
 	
 	
@@ -803,6 +832,7 @@
 		<apparel>
 			<wornGraphicPath>SWApparel/headwrap/maskedheadwrap</wornGraphicPath>
 			<!-- <useWornGraphicMask>true</useWornGraphicMask> -->
+			<drawData><defaultData><layer>67</layer></defaultData></drawData>
 			<renderSkipFlags>
 				<li>Hair</li>
 				<li>Beard</li>

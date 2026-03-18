@@ -1,121 +1,143 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
 
-  <HediffDef>
-    <defName>guy762_repairkitHeal</defName>
-    <description>A droid's auto-repair functions, boosted by a repair kit.</description>
-    <label>repair kit</label>
-	<hediffClass>HediffWithComps</hediffClass>
-    <maxSeverity>1.0</maxSeverity>
-    <stages>
-      <li>
-        <naturalHealingFactor>1000</naturalHealingFactor>
-        <totalBleedFactor>0.75</totalBleedFactor>
-      </li>
-    </stages>
-    <comps>
-      <!--2,500 ticks per hour in game-->
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>500</disappearsAfterTicks>
-		<showRemainingTime>True</showRemainingTime>
-      </li>
-    </comps>
-  </HediffDef>
+	<HediffDef>
+		<defName>guy762_repairkitHeal</defName>
+		<description>A droid's auto-repair functions, boosted by a repair kit. Heals 15 points of wound damage.</description>
+		<label>repair kit</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+		  <li>
+			<!-- <naturalHealingFactor>1000</naturalHealingFactor> -->
+			<totalBleedFactor>0.75</totalBleedFactor>
+		  </li>
+		</stages>
+		<comps>
+			<!--2,500 ticks per hour in game-->
+			<li Class="HediffCompProperties_Disappears">
+				<!-- <disappearsAfterTicks>500</disappearsAfterTicks> -->
+				<!-- <showRemainingTime>True</showRemainingTime> -->
+				<disappearsAfterTicks>500</disappearsAfterTicks><showRemainingTime>False</showRemainingTime> <!-- failsafe to remove the hediff if there's still healing points left over -->
+			</li>
+			
+			<li Class="FCP.Core.Stims.HediffCompProperties_Stimpack">
+                <HealPermanentInjuries>True</HealPermanentInjuries>
+                <HealMissingBodyParts>false</HealMissingBodyParts>
+                <RemoveHediffWhenDone>True</RemoveHediffWhenDone>
+                <ScaleHealedAmountWithTotalHitPoints>true</ScaleHealedAmountWithTotalHitPoints>
+                <HealedAmount>15</HealedAmount>
+                <TickMinimumBetweenHealing>2</TickMinimumBetweenHealing>
+                <TickMaximumBetweenHealing>4</TickMaximumBetweenHealing>
+            </li>
+		</comps>
+	</HediffDef>
   
-  <ThingDef ParentName="guy762_DrugPillBase">
-    <defName>guy762_repairkit</defName>
-    <label>repair kit</label>
-    <description>Included are the basic tools needed to repair a droid that has been damaged in combat. They can only be used by droids.</description>
-	<descriptionHyperlinks>
-		<HediffDef>guy762_repairkitHeal</HediffDef>
-	</descriptionHyperlinks>
-	<possessionCount>7</possessionCount>
-    <graphicData>
-      <texPath>Items/repairkits/repairkit</texPath>
-      <graphicClass>Graphic_StackCount</graphicClass>
-	  <drawSize>0.85</drawSize>
-    </graphicData>
-    <socialPropernessMatters>false</socialPropernessMatters>
-    <rotatable>false</rotatable>
-    <statBases>
-      <MarketValue>25</MarketValue>
-	  <WorkToMake>1000</WorkToMake>
-      <Mass>0.04</Mass>
-      <Flammability>0.5</Flammability>
-    </statBases>
-	<stackLimit>25</stackLimit>
-    <techLevel>Spacer</techLevel>
-    <ingestible>
-      <drugCategory>Medical</drugCategory>
-      <baseIngestTicks>10</baseIngestTicks>
-	  <ingestSound>kotorsound_upgrade</ingestSound>
-	  <preferability>NeverForNutrition</preferability>
-	  <outcomeDoers>
-        <li Class="IngestionOutcomeDoer_GiveHediff">
-          <hediffDef>guy762_repairkitHeal</hediffDef>
-          <severity>1.0</severity>
-        </li>
-		<!-- <li Class="ArtificialBeings.IngestionOutcomeDoer_SplitEffects"> -->
-			<!-- <organicEffect>ABF_Hediff_Synstruct_Toxicated</organicEffect> -->
-			<!-- <organicSeverity>1</organicSeverity> -->
-			<!-- <artificialEffect>guy762_repairkitHeal</artificialEffect> -->
-			<!-- <artificialSeverity>1</artificialSeverity> -->
-		<!-- </li> -->
-      </outcomeDoers>
-    </ingestible>
-	<tradeTags>
-      <li>guy762TT_DroidEquipment</li>
-      <li>guy762TT_DroidConsumables</li>
-    </tradeTags>
-    <comps>
-      <li Class="InstantHealingDrug.CompProperties_DrugInstantHeal">
-        <listOrder>1759</listOrder>
-		<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
-      </li>
-    </comps>
-    <orderedTakeGroup>Medicine</orderedTakeGroup>
-	
-	<recipeMaker>
-      <!--researchPrerequisite></researchPrerequisite-->
-      <recipeUsers>
-        <li MayRequire="Killathon.ArtificialBeings.SynCore">ABF_Thing_Synstruct_PartWorkbench</li>
-      </recipeUsers>
-    </recipeMaker>
-    <costList>
-      <ComponentIndustrial>2</ComponentIndustrial>
-    </costList>
-  </ThingDef>
+	<ThingDef ParentName="guy762_DrugPillBase">
+		<defName>guy762_repairkit</defName>
+		<label>repair kit</label>
+		<description>Included are the basic tools needed to repair a droid that has been damaged in combat.\n\nHeals 15 points of wound damage. Can only be used by droids.</description>
+		<descriptionHyperlinks>
+			<HediffDef>guy762_repairkitHeal</HediffDef>
+		</descriptionHyperlinks>
+		<possessionCount>7</possessionCount>
+		<graphicData>
+		  <texPath>Items/repairkits/repairkit</texPath>
+		  <graphicClass>Graphic_StackCount</graphicClass>
+		  <drawSize>0.85</drawSize>
+		</graphicData>
+		<socialPropernessMatters>false</socialPropernessMatters>
+		<rotatable>false</rotatable>
+		<statBases>
+		  <MarketValue>25</MarketValue>
+		  <WorkToMake>1000</WorkToMake>
+		  <Mass>0.04</Mass>
+		  <Flammability>0.5</Flammability>
+		</statBases>
+		<stackLimit>25</stackLimit>
+		<techLevel>Spacer</techLevel>
+		<ingestible>
+		  <drugCategory>Medical</drugCategory>
+		  <baseIngestTicks>10</baseIngestTicks>
+		  <ingestSound>kotorsound_upgrade</ingestSound>
+		  <preferability>NeverForNutrition</preferability>
+		  <outcomeDoers>
+			<li Class="IngestionOutcomeDoer_GiveHediff">
+			  <hediffDef>guy762_repairkitHeal</hediffDef>
+			  <severity>1.0</severity>
+			</li>
+			<!-- <li Class="ArtificialBeings.IngestionOutcomeDoer_SplitEffects"> -->
+				<!-- <organicEffect>ABF_Hediff_Synstruct_Toxicated</organicEffect> -->
+				<!-- <organicSeverity>1</organicSeverity> -->
+				<!-- <artificialEffect>guy762_repairkitHeal</artificialEffect> -->
+				<!-- <artificialSeverity>1</artificialSeverity> -->
+			<!-- </li> -->
+		  </outcomeDoers>
+		</ingestible>
+		<tradeTags>
+		  <li>guy762TT_DroidEquipment</li>
+		  <li>guy762TT_DroidConsumables</li>
+		</tradeTags>
+		<comps>
+		  <li Class="InstantHealingDrug.CompProperties_DrugInstantHeal">
+			<listOrder>1758</listOrder>
+			<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
+		  </li>
+		</comps>
+		<orderedTakeGroup>Medicine</orderedTakeGroup>
+		
+		<recipeMaker>
+		  <!--researchPrerequisite></researchPrerequisite-->
+		  <recipeUsers>
+			<li MayRequire="Killathon.ArtificialBeings.SynCore">ABF_Thing_Synstruct_PartWorkbench</li>
+		  </recipeUsers>
+		</recipeMaker>
+		<costList>
+		  <ComponentIndustrial>2</ComponentIndustrial>
+		</costList>
+	</ThingDef>
   
   
   
   
   
   
-  <HediffDef>
-    <defName>guy762_repairkitHeal_adv</defName>
-    <description>A droid's auto-repair functions, boosted by an advanced repair kit.</description>
-    <label>adv. repair kit</label>
-	<hediffClass>HediffWithComps</hediffClass>
-    <maxSeverity>1.0</maxSeverity>
-    <stages>
-      <li>
-        <naturalHealingFactor>5000</naturalHealingFactor>
-        <totalBleedFactor>0.5</totalBleedFactor>
-      </li>
-    </stages>
-    <comps>
-      <!--2,500 ticks per hour in game-->
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>1000</disappearsAfterTicks>
-		<showRemainingTime>True</showRemainingTime>
-      </li>
-    </comps>
-  </HediffDef>
+	<HediffDef>
+		<defName>guy762_repairkitHeal_adv</defName>
+		<description>A droid's auto-repair functions, boosted by an advanced repair kit. Heals 25 points of wound damage.</description>
+		<label>adv. repair kit</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+		  <li>
+			<!-- <naturalHealingFactor>5000</naturalHealingFactor> -->
+			<totalBleedFactor>0.5</totalBleedFactor>
+		  </li>
+		</stages>
+		<comps>
+			<!--2,500 ticks per hour in game-->
+			<li Class="HediffCompProperties_Disappears">
+				<!-- <disappearsAfterTicks>1000</disappearsAfterTicks> -->
+				<!-- <showRemainingTime>True</showRemainingTime> -->
+				<disappearsAfterTicks>500</disappearsAfterTicks><showRemainingTime>False</showRemainingTime> <!-- failsafe to remove the hediff if there's still healing points left over -->
+			</li>
+			
+			<li Class="FCP.Core.Stims.HediffCompProperties_Stimpack">
+                <HealPermanentInjuries>True</HealPermanentInjuries>
+                <HealMissingBodyParts>false</HealMissingBodyParts>
+                <RemoveHediffWhenDone>True</RemoveHediffWhenDone>
+                <ScaleHealedAmountWithTotalHitPoints>true</ScaleHealedAmountWithTotalHitPoints>
+                <HealedAmount>25</HealedAmount>
+                <TickMinimumBetweenHealing>2</TickMinimumBetweenHealing>
+                <TickMaximumBetweenHealing>4</TickMaximumBetweenHealing>
+            </li>
+		</comps>
+	</HediffDef>
   
   <ThingDef ParentName="guy762_DrugPillBase">
     <defName>guy762_repairkit_adv</defName>
     <label>advanced repair kit</label>
-    <description>Included are an improved assortment of tools and parts needed to repair a droid that has been damaged in combat. They can only be used by droids.</description>
+    <description>Included are an improved assortment of tools and parts needed to repair a droid that has been damaged in combat.\n\nHeals 25 points of wound damage. Can only be used by droids.</description>
 	<descriptionHyperlinks>
 		<HediffDef>guy762_repairkitHeal_adv</HediffDef>
 	</descriptionHyperlinks>
@@ -159,7 +181,7 @@
     </tradeTags>
     <comps>
       <li Class="InstantHealingDrug.CompProperties_DrugInstantHeal">
-        <listOrder>1760</listOrder>
+        <listOrder>1759</listOrder>
 		<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
       </li>
     </comps>
@@ -183,31 +205,42 @@
   
   
   
-  <HediffDef>
-    <defName>guy762_repairkitHeal_con</defName>
-    <description>A droid's auto-repair functions, boosted by a construction kit.</description>
-    <label>construction kit</label>
-	<hediffClass>HediffWithComps</hediffClass>
-    <maxSeverity>1.0</maxSeverity>
-    <stages>
-      <li>
-        <naturalHealingFactor>10000</naturalHealingFactor>
-        <totalBleedFactor>0.25</totalBleedFactor>
-      </li>
-    </stages>
-    <comps>
-      <!--2,500 ticks per hour in game-->
-      <li Class="HediffCompProperties_Disappears">
-        <disappearsAfterTicks>1600</disappearsAfterTicks>
-		<showRemainingTime>True</showRemainingTime>
-      </li>
-    </comps>
-  </HediffDef>
+	<HediffDef>
+		<defName>guy762_repairkitHeal_con</defName>
+		<description>A droid's auto-repair functions, boosted by a construction kit. Heals 35 points of wound damage.</description>
+		<label>construction kit</label>
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<stages>
+		  <li>
+			<!-- <naturalHealingFactor>10000</naturalHealingFactor> -->
+			<totalBleedFactor>0.25</totalBleedFactor>
+		  </li>
+		</stages>
+		<comps>
+			<!--2,500 ticks per hour in game-->
+			<li Class="HediffCompProperties_Disappears">
+				<!-- <disappearsAfterTicks>1600</disappearsAfterTicks> -->
+				<!-- <showRemainingTime>True</showRemainingTime> -->
+				<disappearsAfterTicks>500</disappearsAfterTicks><showRemainingTime>False</showRemainingTime> <!-- failsafe to remove the hediff if there's still healing points left over -->
+			</li>
+			
+			<li Class="FCP.Core.Stims.HediffCompProperties_Stimpack">
+                <HealPermanentInjuries>True</HealPermanentInjuries>
+                <HealMissingBodyParts>false</HealMissingBodyParts>
+                <RemoveHediffWhenDone>True</RemoveHediffWhenDone>
+                <ScaleHealedAmountWithTotalHitPoints>true</ScaleHealedAmountWithTotalHitPoints>
+                <HealedAmount>35</HealedAmount>
+                <TickMinimumBetweenHealing>2</TickMinimumBetweenHealing>
+                <TickMaximumBetweenHealing>4</TickMaximumBetweenHealing>
+            </li>
+		</comps>
+	</HediffDef>
   
   <ThingDef ParentName="guy762_DrugPillBase">
     <defName>guy762_repairkit_con</defName>
     <label>construction kit</label>
-    <description>Included are electrical regulators designed to isolate malfunctions and all the parts needed to repair a damaged droid. They can only be used by droids.</description>
+    <description>Included are electrical regulators designed to isolate malfunctions and all the parts needed to repair a damaged droid.\n\nHeals 35 points of wound damage. Can only be used by droids.</description>
 	<descriptionHyperlinks>
 		<HediffDef>guy762_repairkitHeal_con</HediffDef>
 	</descriptionHyperlinks>
@@ -251,7 +284,7 @@
     </tradeTags>
     <comps>
       <li Class="InstantHealingDrug.CompProperties_DrugInstantHeal">
-        <listOrder>1761</listOrder>
+        <listOrder>1760</listOrder>
 		<isCombatEnhancingDrug>true</isCombatEnhancingDrug>
       </li>
     </comps>

@@ -564,7 +564,7 @@
 		</modExtensions>
 		
 		<statBases>
-			<MaxHitPoints>800</MaxHitPoints>
+			<MaxHitPoints>400</MaxHitPoints>
 			<DoorOpenSpeed>0.3</DoorOpenSpeed>
 		</statBases>
 		<building>

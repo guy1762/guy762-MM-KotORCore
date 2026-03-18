@@ -15,7 +15,7 @@
 	  </value>
 	</Operation>
 	
-	<Operation Class="PatchOperationFindMod" IfModActive="kentington.saveourship2">
+	<Operation Class="PatchOperationFindMod">
 		<mods>
 			<li>Royalty</li>
 		</mods>

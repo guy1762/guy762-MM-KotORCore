@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+
+	
+	<Operation Class="PatchOperationFindMod" IfModActive="Locals.LCLBlaster">
+		<mods>
+			<li>Local's Lego Star Wars Blasters</li>
+		</mods>
+		
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_LegoBlasterBolt"]/projectile/damageDef</xpath>
+			<value>
+				<damageDef>guy762_RangedDamage_energy</damageDef>
+			</value>
+		</match>
+	  
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod" IfModActive="Locals.LCLBlaster">
+		<mods>
+			<li>Local's Lego Star Wars Blasters</li>
+		</mods>
+		
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_LegoBlasterBoltBlue"]/projectile/damageDef</xpath>
+			<value>
+				<damageDef>guy762_RangedDamage_ion</damageDef>
+			</value>
+		</match>
+	  
+	</Operation>
+	
+	
+	<Operation Class="PatchOperationFindMod" IfModActive="Locals.LCLBlaster">
+		<mods>
+			<li>Local's Lego Star Wars Blasters</li>
+		</mods>
+		
+		<match Class="PatchOperationReplace">
+			<xpath>Defs/ThingDef[defName="Bullet_LegoCameraBlasterBolt"]/projectile/damageDef</xpath>
+			<value>
+				<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
+			</value>
+		</match>
+	  
+	</Operation>
+
+    
+
+</Patch>

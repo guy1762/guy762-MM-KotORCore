@@ -20,6 +20,7 @@
 	  <li Class="HediffCompProperties_RemoveIfOtherHediff">
 		<hediffs>
 			<li>guy762_medpacHeal_antidote</li>
+			<li>SWCPHediff_BactaHeal</li>
 			<li MayRequire="guy762.Lee.KotORPotF">SWPotF_hediff_ForceCure</li>
 		</hediffs>
       </li>

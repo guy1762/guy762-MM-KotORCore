@@ -4,7 +4,7 @@
 	<!-- KotOR Backpacks -->
 	
 	
-	<ThingDef ParentName="guy762_jetpackMakeable">
+	<ThingDef ParentName="guy762_backpackMakeable">
 		<defName>guy762_Backpack_light</defName>
 		<label>backpack, light</label>
 		<description>A simple backpack for carrying excess equipment.</description>
@@ -84,7 +84,7 @@
 		
 	</ThingDef>
 	  
-	<ThingDef ParentName="guy762_jetpackbase">
+	<ThingDef ParentName="guy762_backpackbase">
 		<defName>guy762_Backpack_scorch</defName>
 		<label>backpack, commando's</label>
 		<description>A simple backpack for carrying excess equipment.</description>
@@ -178,7 +178,7 @@
 		</modExtensions>
 	</ThingDef>
 	 
-	<ThingDef ParentName="guy762_jetpackMakeable">
+	<ThingDef ParentName="guy762_backpackMakeable">
 		<defName>guy762_Backpack_heavy</defName>
 		<label>backpack, heavy</label>
 		<description>A simple backpack for carrying excess equipment.</description>
@@ -310,7 +310,7 @@
 	
 	
 	
-	<ThingDef ParentName="guy762_jetpackMakeable">
+	<ThingDef ParentName="guy762_backpackMakeable">
 		<defName>guy762_Backpack_GCWRebel</defName>
 		<label>backpack, field</label>
 		<description>A simple backpack for carrying excess equipment.</description>
@@ -435,7 +435,7 @@
 	
 	
 	
-	<ThingDef ParentName="guy762_jetpackMakeable">
+	<ThingDef ParentName="guy762_backpackMakeable">
 		<defName>guy762_Backpack_GCWRebelHeavy</defName>
 		<label>backpack, recon</label>
 		<description>A simple backpack for carrying excess equipment.</description>
