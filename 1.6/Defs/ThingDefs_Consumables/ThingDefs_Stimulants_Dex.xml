@@ -12,6 +12,7 @@
         <statOffsets>
 			<MoveSpeed>0.3</MoveSpeed>
 			<MeleeDodgeChance>0.3</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.3</VEF_RangedDodgeChance>
 		</statOffsets>
 		<!--capMods>
             <li>
@@ -112,6 +113,7 @@
         <statOffsets>
 			<MoveSpeed>0.6</MoveSpeed>
 			<MeleeDodgeChance>0.6</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.6</VEF_RangedDodgeChance>
 		</statOffsets>
 		<!--capMods>
             <li>
@@ -280,7 +282,8 @@
         <statOffsets>
 			<MoveSpeed>-0.6</MoveSpeed>
 			<MeleeDodgeChance>-0.6</MeleeDodgeChance>
-		  </statOffsets>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.6</VEF_RangedDodgeChance>
+		</statOffsets>
         <mentalStateGivers>
           <li>
             <mentalState>Binging_DrugExtreme</mentalState>

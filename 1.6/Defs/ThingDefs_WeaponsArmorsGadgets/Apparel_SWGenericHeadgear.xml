@@ -666,7 +666,7 @@
 		  <!-- <shaderType>CutoutComplex</shaderType> -->
 		</graphicData>
 		<statBases>
-		  <MarketValue>50</MarketValue>
+		  <MarketValue>5</MarketValue>
 		  <MaxHitPoints>80</MaxHitPoints>
 		  <Mass>0.1</Mass>
 		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>
@@ -808,7 +808,7 @@
 		  <!-- <shaderType>CutoutComplex</shaderType> -->
 		</graphicData>
 		<statBases>
-		  <MarketValue>50</MarketValue>
+		  <MarketValue>10</MarketValue>
 		  <MaxHitPoints>80</MaxHitPoints>
 		  <Mass>0.1</Mass>
 		  <ArmorRating_Sharp>0.01</ArmorRating_Sharp>

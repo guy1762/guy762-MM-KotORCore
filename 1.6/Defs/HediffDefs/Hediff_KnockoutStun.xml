@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<HediffDef>
+		<defName>SWCPHediff_KOStun</defName>
+		<label>Knockout Stun</label>
+		<description>A buildup of cognition-disrupting ions in an organic being. Lasts for 24 in-game hours.</description>
+		<defaultLabelColor>(255,7,48)</defaultLabelColor> <!-- red -->
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>10</maxSeverity>
+		<isBad>false</isBad>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<capMods>
+					<li>
+						<capacity>Consciousness</capacity>
+						<setMax>0.25</setMax>
+					</li>
+				</capMods>
+			</li>
+			
+		</stages>
+		<comps>
+			<li Class="HediffCompProperties_SeverityPerSecond">
+				<severityPerSecond>-0.01</severityPerSecond>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			
+			<li MayRequire="guy762.Lee.KotORPotF" Class="HediffCompProperties_RemoveIfOtherHediff">
+				<hediffs>
+					<li>SWPotF_hediff_Enlightenment</li>
+				</hediffs>
+			</li>
+		</comps>
+	</HediffDef>
+
+
+	
+
+</Defs>

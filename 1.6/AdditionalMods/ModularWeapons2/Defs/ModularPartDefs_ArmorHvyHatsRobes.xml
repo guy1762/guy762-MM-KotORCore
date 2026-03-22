@@ -30,7 +30,8 @@
 			<EquipDelay>2</EquipDelay>
 		  </statOffsets>
 		  <equippedStatOffsets>
-			<SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">0.1</SWPotF_ForcePoints_Recovery>
+			<!-- <SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">0.1</SWPotF_ForcePoints_Recovery> -->
+			<Force_FPRecovery MayRequire="lee.theforce.standalone">0.1</Force_FPRecovery>
 			<PsychicEntropyRecoveryRate>0.2</PsychicEntropyRecoveryRate>
 		  </equippedStatOffsets>
 		  
@@ -113,6 +114,7 @@
 		  </statOffsets>
 		  <equippedStatOffsets>
 			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
 			<MoveSpeed>0.1</MoveSpeed>
 			
 			<MeleeCooldownFactor>-0.2</MeleeCooldownFactor>
@@ -172,6 +174,7 @@
 			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
 			<MoveSpeed>-0.1</MoveSpeed>
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 		  </equippedStatOffsets>
 		  
 		</effects>
@@ -225,6 +228,7 @@
 			<IncomingDamageFactor>-0.3</IncomingDamageFactor>
 			<MoveSpeed>-0.3</MoveSpeed>
 			<MeleeDodgeChance>-0.3</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.3</VEF_RangedDodgeChance>
 		  </equippedStatOffsets>
 		  
 		</effects>
@@ -252,6 +256,7 @@
 			<IncomingDamageFactor>-0.2</IncomingDamageFactor>
 			<MoveSpeed>-0.3</MoveSpeed>
 			<MeleeDodgeChance>-0.3</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.3</VEF_RangedDodgeChance>
 		  </equippedStatOffsets>
 		  
 		</effects>

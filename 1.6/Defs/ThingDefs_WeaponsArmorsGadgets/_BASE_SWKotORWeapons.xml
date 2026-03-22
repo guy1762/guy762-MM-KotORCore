@@ -21,7 +21,7 @@
 		  <li>Ranged</li>
 		</weaponClasses>
 		<comps>
-		  <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/>
+		  <!-- <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/> -->
 		  <li Class="CompProperties_Biocodable"/>
 		</comps>
 		<tradeability>All</tradeability>
@@ -65,7 +65,7 @@
 		  <unfinishedThingDef>UnfinishedGun</unfinishedThingDef>
 		</recipeMaker>
 		<comps>
-		  <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/>
+		  <!-- <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/> -->
 		  <li>
 			<compClass>CompQuality</compClass>
 		  </li>
@@ -201,7 +201,7 @@
 		</recipeMaker>
 		<comps>
 		  <li Class="CompProperties_Biocodable"/>
-		  <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/>
+		  <!-- <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/> -->
 		</comps>
 		<tradeTags>
 			<li>guy762TT_AllItemsSellable</li>
@@ -282,7 +282,7 @@
 		</weaponClasses>
 		<comps>
 		  <li Class="CompProperties_Biocodable"/>
-		  <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/>
+		  <!-- <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/> -->
 		</comps>
 		<tradeability>All</tradeability>
 		<tradeTags>
@@ -307,7 +307,7 @@
 		  <li>Ultratech</li>
 		</weaponClasses>
 		<comps>
-		  <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/>
+		  <!-- <li Class="Spinning_Projectile.ThingCompProperties_ReturningWeapon"/> -->
 		  <li>
 			<compClass>CompQuality</compClass>
 		  </li>

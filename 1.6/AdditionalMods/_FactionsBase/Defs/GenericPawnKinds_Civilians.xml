@@ -205,11 +205,11 @@
 		<gearHealthRange>0.2~2.0</gearHealthRange>
 		<apparelMoney>10~100</apparelMoney>
 		<apparelTags Inherit="False">
-		  <li>KotORClothing_civilian_villager</li>
-		  <!-- <li>guy762PatchedTag_Broadwrap</li> -->
-		  <li>SWCPSpecificApparelItem_OpenHeadwrap</li>
-		  <li>guy762PatchedTag_Flophat</li>
-		  <li>KotORAccessory_civilian</li>
+			<li>KotORClothing_civilian_villager</li>
+			<!-- <li>guy762PatchedTag_Broadwrap</li> -->
+			<li>SWCPSpecificApparelItem_OpenHeadwrap</li>
+			<li>guy762PatchedTag_Flophat</li>
+			<li>KotORAccessory_civilian</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0.4</apparelAllowHeadgearChance>
 		
@@ -292,11 +292,12 @@
 		<gearHealthRange>0.75~1</gearHealthRange>
 		<apparelMoney>250~750</apparelMoney>
 		<apparelTags Inherit="False">
-		  <li>KotORAccessory_civilian</li>
-		  <li>KotORAccessory_bigbackpack</li>
-		  <li>guy762PatchedTag_Flophat</li>
-		  <li>guy762PatchedTag_Shadecone</li>
-		  <li>SWCPSpecificApparelItem_KotOROnderonRobes</li>
+			<li>KotORAccessory_civilian</li>
+			<li>KotORAccessory_bigbackpack</li>
+			<li>guy762PatchedTag_Flophat</li>
+			<li>guy762PatchedTag_Shadecone</li>
+			<li>SWCPSpecificApparelItem_OpenHeadwrap</li>
+			<li>SWCPSpecificApparelItem_KotOROnderonRobes</li>
 		</apparelTags>
 		<apparelRequired>
 			<li>guy762_Robes_onderon</li>
@@ -574,7 +575,7 @@
 		<gearHealthRange>0.2~2.0</gearHealthRange>
 		<apparelMoney>100~200</apparelMoney>
 		<apparelTags Inherit="False">
-		  <li>KotORClothing_civilian_hooded</li>
+			<li>KotORClothing_civilian_hooded</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
 		<specificApparelRequirements>

@@ -1,21 +1,44 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
+	<!-- <DamageDef ParentName="StunBase"> -->
+		<!-- <defName>guy762_RangedDamage_KOstun</defName> -->
+		<!-- <label>K-O stun</label> -->
+		<!-- <workerClass>DamageWorker_Stun</workerClass> -->
+		<!-- <externalViolence>true</externalViolence> -->
+		<!-- <deathMessage>{0} has been stunned to death.</deathMessage> -->
+		<!-- <defaultDamage>20</defaultDamage> -->
+		<!-- <explosionCellFleck>BlastDry</explosionCellFleck> -->
+		<!-- <soundExplosion>Explosion_Stun</soundExplosion> -->
+		<!-- <combatLogRules>Damage_Stun</combatLogRules> -->
+		 <!-- <additionalHediffs> -->
+		  <!-- <li> -->
+			<!-- <hediff>PsychicShock</hediff> -->
+			<!-- <severityFixed>10</severityFixed> -->
+		  <!-- </li> -->
+		<!-- </additionalHediffs> -->
+	<!-- </DamageDef> -->
+	
+	
 	<DamageDef ParentName="StunBase">
 		<defName>guy762_RangedDamage_KOstun</defName>
 		<label>K-O stun</label>
-		<workerClass>DamageWorker_Stun</workerClass>
-		<externalViolence>true</externalViolence>
+		<!-- <workerClass>DamageWorker_Stun</workerClass> -->
+		<!-- <externalViolence>true</externalViolence> -->
 		<deathMessage>{0} has been stunned to death.</deathMessage>
-		<defaultDamage>20</defaultDamage>
+		<defaultDamage>1</defaultDamage>
 		<explosionCellFleck>BlastDry</explosionCellFleck>
 		<soundExplosion>Explosion_Stun</soundExplosion>
 		<combatLogRules>Damage_Stun</combatLogRules>
-		 <additionalHediffs>
-		  <li>
-			<hediff>PsychicShock</hediff>
-			<severityFixed>10</severityFixed>
-		  </li>
+		
+		<harmsHealth>false</harmsHealth>
+		<consideredHelpful>true</consideredHelpful>
+
+		<additionalHediffs>
+			<li>
+				<hediff>SWCPHediff_KOStun</hediff>
+				<severityFixed>10</severityFixed>
+			</li>
 		</additionalHediffs>
 	</DamageDef>
 	
@@ -63,7 +86,7 @@
 	</DamageDef>
 	  
 
-	  <DamageDef ParentName="Bullet">
+	<DamageDef ParentName="Bullet">
 		<defName>guy762_PoisonDamage_saber</defName>
 		<label>Saber poison</label>
 		<workerClass>guy762_Ionization.DamageWorker_Organics</workerClass>
@@ -75,7 +98,7 @@
 			</li>
 		</modExtensions>
 		<impactSoundType>Bullet</impactSoundType>
-	  </DamageDef>
+	</DamageDef>
 	  
 	  
 	  

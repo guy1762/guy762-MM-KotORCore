@@ -1,103 +1,105 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef ParentName="guy762_UtilityItemBase">
-    <defName>guy762_armband</defName>
-    <label>Jedi armband</label>
-    <description>A simple armband commonly used by Jedi. It increases the flow of the Force through the wearer, and strengthens their resolve.</description>
-    <graphicData>
-      <texPath>Items/armband_exile</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<equippedStatOffsets>
-	  <PsychicSensitivity>0.1</PsychicSensitivity>
-      <PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
-	  <SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">0.05</SWPotF_ForcePoints_Recovery>
-	  <MeditationFocusGain>0.1</MeditationFocusGain>
-	  <PainShockThreshold>0.1</PainShockThreshold>
-    </equippedStatOffsets>
-    <techLevel>Spacer</techLevel>
-    <statBases>
-      <Mass>0.25</Mass>
-      <EquipDelay>2</EquipDelay>
-      <MarketValue>50</MarketValue>
-      <MaxHitPoints>80</MaxHitPoints>
-    </statBases>
-	
-    <apparel>
-		<countsAsClothingForNudity>false</countsAsClothingForNudity>
-		<careIfWornByCorpse>false</careIfWornByCorpse>
-		<careIfDamaged>false</careIfDamaged>
-		<ignoredByNonViolent>true</ignoredByNonViolent>
-		<wearPerDay>0</wearPerDay>
-		<bodyPartGroups>
-			<li>Arms</li>
-		</bodyPartGroups>
-		<layers>
-			<li>Belt</li>
-		</layers>
-		<tags>
-			<li>KotOREquipment_jedi</li>
-			<li>KotORHeroAccessories_visas</li>
-			<li>KotORHeroAccessories_sion</li>
-			<li>KotORHeroAccessories_bastila</li>
-			<li>SWCPSpecificGadgetItem_JediArmband</li>
-		</tags>
-    </apparel>
-	<tradeTags>
-		<li>guy762TT_KotOREquipment_apparel</li>
-		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
-		<li>guy762TT_GCWGadgetEquipment_JediStuff</li>
-    </tradeTags>
-  </ThingDef>
-  
-  <ThingDef ParentName="guy762_UtilityItemBase">
-    <defName>guy762_armband_moncal</defName>
-    <label>Mon Calamari buckler</label>
-    <description>Small ceramic forearm shields like this have been utilized by the janissaries of the Mon Calamari kingdoms for centuries.</description>
-    <graphicData>
-      <texPath>Items/armband_moncal</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-    </graphicData>
-	<statBases>
-      <Mass>4</Mass>
-	  <MarketValue>3337</MarketValue>
-	  <MaxHitPoints>110</MaxHitPoints>
-	  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.35</ArmorRating_Heat>
-      <EquipDelay>3</EquipDelay>
-    </statBases>
-	<equippedStatOffsets>
-	  <AimingDelayFactor>0.1</AimingDelayFactor>
-	  <MeleeDodgeChance>-0.1</MeleeDodgeChance>
-	  <IncomingDamageFactor>-0.05</IncomingDamageFactor>
-    </equippedStatOffsets>
-    <techLevel>Spacer</techLevel>
-	
-    <apparel>
-		<countsAsClothingForNudity>false</countsAsClothingForNudity>
-		<careIfWornByCorpse>false</careIfWornByCorpse>
-		<careIfDamaged>false</careIfDamaged>
-		<ignoredByNonViolent>true</ignoredByNonViolent>
-		<wearPerDay>0</wearPerDay>
-		<bodyPartGroups>
-			<li>Arms</li>
-		</bodyPartGroups>
-		<layers>
-			<li>Belt</li>
-		</layers>
+	<ThingDef ParentName="guy762_UtilityItemBase">
+		<defName>guy762_armband</defName>
+		<label>Jedi armband</label>
+		<description>A simple armband commonly used by Jedi. It increases the flow of the Force through the wearer, and strengthens their resolve.</description>
+		<graphicData>
+		  <texPath>Items/armband_exile</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<equippedStatOffsets>
+			<PsychicSensitivity>0.1</PsychicSensitivity>
+			<PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
+			<!-- <SWPotF_ForcePoints_Recovery MayRequire="guy762.Lee.KotORPotF">0.05</SWPotF_ForcePoints_Recovery> -->
+			<Force_FPRecovery MayRequire="lee.theforce.standalone">0.05</Force_FPRecovery>
+			<MeditationFocusGain>0.1</MeditationFocusGain>
+			<PainShockThreshold>0.1</PainShockThreshold>
+		</equippedStatOffsets>
+		<techLevel>Spacer</techLevel>
+		<statBases>
+			<Mass>0.25</Mass>
+			<EquipDelay>2</EquipDelay>
+			<MarketValue>50</MarketValue>
+			<MaxHitPoints>80</MaxHitPoints>
+		</statBases>
 		
-		<tags>
-			<li>KotOREquipment_moncal</li>
-			<li>SWCPSpecificGadgetItem_MonCalamariArmband</li>
-		</tags>
-    </apparel>
-	<tradeTags>
-		<li>guy762TT_KotORAntique</li>
-		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
-    </tradeTags>
-  </ThingDef>
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<ignoredByNonViolent>true</ignoredByNonViolent>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			<tags>
+				<li>KotOREquipment_jedi</li>
+				<li>KotORHeroAccessories_visas</li>
+				<li>KotORHeroAccessories_sion</li>
+				<li>KotORHeroAccessories_bastila</li>
+				<li>SWCPSpecificGadgetItem_JediArmband</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_apparel</li>
+			<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+			<li>guy762TT_GCWGadgetEquipment_JediStuff</li>
+		</tradeTags>
+	</ThingDef>
+  
+	<ThingDef ParentName="guy762_UtilityItemBase">
+		<defName>guy762_armband_moncal</defName>
+		<label>Mon Calamari buckler</label>
+		<description>Small ceramic forearm shields like this have been utilized by the janissaries of the Mon Calamari kingdoms for centuries.</description>
+		<graphicData>
+		  <texPath>Items/armband_moncal</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		</graphicData>
+		<statBases>
+		  <Mass>4</Mass>
+		  <MarketValue>3337</MarketValue>
+		  <MaxHitPoints>110</MaxHitPoints>
+		  <ArmorRating_Sharp>0.25</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.35</ArmorRating_Heat>
+		  <EquipDelay>3</EquipDelay>
+		</statBases>
+		<equippedStatOffsets>
+			<AimingDelayFactor>0.1</AimingDelayFactor>
+			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
+			<IncomingDamageFactor>-0.05</IncomingDamageFactor>
+		</equippedStatOffsets>
+		<techLevel>Spacer</techLevel>
+		
+		<apparel>
+			<countsAsClothingForNudity>false</countsAsClothingForNudity>
+			<careIfWornByCorpse>false</careIfWornByCorpse>
+			<careIfDamaged>false</careIfDamaged>
+			<ignoredByNonViolent>true</ignoredByNonViolent>
+			<wearPerDay>0</wearPerDay>
+			<bodyPartGroups>
+				<li>Arms</li>
+			</bodyPartGroups>
+			<layers>
+				<li>Belt</li>
+			</layers>
+			
+			<tags>
+				<li>KotOREquipment_moncal</li>
+				<li>SWCPSpecificGadgetItem_MonCalamariArmband</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotORAntique</li>
+			<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+		</tradeTags>
+	</ThingDef>
   
   
   

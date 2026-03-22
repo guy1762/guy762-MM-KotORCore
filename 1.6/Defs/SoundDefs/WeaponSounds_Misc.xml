@@ -3,7 +3,7 @@
 
 	
 	<SoundDef>
-		<defName>kotorsound_powercharge</defName>	
+		<defName>kotorsound_KotORpowercharge_2seconds</defName>	
 		<context>MapOnly</context>
 		<eventNames />	
 		<maxSimultaneous>1</maxSimultaneous>
@@ -14,7 +14,34 @@
 				<muteWhenPaused>True</muteWhenPaused>
 				<grains>
 					<li Class="AudioGrain_Clip">
-						<clipPath>kotorblasters/v_fnf_pwrblast</clipPath>
+						<clipPath>kotorblasters/KotOR_v_fnf_pwrblast_2seconds</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>			
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_KotORpowercharge</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>
+		<sustain>true</sustain>
+		<priorityMode>PrioritizeNearest</priorityMode>		
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorblasters/KotOR_v_fnf_pwrblast_3seconds</clipPath>
 					</li>
 				</grains>	
 				<volumeRange>
@@ -23,7 +50,34 @@
 				</volumeRange>  		
 				<pitchRange>
 					<min>0.8</min>				
-					<max>1.2</max>
+					<max>0.8</max>
+				</pitchRange>			
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_JK_DL44charge</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>
+		<sustain>true</sustain>
+		<priorityMode>PrioritizeNearest</priorityMode>		
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorblasters/JK_DL44_altcharge</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
 				</pitchRange>			
 			</li>
 		</subSounds>
@@ -49,12 +103,43 @@
 				<max>35</max>
 				</volumeRange>  		
 				<pitchRange>
-					<min>0.8</min>				
-					<max>1.2</max>
+					<min>1</min>				
+					<max>1</max>
 				</pitchRange>			
 			</li>
 		</subSounds>
 	</SoundDef>
+	
+	<SoundDef>
+		<defName>kotorsound_JKDisruptor_charge</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<sustain>true</sustain>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>True</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotorblasters/JK_disruptor_altcharge_3seconds</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>0.8</min>				
+					<max>0.8</max>
+				</pitchRange>			
+			</li>
+		</subSounds>
+	</SoundDef>
+	
+	
+	
+	
 	
 	
 	

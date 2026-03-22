@@ -772,7 +772,7 @@
 						<alts><li><triggers><li>CustomColorBIsSet</li></triggers><customColorB>(1,1,1)</customColorB> </li></alts>
 					  </colorB>
 					</conditionalGraphics>
-					<drawData> <dataNorth> <layer>23</layer> </dataNorth> </drawData>	<!-- SHELL? -->
+					<drawData> <dataNorth> <layer>66</layer> </dataNorth> </drawData>	<!-- SHELL? -->
 				</li>
 			</renderNodeProperties>
 			

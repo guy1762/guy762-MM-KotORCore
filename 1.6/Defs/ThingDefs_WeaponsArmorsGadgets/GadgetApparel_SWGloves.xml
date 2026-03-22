@@ -61,6 +61,7 @@
 		<StaggerDurationFactor>-0.3</StaggerDurationFactor>
 		<PawnTrapSpringChance>-0.3</PawnTrapSpringChance>
 		<MeleeDodgeChance>0.3</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.3</VEF_RangedDodgeChance>
 		<PainShockThreshold>0.3</PainShockThreshold>
 		<AimingDelayFactor>-0.1</AimingDelayFactor>
 	</equippedStatOffsets>
@@ -101,6 +102,7 @@
 	<equippedStatOffsets>
 		<AimingDelayFactor>0.2</AimingDelayFactor>
 		<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance>
 		<IncomingDamageFactor>-0.15</IncomingDamageFactor>
 	</equippedStatOffsets>
     <apparel>
@@ -166,6 +168,7 @@
 		<StaggerDurationFactor>-0.2</StaggerDurationFactor>
 		<PawnTrapSpringChance>-0.2</PawnTrapSpringChance>
 		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.2</VEF_RangedDodgeChance>
 		<PainShockThreshold>0.2</PainShockThreshold>
 	</equippedStatOffsets>
     <statBases>
@@ -285,6 +288,7 @@
 	<equippedStatOffsets>
 		<PawnTrapSpringChance>-0.1</PawnTrapSpringChance>
 		<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
         <PsychicSensitivity>0.1</PsychicSensitivity>
 		<MeditationFocusGain>0.1</MeditationFocusGain>
 	</equippedStatOffsets>
@@ -392,6 +396,7 @@
 		<ResearchSpeed>0.4</ResearchSpeed>
 		<AimingDelayFactor>-0.2</AimingDelayFactor>
 		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.2</VEF_RangedDodgeChance>
 	</equippedStatOffsets>
     <statBases>
       <Mass>0.5</Mass>
@@ -467,6 +472,7 @@
 		<MHC_MechanicalTendSpeed>0.2</MHC_MechanicalTendSpeed-->
 		<AimingDelayFactor>-0.1</AimingDelayFactor>
 		<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
 	</equippedStatOffsets>
     <statBases>
       <Mass>0.5</Mass>
@@ -504,6 +510,7 @@
 		<ResearchSpeed>0.6</ResearchSpeed>
 		<AimingDelayFactor>-0.5</AimingDelayFactor>
 		<MeleeDodgeChance>0.5</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.5</VEF_RangedDodgeChance>
 	</equippedStatOffsets>
     <statBases>
       <Mass>0.5</Mass>
@@ -577,6 +584,7 @@
 		<MHC_MechanicalTendSpeed>0.4</MHC_MechanicalTendSpeed-->
 		<AimingDelayFactor>-0.2</AimingDelayFactor>
 		<MeleeDodgeChance>0.2</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.2</VEF_RangedDodgeChance>
 	</equippedStatOffsets>
     <statBases>
       <Mass>0.5</Mass>
@@ -611,6 +619,7 @@
 		<MortarMissRadiusFactor>-0.6</MortarMissRadiusFactor>
 		<AimingDelayFactor>-0.1</AimingDelayFactor>
 		<MeleeDodgeChance>0.1</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
 	</equippedStatOffsets>
     <statBases>
       <Mass>0.5</Mass>

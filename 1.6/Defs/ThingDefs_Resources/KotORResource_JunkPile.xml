@@ -30,7 +30,7 @@
 			<mineableDropChance>1.0</mineableDropChance>
 			<entries>
 			  <!--
-				GRAND TOTAL 0.8529
+				GRAND TOTAL 0.8629
 			  -->
 			  
 			  <!--BLOCK 1 TOTAL 0.75-->
@@ -157,8 +157,13 @@
 				<mineableYield>1</mineableYield>
 			  </li>
 			  
-			  <!--BLOCK 6 TOTAL 0.0111-->
+			  <!--BLOCK 6 TOTAL 0.0211-->
 			  
+			  <li>
+				<randomWeight>0.01</randomWeight>
+				<mineableThing>SWCPItem_BF2AmmoSupplyPickup</mineableThing>
+				<mineableYield>2</mineableYield>
+			  </li>
 			  <li>
 				<randomWeight>0.01</randomWeight>
 				<mineableThing>KOTOR_PlasmaCartridge</mineableThing>

@@ -257,6 +257,7 @@
 		  </statOffsets>
 		  <equippedStatOffsets>
 			<MeleeDodgeChance>-0.25</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.25</VEF_RangedDodgeChance>
 		  </equippedStatOffsets>
 		  
 		</effects>

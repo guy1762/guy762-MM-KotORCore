@@ -67,6 +67,7 @@
 		  <li>
 			<statOffsets>
 				<MeleeDodgeChance>0.1</MeleeDodgeChance>
+				<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
 				<PawnTrapSpringChance>-0.1</PawnTrapSpringChance>
 			</statOffsets>
 		  </li>

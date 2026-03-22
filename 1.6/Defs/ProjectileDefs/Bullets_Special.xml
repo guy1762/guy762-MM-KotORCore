@@ -193,7 +193,7 @@
 			<damageDef>guy762_RangedDamage_disruptor</damageDef>
 			<damageAmountBase>6</damageAmountBase>
 			<armorPenetrationBase>0.45</armorPenetrationBase>
-			<speed>25</speed>
+			<speed>35</speed>
 		</projectile>
 	</ThingDef>
 	

@@ -63,7 +63,8 @@
 			  </li>
 			</grains>
 			<distRange>65~75</distRange>
-			<volumeRange><min>50</min><max>50</max></volumeRange>
+			<!-- <volumeRange><min>50</min><max>50</max></volumeRange> -->
+			<volumeRange><min>40</min><max>40</max></volumeRange>
 		  </li>
 		</subSounds>
 	</SoundDef>

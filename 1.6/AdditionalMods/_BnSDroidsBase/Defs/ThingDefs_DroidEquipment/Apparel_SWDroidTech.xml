@@ -513,6 +513,7 @@
 		<PawnTrapSpringChance>-0.2</PawnTrapSpringChance>
 		<AimingDelayFactor>-0.3</AimingDelayFactor>
 		<MeleeDodgeChance>0.3</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.3</VEF_RangedDodgeChance>
 		<MoveSpeed>0.3</MoveSpeed>
 	</equippedStatOffsets>
     <apparel>
@@ -547,6 +548,7 @@
 		<IncomingDamageFactor>-0.2</IncomingDamageFactor>
 		<AimingDelayFactor>-0.4</AimingDelayFactor>
 		<MeleeDodgeChance>0.4</MeleeDodgeChance>
+		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.4</VEF_RangedDodgeChance>
 		<MoveSpeed>0.4</MoveSpeed>
 	</equippedStatOffsets>
     <apparel>

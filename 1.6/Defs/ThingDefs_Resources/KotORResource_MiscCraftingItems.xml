@@ -186,6 +186,7 @@
 			<Beauty>1</Beauty>
 			<MoveSpeed>-0.1</MoveSpeed>
 			<MeleeDodgeChance>-0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.1</VEF_RangedDodgeChance>
 		  </statFactors>
 		</stuffProps>
 		<thingCategories>
@@ -546,6 +547,7 @@
 			<Beauty>0.5</Beauty>
 			<MoveSpeed>0.1</MoveSpeed>
 			<MeleeDodgeChance>0.1</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
 			
 			<WorkToMake>0.5</WorkToMake>
 			<WorkToBuild>0.5</WorkToBuild>

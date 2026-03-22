@@ -63,13 +63,21 @@
 				<severityPerSecond>-0.1</severityPerSecond>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
-			<!-- <li Class="HediffCompProperties_RemoveIfOtherHediff"> -->
-				<!-- <hediffs> -->
-					<!-- <li>SWPotF_hediff_ForceValor</li> -->
-					<!-- <li>SWPotF_hediff_KnightValor</li> -->
-					<!-- <li>SWPotF_hediff_MstValor</li> -->
-				<!-- </hediffs> -->
-			<!-- </li> -->
+			
+			<li MayRequire="guy762.Lee.KotORPotF" Class="HediffCompProperties_RemoveIfOtherHediff">
+				<hediffs>
+					<li>SWPotF_hediff_ForceValor</li>
+					<li>SWPotF_hediff_KnightValor</li>
+					<li>SWPotF_hediff_MstValor</li>
+					
+					<li>SWPotF_hediff_MstFocus</li>
+					<li>SWPotF_hediff_Enlightenment</li>
+					
+					<li>SWPotF_hediff_BatlMed_Buff</li>
+					<li>SWPotF_hediff_AdvBatlMed_Buff</li>
+					<li>SWPotF_hediff_MstBatlMed_Buff</li>
+				</hediffs>
+			</li>
 		</comps>
 	</HediffDef>
 	  

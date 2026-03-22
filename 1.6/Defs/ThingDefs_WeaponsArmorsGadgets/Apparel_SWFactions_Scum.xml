@@ -201,6 +201,7 @@
 		<equippedStatOffsets>
 			<MoveSpeed>-0.2</MoveSpeed>
 			<MeleeDodgeChance>-0.2</MeleeDodgeChance>
+			<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">-0.2</VEF_RangedDodgeChance>
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 			<!--PsychicSensitivity>0.1</PsychicSensitivity>
 			<HuntingStealth>0.2</HuntingStealth-->
