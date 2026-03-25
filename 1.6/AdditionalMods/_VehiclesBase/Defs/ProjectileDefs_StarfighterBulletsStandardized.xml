@@ -49,7 +49,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBase>0.325</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>400</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -64,7 +64,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>40</damageAmountBase>
 			<armorPenetrationBase>0.325</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>400</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -84,7 +84,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>30</damageAmountBase>
 			<armorPenetrationBase>0.50</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>400</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -99,7 +99,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>60</damageAmountBase>
 			<armorPenetrationBase>0.5</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>400</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -119,7 +119,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>40</damageAmountBase>
 			<armorPenetrationBase>0.675</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>400</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -134,7 +134,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>80</damageAmountBase>
 			<armorPenetrationBase>0.675</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>400</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -171,7 +171,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBase>0.325</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -186,7 +186,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>40</damageAmountBase>
 			<armorPenetrationBase>0.325</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -206,7 +206,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>30</damageAmountBase>
 			<armorPenetrationBase>0.50</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -221,7 +221,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>60</damageAmountBase>
 			<armorPenetrationBase>0.5</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -241,7 +241,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>40</damageAmountBase>
 			<armorPenetrationBase>0.675</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -256,7 +256,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>80</damageAmountBase>
 			<armorPenetrationBase>0.675</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -294,7 +294,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>20</damageAmountBase>
 			<armorPenetrationBase>0.325</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -309,7 +309,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>40</damageAmountBase>
 			<armorPenetrationBase>0.325</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -329,7 +329,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>30</damageAmountBase>
 			<armorPenetrationBase>0.50</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -344,7 +344,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>60</damageAmountBase>
 			<armorPenetrationBase>0.5</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -364,7 +364,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>40</damageAmountBase>
 			<armorPenetrationBase>0.675</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -379,7 +379,7 @@
 			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
 			<damageAmountBase>80</damageAmountBase>
 			<armorPenetrationBase>0.675</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 		</projectile>
 	</ThingDef>
 	

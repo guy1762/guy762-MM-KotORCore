@@ -687,7 +687,7 @@
 		</comps>
 		
 		<!-- Requirements -->
-		<constructionSkillPrerequisite>14</constructionSkillPrerequisite>
+		<constructionSkillPrerequisite>12</constructionSkillPrerequisite>
 		<placeWorkers>
 			<li>PlaceWorker_ShowFacilitiesConnections</li>
 			<li>PlaceWorker_PreventInteractionSpotOverlap</li>

@@ -18,7 +18,7 @@
 			<damageDef>guy762_RangedDamage_ion</damageDef>
 			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationBase>0.125</armorPenetrationBase>
-			<speed>400</speed>
+			<speed>500</speed>
 			<extraDamages>
 				<li>
 					<def>EMP</def>
@@ -43,7 +43,7 @@
 			<damageDef>guy762_RangedDamage_ion</damageDef>
 			<damageAmountBase>50</damageAmountBase>
 			<armorPenetrationBase>0.25</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 			<extraDamages>
 				<li>
 					<def>EMP</def>
@@ -76,7 +76,7 @@
 			<damageDef>guy762_RangedDamage_ion</damageDef>
 			<damageAmountBase>50</damageAmountBase>
 			<armorPenetrationBase>0.325</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 			<extraDamages>
 				<li>
 					<def>EMP</def>
@@ -110,7 +110,7 @@
 			<damageDef>guy762_RangedDamage_ion</damageDef>
 			<damageAmountBase>75</damageAmountBase>
 			<armorPenetrationBase>0.325</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 			<extraDamages>
 				<li>
 					<def>EMP</def>
@@ -134,7 +134,7 @@
 			<damageDef>guy762_ExplosiveDamage_ion</damageDef>
 			<damageAmountBase>75</damageAmountBase>
 			<armorPenetrationBase>0.325</armorPenetrationBase>
-			<speed>200</speed>
+			<speed>300</speed>
 			<explosionRadius>2</explosionRadius>
 			<extraDamages>
 				<li>
@@ -176,7 +176,7 @@
 			<damageDef>guy762_GrenadeDamage_thermaldet</damageDef>
 			<damageAmountBase>50</damageAmountBase>
 			<armorPenetrationBase>0.625</armorPenetrationBase>
-			<speed>150</speed>
+			<speed>250</speed>
 			<explosionRadius>2.5</explosionRadius>
 			<soundAmbient>kotorsound_missileflying</soundAmbient>
 		</projectile>
@@ -220,7 +220,7 @@
 			<damageDef>guy762_GrenadeDamage_frag</damageDef>
 			<damageAmountBase>25</damageAmountBase>
 			<armorPenetrationBase>0.375</armorPenetrationBase>
-			<speed>150</speed>
+			<speed>250</speed>
 			<explosionRadius>2.5</explosionRadius>
 			<soundAmbient>kotorsound_missileflying</soundAmbient>
 		</projectile>
@@ -242,7 +242,7 @@
 			<damageDef>guy762_ExplosiveDamage_conc</damageDef>
 			<damageAmountBase>50</damageAmountBase>
 			<armorPenetrationBase>0.375</armorPenetrationBase>
-			<speed>150</speed>
+			<speed>250</speed>
 			<explosionRadius>2.5</explosionRadius>
 			<soundAmbient>kotorsound_missileflying</soundAmbient>
 			<!-- <extraDamages> -->
@@ -284,7 +284,7 @@
 			<damageDef>EMP</damageDef>
 			<damageAmountBase>50</damageAmountBase>
 			<armorPenetrationBase>0.375</armorPenetrationBase>
-			<speed>150</speed>
+			<speed>250</speed>
 			<explosionRadius>2.5</explosionRadius>
 			<soundAmbient>kotorsound_missileflying</soundAmbient>
 			<extraDamages>
@@ -348,7 +348,7 @@
 			<damageAmountBase>15</damageAmountBase>
 			<armorPenetrationBase>0.5</armorPenetrationBase>
 			<stoppingPower>1</stoppingPower>
-			<speed>200</speed>
+			<speed>500</speed>
 		</projectile>
 	</ThingDef>
 	
@@ -367,7 +367,7 @@
 			<damageDef>guy762_GrenadeDamage_thermaldet</damageDef>
 			<damageAmountBase>75</damageAmountBase>
 			<armorPenetrationBase>0.875</armorPenetrationBase>
-			<speed>75</speed>
+			<speed>200</speed>
 			<explosionRadius>2</explosionRadius>
 			<soundAmbient>kotorsound_missileflying</soundAmbient>
 		</projectile>
@@ -395,7 +395,7 @@
 			<damageDef>EMP</damageDef>
 			<damageAmountBase>100</damageAmountBase>
 			<armorPenetrationBase>0.50</armorPenetrationBase>
-			<speed>75</speed>
+			<speed>200</speed>
 			<explosionRadius>5</explosionRadius>
 			<soundAmbient>kotorsound_missileflying</soundAmbient>
 			<extraDamages>
@@ -444,7 +444,7 @@
 		  <damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef>
 		  <damageAmountBase>45</damageAmountBase>
 		  <armorPenetrationBase>0.25</armorPenetrationBase>
-		  <speed>20</speed>
+		  <speed>50</speed>
 		  <explosionRadius>5</explosionRadius>
 		  <explosionDamageFalloff>true</explosionDamageFalloff>
 		  <explosionEffect>GiantExplosion</explosionEffect>
@@ -471,7 +471,7 @@
 		  <damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef>
 		  <damageAmountBase>90</damageAmountBase>
 		  <armorPenetrationBase>0.5</armorPenetrationBase>
-		  <speed>20</speed>
+		  <speed>50</speed>
 		  <explosionRadius>10</explosionRadius>
 		  <explosionDamageFalloff>true</explosionDamageFalloff>
 		  <explosionEffect>GiantExplosion</explosionEffect>

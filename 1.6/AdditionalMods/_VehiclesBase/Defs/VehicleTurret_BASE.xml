@@ -12,5 +12,15 @@
 	
 	
 	
+	<Vehicles.VehicleTurretDef Name="guy762_StarfighterTurretBASE" ParentName="guy762_VehicleTurretBASE" Abstract="True">
+		
+		<!-- <targetScanFlags>NeedNotUnderThickRoof</targetScanFlags> neither works -->
+		<!-- <modExtensions> -->
+			<!-- <li Class="EBSGFramework.TurretRoofBlocked" /> -->
+		<!-- </modExtensions> -->
+	</Vehicles.VehicleTurretDef>
+	
+	
+	
 	
 </Defs>
