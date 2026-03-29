@@ -4,7 +4,7 @@
 	<HediffDef>
 		<defName>SWCPHediff_Suppression</defName>
 		<label>Suppressed</label>
-		<description>Negative psychological effects from being under suppressing blaster fire, reducing attack accuracy and increasing the mental break threshold. Each level lasts around 10 seconds before decreasing.</description>
+		<description>Negative psychological effects from being under suppressing blaster fire, reducing attack accuracy and speed while increasing the mental break threshold. Each level lasts around 5 seconds before decreasing.</description>
 		<!-- <description>Negative psychological effects from being under suppressing blaster fire. At higher levels, this has a small chance to give a mental break while active. Each level lasts around 10 seconds before decreasing.</description> -->
 		<defaultLabelColor>(255,7,48)</defaultLabelColor> <!-- red -->
 		<hediffClass>HediffWithComps</hediffClass>
@@ -18,6 +18,8 @@
 				<statOffsets>
 					<ShootingAccuracyPawn>-0.15</ShootingAccuracyPawn>
 					<MeleeHitChance>-0.15</MeleeHitChance>
+					<MeleeCooldownFactor>0.15</MeleeCooldownFactor>
+					<RangedCooldownFactor>0.15</RangedCooldownFactor>
 					<!-- <PainShockThreshold>-0.15</PainShockThreshold> -->
 					<MentalBreakThreshold>0.15</MentalBreakThreshold>
 				</statOffsets>
@@ -29,10 +31,12 @@
 				<statOffsets>
 					<ShootingAccuracyPawn>-0.30</ShootingAccuracyPawn>
 					<MeleeHitChance>-0.30</MeleeHitChance>
+					<MeleeCooldownFactor>0.30</MeleeCooldownFactor>
+					<RangedCooldownFactor>0.30</RangedCooldownFactor>
 					<!-- <PainShockThreshold>-0.30</PainShockThreshold> -->
 					<MentalBreakThreshold>0.30</MentalBreakThreshold>
 				</statOffsets>
-				 <!-- disabling these because one of my pawns rolled the mental break while testing, ran off the map, and just fully stopped being a colonist. not great to have when half of every pawnkind has a weapon that suppresses  -->
+					<!-- disabling these because one of my pawns rolled the mental break while testing, ran off the map, and just fully stopped being a colonist. not great to have when half of every pawnkind has a weapon that suppresses  -->
 				<!-- <mentalStateGivers>-->
 					<!-- <li> -->
 						<!-- <mentalState>PanicFlee</mentalState> -->
@@ -47,6 +51,8 @@
 				<statOffsets>
 					<ShootingAccuracyPawn>-0.45</ShootingAccuracyPawn>
 					<MeleeHitChance>-0.45</MeleeHitChance>
+					<MeleeCooldownFactor>0.45</MeleeCooldownFactor>
+					<RangedCooldownFactor>0.45</RangedCooldownFactor>
 					<!-- <PainShockThreshold>-0.45</PainShockThreshold> -->
 					<MentalBreakThreshold>0.45</MentalBreakThreshold>
 				</statOffsets>
@@ -60,7 +66,7 @@
 		</stages>
 		<comps>
 			<li Class="HediffCompProperties_SeverityPerSecond">
-				<severityPerSecond>-0.1</severityPerSecond>
+				<severityPerSecond>-0.2</severityPerSecond>
 			</li>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
 			

@@ -564,7 +564,7 @@
 		</graphicData>
 	</ThingDef>
 	
-		<!-- used by: TIE Striker (chin) -->
+		<!-- used by: TIE Striker (chin), TIE Brute (chin) -->
 	<ThingDef ParentName="SWCPStarfighterBullet_StrikeAIAVAA_dualBASE">
 		<defName>SWCPStarfighterBullet_StrikeAIAVAAmedium_dualgreen</defName>
 		<graphicData>
@@ -673,7 +673,7 @@
 		</graphicData>
 	</ThingDef>
 	
-		<!-- used by:  -->
+		<!-- used by:  TIE Brute (side) -->
 	<ThingDef ParentName="SWCPStarfighterBullet_AssaultAVAA_heavydualBASE">
 		<defName>SWCPStarfighterBullet_AssaultAVAAheavy_dualgreen</defName>
 		<graphicData>
