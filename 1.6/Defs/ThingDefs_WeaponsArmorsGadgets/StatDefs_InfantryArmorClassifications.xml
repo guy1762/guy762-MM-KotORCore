@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<StatDef Name="SWCPStat_InfantryArmorClassificationBASE" Abstract="True">
+		<category>PawnCombat</category>
+		<defaultBaseValue>0</defaultBaseValue>
+		<hideAtValue>0</hideAtValue>
+		<minValue>0</minValue>
+		<maxValue>1</maxValue>
+		<!-- <toStringStyle>TemperatureOffset</toStringStyle> -->
+		<showOnPawns>true</showOnPawns>
+	</StatDef>
+
+
+
+	<StatDef ParentName="SWCPStat_InfantryArmorClassificationBASE">
+		<defName>SWCPStat_InfantryArmorClass_light</defName>
+		<label>Armor Class: Light Infantry</label>
+		<labelForFullStatList>Armor Class: Light Infantry</labelForFullStatList>
+		<displayPriorityInCategory>762</displayPriorityInCategory>
+		<description>Infantry classification based on an equipped set of body armor. This stat has no in-game effects beyond marking a pawn as "light infantry".</description>
+	</StatDef>
+	
+	<StatDef ParentName="SWCPStat_InfantryArmorClassificationBASE">
+		<defName>SWCPStat_InfantryArmorClass_medium</defName>
+		<label>Armor Class: Medium Infantry</label>
+		<labelForFullStatList>Armor Class: Medium Infantry</labelForFullStatList>
+		<displayPriorityInCategory>763</displayPriorityInCategory>
+		<description>Infantry classification based on an equipped set of body armor. This stat has no in-game effects beyond marking a pawn as "medium infantry".</description>
+	</StatDef>
+	
+	<StatDef ParentName="SWCPStat_InfantryArmorClassificationBASE">
+		<defName>SWCPStat_InfantryArmorClass_heavy</defName>
+		<label>Armor Class: Heavy Infantry</label>
+		<labelForFullStatList>Armor Class: Heavy Infantry</labelForFullStatList>
+		<displayPriorityInCategory>764</displayPriorityInCategory>
+		<description>Infantry classification based on an equipped set of body armor. This stat has no in-game effects beyond marking a pawn as "heavy infantry".</description>
+	</StatDef>
+
+
+</Defs>
