@@ -460,11 +460,12 @@
 		  <WorkToMake>1000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <SocialImpact>0.1</SocialImpact>
+			<SocialImpact>0.1</SocialImpact>
+			<ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
 		</equippedStatOffsets>
 		
 		<costList>
-		  <Synthread>30</Synthread>
+			<Synthread>30</Synthread>
 		</costList>
 		
 		<apparel>
@@ -821,9 +822,9 @@
 		  <EquipDelay>0.1</EquipDelay>
 		  <WorkToMake>1000</WorkToMake>
 		</statBases>
-		<!-- <equippedStatOffsets> -->
-		  <!-- <SocialImpact>0.1</SocialImpact> -->
-		<!-- </equippedStatOffsets> -->
+		<equippedStatOffsets>
+			<ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
+		</equippedStatOffsets>
 		
 		<costList>
 		  <Cloth>30</Cloth>
@@ -846,7 +847,7 @@
 			</layers>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<canBeGeneratedToSatisfyWarmth>false</canBeGeneratedToSatisfyWarmth>
-			<canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance>
+			<!-- <canBeGeneratedToSatisfyToxicEnvironmentResistance>false</canBeGeneratedToSatisfyToxicEnvironmentResistance> -->
 			
 			<tags>
 				<li>SaV_apparel_headwrapmix</li>

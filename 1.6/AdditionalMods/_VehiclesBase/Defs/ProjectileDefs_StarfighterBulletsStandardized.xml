@@ -384,6 +384,43 @@
 	</ThingDef>
 	
 	
+	
+	
+	
+	
+	<!-- turbo damage -->
+	
+	<ThingDef Name="SWCPStarfighterBullet_AssaultAVAA_turboBASE" ParentName="SWCPStarfighterBullet_Assault_AntiVehicleAir_BASE" Abstract="True">
+		<label>assault turbolaser bolt</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>50</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<speed>300</speed>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef Name="SWCPStarfighterBullet_AssaultAVAA_turbodualBASE" ParentName="SWCPStarfighterBullet_Assault_AntiVehicleAir_BASE" Abstract="True">
+		<label>assault turbolaser double bolt</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+			<drawSize>5</drawSize>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef>
+			<damageAmountBase>100</damageAmountBase>
+			<armorPenetrationBase>0.75</armorPenetrationBase>
+			<speed>300</speed>
+		</projectile>
+	</ThingDef>
+	
+	
 		
 	
 	
@@ -459,7 +496,7 @@
 		</graphicData>
 	</ThingDef>
 	
-		<!-- used by: Scurrg (turret) -->
+		<!-- used by: Scurrg (turret), VCX-100 (dorsal) -->
 	<ThingDef ParentName="SWCPStarfighterBullet_IntAA_dualBASE">
 		<defName>SWCPStarfighterBullet_IntAAmedium_dualred</defName>
 		<graphicData>
@@ -680,6 +717,26 @@
 			<texPath>Weapons/Projectiles/DoubleAdvAntiVehicle_green</texPath>
 		</graphicData>
 	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+			<!-- used by: Gozanti cruisers -->
+	<ThingDef ParentName="SWCPStarfighterBullet_AssaultAVAA_turbodualBASE">
+		<defName>SWCPStarfighterBullet_AssaultAVAAturbo_dualred</defName>
+		<graphicData>
+			<texPath>Weapons/Projectiles/DoubleAdvAntiVehicle_red</texPath>
+		</graphicData>
+	</ThingDef>
+	
 	
 	
 </Defs>

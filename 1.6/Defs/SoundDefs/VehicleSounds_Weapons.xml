@@ -726,7 +726,34 @@
 	
 	
 	
-	
+	<SoundDef>
+		<defName>kotorsound_VCX100GhostGun</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<subSounds>
+			<li>
+				<grains>
+					<li Class="AudioGrain_Folder">
+						<clipFolderPath>kotorshipweapons/Ghost_StarWarsSFXArchive</clipFolderPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>
+				<max>35</max>
+				</volumeRange>  		
+				<pitchRange>
+					<min>1</min>				
+					<max>1</max>
+				</pitchRange>
+				<distRange> <!-- This sound will play max volume when it is under minDistance from the camera. It will fade out linearly until the camera distance reaches its max. -->
+					<min>150</min>
+					<max>200</max>
+				</distRange>  
+				<sustainLoop>False</sustainLoop>
+			</li>
+		</subSounds>
+	</SoundDef>
 	
 	
 	

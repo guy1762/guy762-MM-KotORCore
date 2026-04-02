@@ -23,6 +23,8 @@
 		<seeThroughFog>true</seeThroughFog>
 		<drawOffscreen>true</drawOffscreen>
 		
+		<!-- <altitudeLayer>WorldClipper</altitudeLayer> doesn't work -->
+		
 		<soundOneShotsOnEvent Inherit = "False">
 			<li>
 				<key>PawnEntered</key>
