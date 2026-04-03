@@ -431,6 +431,7 @@
 	
 	<ThingDef Name="guy762_PoweredWall_OrdMantellStuccoWallC" ParentName="guy762_PoweredWall_TatooineStuccoWallC">
 		<defName>guy762_PoweredWall_OrdMantellStuccoWallC</defName>
+		<uiIconPath>Buildings/Walls/TatooineStuccoWallD_icon</uiIconPath>
 		<graphicData>
 			<color>(125,50,50)</color> <!-- rebel red -->
 			<colorTwo>(160,155,135)</colorTwo> <!-- vanilla "limestone" structure paint -->
