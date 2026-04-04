@@ -446,7 +446,7 @@
 		</graphicData>
 	</ThingDef>
 
-		<!-- used by: TIE Avenger -->
+		<!-- used by: TIE Avenger, TIE Raptor -->
 	<ThingDef ParentName="SWCPStarfighterBullet_IntAA_lightBASE">
 		<defName>SWCPStarfighterBullet_IntAAlight_green</defName>
 		<graphicData>
