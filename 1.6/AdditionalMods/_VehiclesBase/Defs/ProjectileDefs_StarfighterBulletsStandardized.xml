@@ -640,7 +640,7 @@
 		</graphicData>
 	</ThingDef>
 	
-		<!-- used by: -->
+		<!-- used by: Xg-1 Starwing -->
 	<ThingDef ParentName="SWCPStarfighterBullet_AssaultAVAA_standardBASE">
 		<defName>SWCPStarfighterBullet_AssaultAVAAmedium_green</defName>
 		<graphicData>
