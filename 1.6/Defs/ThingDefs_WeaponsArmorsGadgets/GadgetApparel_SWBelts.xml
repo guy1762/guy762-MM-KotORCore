@@ -131,6 +131,7 @@
 			<MHC_MechanicalTendSpeed>0.2</MHC_MechanicalTendSpeed-->
 			
 			<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.2</HackingSpeed>
+			<HackingStealth MayRequire="Ludeon.RimWorld.Ideology">20</HackingStealth>
 			
 			<MedicalSurgerySuccessChance>0.3</MedicalSurgerySuccessChance>
 			<MedicalTendQualityOffset>0.3</MedicalTendQualityOffset>

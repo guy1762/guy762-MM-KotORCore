@@ -20,9 +20,6 @@
 			<Insulation_Heat>25</Insulation_Heat>
 			<EquipDelay>3</EquipDelay>
 		</statBases>
-		<equippedStatOffsets>
-		  <HuntingStealth>0.2</HuntingStealth>
-		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<layers Inherit="False">

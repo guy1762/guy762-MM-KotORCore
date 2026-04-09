@@ -615,7 +615,8 @@
 			<WorkToMake>2500</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <HuntingStealth>0.2</HuntingStealth>
+			<HuntingStealth>0.2</HuntingStealth>
+			<SWCPStat_Stealth>0.2</SWCPStat_Stealth>
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
@@ -733,7 +734,8 @@
 			<WorkToMake>2500</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <HuntingStealth>0.4</HuntingStealth>
+			<HuntingStealth>0.4</HuntingStealth>
+			<SWCPStat_Stealth>0.4</SWCPStat_Stealth>
 		</equippedStatOffsets>
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>

@@ -891,7 +891,8 @@
 			<WorkToMake>1000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <HuntingStealth>0.1</HuntingStealth>
+			<HuntingStealth>0.1</HuntingStealth>
+			<SWCPStat_Stealth>0.1</SWCPStat_Stealth>
 		</equippedStatOffsets>
 		
 		<costList>
@@ -989,7 +990,8 @@
 			<WorkToMake>1000</WorkToMake>
 		</statBases>
 		<equippedStatOffsets>
-		  <HuntingStealth>0.1</HuntingStealth>
+			<HuntingStealth>0.1</HuntingStealth>
+			<SWCPStat_Stealth>0.1</SWCPStat_Stealth>
 		</equippedStatOffsets>
 		
 		<costList>

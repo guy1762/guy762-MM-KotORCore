@@ -323,7 +323,7 @@
 	<ThingDef ParentName="ResourceBase">
 		<defName>KOTOR_PlasmaCartridge</defName>
 		<label>plasma cartridge</label>
-		<description>A cartridge of superheated Tibanna gas suitable for the creation of blasters, personal energy shields, or other plasma-based ordinance. Each cartridge contains enough compacted plasma for several years of use in small-arms blasters, so one generally has no need to worry about reloading once a blaster is crafted.</description>
+		<description>A cartridge of superheated Tibanna gas suitable for the creation of blasters, personal energy shields, or other plasma-based ordnance. Each cartridge contains enough compacted plasma for several years of use in small-arms blasters, so one generally has no need to worry about reloading once a blaster is crafted.</description>
 		<tickerType>Normal</tickerType>
 		<graphicData>
 			<texPath>ResourceSys_Plasma/BlasterPack</texPath>

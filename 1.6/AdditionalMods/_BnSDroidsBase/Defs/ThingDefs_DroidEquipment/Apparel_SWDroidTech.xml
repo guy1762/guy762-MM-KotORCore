@@ -65,6 +65,7 @@
     </statBases>
 	<equippedStatOffsets>
 		<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.2</HackingSpeed>
+		<HackingStealth MayRequire="Ludeon.RimWorld.Ideology">20</HackingStealth>
 	</equippedStatOffsets>
 	
 	<recipeMaker>
@@ -110,6 +111,7 @@
     </statBases>
 	<equippedStatOffsets>
 		<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.3</HackingSpeed>
+		<HackingStealth MayRequire="Ludeon.RimWorld.Ideology">30</HackingStealth>
 		<ResearchSpeed>0.3</ResearchSpeed>
 	</equippedStatOffsets>
     <apparel>
@@ -146,6 +148,7 @@
     <!-- </statBases> -->
 	<!-- <equippedStatOffsets> -->
 		<!-- <HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.6</HackingSpeed> -->
+		<!-- <HackingStealth MayRequire="Ludeon.RimWorld.Ideology">60</HackingStealth> -->
 		<!-- <ResearchSpeed>0.3</ResearchSpeed> -->
 	<!-- </equippedStatOffsets> -->
 	
@@ -584,6 +587,8 @@
     </statBases>
 	<equippedStatOffsets>
 		<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">1</HackingSpeed>
+		<HackingStealth MayRequire="Ludeon.RimWorld.Ideology">100</HackingStealth>
+		<SWCPStat_Awareness>-0.3</SWCPStat_Awareness>
 	</equippedStatOffsets>
     <apparel>
 	  <tags>

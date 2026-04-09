@@ -408,6 +408,7 @@
 		  <li>
 			<statOffsets>
 				<HuntingStealth>0.1</HuntingStealth>
+				<SWCPStat_Stealth>0.1</SWCPStat_Stealth>
 			</statOffsets>
 			<capMods>
 				<li>

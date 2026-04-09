@@ -287,6 +287,7 @@
     </graphicData>
 	<equippedStatOffsets>
 		<PawnTrapSpringChance>-0.1</PawnTrapSpringChance>
+		<SWCPStat_Awareness>0.1</SWCPStat_Awareness>
 		<MeleeDodgeChance>0.1</MeleeDodgeChance>
 		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
         <PsychicSensitivity>0.1</PsychicSensitivity>
@@ -393,6 +394,7 @@
     </graphicData>
 	<equippedStatOffsets>
 		<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.4</HackingSpeed>
+		<HackingStealth MayRequire="Ludeon.RimWorld.Ideology">40</HackingStealth>
 		<ResearchSpeed>0.4</ResearchSpeed>
 		<AimingDelayFactor>-0.2</AimingDelayFactor>
 		<MeleeDodgeChance>0.2</MeleeDodgeChance>
@@ -507,6 +509,7 @@
     </graphicData>
 	<equippedStatOffsets>
 		<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">0.6</HackingSpeed>
+		<HackingStealth MayRequire="Ludeon.RimWorld.Ideology">60</HackingStealth>
 		<ResearchSpeed>0.6</ResearchSpeed>
 		<AimingDelayFactor>-0.5</AimingDelayFactor>
 		<MeleeDodgeChance>0.5</MeleeDodgeChance>
