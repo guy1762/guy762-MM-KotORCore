@@ -892,7 +892,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<HuntingStealth>0.1</HuntingStealth>
-			<SWCPStat_Stealth>0.1</SWCPStat_Stealth>
+			<SWCPStat_StealthGearOffset>0.1</SWCPStat_StealthGearOffset>
 		</equippedStatOffsets>
 		
 		<costList>
@@ -991,7 +991,7 @@
 		</statBases>
 		<equippedStatOffsets>
 			<HuntingStealth>0.1</HuntingStealth>
-			<SWCPStat_Stealth>0.1</SWCPStat_Stealth>
+			<SWCPStat_StealthGearOffset>0.1</SWCPStat_StealthGearOffset>
 		</equippedStatOffsets>
 		
 		<costList>

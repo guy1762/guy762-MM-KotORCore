@@ -588,7 +588,7 @@
 	<equippedStatOffsets>
 		<HackingSpeed MayRequire="Ludeon.RimWorld.Ideology">1</HackingSpeed>
 		<HackingStealth MayRequire="Ludeon.RimWorld.Ideology">100</HackingStealth>
-		<SWCPStat_Awareness>-0.3</SWCPStat_Awareness>
+		<SWCPStat_AwarenessGearOffset>-0.3</SWCPStat_AwarenessGearOffset>
 	</equippedStatOffsets>
     <apparel>
 	  <tags>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!--__________ Patches __________-->
+
+    <!-- SoakingWet -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThoughtDef[defName="SoakingWet"]</xpath>
+        <value>
+            <modExtensions>
+                <li Class="SWCP.ThoughtExtension_NullifyingApparel">
+                    <nullifyingApparel>
+                        <li>Apparel_Cape</li>
+                        <li>Apparel_Duster</li>
+                        <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusRobe</li>
+						
+                        <li>guy762_JediCloak_light</li>
+                        <li>guy762_Accessory_poncho</li>
+                        <li>guy762_Accessory_ponchoCamo</li>
+                        <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_ImpRoyalGuardCloak</li>
+                    </nullifyingApparel>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
+
+    <!-- ToxWater -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/ThoughtDef[defName="ToxWater"]</xpath>
+        <value>
+            <modExtensions>
+                <li Class="SWCP.ThoughtExtension_NullifyingApparel">
+                    <nullifyingApparel>
+						<li>Apparel_Cape</li>
+                        <li>Apparel_Duster</li>
+                        <li MayRequire="Ludeon.RimWorld.Royalty">Apparel_PsyfocusRobe</li>
+						
+                        <li>guy762_JediCloak_light</li>
+                        <li>guy762_Accessory_poncho</li>
+                        <li>guy762_Accessory_ponchoCamo</li>
+                        <li MayRequire="SWCP.guy762.WarlordEmpire">guy762_ImpRoyalGuardCloak</li>
+                    </nullifyingApparel>
+                </li>
+            </modExtensions>
+        </value>
+    </Operation>
+
+</Patch>

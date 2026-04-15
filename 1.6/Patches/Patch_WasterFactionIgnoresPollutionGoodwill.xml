@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!--__________ Patches __________-->
+
+    <!-- PirateWaster -->
+
+    <Operation Class="PatchOperationAdd">
+        <xpath>/Defs/FactionDef[defName="PirateWaster"]</xpath>
+        <value>
+            <modExtensions>
+                <li Class="SWCP.FactionExtension_IgnorePollutionGoodwill" />
+            </modExtensions>
+        </value>
+    </Operation>
+
+</Patch>

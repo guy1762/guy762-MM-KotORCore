@@ -23,7 +23,7 @@
 		<ShootingAccuracyPawn>0.1</ShootingAccuracyPawn>
 		<MeleeHitChance>0.1</MeleeHitChance>
 		<PawnTrapSpringChance>-0.2</PawnTrapSpringChance>
-		<SWCPStat_Awareness>0.2</SWCPStat_Awareness>
+		<SWCPStat_AwarenessGearOffset>0.2</SWCPStat_AwarenessGearOffset>
 	</equippedStatOffsets>
 	
 	<recipeMaker>
@@ -112,7 +112,7 @@
 		<MeleeDodgeChance>0.1</MeleeDodgeChance>
 		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
 		<PawnTrapSpringChance>-0.3</PawnTrapSpringChance>
-		<SWCPStat_Awareness>0.3</SWCPStat_Awareness>
+		<SWCPStat_AwarenessGearOffset>0.3</SWCPStat_AwarenessGearOffset>
 		<MortarMissRadiusFactor>-0.1</MortarMissRadiusFactor>
 	</equippedStatOffsets>
     <apparel>
@@ -436,7 +436,7 @@
 		<MeleeDodgeChance>0.2</MeleeDodgeChance>
 		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.2</VEF_RangedDodgeChance>
 		<PawnTrapSpringChance>-0.2</PawnTrapSpringChance>
-		<SWCPStat_Awareness>0.2</SWCPStat_Awareness>
+		<SWCPStat_AwarenessGearOffset>0.2</SWCPStat_AwarenessGearOffset>
 	</equippedStatOffsets>
     <apparel>
 	  <tags>
@@ -511,7 +511,7 @@
     </statBases>
 	<equippedStatOffsets>
 		<PawnTrapSpringChance>-0.5</PawnTrapSpringChance>
-		<SWCPStat_Awareness>0.5</SWCPStat_Awareness>
+		<SWCPStat_AwarenessGearOffset>0.5</SWCPStat_AwarenessGearOffset>
 		<MortarMissRadiusFactor>-1</MortarMissRadiusFactor>
 	</equippedStatOffsets>
     <apparel>
@@ -586,7 +586,7 @@
 		<MeleeDodgeChance>0.1</MeleeDodgeChance>
 		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
 		<PawnTrapSpringChance>-0.8</PawnTrapSpringChance>
-		<SWCPStat_Awareness>0.8</SWCPStat_Awareness>
+		<SWCPStat_AwarenessGearOffset>0.8</SWCPStat_AwarenessGearOffset>
 		<MortarMissRadiusFactor>-0.2</MortarMissRadiusFactor>
 		<ShootingAccuracyPawn>0.2</ShootingAccuracyPawn>
 		<MeleeHitChance>0.2</MeleeHitChance>

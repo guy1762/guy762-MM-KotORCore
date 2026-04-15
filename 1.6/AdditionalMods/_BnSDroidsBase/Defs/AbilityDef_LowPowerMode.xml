@@ -19,7 +19,7 @@
 		<disableGizmoWhileUndrafted>False</disableGizmoWhileUndrafted>
 		
 		
-		<aiCanUse>true</aiCanUse>
+		<aiCanUse>false</aiCanUse>
 		<targetRequired>false</targetRequired>
 		<displayOrder>301</displayOrder>
 		<statBases>

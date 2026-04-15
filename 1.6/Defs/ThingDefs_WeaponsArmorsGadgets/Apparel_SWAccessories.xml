@@ -616,8 +616,11 @@
 		</statBases>
 		<equippedStatOffsets>
 			<HuntingStealth>0.2</HuntingStealth>
-			<SWCPStat_Stealth>0.2</SWCPStat_Stealth>
+			<SWCPStat_StealthGearOffset>0.2</SWCPStat_StealthGearOffset>
 		</equippedStatOffsets>
+		
+		<!-- //////////////////////////////////////////////////////////////////////////////// NOTE: the function that cancels the "soaking wet" and "tox rain" thoughts when this item is worn is done through a PATCH!!!  -->
+		
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<layers>
@@ -735,8 +738,11 @@
 		</statBases>
 		<equippedStatOffsets>
 			<HuntingStealth>0.4</HuntingStealth>
-			<SWCPStat_Stealth>0.4</SWCPStat_Stealth>
+			<SWCPStat_StealthGearOffset>0.4</SWCPStat_StealthGearOffset>
 		</equippedStatOffsets>
+		
+		<!-- //////////////////////////////////////////////////////////////////////////////// NOTE: the function that cancels the "soaking wet" and "tox rain" thoughts when this item is worn is done through a PATCH!!!  -->
+		
 		<apparel>
 			<countsAsClothingForNudity>false</countsAsClothingForNudity>
 			<layers>

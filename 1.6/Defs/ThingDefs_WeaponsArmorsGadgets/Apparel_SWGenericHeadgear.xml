@@ -824,10 +824,13 @@
 		</statBases>
 		<equippedStatOffsets>
 			<ToxicEnvironmentResistance>0.35</ToxicEnvironmentResistance>
+
+			<HuntingStealth>0.1</HuntingStealth>
+			<SWCPStat_StealthGearOffset>0.1</SWCPStat_StealthGearOffset>
 		</equippedStatOffsets>
 		
 		<costList>
-		  <Cloth>30</Cloth>
+			<Cloth>30</Cloth>
 		</costList>
 		
 		<apparel>
@@ -867,6 +870,10 @@
 			<options>
 				<li>
 					<weight>10</weight>
+					<only>(50,50,50)</only> <!-- black -->
+				</li>
+				<li>
+					<weight>10</weight>
 					<only>(250,250,250)</only> <!-- white -->
 				</li>
 				<!--zaalbar's red-->
@@ -874,10 +881,6 @@
 					<!-- <weight>10</weight> -->
 					<!-- <only>(155,30,25)</only> -->
 				<!-- </li> -->
-				<li>
-					<weight>10</weight>
-					<only>(50,50,50)</only> <!-- black -->
-				</li>
 				<li>
 					<weight>10</weight>
 					<only>(185,160,125)</only>	<!-- alternative beige -->

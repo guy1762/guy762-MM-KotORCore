@@ -205,7 +205,7 @@
 			<IncomingDamageFactor>-0.1</IncomingDamageFactor>
 			<!--PsychicSensitivity>0.1</PsychicSensitivity>
 			<HuntingStealth>0.2</HuntingStealth
-			<SWCPStat_Stealth>0.2</SWCPStat_Stealth>-->
+			<SWCPStat_StealthGearOffset>0.2</SWCPStat_StealthGearOffset>-->
 		</equippedStatOffsets>
 		<apparel>
 			<layers>

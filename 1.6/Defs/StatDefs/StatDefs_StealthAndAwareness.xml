@@ -19,8 +19,12 @@
 		<!-- <description>This stat reduces the chance of hunted animals attacking the hunter.\n\nA 0% score means no reduction.\nA 100% score means animals never attack.</description> -->
 		<category>SWCPStatCategory</category>
 		<displayPriorityInCategory>1</displayPriorityInCategory>
+		
 		<showOnPawns>true</showOnPawns>
-		<neverDisabled>false</neverDisabled>
+		<!-- <neverDisabled>true</neverDisabled> -->
+		<!-- <alwaysHide>false</alwaysHide> -->
+		<!-- <showIfUndefined>false</showIfUndefined> -->
+		<!-- <hideAtValue>0</hideAtValue> -->
 		
 		<defaultBaseValue>1</defaultBaseValue>
 		<minValue>0</minValue>
@@ -29,7 +33,7 @@
 			<li Class="SkillNeed_BaseBonus">
 				<skill>Animals</skill>
 				<baseValue>0</baseValue>
-				<bonusPerLevel>0.1</bonusPerLevel>
+				<bonusPerLevel>0.05</bonusPerLevel>
 			</li>
 		</skillNeedOffsets>
 		<capacityFactors>
@@ -38,7 +42,79 @@
 				<weight>1</weight>
 			</li>
 		</capacityFactors>
+		
+		<parts>
+			<li Class="StatPart_GearStatOffset">
+				<apparelStat>SWCPStat_StealthGearOffset</apparelStat>
+				<includeWeapon>true</includeWeapon>
+			</li>
+			<!-- <li Class="StatPart_Age"> -->
+				<!-- <curve> -->
+				  <!-- <points> -->
+					<!-- <li>(0.65,1)</li> -->
+					<!-- <li>(0.8,0.95)</li> -->
+					<!-- <li>(1.0,0.9)</li> -->
+					<!-- <li>(1.2,0.8)</li> -->
+					<!-- <li>(1.5,0.5)</li> -->
+				  <!-- </points> -->
+				<!-- </curve> -->
+			<!-- </li> -->
+		</parts>
 	</StatDef>
+	
+	
+	<StatDef>
+		<defName>SWCPStat_StealthGearOffset</defName>
+		<label>sneaking stealth gear offset</label>
+		<description>This stat multiplies the base sneaking stealth stat through an equipped item bonus.</description>
+		<!-- <description>This stat reduces the chance of hunted animals attacking the hunter.\n\nA 0% score means no reduction.\nA 100% score means animals never attack.</description> -->
+		<category>SWCPStatCategory</category>
+		<displayPriorityInCategory>2</displayPriorityInCategory>
+		
+		<showOnAnimals>false</showOnAnimals>
+		<showIfUndefined>false</showIfUndefined>
+		<showOnPawns>false</showOnPawns>
+		<alwaysHide>true</alwaysHide>
+		<hideAtValue>0</hideAtValue>
+		<defaultBaseValue>0</defaultBaseValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<parts>
+			<li Class="StatPart_Quality">
+				<factorAwful>0.8</factorAwful>
+				<factorPoor>0.9</factorPoor>
+				<factorNormal>1</factorNormal>
+				<factorGood>1.1</factorGood>
+				<factorExcellent>1.2</factorExcellent>
+				<factorMasterwork>1.5</factorMasterwork>
+				<factorLegendary>1.8</factorLegendary>
+				<applyToNegativeValues>true</applyToNegativeValues>
+			</li>
+		</parts>
+		<cacheable>true</cacheable>
+	</StatDef>
+
+		
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	<StatDef>
@@ -46,9 +122,13 @@
 		<label>awareness</label>
 		<description>This stat increases the chances of a pawn being able to detect nearby stealthed enemies.\nThis stat is determined by the pawn's Sight and Hearing capacity levels.</description>
 		<category>SWCPStatCategory</category>
-		<displayPriorityInCategory>1</displayPriorityInCategory>
+		<displayPriorityInCategory>10</displayPriorityInCategory>
+		
 		<showOnPawns>true</showOnPawns>
-		<neverDisabled>false</neverDisabled>
+		<!-- <neverDisabled>true</neverDisabled> -->
+		<!-- <alwaysHide>false</alwaysHide> -->
+		<!-- <showIfUndefined>false</showIfUndefined> -->
+		<!-- <hideAtValue>0</hideAtValue> -->
 		
 		<defaultBaseValue>1</defaultBaseValue>
 		<minValue>0</minValue>
@@ -63,6 +143,57 @@
 				<weight>1</weight>
 			</li>
 		</capacityFactors>
+		<parts>
+		  <!-- <li Class="StatPart_Age" MayRequire="Ludeon.RimWorld.Biotech"> -->
+			<!-- <useBiologicalYears>true</useBiologicalYears> -->
+			<!-- <humanlikeOnly>true</humanlikeOnly> -->
+			<!-- <curve> -->
+			  <!-- <points> -->
+				<!-- <li>(4,0.05)</li> -->
+				<!-- <li>(12,0.8)</li> -->
+				<!-- <li>(13,1)</li> -->
+			  <!-- </points> -->
+			<!-- </curve> -->
+		  <!-- </li> -->
+			<li Class="StatPart_GearStatOffset">
+				<apparelStat>SWCPStat_AwarenessGearOffset</apparelStat>
+				<includeWeapon>true</includeWeapon>
+			</li>
+		</parts>
+	</StatDef>
+	
+	
+	
+	
+	
+	<StatDef>
+		<defName>SWCPStat_AwarenessGearOffset</defName>
+		<label>awareness gear offset</label>
+		<description>This stat multiplies the base awareness stat through an equipped item bonus.</description>
+		<!-- <description>This stat reduces the chance of hunted animals attacking the hunter.\n\nA 0% score means no reduction.\nA 100% score means animals never attack.</description> -->
+		<category>SWCPStatCategory</category>
+		<displayPriorityInCategory>11</displayPriorityInCategory>
+		
+		<showOnAnimals>false</showOnAnimals>
+		<showIfUndefined>false</showIfUndefined>
+		<showOnPawns>false</showOnPawns>
+		<alwaysHide>true</alwaysHide>
+		<hideAtValue>0</hideAtValue>
+		<defaultBaseValue>0</defaultBaseValue>
+		<toStringStyle>PercentZero</toStringStyle>
+		<parts>
+			<li Class="StatPart_Quality">
+				<factorAwful>0.8</factorAwful>
+				<factorPoor>0.9</factorPoor>
+				<factorNormal>1</factorNormal>
+				<factorGood>1.1</factorGood>
+				<factorExcellent>1.2</factorExcellent>
+				<factorMasterwork>1.5</factorMasterwork>
+				<factorLegendary>1.8</factorLegendary>
+				<applyToNegativeValues>true</applyToNegativeValues>
+			</li>
+		</parts>
+		<cacheable>true</cacheable>
 	</StatDef>
 
 

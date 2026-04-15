@@ -16,10 +16,10 @@
 		<generateInitialNonFamilyRelations>False</generateInitialNonFamilyRelations>
 		<allowOldAgeInjuries>False</allowOldAgeInjuries>
 		<requiredWorkTags>
-		  <li>Violent</li>
+			<li>Violent</li>
 		</requiredWorkTags>
 		<disallowedTraits>
-		  <li>Nudist</li>
+			<li>Nudist</li>
 		</disallowedTraits>
 		<inventoryOptions>
 		  <skipChance>0</skipChance>
@@ -32,6 +32,10 @@
 		</inventoryOptions>
 		<maxPerGroup>1</maxPerGroup>
 		<!--skipResistant>true</skipResistant-->
+		
+		<forcedTraits>
+			<SWPotF_Trait_heroic MayRequire="guy762.Lee.KotORPotF">0</SWPotF_Trait_heroic>
+		</forcedTraits>
 		
 		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
     </PawnKindDef>

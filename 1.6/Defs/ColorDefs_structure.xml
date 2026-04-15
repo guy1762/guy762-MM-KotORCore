@@ -348,5 +348,11 @@
 		<label>Cinnagar Iron</label>
 		<color>(90,70,50)</color>
 	</ColorDef>
+	
+	<ColorDef ParentName="guy762_StructureColorIdeoBase">
+		<defName>guy762_StructureColor_SkywalkerYellow</defName>
+		<label>Skywalker Yellow</label>
+		<color>(215,195,90)</color>
+	</ColorDef>
 
 </Defs>

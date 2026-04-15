@@ -5,7 +5,7 @@
 	<HediffDef>
 		<defName>SWCPHediff_BactaHeal</defName>
 		<label>Bacta Healing</label>
-		<description>Longer-lasting regenerative agents from applied Bacta gel. Grants immunity to most poisons while active, in addition to boosting immunity gain speed, natural healing factor, and providing minor damage resistance.</description>
+		<description>Longer-lasting regenerative agents from applied Bacta gel. Grants immunity to most poisons while active, in addition to boosting immunity gain speed, natural healing factor, and providing minor damage resistance. Will heal permanent injuries.</description>
 		<hediffClass>HediffWithComps</hediffClass>
 		<maxSeverity>1.0</maxSeverity>
 
@@ -33,7 +33,8 @@
 				<showRemainingTime>True</showRemainingTime>
 			</li>
 			<li Class="FCP.Core.Stims.HediffCompProperties_Stimpack">
-                <HealPermanentInjuries>false</HealPermanentInjuries>
+                <HealPermanentInjuries>true</HealPermanentInjuries>
+				
                 <HealMissingBodyParts>false</HealMissingBodyParts>
                 <RemoveHediffWhenDone>False</RemoveHediffWhenDone>
                 <ScaleHealedAmountWithTotalHitPoints>true</ScaleHealedAmountWithTotalHitPoints>

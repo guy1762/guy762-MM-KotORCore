@@ -287,7 +287,7 @@
     </graphicData>
 	<equippedStatOffsets>
 		<PawnTrapSpringChance>-0.1</PawnTrapSpringChance>
-		<SWCPStat_Awareness>0.1</SWCPStat_Awareness>
+		<SWCPStat_AwarenessGearOffset>0.1</SWCPStat_AwarenessGearOffset>
 		<MeleeDodgeChance>0.1</MeleeDodgeChance>
 		<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">0.1</VEF_RangedDodgeChance>
         <PsychicSensitivity>0.1</PsychicSensitivity>

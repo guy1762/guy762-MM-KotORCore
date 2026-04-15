@@ -28,7 +28,7 @@
     </statBases>
 	<equippedStatOffsets>
 		<HuntingStealth>0.2</HuntingStealth>
-		<SWCPStat_Stealth>0.2</SWCPStat_Stealth>
+		<SWCPStat_StealthGearOffset>0.2</SWCPStat_StealthGearOffset>
 	</equippedStatOffsets>
 	
 	<recipeMaker>

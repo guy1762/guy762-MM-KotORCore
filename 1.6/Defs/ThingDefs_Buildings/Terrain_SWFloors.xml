@@ -498,5 +498,38 @@
   </TerrainDef>
   
   
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+	<!-- <TerrainDef ParentName="NaturalTerrainBase"> -->
+		<!-- <defName>guy762_FloorTiles_DebugSpeedBooster</defName> -->
+		<!-- <label>debug speed boosting tile</label> -->
+		<!-- <renderPrecedence>240</renderPrecedence> -->
+		<!-- <description>.</description> -->
+		<!-- <texturePath>Buildings/Floors/XGrate</texturePath> -->
+
+		<!-- <pathCost>-10</pathCost> ////////////////////////////////// doesn't work unfortunately  -->
+
+		<!-- <designationCategory>KOTOR_BuildTab</designationCategory> -->
+		<!-- <color>(255,0,255)</color> -->
+		<!-- <designationHotKey>Misc7</designationHotKey> -->
+		<!-- <uiOrder>2040</uiOrder> -->
+	<!-- </TerrainDef> -->
+  
 
 </Defs>

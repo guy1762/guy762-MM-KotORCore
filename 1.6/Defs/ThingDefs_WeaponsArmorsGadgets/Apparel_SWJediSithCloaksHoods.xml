@@ -33,6 +33,9 @@
 	  <PsychicSensitivity>0.1</PsychicSensitivity>
       <PsychicEntropyRecoveryRate>0.1</PsychicEntropyRecoveryRate>
     </equippedStatOffsets-->
+	
+	<!-- //////////////////////////////////////////////////////////////////////////////// NOTE: the function that cancels the "soaking wet" and "tox rain" thoughts when this item is worn is done through a PATCH!!!  -->
+	
     <apparel>
 		<drawData>
 			<dataNorth>
