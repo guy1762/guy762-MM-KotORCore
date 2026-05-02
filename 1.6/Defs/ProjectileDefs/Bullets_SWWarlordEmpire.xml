@@ -3,6 +3,172 @@
 	
 	
 	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>SWProj_BlasterBoltSniper</defName>
+		<label>sniper bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>15</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<speed>100</speed>
+			<stoppingPower>0.33</stoppingPower>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>SWProj_BlasterBoltSniper_adv</defName>
+		<label>sniper bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<speed>100</speed>
+			<stoppingPower>0.66</stoppingPower>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>SWProj_BlasterBoltSniper_mst</defName>
+		<label>sniper bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_red</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_energy</damageDef>
+			<damageAmountBase>45</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<speed>100</speed>
+			<stoppingPower>0.99</stoppingPower>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>SWProj_IonBoltSniper</defName>
+		<label>ion bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_ion</damageDef>
+			<damageAmountBase>10</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<speed>100</speed>
+			<stoppingPower>0.33</stoppingPower>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>3</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>SWProj_IonBoltSniper_adv</defName>
+		<label>ion bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_ion</damageDef>
+			<damageAmountBase>25</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<speed>100</speed>
+			<stoppingPower>0.66</stoppingPower>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>6</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>SWProj_IonBoltSniper_mst</defName>
+		<label>ion bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/sniper_blue</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>guy762_RangedDamage_ion</damageDef>
+			<damageAmountBase>40</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<speed>100</speed>
+			<stoppingPower>0.99</stoppingPower>
+			<extraDamages>
+				<li>
+					<def>EMP</def>
+					<amount>18</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
+		<defName>SWProj_SlugBoltSniper_mst</defName>
+		<label>slug bolt</label>
+		<graphicData>
+			<texPath>Weapons/Projectiles/slug</texPath>
+			<graphicClass>Graphic_Single</graphicClass>
+			<shaderType>TransparentPostLight</shaderType>
+		</graphicData>
+		<projectile>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>45</damageAmountBase>
+			<armorPenetrationBase>1</armorPenetrationBase>
+			<stoppingPower>1.5</stoppingPower>
+			<speed>100</speed>
+			<extraDamages>
+				<li>
+					<def>guy762_RangedDamage_energy</def>
+					<amount>16</amount>
+				</li>
+			</extraDamages>
+		</projectile>
+	</ThingDef>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<ThingDef ParentName="guy762_BaseBullet_VehicleDamageReducer">
 		<defName>SWProj_TL50bolt</defName>
 		<label>energy bolt</label>
 		<graphicData>

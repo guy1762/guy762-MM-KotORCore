@@ -230,6 +230,9 @@
 		<makesAnimalsFlee>true</makesAnimalsFlee>
 		<defaultDamage>10</defaultDamage>
 		<defaultArmorPenetration>0.20</defaultArmorPenetration>
+		
+		<buildingDamageFactorImpassable>1.5</buildingDamageFactorImpassable>
+		<buildingDamageFactorPassable>2</buildingDamageFactorPassable>
 	</DamageDef>
 	
 	<DamageDef Name="guy762_BeamDamage_AntiVehicleEnergy">

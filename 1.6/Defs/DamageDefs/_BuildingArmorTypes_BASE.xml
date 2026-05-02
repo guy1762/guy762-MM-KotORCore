@@ -66,8 +66,8 @@
 			<li><damageDef>guy762_BeamDamage_energy</damageDef><multiplier>0.25</multiplier></li>
 			<li><damageDef>Beam</damageDef><multiplier>0.25</multiplier></li>
 			<li MayRequire="Ludeon.RimWorld.Odyssey"><damageDef>BeamBypassShields</damageDef><multiplier>0.25</multiplier></li>
-			<li><damageDef>guy762_ExplosiveDamage_energy</damageDef><multiplier>0.1</multiplier></li>
-			<li><damageDef>guy762_GrenadeDamage_energy</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>guy762_ExplosiveDamage_energy</damageDef><multiplier>0.5</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_energy</damageDef><multiplier>0.5</multiplier></li>
 			<li MayRequire="lee.theforce.standalone"><damageDef>Force_EnergyBurn</damageDef><multiplier>0.1</multiplier></li>
 		
 		<!-- EMP -->
@@ -82,20 +82,20 @@
 		
 		<!-- anti-vehicle -->
 			<li><damageDef>guy762_RangedDamage_AntiVehicleEnergy</damageDef><multiplier>1</multiplier></li>
-			<li><damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef><multiplier>1</multiplier></li>
+			<li><damageDef>guy762_ExplosiveDamage_AntiVehicleEnergy</damageDef><multiplier>2</multiplier></li>
 			<li><damageDef>guy762_RangedDamage_AntiVehicleBullet</damageDef><multiplier>1</multiplier></li>
 		
 		<!-- explosive -->
-			<li><damageDef>Bomb</damageDef><multiplier>0.1</multiplier></li>
-			<li><damageDef>guy762_GrenadeDamage_frag</damageDef><multiplier>0.1</multiplier></li>
-			<li MayRequire="guy762.NA.MM.SWVehicles"><damageDef>guy762_ExplosiveDamage_conc</damageDef><multiplier>0.01</multiplier></li>
+			<li><damageDef>Bomb</damageDef><multiplier>0.25</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_frag</damageDef><multiplier>0.25</multiplier></li>
+			<li MayRequire="guy762.NA.MM.SWVehicles"><damageDef>guy762_ExplosiveDamage_conc</damageDef><multiplier>0.1</multiplier></li>
 			
 		<!-- explosive: piercing -->
 			<li MayRequire="Ludeon.RimWorld.Odyssey"><damageDef>MiningBomb</damageDef><multiplier>1</multiplier></li>
 			<li><damageDef>guy762_GrenadeDamage_detpack</damageDef><multiplier>1</multiplier></li>
 			<li><damageDef>guy762_GrenadeDamage_thermaldet</damageDef><multiplier>2</multiplier></li>
-			<li><damageDef>Vaporize</damageDef><multiplier>0.5</multiplier></li>
-			<li><damageDef>BombSuper</damageDef><multiplier>1</multiplier></li>
+			<li><damageDef>Vaporize</damageDef><multiplier>1</multiplier></li>
+			<li><damageDef>BombSuper</damageDef><multiplier>2</multiplier></li>
 			
 			
 			
@@ -107,10 +107,10 @@
 			<li MayRequire="lee.theforce.standalone"><damageDef>Force_Lightning</damageDef><multiplier>0.1</multiplier></li>
 			
 		<!-- sonic -->
-			<li><damageDef>guy762_RangedDamage_sonic</damageDef><multiplier>0.1</multiplier></li>
-			<li><damageDef>guy762_MeleeDamage_sonic</damageDef><multiplier>0.1</multiplier></li>
-			<li><damageDef>guy762_GrenadeDamage_sonic</damageDef><multiplier>0.1</multiplier></li>
-			<li><damageDef>Thump</damageDef><multiplier>0.1</multiplier></li>
+			<li><damageDef>guy762_RangedDamage_sonic</damageDef><multiplier>0.5</multiplier></li>
+			<li><damageDef>guy762_MeleeDamage_sonic</damageDef><multiplier>0.5</multiplier></li>
+			<li><damageDef>guy762_GrenadeDamage_sonic</damageDef><multiplier>1</multiplier></li>
+			<li><damageDef>Thump</damageDef><multiplier>0.5</multiplier></li>
 			
 		<!-- disruption/acid -->
 			<li><damageDef>AcidBurn</damageDef><multiplier>0.25</multiplier></li>
