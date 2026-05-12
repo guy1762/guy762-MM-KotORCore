@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <TraitDef>
+        <defName>FCP_Trait_Power_Armor_Trained</defName>
+        <commonality>0</commonality>
+        <degreeDatas>
+            <li>
+                <label>Power Armor Trained</label>
+                <description>{PAWN_nameDef} has completed basic power armor training. {PAWN_pronoun} is ready to take on the wasteland in any suit of power armor they see fit.</description>
+            </li>
+        </degreeDatas>
+    </TraitDef>
+	
+</Defs>

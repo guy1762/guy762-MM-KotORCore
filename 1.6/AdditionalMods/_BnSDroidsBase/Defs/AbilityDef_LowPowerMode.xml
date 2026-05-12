@@ -37,7 +37,8 @@
 		</verbProperties>
 		<comps>
 			<li Class = "CompProperties_AbilityGiveHediff">
-				<compClass>TheForce_Standalone.CompAbilityEffect_GiveHediffToSelf</compClass>
+				<!-- <compClass>TheForce_Standalone.CompAbilityEffect_GiveHediffToSelf</compClass> -->
+				<compClass>CompAbilityEffect_GiveHediff</compClass>
 				<hediffDef>SWCPDroidHediff_LowPowerMode</hediffDef>
 				<psychic>false</psychic>
 				<applicableToMechs>False</applicableToMechs>

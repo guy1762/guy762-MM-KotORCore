@@ -1,5 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
-  <SWCP_LifeSupport_OxygenMode>Oxygen Mode</SWCP_LifeSupport_OxygenMode>
-  <SWCP_LifeSupport_OxygenMode_Desc>(ONLY WORKS IN SPACE!) Toggle between pushing oxygen to the room or sucking oxygen out of the room.</SWCP_LifeSupport_OxygenMode_Desc>
+	
+	<SWCP_LifeSupport_OxygenMode>Oxygen Mode</SWCP_LifeSupport_OxygenMode>
+	<SWCP_LifeSupport_OxygenMode_Desc>(ONLY WORKS IN SPACE!) Toggle between pushing oxygen to the room or sucking oxygen out of the room.</SWCP_LifeSupport_OxygenMode_Desc>
+  
+	<!-- Jetpack Commands -->
+	<EnableJetpack>Enable Jetpack</EnableJetpack>
+	<DisableJetpack>Disable Jetpack</DisableJetpack>
+	<ToggleJetpack>Toggle Jetpack</ToggleJetpack>
+
+	<!-- Jetpack Descriptions -->
+	<EnableJetpackDesc>Toggles jetpack flight mode</EnableJetpackDesc>
+	<DisableJetpackDesc>Toggles jetpack flight mode</DisableJetpackDesc>
+	<JetpackFuelDesc>Fuel: {0}/{1}</JetpackFuelDesc>
+
+	<!-- Status Messages -->
+	<NotEnoughFuel>Not enough fuel</NotEnoughFuel>
+	<PawnIsDowned>Pawn is downed</PawnIsDowned>
+	<CannotFlyUnderRoof>Cannot fly under a roof</CannotFlyUnderRoof>
+	<StartingIn>Starting in {0}s</StartingIn>
+
+	<!-- Tooltip Text -->
+	<JetpackFuel>Jetpack Fuel: {0}/{1}</JetpackFuel>
+	<FuelDrain>Drain: {0}/sec</FuelDrain>
+	<FuelRefill>Refill: {0}/sec</FuelRefill>
+	<CannotFlyUnderRoofTip>Cannot fly: Under roof</CannotFlyUnderRoofTip>
+	<StartingInTip>Starting in: {0}s</StartingInTip>
+	
 </LanguageData>

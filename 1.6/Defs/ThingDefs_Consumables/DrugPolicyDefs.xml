@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<DrugPolicyDef>
+		<defName>SWCPDrugPolicy_CheapMedpacsAndStims</defName>
+		<label>carry medpacs and stims (common only)</label>
+		<entries>
+			<li><drug>guy762_medpac</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_medpac_adv</drug><takeToInventory>3</takeToInventory></li>
+			<!-- <li><drug>guy762_medpac_life</drug><takeToInventory>3</takeToInventory></li> -->
+			<!-- <li><drug>SWCPItem_Bacta</drug><takeToInventory>3</takeToInventory></li> -->
+			<li><drug>guy762_stim_battle</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_stim_con</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_stim_dex</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_stim_str</drug><takeToInventory>3</takeToInventory></li>
+		</entries>
+	</DrugPolicyDef>
+	
+	<DrugPolicyDef>
+		<defName>SWCPDrugPolicy_MedpacsAndStims</defName>
+		<label>carry medpacs and stims (any non-addictive)</label>
+		<entries>
+			<li>
+				<drug>guy762_medpac</drug>
+				<!-- <allowedForJoy>true</allowedForJoy> -->
+				<!-- <allowScheduled>true</allowScheduled> -->
+				<takeToInventory>3</takeToInventory>
+				<!-- <daysFrequency>1</daysFrequency> -->
+			</li>
+			<li><drug>guy762_medpac_adv</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_medpac_life</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>SWCPItem_Bacta</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_stim_battle</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_stim_con</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_stim_dex</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_stim_str</drug><takeToInventory>3</takeToInventory></li>
+		</entries>
+	</DrugPolicyDef>
+	
+	<DrugPolicyDef>
+		<defName>SWCPDrugPolicy_AddictiveMedpacsAndStims</defName>
+		<label>carry medpacs and stims (all)</label>
+		<entries>
+			<li><drug>guy762_medpac</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_medpac_adv</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_medpac_life</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>SWCPItem_Bacta</drug><takeToInventory>3</takeToInventory></li>
+			
+			<li><drug>guy762_stim_battle</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_stim_con</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_stim_dex</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_stim_str</drug><takeToInventory>3</takeToInventory></li>
+			
+			<li><drug>guy762_stim_hyperbattle</drug><takeToInventory>3</takeToInventory><allowedForAddiction>True</allowedForAddiction></li>
+			<li><drug>guy762_stim_hypercon</drug><takeToInventory>3</takeToInventory><allowedForAddiction>True</allowedForAddiction></li>
+			<li><drug>guy762_stim_hyperdex</drug><takeToInventory>3</takeToInventory><allowedForAddiction>True</allowedForAddiction></li>
+			<li><drug>guy762_stim_hyperstr</drug><takeToInventory>3</takeToInventory><allowedForAddiction>True</allowedForAddiction></li>
+			
+			<li><drug>guy762_stim_echani</drug><takeToInventory>3</takeToInventory><allowedForAddiction>True</allowedForAddiction></li>
+		</entries>
+	</DrugPolicyDef>
+	
+	<!-- <DrugPolicyDef> MOVED TO REPAIR KIT DOC -->
+		<!-- <defName>SWCPDrugPolicy_DroidRepairKits</defName> -->
+		<!-- <label>carry droid repair kits</label> -->
+		<!-- <entries> -->
+			<!-- <li><drug>guy762_repairkit</drug><takeToInventory>3</takeToInventory></li> -->
+			<!-- <li><drug>guy762_repairkit_adv</drug><takeToInventory>3</takeToInventory></li> -->
+			<!-- <li><drug>guy762_repairkit_con</drug><takeToInventory>3</takeToInventory></li> -->
+		<!-- </entries> -->
+	<!-- </DrugPolicyDef> -->
+
+</Defs>

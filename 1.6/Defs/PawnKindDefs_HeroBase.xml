@@ -8,6 +8,7 @@
 		<ignoreFactionApparelStuffRequirements>true</ignoreFactionApparelStuffRequirements>
 		<useFactionXenotypes>false</useFactionXenotypes>
 		<chemicalAddictionChance>0.00</chemicalAddictionChance>
+		<appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
 		<backstoryCryptosleepCommonality>0</backstoryCryptosleepCommonality>
 		<initialResistanceRange>13~21</initialResistanceRange>
 		<humanPregnancyChance>0</humanPregnancyChance>

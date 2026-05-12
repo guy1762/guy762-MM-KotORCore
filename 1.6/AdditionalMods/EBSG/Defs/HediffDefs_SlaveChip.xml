@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!-- Mindscrew -->
+  
+	<HediffDef ParentName="ImplantHediffBase">
+		<defName>SWCPHediff_SlaveChip</defName>
+		<label>slave chip</label>
+		<labelNoun>a slave chip</labelNoun>
+		<description>.</description>
+		<!-- <descriptionHyperlinks><ThingDef>Mindscrew</ThingDef></descriptionHyperlinks> -->
+		<tags><li>SWCPHediffTag_SlaveChip</li></tags>
+		
+		<spawnThingOnRemoved>ComponentSpacer</spawnThingOnRemoved>
+		<!-- <priceOffset>50</priceOffset> -->
+		<priceOffset>200</priceOffset> <!-- marketvalue of an advanced component -->
+		
+		<initialSeverity>1</initialSeverity>
+		<stages>
+			<li>
+				<minSeverity>0</minSeverity>
+				<statOffsets>
+					<!-- <SlaveSuppressionOffset>0.30</SlaveSuppressionOffset> -->
+					<!-- <SlaveSuppressionFallRate>-0.30</SlaveSuppressionFallRate> -->
+				</statOffsets>
+				<statFactors>
+					<SlaveSuppressionFallRate>0</SlaveSuppressionFallRate>
+				</statFactors>
+			</li>
+		</stages>
+		<comps>
+            <li Class="EBSGFramework.HediffCompProperties_SeverityByMentalState">
+                <defaultSeverity>1</defaultSeverity>
+                <mentalStateEffects>
+                    <li MayRequire="Ludeon.Rimworld.Ideology">
+                        <mentalState>Rebellion</mentalState>
+						<mentalSeverity>10</mentalSeverity>
+                    </li>
+                </mentalStateEffects>
+            </li>
+			<li Class="EBSGFramework.HediffCompProperties_HediffWhileInSeverityRange">
+                <hediffsAtSeverities>
+                    <SWCPHediff_SlaveChipElectrocution>10</SWCPHediff_SlaveChipElectrocution>
+                </hediffsAtSeverities>
+            </li>
+        </comps>
+	</HediffDef>
+	
+	
+	
+	<HediffDef>
+		<defName>SWCPHediff_SlaveChipElectrocution</defName>
+		<label>slave chip electrocution</label>
+		<description>.</description>
+		<defaultLabelColor>(255,7,48)</defaultLabelColor> <!-- red -->
+		<hediffClass>HediffWithComps</hediffClass>
+		<maxSeverity>1.0</maxSeverity>
+		<isBad>true</isBad>
+		<stages>
+			<li><minSeverity>0</minSeverity><becomeVisible>false</becomeVisible></li>
+		</stages>
+		<comps>
+			<!--2,500 ticks per hour in game-->
+			<li Class="HediffCompProperties_Disappears">
+				<disappearsAfterTicks>600</disappearsAfterTicks>
+				<showRemainingTime>True</showRemainingTime>
+			</li>
+			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li Class="SWCP_Misc.HediffCompProperties_DisappearsOnDowned"/>
+
+			<li Class="EBSGFramework.HediffCompProperties_DamageOverTime">
+				<damage>guy762_MeleeDamage_electrical</damage>
+				<damageAmount>1</damageAmount>
+				<armorPenetration>100</armorPenetration>
+				<createFilth>False</createFilth>
+				<tickInterval>5</tickInterval>
+				<bodyParts>
+					<li>Neck</li>
+				</bodyParts>
+			</li>
+		</comps>
+	</HediffDef>
+
+
+
+	<RecipeDef ParentName="SurgeryInstallImplantBase">
+		<defName>SWCPRecipe_InstallSlaveChip</defName>
+		<label>install slave chip</label>
+		<description>Install a slave chip.</description>
+		<descriptionHyperlinks>
+			<HediffDef>SWCPHediff_SlaveChip</HediffDef>
+		</descriptionHyperlinks>
+		<jobString>Installing slave chip.</jobString>
+		<ingredients>
+		  <li>
+			<filter>
+			  <thingDefs>
+				<li>ComponentSpacer</li>
+			  </thingDefs>
+			</filter>
+			<count>1</count>
+		  </li>
+		</ingredients>
+		<fixedIngredientFilter>
+			<thingDefs>
+				<li>ComponentSpacer</li>
+			</thingDefs>
+		</fixedIngredientFilter>
+		<appliedOnFixedBodyParts>
+			<li>Neck</li>
+		</appliedOnFixedBodyParts>
+		<addsHediff>SWCPHediff_SlaveChip</addsHediff>
+		<incompatibleWithHediffTags>
+			<li>SWCPHediffTag_SlaveChip</li>
+		</incompatibleWithHediffTags>
+	</RecipeDef>
+
+ 
+</Defs>

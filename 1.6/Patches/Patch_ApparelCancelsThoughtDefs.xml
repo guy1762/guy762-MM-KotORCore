@@ -8,7 +8,11 @@
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThoughtDef[defName="SoakingWet"]</xpath>
         <value>
-            <modExtensions>
+            <nullifyingHediffs>
+				<li>SWCP_hediff_JetpackActiveDebugForThoughtRemoval</li>
+			</nullifyingHediffs>
+			
+			<modExtensions>
                 <li Class="SWCP.ThoughtExtension_NullifyingApparel">
                     <nullifyingApparel>
                         <li>Apparel_Cape</li>
@@ -30,7 +34,11 @@
     <Operation Class="PatchOperationAdd">
         <xpath>/Defs/ThoughtDef[defName="ToxWater"]</xpath>
         <value>
-            <modExtensions>
+            <nullifyingHediffs>
+				<li>SWCP_hediff_JetpackActiveDebugForThoughtRemoval</li>
+			</nullifyingHediffs>
+			
+			<modExtensions>
                 <li Class="SWCP.ThoughtExtension_NullifyingApparel">
                     <nullifyingApparel>
 						<li>Apparel_Cape</li>

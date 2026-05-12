@@ -221,7 +221,28 @@
 		</subSounds>
 	</SoundDef>
 	
-
+	<SoundDef>
+		<defName>kotorsound_JKdetpack_warningSustainer</defName>	
+		<context>MapOnly</context>
+		<eventNames />	
+		<maxSimultaneous>1</maxSimultaneous>	
+		<sustain>true</sustain>
+		<priorityMode>PrioritizeNearest</priorityMode>
+		<subSounds>
+			<li>
+				<muteWhenPaused>true</muteWhenPaused>
+				<grains>
+					<li Class="AudioGrain_Clip">
+						<clipPath>kotormisc/JK_detpack_warning</clipPath>
+					</li>
+				</grains>	
+				<volumeRange>
+				<min>35</min>        
+				<max>35</max>
+				</volumeRange>  					
+			</li>
+		</subSounds>
+	</SoundDef>
 	
 	
 

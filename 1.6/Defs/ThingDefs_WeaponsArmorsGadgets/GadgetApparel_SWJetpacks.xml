@@ -4,119 +4,125 @@
  
   
   
-  <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_jetpackMakeable">
-    <defName>guy762_Jetpack_light</defName>
-    <label>jetpack, light</label>
-    <description>Lightweight and compact, these shorter-range jetpacks are reserved for veteran Mandalorian warriors who have proven themselves in combat.</description>
-    <graphicData>
-      <texPath>SWApparel/Jetpacks/jetpack_light</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-	<soundInteract>kotorsound_select_other</soundInteract>
-    <statBases>
-      <Mass>6</Mass>
-	  <MarketValue>2500</MarketValue>
-	  <ArmorRating_Sharp>0.1</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.1</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.1</ArmorRating_Heat>
-	  <JumpRange>20</JumpRange>
-    </statBases>
-	
-	<recipeMaker>
-	  <researchPrerequisites>
-		<li>KOTOR_Research_plasmaApplications</li>
-		<li>guy762_ResearchKotOR_mando</li>
-	  </researchPrerequisites>
-	  <skillRequirements>
-		<Crafting>12</Crafting>
-	  </skillRequirements>
-	</recipeMaker>
-	<costList>
-		<ComponentIndustrial>10</ComponentIndustrial>
-		<KOTOR_PlasmaCartridge>5</KOTOR_PlasmaCartridge>
-		<ComponentSpacer>2</ComponentSpacer>
-		<Plasteel>40</Plasteel>
-	</costList>
-	
-    <apparel>
-		<wornGraphicPath>SWApparel/Jetpacks/jetpack_light</wornGraphicPath>
-		<useWornGraphicMask>true</useWornGraphicMask>
-		<tags>
-			<li>MNC_jetpack_light</li>
-			<li>SWCPSpecificApparelItem_SabineJetpack</li>
-		</tags>
-    </apparel>
-	<tradeTags>
-		<li>guy762TT_KotOREquipment_hitech</li>
-		<li>guy762TT_MNCArmor</li>
-		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
-		<li>guy762TT_GCWGadgetEquipment_MandoSurplus</li>
-    </tradeTags>
-	
-	<colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-			<weight>15</weight>
-			<only>(180,185,185)</only>
-		</li>
-		<!--li>
-			<weight>10</weight>
-			<only>(125,155,195)</only>
-		</li>
-		<li>
-			<weight>5</weight>
-			<only>(180,85,85)</only>
-		</li>
-		<li>
-			<weight>1</weight>
-			<only>(210,160,15)</only>
-		</li>
-		<li>
-			<weight>1</weight>
-			<only>(85,85,90)</only>
-		</li-->
-      </options>
-    </colorGenerator>
-	
-	<verbs>
-      <li>
-        <verbClass>Verb_Jump</verbClass>
-        <label>jump</label>
-        <violent>false</violent>
-        <hasStandardCommand>true</hasStandardCommand>
-        <onlyManualCast>True</onlyManualCast>
-        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-        <warmupTime>0.5</warmupTime>
-        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
-        <requireLineOfSight>true</requireLineOfSight>
-        <flightEffecterDef>JumpFlightEffect</flightEffecterDef>
-        <soundLanding>JumpPackLand</soundLanding>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-          <canTargetPawns>false</canTargetPawns>
-          <canTargetBuildings>false</canTargetBuildings>
-        </targetParams>
+	<ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_jetpackMakeable">
+		<defName>guy762_Jetpack_light</defName>
+		<label>jetpack, light</label>
+		<description>Lightweight and compact, these shorter-range jetpacks are reserved for veteran Mandalorian warriors who have proven themselves in combat.</description>
+		<graphicData>
+		  <texPath>SWApparel/Jetpacks/jetpack_light</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<soundInteract>kotorsound_select_other</soundInteract>
+		<statBases>
+			<Mass>6</Mass>
+			<MarketValue>2500</MarketValue>
+			<ArmorRating_Sharp>0.1</ArmorRating_Sharp>
+			<ArmorRating_Blunt>0.1</ArmorRating_Blunt>
+			<ArmorRating_Heat>0.1</ArmorRating_Heat>
 
-      </li>
-    </verbs>
-	<comps>
-	  <li Class="CompProperties_ApparelReloadable">
-        <maxCharges>1</maxCharges>
-        <soundReload>Standard_Reload</soundReload>
-        <hotKey>Misc4</hotKey>
-        <chargeNoun>jump</chargeNoun>
-        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-        <replenishAfterCooldown>true</replenishAfterCooldown>
-        <baseReloadTicks>900</baseReloadTicks>
-      </li>
-	  <li Class="CompProperties_Explosive">
-			<explosiveRadius>2</explosiveRadius>
-			<explosiveDamageType>guy762_GrenadeDamage_frag</explosiveDamageType>
-			<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
-		</li>
-    </comps>
-  </ThingDef>
+			<!-- <JumpRange>20</JumpRange> -->
+			<JumpRange>30</JumpRange>
+		</statBases>
+		
+		<recipeMaker>
+		  <researchPrerequisites>
+			<li>KOTOR_Research_plasmaApplications</li>
+			<li>guy762_ResearchKotOR_mando</li>
+		  </researchPrerequisites>
+		  <skillRequirements>
+			<Crafting>12</Crafting>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>10</ComponentIndustrial>
+			<KOTOR_PlasmaCartridge>5</KOTOR_PlasmaCartridge>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>40</Plasteel>
+		</costList>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/Jetpacks/jetpack_light</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+			<tags>
+				<li>MNC_jetpack_light</li>
+				<li>SWCPSpecificApparelItem_SabineJetpack</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_hitech</li>
+			<li>guy762TT_MNCArmor</li>
+			<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+			<li>guy762TT_GCWGadgetEquipment_MandoSurplus</li>
+		</tradeTags>
+		
+		<colorGenerator Class="ColorGenerator_Options">
+		  <options>
+			<li>
+				<weight>15</weight>
+				<only>(180,185,185)</only>
+			</li>
+			<!--li>
+				<weight>10</weight>
+				<only>(125,155,195)</only>
+			</li>
+			<li>
+				<weight>5</weight>
+				<only>(180,85,85)</only>
+			</li>
+			<li>
+				<weight>1</weight>
+				<only>(210,160,15)</only>
+			</li>
+			<li>
+				<weight>1</weight>
+				<only>(85,85,90)</only>
+			</li-->
+		  </options>
+		</colorGenerator>
+		
+		<verbs>
+			<li>
+				<label>jump</label>
+				<commandIcon>UI/Icons/Jetpack_jump_alt</commandIcon>
+				<verbClass>Verb_Jump</verbClass>
+				<violent>false</violent>
+				<hasStandardCommand>true</hasStandardCommand>
+				
+				<!-- <onlyManualCast>True</onlyManualCast> -->
+				<onlyManualCast>False</onlyManualCast>
+				
+				<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
+				<warmupTime>0.5</warmupTime>
+				<warmupEffecter>JumpWarmupEffect</warmupEffecter>
+				<requireLineOfSight>true</requireLineOfSight>
+				<flightEffecterDef>JumpFlightEffect</flightEffecterDef>
+				<soundLanding>JumpPackLand</soundLanding>
+				<targetParams>
+					<canTargetLocations>true</canTargetLocations>
+					<canTargetPawns>false</canTargetPawns>
+					<canTargetBuildings>false</canTargetBuildings>
+				</targetParams>
+			</li>
+		</verbs>
+		<comps>
+			<li Class="CompProperties_ApparelReloadable">
+				<maxCharges>1</maxCharges>
+				<soundReload>Standard_Reload</soundReload>
+				<hotKey>Misc4</hotKey>
+				<chargeNoun>jump</chargeNoun>
+				<displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
+				<replenishAfterCooldown>true</replenishAfterCooldown>
+				<!-- <baseReloadTicks>900</baseReloadTicks> -->
+				<baseReloadTicks>1200</baseReloadTicks>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>2</explosiveRadius>
+				<explosiveDamageType>guy762_GrenadeDamage_frag</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+		</comps>
+	</ThingDef>
   
   
   
@@ -133,122 +139,129 @@
   
   
   
-  <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_jetpackMakeable">
-    <defName>guy762_Jetpack_heavy</defName>
-    <label>jetpack, heavy</label>
-    <description>While the war-forges of Mandalore have made great strides in jetpack miniaturization, competing arms manufacturers have yet to catch up. Clunky, heavier jetpacks like these allow a soldier to travel much greater distances than some Mandalorian models, but are a substantial burden on long-term deployments.</description>
-    <graphicData>
-      <texPath>SWApparel/Jetpacks/jetpack_heavy</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-	  <shaderType>CutoutComplex</shaderType>
-    </graphicData>
-	<soundInteract>kotorsound_select_other</soundInteract>
-    <statBases>
-      <Mass>18</Mass>
-	  <MarketValue>5000</MarketValue>
-	  <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
-	  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
-	  <ArmorRating_Heat>0.3</ArmorRating_Heat>
-	  <JumpRange>40</JumpRange>
-	  
-	  <WorkToMake>30000</WorkToMake>
-    </statBases>
-	
-	<recipeMaker>
-	  <researchPrerequisite>KOTOR_Research_plasmaApplications</researchPrerequisite>
-	  <skillRequirements>
-		<Crafting>14</Crafting>
-	  </skillRequirements>
-	</recipeMaker>
-	<costList>
-		<ComponentIndustrial>12</ComponentIndustrial>
-		<KOTOR_PlasmaCartridge>15</KOTOR_PlasmaCartridge>
-		<ComponentSpacer>4</ComponentSpacer>
-		<KOTOR_AlloyDurasteel>80</KOTOR_AlloyDurasteel>
-	</costList>
-	
-    <apparel>
-		<wornGraphicPath>SWApparel/Jetpacks/jetpack_heavy</wornGraphicPath>
-		<useWornGraphicMask>true</useWornGraphicMask>
-	  
-		<wornGraphicData Inherit="False">
-			<renderUtilityAsPack>true</renderUtilityAsPack>
-			<east>
-			  <offset>(-0.35,-0.05)</offset>
-			  <thin><offset>(0.05,0)</offset></thin>
-			  <hulk><offset>(-0.1,0)</offset></hulk>
-			  <fat><offset>(-0.15,0)</offset></fat>
-			</east>
-			<west>
-			  <offset>(0.35,-0.05)</offset>
-			  <thin><offset>(-0.05,0)</offset></thin>
-			  <hulk><offset>(0.1,0)</offset></hulk>
-			  <fat><offset>(0.15,0)</offset></fat>
-			</west>
-			<male>  <scale>(0.65,0.65)</scale></male>
-			<female><scale>(0.65,0.65)</scale></female>
-			<thin>  <scale>(0.6,0.6)</scale></thin>
-			<hulk>  <scale>(0.8,0.8)</scale></hulk>
-			<fat>   <scale>(0.8,0.8)</scale></fat>
-		 </wornGraphicData>
-		 
-		 <tags>
-			<li>SaV_jetpack</li>
-			<li>SWCPSpecificApparelItem_DashRendarJetpack</li>
-		</tags>
-    </apparel>
-	<tradeTags>
-		<li>guy762TT_KotOREquipment_hitech</li>
-		<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
-    </tradeTags>
-	
-	<colorGenerator Class="ColorGenerator_Options">
-      <options>
-		<li>
-			<weight>5</weight>
-			<only>(180,85,85)</only>
-		</li>
-      </options>
-    </colorGenerator>
-	
-	<verbs>
-      <li>
-        <verbClass>Verb_Jump</verbClass>
-        <label>jump</label>
-        <violent>false</violent>
-        <hasStandardCommand>true</hasStandardCommand>
-        <onlyManualCast>True</onlyManualCast>
-        <forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-        <warmupTime>0.5</warmupTime>
-        <warmupEffecter>JumpWarmupEffect</warmupEffecter>
-        <requireLineOfSight>true</requireLineOfSight>
-        <flightEffecterDef>JumpFlightEffect</flightEffecterDef>
-        <soundLanding>JumpPackLand</soundLanding>
-        <targetParams>
-          <canTargetLocations>true</canTargetLocations>
-          <canTargetPawns>false</canTargetPawns>
-          <canTargetBuildings>false</canTargetBuildings>
-        </targetParams>
-
-      </li>
-    </verbs>
-	<comps>
-	  <li Class="CompProperties_ApparelReloadable">
-        <maxCharges>1</maxCharges>
-        <soundReload>Standard_Reload</soundReload>
-        <hotKey>Misc4</hotKey>
-        <chargeNoun>jump</chargeNoun>
-        <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted>
-        <replenishAfterCooldown>true</replenishAfterCooldown>
-        <baseReloadTicks>2700</baseReloadTicks>
-      </li>
-	  <li Class="CompProperties_Explosive">
-			<explosiveRadius>4</explosiveRadius>
-			<explosiveDamageType>guy762_GrenadeDamage_frag</explosiveDamageType>
-			<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
-		</li>
-    </comps>
-  </ThingDef>
+	<!-- <ThingDef MayRequire="Ludeon.RimWorld.Royalty" ParentName="guy762_jetpackMakeable"> -->
+	<ThingDef ParentName="guy762_jetpackMakeable">
+		<defName>guy762_Jetpack_heavy</defName>
+		<label>jetpack, heavy</label>
+		<description>While the war-forges of Mandalore have made great strides in jetpack miniaturization, competing arms manufacturers have yet to catch up. Clunky, heavier jetpacks like these allow a soldier to travel much greater distances than some Mandalorian models, but are a substantial burden on long-term deployments.</description>
+		<graphicData>
+		  <texPath>SWApparel/Jetpacks/jetpack_heavy</texPath>
+		  <graphicClass>Graphic_Single</graphicClass>
+		  <shaderType>CutoutComplex</shaderType>
+		</graphicData>
+		<soundInteract>kotorsound_select_other</soundInteract>
+		<statBases>
+		  <Mass>18</Mass>
+		  <MarketValue>5000</MarketValue>
+		  <ArmorRating_Sharp>0.3</ArmorRating_Sharp>
+		  <ArmorRating_Blunt>0.3</ArmorRating_Blunt>
+		  <ArmorRating_Heat>0.3</ArmorRating_Heat>
+		  
+		  <!-- <JumpRange>40</JumpRange> -->
+		  
+		  <WorkToMake>30000</WorkToMake>
+		</statBases>
+		
+		<recipeMaker>
+		  <researchPrerequisite>KOTOR_Research_plasmaApplications</researchPrerequisite>
+		  <skillRequirements>
+			<Crafting>14</Crafting>
+		  </skillRequirements>
+		</recipeMaker>
+		<costList>
+			<ComponentIndustrial>12</ComponentIndustrial>
+			<KOTOR_PlasmaCartridge>15</KOTOR_PlasmaCartridge>
+			<ComponentSpacer>4</ComponentSpacer>
+			<KOTOR_AlloyDurasteel>80</KOTOR_AlloyDurasteel>
+		</costList>
+		
+		<apparel>
+			<wornGraphicPath>SWApparel/Jetpacks/jetpack_heavy</wornGraphicPath>
+			<useWornGraphicMask>true</useWornGraphicMask>
+		  
+			<wornGraphicData Inherit="False">
+				<renderUtilityAsPack>true</renderUtilityAsPack>
+				<east>
+				  <offset>(-0.35,-0.05)</offset>
+				  <thin><offset>(0.05,0)</offset></thin>
+				  <hulk><offset>(-0.1,0)</offset></hulk>
+				  <fat><offset>(-0.15,0)</offset></fat>
+				</east>
+				<west>
+				  <offset>(0.35,-0.05)</offset>
+				  <thin><offset>(-0.05,0)</offset></thin>
+				  <hulk><offset>(0.1,0)</offset></hulk>
+				  <fat><offset>(0.15,0)</offset></fat>
+				</west>
+				<male>  <scale>(0.65,0.65)</scale></male>
+				<female><scale>(0.65,0.65)</scale></female>
+				<thin>  <scale>(0.6,0.6)</scale></thin>
+				<hulk>  <scale>(0.8,0.8)</scale></hulk>
+				<fat>   <scale>(0.8,0.8)</scale></fat>
+			 </wornGraphicData>
+			 
+			 <tags>
+				<li>SaV_jetpack</li>
+				<li>SWCPSpecificApparelItem_DashRendarJetpack</li>
+			</tags>
+		</apparel>
+		<tradeTags>
+			<li>guy762TT_KotOREquipment_hitech</li>
+			<li>guy762TT_GCWGadgetEquipment_ExoticLegal</li>
+		</tradeTags>
+		
+		<colorGenerator Class="ColorGenerator_Options">
+		  <options>
+			<li>
+				<weight>5</weight>
+				<only>(180,85,85)</only>
+			</li>
+		  </options>
+		</colorGenerator>
+		
+		<!-- <verbs> -->
+			<!-- <li> -->
+				<!-- <verbClass>Verb_Jump</verbClass> -->
+				<!-- <label>jump</label> -->
+				<!-- <violent>false</violent> -->
+				<!-- <hasStandardCommand>true</hasStandardCommand> -->
+				<!-- <onlyManualCast>True</onlyManualCast> -->
+				<!-- <forceNormalTimeSpeed>false</forceNormalTimeSpeed> -->
+				<!-- <warmupTime>0.5</warmupTime> -->
+				<!-- <warmupEffecter>JumpWarmupEffect</warmupEffecter> -->
+				<!-- <requireLineOfSight>true</requireLineOfSight> -->
+				<!-- <flightEffecterDef>JumpFlightEffect</flightEffecterDef> -->
+				<!-- <soundLanding>JumpPackLand</soundLanding> -->
+				<!-- <targetParams> -->
+					<!-- <canTargetLocations>true</canTargetLocations> -->
+					<!-- <canTargetPawns>false</canTargetPawns> -->
+					<!-- <canTargetBuildings>false</canTargetBuildings> -->
+				<!-- </targetParams> -->
+			<!-- </li> -->
+		<!-- </verbs> -->
+		
+		<comps>
+			<!-- <li Class="CompProperties_ApparelReloadable"> -->
+				<!-- <maxCharges>1</maxCharges> -->
+				<!-- <soundReload>Standard_Reload</soundReload> -->
+				<!-- <hotKey>Misc4</hotKey> -->
+				<!-- <chargeNoun>jump</chargeNoun> -->
+				<!-- <displayGizmoWhileUndrafted>true</displayGizmoWhileUndrafted> -->
+				<!-- <replenishAfterCooldown>true</replenishAfterCooldown> -->
+				<!-- <baseReloadTicks>2700</baseReloadTicks> -->
+			<!-- </li> -->
+			
+			<li Class="CompProperties_CauseHediff_Apparel">
+				<hediff>SWCP_Jetpack</hediff>
+				<part>Torso</part>
+			</li>
+			<li Class="CompProperties_Explosive">
+				<explosiveRadius>4</explosiveRadius>
+				<explosiveDamageType>guy762_GrenadeDamage_frag</explosiveDamageType>
+				<requiredDamageTypeToExplode>Flame</requiredDamageTypeToExplode>
+			</li>
+		</comps>
+	</ThingDef>
   
   
 </Defs>

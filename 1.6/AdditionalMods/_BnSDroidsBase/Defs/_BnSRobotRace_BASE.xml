@@ -1084,7 +1084,11 @@
 	
 	
 	
-	
+	<GeneCategoryDef>
+		  <defName>guy762_SWparts_Droid</defName>
+		  <label>droids (Star Wars)</label>
+		  <displayPriorityInXenotype>763</displayPriorityInXenotype>
+	</GeneCategoryDef>
 	
 	
 	<XenotypeDef>
@@ -1101,7 +1105,7 @@
 		<label>no head</label>
 		<description>Carriers of this gene have no heads.</description>
 		<displayOrderInCategory>10000</displayOrderInCategory>
-		<displayCategory>guy762_SWparts_Category</displayCategory>
+		<displayCategory>guy762_SWparts_Droid</displayCategory>
 		<iconPath>NullTex</iconPath>
 		<forcedHeadTypes>
 		  <li>guy762_DroidHeadType_null</li>

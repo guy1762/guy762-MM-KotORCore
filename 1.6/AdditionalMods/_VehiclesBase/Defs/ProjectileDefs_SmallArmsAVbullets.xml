@@ -158,7 +158,7 @@
 				<tickRate>10</tickRate>
 				<lifetimeTicks>30000</lifetimeTicks>
 				<delayTurnInTicks>20</delayTurnInTicks>
-				<initialSpreadAngle>10</initialSpreadAngle>
+				<initialSpreadAngle>3</initialSpreadAngle>
 				<tailMote>guy762_OrbMote</tailMote>
 				<effectLifetime>600</effectLifetime>
 				<effectSize>2</effectSize>
@@ -238,7 +238,7 @@
 				<tickRate>10</tickRate>
 				<lifetimeTicks>30000</lifetimeTicks>
 				<delayTurnInTicks>20</delayTurnInTicks>
-				<initialSpreadAngle>10</initialSpreadAngle>
+				<initialSpreadAngle>3</initialSpreadAngle>
 				<tailMote>guy762_OrbMote</tailMote>
 				<effectLifetime>600</effectLifetime>
 				<effectSize>2</effectSize>

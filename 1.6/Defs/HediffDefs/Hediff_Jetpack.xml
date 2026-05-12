@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Defs>
+
+	<HediffDef>
+		<defName>SWCP_Jetpack</defName>
+		<label>Jetpack</label>
+		<description>A personal jetpack that allows limited flight using chemfuel.</description>
+		<defaultLabelColor>(7,255,131)</defaultLabelColor> <!-- KotOR 2 green -->
+		
+		<hediffClass>HediffWithComps</hediffClass>
+		<initialSeverity>0.01</initialSeverity>
+		<stages>
+			<li>
+				<label>Inactive</label>
+				<minSeverity>0.01</minSeverity>
+			</li>
+			<li>
+				<label>Active</label>
+				<minSeverity>1</minSeverity>
+				
+				<statFactors>
+					<MoveSpeed>3</MoveSpeed>
+					
+					<MeleeHitChance>0.25</MeleeHitChance>
+					<ShootingAccuracyFactor_Touch>1</ShootingAccuracyFactor_Touch>
+					<ShootingAccuracyFactor_Short>0.75</ShootingAccuracyFactor_Short>
+					<ShootingAccuracyFactor_Medium>0.5</ShootingAccuracyFactor_Medium>
+					<ShootingAccuracyFactor_Long>0.25</ShootingAccuracyFactor_Long>
+					
+					<MeleeDodgeChance>6</MeleeDodgeChance>
+					<VEF_RangedDodgeChance MayRequire="OskarPotocki.VanillaFactionsExpanded.Core">2</VEF_RangedDodgeChance>
+					
+					<StaggerDurationFactor>0</StaggerDurationFactor>
+					<PawnTrapSpringChance>0</PawnTrapSpringChance>
+				</statFactors>
+			</li>
+		</stages>
+		<renderNodeProperties>
+		  <li Class="Jetpack.PawnRenderNodeProperties_Conditional">
+			<debugLabel>Jetpack Shadow</debugLabel>
+			<drawSize>0.5</drawSize>
+			<workerClass>Jetpack.PawnRenderNodeWorker_Conditional</workerClass>
+			<texPath>Shadow</texPath>
+			<parentTagDef>Body</parentTagDef>
+			<rotDrawMode>Fresh</rotDrawMode>
+			<requiredHediff>SWCP_Jetpack</requiredHediff>
+			<requiredSeverity>1</requiredSeverity>
+			<drawData>
+			  <scaleOffsetByBodySize>true</scaleOffsetByBodySize>
+			  <defaultData>
+				<offset>(0, 0, -1.8)</offset>
+			  </defaultData>
+			</drawData>
+		  </li>
+		</renderNodeProperties>
+		<comps>
+			<li Class="Jetpack.HediffCompProperties_Jetpack">
+				<compClass>Jetpack.HediffComp_Jetpack</compClass>
+				<activateIcon>UI/Icons/Jetpack_on</activateIcon>
+				<deactivateIcon>UI/Icons/Jetpack_off</deactivateIcon>
+				<maxFuel>150</maxFuel>
+				<fuelDrainPerTick>0.0167</fuelDrainPerTick>
+				<fuelRefillRate>0.33</fuelRefillRate>
+				<transitionTicks>30</transitionTicks>
+				<hoverHeight>1.5</hoverHeight>
+				<liftOffEffecter>SWCP_JetpackActivateFlightEffect</liftOffEffecter>
+				<flyingEffecter>SWCP_JetpackJetFlightEffect</flyingEffecter>
+				<landingEffecter>SWCP_JetpackDeactivateFlightEffect</landingEffecter>
+				<randomTicksToFly>240</randomTicksToFly>
+			</li>
+			
+			<li Class="EBSGFramework.HediffCompProperties_TerrainCostOverride">
+                <universalCostOverride>0</universalCostOverride>
+            </li>
+			<li Class="EBSGFramework.HediffCompProperties_HediffWhileInSeverityRange">
+                <hediffsAtSeverities>
+                    <SWCP_hediff_JetpackActiveDebugForThoughtRemoval>1</SWCP_hediff_JetpackActiveDebugForThoughtRemoval>
+                </hediffsAtSeverities>
+            </li>
+			<li Class="EBSGFramework.HediffCompProperties_SeverityWhenDowned">
+                <!-- <nonDownedSeverity>0.5</nonDownedSeverity> -->
+				<!-- The severity to set the hediff to when not downed. If this is not set, then the hediff will always remain at the value put in severity unless some other comp is altering the severity (i.e. severity per day gradually bringing the severity down/up again) -->
+				
+                <severity>0.5</severity> <!-- when downed -->
+            </li>
+			
+			<!-- <li Class="HediffCompProperties_RemoveIfApparelDropped" /> -->
+			<!-- <li Class="SWCP_Misc.HediffCompProperties_DisappearsOnDowned"/> -->
+			<!-- <li Class="HediffCompProperties_DisappearsOnDeath"/> -->
+		</comps>
+	</HediffDef>
+	
+	<HediffDef> <!-- REMINDER: the function that cancels the "soaking wet" and "tox water" thoughts while this is active is done through a PATCH!!!!! -->
+		<defName>SWCP_hediff_JetpackActiveDebugForThoughtRemoval</defName>
+		<label>Active Jetpack</label>
+		<description>This is a hidden hediff. REMINDER: the function that cancels the "soaking wet" and "tox water" thoughts while this is active is done through a PATCH!!!!!</description>
+		<defaultLabelColor>(255,7,48)</defaultLabelColor> <!-- red -->
+		<hediffClass>HediffWithComps</hediffClass>
+		<stages><li><becomeVisible>false</becomeVisible></li></stages>
+	</HediffDef>
+	
+	
+	
+	<EffecterDef>
+		<defName>SWCP_JetpackActivateFlightEffect</defName>
+		<children>
+		  <li>
+			<subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+			<spawnLocType>OnSource</spawnLocType>
+			<soundDef>kotorsound_jetpack_on</soundDef>
+		  </li>
+		  
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+			<spawnLocType>OnSource</spawnLocType>
+			<fleckDef>ShotFlash</fleckDef>
+			<scale>6</scale>
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+			<scale>0.5~0.6</scale>
+			<spawnLocType>OnSource</spawnLocType>
+			<positionOffset>(0,0,-0.5)</positionOffset>
+			<fleckDef>JumpFlame</fleckDef>
+			<ticksBetweenMotes>1</ticksBetweenMotes>
+			<maxMoteCount>14</maxMoteCount>
+			<speed>4~5</speed>
+			<angle>170~190</angle>
+			<absoluteAngle>true</absoluteAngle>
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+			<scale>0.9~0.7</scale>
+			<spawnLocType>OnSource</spawnLocType>
+			<positionOffset>(0,0,-0.5)</positionOffset>
+			<fleckDef>JumpFlameGlow</fleckDef>
+			<ticksBetweenMotes>1</ticksBetweenMotes>
+			<maxMoteCount>14</maxMoteCount>
+			<speed>4~5</speed>
+			<angle>160~200</angle>
+			<absoluteAngle>true</absoluteAngle>
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+			<scale>0.8~1.2</scale>
+			<spawnLocType>OnSource</spawnLocType>
+			<positionOffset>(0,0,-0.5)</positionOffset>
+			<fleckDef>JumpSmoke</fleckDef>
+			<ticksBetweenMotes>2</ticksBetweenMotes>
+			<maxMoteCount>8</maxMoteCount>
+			<speed>5~6</speed>
+			<angle>170~190</angle>
+			<absoluteAngle>true</absoluteAngle>
+		  </li>
+		</children>
+	</EffecterDef>
+  
+	
+	<EffecterDef>
+		<defName>SWCP_JetpackJetFlightEffect</defName>
+		<children>
+		  <li>
+			<subEffecterClass>SubEffecter_Sustainer</subEffecterClass>
+			<soundDef>kotorsound_jetpack_loop</soundDef>
+		  </li>
+		  
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+			<spawnLocType>OnSource</spawnLocType>
+			<fleckDef>ShotFlash</fleckDef>
+			<scale>3</scale>
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+			<scale>0.5~0.4</scale>
+			<spawnLocType>OnSource</spawnLocType>
+			<perRotationOffsets>
+			  <li>(0, 0, 0)</li>
+			  <li>(0, 0, 0)</li>
+			  <li>(0, 0, 0)</li>          <!-- make it render above the pawn when the pawn is facing south -->
+			  <li>(0, 1, 0)</li>
+			</perRotationOffsets>
+			<fleckDef>JumpFlame</fleckDef>
+			<ticksBetweenMotes>1</ticksBetweenMotes>
+			<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+			<speed>4~5</speed>
+			<angle>180~180</angle>
+			<absoluteAngle>true</absoluteAngle>
+			
+			<soundDef>kotorsound_jetpack_loop</soundDef>		
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+			<scale>0.5~0.4</scale>
+			<spawnLocType>OnSource</spawnLocType>
+			<perRotationOffsets>
+			  <li>(0, 0, 0)</li>
+			  <li>(0, 0, 0)</li>
+			  <li>(0, 0, 0)</li>          <!-- make it render above the pawn when the pawn is facing south -->
+			  <li>(0, 1, 0)</li>
+			</perRotationOffsets>
+			<fleckDef>JumpFlameGlow</fleckDef>
+			<ticksBetweenMotes>1</ticksBetweenMotes>
+			<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+			<speed>4~5</speed>
+			<angle>180~180</angle>
+			<absoluteAngle>true</absoluteAngle>
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+			<scale>0.5~0.4</scale>
+			<spawnLocType>OnSource</spawnLocType>
+			<perRotationOffsets>
+			  <li>(0, 0, 0)</li>
+			  <li>(0, 0, 0)</li>
+			  <li>(0, 0, 0)</li>          <!-- make it render above the pawn when the pawn is facing south -->
+			  <li>(0, 1, 0)</li>
+			</perRotationOffsets>
+			<fleckDef>JumpSmoke</fleckDef>
+			<ticksBetweenMotes>2</ticksBetweenMotes>
+			<fleckUsesAngleForVelocity>true</fleckUsesAngleForVelocity>
+			<speed>5~6</speed>
+			<angle>180~180</angle>
+			<absoluteAngle>true</absoluteAngle>
+		  </li>
+		</children>
+	</EffecterDef>
+	
+	
+	
+	<EffecterDef>
+		<defName>SWCP_JetpackDeactivateFlightEffect</defName>
+		<children>
+		  <li>
+			<subEffecterClass>SubEffecter_SoundTriggered</subEffecterClass>
+			<spawnLocType>OnSource</spawnLocType>
+			<soundDef>kotorsound_jetpack_off</soundDef>
+		  </li>
+		  
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerTriggered</subEffecterClass>
+			<spawnLocType>OnSource</spawnLocType>
+			<fleckDef>ShotFlash</fleckDef>
+			<scale>6</scale>
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+			<scale>0.5~0.6</scale>
+			<spawnLocType>OnSource</spawnLocType>
+			<positionOffset>(0,0,-0.5)</positionOffset>
+			<fleckDef>JumpFlame</fleckDef>
+			<ticksBetweenMotes>1</ticksBetweenMotes>
+			<maxMoteCount>14</maxMoteCount>
+			<speed>4~5</speed>
+			<angle>170~190</angle>
+			<absoluteAngle>true</absoluteAngle>
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+			<scale>0.9~0.7</scale>
+			<spawnLocType>OnSource</spawnLocType>
+			<positionOffset>(0,0,-0.5)</positionOffset>
+			<fleckDef>JumpFlameGlow</fleckDef>
+			<ticksBetweenMotes>1</ticksBetweenMotes>
+			<maxMoteCount>14</maxMoteCount>
+			<speed>4~5</speed>
+			<angle>160~200</angle>
+			<absoluteAngle>true</absoluteAngle>
+		  </li>
+		  <li>
+			<subEffecterClass>SubEffecter_SprayerContinuous</subEffecterClass>
+			<scale>0.8~1.2</scale>
+			<spawnLocType>OnSource</spawnLocType>
+			<positionOffset>(0,0,-0.5)</positionOffset>
+			<fleckDef>JumpSmoke</fleckDef>
+			<ticksBetweenMotes>2</ticksBetweenMotes>
+			<maxMoteCount>8</maxMoteCount>
+			<speed>5~6</speed>
+			<angle>170~190</angle>
+			<absoluteAngle>true</absoluteAngle>
+		  </li>
+		</children>
+	</EffecterDef>
+  
+</Defs>

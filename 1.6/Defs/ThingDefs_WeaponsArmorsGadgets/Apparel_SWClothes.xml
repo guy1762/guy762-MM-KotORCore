@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 	
+	
+	
+	<!--
+	
+	NOTE TO SELF: default outfit tags require a Harmony patch to OutfitDatabase/GenerateStartingOutfits in order for the outfit to show up in game!
+	this is the block that handles it:
+	
+		ApparelPolicy apparelPolicy2 = MakeNewOutfit();
+		apparelPolicy2.label = "OutfitSoldier".Translate();
+		apparelPolicy2.filter.SetDisallowAll();
+		apparelPolicy2.filter.SetAllow(SpecialThingFilterDefOf.AllowDeadmansApparel, allow: false);
+		foreach (ThingDef allDef2 in DefDatabase<ThingDef>.AllDefs)
+		{
+			if (allDef2.apparel != null && ((allDef2.apparel.defaultOutfitTags != null && allDef2.apparel.defaultOutfitTags.Contains("Soldier")) || allDef2.thingCategories.NotNullAndContains(ThingCategoryDefOf.ApparelUtility)))
+			{
+				apparelPolicy2.filter.SetAllow(allDef2, allow: true);
+			}
+		}
+	
+	-->
+	
+	
+	
 
 	<ThingDef ParentName="guy762_clothingbase">
 		<defName>guy762_Clothing_scum</defName>

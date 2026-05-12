@@ -22,18 +22,18 @@
         <displayOrder>71</displayOrder>
     </StatCategoryDef>
 	
-	<EffecterDef>
-        <defName>FCP_VATSLegendaryEffect_Explosive_Explosion</defName>
-        <children>
-        </children>
-    </EffecterDef>
+	<!-- <EffecterDef> -->
+        <!-- <defName>FCP_VATSLegendaryEffect_Explosive_Explosion</defName> -->
+        <!-- <children> -->
+        <!-- </children> -->
+    <!-- </EffecterDef> -->
 	
-	<SWCP.Core.LegendaryEffectDef>
-        <defName>FCP_VATSLegendaryEffect_Rapid</defName>
-        <label>Rapid</label>
-        <description>Boosts firing rate</description>
-        <IsForWeapon>true</IsForWeapon>
-        <IsForApparel>false</IsForApparel>
-    </SWCP.Core.LegendaryEffectDef>
+	<!-- <FCP.Core.LegendaryEffectDef> -->
+        <!-- <defName>FCP_VATSLegendaryEffect_Rapid</defName> -->
+        <!-- <label>Rapid</label> -->
+        <!-- <description>Boosts firing rate</description> -->
+        <!-- <IsForWeapon>true</IsForWeapon> -->
+        <!-- <IsForApparel>false</IsForApparel> -->
+    <!-- </FCP.Core.LegendaryEffectDef> -->
 	
 </Defs>

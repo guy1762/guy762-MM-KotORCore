@@ -1,6 +1,23 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Defs>
-
+	
+	
+	<DrugPolicyDef>
+		<defName>SWCPDrugPolicy_DroidRepairKits</defName>
+		<label>carry droid repair kits</label>
+		<entries>
+			<li><drug>guy762_repairkit</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_repairkit_adv</drug><takeToInventory>3</takeToInventory></li>
+			<li><drug>guy762_repairkit_con</drug><takeToInventory>3</takeToInventory></li>
+		</entries>
+	</DrugPolicyDef>
+	
+	
+	
+	
+	
+	
+	
 	<HediffDef>
 		<defName>guy762_repairkitHeal</defName>
 		<description>A droid's auto-repair functions, boosted by a repair kit. Heals 15 points of wound damage.</description>

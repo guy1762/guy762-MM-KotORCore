@@ -8,30 +8,7 @@
         <suspendable>false</suspendable>
         <allowOpportunisticPrefix>true</allowOpportunisticPrefix>
     </JobDef>
-	
-	<JobDef>
-        <defName>FCP_AICastAbilityAtTarget</defName>
-        <driverClass>FCP.Core.JobDriver_AICastAbilityAtTarget</driverClass>
-        <reportString>Casting ability at target.</reportString>
-        <casualInterruptible>false</casualInterruptible>
-        <collideWithPawns>true</collideWithPawns>
-    </JobDef>
-	
-	
-	
 
-    <!--_____ V.A.T.S. _____-->
-
-    <!-- V.A.T.S. -->
-
-    <JobDef>
-        <defName>FCP_VATS_AttackHybrid</defName>
-        <driverClass>FCP.Core.JobDriver_AttackHybrid</driverClass>
-        <reportString>attacking TargetA.</reportString>
-        <alwaysShowWeapon>true</alwaysShowWeapon>
-        <casualInterruptible>false</casualInterruptible>
-        <collideWithPawns>true</collideWithPawns>
-    </JobDef>
 
 	
 	

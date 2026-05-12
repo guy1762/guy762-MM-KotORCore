@@ -6,8 +6,9 @@
 		<race>Human</race>
 		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
 		<nameMaker>guy762_PawnNamer_Bf2</nameMaker>
-
-		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
+		
+		<appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
+		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality> <!-- 8:48 AM]bahamut8001: Just for checking having the crypto sleep hediff or not when they are spawned -->
 		<invNutrition>2.55</invNutrition>
 		<biocodeWeaponChance>0.05</biocodeWeaponChance>
 		<!--apparelTags>
@@ -41,7 +42,7 @@
 		<useFactionXenotypes>true</useFactionXenotypes>
 		
 		<pawnGroupDevelopmentStage>Adult</pawnGroupDevelopmentStage>
-	  </PawnKindDef>
+	</PawnKindDef>
 	  
 	  
 	  
@@ -49,6 +50,7 @@
 	  <PawnKindDef Name="SWCPCivilian_SlaveBase" Abstract="True">
 		<race>Human</race>
 		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
+		<appearsRandomlyInCombatGroups>false</appearsRandomlyInCombatGroups>
 		<chemicalAddictionChance>0.05</chemicalAddictionChance>
 		<backstoryCryptosleepCommonality>0.05</backstoryCryptosleepCommonality>
 		<backstoryFilters>
@@ -1414,17 +1416,37 @@
 		<minGenerationAge>18</minGenerationAge>
 		<maxGenerationAge>25</maxGenerationAge>
 		<combatPower>25</combatPower>
+		<defaultFactionType>guy762_KotORFaction_Civilians</defaultFactionType>
+		
+		<xenotypeSet Inherit="False">
+			<xenotypeChances>
+				<Baseliner>0.15</Baseliner>			<!-- TOTAL: 0.99 -->
+				<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_cathar>
+				<guy762_xenotype_mirialan MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_mirialan>
+				<guy762_xenotype_nelvaanian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_nelvaanian>
+				<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_pantoran>
+				<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_quarren>
+				<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_rodian>
+				<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.35</guy762_xenotype_twilek>
+				<guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_umbaran>
+				<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_zabrak>
+				<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.20</guy762_xenotype_zeltron>
+			</xenotypeChances>
+		</xenotypeSet>
+		<useFactionXenotypes>false</useFactionXenotypes>
+		
 		<itemQuality>Good</itemQuality>
 		<apparelMoney>0~0</apparelMoney>
 		<gearHealthRange>1</gearHealthRange>
 		<apparelAllowHeadgearChance>1</apparelAllowHeadgearChance>
-		<apparelTags>
+		<apparelTags Inherit="False">
 			<li>Tribal</li>
 			<li>SaV_slavedancer</li>
+			<!-- <li>SWCPSpecificApparelItem_OrnateTwilekHeadband</li> -->
 		</apparelTags>
 		<apparelRequired>
-		   <li MayRequire="lumi.slaveoutfit">Apparel_SlaveBikini_Old</li>	
-		   <li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Collar</li>
+			<li MayRequire="lumi.slaveoutfit">Apparel_SlaveBikini_Old</li>	
+			<li MayRequire="Ludeon.RimWorld.Ideology">Apparel_Collar</li>
 		</apparelRequired>
 		<apparelIgnoreSeasons>true</apparelIgnoreSeasons>
 		<specificApparelRequirements>
@@ -1433,29 +1455,56 @@
 				<stuff>Gold</stuff>
 			</li>
 		</specificApparelRequirements>
-		<xenotypeSet Inherit="False">
-		  <xenotypeChances>
-			<guy762_xenotype_cathar MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_cathar>
-			<guy762_xenotype_mirialan MayRequire="guy762.StarWarsXenotypes">0.05</guy762_xenotype_mirialan>
-			<guy762_xenotype_nelvaanian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_nelvaanian>
-			<guy762_xenotype_pantoran MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_pantoran>
-			<guy762_xenotype_quarren MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_quarren>
-			<guy762_xenotype_rodian MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_rodian>
-			<guy762_xenotype_twilek MayRequire="guy762.StarWarsXenotypes">0.50</guy762_xenotype_twilek>
-			<guy762_xenotype_umbaran MayRequire="guy762.StarWarsXenotypes">0.01</guy762_xenotype_umbaran>
-			<guy762_xenotype_zabrak MayRequire="guy762.StarWarsXenotypes">0.10</guy762_xenotype_zabrak>
-			<guy762_xenotype_zeltron MayRequire="guy762.StarWarsXenotypes">0.25</guy762_xenotype_zeltron>
-		  </xenotypeChances>
-		</xenotypeSet>
-		<useFactionXenotypes>false</useFactionXenotypes>
+		
 		<disallowedTraits Inherit="False">
-		  <li>CreepyBreathing</li>
+			<li>CreepyBreathing</li>
 		</disallowedTraits>
 		<disallowedTraitsWithDegree>
 			<Beauty>-1</Beauty>
 			<Beauty>-2</Beauty>
 		</disallowedTraitsWithDegree>
 		<humanPregnancyChance>0.1</humanPregnancyChance>
+		
+		<initialWillRange>0~0</initialWillRange>
+		<initialResistanceRange>0~0</initialResistanceRange>
+		<fleeHealthThresholdRange>0.9~0.95</fleeHealthThresholdRange>
+		
+		<!-- <techHediffsMoney>9999999</techHediffsMoney> -->
+		<!-- <techHediffsChance>100</techHediffsChance> -->
+		<!-- <techHediffsRequired> -->
+			<!-- <li MayRequire="EBSG.Framework">SWCPHediff_SlaveChip</li> doesn't work because the techHediffTags needs to be on the implant ThingDef which is really dumb and annoying -->
+		<!-- </techHediffsRequired> -->
+		<!-- <techHediffsTags Inherit="False"> -->
+			<!-- <li>SWCPTechHediffTag_SlaveChip</li> -->
+		<!-- </techHediffsTags> -->
+		
+		<startingHediffs>
+			<li MayRequire="EBSG.Framework"><def>SWCPHediff_SlaveChip</def><chance>0.75</chance></li>
+		</startingHediffs>
+		<modExtensions>
+			<li MayRequire="EBSG.Framework" Class="EBSGFramework.ForceStartingHediffsExtension" />
+			<li Class="BodyTypeForPawnKind.ModExtension_BodyTypesOfPawnKind">
+			  <whitelist>
+				<li>Male</li>
+				<li>Female</li>
+				<li>Thin</li>
+			  </whitelist>
+			  <blacklist>
+				<!-- <li>Thin</li> -->
+				<!-- <li>Fat</li> -->
+				<!-- <li>Baby</li> -->
+				<!-- <li>Child</li> -->
+			  </blacklist>
+			  <priority>
+				<!--When violates the black/whitelist, selected from these-->
+			  </priority>
+			  <!--Align body gender to pawn's gender (default: True)-->
+			  <checkGender>True</checkGender>
+			</li>
+			<li Class="BodyTypeForPawnKind.ModExtension_ForcedStyleItem">
+			  <forcedBeard>NoBeard</forcedBeard>
+			</li>
+		</modExtensions>
 	</PawnKindDef>
 	
 	

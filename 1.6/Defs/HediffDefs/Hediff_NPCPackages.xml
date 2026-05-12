@@ -8,6 +8,7 @@
 		<comps>
 			<li Class="SWCP_Misc.HediffCompProperties_DisappearsOnDowned"/>
 			<li Class="HediffCompProperties_DisappearsOnDeath"/>
+			<li MayRequire="EBSG.Framework" Class="EBSGFramework.HediffCompProperties_RemoveOnFactionChange" />
 		</comps>
 	</HediffDef>
 	

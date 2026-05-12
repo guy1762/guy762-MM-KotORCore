@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
 
 	<!--__________ Enlistments with Factions Letter Text __________-->
@@ -41,17 +41,31 @@
 	<SWCP_Provisions_Label>Provisions</SWCP_Provisions_Label>
 	<SWCP_Provisions_Desc_4xSupplyContainer10days>Provisions will add the following items to your caravan inventory every 10 days:\n\n- 4x Supply Container</SWCP_Provisions_Desc_4xSupplyContainer10days>
 	<SWCP_Provisions_Desc_6xSupplyContainer10days>Provisions will add the following items to your caravan inventory every 10 days:\n\n- 6x Supply Container</SWCP_Provisions_Desc_6xSupplyContainer10days>
-	<SWCP_Provisions_Desc_6xSupplyContainer15days>Provisions will add the following items to your caravan inventory every 10 days:\n\n- 6x Supply Container</SWCP_Provisions_Desc_6xSupplyContainer15says>
+	<SWCP_Provisions_Desc_6xSupplyContainer15days>Provisions will add the following items to your caravan inventory every 15 days:\n\n- 6x Supply Container</SWCP_Provisions_Desc_6xSupplyContainer15days>
 	
-	<SWCP_Provisions_Label_74zSpeeder>Scout Bikes</SWCP_Provisions_Label_74zSpeeder>
-	<SWCP_Provisions_Desc_74zSpeeder>Scout Bikes will add the following items to your caravan inventory every 60 days:\n\n- 1x Aratech 74-Z Speeder Bike</SWCP_Provisions_Desc_74zSpeeder>
-
+	<!-- <SWCP_Provisions_Label_74zSpeeder>Scout Bikes</SWCP_Provisions_Label_74zSpeeder> -->
+	<!-- <SWCP_Provisions_Desc_74zSpeeder>Scout Bikes will add the following items to your caravan inventory every 60 days:\n\n- 1x Aratech 74-Z Speeder Bike</SWCP_Provisions_Desc_74zSpeeder> -->
+	
+	<SWCP_AutoFeed_Label>Auto-Feed Caravan</SWCP_AutoFeed_Label>
+	<SWCP_AutoFeed_Desc>Automatically feed your caravan with food served at this base's mess hall.</SWCP_AutoFeed_Desc>
+	
+	<SWCP_ExclusiveTrader_Label>Exclusive Trader</SWCP_ExclusiveTrader_Label>
+	<SWCP_ExclusiveTrader_Desc>Trade with an inventory reserved for high-ranking personnel.</SWCP_ExclusiveTrader_Desc>
+	<SWCP_ExclusiveTrader_RequirementsNotMet>Faction title requirements not met!</SWCP_ExclusiveTrader_RequirementsNotMet>
+	
+	<SWCP_TaxCollector_Label>Intelligence Officer</SWCP_TaxCollector_Label>
+	<SWCP_TaxCollector_Desc>Turn in Intel Datapads and other high-value items to receive rank commendations.</SWCP_TaxCollector_Desc>
+	
+	<SWCP_SettlementTradeReserved>Quartermaster services are reserved for enlisted personnel!</SWCP_SettlementTradeReserved>
+	
 	<!-- Storage Options -->
 
 	<SWCP_Storage_Label>Storage</SWCP_Storage_Label>
 	<SWCP_Storage_Desc>Store items from your caravan to your faction stash. Faction stashes transfer across all of the faction's outposts and will save contents even if you are no longer enlisted.</SWCP_Storage_Desc>
 	<SWCP_Storage_Inventory>Storage inventory</SWCP_Storage_Inventory>
 	<SWCP_Caravan_Inventory>Caravan inventory</SWCP_Caravan_Inventory>
+	<RH.StorageInventory>Storage inventory</RH.StorageInventory>
+	<RH.CaravanInventory>Caravan inventory</RH.CaravanInventory>
 
 	<!-- Work Options -->
 
@@ -65,7 +79,7 @@
 	<SWCP_Hospital_Desc>Check in with the hospital of this base. This service tends to all of your troopers with spacer medkits. Immunity gain is also increased while your troopers are in the hospital.</SWCP_Hospital_Desc>
 	
 	
-	
+	<!-- Training Options -->
 	
 	<SWCP_Medical_Training_Label>Training: Medical</SWCP_Medical_Training_Label>
 	<SWCP_Medical_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Medical\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Medical_Training_Desc>
@@ -81,7 +95,6 @@
 	
 	<SWCP_Survival_Training_Label>Training: Survival</SWCP_Survival_Training_Label>
 	<SWCP_Survival_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Animals\n- Cooking\n- Plants\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Survival_Training_Desc>
-	<!-- <SWCP_Survival_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Animals\n- Construction\n- Cooking\n- Crafting\n- Mining\n- Plants\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Survival_Training_Desc> -->
 	
 	<SWCP_Intelligence_Training_Label>Training: Intellectual</SWCP_Intelligence_Training_Label>
 	<SWCP_Intelligence_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Intellectual\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Intelligence_Training_Desc>
@@ -91,6 +104,17 @@
 	
 	<SWCP_Command_Training_Label>Training: Command</SWCP_Command_Training_Label>
 	<SWCP_Command_Training_Desc>Train your troopers with hourly experience gain on the following skills:\n\n- Social\n- Intellectual\n\nHourly experience gain stops when this faction is resting at night.</SWCP_Command_Training_Desc>
+	
+	<SWCP_AbilityTraining_Label>Ability Training</SWCP_AbilityTraining_Label>
+	<SWCP_AbilityTraining_Desc>Select a specific pawn to receive specialized ability training.</SWCP_AbilityTraining_Desc>
+	<FCP_TrainingAlreadyActive>Training in progress!</FCP_TrainingAlreadyActive>
+	
+	<SWCP_AbilityTrainingCompleted_LetterTitle>Ablity training completed!</SWCP_AbilityTrainingCompleted_LetterTitle>
+	<SWCP_AbilityTrainingCompleted_Desc>A pawn training at an allied faction's settlement has gained an ability!</SWCP_AbilityTrainingCompleted_Desc>
+	
+	
+	<SWCP_AbilityTraining_CommandTierVI_Label>Training: Command Tier VI</SWCP_AbilityTraining_CommandTierVI_Label>
+	<SWCP_AbilityTraining_CommandTierVI_Desc>Take a 15-day course to learn the following ability:\n\n- Command Tier VI.</SWCP_AbilityTraining_CommandTierVI_Desc>
 
 	<!-- Bounty Options -->
 
@@ -141,5 +165,8 @@
 	
 	<SWCP_Turn_In_Desc>Turn in suspected outlaws and criminals to NCRCF facilities.\n\n -Turning over any hostile pawns do not result in a slavery debuff-</SWCP_Turn_In_Desc>
 	<SWCP_Turn_In_Trader_Name>New California Republic Correctional Facility Warden</SWCP_Turn_In_Trader_Name>
+	
+	<SWCP_ProvisionRecruit_Label_ArmyTrooper>Recruit Army Trooper</SWCP_ProvisionRecruit_Label_ArmyTrooper>
+	<SWCP_ProvisionRecruit_Desc_ImpArmyTrooper15days>Recruit soldiers to your caravan every 15 days:\n\n- 1x Imperial Army Trooper</SWCP_ProvisionRecruit_Desc_ImpArmyTrooper15days>
 
 </LanguageData>
