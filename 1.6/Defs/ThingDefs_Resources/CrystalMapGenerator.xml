@@ -30,7 +30,8 @@
 					<KOTOR_MediumCrystal_soft MayRequire="guy762.KotORWeapons">0.1</KOTOR_MediumCrystal_soft>
 					<KOTOR_MediumCrystal_warm MayRequire="guy762.KotORWeapons">0.1</KOTOR_MediumCrystal_warm>
 					
-					<KOTOR_StygiumCrystal>0.0833</KOTOR_StygiumCrystal>
+					<!-- <KOTOR_StygiumCrystal>0.0833</KOTOR_StygiumCrystal> -->
+					<KOTOR_StygiumCrystal>0.15</KOTOR_StygiumCrystal>
 				</things>
 				<indoorRuin>false</indoorRuin>
 				<coveredCellsPer10Cells>1.5~2.5</coveredCellsPer10Cells>
